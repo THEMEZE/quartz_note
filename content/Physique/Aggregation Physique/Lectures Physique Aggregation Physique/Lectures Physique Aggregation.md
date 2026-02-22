@@ -1,3 +1,7 @@
+---
+title: "Lectures Physique Aggregation Physique"
+---
+
 [[L.P. 02 - Gravitation]]
 [[L.P. 05 - Lois de conservation en dynamique]]
 [[L.P. 08 - Notion de viscosité d'un fuide. Écoulements visqueux]]

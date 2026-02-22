@@ -1,1 +1,5 @@
-[[Lectures Physique Aggregation]]
+---
+title: "Aggregation Physique"
+---
+
+[[Lectures Physique Aggregation Physique]].
