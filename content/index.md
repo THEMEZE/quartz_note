@@ -1,8 +1,9 @@
 ---
-title: Welcome to Quartz
-draft: false
-permalink:
+title: "Welcome!"
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Here lies my digital library of my thoughts.
+
+[[Math HL]], [[Physics HL]], [[Economics HL]], [[Chemistry SL]] and [[English SL]] et
+
+[[Physique]].
