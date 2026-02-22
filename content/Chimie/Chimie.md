@@ -1,5 +1,5 @@
 ---
-title: "Physique"
+title: "Chimie"
 ---
 
 [[Aggregation Physique-Chimie]].
