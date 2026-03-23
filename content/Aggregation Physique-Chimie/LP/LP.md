@@ -1,8 +1,10 @@
 ---
-title: "Lectures Physique Aggregation Physique"
+title: Lectures Physique Aggregation Physique
+tags:
+  - Science
 ---
 
-[[L.P. 02 - Gravitation]]
+[[L.P. 02 - M1- Gravitation]]
 [[L.P. 05 - Lois de conservation en dynamique]]
 [[L.P. 08 - Notion de viscosité d'un fuide. Écoulements visqueux]]
 [[L.P. 09 - Modèle de l'écoulement parfait d'un fluide]]

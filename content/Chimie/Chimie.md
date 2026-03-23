@@ -1,5 +1,7 @@
 ---
-title: "Chimie"
+title: Chimie
+tags:
+  - Science
 ---
 
 [[Aggregation Physique-Chimie]].

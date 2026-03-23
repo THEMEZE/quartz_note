@@ -1,5 +1,7 @@
 ---
-title: "L.P. 02 - Gravitation"
+title: L.P. 02 - Gravitation
+tags:
+  - Science
 ---
 
 **Momentum**, $p = mv$ .

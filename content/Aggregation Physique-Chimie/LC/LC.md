@@ -1,5 +1,7 @@
 ---
-title: "Lectures Chimie Aggregation Physique"
+title: Lectures Chimie Aggregation Physique
+tags:
+  - Science
 ---
 
 [[L.C. 01 - Chimie et couleur]]
