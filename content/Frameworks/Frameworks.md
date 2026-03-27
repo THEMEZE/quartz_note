@@ -3,9 +3,11 @@ title: Frameworks
 tags:
   - Science
 ---
+# [[Theories]]
+
 
 # Hybtides
-
+[[Théorie de jauge]]
 [[Supersymétrie]]
 [[Dualités]]
 [[Holographie]]
