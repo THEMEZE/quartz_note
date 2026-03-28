@@ -3580,7 +3580,7 @@ $$
 =================================
 
 $$
-\begin{aligned} [J_{ab},J_{cd}] &= \eta_{bc} J_{ad} - \eta_{ac} J_{bd} - \eta_{bd} J_{ac} + \eta_{ad} J_{bc} \\ [J_{ab},P_c] &= \eta_{bc} P_a - \eta_{ac} P_b \\ [J_{ab},Q_\alpha] &= \frac12 (\gamma_{ab})_\alpha{}^\beta Q_\beta \\ \{Q_\alpha,Q_\beta\} &= (C \gamma^a)_{\alpha\beta} P_a \\ [P_a,P_b] &= 0, \quad [P_a,Q] = 0 \end{aligned}
+\begin{aligned} [ J_{ab},J_{cd}] &= \eta_{bc} J_{ad} - \eta_{ac} J_{bd} - \eta_{bd} J_{ac} + \eta_{ad} J_{bc} \\ [J_{ab},P_c] &= \eta_{bc} P_a - \eta_{ac} P_b \\ [J_{ab},Q_\alpha] &= \frac12 (\gamma_{ab})_\alpha{}^\beta Q_\beta \\ \{Q_\alpha,Q_\beta\} &= (C \gamma^a)_{\alpha\beta} P_a \\ [P_a,P_b] &= 0, \quad [P_a,Q] = 0 \end{aligned}
 $$
 
 * * *

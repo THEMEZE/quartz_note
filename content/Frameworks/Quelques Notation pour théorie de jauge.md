@@ -409,11 +409,11 @@ $$
 \boxed{ \text{connexion} \Rightarrow \text{courbure} \Rightarrow \text{Bianchi} }
 $$
 ## 🔹 Table finale
-| théorie | connexion | courbure | équation |
-| --- | --- | --- | --- |
-| EM |  $A$  |  $F$  |  $dF=0,\ d*F=J$  |
-| YM |  $A$  |  $F$  |  $DF=0,\ D*F=J$  |
-| Gravité |  $(e,\omega)$  |  $(T,R)$  |  $DR=0,\ D*R=T$  |
+| théorie | connexion    | courbure | équation       |
+| ------- | ------------ | -------- | -------------- |
+| EM      | $A$          | $F$      | $dF=0,\ d*F=J$ |
+| YM      | $A$          | $F$      | $DF=0,\ D*F=J$ |
+| Gravité | $(e,\omega)$ | $(T,R)$  | $DR=0,\ D*R=T$ |
 
 # 9) Intuition ultime
 👉 EM/YM :

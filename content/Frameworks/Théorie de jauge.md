@@ -38,3 +38,5 @@ tags:
 | **Nature du champ** | Force réelle (électromagnétique) | Force de type jauge (couleur, isospin…) | Courbure de l’espace-temps (pas « force » au sens newtonien) |
 
 Ce tableau récapitule formellement les similitudes et différences. Par exemple, U(1) est abélien (donc  $A\wedge A=0$ ), tandis que SU(N) est non abélien et engendre le terme de commutateur dans  $F$ [en.wikipedia.org](https://en.wikipedia.org/wiki/Curvature_form#:~:text=Image%3A%20,omega)[en.wikipedia.org](https://en.wikipedia.org/wiki/Yang%E2%80%93Mills_equations#:~:text=Image%3A%20,such%20objects%20is%20the%20theory). Le groupe de gravitation SO(1,3) est également non abélien (les rotations ou boosts ne commutent pas). L’électromagnétisme et Yang–Mills ont des bosons de jauge de spin 1 (vecteurs), tandis que la gravité est associée à un champ de rang 2 (tenseur métrique) et son quanta hypothétique, le **graviton**, doit avoir spin 2[en.wikipedia.org](https://en.wikipedia.org/wiki/Gauge_boson#:~:text=Photons%20%2C%20%20108%2C%20and,has%20a%20spin%20of%202).
+
+# [[Connexion et courbure en supergravité]]
