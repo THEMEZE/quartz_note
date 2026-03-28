@@ -106,20 +106,18 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 <script>
 document.querySelectorAll("details").forEach(d => d.removeAttribute("open"));
+</script>
 
-<details class="affirmation">
-  <summary>Affirmation  👉 l’écriture — <span class="math">\( A = \omega + e + \psi \)</span>  est un abus de notation  </summary> 
 
->[!hint] 👉 l’écriture
->$$
->A = \omega + e + \psi
->$$
->est **un abus de notation** pour alléger :
->*    $\omega \equiv \frac{1}{2}\omega^{ab} J_{ab}$ 
->*    $e \equiv e^a P_a$ 
->*    $\psi \equiv \bar{\psi} Q$ 
+<!-- <details class="theorem" open>
+  <summary>Théorème</summary>
 
-</details>
+Soit $M$ une variété... alors :
+$$
+R^{ab} = d\omega^{ab} + \omega^a{}_c \wedge \omega^{cb}
+$$
+
+</details> -->
 
 
 # Connexion et courbure en supergravité
@@ -133,7 +131,10 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 
 
 <details class="affirmation">
-  <summary>Affirmation  👉 l’écriture — <span class="math">\( A = \omega + e + \psi \)</span>  est un abus de notation  </summary> 
+
+  <summary>
+    Affirmation  👉 L’écriture — <span class="math">\( A = \omega + e + \psi \)</span>  est un abus de notation  
+  </summary> 
 
 >[!hint] 👉 l’écriture
 >$$
@@ -146,6 +147,12 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 
 </details>
 
+
+<details class="affirmation">
+
+  <summary>
+    Affirmation  👉 La bonne structure est : — <span class="math">\( \text{superconnexion } \mathcal{A} \in \Omega^1(M, \mathfrak{g}_{\text{super}}) \)</span>   
+  </summary> 
 
 >[!hint] La bonne structure est :
 >$$
@@ -165,6 +172,12 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 >>*    $J_{ab}$  : Lorentz
 >>*    $P_a$  : translations
 >>*    $Q_\alpha$  : supercharges (spinor)
+</details>
+
+<details class="affirmation">
+  <summary>
+    Superconnexion complète  
+  </summary> 
 
 > [!hint] Superconnexion complète
 > Je fixe les conventions (4D, signature  $\eta=\mathrm{diag}(-,+,+,+)$ , spineurs de Majorana) pour éviter toute ambiguïté.
@@ -177,6 +190,13 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 >*    $\bar\psi = \psi^\mathrm{T} C$ , $C$  matrice de conjugaison de charge
 >*   Matrices de Clifford :  $\gamma^a$ ,  $\gamma^{ab} = \frac12[\gamma^a,\gamma^b]$ 
 
+</details>
+
+<details class="affirmation">
+  <summary>
+    Superalgèbre Poincaré SUGRA  
+  </summary> 
+
 > [!hint]  Superalgèbre Poincaré SUGRA
 >$$
 >\begin{aligned} 
@@ -187,10 +207,17 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 >\end{aligned}
 >$$
 
+</details>
+
 On calcule la courbure 2-forme
 $$
 \mathcal F = d\mathcal A + \mathcal A\wedge\mathcal A.
 $$
+
+<details class="affirmation">
+  <summary>
+    Différentielle extérieure  $df$   
+  </summary>
 
 >[!hint] Différentielle extérieure  $df$ 
 >Soit une fonction scalaire :
@@ -269,6 +296,7 @@ $$
 >>F = dA \Rightarrow dF = 0
 >>$$
 >>(identité de Bianchi).
+</details>
 
 >[!hint] Décomposition de  $d \mathcal A$ 
 >$$
