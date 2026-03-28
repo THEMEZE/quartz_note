@@ -4,18 +4,22 @@ title: Connexion et courbure en supergravité
 
 
 <style>
-
-  /* Base */
+  /* === Base des détails === */
   details {
     border-radius: 10px;
     margin: 1rem 0;
     padding: 0.6rem 1rem;
-    border: 1px solid #ddd; /* 🔥 AJOUT IMPORTANT */
-    overflow: hidden; /* 🔥 évite débordements */
-    transition: all 0.2s ease;
+    border: 1px solid #888; /* neutre pour s’adapter aux modes */
+    overflow: hidden;
+    transition:
+      all 0.2s ease,
+      background-color 0.3s,
+      color 0.3s;
+    font-family: "Courier New", Courier, monospace; /* effet “craie” */
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5); /* léger effet craie */
   }
 
-  /* Header */
+  /* === Summary === */
   details summary {
     font-weight: 600;
     cursor: pointer;
@@ -24,89 +28,100 @@ title: Connexion et courbure en supergravité
     margin: 0;
   }
 
+  /* line under summary when open */
   details[open] summary {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  /* Théorème */
+  /* === Types === */
   details.theorem {
     border-left: 5px solid #1f77b4;
-    background: #f0f7ff;
   }
-
-  /* Preuve */
   details.proof {
     border-left: 5px solid #2ca02c;
-    background: #f4fff6;
   }
-
-  /* Rappel */
   details.recall {
     border-left: 5px solid #9467bd;
-    background: #f8f5ff;
   }
-
-  /* Calcul */
   details.calculation {
     border-left: 5px solid #ff7f0e;
-    background: #fff8f2;
   }
-
-  /* Warning */
   details.warning {
     border-left: 5px solid #d62728;
-    background: #fff5f5;
   }
-
-  /* Exemple */
   details.example {
     border-left: 5px solid #17becf;
-    background: #f2fdff;
   }
-
-  /* Affirmation */
   details.affirmation {
     border-left: 5px solid #17becf;
-    background: #f2fdff;
   }
 
-  /* Contenu interne */
+  /* === Contenu interne === */
   details > *:not(summary) {
     padding: 0.6rem 1rem 1rem 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* === Mode clair === */
+  @media (prefers-color-scheme: light) {
+    details {
+      /* background: #fdfdfd; */
+      /* color: #222; */
+      border-color: #ccc;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); /* craie légère sombre */
+    }
+
+    details[open] summary {
+      border-bottom-color: #eee;;
+    }
+  }
+
+  /* === Mode sombre === */
+  @media (prefers-color-scheme: dark) {
+    details {
+      /* background: #111; */
+      /* color: #eee; */
+      
+      border-color: #555;
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* craie blanche */
+    }
+    details[open] summary {
+      border-bottom-color:  #eee;;
+    }
   }
 </style>
+
+<!-- === JS pour toggle MathJax et fermer tous les détails au chargement === -->
 <script>
-function renderMath() {
-  if (window.MathJax) {
-    MathJax.typesetPromise();
+  function renderMath() {
+    if (window.MathJax) MathJax.typesetPromise();
   }
-}
 
-/* rendu initial */
-window.addEventListener("load", renderMath);
-
-/* rendu après ouverture */
-document.querySelectorAll("details").forEach(d => {
-  d.addEventListener("toggle", () => {
+  window.addEventListener("load", () => {
     renderMath();
+    document
+      .querySelectorAll("details")
+      .forEach((d) => d.removeAttribute("open"));
   });
-});
-</script>
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
+
+  document.querySelectorAll("details").forEach((d) => {
+    d.addEventListener("toggle", renderMath);
+  });
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<!-- === MathJax === -->
 <script>
-document.querySelectorAll("details").forEach(d => d.removeAttribute("open"));
+  window.MathJax = {
+    tex: {
+      inlineMath: [
+        ["\\(", "\\)"],
+        ["$", "$"],
+      ],
+    },
+    svg: { fontCache: "global" },
+  };
 </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
 
 <!-- <details class="theorem" open>
@@ -122,6 +137,7 @@ $$
 
 # Connexion et courbure en supergravité
 
+
 Nous partons de la **connexion de super-Poincaré**, notée 
 
 $$
@@ -133,10 +149,12 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 <details class="affirmation">
 
   <summary>
-    Affirmation  👉 L’écriture — <span class="math">\( A = \omega + e + \psi \)</span>  est un abus de notation  
+    <!-- <strong> -->
+    Affirmation  👉 L’écriture — <span class="math">\( A = \omega + e + \psi \)</span>  est un abus de notation 
+    <!-- </strong>  -->
   </summary> 
 
->[!hint] 👉 l’écriture
+>[!tip] 👉 l’écriture
 >$$
 >A = \omega + e + \psi
 >$$
@@ -219,7 +237,7 @@ $$
     Différentielle extérieure  $df$   
   </summary>
 
->[!hint] Différentielle extérieure  $df$ 
+[!note] Différentielle extérieure  $df$ 
 >Soit une fonction scalaire :
 >$$
 >f : \mathcal M \to \mathbb{R}
