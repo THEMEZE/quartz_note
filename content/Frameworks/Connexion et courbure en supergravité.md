@@ -154,7 +154,7 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
     <!-- </strong>  -->
   </summary> 
 
->[!tip] 👉 l’écriture
+>[!info]+ 👉 l’écriture
 >$$
 >A = \omega + e + \psi
 >$$
@@ -172,7 +172,7 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
     Affirmation  👉 La bonne structure est : — <span class="math">\( \text{superconnexion } \mathcal{A} \in \Omega^1(M, \mathfrak{g}_{\text{super}}) \)</span>   
   </summary> 
 
->[!hint] La bonne structure est :
+>[!note]+ La bonne structure est :
 >$$
 > \text{superconnexion } \mathcal{A} \in \Omega^1(M, \mathfrak{g}_{\text{super}}) 
 >$$
@@ -182,7 +182,8 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 >*    *   générateurs bosoniques (Lorentz, translations)
 >*    *   générateurs fermioniques (supersymétrie)
 >
->>[!hint] Superalgèbre de Poincaré
+>>[!note]- Superalgèbre de Poincaré
+>>
 >>📌 Générateurs
 >>$$
 >>\{ J_{ab}, \; P_a, \; Q_\alpha \}
@@ -197,7 +198,7 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
     Superconnexion complète  
   </summary> 
 
-> [!hint] Superconnexion complète
+> [!note]+ Superconnexion complète
 > Je fixe les conventions (4D, signature  $\eta=\mathrm{diag}(-,+,+,+)$ , spineurs de Majorana) pour éviter toute ambiguïté.
 > $$
 >\mathcal A = e^a P_a + \tfrac12\,\omega^{ab}J_{ab} + \bar\psi Q,
@@ -215,7 +216,7 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
     Superalgèbre Poincaré SUGRA  
   </summary> 
 
-> [!hint]  Superalgèbre Poincaré SUGRA
+> [!info]+  Superalgèbre Poincaré SUGRA
 >$$
 >\begin{aligned} 
 >[J_{ab},J_{cd}] &= \eta_{bc} J_{ad} - \eta_{ac} J_{bd} - \eta_{bd} J_{ac} + \eta_{ad} J_{bc} \\ 
@@ -234,10 +235,10 @@ $$
 
 <details class="affirmation">
   <summary>
-    Différentielle extérieure  $df$   
+    Différentielle extérieure  — <span class="math">\( df \)</span>    
   </summary>
 
-[!note] Différentielle extérieure  $df$ 
+>[!info]+ Différentielle extérieure  $df$ 
 >Soit une fonction scalaire :
 >$$
 >f : \mathcal M \to \mathbb{R}
@@ -246,7 +247,8 @@ $$
 >$$
 > df = \partial_\mu f \, dx^\mu. 
 >$$
->>[!hint] Que signifie  $dx^\mu$  ?
+>>[!question]- Que signifie  $dx^\mu$  ?
+>>
 >>Soit une variété  $\mathcal M$  avec coordonnées  $x^\mu$ .
 >>Les  $dx^\mu$  sont des **1-formes de base**.
 >> ### Définition rigoureuse
@@ -266,7 +268,8 @@ $$
 >>T^*\mathcal M
 >>$$
 >>
->>>[!hint] 🔹 Intuition
+>>>[!example]- 🔹 Intuition
+>>>
 >>>$dx^\mu$  mesure la variation infinitésimale dans la direction  $x^\mu$ .
 >>>Ce sont les “briques” des formes différentielles :
 >>>$$
@@ -276,7 +279,8 @@ $$
 >>>F = \frac12 F_{\mu\nu} dx^\mu \wedge dx^\nu
 >>>$$
 >>
->>>[!hint] Lien avec les connexions
+>>>[!example]- Lien avec les connexions
+>>>
 >>>Une connexion s’écrit toujours sous la forme :
 >>>$$
 >>>\Gamma^\rho_{\ \sigma} = \Gamma^\rho_{\ \sigma\mu} dx^\mu
@@ -309,41 +313,58 @@ $$
 >$$
 >d^2 = 0
 >$$
->>[!hint] Exemple **ÉléctroMagnétique** :
+>>[!hint]- Exemple **ÉléctroMagnétique** :
+>>
 >>$$
 >>F = dA \Rightarrow dF = 0
 >>$$
 >>(identité de Bianchi).
 </details>
 
->[!hint] Décomposition de  $d \mathcal A$ 
+<details class="calculation">
+  <summary>
+    Décomposition de  — <span class="math">\(d \mathcal A \)</span>    
+  </summary>
+
+>[!success]+ Décomposition de  $d \mathcal A$ 
 >$$
 >d \mathcal A = \frac12 d\omega^{ab} J_{ab} + de^a P_a + d\bar\psi Q
 >$$
 
-> [!hint] Produit  $\mathcal A \wedge \mathcal A$  : règle exacte
+</details>
+
+<details class="affirmation">
+  <summary>
+    Wedge — <span class="math">\( \mathcal A \wedge \mathcal A \)</span>  : règle exacte   
+  </summary>
+  
+> [!info]+ Produit  $\mathcal A \wedge \mathcal A$  : règle exacte
 >Très important :
 >$$
 >\mathcal A \wedge \mathcal A = (\mathcal A^I T_I) \wedge (\mathcal A^J T_J) = \mathcal A^I \wedge \mathcal A^J \; T_I \cdot T_J,
 >$$
->👉 donc :
+>👉 Donc :
 >*   le $\wedge$ agit sur les **formes**
 >*   le produit $\cdot$ agit sur les **générateurs**
 >
->👉 Le point clé : on ne peut pas remplacer directement **$T_I T_J$** par un crochet sans faire attention à la graduation.
->$$
->\mathcal A^I \wedge \mathcal A^J \;\frac{1}{2}[T_I , T_J]
->$$
->Ce n’est vrai que si :
->- les générateurs sont bosoniques
->- et que les formes sont de degré impair (1-formes classiques)
+>>[!warning]-👉 Le point clé : on ne peut pas remplacer directement **$T_I \cdot T_J$** par un crochet sans faire attention à la graduation.
+>>
+>>$$
+>>\mathcal A^I \wedge \mathcal A^J \;\frac{1}{2}[T_I , T_J]
+>>$$
+>>Ce n’est vrai que si :
+>>- les générateurs sont bosoniques
+>>- et que les formes sont de degré impair (1-formes classiques)
+>>
+>>Mais en supergravité :
+>>
+>>- $\psi$ est **fermionique**
+>>- donc $Q$ est **odd**
+>>
+>>👉  il faut utiliser le super-commutateur
 >
->Mais en supergravité :
->
->- $\psi$ est **fermionique**
->- donc $Q$ est **odd**
->
->>[!hint] ✅ Bonne écriture : super-algèbre
+>>[!note]-✅ Bonne écriture : super-algèbre 👉 $T_I \cdot T_J = \frac{1}2 [T_I, T_J\}$
+>>
 >>Le bon objet est :
 >>$$
 >>[T_I, T_J\} = T_I T_J - (-1)^{|T_I||T_J|} T_J T_I
@@ -354,9 +375,14 @@ $$
 >>[T_I,T_J\} = \begin{cases} [T_I,T_J] & \text{boson-boson}\\ [T_I,T_J] & \text{boson-fermion}\\ \{T_I,T_J\} & \text{fermion-fermion} \end{cases}.
 >>$$
 >
->👉  il faut utiliser le super-commutateur
->>[!hint]  $T_I \cdot T_J = \frac{1}2 [T_I, T_J\}$ .
->>👉 donc :
+>👉 Donc :
+>$$
+>\mathcal A \wedge \mathcal A = (\mathcal A^I T_I) \wedge (\mathcal A^J T_J) = \mathcal A^I \wedge \mathcal A^J \;  \frac{1}{2} \; [T_I, T_J\}
+>$$
+>
+>>[!warning]-👉 anti/commutation de $A \wedge \mathcal A$.
+>>
+>>👉 Donc :
 >>$$
 >>(\mathcal A^I T_I) \wedge (\mathcal A^J T_J) = \mathcal A^I \wedge \mathcal A^J \;  \frac{1}{2} \; [T_I, T_J\}
 >>$$
@@ -367,15 +393,23 @@ $$
 >>\mathcal A^I \wedge \mathcal A^J = - (-1)^{|A_I||A_J|} \mathcal A^J \wedge \mathcal A^I
 >>$$
 >>2. le super-commutateur $[T_I, T_J\}$
+>>$$
+>>[T_I, T_J\} =  (-1)^{|T_I||T_J|} [T_J, T_I\}
+>>$$
+>>👉 Donc $A \wedge \mathcal A$
+>>$$
+>>A \wedge \mathcal A =  (-1)^{|A_I||A_J|} (-1)^{|T_I||T_J|} \mathcal A^J \wedge \mathcal A^I  \; [T_J, T_I\}
+>>$$
+>>
 >
->👉 Donc :
->$$
->\mathcal A \wedge \mathcal A = (\mathcal A^I T_I) \wedge (\mathcal A^J T_J) = \mathcal A^I \wedge \mathcal A^J \;  \frac{1}{2} \; [T_I, T_J\}
->$$
+</details>
 
+<details class="affirmation">
+  <summary>
+    Wedge et parité — <span class="math">\( \mathcal A \wedge \mathcal B \)</span>  : règle exacte   
+  </summary>
 
-
->[!hint] Wedge et parité
+>[!note]+ Wedge et parité
 > On a la règle générale **super-commutative** pour un  $p$ \-formes  $\mathcal A$  et $q$ \-formes $\mathcal B$  de parité  $|\mathcal A|,|\mathcal B|$  (0 = boson, 1 = fermion) :
 > $$
 >\mathcal A \wedge \mathcal B = (\mathcal A^I T_I)\wedge(\mathcal B^J G_J)= \mathcal A^I \wedge \mathcal B^J \;\frac12 [T_I, G_J\}
@@ -392,27 +426,104 @@ $$
 >$$
 >T_I G_J = (-1)^{|T_I||G_J|} G_J T_I + [T_I,G_J\}
 >$$
+>👉 Soit
+>$$
+>[T_I,G_J\} = -(-1)^{|T_I||G_J|} [G_J,T_I\}
+>$$
 >*  * $|T_I|,|G_J|$  = parité du générateur/ Grassmann (0 = boson, 1 = fermion)
 >* Soit 
 >$$
 >\mathcal A \wedge \mathcal B =(-1)^{pq}(-1)^{|\mathcal A^I||\mathcal B^J|} \frac{1}{2}\left ( T_I G_J - (-1)^{|T_I||G_J|} G_J T_I \right ) \mathcal B^J \wedge \mathcal A^I
 >$$
->>[!hint] Parité de $\mathcal A$
+>>[!hint]- Parité $|\mathcal A^I T_I| = |\mathcal A^I| + |T_I|$
 >> $$
->>|\mathcal A|, |T_I| \in \mathbb{Z}_2
+>>|\mathcal A|, |A^I T_I| ,  |T_I| \in \mathbb{Z}_2
 >>$$
 >>$$
->>|\mathcal A| = |\mathcal A^I| + |T_I| \quad (\mathrm{mod}\ 2)
+>>|\mathcal A^I T_I | = |\mathcal A^I| + |T_I| \quad (\mathrm{mod}\ 2)
 >>$$
 >
 >👉 Donc :
 >$$
->\mathcal A \wedge \mathcal B = (-1)^{pq} \frac{1}{2} \left ( (-1)^{|\mathcal A^I||\mathcal B^J|} T_I G_J - (-1)^{|\mathcal A||\mathcal B| - |\mathcal A^I||\mathcal G_J| - |\mathcal B^J||\mathcal T_I|} G_J T_I \right )  \mathcal B^J \wedge \mathcal A^I
+>\mathcal A \wedge \mathcal B = (-1)^{pq} \frac{1}{2} \left ( (-1)^{|\mathcal A^I||\mathcal B^J|} T_I G_J - (-1)^{|\mathcal A^I T_I ||\mathcal B^I G_I | - |\mathcal A^I||\mathcal G_J| - |\mathcal B^J||\mathcal T_I|} G_J T_I \right )  \mathcal B^J \wedge \mathcal A^I
 >$$
+>
+>> [!tip]- Cas pratique supergravité $|\mathcal A| = 2|\mathcal A^I| = 2|\mathcal T_I| =  0  \quad (\mathrm{mod}\ 2)$
+>>
+>>Si tu imposes la convention **super-fibré** $|\mathcal A^I| = |T_I|$ et $|\mathcal B^J| = |G_J|$, alors : 
+>> $$
+>>|2 \mathcal A^I| = 2 |T_I| = 0 \ (\text{mod }2), \quad  2|\mathcal B^I| =  2 |G_J| = 0 \ (\text{mod }2),
+>>$$
+>>et donc la formule se simplifie à :
+>>$$
+>>|\mathcal A | = 0 \ (\text{mod }2) , \quad |\mathcal B | = 0 \ (\text{mod }2) 
+>>$$
 
-
+</details>
 
 En développant les crochets de super-algèbre on obtient les composantes classiques : 
+
+<details class="calculation">
+  <summary>
+    Décomposition de  — <span class="math">\(\mathcal A \wedge \mathcal A = (\omega + e + \psi)\wedge(\omega + e + \psi) \)</span>    
+  </summary>
+
+> [!note]+
+> 6 termes
+>$$
+>(\omega + e + \psi)\wedge(\omega + e + \psi) = \omega \wedge \omega + \omega \wedge e  + e \wedge  \omega + e \wedge  e + e \wedge \psi + \psi \wedge  e + \psi \wedge  \psi + \psi \wedge  \omega + \omega \wedge  \psi 
+>$$
+>
+>>[!note]- $\omega \wedge e = e \wedge  \omega$ , $\omega \wedge \psi = \psi \wedge  \omega$
+>>
+>>* 1-forme bosonique :  $|\omega^{ab}|=0$  et $|J_{ab}|=0$ ;
+>>* 1-forme bosonique :  $|e^{a}|=0$  et $|P_{a}|=0$
+>>* 1-forme fermionique :  $|\overline{\psi}|=1$  et et $|Q|=1$
+>>$$
+>>\begin{eqnarray}{rclcrcl}
+>>\omega^{ab} \wedge  \omega^{cd}  & = & - (-1)^{1*1} (-1)^{0*0} \omega^{ab} \wedge  \omega^{cd}
+>>\end{eqnarray}
+>>$$
+>>Soit 
+>>* 1-forme bosonique :  $|\mathcal B^{I}|=0$ ;
+>>* 1-forme fermionique :  $|\mathcal F^{I}|=1$ ;
+>>
+>>| Wedge| Degré | Parité | Signe du wedge |
+>>| :---: | :---: | :---: | ---: |
+>>|  $\mathcal B^{I} \wedge \mathcal B^{J}$  | 1*1 | 0*0 |  $(-1)^{1\ast1}(-1)^{0\ast0} = -1$  |
+>>|  $\mathcal B^{I} \wedge \mathcal F^{J}$  | 1*1 | 0*1 |  $(-1)^{1\ast1}(-1)^{0\ast1} = -1$  |
+>>|  $\mathcal F^{I} \wedge \mathcal F^{J}$  | 1*1 | 0*0 |  $(-1)^{1\ast1}(-1)^{0\ast1} = +1$  |
+>>
+>>Et
+>>* bosonique :  $|\mathcal G_{I}|=0$ ;
+>>* fermionique :  $|\mathcal T_{I}|=1$ ;
+>>
+>>| $[ \bullet , \bullet ]$|  Parité | Signe  |
+>>| :---: | :---: |  ---: |
+>>|  $\mathcal G_{I} \wedge \mathcal G_{J}$  |  0*0 |  $(-1)^{0\ast0} = +1$  |
+>>|  $\mathcal G_{I} \wedge \mathcal T_{J}$  |  0*1 |  $(-1)^{0\ast1} = +1$  |
+>>|  $\mathcal T_{I} \wedge \mathcal T_{J}$  |  1*1 |  $(-1)^{1\ast1} = -1$  |
+>>
+>>
+> Donc ** $\omega\wedge e = - e \wedge \omega$ **, ** $\omega\wedge\psi = - \psi\wedge \omega$ **. ✅  
+> C’est **la règle de signe pour les 1-formes**, indépendante du super-commutateur des générateurs.
+
+>>|  | $\omega^{cd}$    | Required | Default   | Description                |
+|-----------|----------|:--------:|-----------|----------------------------|
+| `id`      | `number` | ✅       | -         | Unique user identifier     |
+| `name`    | `string` | ✅       | -         | User name                  |
+| `email`   | `string` | ✅       | -         | User email address         |
+| `age`     | `number` | ❌       | `null`    | User age                   |
+| `avatar`  | `string` | ❌       | `"/default.jpg"` | Avatar URL         |
+| `status`  | `enum`   | ❌       | `"active"` | Account status: `active` \| `inactive` |
+>>
+
+
+</details>
+
+$$
+(\omega + e + \psi)\wedge(\omega + e + \psi)
+$$
 
 
 - **Courbure de Lorentz** $R^{ab}$ (2-forme) :
