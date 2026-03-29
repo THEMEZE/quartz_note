@@ -68,7 +68,7 @@ title: Connexion et courbure en supergravité
       /* background: #fdfdfd; */
       /* color: #222; */
       border-color: #ccc;
-      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); /* craie légère sombre */
+      /*text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); /* craie légère sombre */ 
     }
 
     details[open] summary {
@@ -83,7 +83,7 @@ title: Connexion et courbure en supergravité
       /* color: #eee; */
       
       border-color: #555;
-      text-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* craie blanche */
+      /*text-shadow: 0 0 2px rgba(255, 255, 255, 0.8); /* craie blanche */ 
     }
     details[open] summary {
       border-bottom-color:  #eee;;
@@ -213,19 +213,36 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 
 <details class="affirmation">
   <summary>
-    Superalgèbre Poincaré SUGRA  
+    Superalgèbre Poincaré SUGRA (AdS ( \(\mathfrak{osp}(1|4)\))
   </summary> 
 
-> [!info]+  Superalgèbre Poincaré SUGRA
+> [!info]+  Superalgèbre Poincaré SUGRA ) (AdS ( $\mathfrak{osp}(1|4)$ )
 >$$
 >\begin{aligned} 
 >[J_{ab},J_{cd}] &= \eta_{bc} J_{ad} - \eta_{ac} J_{bd} - \eta_{bd} J_{ac} + \eta_{ad} J_{bc} \\ 
 >[J_{ab},P_c] &= \eta_{bc} P_a - \eta_{ac} P_b \\ [J_{ab},Q_\alpha] &= \frac12 (\gamma_{ab})_\alpha{}^\beta Q_\beta \\ 
->\{Q_\alpha,Q_\beta\} &= (C \gamma^a)_{\alpha\beta} P_a \\ 
->[P_a,P_b] &= 0, \quad [P_a,Q] = 0 
+>\{Q_\alpha,Q_\beta\} &= (C \gamma^a)_{\alpha\beta} P_a +\frac{1}{\ell}(C\gamma^{ab})_{\alpha\beta} J_{ab} \\ 
+>[P_a,P_b] &= \frac{1}{\ell^2} J_{ab},\\ [P_a,Q] &= 0 
 >\end{aligned}
 >$$
-
+>
+>>[!info]-👉  $\ell$  = rayon AdS  
+>>
+>>( $\Lambda \sim -1/\ell^2$ )
+>>
+>
+>>[!info]-Cas plat (Poincaré) $\frac{1}\ell = 0$
+>>
+>>*    $e\wedge e = 0$ 
+>>*   torsion purement SUSY
+>
+>>[!info]- Cas AdS  $\frac{1}\ell \neq 0$
+>>*    **version FDA avec  $e\wedge e\neq 0$  (cosmologique / AdS)
+>>*   la géométrie a une **courbure intrinsèque**
+>>*   SUSY mélange :
+>>*   *   translation
+>>*   *   rotation
+>>
 </details>
 
 On calcule la courbure 2-forme
@@ -469,22 +486,20 @@ En développant les crochets de super-algèbre on obtient les composantes classi
   </summary>
 
 > [!note]+
-> 6 termes
+> $\frac{2!}{0!0!2!}+\frac{2!}{0!1!1!} + \frac{2!}{1!0!1!}+\frac{2!}{1!1!0!} + \frac{2!}{2!0!0!}  + \frac{2!}{0!2!0!}  = 3^2$ termes  [^1] 
+>[^1]:$(a_1 + \cdots + a_n)^m=\sum_{\substack{k_1+\cdots+k_n = m \\ k_i \ge 0}}\frac{m!}{k_1!\cdots k_n!}\, a_1^{k_1} \cdots a_n^{k_n}$
 >$$
 >(\omega + e + \psi)\wedge(\omega + e + \psi) = \omega \wedge \omega + \omega \wedge e  + e \wedge  \omega + e \wedge  e + e \wedge \psi + \psi \wedge  e + \psi \wedge  \psi + \psi \wedge  \omega + \omega \wedge  \psi 
 >$$
 >
->>[!note]- $\omega \wedge e = e \wedge  \omega$ , $\omega \wedge \psi = \psi \wedge  \omega$
+>>[!note]- $\omega \wedge e = e \wedge  \omega$ , $\omega \wedge \psi = \psi \wedge  \omega$  et  $e \wedge \psi = \psi \wedge  e$
 >>
+>>On a 
 >>* 1-forme bosonique :  $|\omega^{ab}|=0$  et $|J_{ab}|=0$ ;
 >>* 1-forme bosonique :  $|e^{a}|=0$  et $|P_{a}|=0$
 >>* 1-forme fermionique :  $|\overline{\psi}|=1$  et et $|Q|=1$
->>$$
->>\begin{eqnarray}{rclcrcl}
->>\omega^{ab} \wedge  \omega^{cd}  & = & - (-1)^{1*1} (-1)^{0*0} \omega^{ab} \wedge  \omega^{cd}
->>\end{eqnarray}
->>$$
->>Soit 
+>>
+>>Soit plus généralement
 >>* 1-forme bosonique :  $|\mathcal B^{I}|=0$ ;
 >>* 1-forme fermionique :  $|\mathcal F^{I}|=1$ ;
 >>
@@ -495,28 +510,101 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >>|  $\mathcal F^{I} \wedge \mathcal F^{J}$  | 1*1 | 0*0 |  $(-1)^{1\ast1}(-1)^{0\ast1} = +1$  |
 >>
 >>Et
->>* bosonique :  $|\mathcal G_{I}|=0$ ;
->>* fermionique :  $|\mathcal T_{I}|=1$ ;
+>>* bosonique :  $| G_{I}|=0$ ;
+>>* fermionique :  $| H_{I}|=1$ ;
 >>
->>| $[ \bullet , \bullet ]$|  Parité | Signe  |
->>| :---: | :---: |  ---: |
->>|  $\mathcal G_{I} \wedge \mathcal G_{J}$  |  0*0 |  $(-1)^{0\ast0} = +1$  |
->>|  $\mathcal G_{I} \wedge \mathcal T_{J}$  |  0*1 |  $(-1)^{0\ast1} = +1$  |
->>|  $\mathcal T_{I} \wedge \mathcal T_{J}$  |  1*1 |  $(-1)^{1\ast1} = -1$  |
+>>| $[ \bullet , \bullet ]$ |  Parité | Signe  |
+>>| :------: | :-------: |  --------: |
+>>|  $[G_{I}  , G_{J}]$  |  0*0 |  $-(-1)^{0\ast0} = -1$  |
+>>|  $[ G_{I}  ,  H_{J} ]$  |  0*1 |  $-(-1)^{0\ast1} = -1$  |
+>>|  $[H_{I} ,  H_{J}$]  |  1*1 |  $-(-1)^{1\ast1} = +1$  |
+>> Alors soientt deux, 1-formes $\mathcal A = \mathcal A^I T_I$ et $\mathcal B = \mathcal B^I G_I$ de même ou de différenter nature (bosoniques ou fermioniques) et tel que  $|\mathcal A^{I}| = | T_{I}| $  et $|\mathcal B^{I}| = | G_{I}| $ alors .
+>>$$
+>>\mathcal A \wedge \mathcal B = \mathcal B \wedge \mathcal A
+>>$$
+>> Donc  $\omega\wedge e = e \wedge \omega$,  $\omega\wedge\psi = \psi\wedge \omega$ et $e wedge\psi = \psi \wedge e $ .  
+>> ✅ C’est **la règle de signe pour les 1-formes**.
+>
+>Donc $\binom{3}{1} + \binom{3}{2} =6$ termes différents
+>$$
+>(\omega + e + \psi)\wedge(\omega + e + \psi) = \omega \wedge \omega + e \wedge e + \psi \wedge \psi + 2 \omega \wedge e  +   2 \omega \wedge \psi +  2 e \wedge \psi
+>$$
+>
+>>[!note]- $ \omega \wedge \omega = \frac{1}2 \; {\omega^{a}}_c \wedge \omega^{cb} \, J_{ab} $
 >>
+>>$$
+>> 8 \; \omega \wedge \omega  = \omega^{ab} \wedge \omega^{cd} [ J_{ab}, J_{cd}]
+>>$$
+>>avec $[J_{ab},J_{cd}] = \eta_{bc} J_{ad} - \eta_{ac} J_{bd} - \eta_{bd} J_{ac} + \eta_{ad} J_{bc}$ et $\eta=\mathrm{diag}(-,+,+,+)$, il vient que 
 >>
-> Donc ** $\omega\wedge e = - e \wedge \omega$ **, ** $\omega\wedge\psi = - \psi\wedge \omega$ **. ✅  
-> C’est **la règle de signe pour les 1-formes**, indépendante du super-commutateur des générateurs.
-
->>|  | $\omega^{cd}$    | Required | Default   | Description                |
-|-----------|----------|:--------:|-----------|----------------------------|
-| `id`      | `number` | ✅       | -         | Unique user identifier     |
-| `name`    | `string` | ✅       | -         | User name                  |
-| `email`   | `string` | ✅       | -         | User email address         |
-| `age`     | `number` | ❌       | `null`    | User age                   |
-| `avatar`  | `string` | ❌       | `"/default.jpg"` | Avatar URL         |
-| `status`  | `enum`   | ❌       | `"active"` | Account status: `active` \| `inactive` |
+>>$$
+>>\omega^{ab} \wedge \omega^{cd}  [ J_{ab} , J_{cd}] = {\omega^{a}}_c \wedge \omega^{cd}  J_{ad} - {\omega_{c}}^b \wedge \omega^{cd}   J_{bd} - {\omega^{a}}_d \wedge \omega^{cd}   J_{ac} + {\omega_{d}}^b \wedge \omega^{cd}   J_{bc} 
+>>$$
+>>avec l'antisymétrie $\omega^{ab} = -\omega^{ba}$, il vient que 
+>>$$
+>>\omega^{ab} \wedge \omega^{cd}  [ J_{ab} , J_{cd}] = 4\; {\omega^{a}}_c \wedge \omega^{cd}  J_{ad} 
+>>$$
+>
+>>[!note]- $ e \wedge e = \frac{1}{2} \, \frac{1}{\ell^2} \, e^a \wedge e^b \, J_{ab} $
 >>
+>>$$
+>> 2 \, e \wedge e  = e^{a} \wedge e^{b} [ P_{a}, P_{b} ]
+>>$$
+>>avec $[ P_{a}, P_{b}] = \frac{1}{\ell^2} J_{ab}$, il vient que 
+>>
+>>$$
+>>e^{a} \wedge e^{b} [ P_{a}, P_{b}] = \frac{1}{\ell^2} \, e^{a} \wedge e^{b} J_{ab} 
+>>$$
+>>
+>
+>>[!note]- $ \psi \wedge \psi = \frac{1}{2} \, \overline{\psi} \wedge \overline{\psi} (C\gamma^a)P_a  +  \frac{1}{2} \, \overline{\psi} \wedge \overline{\psi} \frac{1}{\ell} (C\gamma^{ab})J_{ab}$
+>>
+>>$$
+>>2 \psi \wedge \psi  = \overline{\psi} \wedge \overline{\psi} \{Q, Q \}
+>>$$
+>>avec $\{Q, Q \} = (C\gamma^a)P_a + \frac{1}{\ell} (C\gamma^{ab})J_{ab}$, il vient que 
+>>
+>>$$
+>>\overline{\psi} \wedge \overline{\psi} \{Q, Q \} = \overline{\psi} \wedge \overline{\psi} (C\gamma^a)P_a  +  \overline{\psi} \wedge \overline{\psi} \frac{1}{\ell} (C\gamma^{ab})J_{ab}
+>>$$
+>>
+>
+>>[!note]- $2 \; \omega \wedge e = {\omega^{a}}_b \wedge e^b \, P_{a} $
+>>
+>>$$
+>> 4 \; \omega \wedge e  = \omega^{ab} \wedge e^{c} [ J_{ab}, P_{c}]
+>>$$
+>>avec $[J_{ab},P_c] = \eta_{bc} P_a - \eta_{ac} P_b$ et $\eta=\mathrm{diag}(-,+,+,+)$, il vient que 
+>>
+>>$$
+>>\omega^{ab} \wedge e^{cd}  [ J_{ab} , P_{c}] = {\omega^{a}}_c \wedge e^{c}  P_{a} - {\omega_{c}}^b \wedge e^{c}   P_{b} 
+>>$$
+>>avec l'antisymétrie $\omega^{ab} = -\omega^{ba}$, il vient que 
+>>$$
+>>\omega^{ab} \wedge e^{c}  [ J_{ab} , P_{c}] = 2\; {\omega^{a}}_b \wedge e^{b}  P_{a} 
+>>$$
+>
+>>[!note]- $2 \; \omega \wedge \psi = \frac{1}{8} \omega^{ab} \wedge \overline{\psi} \gamma{ab} Q $
+>>
+>>$$
+>> 8 \; \omega \wedge \psi   = \omega^{ab} \wedge \overline{\psi} [ J_{ab}, Q]
+>>$$
+>>avec $[J_{ab},Q] = \frac{1}{2} \gamma{ab} Q $ , il vient que 
+>>
+>>$$
+>>\omega^{ab} \wedge \overline{\psi} [ J_{ab}, Q] = \frac{1}{2} \omega^{ab} \wedge \overline{\psi} \gamma{ab} Q
+>>$$
+>
+>>[!note]- $2 \; e \wedge \psi = 0 $
+>>
+>>$$
+>> 4 \; e \wedge \psi   = e^{a} \wedge \overline{\psi} [ P_{a}, Q]
+>>$$
+>>avec $[ P_{a}, Q] = 0 $ , il vient que 
+>>
+>>$$
+>>e^{a} \wedge \overline{\psi} [ P_{a}, Q] = 0
+>>$$
 
 
 </details>
