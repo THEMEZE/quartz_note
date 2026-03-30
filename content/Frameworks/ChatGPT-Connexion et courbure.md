@@ -664,11 +664,11 @@ $$
 
 👉 interprétation :
 
-| terme | rôle |
-| --- | --- |
-|  $\omega^{ab}$  | connexion Lorentz |
-|  $e^a$  | "connexion" de translation |
-|  $\psi$  | gravitino (spin 3/2) |
+| terme         | rôle                       |
+| ------------- | -------------------------- |
+| $\omega^{ab}$ | connexion Lorentz          |
+| $e^a$         | "connexion" de translation |
+| $\psi$        | gravitino (spin 3/2)       |
 
 * * *
 

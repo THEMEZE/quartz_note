@@ -162,6 +162,13 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 >*    $\omega \equiv \frac{1}{2}\omega^{ab} J_{ab}$ 
 >*    $e \equiv e^a P_a$ 
 >*    $\psi \equiv \bar{\psi} Q$ 
+>
+>| terme         | rôle                       |
+| ------------- | -------------------------- |
+>| $\omega^{ab}$ | connexion Lorentz          |
+>| $e^a$         | "connexion" de translation |
+>| $\psi$        | gravitino (spin 3/2)       |
+>
 
 </details>
 
@@ -220,9 +227,11 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 >$$
 >\begin{aligned} 
 >[J_{ab},J_{cd}] &= \eta_{bc} J_{ad} - \eta_{ac} J_{bd} - \eta_{bd} J_{ac} + \eta_{ad} J_{bc} \\ 
->[J_{ab},P_c] &= \eta_{bc} P_a - \eta_{ac} P_b \\ [J_{ab},Q_\alpha] &= \frac12 (\gamma_{ab})_\alpha{}^\beta Q_\beta \\ 
->\{Q_\alpha,Q_\beta\} &= (C \gamma^a)_{\alpha\beta} P_a +\frac{1}{\ell}(C\gamma^{ab})_{\alpha\beta} J_{ab} \\ 
->[P_a,P_b] &= \frac{1}{\ell^2} J_{ab},\\ [P_a,Q] &= 0 
+>[J_{ab},P_c] &= \eta_{bc} P_a - \eta_{ac} P_b \\ 
+>[P_a,P_b] &= \frac{1}{\ell^2} J_{ab},\\ 
+>[J_{ab},Q_\alpha] &= \frac12 (\gamma_{ab})_\alpha{}^\beta Q_\beta \\ 
+>[P_a,Q_\beta] &= \frac{1}{2\ell} {(\gamma_a)^\alpha}_{\beta } Q_\alpha ,\\
+>\{Q_\alpha,Q_\beta\} &= (C \gamma^a)_{\alpha\beta} P_a +\frac{1}{\ell}(C\gamma^{ab})_{\alpha\beta} J_{ab} 
 >\end{aligned}
 >$$
 >
@@ -268,7 +277,8 @@ $$
 >>
 >>Soit une variété  $\mathcal M$  avec coordonnées  $x^\mu$ .
 >>Les  $dx^\mu$  sont des **1-formes de base**.
->> ### Définition rigoureuse
+>>> Définition rigoureuse
+>>
 >>Si  $f$  est une fonction :
 >>$$
 >>df = \partial_\mu f \, dx^\mu
@@ -343,7 +353,7 @@ $$
     Décomposition de  — <span class="math">\(d \mathcal A \)</span>    
   </summary>
 
->[!success]+ Décomposition de  $d \mathcal A$ 
+>[!success]+ Décomposition de  $d \mathcal A = \frac12 d\omega^{ab} J_{ab} + de^a P_a + d\bar\psi Q $ 
 >$$
 >d \mathcal A = \frac12 d\omega^{ab} J_{ab} + de^a P_a + d\bar\psi Q
 >$$
@@ -514,7 +524,7 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >>* fermionique :  $| H_{I}|=1$ ;
 >>
 >>| $[ \bullet , \bullet ]$ |  Parité | Signe  |
->>| :------: | :-------: |  --------: |
+>>| :--------------: | :-------: |  :--------: |
 >>|  $[G_{I}  , G_{J}]$  |  0*0 |  $-(-1)^{0\ast0} = -1$  |
 >>|  $[ G_{I}  ,  H_{J} ]$  |  0*1 |  $-(-1)^{0\ast1} = -1$  |
 >>|  $[H_{I} ,  H_{J}$]  |  1*1 |  $-(-1)^{1\ast1} = +1$  |
@@ -557,7 +567,7 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >>$$
 >>
 >
->>[!note]- $ \psi \wedge \psi = \frac{1}{2} \, \overline{\psi} \wedge \overline{\psi} (C\gamma^a)P_a  +  \frac{1}{2} \, \overline{\psi} \wedge \overline{\psi} \frac{1}{\ell} (C\gamma^{ab})J_{ab}$
+>>[!note]- $ \psi \wedge \psi = \frac{1}{2} \, \overline{\psi} \wedge \gamma^a \psi \, P_a  +  \frac{1}{2 \ell } \, \overline{\psi} \wedge \gamma^{ab} \psi \, J_{ab}$
 >>
 >>$$
 >>2 \psi \wedge \psi  = \overline{\psi} \wedge \overline{\psi} \{Q, Q \}
@@ -565,9 +575,12 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >>avec $\{Q, Q \} = (C\gamma^a)P_a + \frac{1}{\ell} (C\gamma^{ab})J_{ab}$, il vient que 
 >>
 >>$$
->>\overline{\psi} \wedge \overline{\psi} \{Q, Q \} = \overline{\psi} \wedge \overline{\psi} (C\gamma^a)P_a  +  \overline{\psi} \wedge \overline{\psi} \frac{1}{\ell} (C\gamma^{ab})J_{ab}
+>>\overline{\psi} \wedge \overline{\psi} \{Q, Q \} = -\overline{\psi} \wedge \overline{\psi} (C\gamma^a)P_a  -  \overline{\psi} \wedge \overline{\psi} \frac{1}{\ell} (C\gamma^{ab})J_{ab}
 >>$$
->>
+>> Plus généralement 
+>>$$
+>>\psi \wedge \psi = \frac12 (\psi^\alpha \wedge \psi^\beta)(C\gamma^a)_{\alpha\beta} P_a + \frac12 \frac{1}{\ell} (\psi^\alpha \wedge \psi^\beta)(C\gamma^{ab})_{\alpha\beta} J_{ab}
+>>$$
 >
 >>[!note]- $2 \; \omega \wedge e = {\omega^{a}}_b \wedge e^b \, P_{a} $
 >>
@@ -584,35 +597,326 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >>\omega^{ab} \wedge e^{c}  [ J_{ab} , P_{c}] = 2\; {\omega^{a}}_b \wedge e^{b}  P_{a} 
 >>$$
 >
->>[!note]- $2 \; \omega \wedge \psi = \frac{1}{8} \omega^{ab} \wedge \overline{\psi} \gamma{ab} Q $
+>>[!note]- $2 \; \omega \wedge \psi = \frac{1}{4} \omega^{ab} \wedge \overline{\psi} \, \gamma^{ab}  Q $
 >>
 >>$$
->> 8 \; \omega \wedge \psi   = \omega^{ab} \wedge \overline{\psi} [ J_{ab}, Q]
+>> 4 \; \omega \wedge \psi   = \omega^{ab} \wedge \overline{\psi} [ J_{ab}, Q]
 >>$$
->>avec $[J_{ab},Q] = \frac{1}{2} \gamma{ab} Q $ , il vient que 
+>>avec $[J_{ab},Q] = \frac{1}{2} \gamma^{ab} Q $ , il vient que 
 >>
 >>$$
->>\omega^{ab} \wedge \overline{\psi} [ J_{ab}, Q] = \frac{1}{2} \omega^{ab} \wedge \overline{\psi} \gamma{ab} Q
+>>\omega^{ab} \wedge \overline{\psi} [ J_{ab}, Q] = \frac{1}{2} \omega^{ab} \wedge \overline{\psi} \, \gamma^{ab} Q
 >>$$
 >
->>[!note]- $2 \; e \wedge \psi = 0 $
+>>[!note]- $2 \; e \wedge \psi = \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a \,  Q  $
 >>
 >>$$
->> 4 \; e \wedge \psi   = e^{a} \wedge \overline{\psi} [ P_{a}, Q]
+>> 2 \; e \wedge \psi   = e^{a} \wedge \overline{\psi} [ P_{a}, Q]
 >>$$
->>avec $[ P_{a}, Q] = 0 $ , il vient que 
+>>avec $[ P_{a}, Q] =  \frac{1}{2\ell} \, \gamma_a \,  Q $ , il vient que 
 >>
 >>$$
->>e^{a} \wedge \overline{\psi} [ P_{a}, Q] = 0
+>>e^{a} \wedge \overline{\psi} [ P_{a}, Q] = \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a \,  Q 
 >>$$
-
+>
+>Donc 
+>$$
+>(\omega + e + \psi)\wedge(\omega + e + \psi) = \frac{1}{2} \left (  {\omega^{a}}_c \wedge \omega^{ab} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi   \right ) \, J_{ab} + \left ( {\omega^{a}}_b \wedge e^b - \frac{1}{2} \, \overline{\psi} \wedge \gamma^a \psi  \right )  P_{a}  + \left ( \frac{1}{4} \omega^{ab} \wedge \overline{\psi} \, \gamma^{ab} +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  \right)  Q
+>$$
+>
+>
 
 </details>
+
+<details class="affirmation">
+  <summary>
+    Définition rigoureuse de  — <span class="math">\( D \)</span>    
+  </summary>
+
+>[!note]+ Définition rigoureuse de $D$   
+>
+>$$
+>D = d + \omega
+>$$
+>mais $\omega$ agit dans **une représentation donnée**
+>
+>>[!example]- Sur un tenseur $D\omega^{ab} = d\omega^{ab} + \omega^a{}_c \wedge \omega^{cb}$
+>
+>>[!example]- Sur un vecteur $De^a = de^a + \omega^a{}_b \wedge e^b$
+>
+>>[!example]- Sur un spineur $D\psi = d\psi + \frac14 \omega^{ab} \wedge \gamma_{ab} \psi$
+>>
+>>$$
+>>D\bar\psi = d\bar\psi - \frac14 \bar\psi \wedge \omega^{ab} \gamma_{ab}
+>>$$
+>
+</details>
+
+<details class="calculation">
+  <summary>
+    Décomposition de  — <span class="math">\( d \mathcal A + \mathcal A \wedge \mathcal A = \frac{1}{2} R^{ab} J_{ab} +T^a P_a + \overline{\rho} Q   \)</span>    
+  </summary>
+
+>[!note]+  $d \mathcal A + \mathcal A \wedge \mathcal A = \frac{1}{2} R^{ab} J_{ab} +T^a P_a + \overline{\rho} Q $   
+>
+>$$
+>d \mathcal A = \frac12 d\omega^{ab} J_{ab} + de^a P_a + d\overline\psi Q 
+>$$
+>et 
+>$$
+>\mathcal A \wedge \mathcal A = \frac{1}{2} \left (  {\omega^{a}}_c \wedge \omega^{ab} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi   \right ) \, J_{ab} + \left ( {\omega^{a}}_b \wedge e^b - \frac{1}{2} \, \overline{\psi} \wedge \gamma^a \psi  \right )  P_{a}  + \left ( \frac{1}{4} \omega^{ab} \wedge \overline{\psi} \, \gamma^{ab} +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  \right)  Q
+>$$
+>donc avec la desfinirion de $D$, il vient que 
+>$$
+>d \mathcal A + \mathcal A \wedge \mathcal A = \frac{1}{2} R^{ab} J_{ab} +T^a P_a + \overline{\rho} Q 
+>$$
+>avec 
+>$$
+>\begin{aligned} R^{ab} &= D\omega^{ab} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi =  d\omega^{ab} + \omega^a{}_c \wedge \omega^{cb} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi \\ T^a &= De^a - \frac12 \bar\psi \wedge \gamma^a \psi = de^a + \omega^a{}_b \wedge e^b - \frac12 \bar\psi \wedge \gamma^a \psi \\ \rho &= D\psi  +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  = d\psi + \frac14 \omega^{ab} \wedge \gamma_{ab} \psi +  \frac{1}{2\ell} \,  e^{a} \wedge {\psi} \, \gamma_a  \end{aligned}
+>$$
+>
+>| terme | origine |
+>| --- | --- |
+>|  $R$  | algèbre de Lorentz |
+>|  $T$  | translation + SUSY |
+>|  $\rho$  | transport spinoriel |
+>
+</details>
+
+<details class="recal">
+  <summary>
+    Vers la théorie-M   
+  </summary>
+
+
+
+
+
+
+| théorie | connexion | courbure | équation |
+| --- | --- | --- | --- |
+| EM |  $A$  |  $F$  |  $dF=0,\ d*F=J$  |
+| YM |  $A$  |  $F$  |  $DF=0,\ D*F=J$  |
+| Gravité |  $(e,\omega)$  |  $(T,R)$  |  $DR=0,\ D*R=T$  |
+
+| théorie | groupe |
+| --- | --- |
+| EM |  $U(1)$  |
+| YM |  $SU(N)$  |
+| Gravité |  $SO(1,3)$  |
+| SUGRA | Super-Poincaré |
+
+🔹 Fibré principal
+
+
+$$
+P(M, G)
+$$
+
+avec :
+
+$$
+G = SO(1,3) \quad \text{ou Super-Poincaré}
+$$
+
+
+🔹 Connexion
+
+
+$$
+\omega \in \Omega^1(P, \mathfrak g)
+$$
+
+
+
+🔹 Courbure
+
+
+$$
+\boxed{ F = d\omega + \frac{1}{2}[\omega,\omega] }
+$$
+
+
+
+🔥 Identification
+
+
+| théorie | groupe |
+| --- | --- |
+| EM |  $U(1)$  |
+| YM |  $SU(N)$  |
+| Gravité |  $SO(1,3)$  |
+| SUGRA | Super-Poincaré |
+
+
+
+5) 🔷 Passage à 10D : supercordes
+
+
+
+
+🔹 Pourquoi 10D ?
+
+
+annulation des anomalies :
+
+$$
+D=10
+$$
+
+
+
+🔹 Types
+
+
+| théorie | groupe |
+| --- | --- |
+| Type I | SO(32) |
+| IIA | non-chirale |
+| IIB | chirale |
+| hétérotique |  $E_8 \times E_8$  |
+
+
+
+🔹 Champs
+
+
+*   métrique  $g$ 
+*   2-forme  $B$ 
+*   dilaton  $\phi$ 
+
+
+
+🔹 Courbure généralisée
+
+
+$$
+H = dB + \text{corrections}
+$$
+
+
+
+6) 🔷 Théorie M (11D)
+
+
+
+🔹 Supergravité 11D
+
+
+champ fondamental :
+
+$$
+\boxed{ (g_{\mu\nu}, \psi_\mu, C_{\mu\nu\rho}) }
+$$
+
+
+
+🔹 3-forme
+
+
+$$
+\boxed{ G_4 = dC_3 }
+$$
+
+
+
+🔹 Action
+
+
+$$
+S = \int d^{11}x \sqrt{-g} R - \frac{1}{2} |G_4|^2 - C_3 \wedge G_4 \wedge G_4
+$$
+
+
+
+🔥 Structure profonde
+
+
+| objet | rôle |
+| --- | --- |
+|  $C_3$  | champ de jauge généralisé |
+|  $G_4$  | courbure |
+| branes | sources |
+
+
+
+7) 🔷 Hiérarchie complète
+
+
+
+
+🔥 Vue unifiée
+
+
+$$
+\boxed{ \begin{aligned} \text{EM} &: A \\ \text{YM} &: A \\ \text{GR} &: (e,\omega) \\ \text{SUGRA} &: (e,\omega,\psi) \\ \text{M} &: (g,\psi,C_3) \end{aligned} }
+$$
+
+
+
+8) 🔷 Interprétation géométrique ultime
+
+
+
+
+🔹 Tout est une connexion
+
+
+$$
+\boxed{ \text{Physique} = \text{géométrie de fibrés} }
+$$
+
+
+
+🔹 Courbures généralisées
+
+
+$$
+F,\quad R,\quad G_4
+$$
+
+
+
+🔹 Identités
+
+
+$$
+DF=0,\quad DR=0,\quad dG_4=0
+$$
+
+
+9) 🔷 Intuition finale
+
+🔥 supersymétrie
+
+
+$$
+\boxed{ \text{bosons} \leftrightarrow \text{fermions} }
+$$
+
+
+
+🔥 supergravité
+
+
+$$
+\boxed{ \text{gravité + SUSY locale} }
+$$
+
+
+
+🔥 théorie M
+
+
+$$
+\boxed{ \text{unification géométrique ultime (11D)} }
+$$
 
 $$
 (\omega + e + \psi)\wedge(\omega + e + \psi)
 $$
 
+</details>
 
 - **Courbure de Lorentz** $R^{ab}$ (2-forme) :
 $$
