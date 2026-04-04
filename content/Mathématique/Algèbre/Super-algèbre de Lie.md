@@ -33,10 +33,10 @@ $$
 $$
 où les indices se lisent [modulo](https://fr.wikipedia.org/wiki/Arithm%C3%A9tique_modulaire "Arithmétique modulaire") 2, c'est-à-dire qu'ils sont considérés comme des éléments de **$\mathbb Z_2$**.
 
-> [!info]- **super-anneau**,  **$\mathbb Z_2$-gradué**
+> [!info]- super-anneau,  $\mathbb Z_2$-gradué
 >Un **super-anneau**, ou [anneau](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_gradu%C3%A9e "Algèbre graduée") **$\mathbb Z_2$-gradué** , est une [super-algèbre](https://fr.wikipedia.org/wiki/Superalg%C3%A8bre "Superalgèbre") sur l'[anneau](https://fr.wikipedia.org/wiki/Anneau_\(math%C3%A9matiques\) "Anneau (mathématiques)")  des [entiers](https://fr.wikipedia.org/wiki/Entier_relatif "Entier relatif") **$\mathbb Z$** .
 
->[!tip]-  **parité / degrès de Grassmann** - $\vert \bullet \vert \, \colon \, \mathcal A_i \ni x \mapsto i \in \mathbb Z_2$ 
+>[!tip]-  parité / degrès de Grassmann - $\quad \vert \bullet \vert \, \colon \, \mathcal A_i \ni x \mapsto i \in \mathbb Z_2$ 
 >On définit l'opération ${\displaystyle \vert \bullet \vert :{\mathcal {A}}_{0}\cup {\mathcal {A}}_{1}\to \{0,1\}}]$ tel que ${\displaystyle |x|\mapsto {\begin{cases}0\quad {\text{si}}\quad x\in {\mathcal {A}}_{0}\\1\quad {\text{si}}\quad x\in {\mathcal {A}}_{1}\end{cases}}}$ pour noter le degré d'un élément homogène.
 >$$ 
 >\forall x \in \mathcal A_i \, \colon \,  \vert x \vert = i \, , \,  i \in \mathbb Z_2
