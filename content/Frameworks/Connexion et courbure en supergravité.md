@@ -141,9 +141,9 @@ $$
 Nous partons de la **connexion de super-Poincaré**, notée 
 
 $$
-\mathcal A = e^a P_a + \tfrac12\,\omega^{ab}J_{ab} + \bar\psi Q,
+\mathcal A =\tfrac12\,\omega^{ab}J_{ab} + e^a P_a +  \bar\psi Q,
 $$
-où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la connexion de spin (jauge de Lorentz) et $\psi$ le gravitino (jauge de supersymétrie). Cette connexion de jauge unifiée prend ses valeurs dans l’algèbre de super-Poincaré $\mathfrak{g}$. 
+où  $\omega^{ab}$ la connexion de spin (jauge de Lorentz) , $e^a$ est le vielbein (jauge des translations locales) et $\psi$ le gravitino (jauge de supersymétrie). Cette connexion de jauge unifiée prend ses valeurs dans l’algèbre de super-Poincaré $\mathfrak{g}$. 
 
 
 <details class="affirmation">
@@ -220,10 +220,10 @@ où $e^a$ est le vielbein (jauge des translations locales), $\omega^{ab}$ la con
 
 <details class="affirmation">
   <summary>
-    Superalgèbre Poincaré SUGRA (AdS ( \(\mathfrak{osp}(1|4)\))
+    Superalgèbre Poincaré SUGRA ~ (AdS ( \(\mathfrak{osp}(1|4)\)))
   </summary> 
 
-> [!info]+  Superalgèbre Poincaré SUGRA ) (AdS ( $\mathfrak{osp}(1|4)$ )
+> [!info]+  Superalgèbre Poincaré SUGRA ~ (AdS ( $\mathfrak{osp}(1|4)$ ))
 >$$
 >\begin{aligned} 
 >[J_{ab},J_{cd}] &= \eta_{bc} J_{ad} - \eta_{ac} J_{bd} - \eta_{bd} J_{ac} + \eta_{ad} J_{bc} \\ 
@@ -429,6 +429,19 @@ $$
 >>$$
 >>
 >
+
+</details>
+
+<details class="affirmation">
+  <summary>
+    Wedge — <span class="math">\( \mathcal A \wedge \mathcal A \)</span>  : règle exacte   
+  </summary>
+
+>
+>
+>
+>
+
 </details>
 
 <details class="affirmation">
@@ -621,7 +634,7 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >
 >Donc 
 >$$
->(\omega + e + \psi)\wedge(\omega + e + \psi) = \frac{1}{2} \left (  {\omega^{a}}_c \wedge \omega^{ab} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi   \right ) \, J_{ab} + \left ( {\omega^{a}}_b \wedge e^b - \frac{1}{2} \, \overline{\psi} \wedge \gamma^a \psi  \right )  P_{a}  + \left ( \frac{1}{4} \omega^{ab} \wedge \overline{\psi} \, \gamma^{ab} +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  \right)  Q
+>(\omega + e + \psi)\wedge(\omega + e + \psi) = \frac{1}{2} \left (  {\omega^{a}}_c \wedge \omega^{ab} + \frac{1}{\ell^2} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi   \right ) \, J_{ab} + \left ( {\omega^{a}}_b \wedge e^b - \frac{1}{2} \, \overline{\psi} \wedge \gamma^a \psi  \right )  P_{a}  + \left ( \frac{1}{4} \omega^{ab} \wedge \overline{\psi} \, \gamma^{ab} +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  \right)  Q
 >$$
 >
 >
@@ -650,6 +663,7 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >>D\bar\psi = d\bar\psi - \frac14 \bar\psi \wedge \omega^{ab} \gamma_{ab}
 >>$$
 >
+
 </details>
 
 <details class="calculation">
@@ -664,7 +678,7 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >$$
 >et 
 >$$
->\mathcal A \wedge \mathcal A = \frac{1}{2} \left (  {\omega^{a}}_c \wedge \omega^{ab} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi   \right ) \, J_{ab} + \left ( {\omega^{a}}_b \wedge e^b - \frac{1}{2} \, \overline{\psi} \wedge \gamma^a \psi  \right )  P_{a}  + \left ( \frac{1}{4} \omega^{ab} \wedge \overline{\psi} \, \gamma^{ab} +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  \right)  Q
+>\mathcal A \wedge \mathcal A = \frac{1}{2} \left (  {\omega^{a}}_c \wedge \omega^{ab} + \frac{1}{\ell^2} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi   \right ) \, J_{ab} + \left ( {\omega^{a}}_b \wedge e^b - \frac{1}{2} \, \overline{\psi} \wedge \gamma^a \psi  \right )  P_{a}  + \left ( \frac{1}{4} \omega^{ab} \wedge \overline{\psi} \, \gamma^{ab} +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  \right)  Q
 >$$
 >donc avec la desfinirion de $D$, il vient que 
 >$$
@@ -672,7 +686,7 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >$$
 >avec 
 >$$
->\begin{aligned} R^{ab} &= D\omega^{ab} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi =  d\omega^{ab} + \omega^a{}_c \wedge \omega^{cb} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi \\ T^a &= De^a - \frac12 \bar\psi \wedge \gamma^a \psi = de^a + \omega^a{}_b \wedge e^b - \frac12 \bar\psi \wedge \gamma^a \psi \\ \rho &= D\psi  +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  = d\psi + \frac14 \omega^{ab} \wedge \gamma_{ab} \psi +  \frac{1}{2\ell} \,  e^{a} \wedge {\psi} \, \gamma_a  \end{aligned}
+>\begin{aligned} R^{ab} &= D\omega^{ab} + \frac{1}{\ell} e^{a} \wedge e^{b}  -  \frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi =  \underbrace{\overbrace{d\omega^{ab} + \omega^a{}_c \wedge \omega^{cb}}^{D\omega^{ab}}}_{D\omega^{ab} \text{ : Lorentz pur}} + \underbrace{\frac{1}{\ell^2} e^{a} \wedge e^{b}}_{\text{cosmo}}  -  \underbrace{\frac{1}{\ell} \overline{\psi} \wedge  \gamma^{ab} \psi}_{\text{fermion}} \\ T^a &= De^a - \frac12 \bar\psi \wedge \gamma^a \psi = \overbrace{de^a + \omega^a{}_b \wedge e^b}^{De^a} - \frac12 \bar\psi \wedge \gamma^a \psi \\ \rho &= D\psi  +  \frac{1}{2\ell} \,  e^{a} \wedge \overline{\psi} \, \gamma_a  = \overbrace{d\psi + \frac14 \omega^{ab} \wedge \gamma_{ab} \psi}^{D\psi} +  \frac{1}{2\ell} \,  e^{a} \wedge {\psi} \, \gamma_a  \end{aligned}
 >$$
 >
 >| terme | origine |
@@ -681,16 +695,19 @@ En développant les crochets de super-algèbre on obtient les composantes classi
 >|  $T$  | translation + SUSY |
 >|  $\rho$  | transport spinoriel |
 >
+>
+>>[!note]- notation abusive  $\mathcal F = R + T +  \rho $ 
+>>
+>>$$
+>>\begin{aligned} R \equiv \frac{1}2 R^{ab}J_{ab}  &, \; R \doteq \underbrace{\overbrace{d\omega + \omega \wedge \omega}^{D\omega}}_{D\omega \text{ : Lorentz pur}} + \underbrace{ e \wedge e }_{\text{cosmo}}  + \underbrace{ \left. \psi \wedge \psi \right \vert_{J_{ab}} }_{\text{fermion}} \\ T \equiv T^a P_a  &, \; T\doteq  \overbrace{de +2 \,  \omega \wedge e}^{De} + \left . \psi \wedge  \psi \right \vert_{P_{a}} \\ \rho \equiv \bar \rho Q  &, \;  \rho   = \overbrace{d\psi + 2 \,  \omega \wedge  \psi}^{D \psi}  +    2 \, e \wedge \psi  \end{aligned}
+>>$$
+
 </details>
 
 <details class="recal">
   <summary>
     Vers la théorie-M   
   </summary>
-
-
-
-
 
 
 | théorie | connexion | courbure | équation |
@@ -918,6 +935,57 @@ $$
 
 </details>
 
+                        ┌───────────────┐
+                        │      X        │
+                        │ bosonique     │
+                        └───────────────┘
+                               │
+                               ▼
+                    Puissances : X, X², X³, ...
+                    [X, X^n\} = 0 pour tout n
+                               │
+                               ▼
+                         Commute toujours
+
+─────────────────────────────────────────────────────────────
+
+                        ┌───────────────┐
+                        │      X        │
+                        │ fermionique   │
+                        │ général       │
+                        └───────────────┘
+                               │
+                               ▼
+                    Puissances : X, X², X³, X⁴, ...
+                    [X, X^1\} = 2 X²
+                    [X, X^2\} = X X² - X² X
+                    [X, X^3\} = X X³ + X³ X
+                    [X, X^4\} = X X⁴ - X⁴ X
+                               │
+                               ▼
+                  Ne simplifie pas naïvement ± 2 X^{n+1}
+                  Dépend du produit exact (super-algèbre)
+
+─────────────────────────────────────────────────────────────
+
+                        ┌───────────────┐
+                        │      X        │
+                        │ fermionique   │
+                        │ nilpotent     │
+                        │ (X² = 0)     │
+                        └───────────────┘
+                               │
+                               ▼
+                    Puissances : X, 0, 0, 0, ...
+                    [X, X^1\} = 2 X² = 0
+                    [X, X^2\} = 0
+                    [X, X^3\} = 0
+                    [X, X^n≥2\} = 0
+                               │
+                               ▼
+                      Tout super-commutateur nul
+                      (très pratique en supersymétrie)
+
 - **Courbure de Lorentz** $R^{ab}$ (2-forme) :
 $$
 R^{ab} \;=\; d\omega^{ab} + \omega^a{}_c\wedge \omega^{cb}.
@@ -937,7 +1005,7 @@ où $D\psi$ est la dérivée covariante spinorielle.
 
 On peut écrire globalement :
 $$
-\boxed{\mathcal F \;=\; T^aP_a \;+\; \tfrac12\,R^{ab}J_{ab} \;+\; \bar\rho\,Q},
+\boxed{\mathcal F \;=\; \tfrac12\,R^{ab}J_{ab} \;+\; T^aP_a \;+\;  \bar\rho\,Q},
 $$
 ce qui regroupe torsion, courbure de spin et super-courbure du gravitino. 
 

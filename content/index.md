@@ -8,4 +8,4 @@ Here lies my digital library of my thoughts.
 
 <!-- Most of the content consists of notes I took for the International Baccalaureate. The classes here consists of [[Math HL]], [[Physics HL]], [[Economics HL]], [[Chemistry SL]], [[English SL]], [[Physique]], [[Chimie]], [[Aggregation Physique-Chimie]] and [[Quartz 4  Introduction]].  -->
 
-[[Mathematique]], [[Physique]], [[Chimie]], [[Théories]] , [[Frameworks]], [[Aggregation Physique-Chimie]] and [[Quartz 4  Introduction]].
+[[Mathématique]], [[Physique]], [[Chimie]], [[Théories]] , [[Frameworks]], [[Aggregation Physique-Chimie]] and [[Quartz 4  Introduction]].

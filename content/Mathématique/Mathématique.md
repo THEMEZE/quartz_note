@@ -14,3 +14,7 @@ tags:
 [[Connexions]]
 
 # [[Frameworks]]
+
+# [[Algèbre]]
+[[Algèbre linéaire]]
+[[Idéal]]
