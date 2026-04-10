@@ -121,6 +121,7 @@ title: Connexion et courbure en supergravité
     svg: { fontCache: "global" },
   };
 </script>
+
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
 
@@ -145,6 +146,10 @@ $$
 $$
 où  $\omega^{ab}$ la connexion de spin (jauge de Lorentz) , $e^a$ est le vielbein (jauge des translations locales) et $\psi$ le gravitino (jauge de supersymétrie). Cette connexion de jauge unifiée prend ses valeurs dans l’algèbre de super-Poincaré $\mathfrak{g}$. 
 
+(voir 
+[[Algèbre totale des formes différentielles à valeurs dans une super-algèbre de Lie]]
+[[Forme-différentielle]]
+[[Super-algèbre de Lie]])
 
 <details class="affirmation">
 
@@ -156,7 +161,7 @@ où  $\omega^{ab}$ la connexion de spin (jauge de Lorentz) , $e^a$ est le vielbe
 
 >[!info]+ 👉 l’écriture
 >$$
->A = \omega + e + \psi
+>\mathcal A = \omega + e + \psi
 >$$
 >est **un abus de notation** pour alléger :
 >*    $\omega \equiv \frac{1}{2}\omega^{ab} J_{ab}$ 
@@ -933,7 +938,7 @@ $$
 (\omega + e + \psi)\wedge(\omega + e + \psi)
 $$
 
-</details>
+
 
                         ┌───────────────┐
                         │      X        │
@@ -985,6 +990,8 @@ $$
                                ▼
                       Tout super-commutateur nul
                       (très pratique en supersymétrie)
+
+</details>
 
 - **Courbure de Lorentz** $R^{ab}$ (2-forme) :
 $$

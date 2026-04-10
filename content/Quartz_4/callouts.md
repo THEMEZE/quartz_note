@@ -94,3 +94,7 @@ By default, custom callouts are handled by applying the `note` style. To make fa
 
 > [!quote]
 > Aliases: "quote", "cite"
+
+
+## [[ChatGPT-Bloc HTML Markdown]]
+

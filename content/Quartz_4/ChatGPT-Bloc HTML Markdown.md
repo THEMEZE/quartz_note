@@ -1,3 +1,8 @@
+---
+draft: true
+---
+
+
 # Bloc HTML Markdown
 
 **User:** Guillaume THEMEZE (guillaumethemeze@gmail.com)  

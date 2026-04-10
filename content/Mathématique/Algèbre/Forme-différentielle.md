@@ -56,7 +56,7 @@ Cette approche permet non seulement de donner une meilleure signification à la 
 La manipulation des formes différentielles en pratique exige un ensemble d'opérations élémentaires. Certaines sont purement algébriques et se définissent en réalité pour toutes applications multilinéaires alternées. D'autres sont propres à la [topologie différentielle](https://fr.wikipedia.org/wiki/Topologie_diff%C3%A9rentielle "Topologie différentielle") et aux formes différentielles.
 
 ### Opérations algébriques
-
+<a id="opérations-algébrique"></a>
 Par définition, l'ensemble des formes différentielles (réelles) de degré _k_ sur une variété différentielle _M_ forme un module ${\displaystyle \Omega ^{k}(M)}$ sur C∞(_M_). En particulier, les formes différentielles de degré _k_ s'additionnent ou peuvent être multipliées par des fonctions réelles :
 $$
 {\displaystyle (\alpha +\beta )_{x}(v_{1},\dots ,v_{k})=\alpha _{x}(v_{1},\dots ,v_{k})+\beta _{x}(v_{1},\dots ,v_{k})} ;
