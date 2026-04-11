@@ -97,11 +97,53 @@ Comme nous le verrons au fur et à mesure, l’associativité du produit extéri
 
 Le produit extérieur n’est pas une loi de composition interne. Pour y remédier il suffit de rassembler tous les $\Lambda^p V^\ast$.
 
+> [!note]- Définition (Algèbre extérieure) 
+> On note 
+> $$
+> \Lambda^\bullet V^\ast \doteq \bigoplus_{p=0}^m \Lambda^p V^\ast.
+> $$
+>  Alors le produit extérieur s’étend par linéarité en une loi de composition interne dans $\Lambda^\bullet V^\ast$ . On obtient **l’algèbre extérieure** $(\Lambda^\bullet V^\ast , +, \wedge)$.
+
+### Le produit intérieur
+
+>[!note]- Définition (Produit intérieur)
+>Soit $V$ un espace vectoriel sur $\mathbb R$ et $p \in \mathbb  N^∗$ . Pour toute p-forme $\alpha \in \Lambda^p V^\ast$  et pour tout vecteur $\xi \in V$ , on définit le **produit intérieur** de $\alpha$ par $\xi$ comme étant la (p − 1)-forme notée $\iota_\xi \alpha$ ou $\xi \, \lrcorner \,   \alpha \in \Lambda^{p−1}V^\ast$ définie par 
+>$$
+>\forall v_2 , \cdots , v_p \in V \, \colon \, \iota_\xi \alpha (v_2 , \cdots , v_p ) = \alpha ( \xi , v_2 , \cdots ,v_p ).
+>$$
+>Si $p = 0$ et si $\alpha \in \Lambda^0 V^\ast = \mathbb R $ , on convient de poser $\iota_\xi \alpha = 0$. Alors l’application 
+>$$
+>\begin{array}{rcrcl}
+>\lrcorner & \colon & V \times \Lambda^p V^\ast & \longrightarrow & \Lambda^{p-1} V^\ast \\
+>&& (\xi , \alpha) & \longmapsto & \iota_\xi \alpha
+>\end{array}
+>$$
+>
+> est bilinéaire. On peut d’ailleurs l’étendre de façon unique en une application bilinaire de $V \times \Lambda^\bullet V^\ast$ vers $\Lambda^\bullet V^\ast$ . Le produit intérieur satisfait en outre les propriétés suivantes. 
+> 
+
+> [!info]- Proposition
+> $\forall \xi , \eta \in V \, \colon \,  \forall \alpha \in \Lambda^p V^\ast\, \colon \, $ 
+> $$
+> \iota_\xi \iota_\eta \alpha + \iota_\eta \iota_\xi \alpha = 0,
+> $$
+> donc en particulier 
+> $$
+> \iota_\eta \iota_\eta \alpha = 0.
+> $$
+> 
+
+> [!info]- Lemme (Le produit intérieur satisfait la règle de Leibniz graduée :)
+> $$
+> \forall \xi \in V \colon \forall \alpha \in \Lambda^p V^\ast \colon \forall \beta \in \Lambda^q \, \colon \, \iota_\xi(\alpha \wedge \beta ) = (\iota_\xi \alpha ) \wedge \beta + (-1)^p \alpha \wedge ( \iota_\xi \beta)
+> $$ 
+> L’appellation **« règle de Leibniz graduée »** vient de l’analogie de cette dernière avec la règle de Leibniz pour la dérivation du produit de deux fonctions. Il s’avère qu’il est extrêmement utile de toujours garder cette analogie en tête et nous verrons au prochain paragraphe que, pour Elie Cartan, le produit intérieur n’était pas autre chose qu’une dérivation (graduée).
+
 ## Formes différentielles et champs de vecteur sur un ouvert de $\mathbb R^m$
 <a id="formes-diff"></a>
 ### Définitions
 
-> [!note]- Définition ($\Omega^p (U)$ : Espace vectoriel des p-formes différentielles sur un ouvert de $\mathbb R^m$ et $\Omega^\bullet (U) \equiv \oplus_{p = 0}^m \Omega^p(U)$)
+> [!note]- Définition ($\Omega^p (U)$ : Espace vectoriel des $p$-formes différentielles sur un ouvert de $\mathbb R^m$ et $\Omega^\bullet (U) \equiv \oplus_{p = 0}^m \Omega^p(U)$)
 > Soit $U$ un ouvert de $\mathbb R^m$, $p \in \mathbb N$. Une p-forme différentielle $\alpha$ sur $U$ est une application régulière 
 > $$
 > \alpha \, \colon \,  U \longrightarrow \Lambda^p (\mathbb R^m)^\ast

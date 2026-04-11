@@ -61,7 +61,7 @@ tags:
 
 >[!tip]- Style Bourbaki / catégorie ($(G,\ast,e,(\cdot)^{-1})$)
 >
->Si tu veux, on peux te reformuler ça en version “algèbre abstraite propre” (style Bourbaki / catégorie), ou te montrer comment ça s’interprète en termes de monoïdes et foncteurs.
+>Oon peux reformuler en version “algèbre abstraite propre” (style Bourbaki / catégorie), ou montrer comment ça s’interprète en termes de monoïdes et foncteurs.
 >
 >Passons à une formulation propre, de niveau **algèbre structurale / catégorique**.
 >
@@ -240,6 +240,9 @@ tags:
 >>
 >
 
+>[!warning]- Notation Abusive. On dit souvent que $G$ est un groupe au lien de préciser  $(G , \ast )$, sous entendant que "l'ensemble $G$ muni d'un lois interne notée "$\ast$" est un groupe"  
+> 
+
 ## Anneaux
 
 ### Définitions
@@ -274,13 +277,66 @@ tags:
 >- $(\mathbb Z/8\mathbb Z , + , \cdot)$ est un *anneau non intègre* ($\dot{2}\cdot\dot{4}=\dot{0}$), dans lequel $\dot 2$ est *nilpotent d'indice $3$*.
 >- L'ensemble des matrices carrées $\mathcal M_n(\mathbb R)$, muni des opérations classiques d'addition et de multiplication des matrices, est un *anneau unitaire non intègre*.
 
-### [[Idéal]]
+>[!warning]- Notation Abusive. On dit souvent que $A$ est un anneau au lien de préciser  $(A , + ,  \cdot )$, sous entendant  que "l'ensemble $A$ muni de deux lois internes notées "$+$" et "$\cdot$ est un anneau"  
+> 
+>Exemple on va dire :
+>- $\mathbb Z$ est est un *anneau unitaire intègre*
+>- $\mathbb Z/8\mathbb Z$  est un *anneau non intègre*  ($\dot{2}\cdot\dot{4}=\dot{0}$), dans lequel $\dot 2$ est *nilpotent d'indice $3$*.
+### [[Idéal|Idéaux]]
 
->[!note]- Definition (Idéal "gauche"/ "droite" / "bilatère")
+>[!note]- Definitions (Idéal "gauche"/ "droite" / "bilatère")
 >Soit $I \subset A$. On dit que $(I,+,\cdot)$ est *idéal gauche* (resp. *droit*) de l'anneau $(A,+,\cdot)$ si 
 >- (i) $(I,+)$ est un *sous-groupe additif* de $(A,+)$.
->- (ii) $\forall (x , a) \in I \times A \, \colon \, a \cdot x \in I \; (\text{resp. } x \cdot a \in I)
+>- (ii) $\forall (x , a) \in I \times A \, \colon \, a \cdot x \in I \; (\text{resp. } x \cdot a \in I)$
 >
 >On dit que $(I,+,\cdot)$ est un *idéal* ou *idéa "bilatère"* s'il est *idéa "gauche"*  et *idéa "droite"*.
 
+>[!note]- Remarques
+>- Un *idéal* est un *sous-anneau*.
+>- La notion d'*idéal* est en quelque sorte l'*analogue* pour les *anneaux* de la notion de *sous-groupe distingué*. En revanche, la notion de *sous-anneau* est beaucoup *moins utilisée* que la notion de *sous-groupe*.
+>- Si l'*anneau* $(A,+,\cdot)$ est *commutatif* et si $x \in A$, l'ensemble $x \cdot A \equiv\{ x \cdot a , a \in A \}$ constitue un *idéal* $(x \in A , + , \cdot)$ de $(A,+,\cdot)$.
+>- Si $(A,+,\cdot)$ est un *anneau unitaire* et si $1\in I$ où $(I , + , \cdot)$ est un idéal de $(A , + , \cdot)$, la propriété *(ii)* d'un idéal entraîne que $I = A$. Si un $(I , + , \cdot)$ de $(A , + , \cdot)$ possède un élément inversible $x$ de $A$, alors $1 = x^{-1} \cdot x \in I$ d'après *(ii)* et donc $I=A$.
+>- Lorsque $(A, + , \cdot)$ est un anneau, $I\subset A$ vérifie *(i)* et vérifie seulement $a \cdot x  \in I$ ( resp.  $x \cdot a \in I$) pour tout $(x,a) \in I \times A$, on dit qie $I$ est un idéal à *gauche* (resp. à *droite*) de $(A,+,\cdot)$. Si $(I,+,\cdot)$ est à la fois *ideal à gauche* et *idéal à droite* de $(A,+,\cdot)$, $(I,+,\cdot)$ est donc un *idéal* de $(A,+,\cdot)$ (on précise parfois en disant que $(I,+,\cdot)$ est un *idéal bilatère*).
+
+>[!note]- Proposition 
+>Un *intersection  d'idéaux* de $(A,+,\ast)$ est un *idéal* de $(A,+,\ast)$. Une *somme finie d'idéaux* de $(A,+,\ast)$ est un *idéal*  de $(A,+,\ast)$.
+
+>[!note]- Definitions (Idéal / Anneau principal)
+>Soit $(A,+,\ast)$ un anneau *commutatif*. Un idéal $(I,+,\ast)$ de $(A,+,\ast)$ est dit *principal* s'il existe $x \in A$ tel que $I = x \cdot A$. On note alors $I = (x)$.
+>L'anneau $(A,+,\ast)$ est dit *principal* s'il est *commutatif*, *unitaire*, *intègre* et si tous les idéaux de $(A,+,\ast)$ sont *principaux*.
+
+>[!example]-
+>Les anneaux $(\mathbb Z , + , \ast)$ et $(\mathbb R[X] , + , \cdot)$ sont *principaux*.
+
+>[!warning]- Notation Abusive. On dit souvent que $I$ est un idéal de l'anneau $A$ au lien de préciser  $(I , + ,  \cdot )$ est un idéal de  $(A , + ,  \cdot )$, sous entendant  que "l'ensemble $I$  muni de deux lois internes notées "$+$" et "$\cdot$ est un idéal de l'anneau $(A , + ,  \cdot )$".  
+> 
+
+# Corps, polynômes et fractions rationnelles
+
+## Corps, polynômes et arithmétiques dans $\mathbb K[X]$
+
+### Corps
+
+>[!note]- Definition (Corps $(\mathbb K , + ,  \cdot )$ )
+>Soit $\mathbb K$ un ensemble muni de deux lois internes notées "$+$" et "$\cdot$". On dit que $(\mathbb K,+,\cdot)$ est un *corps* si :
+>* (i) $(\mathbb K,+)$ est un *groupe abélien*,
+>* (ii) $(\mathbb K^\ast,\cdot)$ est un *groupe*,
+>* (iii) la loi "$\cdot$" est *distributive* par rapport à la loi "$+$".
+>
+
+>[!note]- Remarques
+>- Si la lois "$\cdot$" est *commutative*, on parle de *corps commutatif*.
+>- Il revient au même de dire qu'un corps est un anneau dans leuel tout élément non-nul est inversible
+>- Les corps les plus couramment rencontrés sont $\mathbb Q$, $\mathbb R$, $\mathbb C$ et $\mathbb Z/p\mathbb Z$ ($p$ premier)  muni de deux lois internes notées "$+$" et "$\cdot$".
+
+>[!note]- Definition (Sous-corps $(\mathbb K , + ,  \cdot )$ de $(\mathbb L , + ,  \cdot )$ )
+>Soit $(\mathbb L , + ,  \cdot )$ un corps et $\mathbb K \subset \mathbb L$. On dit que $(\mathbb K , + ,  \cdot )$ est un *sous-corps* de $(\mathbb L , + ,  \cdot )$ si la restriction à $\mathbb K$ des lois $+$ et $\cdot$ lui confère un structure de corps (on dit aussi que $(\mathbb L , + ,  \cdot )$) est un *sur-corps* ou une *extension* de $(\mathbb K , + ,  \cdot )$).
+
 >[!note]- Remarque
+>Si $(\mathbb K , + ,  \cdot )$ est un *sous-corps commutatif* de $(\mathbb L , + ,  \cdot )$, $\mathbb L$ est un $\mathbb K$-espace vectoriel.
+
+
+>[!warning]- Notation Abusive. On dit souvent que $\mathbb K$ est un corps au lien de préciser  $(\mathbb K , + ,  \cdot )$, sous entendant  que "l'ensemble $\mathbb K$ muni de deux lois internes notées "$+$" et "$\cdot$ est un corps"  
+> 
+>Exemple on va dire :
+>- $\mathbb Q$, $\mathbb R$, $\mathbb C$ et $\mathbb Z/p\mathbb Z$ ($p$ premier) sont des corps.
