@@ -436,7 +436,7 @@ $$
 >*    $\mathcal A$  = connexion de Berry
 >*    $\mathcal F$  = courbure
 >
->(cf [[Connexion et courbure en supergravité]] [[Calcul-differentiel-exterieur-geometrie]] [[Forme-différentielle]])
+>(cf [[Supergravité]] [[Calcul-differentiel-exterieur-geometrie]] [[Forme-différentielle]])
 >
 
 ### 3\. Dynamique hors équilibre

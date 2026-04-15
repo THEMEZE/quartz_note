@@ -2203,7 +2203,7 @@ ou $E^\bullet$ et $(E^\bullet)'$ peuvent etre différent algèbres graduée (mê
 >
 
 
-(cf [[Connexion et courbure en supergravité]] [[Théorie de jauge]] )
+(cf [[Supergravité]] [[Théorie de jauge]] )
 
 
 

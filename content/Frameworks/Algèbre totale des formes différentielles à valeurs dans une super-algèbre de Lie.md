@@ -20,7 +20,7 @@ Une **super-connexion** s’écrit :
 $$
 \mathcal A = \omega + e + \psi \in \Omega^1(U)\otimes \mathfrak g  
 $$
-(voir [[Connexion et courbure en supergravité]])
+(voir [[Supergravité]])
 # 2. Formes différentielles
 
 ## Définition

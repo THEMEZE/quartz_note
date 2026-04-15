@@ -1,5 +1,5 @@
 ---
-title: Connexion et courbure en supergravité
+title: Supergravité
 tags:
   - Science
 ---
