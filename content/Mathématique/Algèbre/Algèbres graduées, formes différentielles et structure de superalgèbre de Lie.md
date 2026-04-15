@@ -1891,7 +1891,7 @@ ou $E^\bullet$ et $(E^\bullet)'$ peuvent etre différent algèbres graduée (mê
 
 ## Courbure $\mathcal F$
 
->[!note]- $D = e^{-a}\circ d \circ e^{a} = d + e^{-a}\circ d(e^{a} )$ et $0 = D^2 = \mathrm{ad}_{\mathcal F}  \quad \text{avec} \quad \mathcal F = d(\mathcal A)  + \tfrac12 [\mathcal A,\mathcal A\}$
+>[!note]- $D^2 = \mathrm{ad}_{\mathcal F}  \quad \text{avec} \quad \mathcal F = d(\mathcal A)  + \tfrac12 [\mathcal A,\mathcal A\}$ et si $D = e^{-a}\circ d \circ e^{a} = d + e^{-a}\circ d(e^{a} )$ , $ D^2 = 0$
 >
 >On considère l’opérateur :
 >$$
@@ -2033,10 +2033,177 @@ ou $E^\bullet$ et $(E^\bullet)'$ peuvent etre différent algèbres graduée (mê
 >>D^2(\omega) = [d(\mathcal A) + \tfrac12 [ \mathcal A, \mathcal A\}, \omega\}
 >>$$
 >
+>>[!tip]- Recaputulatif des définitions
+>>$$
+>>\begin{aligned}
+>>D &= d + \mathrm{ad}_{\mathcal A}\\
+>>\mathcal F &= d(\mathcal A)  + \tfrac12 [\mathcal A,\mathcal A\}\\
+>>D(\omega) &= d(\omega) + [\mathcal A,\omega\}
+>>\end{aligned}
+>>$$
+>>
 >
+>
+>>[!tip]- Identité de Bianchi : $D( \mathcal F ) = 0$
+>>
+>>Calculons :
+>>$$
+>>D(\mathcal F = d(\mathcal F) + [\mathcal A,\mathcal F\})
+>>$$
+>>
+>>>[!note]- dériver $d ( \mathcal F ) =  \tfrac12 d[\mathcal A,\mathcal A\}$
+>>>
+>>>$$
+>>>\begin{aligned}
+>>>d( \mathcal F ) &= d(d((\mathcal  A) + \tfrac12 [\mathcal  A,\mathcal  A\})\\
+>>>&= d^2(\mathcal  A) + \tfrac12 d[\mathcal  A,\mathcal  A\}\\
+>>>&= 0 + \tfrac12 d[\mathcal  A,\mathcal  A\}\\
+>>>\end{aligned}
+>>>$$
+>>
+>>>[!note]- dérivation du crochet $d[\mathcal  A,\mathcal  A\} = [d(\mathcal A),\mathcal A\} - [\mathcal A,d(\mathcal A) \}$
+>>>
+>>> Leibniz
+>>>$$
+>>>d[\mathcal A,\mathcal A\} = [d(\mathcal A) ,\mathcal A\} + (-1)^{\vert d \vert \vert \mathcal A \bvert } [\mathcal A,d(\mathcal A) \}
+>>>$$
+>>>(dérivation graduée, $|\mathcal A|=\vert d \vert = 1 $ ) , 
+>>>Donc :
+>>>$$
+>>>d(\mathcal F ) = \tfrac12 \big( [d(\mathcal A) , \mathcal A\} - [\mathcal A,d( \mathcal A) \} \big)
+>>>$$
+>>
+>>
+>>>[!note]- ajouter $[\mathcal A,\mathcal F\} = [ \mathcal A,d (\mathcal A)\} + \tfrac12 [\mathcal A,[\mathcal A,\mathcal A\}\}$
+>>>
+>>>$$
+>>>[\mathcal A,\mathcal F\} = [ \mathcal A,d (\mathcal A)\} + \tfrac12 [\mathcal A,[\mathcal A,\mathcal A\}\}
+>>>$$
+>>>
+>>
+>>>[!note]- somme $D(\mathcal F) = \tfrac12 [d(\mathcal A),\mathcal A\} - \tfrac12 [\mathcal A,d(\mathcal A)\} + [\mathcal A,d(\mathcal A)\} + \tfrac12 [\mathcal A,[\mathcal A,\mathcal A\}\}$
+>>>
+>>
+>>>[!note]- simplification $D(\mathcal F) = \tfrac12 [d(\mathcal A),\mathcal A\} + \tfrac12 [\mathcal A,d(\mathcal A)\}  + \tfrac12 [\mathcal A,[\mathcal A,\mathcal A\}\}$
+>>>
+>>>$$
+>>>- \tfrac12 [\mathcal A,d(\mathcal A)\} + [\mathcal A,d(\mathcal A)\} = \tfrac12 [\mathcal A,d(\mathcal A)\}
+>>>$$
+>>>Donc 
+>>>$$
+>>>D(\mathcal F) = \tfrac12 [d(\mathcal A),\mathcal A\} + \tfrac12 [\mathcal A,d(\mathcal A)\}  + \tfrac12 [\mathcal A,[\mathcal A,\mathcal A\}\}
+>>>$$
+>>
+>>
+>>>[!note]- Jacobi graduée : $[\mathcal A,[\mathcal A,\mathcal A\}\} = [d(\mathcal A),\mathcal A\} + [\mathcal A,d(\mathcal A)\} = 0$
+>>>
+>>>On utilise :
+>>>$$
+>>>[\mathcal A,[\mathcal A,\mathcal A\}\} = 0
+>>>$$
+>>>👉 (Jacobi super, avec $\mathcal A$ impair)
+>>>Et :
+>>>$$
+>>>[d(\mathcal A),\mathcal A\} + [\mathcal A,d(\mathcal A)\} = 0
+>>>$$
+>>> (car antisymétrie graduée)
+>>
+>> ✅ Conclusion
+>>$$
+>>D(\mathcal F)  = 0
+>>$$
+>>
+>>>[!note]-Interprétation profonde
+>>>
+>>>👉 $D(\mathcal F)  = 0$ est une **identité géométrique universelle**
+>>>- indépendante des équations du mouvement
+>>>- purement structurelle
+>>
+>>>[!question]-Pourquoi $D(\mathcal F)  = 0$ en général ?
+>>>
+>>>$$
+>>>\mathcal F = d(\mathcal A)  + \tfrac12 [\mathcal A,\mathcal A\}
+>>>$$
+>>>- mesure la courbure
+>>>- obstruction à $D^2 =0$
+>>>
+>>>>[!note]- Cas particulier :
+>>>>$$
+>>>>\mathcal A = g^{-1} \circ d(g) \Rightarrow \mathcal F = 0
+>>>>$$
+>>>>👉 connexion **pure**
+>>>
+>>
+>>>[!note]- Lien avec Yang–Mills
+>>>
+>>>Équation de Yang–Mills :
+>>>$$
+>>>D^\mu \mathcal F_{\mu \nu } = 0
+>>>$$
+>>>👉 analogue de Maxwell :
+>>>$$
+>>>\partial^\mu \mathcal F_{\mu\nu} = 0
+>>>$$
+>>>
+>>>Structure complète :
+>>>| Type      | Équation               |
+>>>| --------- | ---------------------- |
+>>>| Bianchi   | $D\mathcal F = 0$              |
+>>>| Dynamique | $D^\mu \mathcal F_{\mu\nu} = 0$ |
+>>>
+>>> Vision physique
+>>>
+>>>- $D\mathcal F = 0$ : identité → pas d’information dynamique
+>>>- $D^\mu \mathcal F_{\mu\nu} = 0$ : équation du mouvement
+>>>
+>>>Analogie Maxwell
+>>>
+>>>$$
+>>>\begin{aligned}
+>>>d(\mathcal F) &= 0 \quad (\text{Bianchi})\\
+>>>d^\star ( \mathcal F ) &= 0 \quad (\text{dynamique})
+>>>\end{aligned}
+>>>$$
+>>
+>>Structure complète
+>>
+>>$$
+>>\begin{aligned}
+>>\mathcal F &= d(\mathcal A)  + \tfrac12 [\mathcal A,\mathcal A\}\\
+>>D &= d + \mathrm{ad}_{\mathcal A}\\
+>>D^2 &= \mathrm{ad}_{\mathcal F}\\
+>>D(\mathcal F) &= 0
+>>\end{aligned}
+>>$$
+>>
+>>>[!tip]- 🔥 Insight final
+>>>
+>>>$D(\mathcal F) = 0$ est une conséquence directe de :
+>>>
+>>>$$
+>>>D^2 = \mathrm{ad}_{\mathcal F}
+>>>$$
+>>>et de l’identité de Jacobi.
+>>>
+>>>
+>>>- ✔️ $\mathcal F=0$ ⇔ connexion pure
+>>>- ✔️ $\mathcal F\neq 0$ ⇔ champ de jauge réel
+>>>
+>>>👉 Toute la théorie de jauge tient dans :
+>>>$$
+>>>D^2 = \mathrm{ad}_{\mathcal F} \quad\text{et}\quad D(\mathcal F) = 0
+>>>$$
+>>>
+>>>Prochaine étape naturelle : dériver Yang–Mills à partir d’une action :
+>>>$$
+>>>S = \int \mathrm{Tr}(\mathcal F \wedge \star \mathcal F)
+>>>$$
+>>>(et là tu touches directement la physique des champs).
+>>
 >
 
 
+(cf [[Connexion et courbure en supergravité]] [[Théorie de jauge]] )
 
 
 
