@@ -5,7 +5,7 @@ tags:
 ---
 ## Définition
 
-Une **[Superal-gèbre de Lie](https://fr.wikipedia.org/wiki/Superalg%C3%A8bre_de_Lie)**
+Une **[Superal-gèbre de Lie](https://fr.wikipedia.org/wiki/Superalg%C3%A8bre_de_Lie)** (cd aussi **[ncatlab.org/]([https://fr.wikipedia.org/wiki/Superalg%C3%A8bre_de_Lie](https://ncatlab.org/nlab/show/super+Lie+algebra) 
 $$
 (\; \mathcal A \;,\; + \;,\; \cdot \; ,\; [\,\bullet \, , \, \bullet \, \} \, )
 $$
