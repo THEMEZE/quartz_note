@@ -5,9 +5,9 @@ tags:
 ---
 # 1. Arithmétique, Groupes et Anneaux 
 
-## Groupes
+## 2. Groupes
 
-### Généralité 
+### 1. Généralité 
 
 >[!note]- Definition (Groupe $(G , \ast)$ )
 >
@@ -243,9 +243,9 @@ tags:
 >[!warning]- Notation Abusive. On dit souvent que $G$ est un groupe au lien de préciser  $(G , \ast )$, sous entendant que "l'ensemble $G$ muni d'un lois interne notée "$\ast$" est un groupe"  
 > 
 
-## Anneaux
+## 3. Anneaux
 
-### Définitions
+### 1. Définitions
 
 >[!note]- Definition (Anneaux $(A , + ,  \cdot )$ )
 >Soit $A$ un ensemble muni de deux lois internes notées "$+$" et "$\cdot$". On dit que $(A,+,\cdot)$ est un *anneau* si :
@@ -282,7 +282,7 @@ tags:
 >Exemple on va dire :
 >- $\mathbb Z$ est est un *anneau unitaire intègre*
 >- $\mathbb Z/8\mathbb Z$  est un *anneau non intègre*  ($\dot{2}\cdot\dot{4}=\dot{0}$), dans lequel $\dot 2$ est *nilpotent d'indice $3$*.
-### [[Idéal|Idéaux]]
+### 2. [[Idéal|Idéaux]]
 
 >[!note]- Definitions (Idéal "gauche"/ "droite" / "bilatère")
 >Soit $I \subset A$. On dit que $(I,+,\cdot)$ est *idéal gauche* (resp. *droit*) de l'anneau $(A,+,\cdot)$ si 
@@ -313,9 +313,9 @@ tags:
 
 # 2. Corps, polynômes et fractions rationnelles
 
-## Corps, polynômes et arithmétiques dans $\mathbb K[X]$
+## 1. Corps, polynômes et arithmétiques dans $\mathbb K[X]$
 
-### Corps
+### 1. Corps
 
 >[!note]- Definition (Corps $(\mathbb K , + ,  \cdot )$ )
 >Soit $\mathbb K$ un ensemble muni de deux lois internes notées "$+$" et "$\cdot$". On dit que $(\mathbb K,+,\cdot)$ est un *corps* si :
@@ -348,7 +348,7 @@ tags:
 
 ### 4. Exercices
 
-#### Exercice 2.
+#### Exercice 2. (Déterminant d'exponentielle d'une matrice)
 
 >[!question]- a) Soit $n \in \mathbb N^\ast$ et $A \in \mathcal M_n ( \mathbb C)$. Montrer que $ \det(\exp (A)) = \exp( \text{tr} (A))$.
 >
@@ -425,7 +425,7 @@ tags:
 
 >[!tip]- Remarque.
 >On peut montrer qu'une matrice réelle est l'exponentielle d'une matrice réelle si et seulement si elle est le carré d'une matrice réelle inversible.
->- Toute matrice complexe inversible est l'exponentielle d'une matrice complexe ( voir l'exercice 4.4.4.5 )
+>- Toute matrice complexe inversible est l'exponentielle d'une matrice complexe ( voir l'[[Mathématique/Algèbre/Algèbre#Exercice 5. (Logarithme d'une matrice inversible)|Exercice 4.4.4.5. (Logarithme d'une matrice inversible)]] )
 
 ## 4. Sous-Espace caractéristiques - Réduction de Jordan
 
@@ -443,7 +443,7 @@ Cette section propose quelque études complémentaires très classiques, et souv
 
 Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien que n'étant pas des endomorphismes autoadjoints, peuvent se réduire de manière intéressante dans  une base orthonormale. Nous commençons par les isométries.
 
->[!info]- Proposition 1. Soit $E$ un espaace euclidien (rest. hermitien) et $u \in \mathcal L(E)$ une isométrie (resp. un endomorphisme unitaire). Si $F$ est un s.e.v de $E$ stable par $u$, alors $F^\perp$ est stable par $u$/
+>[!info]- Proposition 1. Soit $E$ un espaace euclidien (rest. hermitien) et $u \in \mathcal L(E)$ une isométrie (resp. un endomorphisme unitaire). Si $F$ est un s.e.v de $E$ stable par $u$, alors $F^\perp$ est stable par $u$.
 >
 >>[!success]+ Démonstration.
 >>
@@ -488,13 +488,17 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>
 >>On procède par récurrence sur $n = \dim E$. Pour $n = 1$, c'est évident. Suposons le résultat vrai jusqu'au rang $n-1$ et montrans le au rang $n$.  Nous traitons deux cas .
 >>
->>> *Premier cas*. L'isométrie $u$ admet au moins une valeur propre réelle $\varepsilon$. Soit $x$ un vecteur propre normé associé. Comme $\Vert u(x) \Vert = \Vert \varepsilon x \Vert = \vert \varepsilon \vert \Vert x \Vert$ et  $\Vert u(x) \Vert = \vert \Vert x \Vert$, on a $\vert \varepsilon \vert = 1$. De plus $\varepsilon \in \mathbb R$, on en déduit $\varepsilon \in \{ - 1 , + 1 \}$. Maintenant, comme $F = \text{Vect}(x)$ est stable par $u$, $F^\perp$ est stable par $u$ d'aprés la proposition 1. En appliquant l'hypothèse en récurrence à $u_{\vert F^\perp}$, on trouve une base orthonormale $B_0$ de $F^\perp$ dans laquelle la matrice de $u_{\vert F^\perp}$ à la forme $(\ast)$. En ajoutant $x$ à la base $B_0$, on obtient une base orthonormale $B$ de $E$ dans laquelle la matrice de $u$ a la forme $(\ast)$.
+>>> *Premier cas*. L'isométrie $u$ admet au moins une valeur propre réelle $\varepsilon$. Soit $x$ un vecteur propre normé associé. Comme $\Vert u(x) \Vert = \Vert \varepsilon x \Vert = \vert \varepsilon \vert \Vert x \Vert$ et  $\Vert u(x) \Vert = \vert \Vert x \Vert$, on a $\vert \varepsilon \vert = 1$. De plus $\varepsilon \in \mathbb R$, on en déduit $\varepsilon \in \{ - 1 , + 1 \}$. Maintenant, comme $F = \text{Vect}(x)$ est stable par $u$, $F^\perp$ est stable par $u$ d'après la [[Mathématique/Algèbre/Algèbre#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]] . En appliquant l'hypothèse en récurrence à $u_{\vert F^\perp}$, on trouve une base orthonormale $B_0$ de $F^\perp$ dans laquelle la matrice de $u_{\vert F^\perp}$ à la forme $(\ast)$. En ajoutant $x$ à la base $B_0$, on obtient une base orthonormale $B$ de $E$ dans laquelle la matrice de $u$ a la forme $(\ast)$.
 >>
->>>*Second cas*.  L'isométrie $u$ n'a aucune valeur propre réelle. On considère l'endomorphisme $v = u + u^\ast$. Comme $v$ est symétrique, $v$ admet une valeur propre réelle$\lambda$ associée à un vecteur propre $x$. On a $(u + u^\ast)(x) = \lambda x$ donc $u ( u + u^\ast )(x) = u^2 (x) + x  = \lambda u(x)$, d'où $u^2(x) = \lambda u(x) - x$ $(\ast \ast)$. Par ailleurs, la famille $(x , u(x))$ est libre puisque $u$ n'admet pas de valeur propre réelle. En posant $F = \text{Vect} ( x , u (x))$, on voit que $\dim F = 2$ et que $F$ est stable par $u$ (d'après $(\ast \ast)$). Soit $ N = {\scriptscriptstyle \left ( \begin{array}{cc}  a & c \\ b & d \end{array} \right )}$ la matrice de $u_{\vert F}$ dans une base orthonormale $B_0$ de $F$. Comme $u_{\vert F}$ est une isométrie, $N^\ast N = I_n = N N^\ast$. Parmi les équations issues de ces égalités, on trouve
+>>>*Second cas*.  L'isométrie $u$ n'a aucune valeur propre réelle. On considère l'endomorphisme $v = u + u^\ast$. Comme $v$ est symétrique, $v$ admet une valeur propre réelle$\lambda$ associée à un vecteur propre $x$. On a $(u + u^\ast)(x) = \lambda x$ donc $u ( u + u^\ast )(x) = u^2 (x) + x  = \lambda u(x)$, d'où 
+>>>$$
+>>>u^2(x) = \lambda u(x) - x. \tag{$\ast \ast$}
+>>>$$
+>>>Par ailleurs, la famille $(x , u(x))$ est libre puisque $u$ n'admet pas de valeur propre réelle. En posant $F = \text{Vect} ( x , u (x))$, on voit que $\dim F = 2$ et que $F$ est stable par $u$ (d'après $(\ast \ast)$). Soit $ N = {\scriptscriptstyle \left ( \begin{smallmatrix}  a & c \\ b & d \end{smallmatrix}  \right )}$ la matrice de $u_{\vert F}$ dans une base orthonormale $B_0$ de $F$. Comme $u_{\vert F}$ est une isométrie, $N^\ast N = I_n = N N^\ast$. Parmi les équations issues de ces égalités, on trouve
 >>>$$
 >>>a^2 + b^2 = a^2 + c^2 = 1 \quad \text{et} \quad ab + cd = 0. \tag{$\ast \ast \ast$}
 >>>$$
->>>La première assertion de $(\ast \ast \ast)$ entraîne $c = \pm b$. On ne peut pas avoir $c = b$ car $N$ serait symétrique ce qui est impossible vu que $u$ n'abmet pas de valeur propre réelle. Donc $c = -b \neq 0$, et d'après la deuxieme assertion de $(\ast \ast \ast)$ on en déduit $d = a$. Comme de plus $a^2 + b^2  =1 $ , il existe $\theta \in \mathbb R$ tel que $a = \cos \theta$ et $b = \sin \theta$ ( et $\theta \not\equiv 0 \; ( \text{mod } \pi)$ car $b \neq 0$). Finalement, la matrice $N$ est de la forme 
+>>>La première assertion de $(\ast \ast \ast)$ entraîne $c = \pm b$. On ne peut pas avoir $c = b$ car $N$ serait symétrique ce qui est impossible vu que $u$ n'abmet pas de valeur propre réelle. Donc $c = -b \neq 0$, et d'après la deuxième assertion de $(\ast \ast \ast)$ on en déduit $d = a$. Comme de plus $a^2 + b^2  =1 $ , il existe $\theta \in \mathbb R$ tel que $a = \cos \theta$ et $b = \sin \theta$ ( et $\theta \not\equiv 0 \; ( \text{mod } \pi)$ car $b \neq 0$). Finalement, la matrice $N$ est de la forme 
 >>>$$
 >>>R(\theta) = 
 >>>\left ( 
@@ -505,7 +509,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>>\right ), \quad 
 >>>\theta \in \mathbb R \backslash \pi \mathbb Z.
 >>>$$
->>>Maintenant, d'après la proposition 1 le s.e.v $F^\perp$ est stable par $u$, et $u_{\vert F^\perp}$ est une isométrie donc il existe d'après l'hypothèse de récurrence une base orthonormale $B_1$ de $F^\perp$ qui diagonalise  $u_{\vert F^\perp}$. La base $B$ obtenue en concaténant $B_0$ et $B_1$ est orthonormale et dans cette base, la matrice de $u$ a la forme voulue, d'où le théorème.
+>>>Maintenant, d'après la [[Mathématique/Algèbre/Algèbre#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]]  le s.e.v $F^\perp$ est stable par $u$, et $u_{\vert F^\perp}$ est une isométrie donc il existe d'après l'hypothèse de récurrence une base orthonormale $B_1$ de $F^\perp$ qui diagonalise  $u_{\vert F^\perp}$. La base $B$ obtenue en concaténant $B_0$ et $B_1$ est orthonormale et dans cette base, la matrice de $u$ a la forme voulue, d'où le théorème.
 
 >[!info]- Remarque 1.
 >
@@ -519,11 +523,34 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 
 #### Réduction des endomorphismes unitaires.
 
+>[!info]+ Théorème 2.
+>
+>Soit $E$ un espace hermitien et $u \in \mathcal (E)$ un endomorphisme unitaire. Alors il existe une base orthonormale qui diagonalise $u$, et toutes les valeurs propres de $u$ ont leur module égal à $1$.
+>
+>>[!success]- Démonstration.
+>>
+>>La preuve est plus simple que la précédente. Il est d'abord claire que toute valeur propre $\lambda$ de $u$ vérifie $\vert \lambda \vert = 1$, car si $u(x) = \lambda x$ avec $x \neq 0$, on a $\Vert x \Vert = \Vert u(x) \Vert = \vert \lambda \vert \Vert x \Vert$. On procède ensuite par récurrence sur $n = \dim E$. Le cas $n = 1$ est immédiat, et le passage du rang $n-1$ au rang $n$ se fait comme suit.
+>>
+>>Le corps de base $\mathbb C$ étant algébriquement clos, $u$ admet au moins une valeur propre complexe $\lambda$. Soit $x$ un vecteur propre associé, $\Vert x \Vert = 1$. La droite $F = \text{Vect}(x)$ est stable par $u$, donc d'après la [[Mathématique/Algèbre/Algèbre#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]], l'hyperplan $F^\perp$ est également stable une base orthonormale $B_0$ de $F^\perp$ qui diagonalise $u_{\vert F^\perp}$. En ajoutant $x$ à $B_0$, on obtient une base orthonormale de $E$ qui diagonalise $u$ et le théorème est prouvé.
 
+>[!info]+ Corolaire 1 (Version matricielle). Soit $U \in \mathcal M_n(\mathbb C)$ une matrice unitaire. Alors il existe matrice unitaire $P$ telle que 
+>$$
+>P^{-1} U P = P^\ast U P = 
+>\left (
+>\begin{array}{cccc}
+>e^{i \theta_1} & 0 &  \cdots  & 0 \\
+>0 & e^{i \theta_2}& \ddots  &  \vdots  \\
+>\vdots & \ddots & \ddots & 0  \\
+>0 & \cdots & 0 & e^{i \theta_n}
+>\end{array}
+>\right )
+>$$
+>où les $\theta_i$ sont des nombre réels.
 
+### 2. Endomorphismes normaux
 ### 5. Exercices 
 
-#### Exercice 5. (Exponentielle d'une matrace antisymétrique)
+#### Exercice 5. (Exponentielle d'une matrice antisymétrique)
 
 >[!question]- 1/ Soit $\theta \in \mathbb R$. Montrer l'égalité 
 >$$
@@ -546,9 +573,9 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>
 >>>[!success]+ Solution
 >>>
->>>La condition suffisante est immédiate : si $A \in \mathcal M_n(\mathbb R)$ est une matrice antisymétrique, alors la matrice $P=\exp(A)$ vérifie ${~}^t P P = \exp({~}^t A)\exp(A) = \exp(-A)\exp(A) = I_n$. Enfin, on a $\det (P) = \det(\exp(A)) = \exp(\text{tr } A) = 1$ ( voir l'exercice 4.3.4.2) .
+>>>La condition suffisante est immédiate : si $A \in \mathcal M_n(\mathbb R)$ est une matrice antisymétrique, alors la matrice $P=\exp(A)$ vérifie ${~}^t P P = \exp({~}^t A)\exp(A) = \exp(-A)\exp(A) = I_n$. Enfin, on a $\det (P) = \det(\exp(A)) = \exp(\text{tr } A) = 1$ ( voir l'[[Mathématique/Algèbre/Algèbre#Exercice 2. (Déterminant d'exponentielle d'une matrice)|Exercice 4.3.4.2. (Déterminant d'exponentielle d'une matrice)]] ) .
 >>>
->>>Montrons maintenant la condition nécessaire. Soit $P \in \mathcal M_n(\mathbb R)$ une matrice orthogonale directe, soit $u \in \mathcal L ( \mathbb R^n)$ son isométrie associée. D'après le théorème 5.3.1.1 , il existe une base orthonormale $B$ de $\mathbb R^n $ dans laquelle la matrice de $u$ a la forme 
+>>>Montrons maintenant la condition nécessaire. Soit $P \in \mathcal M_n(\mathbb R)$ une matrice orthogonale directe, soit $u \in \mathcal L ( \mathbb R^n)$ son isométrie associée. D'après le [[Mathématique/Algèbre/Algèbre#Réduction des isométries|Théorème 5.3.1.1]] , il existe une base orthonormale $B$ de $\mathbb R^n$ dans laquelle la matrice de $u$ a la forme 
 >>>$$
 >>>[u]_B = 
 >>>\left (
@@ -566,7 +593,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>>$$
 >>>\det u = \det R(\theta_1) \cdots \det R(\theta_r) \,  \varepsilon_1 \cdots \varepsilon_s = \varepsilon_1 \cdots \varepsilon_s.
 >>>$$
->>>Ainsi, le produit des $\varepsilon_i$ vaut $1$, donc il y en a un nombre pair $2p$ (avec $p \in \mathbb N$) qui valent $-1$, et les $q$ autres valent $+1$ (avec $2p + q = s$). Quitte à permuter les $s$ derniers vecteurs de la base $B$, on peut même supposer que kes $2p$ premiers $\varepsilon_j$ valent $-1$, et les $q$ derniers valent $+1$. Comme la matrices ${ \scriptstyle  \left ( \begin{array}{cc} -1 & 0 \\ 0 & -1  \end{array} \right )}$ est une matrice de rotation d'angle $\pi$, il revient au même de dire quela matrice de $u$ dans $B$ a la forme
+>>>Ainsi, le produit des $\varepsilon_i$ vaut $1$, donc il y en a un nombre pair $2p$ (avec $p \in \mathbb N$) qui valent $-1$, et les $q$ autres valent $+1$ (avec $2p + q = s$). Quitte à permuter les $s$ derniers vecteurs de la base $B$, on peut même supposer que kes $2p$ premiers $\varepsilon_j$ valent $-1$, et les $q$ derniers valent $+1$. Comme la matrices ${ \scriptstyle  \left ( \begin{smallmatrix} -1 & 0 \\ 0 & -1  \end{smallmatrix} \right )}$ est une matrice de rotation d'angle $\pi$, il revient au même de dire quela matrice de $u$ dans $B$ a la forme
 >>>$$
 >>>[u]_B = 
 >>>\left (
@@ -578,7 +605,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>>\end{array}
 >>>\right )
 >>>$$
->>>avec $\theta_i = \pi $ pour $r < i \leq m = r + p$. La résultat de la question 1/ nous permet maintenant de remarquer que 
+>>>avec $\theta_i = \pi$ pour $r < i \leq m = r + p$. La résultat de la question 1/ nous permet maintenant de remarquer que 
 >>>$$
 >>>[u]_B = \exp (M) \quad  \text{où} \quad M = 
 >>>\left (
@@ -591,7 +618,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>>\right ),
 >>>$$
 >>>avec $J = { \scriptstyle  \left ( \begin{array}{cc} 0 & -1 \\ +1 & 0  \end{array} \right )}$. La matrice par blocs $M$ est antisymétrique cas $J$ est antisymétrique.
->>>En notant $Q$ ma matrice de passage de la base canonique de $\mathbb R^n$ à la base $B$ (c'est une matrice orthogonale), on a donc montré que $P = {~}^t Q \exp(M) Q$. En posant $A = {~}^t Q M Q$ on a donc $P = \exp(A)$ et la matrice $A$ est antisymétrique car ${~}^t A = {~}^t Q {~}^tM Q = {~}^t Q(-M)Q = -A $, d'où le résultat 
+>>>En notant $Q$ ma matrice de passage de la base canonique de $\mathbb R^n$ à la base $B$ (c'est une matrice orthogonale), on a donc montré que $P = {~}^t Q \exp(M) Q$. En posant $A = {~}^t Q M Q$ on a donc $P = \exp(A)$ et la matrice $A$ est antisymétrique car ${~}^t A = {~}^t Q {~}^tM Q = {~}^t Q(-M)Q = -A$, d'où le résultat 
 >
 >>[!question]- b) En déduire que le groupe spécial orthogonal $\mathcal{S O}_n$ est connexe par arcs.
 >>>[!success]+ Solution

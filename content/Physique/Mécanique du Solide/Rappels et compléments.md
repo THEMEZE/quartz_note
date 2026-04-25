@@ -308,5 +308,5 @@ $$
 >\end{array}
 >\right )
 >$$
->(cf  [[Mathématique/Algèbre/Algèbre#Exercice 5. (Exponentielle d'une matrace antisymétrique)|Exercice 5. (Exponentielle d'une matrace antisymétrique)]] ).
+>(cf  [[Mathématique/Algèbre/Algèbre#Exercice 5. (Exponentielle d'une matrice antisymétrique)|Exercice 5. (Exponentielle d'une matrice antisymétrique)]] ).
 >
