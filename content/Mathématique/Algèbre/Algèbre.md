@@ -342,6 +342,10 @@ tags:
 >- $\mathbb Q$, $\mathbb R$, $\mathbb C$ et $\mathbb Z/p\mathbb Z$ ($p$ premier) sont des corps.
 
 
+## 5. Problèmes
+
+### Problème 4 (Théorème Fondamental de l'algèbre).
+
 # 4. Réduction d'endomorphismes
 
 ## 3. Topologie sur endomorphisme
@@ -435,6 +439,20 @@ tags:
 
 
 # 5. Espaces Euclidiens 
+
+## 2. Espaces Préhilbertiens
+
+### 1. Généralités 
+
+### 2. Orthogonalité
+
+### 3. Isométries et endomorphismes unitaires
+
+#### Propriétés matricielles des isométries et des endomorphismes unitaires.
+
+### 4. Endomorphismes adjoints
+
+
 ## 3. Compléments de cours 
 
 Cette section propose quelque études complémentaires très classiques, et souvent utiles dans les exercices ou les problèmes.
@@ -645,7 +663,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>
 >>>[!success]-  Solution
 >>>
->>>Suivons l'indication et considérons l'endomorphisme $u \, \colon \; \mathbb R^3 \mapsto \rightarrow R^3 \; X \mapsto v \wedge X$. On remarque aisement que la matrice de $u$ dans la base canonique de $\mathbb R^3 $ est la matrice $\hat{v}$. Partant du vecteur $ e = v / \Vert v \Vert = \frac{1}\theta v $, on le complète avec deux vecteurs $e_1$ et $e_2$ de sorte que $(e_1 , e_2 , e )$ soit une base orthogonormale directe de $\mathbb R^3 $. Comme $v = \theta e $ , on a 
+>>>Suivons l'indication et considérons l'endomorphisme $u \, \colon \; \mathbb R^3 \mapsto \mathbb R^3 \; X \mapsto v \wedge X$. On remarque aisement que la matrice de $u$ dans la base canonique de $\mathbb R^3 $ est la matrice $\hat{v}$. Partant du vecteur $ e = v / \Vert v \Vert = \frac{1}\theta v $, on le complète avec deux vecteurs $e_1$ et $e_2$ de sorte que $(e_1 , e_2 , e )$ soit une base orthogonormale directe de $\mathbb R^3 $. Comme $v = \theta e $ , on a 
 >>>$$
 >>>u(e_1) = \theta e \wedge e_1 = \theta e_2 , \quad u(e_2) = \theta e \wedge e_2 = - \theta e_1 , \quad u(e) = \theta e \wedge e = 0,
 >>>$$
@@ -659,7 +677,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>>\end{array}
 >>>\right ) \tag{$\ast$}
 >>>$$
->>>oû $J = { \scriptstyle  \left ( \begin{array}{cc} 0 & -1 \\ +1 & 0  \end{array} \right )}$. Nous avons vus que $\exp(\theta J)$ est une matrice $2 \times 2$ de rotation d'angle $\theta$, donc
+>>>où $J = { \scriptstyle  \left ( \begin{smallmatrix} 0 & -1 \\ +1 & 0  \end{smallmatrix} \right )}$. Nous avons vus que $\exp(\theta J)$ est une matrice $2 \times 2$ de rotation d'angle $\theta$, donc
 >>>$$
 >>>\exp([u]_B) = 
 >>>\left (
