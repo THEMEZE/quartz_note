@@ -699,12 +699,12 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>>
 >>>En utilisant la forme par bloc $(\ast)$, de la matrice de $u$ dans la base $B$, on obtient
 >>>$$
->>>I_3 + \frac{\sin \theta}\theta [u]_B + \frac{ 1 - \cos \theta }{\theta^2}([u]_B)^2 = I_3 + \sin \left ( \begin{array}{cc} J & 0_{2,1} \\ 0_{1,2}  & 0 \end{array} \right ) + ( 1 - \cos \theta ) \left ( \begin{array}{cc} - I_2 & 0_{2,1} \\ 0_{1,2}  & 0 \end{array} \right )
+>>>I_3 + \frac{\sin \theta}\theta [u]_B + \frac{ 1 - \cos \theta }{\theta^2}([u]_B)^2 = I_3 + (\sin \theta) \left ( \begin{array}{cc} J & 0_{2,1} \\ 0_{1,2}  & 0 \end{array} \right ) + ( 1 - \cos \theta ) \left ( \begin{array}{cc} - I_2 & 0_{2,1} \\ 0_{1,2}  & 0 \end{array} \right )
 >>>$$
 >>>ce qui s'écrit encore 
 >>>$$
 >>>I_3 + \frac{\sin \theta}\theta [u]_B + \frac{ 1 - \cos \theta }{\theta^2}([u]_B)^2 = 
->>>>>>\left (
+>>>\left (
 >>>\begin{array}{ccc}
 >>>\cos \theta  & - \sin \theta & 0  \\
 >>>\sin \theta  & \cos \theta & 0   \\
