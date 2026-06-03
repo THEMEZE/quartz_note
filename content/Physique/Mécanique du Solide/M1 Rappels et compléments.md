@@ -182,6 +182,12 @@ tags:
 >>Si tu mélanges tout avec  $=$ , tu perds de l’information logique.
 >
 
+---
+[^1]: Physique pour l'agrégation Jules Fillette - Julien Froustey - Hugo Roussille
+[^2]: Physique Spé. PC*, PC Cours et exercices d'application Stéphane OLIVIER, Hubert GIÉ, Jean-Pierre SARMANT
+[^3]: Formulaire MATHS, PHYSIQUE, CHIMIE, SII (2e édition), MPSI-MP , Bertrand Hauchecorne
+[^4]: Formulaire MATHS, PHYSIQUE, CHIMIE, SII (3e édition), PCSI-MPSI/PTSI-PSI , Bertrand Beaufils
+---
 
 # 1. Rappels de cinématique de solide
 
@@ -624,11 +630,11 @@ $$
 
 On peut donc écrire que 
 $$
-\overrightarrow{v}_{\mathscr R}(M) = \overrightarrow{v}_{\mathscr R'}(M) + \overrightarrow{v}_{\mathscr R'/\mathscr R}^e(M) 
+\overrightarrow{v}_{\mathscr R}(M) = \overrightarrow{v}_{\mathscr R'}(M) + \overrightarrow{v}_{\mathscr R'/\mathscr R}^{ie}(M) 
 $$
 avec  la **vitesse d'entraînement** :
 $$
-\overrightarrow{v}_{\mathscr R'/\mathscr R}^e(M) = \overrightarrow{v}_{\mathscr R}(O') + \overrightarrow{\Omega}_{\mathscr R'/\mathscr R} \wedge \overrightarrow{O'M}
+\overrightarrow{v}_{\mathscr R'/\mathscr R}^{ie}(M) = \overrightarrow{v}_{\mathscr R}(O') + \overrightarrow{\Omega}_{\mathscr R'/\mathscr R} \wedge \overrightarrow{O'M}
 $$
 et 
 $$
@@ -637,7 +643,7 @@ $$
 
 
 
-##### 1. Vecteur-rotation 
+##### 1. Vecteur-Rotation 
 
 Un solide $(\mathscr S)$ est un ensemble de points tel que pour tout couple de ponts $(M,N)$ de $(\mathscr S)$, la distance $MN$ est indépendante du temps (pour solide indéformable). Cette contrainte forte lie les mouvements des différents points $M$ du solide dans un référentiel ($\mathscr R$).
 
@@ -679,7 +685,201 @@ $$
 Donc 
 $$
 \begin{array}{rcl}
- \overrightarrow{a}_{\mathscr R'}(M)  & = & \displaystyle    \frac{ d ( \overbrace{\overrightarrow{v}_{\mathscr R'}(M) + \overbrace{ \overrightarrow{v}_{\mathscr R}(O') + \overrightarrow{\Omega}_{\mathscr R'/\mathscr R} \wedge \overrightarrow{O'M}}^{\overrightarrow{v}_{\mathscr R'/\mathscr R}^e(M)} }^{\overrightarrow{v}_{\mathscr R}(M)}) }{dt} \Bigg )_{\mathscr R} \\
-  & = &   \displaystyle \overrightarrow{a}_{\mathscr R'}(M) + \underbrace{\overrightarrow{a}_{\mathscr R}(O') + \dot{\overrightarrow{\Omega}}_{\mathscr R'/\mathscr R} \wedge \overrightarrow{O'M}  + \overrightarrow{\Omega}_{\mathscr R' / \mathscr R} \wedge \left (\overrightarrow{\Omega}_{\mathscr R' / \mathscr R} \wedge \overrightarrow{v}_{\mathscr R'}(M) \right )}_{\displaystyle \overrightarrow{a}_{\mathscr R'/\mathscr R}^e(M)} + \underbrace{2 \overrightarrow{\Omega}_{\mathscr R' / \mathscr R} \wedge \overrightarrow{v}_{\mathscr R'}(M)}_{\displaystyle \overrightarrow{a}_{\mathscr R'/\mathscr R}^c(M)}
+ \overrightarrow{a}_{\mathscr R'}(M)  & = & \displaystyle    \frac{ d ( \overbrace{\overrightarrow{v}_{\mathscr R'}(M) + \overbrace{ \overrightarrow{v}_{\mathscr R}(O') + \overrightarrow{\Omega}_{\mathscr R'/\mathscr R} \wedge \overrightarrow{O'M}}^{\overrightarrow{v}_{\mathscr R'/\mathscr R}^{ie}(M)} }^{\overrightarrow{v}_{\mathscr R}(M)}) }{dt} \Bigg )_{\mathscr R} \\
+  & = &   \displaystyle \overrightarrow{a}_{\mathscr R'}(M) + \underbrace{\overrightarrow{a}_{\mathscr R}(O') + \dot{\overrightarrow{\Omega}}_{\mathscr R'/\mathscr R} \wedge \overrightarrow{O'M}  + \overrightarrow{\Omega}_{\mathscr R' / \mathscr R} \wedge \left (\overrightarrow{\Omega}_{\mathscr R' / \mathscr R} \wedge \overrightarrow{v}_{\mathscr R'}(M) \right )}_{\displaystyle \overrightarrow{a}_{\mathscr R'/\mathscr R}^{ie}(M)} + \underbrace{2 \overrightarrow{\Omega}_{\mathscr R' / \mathscr R} \wedge \overrightarrow{v}_{\mathscr R'}(M)}_{\displaystyle \overrightarrow{a}_{\mathscr R'/\mathscr R}^{ic}(M)}
 \end{array}
 $$
+
+# 2. Éléments cinématiques d'un système fermé
+
+## a. Description d'un système.
+
+### $\bullet$ Centre d'inertie
+
+On appelle **centre d'inertie** d'un système matériel $\mathscr S$, le point $G$ défini par :
+$$
+\iiint_{M \in \mathscr S} dm(M) \, \overrightarrow {GM} = 0,
+$$
+Si $O$ désigne une origine quelconque on a alors :
+$$
+m \, \overrightarrow{OG} = \iiint_{M \in \mathscr S} dm(M) \, \overrightarrow {OM}.
+$$
+### $\bullet$ Référentiel barycentrique
+
+On appelle référentiel barycentrique $\mathscr R^\ast$ d'un système $\mathscr S$ en mouvement dans un référentiel $\mathscr R$, est un référentiel en **translation** par rapport à $\mathscr R$ et tel que $G$ soit fixe dans $\mathscr R^\ast$. On peut prendre $\mathscr R^\ast \doteq ( G ; \vec{e}_x ,  \vec{e}_y , \vec{e}_z )$ . ([^2] p 161) Par construction on a donc :
+$$
+\vec{\Omega}_{\mathscr R^\ast/\mathscr R } = 0, \quad \& \quad \vec{v}_{\mathscr S/\mathscr R^\ast }(G) = 0.
+$$
+Le théorème de composition des vitesses : 
+$$
+\vec{v}_{\mathscr S / \mathscr R}(M) = \vec{v}_{\mathscr S / \mathscr R^\ast}(M) + \vec{v}_{\mathscr R^\ast / \mathscr R}^{ie}(M)
+$$
+avec ici pour un référentiel barycentrique $\mathscr R^\ast\doteq ( G ; \vec{e}_x ,  \vec{e}_y , \vec{e}_z )$ en translation par rapport au référentiel absolut $\mathscr R\doteq ( O ; \vec{e}_x ,  \vec{e}_y , \vec{e}_z )$ ,  $\vec{v}_{\mathscr R^\ast / \mathscr R}^{ie}(M) = \vec{v}_{\mathscr S / \mathscr R}(G)$ , donc 
+$$
+\vec{v}_{\mathscr S / \mathscr R}(M) = \vec{v}_{\mathscr S / \mathscr R^\ast}(M) + \vec{v}_{\mathscr S / \mathscr R}(G).
+$$
+
+De même, le théorème de composition des accélérations : 
+$$
+\vec{a}_{\mathscr S / \mathscr R}(M) = \vec{a}_{\mathscr S / \mathscr R^\ast}(M) + \vec{a}_{\mathscr R^\ast / \mathscr R}^{ie}(M) + \vec{a}_{\mathscr R^\ast / \mathscr R}^{ic}(M)
+$$
+avec ici pour un référentiel barycentrique $\mathscr R^\ast\doteq ( G ; \vec{e}_x ,  \vec{e}_y , \vec{e}_z )$ en translation par rapport au référentiel absolut $\mathscr R\doteq ( O ; \vec{e}_x ,  \vec{e}_y , \vec{e}_z )$ ,  $\vec{a}_{\mathscr R^\ast / \mathscr R}^{ie}(M) = \vec{a}_{\mathscr S / \mathscr R}(G)$  et  $\vec{a}_{\mathscr R^\ast / \mathscr R}^{ic}(M) = 0$, donc 
+$$
+\vec{a}_{\mathscr S / \mathscr R}(M) = \vec{a}_{\mathscr S / \mathscr R^\ast}(M) + \vec{a}_{\mathscr S / \mathscr R}(G).
+$$
+
+## b. Torseur cinétique
+
+### $\bullet$ Définition
+
+i) **Quantité de mouvement** ou **résultante cinétique** $\vec{P}_{\mathscr S / \mathscr R}$ de $\mathscr S$ dans le référentiel $\mathscr R$ : 
+$$
+\vec{P}_{\mathscr S / \mathscr R} = \iiint_{M \in \mathscr S} \overbrace{dm(M)\,\vec{v}_{\mathscr S / \mathscr R}(M)}^{\displaystyle d\vec{P}_{\mathscr S / \mathscr R}(M)}.
+$$
+ii) Soit $A$ un point quelconque, on appelle **moment cinématique**, $\vec{L}_{\mathscr S / \mathscr R}(A)$ de $\mathscr S$ dans le référentiel $\mathscr R$ : 
+$$
+\vec{L}_{\mathscr S / \mathscr R}(A) = \iiint_{M \in \mathscr S} \overbrace{dm(M)\, \overrightarrow{AM} \wedge \vec{v}_{\mathscr S / \mathscr R}(M)}^{\displaystyle d\vec{L}_{\mathscr S / \mathscr R}(A;M)}.
+$$
+
+>[!tip]- Remarque.
+>
+>La quantité de mouvement est une grandeur intrinsèque au système, alors que le moment cinétique ne peut être défini *qu'un fois choisi un point $A$*.
+
+### $\bullet$ Expression opérationnelle de $\vec{P}_{\mathscr S / \mathscr R}$
+$$
+m \, \overrightarrow{OG} = \iiint_{M \in \mathscr S} dm(M) \, \overrightarrow {OM}.
+$$
+Donc 
+$$
+m \, \vec{v}_{\mathscr S / \mathscr R}(G) = m \left . \frac{d \overrightarrow{OG}}{dt} \right )_{\mathscr R} = \iiint_{M \in \mathscr S} dm(M) \, \left . \frac{d \overrightarrow{OM}}{dt} \right )_{\mathscr R} = \underbrace{\iiint_{M \in \mathscr S} dm(M) \, ( \overbrace{\vec{v}_{\mathscr S / \mathscr R^\ast}(M) + \vec{v}_{\mathscr S / \mathscr R}(G)}^{\displaystyle \vec{v}_{\mathscr S / \mathscr R}(M)})}_{\displaystyle \vec{P}_{\mathscr S / \mathscr R}} = \underbrace{\iiint_{M \in \mathscr S} dm(M)}_{m} \, \vec{v}_{\mathscr S / \mathscr R}(G) + \underbrace{\iiint_{M \in \mathscr S} dm(M) \vec{v}_{\mathscr S / \mathscr R^\ast}(M)}_{\displaystyle \vec{P}_{\mathscr S / \mathscr R^\ast}}.
+$$
+Donc 
+$$
+\vec{P}_{\mathscr S / \mathscr R^\ast} = 0\, ,  \quad \& \quad  \vec{P}_{\mathscr S / \mathscr R} = m \, \vec{v}_{\mathscr S / \mathscr R}(G).
+$$
+Et en dérivant une seconde fois 
+$$
+m \, \vec{a}_{\mathscr S / \mathscr R}(G) = \left . \frac{d \vec{P}_{\mathscr S / \mathscr R}}{dt} \right )_{\mathscr R} .
+$$
+
+### $\bullet$ Formule de changement de point pour le moment cinétique 
+
+$$
+\vec{L}_{\mathscr S / \mathscr R}(B) \doteq \iiint_{M \in \mathscr S} dm(M)\, (\overrightarrow{BA} + \overrightarrow{AM} ) \wedge \vec{v}_{\mathscr S / \mathscr R}(M) = \underbrace{\iiint_{M \in \mathscr S} dm(M)\,\overrightarrow{AM} \wedge \vec{v}_{\mathscr S / \mathscr R}(M)}_{\displaystyle \vec{L}_{\mathscr S / \mathscr R}(B)} + \overrightarrow{BA} \,  \wedge \underbrace{\iiint_{M \in \mathscr S} dm(M) \vec{v}_{\mathscr S / \mathscr R}(M)}_{\displaystyle \vec{P}_{\mathscr S / \mathscr R}} .
+$$
+Donc 
+$$
+\vec{L}_{\mathscr S / \mathscr R}(B) = \vec{L}_{\mathscr S / \mathscr R}(A) + \overrightarrow{BA} \, \wedge \vec{P}_{\mathscr S / \mathscr R}.
+$$
+*** *Le champ des moments cinétiques a la structure d'un torseur, qu'on appelle torseur cinétique. Sa résultante est la quantité de mouvement/ résultante cinétique  $\vec{P}_{\mathscr S / \mathscr R}$* ***
+
+### $\bullet$ Moment cinétique barycentrique
+
+$\vec{P}_{\mathscr S / \mathscr R^\ast} = m \, \overbrace{\vec{v}_{\mathscr S / \mathscr R^\ast}(G)}^{\vec 0} = 0$ donc 
+$$
+\vec{L}_{\mathscr S / \mathscr R^\ast}(B) = \vec{L}_{\mathscr S / \mathscr R^\ast}(A).
+$$
+*** *Dans le référentiel barycentrique, le moment cinétique est indépendant du point où on le calcule; on appelle moment cinétique barycentrique et on le note $\vec{L}_{\mathscr S / \mathscr R^\ast}$ ; c'est une grandeur intrinsèque du système.*  ***
+
+### $\bullet$ Théorème de Koening
+
+Pour une référentiel barycentique $\mathscr R^\ast$ de 
+$$
+\vec{L}_{\mathscr S / \mathscr R}(A) = \iiint_{M \in \mathscr S} dm(M)\, \overrightarrow{AM}\,  \wedge ( \overbrace{ \vec{v}_{\mathscr S / \mathscr R^\ast }(M) + \vec{v}_{\mathscr S / \mathscr R }(G) }^{\displaystyle \vec{v}_{\mathscr S / \mathscr R }(M)}) = \underbrace{\iiint_{M \in \mathscr S} dm(M)\, \overrightarrow{AM}\,  \wedge \vec{v}_{\mathscr S / \mathscr R^\ast }(M)}_{\displaystyle \vec{L}_{\mathscr S / \mathscr R^\ast }}  \, +   \underbrace{\iiint_{M \in \mathscr S} dm(M)\, \overrightarrow{AM}}_{\displaystyle m \, \overrightarrow{AG}}\,  \wedge \vec{v}_{\mathscr S / \mathscr R }(G)
+$$
+Donc 
+$$
+\vec{L}_{\mathscr S / \mathscr R}(A) = \underbrace{\vec{L}_{\mathscr S / \mathscr R^\ast}}_{\text{{mouv propre ($\mathscr S/\mathscr R^\ast$)}}} + \underbrace{m \, \overrightarrow{AG} \wedge \vec{v}_{\mathscr S / \mathscr R}(G)}_{\text{ mouv d'enssemble ($\mathscr R^\ast / \mathscr R$)}}.
+$$
+
+## c. Dérivée du moment cinétique et moment dynamique.
+
+### $\bullet$ Moment dynamique 
+$$
+\vec{D}_{\mathscr S / \mathscr R}(A) \doteq  \iiint_{M \in \mathscr S} dm(M)\, \overrightarrow{AM} \, \wedge \vec{a}_{\mathscr S / \mathscr R}(M)  = \left . \frac{d \vec{L}_{\mathscr S / \mathscr R}(A)}{dt} \right )_{\mathscr R } - \iiint_{M \in \mathscr S} dm(M)\,  \Bigg \{ \overbrace{ \underbrace{\left. \frac{d\overrightarrow{OM}}{dt} \right )_{\mathscr R}}_{\displaystyle \vec{v}_{\mathscr S / \mathscr R }(M)}  - \underbrace{\left. \frac{d\overrightarrow{OA}}{dt} \right )_{\mathscr R}}_{\displaystyle \vec{v}_{\mathscr S / \mathscr R }(A)} }^{\displaystyle \left. \frac{d\overrightarrow{AM}}{dt} \right )_{\mathscr R}} \Bigg \}  \, \wedge \vec{v}_{\mathscr S / \mathscr R}(M)  = \left . \frac{d \vec{L}_{\mathscr S / \mathscr R}(A)}{dt} \right )_{\mathscr R } +  \vec{v}_{\mathscr S / \mathscr R}(A) \wedge \underbrace{\iiint_{M \in \mathscr S} dm(M)\,\vec{v}_{\mathscr S / \mathscr R}(M)}_{\displaystyle \vec{P}_{\mathscr S / \mathscr R} = m \, \vec{v}_{\mathscr S / \mathscr R}(G)} - \iiint_{M \in \mathscr S} dm(M) \, \underbrace{\vec{v}_{\mathscr S / \mathscr R}(M) \wedge \vec{v}_{\mathscr S / \mathscr R}(M)}_{\vec 0 }  
+$$
+Donc 
+$$
+\vec{D}_{\mathscr S / \mathscr R}(A) = \left . \frac{d \vec{L}_{\mathscr S / \mathscr R}(A)}{dt} \right )_{\mathscr R } + m \, \vec{v}_{\mathscr S / \mathscr R}(A) \wedge \vec{v}_{\mathscr S / \mathscr R}(G).
+$$
+## d. Énergie cinétique.
+
+### $\bullet$ Définition
+$$
+\mathcal E_{c, \mathscr S/\mathscr R} \doteq \iiint_{M \in \mathscr S} \frac{1}{2} dm(M)\,  \vec{v}_{\mathscr S/\mathscr R}^2(M)
+$$
+### $\bullet$ Théorème de Koenig
+$$
+\mathcal E_{c, \mathscr S/\mathscr R} = \iiint_{M \in \mathscr S} \frac{1}{2} \overbrace{
+\left (
+\vec{v}_{\mathscr S/\mathscr R^\ast}^2(M) + 2 \vec{v}_{\mathscr S/\mathscr R^\ast}(M) \cdot \vec{v}_{\mathscr S/\mathscr R}(G) + \vec{v}_{\mathscr S/\mathscr R}^2(G)
+\right )
+}^{
+\displaystyle 
+\vec{v}_{\mathscr S/\mathscr R}^2(M) = (\vec{v}_{\mathscr S/\mathscr R^\ast}(M) + \vec{v}_{\mathscr S/\mathscr R}(G))^2
+}
+\, 
+dm(M)
+= 
+\underbrace{\iiint_{M \in \mathscr S} \frac{1}{2} \vec{v}_{\mathscr S/\mathscr R^\ast}^2(M) \, 
+dm(M)}_{\displaystyle \mathcal E_{c, \mathscr S/\mathscr R^\ast}} + \vec{v}_{\mathscr S/\mathscr R}(G) \cdot \underbrace{\iiint_{M \in \mathscr S} \vec{v}_{\mathscr S/\mathscr R^\ast}(M) \, dm(M)}_{\displaystyle \vec P_{\mathscr S/\mathscr R^\ast} = \vec 0} + \frac{1}{2} \underbrace{\iiint_{M \in \mathscr S }dm(M)}_{\displaystyle m}\, \vec{v}_{\mathscr S/\mathscr R}^2(G),
+$$
+Donc 
+$$
+\mathcal E_{c, \mathscr S/\mathscr R} = \mathcal E_{c, \mathscr S/\mathscr R^\ast} + \frac{1}{2}m \, \vec{v}_{\mathscr S/\mathscr R}^2(G)
+$$
+
+# 3. Éléments cinétiques d'un solude
+## a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe.
+
+([^2] p 167)
+
+### $\bullet$
+Soit un solide $\mathscr S$ en rotation autour de l'axe $\Delta = ( O , \vec e )$ à vitesse angulaire $\Omega_{\mathscr S/\mathscr R} = \dot \theta$. Pour calculer la composante $\vec L_{\mathscr S / \mathscr R}(O) \cdot \vec{e} =  L_{\Delta , \mathscr S / \mathscr R}(O)$ du moment cinétique au point $O$ sur l'axe de rotation $\vec e$, introduisons un système de coordonnées cylindriques $(r , \theta, z )$ et le trièdre local associé $(\vec{e}_r , \vec{e}_\theta , \vec e_z)$ avec $\vec e_z = \vec e$. Par définition, un point $M(r, \theta , z)$ quelconque du solide $\mathscr S$ est en mouvement circulaire sur un cercle d'axe $Oz$ et rayon $r$ à vitesse angulaire $\Omega_{\mathscr S/\mathscr R}$  de telle sorte que :
+$$
+\vec v_{\mathscr S/\mathscr R}(M) = \vec{\Omega}_{\mathscr S/\mathscr R}\,   \wedge \overrightarrow{OM} = 
+\left ( 
+\begin{array}{c}
+0 \\ 0 \\ \Omega_{\mathscr S/\mathscr R} 
+\end{array}
+\right )
+\wedge 
+\left ( 
+\begin{array}{c}
+r \\ 0 \\ z 
+\end{array}
+\right )
+= r \,  \Omega_{\mathscr S/\mathscr R} \, \vec e_\theta.
+$$
+Le moment cinétique élémentaire $d \vec L_{\mathscr S / \mathscr R}(O ; M )$ d'un élément de volume $d \tau (M)$ centré en $M$ et de masse $dm(M)$ vaut alors :
+$$
+\begin{array}{rclcl}
+d \vec L_{\mathscr S / \mathscr R}(A ; M ) & \doteq & dm(M) \, \overrightarrow{AM} \wedge \vec v_{\mathscr S/\mathscr R}(M) & = &  dm(M) \, ( r \, \vec{e}_r + z \,  \vec e _z ) \wedge (r\, \Omega_{\mathscr S/\mathscr R} \, \vec e_\theta )\\
+& = & dm(M) \, r^2 \,  \Omega_{\mathscr S/\mathscr R} \, \vec e_z -  dm(M) \, r z \, \Omega_{\mathscr S/\mathscr R} \, \vec e_r.
+\end{array}
+$$
+Alors la projection $ L_{\Delta , \mathscr S / \mathscr R}(O) = \vec L_{ \mathscr S /  \mathscr R}(O ) \cdot \vec e_z$ sur $\vec e_z$ est la somme des composantes $d \vec L_{ \mathscr S /  \mathscr R}(O ; M ) \cdot \vec e_z$ de telle sorte que 
+$$
+ L_{\Delta , \mathscr S / \mathscr R}(O) = \vec L_{ \mathscr S /  \mathscr R}(O ) \cdot \vec e_z = \iiint_{M \in \mathscr S} r(M)^2 \Omega_{\mathscr S / \mathscr R}\, dm(M) = \Omega_{\mathscr S / \mathscr R}\iiint_{M \in \mathscr S} r(M)^2 \, dm(M),
+$$
+en remarquant que $\Omega_{\mathscr S / \mathscr R}$ qui ne dépend pas de $M$ peut sortir de l'intégrale.
+
+Le résultat obtenu conduit à définir le moment d'inertie $J_\Delta$ par rapport à l'axe de rotation par :
+$$
+J_\Delta = \iiint_{M \in \mathscr S} r(M)^2\, dm(M).
+$$
+Le moment d'inertie d'un solide par rapport à un axe est une caractéristique de la répartition des masses en son sein qui permet de donner à l'expression de la composante du moment cinématique sur l'axe de rotation la forme :
+$$
+L_{\Delta , \mathscr S / \mathscr R}(O) = J_\Delta \Omega_{\mathscr S / \mathscr R}.
+$$
+>[!tip]- $L_{\perp , \mathscr S / \mathscr R}(O)$
+>
+>$$
+>L_{\perp , \mathscr S / \mathscr R}(O) \doteq \vec L_{\mathscr S / \mathscr R}(O) \cdot \vec e_r = \iiint_{M \in \mathscr S} - dm(M) \, r(M) z(M) \,  \Omega_{\mathscr S / \mathscr R} \, \vec e_r.
+>$$
+>Pour un solide homogène, elle s'annule par compensation des comtributions élémentaires deux à deux dans deux cas simples :
+>(i) l'axe de rotation des un axe de révolution du solide ;
+>(ii) le plan passant par $O$ et perpendiculaire à l'axe de rotation est un plan de symétrie du solide. 
+
+
+

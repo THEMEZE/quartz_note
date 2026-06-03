@@ -5,14 +5,27 @@ tags:
   - Physique
   - Oral
 ---
+---
 
+- **Niveau**  : L3 
+- **Prérequis** : 
+	- Mécanique Classique/Newtonienne, 
+	- Interféromètre de Michelson, 
+	- Électromagnétisme & Équations de Maxwell.
 
 ---
 
-## 🎯 Fil directeur
+## 🎯 Message
 
-> **Crise de la physique classique → postulats d’Einstein → nouvelle structure de l’espace-temps → invariants relativistes**
+> Afin de pouvoir expliquer les expériences de physique de la fin du XVIIIème siècle, il a fallu renoncer aux transformations galiléennes. Cela implique de lier profondément l’espace et le temps, entraînant des effets allant à l’encontre de l’intuition newtonienne.
 
+---
+[^1]: BFR, Mécanique 1. Il faut prendre l’édition de 1984 car celle de 1976 ne traite pas la rélativité!
+[^2]: Article original de Bertozzi décrivant son expérience et les résultats.
+[^3]: J. Hladik, Introduction à la relativité restreinte. 
+[^4]: J.-P. Perez, Relativité. Fondements et appliations. 
+[^5]:  C. Semay, Relativité restreinte, bases et applications.
+[^6]: Cours de relativité d’A. Comtet, notamment pour la démonstration de Lorentz.
 ---
 
 # Plan (annoncé à l’oral)
@@ -20,13 +33,23 @@ tags:
 I. Crise de la mécanique classique  
 II. Expérience de Michelson-Morley  
 III. Postulats de la relativité restreinte  
+
 IV. Transformations de Lorentz  
+
 V. Effets relativistes  
+
 VI. Structure de l’espace-temps et causalité
 
 ---
+#### IDÉES À FAIRE PASSER :
+La mécanique classique ne suffit pas à expliquer certains évènements. Elle est l’approximation à faible vitesse d’une théorie mécanique plus générale : la mécanique relativiste, qui implique de ne plus considérer le temps comme variable absolue. 
+Remarque : je pense que ça peut valoir le coup, dès le début de la leçon, de préciser qu’on a aucune prétention à démontrer rigoureusement les résultats de relativité, mais de faire sentir l’esprit de l’élargissement de la théorie de la mécanique newtonienne vers la relativité générale.
 
-# I – Insuffisances de la mécanique classique
+---
+#### Introduction : 
+Dans l’étude de la mécanique on a fait sans le dire une hypothèse systématique de vitesse faible, et c’est ce qui nous a permis d’appliquer systématiquement la mécanique newtonienne. Le but de cette leçon est de voir en quoi celle-ci donne des résultats aberrants à vitesses élevées, et comment passer outre ces aberrations. Comme son nom l’indique on va porter un intérêt majeur à la relativité du mouvement ce qui implique d’avoir défini au préalable les notions d’observateur (qui regarde), de référentiel (par rapport à quoi il décrit le mouvement), de repère (comment il exprime la position du point dans l’espace) et d’évènement (analogue au point de la mécanique classique prolongé dans la dimension temporelle). Voir slide .
+
+# I – Une évolution pour la mécanique classique
 
 ## 1) Relativité galiléenne
 

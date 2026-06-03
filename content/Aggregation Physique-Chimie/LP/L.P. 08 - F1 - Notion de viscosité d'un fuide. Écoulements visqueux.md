@@ -5,6 +5,8 @@ tags:
   - Physique
   - Oral
 ---
+[lien](https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Archives/lecon_physique_marchetti.pdf#page=85&zoom=125)
+[lien](https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Archives/lecon_physique_marchetti.pdf#page=85&view=Fit)
 
 ### Notion de viscosité d’un fluide. Écoulements visqueux (Cours 40 min – Agrégation)
 
