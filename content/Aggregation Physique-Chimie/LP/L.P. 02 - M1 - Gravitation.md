@@ -5,6 +5,12 @@ tags:
   - Physique
   - Oral
 ---
+### Liens
+- [Tous](https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/index.html?pdf=Aggregation%20Physique-Chimie/Oraux/)
+- [Aggrégatifs](https://drive.google.com/drive/folders/1i2FSRuEZTBRqYO-y2Ji_k-yNDNXvW4se?usp=drive_link)
+- [Archives](https://drive.google.com/drive/folders/1EC5KW0wH97j7zVyYvGNlaMYUPvEYJwLB?usp=drive_link)
+- [Annas](https://github.com/AnassNajlaoui/Lecons-Anass-Najlaoui-Agregation-Physique-2026/blob/main/M1.%20Gravitation./Scan_20260416_114050.pdf)
+
 
 ### Gravitation (Niveau Licence → Agrégation)
 
