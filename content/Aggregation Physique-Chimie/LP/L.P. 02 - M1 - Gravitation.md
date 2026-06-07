@@ -1,5 +1,5 @@
 ---
-title: L.P. 02 - Gravitation
+title: L.P. 02 - M1 - Gravitation
 tags:
   - Agrégation
   - Physique

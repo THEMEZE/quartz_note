@@ -5,6 +5,29 @@ tags:
   - Physique
   - Oral
 ---
+
+### Liens
+
+>- Physique Spé. MP*, MP et PT*, PT, Gié, Sarmant, Olivier, More, Tec & Doc, 2000. 
+>- <a href="https://drive.google.com/file/d/1TxXiIyUpuNKw5627Li3pU42FJj_YZc58/view?usp=sharing#page=100&zoom=125" target="_blank" rel="noopener noreferrer">Hydrodynamique physique, Guyon-Hulin-Petit (2001) page ???</a>.
+>- <a href="https://drive.google.com/file/d/16x8p2Vkin63NdNi3KeJFZdlTtsD1CQpH/view?usp=sharing#page=???&zoom=125" target="_blank" rel="noopener noreferrer">Thermodynamique DIU page ????</a>.
+
+
+>- 👉 <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2021%20Guillaume%20Themeze/Orale.pdf#page=81&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit page ??? </a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/index.html?pdf=Aggregation%20Physique-Chimie/Oraux/" target="_blank" rel="noopener noreferrer">Lectures notes</a>
+
+>-  <a href="https://drive.google.com/drive/folders/1i2FSRuEZTBRqYO-y2Ji_k-yNDNXvW4se?usp=drive_link/" target="_blank" rel="noopener noreferrer">Aggrégatifs</a>
+>- <a href="https://drive.google.com/drive/folders/1EC5KW0wH97j7zVyYvGNlaMYUPvEYJwLB?usp=drive_link" target="_blank" rel="noopener noreferrer">Archives</a>
+
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2018%20Benjamin%20Marchetti/lecon_physique_marchetti.pdf#page=85&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit BM</a> <-  <a href="https://marchettibenjamin.wordpress.com/agregation/plans-de-lecons/" target="_blank" >site perso</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2019%20Jules%20Fillette/LeconsPhysique.pdf#page=61&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit JF</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2019%20Julien%20Froustey/Plans_JF_2019.pdf#page=45&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit JFr</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2019%20Hugo%20Roussille/plans_lecon_physique.pdf#page=59&zoom=125" target="_blank" rel="noopener noreferrer"> Manuscrit HR</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Archives/Physique-agreg.pdf#page=253&zoom=125" target="_blank" rel="noopener noreferrer"> Manuscrit PHS</a>
+>- <a href="https://github.com/AnassNajlaoui/Lecons-Anass-Najlaoui-Agregation-Physique-2026/blob/main/T1.%20Premier%20principe%20de%20la%20thermodynamique/Scan_20260416_113705.pdf" target="_blank" rel="noopener noreferrer"> Manuscrit AN ???</a>
+
+
+
 🎯 Structure globale (40 min)
 =============================
 

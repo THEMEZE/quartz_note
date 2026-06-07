@@ -673,14 +673,14 @@ Avec $S_2 \ll S_1$ nous avons bien $p_2 < p_1$, c'est-à-dire une dépression au
 
 Pour un écoulement d'eau avec 
 $$
-\left \{ 
-\begin{array}{rcl} 
-\rho & = & 10^3 ~\text{kg.m}^{-3} \\ 
-p_1 & = & 1 ~\text{bar} \\ 
-S_1 & = & 1 ~\text{m} \\ 
-S_2 & = & 0,01 ~\text{m} 
-\end{array} 
-\right .
+\left\{
+\begin{array}{rcl}
+\rho & = & 10^3~\mathrm{kg\,m^{-3}} \\
+p_1 & = & 1~\mathrm{bar} \\
+S_1 & = & 1~\mathrm{m^2} \\
+S_2 & = & 0.01~\mathrm{m^2}
+\end{array}
+\right.
 $$
 
 calculons la vitesse $v_1$ pour atteindre une pression de $p_2 = 2~500~\text{Pa}$ au niveau de l'étranglement : 

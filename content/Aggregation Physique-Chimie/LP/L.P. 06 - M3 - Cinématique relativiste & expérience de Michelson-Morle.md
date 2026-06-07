@@ -6,6 +6,20 @@ tags:
   - Oral
 ---
 ---
+### Liens
+
+>- 👉 <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2025%20Guillaume%20Themeze/LP/L.P.06-M3-Cinematique_relativiste_&_experience_de_Michelson-Morley_split.pdf#page=1&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit page 1</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/index.html?pdf=Aggregation%20Physique-Chimie/Oraux/" target="_blank" rel="noopener noreferrer">Lectures notes</a>
+
+>-  <a href="https://drive.google.com/drive/folders/1i2FSRuEZTBRqYO-y2Ji_k-yNDNXvW4se?usp=drive_link/" target="_blank" rel="noopener noreferrer">Aggrégatifs</a>
+>- <a href="https://drive.google.com/drive/folders/1EC5KW0wH97j7zVyYvGNlaMYUPvEYJwLB?usp=drive_link" target="_blank" rel="noopener noreferrer">Archives</a>
+
+>- ❌ <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2018%20Benjamin%20Marchetti/lecon_physique_marchetti.pdf#page=1&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit BM</a> <-  <a href="https://marchettibenjamin.wordpress.com/agregation/plans-de-lecons/" target="_blank" >site perso</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2019%20Jules%20Fillette/LeconsPhysique.pdf#page=27&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit JF</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2019%20Hugo%20Roussille/plans_lecon_physique.pdf#page=28&zoom=125" target="_blank" rel="noopener noreferrer"> Manuscrit HR</a>
+>- <a href="https://github.com/AnassNajlaoui/Lecons-Anass-Najlaoui-Agregation-Physique-2026/blob/main/M3.%20Cin%C3%A9matique%20relativiste.%20Exp%C3%A9rience%20de%20Michelson%20et%20Morley/Scan_20260526_150754.pdf" target="_blank" rel="noopener noreferrer"> Manuscrit AN</a>
+
+---
 
 - **Niveau**  : L3 
 - **Prérequis** : 

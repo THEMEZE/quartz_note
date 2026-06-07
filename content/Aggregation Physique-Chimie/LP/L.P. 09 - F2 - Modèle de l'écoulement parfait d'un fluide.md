@@ -6,6 +6,27 @@ tags:
   - Oral
 ---
 
+### Liens
+
+[^1]: Physique Spé. MP*, MP et PT*, PT, Gié, Sarmant, Olivier, More, Tec & Doc, 2000. 
+[^2]: <a href="https://drive.google.com/file/d/1TxXiIyUpuNKw5627Li3pU42FJj_YZc58/view?usp=sharing#page=100&zoom=125" target="_blank" rel="noopener noreferrer">Hydrodynamique physique, Guyon-Hulin-Petit (2001) page ???</a>.
+
+>- 👉 <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2021%20Guillaume%20Themeze/Orale.pdf#page=81&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit page 81</a>
+>- <a href="https://themeze.github.io/quartz_note/Aggregation-Physique-Chimie/LP/L.P.-05---M2---Lois-de-conservation-en-dynamique#iv--lois-de-conservation-en-mécanique-des-fluides" target="_blank" rel="noopener noreferrer">M2-IV-Lois de conservation en mécanique des fluides</a> ---- [[Aggregation Physique-Chimie/LP/L.P. 05 - M2 - Lois de conservation en dynamique#IV – Lois de conservation en mécanique des fluides|M2-IV-Lois de conservation en mécanique des fluides]]
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/index.html?pdf=Aggregation%20Physique-Chimie/Oraux/" target="_blank" rel="noopener noreferrer">Lectures notes</a>
+
+>-  <a href="https://drive.google.com/drive/folders/1i2FSRuEZTBRqYO-y2Ji_k-yNDNXvW4se?usp=drive_link/" target="_blank" rel="noopener noreferrer">Aggrégatifs</a>
+>- <a href="https://drive.google.com/drive/folders/1EC5KW0wH97j7zVyYvGNlaMYUPvEYJwLB?usp=drive_link" target="_blank" rel="noopener noreferrer">Archives</a>
+
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2018%20Benjamin%20Marchetti/lecon_physique_marchetti.pdf#page=45&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit BM</a> <-  <a href="https://marchettibenjamin.wordpress.com/agregation/plans-de-lecons/" target="_blank" >site perso</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2019%20Jules%20Fillette/LeconsPhysique.pdf#page=39&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit JF</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2019%20Julien%20Froustey/Plans_JF_2019.pdf#page=31&zoom=125" target="_blank" rel="noopener noreferrer">Manuscrit JFr</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Oraux/2019%20Hugo%20Roussille/plans_lecon_physique.pdf#page=39&zoom=125" target="_blank" rel="noopener noreferrer"> Manuscrit HR</a>
+>- <a href="https://themeze.github.io/portfolio_recherche_2/physics/faculty/themeze/documents/Aggregation%20Physique-Chimie/Archives/Physique-agreg.pdf#page=151&zoom=125" target="_blank" rel="noopener noreferrer"> Manuscrit PHS</a>
+>- <a href="https://github.com/AnassNajlaoui/Lecons-Anass-Najlaoui-Agregation-Physique-2026/blob/main/F1.%20Notion%20de%20viscosit%C3%A9%20d'un%20fluide.%20%C3%89coulements%20visqueux./Scan_20260416_114156.pdf" target="_blank" rel="noopener noreferrer"> Manuscrit AN ???</a>
+
+---
+
 ### Modèle de l’écoulement parfait d’un fluide (Cours 40 min – Agrégation, version approfondie)
 
 ---
