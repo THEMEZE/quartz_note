@@ -9,6 +9,11 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+<<<<<<< HEAD
 ._*
 .DS_Store
 
+=======
+.quartz/
+quartz/cli/tui/dist/
+>>>>>>> v5
