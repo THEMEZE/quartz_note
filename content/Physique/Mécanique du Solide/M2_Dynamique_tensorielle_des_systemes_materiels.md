@@ -112,19 +112,19 @@ si la dérivée est prise le long de la trajectoire pertinente et que $P^i$ repr
 Dans un espace euclidien orienté de dimension trois, le moment de la force $\mathbf F$ appliquée en $M$ au point $A$ est
 
 $$
-\boldsymbol\mathfrak M_A=\overrightarrow{AM}\times\mathbf F.
+\boldsymbol{\mathfrak M}_A=\overrightarrow{AM}\times\mathbf F.
 $$
 
 Pour un système de forces distribuées,
 
 $$
-\boldsymbol\mathfrak M_A=\int_{\mathscr S}\overrightarrow{AM}\times d\mathbf F(M).
+\boldsymbol{\mathfrak M}_A=\int_{\mathscr S}\overrightarrow{AM}\times d\mathbf F(M).
 $$
 
 La résultante et le moment au point $A$ constituent le torseur des actions mécaniques :
 
 $$
-\mathscr A(A)=\left\{\begin{array}{c}\mathbf F\\\boldsymbol\mathfrak M_A\end{array}\right\}.
+\mathscr A(A)=\left\{\begin{array}{c}\mathbf F\\\boldsymbol{\mathfrak M}_A\end{array}\right\}.
 $$
 
 ## 3.2 Formulation tensorielle du moment en dimension arbitraire
@@ -154,7 +154,7 @@ Cette identification est la raison géométrique pour laquelle le moment est usu
 En dimension trois, si $A$ et $B$ sont deux points, la relation de Varignon est
 
 $$
-\boldsymbol\mathfrak M_B=\boldsymbol\mathfrak M_A+\overrightarrow{BA}\times\mathbf F.
+\boldsymbol{\mathfrak M}_B=\boldsymbol{\mathfrak M}_A+\overrightarrow{BA}\times\mathbf F.
 $$
 
 Le signe dépend de la convention sur le vecteur de position : avec $\mathbf r_{AM}=\overrightarrow{AM}$, on a $\mathbf r_{BM}=\mathbf r_{BA}+\mathbf r_{AM}$, d'où la formule ci-dessus. En dimension $n$, la relation correspondante est
@@ -172,7 +172,7 @@ La résultante ne dépend pas du point de réduction ; le moment, lui, dépend d
 En trois dimensions, le torseur des actions au point $A$ est
 
 $$
-\mathscr A(A)=\left\{\begin{array}{c}\mathbf F\\\boldsymbol\mathfrak M_A\end{array}\right\},
+\mathscr A(A)=\left\{\begin{array}{c}\mathbf F\\\boldsymbol{\mathfrak M}_A\end{array}\right\},
 $$
 avec relation de transport de Varignon. Le torseur est une représentation compacte de la résultante et du moment ; sa signification physique ne dépend pas du choix du point de réduction, même si la valeur du moment change.
 
@@ -242,13 +242,13 @@ La seconde relation suppose que la masse totale est constante et que $G$ est le 
 Pour un système fermé, dans un référentiel galiléen, le moment dynamique au point $A$ est égal au moment des forces extérieures au même point lorsque les définitions des dérivées et du point de réduction sont cohérentes :
 
 $$
-\boxed{\mathbf D_A=\boldsymbol\mathfrak M_A^{\mathrm{ext}}}.
+\boxed{\mathbf D_A=\boldsymbol{\mathfrak M}_A^{\mathrm{ext}}}.
 $$
 
 Si $A$ est fixe dans le référentiel galiléen, on obtient le théorème du moment cinétique
 
 $$
-\boxed{\left.\frac{d\mathbf L_A}{dt}\right|_{\mathscr R}=\boldsymbol\mathfrak M_A^{\mathrm{ext}}}.
+\boxed{\left.\frac{d\mathbf L_A}{dt}\right|_{\mathscr R}=\boldsymbol{\mathfrak M}_A^{\mathrm{ext}}}.
 $$
 
 Si $A$ se déplace, la dérivée de $\mathbf L_A$ ne s'identifie pas en général au moment des forces extérieures sans terme correctif. Pour éviter toute ambiguïté, on part de la définition $\mathbf L_A=\int\overrightarrow{AM}\times\mathbf v\,dm$ et on dérive en tenant compte de $\mathbf v_A$.
@@ -264,7 +264,7 @@ $$
 Dans un référentiel galiléen, son évolution vérifie
 
 $$
-\boxed{\frac{d\mathbf L_G}{dt}=\boldsymbol\mathfrak M_G^{\mathrm{ext}}}
+\boxed{\frac{d\mathbf L_G}{dt}=\boldsymbol{\mathfrak M}_G^{\mathrm{ext}}}
 $$
 avec la dérivée comprise dans le référentiel galiléen et les hypothèses usuelles du système fermé. Le choix du centre de masse simplifie la séparation entre mouvement global et mouvement interne.
 
@@ -295,7 +295,7 @@ En notation tensorielle, le moment élémentaire d'une interaction centrale est 
 Pour un solide rigide tridimensionnel, le champ des vitesses vérifie
 
 $$
-\mathbf v(M)=\mathbf v(A)+\boldsymbol\Omega\times\overrightarrow{AM}.
+\mathbf v(M)=\mathbf v(A)+\boldsymbol{\Omega}\times\overrightarrow{AM}.
 $$
 
 Cette relation permet de calculer le moment cinétique à partir de la vitesse d'un point et de la rotation instantanée. En dimension $n$, la formulation correcte utilise un endomorphisme antisymétrique $W^i{}_j$ :
