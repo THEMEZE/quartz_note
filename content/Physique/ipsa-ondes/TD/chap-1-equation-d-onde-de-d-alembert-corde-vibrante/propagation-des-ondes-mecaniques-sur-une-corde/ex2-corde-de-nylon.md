@@ -5,7 +5,7 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · [📄 Énoncé](/pdfs/td1_PhV212_enonce.pdf)
+[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · [📄 Corrigé](/pdfs/td1_PhV212_corrige.pdf) · [📄 Énoncé](/pdfs/td1_PhV212_enonce.pdf) · [📄 Aides (td1_PhV212_aides)](/pdfs/td1_PhV212_aides.pdf) · [📄 Aides (td1_PhV212_exs_maison_aide)](/pdfs/td1_PhV212_exs_maison_aide.pdf) · [📄 PDF (td1_ex1_coup_de_pouce)](/pdfs/td1_ex1_coup_de_pouce.pdf) · [📄 PDF (td1_ex1_solution_detaillee)](/pdfs/td1_ex1_solution_detaillee.pdf) · [📄 Fiche enseignant (td1_PhV212_fiche)](/pdfs/td1_PhV212_fiche.pdf) · [📄 Fiche enseignant (td1_ex1_fiche)](/pdfs/td1_ex1_fiche.pdf) · [📄 Fiche enseignant (td1_exs_maison_fiche)](/pdfs/td1_exs_maison_fiche.pdf)
 
 ### Exercice 2. Corde de nylon
 
@@ -32,6 +32,42 @@ propagation $c$ des ondes transversales sur cette corde.
 > La vitesse des ondes transverses sur une corde tendue est $c=\sqrt{F/\mu}$. (relation de d'Alembert, vue en cours).
 
 
+> [!question]- 🔭 Aller plus loin — Lycée : Analogie musicale
+> Analogie avec les cordes de guitare : plus une corde est tendue ou
+> fine, plus la note produite est aiguë (fréquence plus grande).
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Démonstration PFD
+> Redémontrer $c=\sqrt{F/\mu}$ à partir du PFD appliqué à un élément de corde $[x,x+dx]$ (cf. exercice 3).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Modèle de dispersion
+> Discuter la limite du modèle de corde idéale (sans raideur de
+> flexion) et l'apparition de dispersion pour une corde "raide"
+> (câble métallique épais).
+
+
+> [!success]- ✅ Correction
+> **Méthode directe**
+>
+> $\mu = \rho\,S = \rho\,\dfrac{\pi d^2}{4} \approx 7.46\times10^{-4}\ \text{kg/m}.$
+> $c=\sqrt{F/\mu}=\sqrt{50/7.46\times10^{-4}}\approx 259\ \text{m/s}.$
+
+
+> [!example]- 📝 Solution détaillée
+> **Rédaction pas à pas**
+>
+> On part de $\mu=\rho S$ avec $S=\pi d^2/4$ la section circulaire du fil,
+> où $\rho=950$ kg/m$^3$ est la donnée de l'énoncé
+> .
+> Application numérique : $S=\pi(10^{-3})^2/4=7.85\times10^{-7}$ m$^2$, donc
+> $\mu=950\times7.85\times10^{-7}\approx7.46\times10^{-4}$ kg/m.
+> La relation de d'Alembert, démontrée en cours à partir du PFD appliqué à
+> un élément de corde, donne $c=\sqrt{F/\mu}$. Application numérique :
+> $c=\sqrt{50/7.46\times10^{-4}}\approx259$ m/s. On vérifie que l'unité
+> est bien homogène à une vitesse : $[\sqrt{F/\mu}]=\sqrt{\text{N/(kg/m)}}=\text{m/s}$.
+
+
 On suppose qu'une onde plane transversale se propage sur la corde dans
 le sens des $x$ croissants. À l'instant $t=0$, la corde a l'allure
 donnée sur la figure ci-dessus.
@@ -47,12 +83,38 @@ donnée sur la figure ci-dessus.
 > Lisez directement $\lambda$ sur la figure (distance entre deux motifs identiques).
 
 
+> [!success]- ✅ Correction
+> **Lecture**
+>
+> $\lambda = 4\text{cm}$ m (lecture graphique directe sur la figure \ref{fig:cordet0}).
+
+
+> [!example]- 📝 Solution détaillée
+> **Lecture**
+>
+> $\lambda = 4\text{cm}$ m (lecture graphique directe sur la figure \ref{fig:cordet0}).
+>
+> [![Allure de la corde à $t=0$.](/figures/td1_ex1_corde_t0_lambda.svg)](/figures/td1_ex1_corde_t0_lambda.svg)
+
+
   **b)** Quelle est sa période temporelle $T$ ?
 
 > [!tip]- 💡 Coup de pouce
 > **Relation célérité-période**
 >
 > Utilisez $c=\lambda/T$ avec la célérité trouvée en 1.
+
+
+> [!success]- ✅ Correction
+> **Calcul de T**
+>
+> $T=\lambda/c\approx 1/259\approx 1.55\times10^{-4}$ s.
+
+
+> [!example]- 📝 Solution détaillée
+> **Calcul de T**
+>
+> $T=\lambda/c\approx 1/259\approx 1.55\times10^{-4}$ s.
 
 
   **c)** Quel est le temps nécessaire pour que la phase en un point donné varie de $60°$ ?
@@ -63,12 +125,38 @@ donnée sur la figure ci-dessus.
 > Une variation de phase de $2\pi$ (ou $360^\circ$) correspond à une durée $T$.
 
 
+> [!success]- ✅ Correction
+> **Calcul de durée**
+>
+> $\Delta t = \dfrac{60}{360}T \approx 2.6\times10^{-5}$ s.
+
+
+> [!example]- 📝 Solution détaillée
+> **Calcul de durée**
+>
+> $\Delta t = \dfrac{60}{360}T \approx 2.6\times10^{-5}$ s.
+
+
   **d)** Dessiner l'allure de la corde à l'instant $t=T/8$.
 
 > [!tip]- 💡 Coup de pouce
 > **Décalage spatial**
 >
 > Un décalage temporel $T/8$ correspond à un décalage spatial de $\lambda/8$ dans le sens de propagation.
+
+
+> [!success]- ✅ Correction
+> **Interpretation graphique**
+>
+> La corde de la figure 1 est translatée de $\lambda/8$ vers les $x$ croissants.
+
+
+> [!example]- 📝 Solution détaillée
+> **Interpretation graphique**
+>
+> La corde de la figure 1 est translatée de $\lambda/8$ vers les $x$ croissants.
+>
+> [![Allure de la corde à $t = T/8$.](/figures/td1_ex1_corde_t_t8.svg)](/figures/td1_ex1_corde_t_t8.svg)
 
 
   **e)** Donner la loi $y(x,t)$.
@@ -79,12 +167,38 @@ donnée sur la figure ci-dessus.
 > Une onde plane progressive sinusoïdale se propageant vers les $x$ croissants s'écrit $y(x,t)=a\cos(kx-\omega t+\phi)$.
 
 
+> [!success]- ✅ Correction
+> **Expression**
+>
+> $y(x,t) = a\cos\!\big(k(x-ct)+\phi\big)$ avec $k=2\pi/\lambda$, $a$ et $\phi$ fixés par la figure 1.
+
+
+> [!example]- 📝 Solution détaillée
+> **Expression**
+>
+> $y(x,t) = a\cos\!\big(k(x-ct)+\phi\big)$ avec $k=2\pi/\lambda$, $a$ et $\phi$ fixés par la figure 1.
+
+
   **f)** Quelle est la vitesse du point $P$ de la corde à l'instant $t=0$ ?
 
 > [!tip]- 💡 Coup de pouce
 > **Vitesse particulaire vs célérité**
 >
 > La vitesse transversale d'un point est $\partial y/\partial t$, à ne pas confondre avec la célérité $c$ de l'onde.
+
+
+> [!success]- ✅ Correction
+> **Derivation temporel**
+>
+> $v_y(x_P,0) = \partial_t y(x_P,0) = a\,\omega\sin(kx_P+\phi)$, lue sur la pente de la courbe en $x_P$.
+
+
+> [!example]- 📝 Solution détaillée
+> **Derivation temporel**
+>
+> $v_y(x_P,0) = \partial_t y(x_P,0) = a\,\omega\sin(kx_P+\phi)$, lue sur la pente de la courbe en $x_P$.\\
+>
+> On note $\Phi(x, t) = k(x-ct)+\phi$ la phase. Or $y(x_P,0) \propto \cos(\Phi(x_p, t=0)) = 0$ donc $v_y(x_P,0) \propto \sin(\Phi(x_p, t=0)) = \pm 1$. Donc $v_y(x_P,0)  = \pm \, a\,\omega$.
 
 
 > [!note] 🔗 Voir aussi

@@ -11,7 +11,7 @@ tags:
 > Séance 3
 
 
-📄 **[Énoncé (td2_PhV212_enonce)](/pdfs/td2_PhV212_enonce.pdf)** · 📄 **[Énoncé (td2_enonce)](/pdfs/td2_enonce.pdf)**
+📄 **[Corrigé (td2_PhV212_corrige)](/pdfs/td2_PhV212_corrige.pdf)** · 📄 **[Corrigé (td2_corrige)](/pdfs/td2_corrige.pdf)** · 📄 **[Énoncé (td2_PhV212_enonce)](/pdfs/td2_PhV212_enonce.pdf)** · 📄 **[Énoncé (td2_enonce)](/pdfs/td2_enonce.pdf)** · 📄 **[Aides (td2_PhV212_aides)](/pdfs/td2_PhV212_aides.pdf)** · 📄 **[Aides (td2_PhV212_exs_maison_aide)](/pdfs/td2_PhV212_exs_maison_aide.pdf)** · 📄 **[Fiche enseignant](/pdfs/td2_PhV212_fiche.pdf)**
 
 - [[physique/ipsa-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex1-celerite-d-une-onde-acoustique-dans-un-fluide-parfait|Exercice 1 — Célérité d'une onde acoustique dans un fluide parfait]]
 - [[physique/ipsa-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex2-onde-stationnaire-tube-de-kundt-ouvert|Exercice 2 — Onde stationnaire, tube de Kundt ouvert]]

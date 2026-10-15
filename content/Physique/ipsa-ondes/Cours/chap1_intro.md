@@ -31,6 +31,13 @@ $$\frac{\partial^2 y}{\partial x^2} = \frac{1}{c^2}\frac{\partial^2 y}{\partial 
 
 [![Exemple d'onde progressive sinusoïdale sur une corde.](/figures/td1_ex1_corde_t0.svg)](/figures/td1_ex1_corde_t0.svg)
 
+> [!question]- 🔭 Aller plus loin — Master
+> Cette équation se généralise en 3D à l'équation de d'Alembert
+> $\Delta \psi = \dfrac{1}{c^2}\partial_t^2\psi$, point de départ de
+> l'électromagnétisme (équation de propagation du champ dans le vide)
+> et de l'acoustique 3D.
+
+
 ## 3. Onde plane progressive sinusoïdale
 
 Solution particulière très utilisée : $y(x,t) = a\cos(kx - \omega t + \phi)$,
