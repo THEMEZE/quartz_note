@@ -5,7 +5,7 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a>
 
 ### Exercice 14. Corde de piano raide : dispersion et inharmonicité *(facultatif)*
 
@@ -31,24 +31,6 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > Remplacez $\partial_t^2\to-\omega^2$, $\partial_x^2\to-k^2$, $\partial_x^4\to k^4$ et factorisez par $\mu$.
 
 
-> [!success]- ✅ Correction
-> **Résultat**
->
-> $\omega^2=c^2k^2\left(1+\dfrac{EI}Fk^2\right)$, $v_\varphi=c\sqrt{1+\dfrac{EI}Fk^2}$. La raideur est négligeable pour $\lambda\gg\lambda_c=2\pi\sqrt{EI/F}$.
-
-
-> [!example]- 📝 Solution détaillée
-> **(a) Homogénéité et limite**
->
-> $[F\,\partial_x^2y]=\mathrm N\,\mathrm m^{-1}$ $\surd$ ; $[EI\,\partial_x^4y]=\mathrm{N\,m^2}\cdot\mathrm m\cdot\mathrm m^{-4}=\mathrm N\,\mathrm m^{-1}$ $\surd$. Pour $EI\to0$ on retrouve $\mu\ddot y=F\,y''$, l'équation de d'Alembert. Le rapport des deux termes spatiaux est $\dfrac{EI\,k^4}{F\,k^2}=\dfrac{EI}Fk^2$ : la raideur est négligeable pour $k\ll\sqrt{F/(EI)}$, soit $\lambda\gg\lambda_c=2\pi\sqrt{EI/F}$.
->
-> **(b) Relation de dispersion**
->
-> $-\mu\omega^2=-Fk^2-EI\,k^4$, soit
-> $$\boxed{\omega^2=\frac F\mu k^2\left(1+\frac{EI}Fk^2\right)=c^2k^2\left(1+\frac{EI}Fk^2\right)},\qquad v_\varphi=\frac\omega k=\boxed{c\sqrt{1+\frac{EI}Fk^2}}.$$
-> La vitesse de phase **croît avec $k$** : les composantes de petite longueur d'onde se propagent plus vite que $c$.
-
-
 **q2.** (a) Montrer que les modes propres s'écrivent $y_n\propto\sin\dfrac{n\pi x}L\cos(\omega_nt+\phi_n)$ et que les fréquences propres sont $f_n=nf_0\sqrt{1+Bn^2}$ avec $B=\dfrac{\pi^2EI}{FL^2}$.
 
 (b) Établir $f_n\simeq nf_0\left(1+\dfrac{Bn^2}2\right)$ et exprimer l'écart $\Delta_n=1200\log_2\dfrac{f_n}{nf_0}$ en cents.
@@ -61,26 +43,6 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > **Valeur de $k_n$**
 >
 > $\sin(kL)=0\Rightarrow k_n=n\pi/L$. Reportez dans $\omega(k)$ ; $\dfrac{EI}Fk_n^2=Bn^2$.
-
-
-> [!success]- ✅ Correction
-> **Résultat**
->
-> $k_n=\dfrac{n\pi}L$ ; $f_n=nf_0\sqrt{1+Bn^2}$ avec $B=\dfrac{\pi^2EI}{FL^2}$ ; $\Delta_n\simeq\dfrac{1200}{\ln2}\cdot\dfrac{Bn^2}2\approx866\,Bn^2$ cents.
-
-
-> [!example]- 📝 Solution détaillée
-> **(c) Modes propres**
->
-> On cherche $y=Y(x)\cos(\omega t+\phi)$ : $Y''''$ et $Y''$ sont proportionnelles à $Y$ si $Y=\sin(kx)$. Les conditions $Y(0)=Y''(0)=0$ sont vérifiées, $Y(L)=Y''(L)=0$ imposent $\sin kL=0$, d'où $k_n=\dfrac{n\pi}L$. La relation de dispersion donne
-> $$\omega_n=c\,k_n\sqrt{1+\frac{EI}Fk_n^2},\qquad f_n=\frac{\omega_n}{2\pi}=\frac{nc}{2L}\sqrt{1+\frac{EI}F\frac{n^2\pi^2}{L^2}}=\boxed{nf_0\sqrt{1+Bn^2}},\quad B=\frac{\pi^2EI}{FL^2}.$$
-> Le fondamental n'est pas modifié à l'ordre $B$ ($f_1=f_0\sqrt{1+B}$), mais les harmoniques s'écartent de plus en plus des multiples de $f_0$ : le spectre n'est plus harmonique.
->
-> **(d) Développement et cents**
->
-> Pour $Bn^2\ll1$ : $f_n\simeq nf_0\left(1+\dfrac{Bn^2}2\right)$. En cents,
-> $$\Delta_n=1200\log_2\!\left(\frac{f_n}{nf_0}\right)=\frac{1200}{\ln2}\ln\sqrt{1+Bn^2}\simeq\frac{1200}{\ln2}\cdot\frac{Bn^2}2\approx\boxed{866\,B\,n^2\ \text{cents}}.$$
-> L'écart croît comme le **carré du rang** : il est négligeable pour le fondamental, mais audible pour les harmoniques élevés.
 
 
 **q3.** (a) Calculer $c$, $\mu$, $F$, $I$, $EI$, le coefficient $B$ et la longueur d'onde critique $\lambda_c$. À partir de quel rang $n$ le terme de raideur domine-t-il ($Bn^2\sim1$) ?
@@ -99,42 +61,6 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > **Vitesse de groupe**
 >
 > $\omega=ck\sqrt{1+\kappa k^2}$ : dérivez par rapport à $k$ (dérivée d'un produit).
-
-
-> [!question]- 🔭 Aller plus loin — Licence : Conditions aux limites encastrées
-> Pour une corde **encastrée** ($y=0$, $y'=0$), les modes ne sont plus des sinus purs : ils présentent une couche limite de largeur $\sqrt{EI/F}$ près des extrémités. Montrer qu'à l'ordre un, $f_n\simeq nf_0\left(1+\dfrac2{\pi}\dfrac{\ell_c}{L}+\dots\right)\sqrt{1+Bn^2}$ avec $\ell_c=\sqrt{EI/F}$.
-
-
-> [!question]- 🔭 Aller plus loin — Master : Propagation d'une impulsion dispersive
-> Pour une impulsion de largeur spectrale $\Delta k$, la distance $z$ au bout de laquelle elle s'élargit significativement est $z\sim\dfrac{1}{\Delta k^2\,|\omega''(k)|}$ avec $\omega''=\mathrm d^2\omega/\mathrm dk^2$. Calculer $\omega''(k)$ pour la corde raide, discuter la forme du « chirp » entendu après un impact (son aigu qui précède le grave) et comparer avec les ondes de surface de l'eau ($\omega^2=gk$).
-
-
-> [!success]- ✅ Correction
-> **Résultats**
->
-> $c\approx330$ m/s, $\mu\approx6{,}13$ g/m, $F\approx666$ N, $EI\approx9{,}8\times10^{-3}$ N·m², $B\approx3{,}7\times10^{-4}$, $\lambda_c\approx2{,}4$ cm, $n_B\approx52$. $\Delta_2\approx1{,}3$, $\Delta_5\approx8$, $\Delta_{10}\approx31$ cents. $v_g(n=10)\approx1{,}054\,c$.
-
-
-> [!example]- 📝 Solution détaillée
-> **(e) Données et coefficient d'inharmonicité**
->
-> $c=2Lf_0=2\times0{,}63\times261{,}6\approx330$ m/s. $\mu=\rho\dfrac{\pi d_c^2}4=7800\times7{,}85\times10^{-7}\approx6{,}13\times10^{-3}$ kg/m. $F=\mu c^2\approx666$ N (valeur réaliste : une corde de piano supporte $\sim700$ N). $I=\dfrac{\pi(10^{-3})^4}{64}\approx4{,}9\times10^{-14}$ m$^4$, $EI\approx9{,}8\times10^{-3}$ N·m$^2$.
-> $$B=\frac{\pi^2EI}{FL^2}=\frac{9{,}87\times9{,}8\times10^{-3}}{666\times0{,}397}\approx3{,}7\times10^{-4}.$$
-> $\lambda_c=2\pi\sqrt{EI/F}=2\pi\sqrt{1{,}47\times10^{-5}}\approx2{,}4$ cm. $Bn^2\sim1$ pour $n\approx1/\sqrt B\approx52$ ; ce rang correspond à $\lambda_n=2L/n=2{,}4$ cm : cohérent avec $\lambda_c$.
->
-> **(f) Fréquences et écarts**
->
-> $f_n=nf_0\sqrt{1+3{,}7\times10^{-4}\,n^2}$. $n=1$ : $261{,}6\times1{,}00018=261{,}7$ Hz ($0{,}3$ cent). $n=2$ : $523{,}2\times1{,}00073=523{,}6$ Hz ($1{,}3$ cent). $n=5$ : $1308\times1{,}0046=1314$ Hz ($7{,}9$ cents). $n=10$ : $2616\times1{,}0182=2664$ Hz ($31$ cents). Les écarts valent $866Bn^2$ cents ($0{,}3$, $1{,}3$, $8$, $32$ cents) : le $10^{\text{e}}$ harmonique est environ un **tiers de demi-ton plus haut** que le multiple idéal : parfaitement audible.
->
-> **(g) Vitesse de groupe**
->
-> $\omega=ck\sqrt{1+\kappa k^2}$ avec $\kappa=EI/F$ :
-> $$v_g=\frac{\mathrm d\omega}{\mathrm dk}=c\left[\sqrt{1+\kappa k^2}+\frac{\kappa k^2}{\sqrt{1+\kappa k^2}}\right]=\boxed{c\,\frac{1+2\kappa k^2}{\sqrt{1+\kappa k^2}}}.$$
-> Pour $n=10$, $\kappa k^2=Bn^2=0{,}0367$ : $v_\varphi=c\sqrt{1,0367}\approx1{,}018\,c$ et $v_g=c\,\dfrac{1{,}0734}{1{,}0182}\approx1{,}054\,c$. Les deux dépassent $c$ ; $v_g\simeq c(1+\tfrac32\kappa k^2)>v_\varphi\simeq c(1+\tfrac12\kappa k^2)$. Une impulsion frappée par le marteau se disperse : les aigus arrivent en avance (« précurseur » aigu).
->
-> **(h) Conséquence pour l'accord**
->
-> Le $2^{\text{e}}$ partiel de $do_3$ est à $f_2=523{,}6$ Hz, un peu plus haut que $2f_0=523{,}2$ Hz, fréquence « idéale » de $do_4$. Si l'accordeur accorde $do_4$ sur $2f_0$, le battement entre le partiel de $do_3$ et le fondamental de $do_4$ est $\Delta f\approx0{,}4$ Hz ; pour l'annuler, il **monte** $do_4$ à $f_2$. De proche en proche, chaque octave est élargie : par rapport au milieu du clavier, les notes aiguës sont accordées de plus en plus haut et les graves de plus en plus bas. C'est l'**accord étiré** : l'accordeur préfère des octaves légèrement « fausses » mais sans battements.
 
 
 > [!note] 🔗 Voir aussi

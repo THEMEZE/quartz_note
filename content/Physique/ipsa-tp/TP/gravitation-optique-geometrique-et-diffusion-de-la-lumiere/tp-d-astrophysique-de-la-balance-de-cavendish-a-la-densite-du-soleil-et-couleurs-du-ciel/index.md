@@ -11,8 +11,6 @@ tags:
 > Séance 1
 
 
-<a href="/pdfs/TP_IPSA_Astrophysique_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
-
 - [[physique/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/ex1-balance-de-cavendish-peser-la-terre-et-mesurer-g|Exercice 1 — Balance de Cavendish : peser la Terre et mesurer G]]
 - [[physique/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/ex2-image-stenopeique-du-soleil-diametre-angulaire-croissants-sous-les-arbres-et-eclipse|Exercice 2 — Image sténopéique du Soleil : diamètre angulaire, croissants sous les arbres et éclipse]]
 - [[physique/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/ex3-densite-du-soleil-de-cavendish-au-stenope|Exercice 3 — Densité du Soleil : de Cavendish au sténopé]]
