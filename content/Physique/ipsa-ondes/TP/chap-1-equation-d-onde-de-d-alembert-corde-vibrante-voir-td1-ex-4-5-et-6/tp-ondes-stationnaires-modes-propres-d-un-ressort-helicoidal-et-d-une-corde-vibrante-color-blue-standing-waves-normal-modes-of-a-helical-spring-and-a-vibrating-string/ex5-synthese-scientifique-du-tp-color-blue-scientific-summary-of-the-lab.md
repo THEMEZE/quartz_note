@@ -5,7 +5,7 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6
 ---
 
-[[physique/ipsa-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante-color-blue-standing-waves-normal-modes-of-a-helical-spring-and-a-vibrating-string/index|⬅ Retour]] · [📄 Corrigé](/pdfs/tp1_PhV212_corrige.pdf) · [📄 Énoncé](/pdfs/tp1_PhV212_enonce.pdf) · [📄 Aides](/pdfs/tp1_PhV212_aides.pdf) · [📄 Fiche enseignant](/pdfs/tp1_PhV212_fiche.pdf)
+[[physique/ipsa-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante-color-blue-standing-waves-normal-modes-of-a-helical-spring-and-a-vibrating-string/index|⬅ Retour]] · <a href="/pdfs/tp1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/tp1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/tp1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/tp1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
 ### Exercice 5. Synthèse scientifique du TP {\color{blue}(Scientific summary of the lab)}
 

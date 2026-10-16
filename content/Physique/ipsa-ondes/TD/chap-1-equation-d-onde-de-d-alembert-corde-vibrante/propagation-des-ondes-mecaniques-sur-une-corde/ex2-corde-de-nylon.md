@@ -5,16 +5,16 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · [📄 Corrigé](/pdfs/td1_PhV212_corrige.pdf) · [📄 Énoncé](/pdfs/td1_PhV212_enonce.pdf) · [📄 Aides (td1_PhV212_aides)](/pdfs/td1_PhV212_aides.pdf) · [📄 Aides (td1_PhV212_exs_maison_aide)](/pdfs/td1_PhV212_exs_maison_aide.pdf) · [📄 PDF (td1_ex1_coup_de_pouce)](/pdfs/td1_ex1_coup_de_pouce.pdf) · [📄 PDF (td1_ex1_solution_detaillee)](/pdfs/td1_ex1_solution_detaillee.pdf) · [📄 Fiche enseignant (td1_PhV212_fiche)](/pdfs/td1_PhV212_fiche.pdf) · [📄 Fiche enseignant (td1_ex1_fiche)](/pdfs/td1_ex1_fiche.pdf) · [📄 Fiche enseignant (td1_exs_maison_fiche)](/pdfs/td1_exs_maison_fiche.pdf)
+[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
 
 ### Exercice 2. Corde de nylon
 
 Une corde de nylon de diamètre $d = 1$ mm est tendue par une force
 extérieure de module $F = 50$ N.
 
-[![Allure de la corde à $t=0$.](/figures/td1_ex1_corde_t0.svg)](/figures/td1_ex1_corde_t0.svg)
+<p style="text-align:center"><a href="/figures/td1_ex1_corde_t0.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_corde_t0.svg" alt="Allure de la corde à $t=0$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
-[![animation](/animations/anim_corde_onde/animation.gif)](/animations/anim_corde_onde/animation.gif)
+<p style="text-align:center"><a href="/animations/anim_corde_onde/animation.gif" target="_blank" rel="noopener"><img src="/animations/anim_corde_onde/animation.gif" alt="animation" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 [🎞️ Voir en .mp4](/animations/anim_corde_onde/animation.mp4)
 
@@ -94,7 +94,7 @@ donnée sur la figure ci-dessus.
 >
 > $\lambda = 4\text{cm}$ m (lecture graphique directe sur la figure \ref{fig:cordet0}).
 >
-> [![Allure de la corde à $t=0$.](/figures/td1_ex1_corde_t0_lambda.svg)](/figures/td1_ex1_corde_t0_lambda.svg)
+> <p style="text-align:center"><a href="/figures/td1_ex1_corde_t0_lambda.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_corde_t0_lambda.svg" alt="Allure de la corde à $t=0$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
   **b)** Quelle est sa période temporelle $T$ ?
@@ -156,7 +156,7 @@ donnée sur la figure ci-dessus.
 >
 > La corde de la figure 1 est translatée de $\lambda/8$ vers les $x$ croissants.
 >
-> [![Allure de la corde à $t = T/8$.](/figures/td1_ex1_corde_t_t8.svg)](/figures/td1_ex1_corde_t_t8.svg)
+> <p style="text-align:center"><a href="/figures/td1_ex1_corde_t_t8.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_corde_t_t8.svg" alt="Allure de la corde à $t = T/8$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
   **e)** Donner la loi $y(x,t)$.

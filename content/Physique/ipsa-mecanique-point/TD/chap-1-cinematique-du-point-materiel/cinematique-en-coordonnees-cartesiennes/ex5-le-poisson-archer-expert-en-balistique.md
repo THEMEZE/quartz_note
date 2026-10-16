@@ -5,7 +5,7 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/index|⬅ Retour]] · [📄 Corrigé](/pdfs/td1_PhV111_corrige.pdf) · [📄 Énoncé](/pdfs/td1_PhV111_enonces.pdf) · [📄 Aides](/pdfs/td1_PhV111_aides.pdf) · [📄 Fiche enseignant](/pdfs/td1_PhV111_fiche.pdf)
+[[physique/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/index|⬅ Retour]] · <a href="/pdfs/td1_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td1_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
 ### Exercice 5. Le poisson-archer, expert en balistique *(facultatif)*
 
@@ -42,7 +42,7 @@ assimile la goutte à un point matériel en chute libre.
 > Le sommet est atteint à l'instant $t_S$ tel que $v_y(t_S)=v_0\sin\alpha-g\,t_S=0$, soit $t_S=\dfrac{v_0\sin\alpha}{g}$. Ses coordonnées sont
 > $$x_S=\frac{v_0^2\sin\alpha\cos\alpha}{g},\qquad y_S=\frac{v_0^2\sin^2\alpha}{2g}.$$
 >
-> [![](/figures/td1_ex4_pa_phv111.svg)](/figures/td1_ex4_pa_phv111.svg)
+> <p style="text-align:center"><a href="/figures/td1_ex4_pa_phv111.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex4_pa_phv111.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 >
 > **Condition « l'insecte est au sommet »**
 >

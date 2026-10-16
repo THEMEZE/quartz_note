@@ -5,7 +5,7 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · [📄 Corrigé](/pdfs/td1_PhV212_corrige.pdf) · [📄 Énoncé](/pdfs/td1_PhV212_enonce.pdf) · [📄 Aides (td1_PhV212_aides)](/pdfs/td1_PhV212_aides.pdf) · [📄 Aides (td1_PhV212_exs_maison_aide)](/pdfs/td1_PhV212_exs_maison_aide.pdf) · [📄 PDF (td1_ex1_coup_de_pouce)](/pdfs/td1_ex1_coup_de_pouce.pdf) · [📄 PDF (td1_ex1_solution_detaillee)](/pdfs/td1_ex1_solution_detaillee.pdf) · [📄 Fiche enseignant (td1_PhV212_fiche)](/pdfs/td1_PhV212_fiche.pdf) · [📄 Fiche enseignant (td1_ex1_fiche)](/pdfs/td1_ex1_fiche.pdf) · [📄 Fiche enseignant (td1_exs_maison_fiche)](/pdfs/td1_exs_maison_fiche.pdf)
+[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
 
 ### Exercice 4. Équation des cordes vibrantes et onde progressive
 
@@ -19,7 +19,7 @@ partie gauche fait un angle petit $\alpha(x,t)$ avec l'axe horizontal. On négli
 les forces de pesanteur. Le déplacement transversal $y(x,t)$ obéit à l'équation :
 $$\dfrac{\partial^2 y}{\partial x^2} = \dfrac{1}{c^2}\dfrac{\partial^2 y}{\partial t^2}$$
 
-[![Schémat tronçon de corde](/figures/td1_ex3_phv212_demo.svg)](/figures/td1_ex3_phv212_demo.svg)
+<p style="text-align:center"><a href="/figures/td1_ex3_phv212_demo.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex3_phv212_demo.svg" alt="Schémat tronçon de corde" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 **q1.** Quelle est la nature de l'onde $y(x,t)$ créée par la perturbation sur la corde ?
 Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonction de $F$ et de $\mu$.
@@ -59,7 +59,7 @@ Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonct
 >   d m\, \left ( \begin{array}{c} \frac{\partial^2 x}{\partial t^2} \\ \frac{\partial^2 y}{\partial t^2} \end{array} \right )_{\vec{e}_x , \vec{e}_y } = \overbrace{F \left ( \begin{array}{c} - \cos\alpha(x,t) \\ -\sin\alpha(x,t) \end{array} \right )_{\vec{e}_x , \vec{e}_y }}^{\vec{T}(x, t )} + \overbrace{F \left ( \begin{array}{c} \cos\alpha(x+ dx,t) \\ \sin\alpha(x+ dx,t) \end{array} \right )_{\vec{e}_x , \vec{e}_y }}^{\vec{T}(x + dx, t )}
 >   $$
 >
-> [![](/figures/td1_ex3_phv212_demo.svg)](/figures/td1_ex3_phv212_demo.svg)
+> <p style="text-align:center"><a href="/figures/td1_ex3_phv212_demo.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex3_phv212_demo.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 >
 > **Démonstration complète**
 >
@@ -206,7 +206,7 @@ Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonct
 > $$\frac{\partial^2 y}{\partial x^2} - \frac{\mu g}{F} = \frac{1}{c^2}\frac{\partial^2 y}{\partial t^2}$$
 > Ce terme constant déforme la position d'équilibre (la corde prend la forme d'une chaînette/parabole au repos), mais n'affecte pas la vitesse de propagation $c$ des petites perturbations autour de cette position d'équilibre.
 >
-> [![](/figures/td1_ex3_phv212_demo_poidg.svg)](/figures/td1_ex3_phv212_demo_poidg.svg)
+> <p style="text-align:center"><a href="/figures/td1_ex3_phv212_demo_poidg.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex3_phv212_demo_poidg.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
 Une corde vibrante très longue, de masse linéique $\mu = 0.12$ kg/m et de tension $F = 20$ N,

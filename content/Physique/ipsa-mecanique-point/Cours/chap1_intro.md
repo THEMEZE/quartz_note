@@ -12,7 +12,7 @@ tags:
 
 ## 2. Équation de d'Alembert
 
-[![](/figures/td1_ex1_corde_t0.svg)](/figures/td1_ex1_corde_t0.svg)
+<p style="text-align:center"><a href="/figures/td1_ex1_corde_t0.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_corde_t0.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 > [!question]- 🔭 Aller plus loin — Master
 >
@@ -20,6 +20,6 @@ tags:
 
 ## 3. 
 
-[![animation](/animations/anim_corde_onde/animation.gif)](/animations/anim_corde_onde/animation.gif)
+<p style="text-align:center"><a href="/animations/anim_corde_onde/animation.gif" target="_blank" rel="noopener"><img src="/animations/anim_corde_onde/animation.gif" alt="animation" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 [🎞️ Voir en .mp4](/animations/anim_corde_onde/animation.mp4)

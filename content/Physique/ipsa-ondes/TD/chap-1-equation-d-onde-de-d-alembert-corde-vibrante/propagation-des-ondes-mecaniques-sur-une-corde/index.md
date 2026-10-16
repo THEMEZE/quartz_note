@@ -11,7 +11,7 @@ tags:
 > Séance 1
 
 
-📄 **[Corrigé](/pdfs/td1_PhV212_corrige.pdf)** · 📄 **[Énoncé](/pdfs/td1_PhV212_enonce.pdf)** · 📄 **[Aides (td1_PhV212_aides)](/pdfs/td1_PhV212_aides.pdf)** · 📄 **[Aides (td1_PhV212_exs_maison_aide)](/pdfs/td1_PhV212_exs_maison_aide.pdf)** · 📄 **[PDF (td1_ex1_coup_de_pouce)](/pdfs/td1_ex1_coup_de_pouce.pdf)** · 📄 **[PDF (td1_ex1_solution_detaillee)](/pdfs/td1_ex1_solution_detaillee.pdf)** · 📄 **[Fiche enseignant (td1_PhV212_fiche)](/pdfs/td1_PhV212_fiche.pdf)** · 📄 **[Fiche enseignant (td1_ex1_fiche)](/pdfs/td1_ex1_fiche.pdf)** · 📄 **[Fiche enseignant (td1_exs_maison_fiche)](/pdfs/td1_exs_maison_fiche.pdf)**
+<a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
 
 - [[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex1-solutions-de-l-equation-de-d-alembert|Exercice 1 — Solutions de l'équation de d'Alembert]]
 - [[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex2-corde-de-nylon|Exercice 2 — Corde de nylon]]
@@ -40,7 +40,7 @@ tags:
 > - On change la couleur de la corde
 > - Je ne sais pas encore
 >
-> *Réponds en direct sur [l'appli QCM](/qcm/physique-ondes-ipsa/) (QR code affiché en cours).*
+> *Réponds en direct sur <a href="/qcm/physique-ondes-ipsa/" target="_blank" rel="noopener">l'appli QCM</a> (QR code affiché en cours).*
 
 
 > [!question]- QCM — 🔄 Milieu de cours
@@ -51,7 +51,7 @@ tags:
 > - Ca dépend du mode N
 > - Je ne sais pas encore
 >
-> *Réponds en direct sur [l'appli QCM](/qcm/physique-ondes-ipsa/) (QR code affiché en cours).*
+> *Réponds en direct sur <a href="/qcm/physique-ondes-ipsa/" target="_blank" rel="noopener">l'appli QCM</a> (QR code affiché en cours).*
 >
 > En lien avec [[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex4-equation-des-cordes-vibrantes-et-onde-progressive|cet exercice]].
 
@@ -64,5 +64,5 @@ tags:
 > - 4
 > - Je ne sais pas encore
 >
-> *Réponds en direct sur [l'appli QCM](/qcm/physique-ondes-ipsa/) (QR code affiché en cours).*
+> *Réponds en direct sur <a href="/qcm/physique-ondes-ipsa/" target="_blank" rel="noopener">l'appli QCM</a> (QR code affiché en cours).*
 

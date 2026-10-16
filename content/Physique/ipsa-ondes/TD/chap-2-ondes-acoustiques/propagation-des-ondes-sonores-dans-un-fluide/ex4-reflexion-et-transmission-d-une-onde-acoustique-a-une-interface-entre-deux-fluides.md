@@ -5,7 +5,7 @@ tags:
   - chap-2-ondes-acoustiques
 ---
 
-[[physique/ipsa-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · [📄 Corrigé (td2_PhV212_corrige)](/pdfs/td2_PhV212_corrige.pdf) · [📄 Corrigé (td2_corrige)](/pdfs/td2_corrige.pdf) · [📄 Énoncé (td2_PhV212_enonce)](/pdfs/td2_PhV212_enonce.pdf) · [📄 Énoncé (td2_enonce)](/pdfs/td2_enonce.pdf) · [📄 Aides (td2_PhV212_aides)](/pdfs/td2_PhV212_aides.pdf) · [📄 Aides (td2_PhV212_exs_maison_aide)](/pdfs/td2_PhV212_exs_maison_aide.pdf) · [📄 Fiche enseignant](/pdfs/td2_PhV212_fiche.pdf)
+[[physique/ipsa-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a> · <a href="/pdfs/td2_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
 ### Exercice 4. Réflexion et transmission d'une onde acoustique à une interface entre deux fluides *(facultatif)*
 

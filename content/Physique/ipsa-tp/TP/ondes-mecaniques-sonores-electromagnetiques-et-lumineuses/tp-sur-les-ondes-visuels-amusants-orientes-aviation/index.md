@@ -11,7 +11,7 @@ tags:
 > Séance 1
 
 
-📄 **[Fiche enseignant](/pdfs/TP_IPSA_Generale_fiche.pdf)**
+<a href="/pdfs/TP_IPSA_Generale_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
 - [[physique/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex1-ondes-sur-un-ressort-long-slinky-filmees-au-ralenti-impulsions-reflexions-et-modes-propres|Exercice 1 — Ondes sur un ressort long (Slinky) filmées au ralenti : impulsions, réflexions et modes propres]]
 - [[physique/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex2-son-doppler-et-cone-de-mach-de-la-vitesse-du-son-au-bang-supersonique|Exercice 2 — Son, Doppler et cône de Mach : de la vitesse du son au bang supersonique]]

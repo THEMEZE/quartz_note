@@ -5,7 +5,7 @@ tags:
   - chap-3-interfaces-entre-deux-milieux
 ---
 
-[[physique/ipsa-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · [📄 Corrigé (td3_PhV212_corrige)](/pdfs/td3_PhV212_corrige.pdf) · [📄 Corrigé (td3_corrige)](/pdfs/td3_corrige.pdf) · [📄 Énoncé (td3_PhV212_enonce)](/pdfs/td3_PhV212_enonce.pdf) · [📄 Énoncé (td3_enonce)](/pdfs/td3_enonce.pdf) · [📄 Aides](/pdfs/td3_PhV212_aides.pdf) · [📄 Fiche enseignant](/pdfs/td3_PhV212_fiche.pdf)
+[[physique/ipsa-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a> · <a href="/pdfs/td3_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
 ### Exercice 2. Interface entre deux milieux, notion d'impédance acoustique
 
@@ -19,7 +19,7 @@ et de l'aluminium $\rho_2=2700~\text{kg}\cdot\text{m}^{-3}$. On donne les
 célérités de l'onde ultrasonore dans l'air $c_1=340~\text{m}\cdot\text{s}^{-1}$
 et dans l'aluminium $c_2=5110~\text{m}\cdot\text{s}^{-1}$.
 
-[![Suggestion : reprendre le schéma de l'interface fluide-fluide du TD2 (exercice 4), en remplaçant le second milieu par un solide (hachures caractéristiques d'un matériau rigide) ; faire figurer $\rho_1,c_1,Z_1$ côté air et $\rho_2,c_2,Z_2$ côté aluminium, avec des flèches d'épaisseurs très différentes pour l'onde réfléchie (quasi totale) et l'onde transmise (quasi nulle).](/figures/td3_ex2_interface_air_alu.svg)](/figures/td3_ex2_interface_air_alu.svg)
+<p style="text-align:center"><a href="/figures/td3_ex2_interface_air_alu.svg" target="_blank" rel="noopener"><img src="/figures/td3_ex2_interface_air_alu.svg" alt="Suggestion : reprendre le schéma de l'interface fluide-fluide du TD2 (exercice 4), en remplaçant le second milieu par un solide (hachures caractéristiques d'un matériau rigide) ; faire figurer $\rho_1,c_1,Z_1$ côté air et $\rho_2,c_2,Z_2$ côté aluminium, avec des flèches d'épaisseurs très différentes pour l'onde réfléchie (quasi totale) et l'onde transmise (quasi nulle)." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 **q1.** Calculer les impédances acoustiques $Z_1$ et $Z_2$ caractéristiques de l'air et de l'aluminium. Conclusion : le système est-il adapté en impédance ?
 

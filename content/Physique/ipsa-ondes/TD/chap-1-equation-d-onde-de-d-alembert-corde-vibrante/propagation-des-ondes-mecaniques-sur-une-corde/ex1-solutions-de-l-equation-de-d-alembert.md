@@ -5,7 +5,7 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · [📄 Corrigé](/pdfs/td1_PhV212_corrige.pdf) · [📄 Énoncé](/pdfs/td1_PhV212_enonce.pdf) · [📄 Aides (td1_PhV212_aides)](/pdfs/td1_PhV212_aides.pdf) · [📄 Aides (td1_PhV212_exs_maison_aide)](/pdfs/td1_PhV212_exs_maison_aide.pdf) · [📄 PDF (td1_ex1_coup_de_pouce)](/pdfs/td1_ex1_coup_de_pouce.pdf) · [📄 PDF (td1_ex1_solution_detaillee)](/pdfs/td1_ex1_solution_detaillee.pdf) · [📄 Fiche enseignant (td1_PhV212_fiche)](/pdfs/td1_PhV212_fiche.pdf) · [📄 Fiche enseignant (td1_ex1_fiche)](/pdfs/td1_ex1_fiche.pdf) · [📄 Fiche enseignant (td1_exs_maison_fiche)](/pdfs/td1_exs_maison_fiche.pdf)
+[[physique/ipsa-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
 
 ### Exercice 1. Solutions de l'équation de d'Alembert
 
@@ -629,8 +629,8 @@ du point considéré. Conclure quant au sens de propagation de l'onde.
 > }
 > $$
 >
-> [![Translation du profil d'une onde $y(x,t)=f(x-ct)$ entre
-> les instants $t_1$ et $t_2$.](/figures/td1_ex0_onde_x_minus_ct.svg)](/figures/td1_ex0_onde_x_minus_ct.svg)
+> <p style="text-align:center"><a href="/figures/td1_ex0_onde_x_minus_ct.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex0_onde_x_minus_ct.svg" alt="Translation du profil d'une onde $y(x,t)=f(x-ct)$ entre
+> les instants $t_1$ et $t_2$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
   **b)** Reprendre les mêmes questions pour une onde :
@@ -780,6 +780,6 @@ Conclure quant au sens de propagation de cette onde.
 > }
 > $$
 >
-> [![Translation du profil d'une onde $y(x,t)=g(x+ct)$ entre
-> les instants $t_1$ et $t_2$.](/figures/td1_ex0_onde_x_plus_ct.svg)](/figures/td1_ex0_onde_x_plus_ct.svg)
+> <p style="text-align:center"><a href="/figures/td1_ex0_onde_x_plus_ct.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex0_onde_x_plus_ct.svg" alt="Translation du profil d'une onde $y(x,t)=g(x+ct)$ entre
+> les instants $t_1$ et $t_2$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 

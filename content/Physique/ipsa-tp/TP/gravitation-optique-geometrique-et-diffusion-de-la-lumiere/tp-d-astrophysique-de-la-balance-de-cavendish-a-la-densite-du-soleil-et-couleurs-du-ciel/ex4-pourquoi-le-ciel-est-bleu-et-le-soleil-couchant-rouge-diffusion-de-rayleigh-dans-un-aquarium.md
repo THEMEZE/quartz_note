@@ -5,7 +5,7 @@ tags:
   - gravitation-optique-geometrique-et-diffusion-de-la-lumiere
 ---
 
-[[physique/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]] · [📄 Fiche enseignant](/pdfs/TP_IPSA_Astrophysique_fiche.pdf)
+[[physique/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Astrophysique_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
 ### Exercice 4. Pourquoi le ciel est bleu et le Soleil couchant rouge : diffusion de Rayleigh dans un aquarium
 

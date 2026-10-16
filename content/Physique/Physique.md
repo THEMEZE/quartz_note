@@ -4,7 +4,10 @@ tags:
   - Science
 ---
 # Ipsa
-[[content/Physique/ipsa-ondes/index|index]]
+
+
+[[public/physique/ipsa-ondes/td/chap-2-ondes-acoustiques/index-og-image.webp]]
+
 # Concours
 
 [[Aggregation Physique-Chimie]].
