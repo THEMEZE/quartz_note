@@ -150,11 +150,11 @@ $$
 \boxed{\vec a_{\mathscr R}(M)=\vec a_{\mathscr R'}(M)+\vec a^{\,ie}_{\mathscr R'/\mathscr R}(M)+\vec a^{\,ic}_{\mathscr R'/\mathscr R}(M)}
 $$
 $$
-\vec a^{\,ie}=\vec a_{\mathscr R}(O')+\dot\Omega(\overrightarrow{O'M})+\Omega^2(\overrightarrow{O'M}),\qquad \vec a^{\,ic}=2\,\Omega(\vec v_{\mathscr R'}(M)).
+\vec a^{\,ie}_{\mathscr R'/\mathscr R}(M)=\vec a_{\mathscr R}(O')+\dot\Omega(\overrightarrow{O'M})+\Omega^2(\overrightarrow{O'M}),\qquad \vec a^{\,ic}_{\mathscr R'/\mathscr R}(M)=2\,\Omega(\vec v_{\mathscr R'}(M)).
 $$
 En composantes : $a^i=a^{i}_{\prime}+a^i(O')+2\Omega^i{}_jv^{j}_{\prime}+\left(\dot\Omega^i{}_j+\Omega^i{}_k\Omega^k{}_j\right)x^{j'}$. En dimension 3 :
 $$
-\vec a_{\mathscr R}(M)=\vec a_{\mathscr R'}(M)+\vec a_{\mathscr R}(O')+\underbrace{\dot{\vec\omega}\times\overrightarrow{O'M}}_{\text{Euler}}+\underbrace{\vec\omega\times(\vec\omega\times\overrightarrow{O'M})}_{\text{centripète}}+\underbrace{2\vec\omega\times\vec v_{\mathscr R'}(M)}_{\text{Coriolis}}.
+\vec a_{\mathscr R}(M)=\vec a_{\mathscr R'}(M)+ \overbrace{\vec a_{\mathscr R}(O')+\underbrace{\dot{\vec\omega}\times\overrightarrow{O'M}}_{\text{Euler}}+\underbrace{\vec\omega\times(\vec\omega\times\overrightarrow{O'M})}_{\text{centripète}}}^{\vec a^{\,ie}_{\mathscr R'/\mathscr R}(M)}+ \overbrace{\underbrace{2\vec\omega\times\vec v_{\mathscr R'}(M)}_{\text{Coriolis}}}^{\vec a^{\,ic}_{\mathscr R'/\mathscr R}(M)}.
 $$
 
 >[!warning]- Correction par rapport à la version d'origine
@@ -191,7 +191,7 @@ Les forces d'interaction sont **invariantes par changement de référentiel** (e
 
 Dans $\mathscr R$ galiléen, $m\vec a_{\mathscr R}(M)=\vec F$. En utilisant 1.5 :
 $$
-\boxed{m\,\vec a_{\mathscr R'}(M)=\vec F\underbrace{-m\,\vec a_{\mathscr R}(O')}_{\vec F^{ie}_{\text{transl.}}}\ \underbrace{-m\,\dot\Omega(\overrightarrow{O'M})}_{\vec F_{\text{Euler}}}\ \underbrace{-m\,\Omega^2(\overrightarrow{O'M})}_{\vec F_{\text{centrifuge}}}\ \underbrace{-2m\,\Omega(\vec v_{\mathscr R'}(M))}_{\vec F^{ic}_{\text{Coriolis}}}}
+\boxed{m\,\vec a_{\mathscr R'}(M)=\vec F \overbrace{\underbrace{-m\,\vec a_{\mathscr R}(O')}_{\vec F^{ie}_{\text{transl.}}}\ \underbrace{-m\,\dot\Omega(\overrightarrow{O'M})}_{\vec F_{\text{Euler}}}\ \underbrace{-m\,\Omega^2(\overrightarrow{O'M})}_{\vec F_{\text{centrifuge}}}}^{\vec F^{ie}(M)}\overbrace{ \underbrace{-2m\,\Omega(\vec v_{\mathscr R'}(M))}_{\vec F^{ic}_{\text{Coriolis}}}}^{\vec F^{ic}(M)}}
 $$
 - $\vec F^{ie}=-m\,\vec a^{\,ie}$ (force d'inertie d'entraînement), $\vec F^{ic}=-m\,\vec a^{\,ic}$ (force d'inertie de Coriolis).
 - **Centrifuge** : $\vec F=-m\Omega^2\vec r'$ ; son produit scalaire avec $\vec r'$ vaut $-m\,g(\vec r',\Omega^2\vec r')=m\,\|\Omega\vec r'\|^2\ge 0$ : elle écarte de l'axe de rotation (dimension 3 : $+m\omega^2\vec r'_\perp$).
@@ -204,7 +204,7 @@ $$
 
 Soit $\mathscr S$ un système matériel fermé, de mesure de masse $dm(M)$ et de masse totale $m=\int_{\mathscr S}dm$ (conservée).
 
-**Centre d'inertie** $G$ : $\displaystyle\int_{M\in\mathscr S}\overrightarrow{GM}\,dm(M)=\vec 0$ ; pour toute origine $O$, $\ m\,\overrightarrow{OG}=\int_{\mathscr S}\overrightarrow{OM}\,dm(M)$. (Cette définition est affine : en coordonnées curvilignes on intègre les composantes cartésiennes d'immersion, pas la moyenne des $q^i$.)
+**Centre d'inertie** $G$ : $\displaystyle\int_{M\in\mathscr S}\overrightarrow{GM}\,dm(M)=\vec 0$ ; pour toute origine $O$, $\ m\,\overrightarrow{OG}=\int_{M \in \mathscr S}\overrightarrow{OM}\,dm(M)$. (Cette définition est affine : en coordonnées curvilignes on intègre les composantes cartésiennes d'immersion, pas la moyenne des $q^i$.)
 
 **Référentiel barycentrique** $\mathscr R^\ast\doteq(G;\vec e_1,\dots,\vec e_n)$ : en **translation** par rapport à $\mathscr R$ ($\Omega_{\mathscr R^\ast/\mathscr R}=0$) et d'origine $G$. Les compositions de 1.4 et 1.5 donnent
 $$
@@ -216,8 +216,8 @@ Remarque : $\mathscr R^\ast$ n'est galiléen que si $\vec a_{\mathscr R}(G)=\vec
 
 **Définition.**
 $$
-\vec P_{\mathscr S/\mathscr R}:=\int_{\mathscr S}\vec v_{\mathscr R}(M)\,dm(M),\qquad
-\mathsf L^{ij}_{\mathscr S/\mathscr R}(A):=\int_{\mathscr S}\left(\overrightarrow{AM}\wedge\vec v_{\mathscr R}(M)\right)^{ij}dm(M)=\int_{\mathscr S}\left(r^i_{AM}v^j-r^j_{AM}v^i\right)dm .
+\vec P_{\mathscr S/\mathscr R} \doteq \int_{ M \in \mathscr S} \overbrace{\vec v_{\mathscr R}(M)\,dm(M)}^{ d \vec P_{\mathscr R}(M)},\qquad
+\mathsf L^{ij}_{\mathscr S/\mathscr R}(A) \doteq \int_{M \in \mathscr S} \overbrace{\left(\overrightarrow{AM}\wedge\vec v_{\mathscr R}(M)\right)^{ij}dm(M)}^{\left( d\vec L (A;M)  \doteq \overrightarrow{AM}\wedge d\vec P_{\mathscr R}(M)\right)^{ij}}=\int_{\mathscr S}\left(r^i_{AM}v^j-r^j_{AM}v^i\right)dm .
 $$
 Composantes de $\vec P$ : $P^i=\int v^i\,dm$, $P_i=g_{ij}P^j$. Le **moment cinétique** $\mathsf L(A)$ est un bivecteur ; en dimension 3, $\vec L(A)=\int\overrightarrow{AM}\times\vec v\,dm$, $L^k=\tfrac12\varepsilon^k{}_{ij}\mathsf L^{ij}$.
 
@@ -226,13 +226,23 @@ Composantes de $\vec P$ : $P^i=\int v^i\,dm$, $P_i=g_{ij}P^j$. Le **moment ciné
 
 **Expression opérationnelle de $\vec P$.** En dérivant $m\overrightarrow{OG}=\int\overrightarrow{OM}dm$ :
 $$
-m\,\vec v_{\mathscr R}(G)=\int\vec v_{\mathscr R}(M)\,dm=\vec P_{\mathscr S/\mathscr R}\quad\Longrightarrow\quad \boxed{\vec P_{\mathscr S/\mathscr R}=m\,\vec v_{\mathscr R}(G),\quad \vec P_{\mathscr S/\mathscr R^\ast}=\vec 0,\quad m\,\vec a_{\mathscr R}(G)=\left.\frac{d\vec P}{dt}\right)_{\mathscr R}.}
+m\,\vec v_{\mathscr R}(G) = m\,  \left . \frac{d \overrightarrow{OG} }{dt} \right )_{\mathscr R} = \underbrace{\int_{ M \in \mathscr S}  \overbrace{\left . \frac{d \overrightarrow{OM} }{dt} \right )_{\mathscr R}}^{\vec v_{\mathscr R}(M)} \,dm(M)}_{\vec P_{\mathscr S/\mathscr R} } = \underbrace{\int_{ M \in \mathscr S} \vec v_{\mathscr R}(G) \,dm(M)}_{m \,\vec v_{\mathscr R}(G)} + \underbrace{\int_{ M \in \mathscr S} \vec v_{\mathscr R^\ast }(M) \,dm(M)}_{\vec P_{\mathscr S/\mathscr R^\ast} }
+$$
+
+$$
+m\,\vec v_{\mathscr R}(G)=\int_{ M \in \mathscr S}\vec v_{\mathscr R}(M)\,dm=\vec P_{\mathscr S/\mathscr R}\quad\Longrightarrow\quad \boxed{\vec P_{\mathscr S/\mathscr R}=m\,\vec v_{\mathscr R}(G),\quad \vec P_{\mathscr S/\mathscr R^\ast}=\vec 0,\quad m\,\vec a_{\mathscr R}(G)=\left . \frac{d \vec{P}_{\mathscr S / \mathscr R}}{dt} \right )_{\mathscr R}.}
 $$
 
 **Changement de point (BABAR).** Pour $A,B$ quelconques, avec $\overrightarrow{BM}=\overrightarrow{BA}+\overrightarrow{AM}$ :
+
+$$
+\mathsf L_{\mathscr S / \mathscr R}(B) \doteq \int_{M \in \mathscr S} dm(M)\, (\overrightarrow{BA} + \overrightarrow{AM} ) \wedge \vec{v}_{\mathscr R}(M) = \underbrace{\int_{M \in \mathscr S} dm(M)\,\overrightarrow{AM} \wedge \vec{v}_{\mathscr R}(M)}_{\displaystyle \mathsf L_{\mathscr S / \mathscr R}(A)} + \overrightarrow{BA} \,  \wedge \underbrace{\int_{M \in \mathscr S} dm(M) \vec{v}_{\mathscr R}(M)}_{\displaystyle \vec{P}_{\mathscr S / \mathscr R}} .
+$$
 $$
 \boxed{\mathsf L(B)=\mathsf L(A)+\overrightarrow{BA}\wedge\vec P,\qquad \mathsf L^{ij}(B)=\mathsf L^{ij}(A)+BA^iP^j-BA^jP^i.}
 $$
+
+*** *Le champ des moments cinétiques a la structure d'un torseur, qu'on appelle torseur cinétique. Sa résultante est la quantité de mouvement/ résultante cinétique  $\vec{P}_{\mathscr S / \mathscr R}$* ***
 
 >[!tip]- **Torseur** (structure générale) : $\{\,\vec R\,;\,\mathsf M(A)\,\}$
 >Un **torseur** est un couple (résultante $\vec R\in V$, champ de moments $A\mapsto\mathsf M(A)\in\Lambda^2V$) vérifiant la relation de changement de point $\mathsf M(B)=\mathsf M(A)+\overrightarrow{BA}\wedge\vec R$ (« **BABAR** »). En dimension 3, avec $\vec M=\tfrac12\varepsilon\,\mathsf M$ : $\vec M(B)=\vec M(A)+\overrightarrow{BA}\times\vec R$. Exemples :
@@ -242,11 +252,24 @@ $$
 
 ## 3.3 Moment cinétique barycentrique, théorème de Koenig
 
-Dans $\mathscr R^\ast$, $\vec P_{\mathscr S/\mathscr R^\ast}=\vec 0$, donc d'après BABAR $\mathsf L_{\mathscr S/\mathscr R^\ast}(B)=\mathsf L_{\mathscr S/\mathscr R^\ast}(A)=:\mathsf L^\ast$ : le **moment cinétique barycentrique** est **indépendant du point**.
+Dans $\mathscr R^\ast$, $\vec P_{\mathscr S/\mathscr R^\ast}=\vec 0$, donc d'après BABAR $\mathsf L_{\mathscr S/\mathscr R^\ast}(B)=\mathsf L_{\mathscr S/\mathscr R^\ast}(A)\equiv \mathsf L_{\mathscr S/\mathscr R^\ast}^\ast$ : le **moment cinétique barycentrique** est **indépendant du point**.
 
->[!tip]+ **Théorème de Koenig (moment cinétique).** $\ \boxed{\mathsf L_{\mathscr S/\mathscr R}(A)=\mathsf L^\ast+m\,\overrightarrow{AG}\wedge\vec v_{\mathscr R}(G)}$.
+*** *Dans le référentiel barycentrique, le moment cinétique est indépendant du point où on le calcule; on appelle moment cinétique barycentrique et on le note $\vec{L}_{\mathscr S / \mathscr R^\ast}$ ; c'est une grandeur intrinsèque du système.*  ***
+
+
+>[!tip]+ **Théorème de Koenig (moment cinétique).** $\ \boxed{\mathsf L_{\mathscr S/\mathscr R}(A)=\mathsf L_{\mathscr S/\mathscr R^\ast}^\ast+m\,\overrightarrow{AG}\wedge\vec v_{\mathscr R}(G)}$.
 >
->*Démonstration.* $\vec v_{\mathscr R}(M)=\vec v_{\mathscr R^\ast}(M)+\vec v_{\mathscr R}(G)$ donne $\mathsf L(A)=\int\overrightarrow{AM}\wedge\vec v_{\mathscr R^\ast}\,dm+\left(\int\overrightarrow{AM}\,dm\right)\wedge\vec v_{\mathscr R}(G)$. Or $\int\overrightarrow{AM}dm=m\overrightarrow{AG}$ et $\int\overrightarrow{AM}\wedge\vec v_{\mathscr R^\ast}dm=\int\left(\overrightarrow{AG}+\overrightarrow{GM}\right)\wedge\vec v_{\mathscr R^\ast}dm=\overrightarrow{AG}\wedge\vec P_{\mathscr S/\mathscr R^\ast}+\mathsf L^\ast=\mathsf L^\ast$. $\square$
+>*Démonstration.* $\vec v_{\mathscr R}(M)=\vec v_{\mathscr R^\ast}(M)+\vec v_{\mathscr R}(G)$ donne $\mathsf L_{\mathscr S/\mathscr R^\ast}(A)=\int_{M \in \mathscr S}\overrightarrow{AM}\wedge\vec v_{\mathscr R^\ast}(M)\,dm(M) +\left(\int_{M \in \mathscr S}\overrightarrow{AM}\,dm\right)\wedge\vec v_{\mathscr R}(G)$. Or $\int_{M \in \mathscr S}\overrightarrow{AM}dm(M) =m\overrightarrow{AG}$ et $\int_{M \in \mathscr S}\overrightarrow{AM}\wedge\vec v_{\mathscr R^\ast}(M) dm(M) =\int_{M \in \mathscr S}\left(\overrightarrow{AG}+\overrightarrow{GM}\right)\wedge\vec v_{\mathscr R^\ast}(M) dm(M) =\overrightarrow{AG}\wedge\vec P_{\mathscr S/\mathscr R^\ast}+\mathsf L^\ast_{\mathscr S / \mathscr R}=\mathsf L^\ast_{\mathscr S / \mathscr R}$. $\square$
+>ou encore 
+>$$
+>\mathsf {L}_{\mathscr S / \mathscr R}(A) = \int_{M \in \mathscr S} dm(M)\,\overrightarrow{AM}\,  \wedge ( \overbrace{ \vec{v}_{\mathscr R^\ast }(M) + \vec{v}_{\mathscr R }(G) }^{\displaystyle \vec{v}_{\mathscr R }(M)}) = \underbrace{\int_{M \in \mathscr S} dm(M)\, \overrightarrow{AM}\,  \wedge \vec{v}_{\mathscr R^\ast }(M)}_{\displaystyle \mathsf{L}^\ast_{\mathscr S / \mathscr R^\ast }}  \, +   \underbrace{\int_{M \in \mathscr S} dm(M)\, \overrightarrow{AM}}_{\displaystyle m \, \overrightarrow{AG}}\,  \wedge \vec{v}_{\mathscr R }(G)
+>$$
+>donc 
+>$$
+>\mathsf{L}_{\mathscr S / \mathscr R}(A) = \underbrace{\mathsf{L}^\ast_{\mathscr S / \mathscr R^\ast}}_{\text{{mouv propre ($\mathscr S/\mathscr R^\ast$)}}} + \underbrace{m \, \overrightarrow{AG} \wedge \vec{v}_{\mathscr R}(G)}_{\text{ mouv d'enssemble ($ G / \mathscr R$)}}.
+>$$
+>. $\square$
+
 
 *Interprétation* : moment cinétique = « mouvement propre » ($\mathscr S/\mathscr R^\ast$) + « mouvement d'ensemble » ($G$ affecté de la masse $m$).
 
@@ -254,15 +277,24 @@ Dans $\mathscr R^\ast$, $\vec P_{\mathscr S/\mathscr R^\ast}=\vec 0$, donc d'apr
 
 On définit la **quantité d'accélération** et le **moment dynamique** :
 $$
-\vec S_{\mathscr S/\mathscr R}:=\int\vec a_{\mathscr R}(M)\,dm,\qquad \mathsf D^{ij}_{\mathscr S/\mathscr R}(A):=\int\left(r^i_{AM}a^j-r^j_{AM}a^i\right)dm .
+\vec S_{\mathscr S/\mathscr R} \doteq \int _{ M \in \mathscr S} \overbrace{\vec a_{\mathscr R}(M)\,dm(M)}^{d \vec S_{\mathscr R}(M)},\qquad \mathsf D^{ij}_{\mathscr S/\mathscr R}(A)\doteq \int_{M \in \mathscr S} \overbrace{\left(\overrightarrow{AM}\wedge\vec a_{\mathscr R}(M)\right)^{ij}dm(M)}^{\left( d\vec D (A;M)  \doteq \overrightarrow{AM}\wedge d\vec S_{\mathscr R}(M)\right)^{ij}} =  \int_{\mathscr S}\left(r^i_{AM}a^j-r^j_{AM}a^i\right)dm .
 $$
 Avec $\vec S=m\vec a_{\mathscr R}(G)=\dfrac{d\vec P}{dt}$, et le torseur $\mathscr D(A)=\{\vec S;\mathsf D(A)\}$ (BABAR : $\mathsf D(B)=\mathsf D(A)+\overrightarrow{BA}\wedge\vec S$).
 
 >[!tip]+ **Lien avec $\dot{\mathsf L}$.** $\ \boxed{\mathsf D(A)=\left.\frac{d\mathsf L(A)}{dt}\right)_{\mathscr R}+\vec v_{\mathscr R}(A)\wedge\vec P}$ , soit $\ \mathsf D^{ij}=\dot{\mathsf L}^{ij}+v_A^iP^j-v_A^jP^i$ , et $\ \vec v_{\mathscr R}(A)\wedge\vec P=m\,\vec v_{\mathscr R}(A)\wedge\vec v_{\mathscr R}(G)$.
 >
 >*Démonstration.* $\dfrac{d}{dt}\left(r^i_{AM}v^j-r^j_{AM}v^i\right)$ avec $\dot r_{AM}^i=v^i-v_A^i$ vaut $(v^i-v^i_A)v^j-(v^j-v^j_A)v^i+r^ia^j-r^ja^i=-(v^i_Av^j-v^j_Av^i)+(r^ia^j-r^ja^i)$. En intégrant : $\dot{\mathsf L}^{ij}=-(v^i_AP^j-v^j_AP^i)+\mathsf D^{ij}$. $\square$
+>ou encore 
+>$$
+>\left . \frac{d \mathsf{L}_{\mathscr S / \mathscr R}(A)}{dt} \right )_{\mathscr R } = \underbrace{\int_{M \in \mathscr S} dm(M)\, \overrightarrow{AM} \, \wedge  \overbrace{\left . \frac{d \vec{v}_{\mathscr R}(A)}{dt} \right )_{\mathscr R }}^{\vec{a}_{\mathscr R}(M)}}_{\mathsf{D}_{\mathscr S / \mathscr R}(A)} +  \int_{M \in \mathscr S} dm(M)\,  \Bigg \{ \overbrace{ \underbrace{\left. \frac{d\overrightarrow{OM}}{dt} \right )_{\mathscr R}}_{\displaystyle \vec{v}_{\mathscr R }(M)}  - \underbrace{\left. \frac{d\overrightarrow{OA}}{dt} \right )_{\mathscr R}}_{\displaystyle \vec{v}_{\mathscr R }(A)} }^{\displaystyle \left. \frac{d\overrightarrow{AM}}{dt} \right )_{\mathscr R}} \Bigg \}  \, \wedge \vec{v}_{\mathscr R}(M)  = \mathsf{D}_{\mathscr S / \mathscr R}(A) - \vec{v}_{\mathscr R}(A) \wedge \underbrace{\int_{M \in \mathscr S} dm(M)\,\vec{v}_{\mathscr R}(M)}_{\displaystyle \vec{P}_{\mathscr S / \mathscr R} = m \, \vec{v}_{ \mathscr R}(G)} + \int_{M \in \mathscr S} dm(M) \, \underbrace{\vec{v}_{ \mathscr R}(M) \wedge \vec{v}_{ \mathscr R}(M)}_{\vec 0 }  
+>$$
+>donc 
+>$$
+>\vec{D}_{\mathscr S / \mathscr R}(A) = \left . \frac{d \vec{L}_{\mathscr S / \mathscr R}(A)}{dt} \right )_{\mathscr R } + m \, \vec{v}_{ \mathscr R}(A) \wedge \vec{v}_{\mathscr R}(G).
+>$$
 >
 >Si $A$ est **fixe**, ou si $A=G$, ou si $\vec v(A)\parallel\vec v(G)$ : $\mathsf D(A)=\dot{\mathsf L}(A)$.
+>.$\square$
 
 ## 3.5 Énergie cinétique, théorème de Koenig
 
