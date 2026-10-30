@@ -1,5 +1,5 @@
 ---
-title: Opérateurs différentiels et métrique en coordonnées curvilignes
+title: VIII - Opérateurs différentiels et métrique en coordonnées curvilignes
 tags:
   - Mathématiques
   - Physique

@@ -8,7 +8,7 @@ tags:
 ---
 
 - **Niveau**  : Licence 
-- **Prérequis** : Mécanique du point et du solide, [[Physique/Mécanique du Solide/M1 Rappels et compléments#$ bullet$ Référentiel barycentrique | Référentiel barycentrique ]], Cinématique des fluides, Notions sur la viscosité, Équation d’ Euler
+- **Prérequis** : Mécanique du point et du solide, [[I - Mécanique du point au solide (3D)#$ bullet$ Référentiel barycentrique| Référentiel barycentrique ]], Cinématique des fluides, Notions sur la viscosité, Équation d’ Euler
 
 ---
 
@@ -205,7 +205,7 @@ On peut donc entièrement ramener l'étude du mouvement relatif des corps à cel
 
 ## 1) Théorème du moment cinétique
 
--  Système matériel $\mathscr S$ dans un référentiel galiléen $\mathscr R$. **Théorème du moment cinétique** $(\mathsf{TMC})$ en un point fixe $O$ ([^1] p 227 et [[M2 Dynamique des systèmes matériels fermés#$ bullet$ Théorème du moment cinétique en un point fixe $( mathsf{TMC})$|Théorème du moment cinétique en un point fixe (TMC)]] ):
+-  Système matériel $\mathscr S$ dans un référentiel galiléen $\mathscr R$. **Théorème du moment cinétique** $(\mathsf{TMC})$ en un point fixe $O$ ([^1] p 227 et [[II - Dynamique des systèmes matériels fermés (3D - torseur)#$ bullet$ Théorème du moment cinétique en un point fixe $( mathsf{TMC})$|Théorème du moment cinétique en un point fixe (TMC)]] ):
 $$  
 \left. \frac{d\vec L_{\mathscr R}(O)}{dt} \right )_{\mathscr R } = \vec{\mathscr M}_{\text ext}(O)  
 $$
@@ -223,7 +223,7 @@ avec : $\vec L_{\mathscr R}(O) = \sum_i \overrightarrow{OM_i} \wedge m_i \vec v_
 >-  il faut bien comprendre que ce terme vient du fait que **AAA n’est pas fixe**
 >- ce n’est pas une formule “fondamentale”, mais une correction cinématique
 >
->(cf [[Physique/Mécanique du Solide/M1 Rappels et compléments#$ bullet$ Moment dynamique|  Moment dynamique]]  , [^9] p 194 , [^8] p 120 )
+>(cf [[I - Mécanique du point au solide (3D)#$ bullet$ Moment dynamique|  Moment dynamique]]  , [^9] p 194 , [^8] p 120 )
 
 - Conservation : système isolé ($d \vec F_{\text{ext}}(M) = \vec 0 \Rightarrow \vec{\mathscr M}_{\text ext}(O) = \vec 0$ ) ou bien force centrale ($\overrightarrow{OM} \wedge d\vec F_{\text{ext}}(M) = \vec 0 \Rightarrow \vec{\mathscr M}_{\text ext}(O) = \vec 0$) .
 $$
@@ -291,8 +291,8 @@ $$
 >[!tip]+ Ecran.
 >Vidéo YouTube : https://www.youtube.com/watch?v=2Oc-Ucx_4Ug (2 :23).
 
-- Voir modélisation en [[Physique/Mécanique du Solide/M1 Rappels et compléments#a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe.|a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe. ]] ou dans [^9] p 167
-- Conservation de $L_{\Delta , \mathscr S / \mathscr R}(O) = \vec L_{ \mathscr S /  \mathscr R}(O ) \cdot \vec e_z = J_\Delta \Omega_{\mathscr S / \mathscr R}$ (vor [[Physique/Mécanique du Solide/M1 Rappels et compléments#a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe.|a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe. ]] ou dans [^9] p 167 )
+- Voir modélisation en [[I - Mécanique du point au solide (3D)#a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe.|a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe. ]] ou dans [^9] p 167
+- Conservation de $L_{\Delta , \mathscr S / \mathscr R}(O) = \vec L_{ \mathscr S /  \mathscr R}(O ) \cdot \vec e_z = J_\Delta \Omega_{\mathscr S / \mathscr R}$ (vor [[I - Mécanique du point au solide (3D)#a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe.|a. Composante utile du moment cinétique d'un solide en rotation autour d'un axe fixe. ]] ou dans [^9] p 167 )
 -  Rapide calcul d’ordre de grandeur suivant ([^6] p 324) 
 
 >[!tip]- **ODG (ordre de grandeur) : danseuse**

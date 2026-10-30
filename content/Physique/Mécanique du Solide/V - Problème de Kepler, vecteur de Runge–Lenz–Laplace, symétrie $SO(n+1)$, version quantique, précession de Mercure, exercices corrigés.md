@@ -1,5 +1,5 @@
 ---
-title: Problème de Kepler, vecteur de Runge–Lenz–Laplace, symétrie $SO(n+1)$, version quantique, précession de Mercure, exercices corrigés
+title: V - Problème de Kepler, vecteur de Runge–Lenz–Laplace, symétrie $SO(n+1)$, version quantique, précession de Mercure, exercices corrigés
 tags:
   - Agrégation
   - Physique
@@ -7,7 +7,7 @@ tags:
   - Mécanique quantique
   - Relativité générale
 niveau: Doctorat
-version: 1.0
+version: 1
 ---
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Dynamique des systèmes matériels — formulation tensorielle et métrique
+title: IV - Dynamique des systèmes matériels — formulation tensorielle et métrique (nD , torseur)
 tags:
   - Physique
   - Mécanique
   - Calcul tensoriel
 niveau: Doctorat
-version: 1.0
+version: 1
 ---
 
 # Dynamique des systèmes matériels : formulation tensorielle

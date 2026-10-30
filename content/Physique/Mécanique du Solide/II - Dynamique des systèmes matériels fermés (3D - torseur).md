@@ -1,5 +1,5 @@
 ---
-title: Dynamique des systèmes matériels fermés
+title: II - Dynamique des systèmes matériels fermés (3D - torseur)
 tags:
   - Agrégation
   - Physique
@@ -13,7 +13,7 @@ tags:
 ---
 
 
-Système matériel $\mathscr S$  dans un référentiel galiléen $\mathscr R$. Nous avons déjà rencontrer les composant $\vec{\Omega}_{\mathscr S / \mathscr R}$ et $\vec{v}_{\mathscr S / \mathscr R}(A)$ du torseur cinématique, qui satisfont bien à la relation de Varignon, d'après la formule de composition des vitesse (cf  [[Physique/Mécanique du Solide/M1 Rappels et compléments#1. Vecteur-Rotation | 1. Vecteur-Rotation]],  [^1] p 120 , [^2] p 150 , [^3] p 177, [^4] p 199 )
+Système matériel $\mathscr S$  dans un référentiel galiléen $\mathscr R$. Nous avons déjà rencontrer les composant $\vec{\Omega}_{\mathscr S / \mathscr R}$ et $\vec{v}_{\mathscr S / \mathscr R}(A)$ du torseur cinématique, qui satisfont bien à la relation de Varignon, d'après la formule de composition des vitesse (cf  [[I - Mécanique du point au solide (3D)#1. Vecteur-Rotation| 1. Vecteur-Rotation]],  [^1] p 120 , [^2] p 150 , [^3] p 177, [^4] p 199 )
 $$
 \overrightarrow{v}_{\mathscr S/ \mathscr R} (B) = \overrightarrow{v}_{\mathscr S/ \mathscr R}(A) +  \overrightarrow{BA} \wedge  \overrightarrow{\Omega}_{\mathscr S / \mathscr R},
 $$
@@ -50,7 +50,7 @@ $$
 >\right \}.
 >$$
 
-Si on définie la **quantité d'accélération**, qui joue un rôle de résultante (cf  [[Physique/Mécanique du Solide/M1 Rappels et compléments#$ bullet$ Moment dynamique| Moment dynamique]],  [^1] p 120 , [^2] p 164 , [^3] p 177, [^4] p 199 ):
+Si on définie la **quantité d'accélération**, qui joue un rôle de résultante (cf  [[I - Mécanique du point au solide (3D)#$ bullet$ Moment dynamique| Moment dynamique]],  [^1] p 120 , [^2] p 164 , [^3] p 177, [^4] p 199 ):
 $$
 \vec S_{\mathscr S / \mathscr R} = \iiint_{M \in \mathscr S} \vec{a}_{\mathscr S / \mathscr R}(M)\, dm(M),
 $$
@@ -175,14 +175,14 @@ $$
 
 ### $\bullet$ Théorème du moment cinétique barycentrique $(\mathsf{TMC^\ast})$
 
-Soit un système *fermé* $\mathscr S$ en mouvement par rapport à un référentiel *galiléen* $\mathscr R$, alors la dérivée du moment cinétique barycentrique est égale au moment des forces extérieures eu centre d'inertie $G$ (cf [[Physique/Mécanique du Solide/M1 Rappels et compléments#$ bullet$ Théorème de Koening |Théorème de Koening  ]] et [[Physique/Mécanique du Solide/M1 Rappels et compléments#$ bullet$ Moment dynamique|Moment dynamique ]] )
+Soit un système *fermé* $\mathscr S$ en mouvement par rapport à un référentiel *galiléen* $\mathscr R$, alors la dérivée du moment cinétique barycentrique est égale au moment des forces extérieures eu centre d'inertie $G$ (cf [[I - Mécanique du point au solide (3D)#$ bullet$ Théorème de Koening|Théorème de Koening  ]] et [[I - Mécanique du point au solide (3D)#$ bullet$ Moment dynamique|Moment dynamique ]] )
 $$
 \left. \frac{d \vec L_{\mathscr S / \mathscr R^\ast}}{dt} \right )_{\mathscr R}  = \vec{\mathfrak{M}}_{\mathscr S / \mathscr R}^{\text{ext}}(G) = \vec{\mathfrak{M}}_{\mathscr S / \mathscr R}^{\text{ext}}(A) + \overbrace{\overrightarrow{AG} \wedge ( - m \, \vec{a}_{\mathscr S / \mathscr R}(G))}^{ \displaystyle \vec{\mathfrak{M}}_{\mathscr R^\ast / \mathscr R}^{\text{ie}}(A)}
 $$
 
 ### $\bullet$ Théorème du moment cinétique en un point fixe $(\mathsf{TMC})$
 
-Soit un système *fermé* $\mathscr S$ en mouvement par rapport à un référentiel *galiléen* $\mathscr R$. Soit $A$ un point f*fixe* dans $\mathscr R$. Alors la dérivée du moment cinétique en $A$ est égale au moment des forces *extérieures* au point $A$ (cf [[Physique/Mécanique du Solide/M1 Rappels et compléments#$ bullet$ Moment dynamique|Moment dynamique ]] )
+Soit un système *fermé* $\mathscr S$ en mouvement par rapport à un référentiel *galiléen* $\mathscr R$. Soit $A$ un point f*fixe* dans $\mathscr R$. Alors la dérivée du moment cinétique en $A$ est égale au moment des forces *extérieures* au point $A$ (cf [[I - Mécanique du point au solide (3D)#$ bullet$ Moment dynamique|Moment dynamique ]] )
 $$
 \left. \frac{d \vec L_{\mathscr S / \mathscr R}(A)}{dt} \right )_{\mathscr R}  = \vec{\mathfrak{M}}_{\mathscr S / \mathscr R}^{\text{ext}}(A).
 $$

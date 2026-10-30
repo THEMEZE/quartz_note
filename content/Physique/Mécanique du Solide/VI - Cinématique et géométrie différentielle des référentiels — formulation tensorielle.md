@@ -1,12 +1,12 @@
 ---
-title: Cinématique et géométrie différentielle des référentiels — formulation tensorielle
+title: VI - Cinématique et géométrie différentielle des référentiels — formulation tensorielle
 tags:
   - Physique
   - Mécanique
   - Géométrie différentielle
   - Calcul tensoriel
 niveau: Doctorat
-version: 1.0
+version: 1
 ---
 
 # Cinématique et géométrie différentielle des référentiels

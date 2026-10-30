@@ -1,5 +1,5 @@
 ---
-title: Rappels et compléments
+title: I - Mécanique du point au solide (3D)
 tags:
   - Agrégation
   - Physique

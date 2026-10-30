@@ -1,12 +1,11 @@
 ---
-title: Rappels et compléments — cinématique, dynamique, principes variationnels et solide en dimension $n$ (formulation tensorielle)
+title: III - Mécanique du point au solide (nD)
 tags:
-  - Agrégation
   - Physique
   - Mécanique
   - Calcul tensoriel
 niveau: Doctorat
-version: 1.0
+version: 1
 ---
 
 ---
@@ -98,7 +97,7 @@ $$
 $$
 \boxed{\;\left.\frac{d\vec e_{j'}}{dt}\right)_{\mathscr R}=\Omega_{\mathscr R'/\mathscr R}(\vec e_{j'})=\Omega^{i'}{}_{j'}\,\vec e_{i'},\qquad j=1,\dots,n.\;}
 $$
-(Il suffit de décomposer $\dot{\vec e}_{j'}$ sur la base $(\vec e_{i'})$ : cela définit les $\Omega^{i'}{}_{j'}$, donc $\Omega$.)
+(Il suffit de décomposer $\dot{\vec e}_{j'}$ sur la base $(\vec e_{i'})$ : cela définit les $\Omega^{i'}{}_{j'}$, donc $\Omega$.) ([[]])
 
 >[!tip]+ **Proposition 1.** $\Omega_{\mathscr R'/\mathscr R}\in\mathfrak{so}(V,g)$, c'est-à-dire $\Omega_{ij}=-\Omega_{ji}$.
 >
