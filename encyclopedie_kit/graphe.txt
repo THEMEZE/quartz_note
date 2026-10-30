@@ -1,0 +1,114 @@
+# Source de vérité de l'encyclopédie. Une ligne = un nœud.
+# C|Titre|niveau(1-5)|prérequis;...|liés;...|sources existantes;...|résumé
+# N = notion (définie une seule fois, réutilisée), C = chapitre. Sources : stem de note, /dossier, ou stem#ancre
+# P|code|Nom|objectif|étapes dans l'ordre
+@ M|Fondements mathématiques
+C|Analyse|1||Équations différentielles|/ipsa-piscines-sciences-methodologie|Limites, dérivées, différentielles, intégrales
+C|Algèbre linéaire|1||Tenseur|Algèbre linéaire|Espaces vectoriels, bases, dualité
+C|Équations différentielles|1|Analyse;Algèbre linéaire|||Flots, stabilité, systèmes dynamiques
+C|Trajectoires, chemins et champs|1|Analyse;Algèbre linéaire|Principe de moindre action;Forme différentielle|/ipsa-mecanique-point|Courbe, configuration, phases, action, ligne de champ
+C|Analyse de Fourier|2|Analyse|Physique des ondes|/iogs-onip|Séries, transformées, spectres, FFT
+C|Probabilités|2|Analyse|||Lois, espérance, processus
+N|Espace de Hilbert|3|Algèbre linéaire;Analyse|Formalisme quantique||Espace préhilbertien complet, projecteurs, bases
+C|Analyse fonctionnelle|3|Espace de Hilbert;Analyse de Fourier|||Opérateurs, spectre, distributions
+C|Topologie|3|Analyse|Cohomologie||Continuité, connexité, homotopie
+C|Géométrie différentielle|3|Topologie;Algèbre linéaire|Calcul tensoriel|Calcul-differentiel-exterieur-geometrie|Variétés, champs, formes, intégration
+N|Variété différentielle|3|Topologie;Analyse|Fibré principal||Espace localement euclidien muni de cartes lisses
+N|Métrique|2|Algèbre linéaire|Variété différentielle|VI - |Produit scalaire ponctuel : longueurs, angles, volumes
+N|Tenseur|3|Algèbre linéaire;Métrique||VI - |Objet multilinéaire, loi de transformation
+N|Forme différentielle|3|Géométrie différentielle|Dérivée extérieure|Forme-différentielle;Calcul-differentiel-exterieur-geometrie|Champ de formes alternées, objet d'intégration
+N|Dérivée extérieure|3|Forme différentielle|Théories de jauge|Quelques Notation pour théorie de jauge|d, d²=0, Stokes
+N|Connexion|4|Variété différentielle;Tenseur|Courbure|Connexions;ChatGPT-Connexion et courbure|Transport parallèle, dérivée covariante
+N|Courbure|4|Connexion|Équations d'Einstein|ChatGPT-Connexion et courbure|Obstruction au transport parallèle : R = dω + ω∧ω
+N|Groupe de Lie|3|Algèbre linéaire;Variété différentielle|Théorème de Noether||Groupe qui est une variété, symétries continues
+N|Algèbre de Lie|3|Groupe de Lie|||Espace tangent en l'identité, crochet
+N|Fibré principal|4|Variété différentielle;Groupe de Lie|Connexion|Fibrés|Espace total, groupe structural (note source vide)
+N|Algèbre graduée|4|Algèbre de Lie|Super-algèbre de Lie|Algèbre graduée|Signe de Koszul, parité
+N|Super-algèbre de Lie|5|Algèbre graduée;Algèbre de Lie|Supersymétrie|Super-algèbre de Lie;Algèbres graduées|Crochet gradué, supercommutateur
+C|Cohomologie|4|Topologie;Forme différentielle|Théories topologiques des champs||De Rham, classes caractéristiques
+C|Calcul tensoriel|3|Tenseur;Géométrie différentielle|Mécanique du solide|VI - ;VII - ;VIII - |Opérateurs différentiels métriques, coordonnées curvilignes
+@ C|Mécanique classique
+C|Mécanique du point|1|Trajectoires, chemins et champs;Équations différentielles|Lois de conservation en dynamique|/ipsa-mecanique-point;III - Mécanique du point au solide (nD)|Cinématique, lois de Newton, Frenet
+C|Référentiels et forces d'inertie|2|Mécanique du point|Tenseur|L.P. 03;VI - |Théorème de transport, forces d'inertie
+C|Systèmes de points|2|Mécanique du point|Lois de conservation en dynamique|III - Mécanique du point au solide (nD);IV - |Centre d'inertie, Koenig, forces intérieures
+C|Mécanique du solide|2|Systèmes de points|Calcul tensoriel|I - ;II - ;IV - |Torseurs, tenseur d'inertie, rotation
+C|Lois de conservation en dynamique|2|Systèmes de points|Théorème de Noether|L.P. 05|P, L, énergie, Bernoulli
+C|Gravitation classique|2|Mécanique du point|Problème de Kepler|L.P. 02 - M1 - Gravitation|Newton, potentiel, orbites
+C|Problème de Kepler|3|Lois de conservation en dynamique;Gravitation classique|Vecteur de Runge–Lenz–Laplace|V - |Coniques, hodographe
+N|Vecteur de Runge–Lenz–Laplace|3|Problème de Kepler|Symétrie cachée SO(n+1)|V - |Intégrale première supplémentaire de Kepler
+N|Principe de moindre action|3|Trajectoires, chemins et champs;Analyse|Géodésique|III - Mécanique du point au solide (nD)#6. Formalisme lagrangien|Action stationnaire, variations à extrémités fixées
+C|Mécanique lagrangienne|3|Principe de moindre action;Mécanique du point;Métrique|Mécanique hamiltonienne|III - Mécanique du point au solide (nD)#6. Formalisme lagrangien|Euler–Lagrange, métrique cinétique, jauge
+N|Transformée de Legendre|3|Analyse|Mécanique hamiltonienne||Dualité convexe, passage (q,q̇)→(q,p)
+C|Mécanique hamiltonienne|3|Mécanique lagrangienne;Transformée de Legendre|Quantification|III - Mécanique du point au solide (nD)#7. Formalisme hamiltonien et théorème de Liouville|Espace des phases, équations de Hamilton
+N|Crochet de Poisson|3|Mécanique hamiltonienne|Algèbre de Lie|III - Mécanique du point au solide (nD)#7. Formalisme hamiltonien et théorème de Liouville|Structure de Lie sur les observables classiques
+N|Théorème de Liouville|3|Mécanique hamiltonienne|Ensembles statistiques|III - Mécanique du point au solide (nD)#7. Formalisme hamiltonien et théorème de Liouville|Conservation du volume de phase
+C|Géométrie symplectique|4|Mécanique hamiltonienne;Forme différentielle|Quantification||Forme symplectique, flots hamiltoniens
+N|Théorème de Noether|3|Mécanique lagrangienne|Groupe de Lie;Lois de conservation en dynamique|III - Mécanique du point au solide (nD)#8. Théorème de Noether en mécanique|Symétrie continue ⇒ grandeur conservée
+N|Symétrie cachée SO(n+1)|4|Vecteur de Runge–Lenz–Laplace;Théorème de Noether;Crochet de Poisson;Algèbre de Lie|Moment cinétique et spin|V - |Kepler : symétrie SO(n+1), spectre de l'hydrogène
+C|Mécanique des fluides|3|Mécanique du point;Calcul tensoriel|Physique des ondes|L.P. 08;L.P. 09;L.P. 10|Euler, Navier–Stokes, viscosité, interfaces
+@ O|Ondes, optique et électromagnétisme
+C|Oscillateurs|1|Équations différentielles|||Harmonique, amortissement, résonance
+C|Physique des ondes|2|Oscillateurs;Analyse de Fourier|Mécanique des fluides|/ipsa-physique-ondes|Corde, acoustique, interfaces, impédance
+C|Optique géométrique|1|Analyse||/ipsa-tp|Rayons, Fermat, instruments
+C|Optique ondulatoire|2|Physique des ondes;Optique géométrique|||Diffraction, interférences, polarisation
+C|Électrostatique|2|Analyse;Algèbre linéaire|||Gauss, potentiel, Poisson
+C|Magnétostatique|2|Électrostatique|||Biot–Savart, Ampère, induction
+C|Électromagnétisme|3|Magnétostatique;Physique des ondes|Forme différentielle;Théories de jauge||Maxwell, énergie, rayonnement
+C|Optique électromagnétique|3|Électromagnétisme;Optique ondulatoire|||Milieux matériels, dispersion
+C|Optique non linéaire et solitons|4|Optique électromagnétique;Équations différentielles|||Kerr, harmoniques, NLS
+C|Fluides quantiques de lumière|5|Optique non linéaire et solitons;Dynamique quantique||Quantum fluids of light|Hydrodynamique de Madelung, polaritons
+@ T|Thermodynamique et physique statistique
+C|Thermodynamique|1|Analyse|Entropie|L.P. 11;L.P. 12;L.P. 13;L.P. 14|Variables d'état, principes, gaz réels, machines
+C|Entropie|2|Thermodynamique;Probabilités|Thermodynamique de l'information||Second principe, irréversibilité
+C|Physique statistique classique|3|Entropie;Probabilités||L.P. 16|Microétats, facteur de Boltzmann
+C|Ensembles statistiques|3|Physique statistique classique;Théorème de Liouville|||Micro-canonique, canonique, grand-canonique
+C|Transitions de phase|3|Ensembles statistiques||L.P. 15|Paramètre d'ordre, criticalité
+C|Phénomènes de transport|3|Physique statistique classique||L.P. 18;L.P. 19|Diffusion, conduction, rayonnement
+C|Statistique quantique|4|Ensembles statistiques;Formalisme quantique|||Bose–Einstein, Fermi–Dirac
+C|Thermodynamique de l'information|4|Entropie;Probabilités|Information quantique||Entropie de Shannon, Landauer
+@ Q|Mécanique quantique
+C|Fondements de la mécanique quantique|2|Physique des ondes;Mécanique du point|||Expériences fondatrices, dualité
+N|Observable et état|3|Espace de Hilbert|||États purs/mixtes, observables autoadjointes, mesure
+C|Formalisme quantique|3|Fondements de la mécanique quantique;Espace de Hilbert;Observable et état|||Postulats, commutateurs, spectres
+C|Dynamique quantique|3|Formalisme quantique;Équations différentielles|Intégrale de chemin|III - Mécanique du point au solide (nD)#9. Noether pour les champs : Schrödinger, électrodynamique quantique|Équation de Schrödinger, évolution unitaire
+C|Moment cinétique et spin|3|Dynamique quantique;Algèbre de Lie|||so(3), su(2), addition des moments
+N|Intégrale de chemin|4|Dynamique quantique;Principe de moindre action|Quantification||Amplitude comme somme sur les trajectoires
+C|Quantification|4|Dynamique quantique;Mécanique hamiltonienne|Géométrie symplectique||Canonique, correspondance classique–quantique
+C|Seconde quantification|4|Quantification|||Fock, opérateurs a, a†
+C|Optique quantique|4|Seconde quantification;Électromagnétisme|||Photons, états cohérents
+C|Information quantique|4|Formalisme quantique|||Qubits, intrication, canaux
+@ R|Relativité et gravitation
+C|Relativité restreinte|2|Mécanique du point;Algèbre linéaire|Mécanique relativiste|L.P. 06;L.P. 07|Lorentz, espace-temps, quadrivecteurs
+C|Mécanique relativiste|2|Relativité restreinte|||Énergie, impulsion, dynamique
+C|Électrodynamique relativiste|3|Relativité restreinte;Électromagnétisme;Tenseur|||Tenseur de Faraday, covariance de Maxwell
+N|Géodésique|3|Métrique;Principe de moindre action|Relativité générale||Extremum de longueur, autoparallèle
+C|Relativité générale|4|Relativité restreinte;Courbure;Géodésique|||Principe d'équivalence, métrique dynamique
+C|Équations d'Einstein|4|Relativité générale|Courbure|ChatGPT-Tenseur de Fermi et Einstein|G = 8πT
+N|Précession de Mercure|4|Problème de Kepler;Relativité générale|Vecteur de Runge–Lenz–Laplace|V - |Perturbation 1/r³ de Kepler
+@ F|Théories des champs
+C|Champs classiques|3|Trajectoires, chemins et champs;Électromagnétisme|Calcul tensoriel|Champs (scalaire, spinoriel, jauge)|Scalaire, spineur, jauge
+C|Théorie lagrangienne des champs|4|Champs classiques;Mécanique lagrangienne|||Densité lagrangienne, Euler–Lagrange des champs
+N|Théorème de Noether pour les champs|4|Théorème de Noether;Théorie lagrangienne des champs|Tenseur énergie-impulsion|III - Mécanique du point au solide (nD)#9. Noether pour les champs : Schrödinger, électrodynamique quantique|Courant conservé ∂J=0, charge
+N|Tenseur énergie-impulsion|4|Théorème de Noether pour les champs|Équations d'Einstein||Courant de Noether des translations
+C|Champs électromagnétiques|4|Théorie lagrangienne des champs;Électrodynamique relativiste|Forme différentielle|||Lagrangien de Maxwell, F = dA
+C|Théories de jauge|4|Champs électromagnétiques;Connexion;Groupe de Lie|Fibré principal|Théorie de jauge;Quelques Notation pour théorie de jauge;Théorie de jauge en électromagnétisme et Yang–Mills|U(1), Yang–Mills, gravité comme jauge
+N|Deuxième théorème de Noether|5|Théories de jauge;Théorème de Noether pour les champs|Courbure||Symétrie locale ⇒ identités (Bianchi)
+N|Yang–Mills|5|Théories de jauge;Courbure|Modèle standard||F = dA + A∧A, action tr F∧*F
+C|Théorie quantique des champs|5|Théorie lagrangienne des champs;Seconde quantification;Relativité restreinte|||Propagateurs, Feynman
+C|Renormalisation|5|Théorie quantique des champs|||Groupe de renormalisation, théories effectives
+C|Modèle standard|5|Yang–Mills;Théorie quantique des champs|||QED, QCD, électrofaible
+@ A|Physique théorique avancée
+C|Théories topologiques des champs|5|Cohomologie;Théories de jauge|||Chern–Simons, invariants
+C|Supersymétrie|5|Super-algèbre de Lie;Théorie quantique des champs||Algèbre graduée|Supermultiplets
+C|Supergravité|5|Supersymétrie;Relativité générale;Théories de jauge|Super-algèbre de Lie|Supergravité;ChatGPT-Super-connexion en supergravité|Super-connexion, MacDowell–Mansouri, 11D
+C|Théorie des cordes|5|Théorie quantique des champs;Relativité générale|Supersymétrie|||Cordes bosoniques, supercordes
+C|Théorie M|5|Théorie des cordes;Supergravité||ChatGPT-Supersymétrie et théorie M|Dualités, 11D
+C|Gravitation quantique|5|Relativité générale;Théorie quantique des champs|||Canonique, boucles, cordes
+P|A|Physique générale|Culture solide, des bases aux grandes théories|Analyse;Algèbre linéaire;Équations différentielles;Probabilités;Trajectoires, chemins et champs;Mécanique du point;Systèmes de points;Mécanique du solide;Oscillateurs;Analyse de Fourier;Physique des ondes;Thermodynamique;Entropie;Électrostatique;Magnétostatique;Électromagnétisme;Principe de moindre action;Métrique;Mécanique lagrangienne;Relativité restreinte;Fondements de la mécanique quantique;Espace de Hilbert;Observable et état;Formalisme quantique;Physique statistique classique;Ensembles statistiques;Champs classiques;Théorie lagrangienne des champs
+P|B|De la mécanique classique à la théorie des champs|Voir comment les principes variationnels mènent aux champs|Trajectoires, chemins et champs;Mécanique du point;Principe de moindre action;Métrique;Mécanique lagrangienne;Théorème de Noether;Transformée de Legendre;Mécanique hamiltonienne;Crochet de Poisson;Théorème de Liouville;Géométrie symplectique;Relativité restreinte;Champs classiques;Théorie lagrangienne des champs;Théorème de Noether pour les champs;Tenseur énergie-impulsion;Champs électromagnétiques;Théorie quantique des champs
+P|C|De l'optique à l'optique quantique|Relier propagation classique et description quantique de la lumière|Oscillateurs;Physique des ondes;Optique géométrique;Optique ondulatoire;Électrostatique;Magnétostatique;Électromagnétisme;Fondements de la mécanique quantique;Espace de Hilbert;Observable et état;Formalisme quantique;Dynamique quantique;Quantification;Seconde quantification;Optique quantique;Information quantique
+P|D|De la thermodynamique aux gaz quantiques|Comprendre les gaz quantiques depuis la thermodynamique|Thermodynamique;Probabilités;Entropie;Physique statistique classique;Ensembles statistiques;Transitions de phase;Phénomènes de transport;Fondements de la mécanique quantique;Espace de Hilbert;Observable et état;Formalisme quantique;Dynamique quantique;Statistique quantique;Quantification;Seconde quantification;Fluides quantiques de lumière
+P|E|De la géométrie à la relativité générale|Formulation géométrique de la gravitation|Algèbre linéaire;Analyse;Topologie;Géométrie différentielle;Variété différentielle;Métrique;Tenseur;Calcul tensoriel;Connexion;Courbure;Principe de moindre action;Géodésique;Relativité restreinte;Relativité générale;Équations d'Einstein;Précession de Mercure;Gravitation quantique
+P|F|Mathématiques et physique théorique avancée|Outils mathématiques des théories avancées|Algèbre linéaire;Analyse;Espace de Hilbert;Topologie;Géométrie différentielle;Variété différentielle;Forme différentielle;Dérivée extérieure;Cohomologie;Groupe de Lie;Algèbre de Lie;Fibré principal;Connexion;Courbure;Algèbre graduée;Super-algèbre de Lie;Théories de jauge;Yang–Mills;Supersymétrie;Supergravité;Théorie des cordes;Théorie M
+P|G|Le fil de Noether|Une seule idée (symétrie ⇒ conservation) de la trajectoire à la supergravité|Trajectoires, chemins et champs;Principe de moindre action;Mécanique lagrangienne;Lois de conservation en dynamique;Théorème de Noether;Problème de Kepler;Vecteur de Runge–Lenz–Laplace;Transformée de Legendre;Mécanique hamiltonienne;Crochet de Poisson;Symétrie cachée SO(n+1);Théorème de Noether pour les champs;Tenseur énergie-impulsion;Champs électromagnétiques;Théories de jauge;Deuxième théorème de Noether;Supergravité
+P|H|Déjà rédigé : Mécanique du Solide I → VIII|Relire dans l'ordre ce que ton vault contient déjà|Mécanique du point;Référentiels et forces d'inertie;Systèmes de points;Mécanique du solide;Lois de conservation en dynamique;Mécanique lagrangienne;Mécanique hamiltonienne;Théorème de Noether;Problème de Kepler;Symétrie cachée SO(n+1);Théorème de Noether pour les champs;Calcul tensoriel

@@ -1,0 +1,86 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Carte de l’encyclopédie</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1e;--mut:#6b7280;--bd:#d4d4d8;--card:#f4f4f5;--ac:#2563eb;--ok:#16a34a;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#161618;--fg:#e8e8ea;--mut:#9ca3af;--bd:#3f3f46;--card:#232326;--ac:#60a5fa;--ok:#4ade80;color-scheme:dark}}
+*{box-sizing:border-box}html,body{height:100%;margin:0}body{background:var(--bg);color:var(--fg);font:14px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column}
+header{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:8px 12px;border-bottom:1px solid var(--bd)}
+header label{color:var(--mut);font-size:12px}select,input[type=search],button{font:inherit;color:inherit;background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:4px 8px}
+button{cursor:pointer}button.on{border-color:var(--ac);color:var(--ac)}.chips{display:flex;gap:4px;flex-wrap:wrap}
+main{flex:1;display:flex;min-height:0}#map{flex:1;overflow:auto}#side{width:300px;border-left:1px solid var(--bd);padding:12px;overflow:auto}
+svg{display:block}.nd rect{fill:var(--card);stroke:var(--bd);stroke-width:1}.nd text{fill:var(--fg);font-size:11px;pointer-events:none}.nd{cursor:pointer}
+.nd.N rect{rx:13}.nd.C rect{rx:4}.nd.done rect{fill:color-mix(in srgb,var(--ok) 22%,var(--bg));stroke:var(--ok)}.nd.next rect{stroke:var(--ac);stroke-width:2}
+.nd.sel rect{stroke:var(--ac);stroke-width:3}.nd.anc rect{stroke:var(--ac)}.nd.dim{opacity:.13}.nd.stub text{opacity:.75}
+.e{fill:none;stroke:var(--mut);stroke-opacity:.18}.e.hi{stroke:var(--ac);stroke-opacity:.9;stroke-width:1.8}.e.dim{display:none}
+.lh{fill:var(--mut);font-size:11px;font-weight:600}.dl{font-size:11px;font-weight:700}
+#side h2{margin:0 0 4px;font-size:16px}#side .m{color:var(--mut);font-size:12px}#side ul{padding-left:0;list-style:none;margin:4px 0 10px}
+#side li a{cursor:pointer;color:var(--ac);text-decoration:none}#side li.d a{color:var(--ok)}#side h3{font-size:12px;color:var(--mut);margin:12px 0 2px;text-transform:uppercase;letter-spacing:.04em}
+.big{display:block;width:100%;margin:6px 0;text-align:center;text-decoration:none;color:inherit}
+@media(max-width:760px){main{flex-direction:column}#side{width:auto;border-left:0;border-top:1px solid var(--bd);max-height:40%}}
+</style></head><body>
+<header>
+<label>Parcours <select id="par"></select></label>
+<label>Niveau max <input id="lv" type="range" min="1" max="5" value="5"> <b id="lvv">5</b></label>
+<input id="q" type="search" placeholder="Rechercher…" size="16">
+<span class="chips" id="dom"></span>
+<button id="rst" title="Efface la progression enregistrée">Réinitialiser</button>
+</header>
+<main><div id="map"></div><aside id="side"></aside></main>
+<script>
+const D=__DATA__,BASE="/",NS="http://www.w3.org/2000/svg",CW=212,NW=192,NH=26,GP=7,L0=14,T0=34;
+const by=Object.fromEntries(D.nodes.map(n=>[n.t,n])),dn=Object.fromEntries(D.dom.map(d=>[d.k,d.n]));
+D.nodes.forEach(n=>n.o=[]);D.nodes.forEach(n=>n.p.forEach(p=>by[p].o.push(n.t)));
+let done=new Set;try{done=new Set(JSON.parse(localStorage.getItem("enc-done")||"[]"))}catch(e){}
+const save=()=>{try{localStorage.setItem("enc-done",JSON.stringify([...done]))}catch(e){}};
+const st={sel:null,par:"",lv:5,q:"",off:new Set};
+const hue=Object.fromEntries(D.dom.map((d,i)=>[d.k,i*47+210]));
+// mise en page : colonnes = niveaux, bandes = domaines, recalculée sur les nœuds visibles
+let pos={},H=0;const W=L0+5*CW;
+function layout(vs){pos={};let y=T0;D.dom.forEach(d=>{const c={},ns=vs.filter(n=>n.d==d.k);d.y=y;d.skip=!ns.length;if(d.skip)return;ns.forEach(n=>{const i=c[n.n]=(c[n.n]||0)+1;pos[n.t]={x:L0+(n.n-1)*CW,y:y+16+(i-1)*(NH+GP)}});y+=16+Math.max(...Object.values(c))*(NH+GP)+12});H=y}
+const ancs=t=>{const s=new Set,f=x=>by[x].p.forEach(p=>{if(!s.has(p)){s.add(p);f(p)}});f(t);return s};
+const ready=n=>!done.has(n.t)&&n.p.every(p=>done.has(p));
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e}
+function draw(){
+ const pr=D.par.find(p=>p.k==st.par),ord=pr?Object.fromEntries(pr.s.map((t,i)=>[t,i+1])):null,an=st.sel?ancs(st.sel):new Set;
+ const vis=n=>n.n<=st.lv&&!st.off.has(n.d)&&(!ord||ord[n.t])&&(!st.q||(n.t+" "+n.s).toLowerCase().includes(st.q));
+ layout(D.nodes.filter(vis));
+ const svg=el("svg",{width:W,height:Math.max(H,60),viewBox:`0 0 ${W} ${Math.max(H,60)}`});
+ for(let i=1;i<=5;i++)el("text",{x:L0+(i-1)*CW,y:16,class:"lh"},svg).textContent=`${i} · ${D.niv[i]}`;
+ D.dom.forEach(d=>{if(d.skip)return;const t=el("text",{x:L0,y:d.y+11,class:"dl",fill:`hsl(${hue[d.k]} 55% 55%)`},svg);t.textContent=d.n});
+ const g=el("g",{},svg);
+ D.nodes.forEach(n=>n.p.forEach(p=>{if(!pos[p]||!pos[n.t])return;const a=pos[p],b=pos[n.t],hi=st.sel&&(n.t==st.sel||an.has(n.t))&&(an.has(p)||p==st.sel&&0||an.has(p)),
+   inP=ord&&ord[p]&&ord[n.t],x1=a.x+NW,y1=a.y+NH/2,x2=b.x,y2=b.y+NH/2,m=(x1+x2)/2;
+   const sh=n.t==st.sel||(st.sel&&an.has(n.t)&&an.has(p)||(n.t==st.sel&&an.has(p)));
+   el("path",{d:`M${x1} ${y1}C${m} ${y1} ${m} ${y2} ${x2} ${y2}`,class:"e"+((sh||inP)?" hi":"")},g)}));
+ D.nodes.forEach(n=>{if(!pos[n.t])return;const q=pos[n.t],c=["nd",n.ty,n.st?"":"stub"];
+  if(done.has(n.t))c.push("done");else if(ready(n))c.push("next");
+  if(n.t==st.sel)c.push("sel");else if(an.has(n.t))c.push("anc");
+  const e=el("g",{class:c.join(" "),transform:`translate(${q.x},${q.y})`},svg);
+  const r=el("rect",{width:NW,height:NH},e);r.style.borderLeft="";
+  el("rect",{width:4,height:NH,fill:`hsl(${hue[n.d]} 55% 55%)`,stroke:"none"},e);
+  const lab=(ord&&ord[n.t]?ord[n.t]+"· ":"")+(n.t.length>(ord?27:30)?n.t.slice(0,ord?26:29)+"…":n.t);
+  el("text",{x:11,y:17},e).textContent=lab;el("title",{},e).textContent=n.t+" — "+n.s;
+  e.onclick=()=>{st.sel=n.t;draw();panel()}});
+ const m=document.getElementById("map"),sx=m.scrollLeft,sy=m.scrollTop;m.replaceChildren(svg);m.scrollLeft=sx;m.scrollTop=sy}
+function panel(){
+ const s=document.getElementById("side"),n=by[st.sel],pr=D.par.find(p=>p.k==st.par);
+ if(!n){s.innerHTML=`<h2>${pr?pr.n:"Mode d’emploi"}</h2><p class="m">${pr?pr.o:"Choisis un parcours, filtre par niveau ou domaine, clique un nœud."}</p><p class="m">Rond = notion · rectangle = chapitre · vert = acquis · bordure bleue = <b>prochaine étape</b> (tous les prérequis acquis) · trait plein = chemin des prérequis du nœud sélectionné.</p>`+(pr?`<a class="big" href="${BASE}${pr.u}" target="_top"><button class="big">Ouvrir la page du parcours</button></a>`:"")+`<p class="m">${done.size} / ${D.nodes.length} acquis</p>`;return}
+ const li=(l,c)=>l.length?`<ul>${l.map(x=>`<li class="${done.has(x)?"d":""}"><a data-t="${x.replace(/"/g,"&quot;")}">${done.has(x)?"✓ ":""}${x}</a> <span class="m">n${by[x].n}</span></li>`).join("")}</ul>`:`<p class="m">${c}</p>`;
+ const pp=D.par.filter(p=>p.s.includes(n.t));
+ s.innerHTML=`<h2>${n.t}</h2><div class="m">${n.ty=="N"?"Notion":"Chapitre"} · ${dn[n.d]} · niveau ${n.n} (${D.niv[n.n]}) · ${n.st?"partiellement rédigé":"à rédiger"}</div><p>${n.s}</p>
+ <button id="dn" class="${done.has(n.t)?"on":""}">${done.has(n.t)?"✓ Acquis":"Marquer comme acquis"}</button>
+ <a class="big" href="${BASE}${n.u}" target="_top"><button class="big">Ouvrir la note</button></a>
+ <h3>Prérequis</h3>${li(n.p,"aucun")}<h3>Débloque</h3>${li(n.o,"fin de branche")}${n.r.length?`<h3>Notions liées</h3>${li(n.r,"")}`:""}
+ ${pp.length?`<h3>Parcours</h3><ul>${pp.map(p=>`<li><a data-p="${p.k}">${p.k} — ${p.n}</a></li>`).join("")}</ul>`:""}`;
+ s.querySelector("#dn").onclick=()=>{done.has(n.t)?done.delete(n.t):done.add(n.t);save();draw();panel()};
+ s.querySelectorAll("[data-t]").forEach(a=>a.onclick=()=>{st.sel=a.dataset.t;draw();panel();const q=pos[st.sel]||{x:0,y:0},m=document.getElementById("map");m.scrollTo({left:q.x-60,top:q.y-120,behavior:"smooth"})});
+ s.querySelectorAll("[data-p]").forEach(a=>a.onclick=()=>{par.value=st.par=a.dataset.p;draw();panel()})}
+const par=document.getElementById("par");par.innerHTML=`<option value="">Tous les nœuds</option>`+D.par.map(p=>`<option value="${p.k}">${p.k} — ${p.n}</option>`).join("");
+par.onchange=()=>{st.par=par.value;draw();panel()};
+document.getElementById("lv").oninput=e=>{st.lv=+e.target.value;document.getElementById("lvv").textContent=st.lv;draw()};
+document.getElementById("q").oninput=e=>{st.q=e.target.value.toLowerCase().trim();draw()};
+document.getElementById("rst").onclick=()=>{if(confirm("Effacer la progression ?")){done.clear();save();draw();panel()}};
+document.getElementById("dom").innerHTML=D.dom.map(d=>`<button data-d="${d.k}" class="on" style="border-color:hsl(${hue[d.k]} 55% 55%)">${d.s}</button>`).join("");
+document.querySelectorAll("#dom button").forEach(b=>b.onclick=()=>{const k=b.dataset.d;st.off.has(k)?st.off.delete(k):st.off.add(k);b.classList.toggle("on",!st.off.has(k));draw()});
+draw();panel();
+</script></body></html>
