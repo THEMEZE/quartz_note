@@ -20,12 +20,12 @@ tags:
 - [ ] 3. [[Systèmes de points]] · n2 · *partiel*
 - [ ] 4. [[Mécanique du solide]] · n2 · *partiel*
 - [ ] 5. [[Lois de conservation en dynamique]] · n2 · *partiel*
-- [ ] 6. [[Mécanique lagrangienne]] · n3 · *partiel*
-- [ ] 7. [[Mécanique hamiltonienne]] · n3 · *partiel*
-- [ ] 8. [[Théorème de Noether]] · n3 · *partiel*
+- [ ] 6. [[Mécanique lagrangienne]] · n3 · *rédigé (à relire)*
+- [ ] 7. [[Mécanique hamiltonienne]] · n3 · *rédigé (à relire)*
+- [ ] 8. [[Théorème de Noether]] · n3 · *rédigé (à relire)*
 - [ ] 9. [[Problème de Kepler]] · n3 · *partiel*
-- [ ] 10. [[Symétrie cachée SO(n+1)]] · n4 · *partiel*
-- [ ] 11. [[Théorème de Noether pour les champs]] · n4 · *partiel*
+- [ ] 10. [[Symétrie cachée SO(n+1)]] · n4 · *rédigé (à relire)*
+- [ ] 11. [[Théorème de Noether pour les champs]] · n4 · *rédigé (à relire)*
 - [ ] 12. [[Calcul tensoriel]] · n3 · *partiel*
 
 > [!warning]- Prérequis supposés (hors parcours)

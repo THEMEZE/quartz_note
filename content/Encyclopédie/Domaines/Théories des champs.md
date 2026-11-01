@@ -13,14 +13,14 @@ generated: true
 ## Niveau 4 — Master 2
 
 - [[Théorie lagrangienne des champs]] *(chapitre, à rédiger)*
-- [[Théorème de Noether pour les champs]] *(notion, partiel)*
-- [[Tenseur énergie-impulsion]] *(notion, à rédiger)*
+- [[Théorème de Noether pour les champs]] *(notion, rédigé (à relire))*
+- [[Tenseur énergie-impulsion]] *(notion, rédigé (à relire))*
 - [[Champs électromagnétiques]] *(chapitre, à rédiger)*
 - [[Théories de jauge]] *(chapitre, partiel)*
 
 ## Niveau 5 — Doctorat
 
-- [[Deuxième théorème de Noether]] *(notion, à rédiger)*
+- [[Deuxième théorème de Noether]] *(notion, rédigé (à relire))*
 - [[Yang–Mills]] *(notion, à rédiger)*
 - [[Théorie quantique des champs]] *(chapitre, à rédiger)*
 - [[Renormalisation]] *(chapitre, à rédiger)*

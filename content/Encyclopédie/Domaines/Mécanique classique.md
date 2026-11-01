@@ -21,17 +21,17 @@ generated: true
 ## Niveau 3 — Master 1
 
 - [[Problème de Kepler]] *(chapitre, partiel)*
-- [[Vecteur de Runge–Lenz–Laplace]] *(notion, partiel)*
-- [[Principe de moindre action]] *(notion, partiel)*
-- [[Mécanique lagrangienne]] *(chapitre, partiel)*
-- [[Transformée de Legendre]] *(notion, à rédiger)*
-- [[Mécanique hamiltonienne]] *(chapitre, partiel)*
-- [[Crochet de Poisson]] *(notion, partiel)*
-- [[Théorème de Liouville]] *(notion, partiel)*
-- [[Théorème de Noether]] *(notion, partiel)*
+- [[Vecteur de Runge–Lenz–Laplace]] *(notion, rédigé (à relire))*
+- [[Principe de moindre action]] *(notion, rédigé (à relire))*
+- [[Mécanique lagrangienne]] *(chapitre, rédigé (à relire))*
+- [[Transformée de Legendre]] *(notion, rédigé (à relire))*
+- [[Mécanique hamiltonienne]] *(chapitre, rédigé (à relire))*
+- [[Crochet de Poisson]] *(notion, rédigé (à relire))*
+- [[Théorème de Liouville]] *(notion, rédigé (à relire))*
+- [[Théorème de Noether]] *(notion, rédigé (à relire))*
 - [[Mécanique des fluides]] *(chapitre, partiel)*
 
 ## Niveau 4 — Master 2
 
 - [[Géométrie symplectique]] *(chapitre, à rédiger)*
-- [[Symétrie cachée SO(n+1)]] *(notion, partiel)*
+- [[Symétrie cachée SO(n+1)]] *(notion, rédigé (à relire))*

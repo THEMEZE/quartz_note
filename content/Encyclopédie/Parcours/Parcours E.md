@@ -25,7 +25,7 @@ tags:
 - [ ] 8. [[Calcul tensoriel]] · n3 · *partiel*
 - [ ] 9. [[Connexion]] · n4 · *partiel*
 - [ ] 10. [[Courbure]] · n4 · *partiel*
-- [ ] 11. [[Principe de moindre action]] · n3 · *partiel*
+- [ ] 11. [[Principe de moindre action]] · n3 · *rédigé (à relire)*
 - [ ] 12. [[Géodésique]] · n3 · *à rédiger*
 - [ ] 13. [[Relativité restreinte]] · n2 · *partiel*
 - [ ] 14. [[Relativité générale]] · n4 · *à rédiger*

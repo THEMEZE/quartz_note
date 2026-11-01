@@ -17,20 +17,20 @@ tags:
 
 - [ ] 1. [[Trajectoires, chemins et champs]] · n1 · *partiel*
 - [ ] 2. [[Mécanique du point]] · n1 · *partiel*
-- [ ] 3. [[Principe de moindre action]] · n3 · *partiel*
+- [ ] 3. [[Principe de moindre action]] · n3 · *rédigé (à relire)*
 - [ ] 4. [[Métrique]] · n2 · *partiel*
-- [ ] 5. [[Mécanique lagrangienne]] · n3 · *partiel*
-- [ ] 6. [[Théorème de Noether]] · n3 · *partiel*
-- [ ] 7. [[Transformée de Legendre]] · n3 · *à rédiger*
-- [ ] 8. [[Mécanique hamiltonienne]] · n3 · *partiel*
-- [ ] 9. [[Crochet de Poisson]] · n3 · *partiel*
-- [ ] 10. [[Théorème de Liouville]] · n3 · *partiel*
+- [ ] 5. [[Mécanique lagrangienne]] · n3 · *rédigé (à relire)*
+- [ ] 6. [[Théorème de Noether]] · n3 · *rédigé (à relire)*
+- [ ] 7. [[Transformée de Legendre]] · n3 · *rédigé (à relire)*
+- [ ] 8. [[Mécanique hamiltonienne]] · n3 · *rédigé (à relire)*
+- [ ] 9. [[Crochet de Poisson]] · n3 · *rédigé (à relire)*
+- [ ] 10. [[Théorème de Liouville]] · n3 · *rédigé (à relire)*
 - [ ] 11. [[Géométrie symplectique]] · n4 · *à rédiger*
 - [ ] 12. [[Relativité restreinte]] · n2 · *partiel*
 - [ ] 13. [[Champs classiques]] · n3 · *partiel*
 - [ ] 14. [[Théorie lagrangienne des champs]] · n4 · *à rédiger*
-- [ ] 15. [[Théorème de Noether pour les champs]] · n4 · *partiel*
-- [ ] 16. [[Tenseur énergie-impulsion]] · n4 · *à rédiger*
+- [ ] 15. [[Théorème de Noether pour les champs]] · n4 · *rédigé (à relire)*
+- [ ] 16. [[Tenseur énergie-impulsion]] · n4 · *rédigé (à relire)*
 - [ ] 17. [[Champs électromagnétiques]] · n4 · *à rédiger*
 - [ ] 18. [[Théorie quantique des champs]] · n5 · *à rédiger*
 

@@ -10,7 +10,8 @@ ap.add_argument('--graph', default=os.path.join(os.path.dirname(os.path.abspath(
 a = ap.parse_args()
 vault = a.vault; out = a.out or os.path.join(vault, 'Encyclopédie'); static = a.static or os.path.join(os.path.dirname(os.path.abspath(vault)), 'quartz', 'static')
 NIV = {1: 'Fondations (L1)', 2: 'Licence (L2–L3)', 3: 'Master 1', 4: 'Master 2', 5: 'Doctorat'}
-STAT = {0: 'à rédiger', 1: 'partiel'}
+STAT = {0: 'à rédiger', 1: 'partiel', 2: 'rédigé (à relire)'}
+CONT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'contenu')
 
 # ---------- lecture du graphe ----------
 doms, nodes, paths, order = [], {}, [], []
@@ -101,7 +102,7 @@ def write(path, txt):
 
 # ---------- pages nœuds ----------
 for t in order:
-    n = nodes[t]; st = 1 if n['res'] else 0; n['st'] = st
+    n = nodes[t]; cf = os.path.join(CONT, fn(t) + '.md'); st = 2 if os.path.exists(cf) else (1 if n['res'] else 0); n['st'] = st
     pl = [p['k'] for p in paths if t in p['s']]
     fm = ['---', f'title: {q(t)}', f'type: {"chapitre" if n["ty"] == "C" else "notion"}', f'domaine: {q(dname[n["d"]])}',
           f'niveau: {n["n"]}', f'niveau_label: {q(NIV[n["n"]])}', f'status: {STAT[st]}', 'generated: true']
@@ -115,7 +116,9 @@ for t in order:
         b += ['## Contenu déjà rédigé', ''] + [f'- {x}' for x in n['res']] + ['']
     if n['file'] != t and t in stems:
         b += [f'> [!note] Note de référence existante : [[{t}]]', '']
-    if n['ty'] == 'C':
+    if st == 2:
+        b += [open(cf, encoding='utf-8').read().strip(), '']
+    elif n['ty'] == 'C':
         b += ['## Plan type (à adapter)', '',
               '1. **Cadre et conventions** : espaces, métrique, notations, signes.',
               '2. **Énoncés** : théorèmes en callouts `>[!tip]+`, hypothèses explicites.',

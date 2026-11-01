@@ -31,9 +31,9 @@ tags:
 - [ ] 14. [[Électrostatique]] · n2 · *à rédiger*
 - [ ] 15. [[Magnétostatique]] · n2 · *à rédiger*
 - [ ] 16. [[Électromagnétisme]] · n3 · *à rédiger*
-- [ ] 17. [[Principe de moindre action]] · n3 · *partiel*
+- [ ] 17. [[Principe de moindre action]] · n3 · *rédigé (à relire)*
 - [ ] 18. [[Métrique]] · n2 · *partiel*
-- [ ] 19. [[Mécanique lagrangienne]] · n3 · *partiel*
+- [ ] 19. [[Mécanique lagrangienne]] · n3 · *rédigé (à relire)*
 - [ ] 20. [[Relativité restreinte]] · n2 · *partiel*
 - [ ] 21. [[Fondements de la mécanique quantique]] · n2 · *à rédiger*
 - [ ] 22. [[Espace de Hilbert]] · n3 · *à rédiger*

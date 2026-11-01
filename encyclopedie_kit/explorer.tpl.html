@@ -67,7 +67,7 @@ function panel(){
  if(!n){s.innerHTML=`<h2>${pr?pr.n:"Mode d’emploi"}</h2><p class="m">${pr?pr.o:"Choisis un parcours, filtre par niveau ou domaine, clique un nœud."}</p><p class="m">Rond = notion · rectangle = chapitre · vert = acquis · bordure bleue = <b>prochaine étape</b> (tous les prérequis acquis) · trait plein = chemin des prérequis du nœud sélectionné.</p>`+(pr?`<a class="big" href="${BASE}${pr.u}" target="_top"><button class="big">Ouvrir la page du parcours</button></a>`:"")+`<p class="m">${done.size} / ${D.nodes.length} acquis</p>`;return}
  const li=(l,c)=>l.length?`<ul>${l.map(x=>`<li class="${done.has(x)?"d":""}"><a data-t="${x.replace(/"/g,"&quot;")}">${done.has(x)?"✓ ":""}${x}</a> <span class="m">n${by[x].n}</span></li>`).join("")}</ul>`:`<p class="m">${c}</p>`;
  const pp=D.par.filter(p=>p.s.includes(n.t));
- s.innerHTML=`<h2>${n.t}</h2><div class="m">${n.ty=="N"?"Notion":"Chapitre"} · ${dn[n.d]} · niveau ${n.n} (${D.niv[n.n]}) · ${n.st?"partiellement rédigé":"à rédiger"}</div><p>${n.s}</p>
+ s.innerHTML=`<h2>${n.t}</h2><div class="m">${n.ty=="N"?"Notion":"Chapitre"} · ${dn[n.d]} · niveau ${n.n} (${D.niv[n.n]}) · ${["à rédiger","lié à ton vault","rédigé (à relire)"][n.st]}</div><p>${n.s}</p>
  <button id="dn" class="${done.has(n.t)?"on":""}">${done.has(n.t)?"✓ Acquis":"Marquer comme acquis"}</button>
  <a class="big" href="${BASE}${n.u}" target="_top"><button class="big">Ouvrir la note</button></a>
  <h3>Prérequis</h3>${li(n.p,"aucun")}<h3>Débloque</h3>${li(n.o,"fin de branche")}${n.r.length?`<h3>Notions liées</h3>${li(n.r,"")}`:""}
