@@ -13,7 +13,10 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      // provider: "plausible",
+      provider: "umami",
+      host: "https://cloud.umami.is",
+      websiteId: "fb835a92-1337-46e6-a13c-eb363975d5f4",
     },
     locale: "fr-FR",
     baseUrl: "physique-chimie-lycee-3B.github.io/quartz_note",
@@ -93,3 +96,4 @@ const config: QuartzConfig = {
 }
 
 export default config
+
