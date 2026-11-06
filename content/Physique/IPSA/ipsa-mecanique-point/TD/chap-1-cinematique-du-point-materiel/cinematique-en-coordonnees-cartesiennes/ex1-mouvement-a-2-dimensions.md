@@ -5,7 +5,7 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/index|⬅ Retour]] · <a href="/pdfs/td1_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td1_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/index|⬅ Retour]] · <a href="/pdfs/td1_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td1_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/test.pdf" target="_blank" rel="noopener">📄 PDF</a> · <a href="/pdfs/td1_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
 ### Exercice 1. Mouvement à 2 dimensions
 
@@ -72,6 +72,8 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 >
 > On reporte ces points sur le graphique $y(x)$ : ils s'accumulent près de l'origine puis s'écartent de plus en plus vite, la vitesse suivant $Oy$ augmentant avec $t$ (voir (f)).
 >
+> <p style="text-align:center"><a href="/figures/td1_ex1_q1_phv111.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_q1_phv111.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+>
 > **(f) Nature du mouvement sur chaque axe**
 >
 > Suivant $Ox$ : $x(t)=at$ est **linéaire en $t$**, le mouvement est donc **rectiligne uniforme** de vitesse constante $a$.
@@ -110,6 +112,8 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > **(c) Tracé**
 >
 > À chaque instant du tableau précédent, on trace en $M(t)$ le vecteur $\vec v(t)$ (composante $Ox$ constante $=a$, composante $Oy$ de plus en plus négative) et le vecteur $\vec a$ (toujours vertical, vers le bas, de norme constante $2b$). On observera que $\vec v$ devient de plus en plus incliné vers le bas au cours du temps, alors que $\vec a$ garde une direction et une norme fixes — cohérent avec un mouvement uniforme suivant $Ox$ et uniformément accéléré suivant $Oy$.
+>
+> <p style="text-align:center"><a href="/figures/td1_ex1_q2_phv111.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_q2_phv111.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
 **q3.** Application : une mouette vole à une hauteur de 20 m au-dessus de la mer, en vol horizontal, à la vitesse de 36 km/h, lorsqu'elle laisse tomber un poisson.
@@ -133,6 +137,8 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > **(a) Choix du repère**
 >
 > On choisit l'origine $O$ au point où le poisson est lâché, avec $\vec u_x$ horizontal dans le sens du vol, et $\vec u_y$ vertical ascendant. La surface de la mer correspond alors à l'ordonnée $y=-20$ m.
+>
+> <p style="text-align:center"><a href="/figures/td1_ex1_q3_phv111.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_q3_phv111.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 >
 > **(b) Temps de chute**
 >

@@ -20,9 +20,11 @@ Cours d'ondes mécaniques et acoustiques enseigné à l'IPSA (aéronautique).
 
 - [[physique/IPSA/ipsa-physique-ondes/Cours/chap1_intro|Chapitre 1 — Ondes mécaniques : introduction]]
 
-## QCM en direct
+## QCM d'entraînement
 
-- <a href="/qcm/physique-ondes-ipsa/" target="_blank" rel="noopener">Ouvrir l'appli QCM</a>
+3 questions, en accès libre (sans compte), ou en direct pendant le cours.
+
+<a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener">td1_qcm — 3 questions</a>
 <!-- SUJETS-LIES:BEGIN (généré par web/build_subject_links.py, ne pas éditer) -->
 
 ## 🔗 Sujets liés

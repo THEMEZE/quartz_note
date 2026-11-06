@@ -66,3 +66,7 @@ tags:
 >
 > *Réponds en direct sur <a href="/qcm/physique-ondes-ipsa/" target="_blank" rel="noopener">l'appli QCM</a> (QR code affiché en cours).*
 
+
+**S'entraîner librement** (3 question(s) liées à ce document) :
+
+<a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener">Chapitre td1_qcm</a>
