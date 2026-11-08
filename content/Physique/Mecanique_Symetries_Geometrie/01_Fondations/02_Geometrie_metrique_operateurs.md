@@ -1,5 +1,5 @@
 ---
-title: Géométrie : tenseurs, bivecteurs, opérateurs différentiels
+title: Géométrie;  tenseurs, bivecteurs, opérateurs différentiels
 tags:
   - Physique
   - Mathematiques
