@@ -1,5 +1,5 @@
 ---
-title: Solide rigide : tenseur d'inertie, dynamique
+title: "Solide rigide : tenseur d'inertie, dynamique"
 tags:
   - Physique
   - Mathematiques

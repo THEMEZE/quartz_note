@@ -1,5 +1,5 @@
 ---
-title: Collisions : de la boule de billard à la dimension $n$
+title: "Collisions : de la boule de billard à la dimension $n$"
 tags:
   - Physique
   - Mathematiques

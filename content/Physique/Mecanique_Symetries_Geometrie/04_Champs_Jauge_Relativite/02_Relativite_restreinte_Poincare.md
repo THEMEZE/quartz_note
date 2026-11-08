@@ -1,12 +1,12 @@
 ---
-title: Relativité restreinte : torseurs de Poincaré
+title: '"Relativité restreinte : torseurs de Poincaré"'
 tags:
   - Physique
   - Mathematiques
 lang: fr
 partie: X
 ---
-
+;
 > Retour : [[00_Index]] · notations : [[01_Conventions_notations]]
 
 # Relativité restreinte : torseurs de Poincaré

@@ -1,5 +1,5 @@
 ---
-title: Cinématique : référentiels, solide, torseur cinématique
+title: '"Cinématique : référentiels, solide, torseur cinématique"'
 tags:
   - Physique
   - Mathematiques
