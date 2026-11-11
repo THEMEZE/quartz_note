@@ -1,5 +1,5 @@
 ---
-title: Algèbre
+title: Algèbre (brouillon)
 tags:
   - Science
 ---
@@ -429,7 +429,7 @@ tags:
 
 >[!tip]- Remarque.
 >On peut montrer qu'une matrice réelle est l'exponentielle d'une matrice réelle si et seulement si elle est le carré d'une matrice réelle inversible.
->- Toute matrice complexe inversible est l'exponentielle d'une matrice complexe ( voir l'[[Mathématique/Algèbre/Algèbre#Exercice 5. (Logarithme d'une matrice inversible)|Exercice 4.4.4.5. (Logarithme d'une matrice inversible)]] )
+>- Toute matrice complexe inversible est l'exponentielle d'une matrice complexe ( voir l'[[Algèbre (brouillon)#Exercice 5. (Logarithme d'une matrice inversible)|Exercice 4.4.4.5. (Logarithme d'une matrice inversible)]] )
 
 ## 4. Sous-Espace caractéristiques - Réduction de Jordan
 
@@ -506,7 +506,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>
 >>On procède par récurrence sur $n = \dim E$. Pour $n = 1$, c'est évident. Suposons le résultat vrai jusqu'au rang $n-1$ et montrans le au rang $n$.  Nous traitons deux cas .
 >>
->>> *Premier cas*. L'isométrie $u$ admet au moins une valeur propre réelle $\varepsilon$. Soit $x$ un vecteur propre normé associé. Comme $\Vert u(x) \Vert = \Vert \varepsilon x \Vert = \vert \varepsilon \vert \Vert x \Vert$ et  $\Vert u(x) \Vert = \vert \Vert x \Vert$, on a $\vert \varepsilon \vert = 1$. De plus $\varepsilon \in \mathbb R$, on en déduit $\varepsilon \in \{ - 1 , + 1 \}$. Maintenant, comme $F = \text{Vect}(x)$ est stable par $u$, $F^\perp$ est stable par $u$ d'après la [[Mathématique/Algèbre/Algèbre#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]] . En appliquant l'hypothèse en récurrence à $u_{\vert F^\perp}$, on trouve une base orthonormale $B_0$ de $F^\perp$ dans laquelle la matrice de $u_{\vert F^\perp}$ à la forme $(\ast)$. En ajoutant $x$ à la base $B_0$, on obtient une base orthonormale $B$ de $E$ dans laquelle la matrice de $u$ a la forme $(\ast)$.
+>>> *Premier cas*. L'isométrie $u$ admet au moins une valeur propre réelle $\varepsilon$. Soit $x$ un vecteur propre normé associé. Comme $\Vert u(x) \Vert = \Vert \varepsilon x \Vert = \vert \varepsilon \vert \Vert x \Vert$ et  $\Vert u(x) \Vert = \vert \Vert x \Vert$, on a $\vert \varepsilon \vert = 1$. De plus $\varepsilon \in \mathbb R$, on en déduit $\varepsilon \in \{ - 1 , + 1 \}$. Maintenant, comme $F = \text{Vect}(x)$ est stable par $u$, $F^\perp$ est stable par $u$ d'après la [[Algèbre (brouillon)#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]] . En appliquant l'hypothèse en récurrence à $u_{\vert F^\perp}$, on trouve une base orthonormale $B_0$ de $F^\perp$ dans laquelle la matrice de $u_{\vert F^\perp}$ à la forme $(\ast)$. En ajoutant $x$ à la base $B_0$, on obtient une base orthonormale $B$ de $E$ dans laquelle la matrice de $u$ a la forme $(\ast)$.
 >>
 >>>*Second cas*.  L'isométrie $u$ n'a aucune valeur propre réelle. On considère l'endomorphisme $v = u + u^\ast$. Comme $v$ est symétrique, $v$ admet une valeur propre réelle$\lambda$ associée à un vecteur propre $x$. On a $(u + u^\ast)(x) = \lambda x$ donc $u ( u + u^\ast )(x) = u^2 (x) + x  = \lambda u(x)$, d'où 
 >>>$$
@@ -527,7 +527,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>>\right ), \quad 
 >>>\theta \in \mathbb R \backslash \pi \mathbb Z.
 >>>$$
->>>Maintenant, d'après la [[Mathématique/Algèbre/Algèbre#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]]  le s.e.v $F^\perp$ est stable par $u$, et $u_{\vert F^\perp}$ est une isométrie donc il existe d'après l'hypothèse de récurrence une base orthonormale $B_1$ de $F^\perp$ qui diagonalise  $u_{\vert F^\perp}$. La base $B$ obtenue en concaténant $B_0$ et $B_1$ est orthonormale et dans cette base, la matrice de $u$ a la forme voulue, d'où le théorème.
+>>>Maintenant, d'après la [[Algèbre (brouillon)#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]]  le s.e.v $F^\perp$ est stable par $u$, et $u_{\vert F^\perp}$ est une isométrie donc il existe d'après l'hypothèse de récurrence une base orthonormale $B_1$ de $F^\perp$ qui diagonalise  $u_{\vert F^\perp}$. La base $B$ obtenue en concaténant $B_0$ et $B_1$ est orthonormale et dans cette base, la matrice de $u$ a la forme voulue, d'où le théorème.
 
 >[!info]- Remarque 1.
 >
@@ -549,7 +549,7 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>
 >>La preuve est plus simple que la précédente. Il est d'abord claire que toute valeur propre $\lambda$ de $u$ vérifie $\vert \lambda \vert = 1$, car si $u(x) = \lambda x$ avec $x \neq 0$, on a $\Vert x \Vert = \Vert u(x) \Vert = \vert \lambda \vert \Vert x \Vert$. On procède ensuite par récurrence sur $n = \dim E$. Le cas $n = 1$ est immédiat, et le passage du rang $n-1$ au rang $n$ se fait comme suit.
 >>
->>Le corps de base $\mathbb C$ étant algébriquement clos, $u$ admet au moins une valeur propre complexe $\lambda$. Soit $x$ un vecteur propre associé, $\Vert x \Vert = 1$. La droite $F = \text{Vect}(x)$ est stable par $u$, donc d'après la [[Mathématique/Algèbre/Algèbre#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]], l'hyperplan $F^\perp$ est également stable une base orthonormale $B_0$ de $F^\perp$ qui diagonalise $u_{\vert F^\perp}$. En ajoutant $x$ à $B_0$, on obtient une base orthonormale de $E$ qui diagonalise $u$ et le théorème est prouvé.
+>>Le corps de base $\mathbb C$ étant algébriquement clos, $u$ admet au moins une valeur propre complexe $\lambda$. Soit $x$ un vecteur propre associé, $\Vert x \Vert = 1$. La droite $F = \text{Vect}(x)$ est stable par $u$, donc d'après la [[Algèbre (brouillon)#1. Réduction des isométries et des endomorphisme unitaires|Proposition 5.3.1.1]], l'hyperplan $F^\perp$ est également stable une base orthonormale $B_0$ de $F^\perp$ qui diagonalise $u_{\vert F^\perp}$. En ajoutant $x$ à $B_0$, on obtient une base orthonormale de $E$ qui diagonalise $u$ et le théorème est prouvé.
 
 >[!info]+ Corolaire 1 (Version matricielle). Soit $U \in \mathcal M_n(\mathbb C)$ une matrice unitaire. Alors il existe matrice unitaire $P$ telle que 
 >$$
@@ -591,9 +591,9 @@ Nous allons voir que les isométries (resp. les endomorphismes unitaires), bien 
 >>
 >>>[!success]+ Solution
 >>>
->>>La condition suffisante est immédiate : si $A \in \mathcal M_n(\mathbb R)$ est une matrice antisymétrique, alors la matrice $P=\exp(A)$ vérifie ${~}^t P P = \exp({~}^t A)\exp(A) = \exp(-A)\exp(A) = I_n$. Enfin, on a $\det (P) = \det(\exp(A)) = \exp(\text{tr } A) = 1$ ( voir l'[[Mathématique/Algèbre/Algèbre#Exercice 2. (Déterminant d'exponentielle d'une matrice)|Exercice 4.3.4.2. (Déterminant d'exponentielle d'une matrice)]] ) .
+>>>La condition suffisante est immédiate : si $A \in \mathcal M_n(\mathbb R)$ est une matrice antisymétrique, alors la matrice $P=\exp(A)$ vérifie ${~}^t P P = \exp({~}^t A)\exp(A) = \exp(-A)\exp(A) = I_n$. Enfin, on a $\det (P) = \det(\exp(A)) = \exp(\text{tr } A) = 1$ ( voir l'[[Algèbre (brouillon)#Exercice 2. (Déterminant d'exponentielle d'une matrice)|Exercice 4.3.4.2. (Déterminant d'exponentielle d'une matrice)]] ) .
 >>>
->>>Montrons maintenant la condition nécessaire. Soit $P \in \mathcal M_n(\mathbb R)$ une matrice orthogonale directe, soit $u \in \mathcal L ( \mathbb R^n)$ son isométrie associée. D'après le [[Mathématique/Algèbre/Algèbre#Réduction des isométries|Théorème 5.3.1.1]] , il existe une base orthonormale $B$ de $\mathbb R^n$ dans laquelle la matrice de $u$ a la forme 
+>>>Montrons maintenant la condition nécessaire. Soit $P \in \mathcal M_n(\mathbb R)$ une matrice orthogonale directe, soit $u \in \mathcal L ( \mathbb R^n)$ son isométrie associée. D'après le [[Algèbre (brouillon)#Réduction des isométries|Théorème 5.3.1.1]] , il existe une base orthonormale $B$ de $\mathbb R^n$ dans laquelle la matrice de $u$ a la forme 
 >>>$$
 >>>[u]_B = 
 >>>\left (

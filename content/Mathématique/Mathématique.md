@@ -15,7 +15,7 @@ tags:
 
 # [[Frameworks]]
 
-# [[Algèbre]]
+# [[Algèbre (brouillon)]]
 [[Algèbre linéaire]]
 [[Idéal]]
 [[Algèbre graduée]]

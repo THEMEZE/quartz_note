@@ -268,18 +268,18 @@ $$
 >> [!tip]- $\forall t \in \mathbb R  \colon \exist f_t \in \mathcal{SO}(\mathbb R^3), \forall i \in \{x , y , z\} \colon \vec{e}_{i'}(t) = f_t(\vec{e}_{i'}(0))$.
 >> 
 >> *Hypothèses*.
->> - L'espace liés au référentiel $\mathscr R'$ ne se déforme pas par rapport à l'espace liés au référentiel $\mathscr R$, donc la base orthonormale $B'(t)$ subis une isométrie. (cf la proposition [[Mathématique/Algèbre/Algèbre#Propriétés matricielles des isométries et des endomorphismes unitaires.|Proposition 5.2.3.6.]]). L'ensemble des isométries d'une espace euclidien (ici $\mathbb R^3$) est un groupe (muni de la loi $\circ$ de composition), appelé *groupe orthogonal* de $\mathbb R^3$ et noté $\mathcal O(\mathbb R^3)$ (cf la [[Mathématique/Algèbre/Algèbre#3. Isométries et endomorphismes unitaires|Proposition 5.2.3.5.]]).  Donc 
+>> - L'espace liés au référentiel $\mathscr R'$ ne se déforme pas par rapport à l'espace liés au référentiel $\mathscr R$, donc la base orthonormale $B'(t)$ subis une isométrie. (cf la proposition [[Algèbre (brouillon)#Propriétés matricielles des isométries et des endomorphismes unitaires.|Proposition 5.2.3.6.]]). L'ensemble des isométries d'une espace euclidien (ici $\mathbb R^3$) est un groupe (muni de la loi $\circ$ de composition), appelé *groupe orthogonal* de $\mathbb R^3$ et noté $\mathcal O(\mathbb R^3)$ (cf la [[Algèbre (brouillon)#3. Isométries et endomorphismes unitaires|Proposition 5.2.3.5.]]).  Donc 
 >> $$
 >> \forall t \in \mathbb R  \colon \exist f_t \in \mathcal O(\mathbb R^3), \forall i \in \{x , y , z\} \colon \vec{e}_{i'}(t) = f_t(\vec{e}_{i'}(0)).
 >> $$
->> - De plus l'hypothèse que l'absence de déformation de l'espace liés au référentiel $\mathscr R'$ par rapport à l'espace liés au référentiel $\mathscr R$ permet aussi  de supposerque $(\vec{e}_{x'}(t),\vec{e}_{y'}(t),\vec{e}_{z'}(t))$ reste directe (resp. indirecte) au court du temps. Soit $\forall t \in \mathbb R \colon \vec{e}_{x'}(t)\wedge \vec{e}_{y'}(t) = \vec{e}_{z'}(t)$ (resp. $\vec{e}_{x'}(t)\wedge \vec{e}_{y'}(t) = -\vec{e}_{z'}(t)$). L'ensemble $\{f \in \mathcal O(\mathbb R^3) \vert \det f = 1 \}$ est un sous-groupe distingué de $\mathcal O(\mathbb R^3)$ appelé *groupe spécial orthonormal* de $\mathbb R^3$ et noté $\mathcal O^+(\mathbb R^3)$ (on le note encore $\mathcal{S O}(\mathbb R^3)$) (cf la [[Mathématique/Algèbre/Algèbre#Propriétés matricielles des isométries et des endomorphismes unitaires.|Définition 5.2.3.4.]]). 
+>> - De plus l'hypothèse que l'absence de déformation de l'espace liés au référentiel $\mathscr R'$ par rapport à l'espace liés au référentiel $\mathscr R$ permet aussi  de supposerque $(\vec{e}_{x'}(t),\vec{e}_{y'}(t),\vec{e}_{z'}(t))$ reste directe (resp. indirecte) au court du temps. Soit $\forall t \in \mathbb R \colon \vec{e}_{x'}(t)\wedge \vec{e}_{y'}(t) = \vec{e}_{z'}(t)$ (resp. $\vec{e}_{x'}(t)\wedge \vec{e}_{y'}(t) = -\vec{e}_{z'}(t)$). L'ensemble $\{f \in \mathcal O(\mathbb R^3) \vert \det f = 1 \}$ est un sous-groupe distingué de $\mathcal O(\mathbb R^3)$ appelé *groupe spécial orthonormal* de $\mathbb R^3$ et noté $\mathcal O^+(\mathbb R^3)$ (on le note encore $\mathcal{S O}(\mathbb R^3)$) (cf la [[Algèbre (brouillon)#Propriétés matricielles des isométries et des endomorphismes unitaires.|Définition 5.2.3.4.]]). 
 >> $$
 >>\forall t \in \mathbb R  \colon \exist f_t \in \mathcal{SO}(\mathbb R^3), \forall i \in \{x , y , z\} \colon \vec{e}_{i'}(t) = f_t(\vec{e}_{i'}(0)).
 >>$$ 
 >
 >>[!tip]- $\forall t \in \mathbb R  \colon \exist f_t \in \mathcal{SO}(\mathbb R^3), \forall i \in \{x , y , z\} \colon \vec{e}_{i'}(0) = f_t^\ast(\vec{e}_{i'}(t))$.
 >>
->>En réunissant la  [[Mathématique/Algèbre/Algèbre#3. Isométries et endomorphismes unitaires|Proposition 5.2.3.3]]  ($\forall (x , y) \in (\mathbb R^3)^2 \colon f(x) \cdot f(y) = x \cdot y$) sur la  [[Mathématique/Algèbre/Algèbre#4. Endomorphismes adjoints|Définition 5.2.3.5.]] d'ajoint $f_t^\ast$ d'un endomorphisme $f_t$ ($\forall (x , y) \in (\mathbb R^3)^2 \colon f(x) \cdot y = x \cdot f^\ast(y)$), il vient que pour $ (x , y ) \in (\mathbb R^3)^2 $ , il vient que $  x \cdot y  = f_t(x) \cdot f_t(y) =  x \cdot  (f_t^\ast \circ f_t)(y)$ , soit 
+>>En réunissant la  [[Algèbre (brouillon)#3. Isométries et endomorphismes unitaires|Proposition 5.2.3.3]]  ($\forall (x , y) \in (\mathbb R^3)^2 \colon f(x) \cdot f(y) = x \cdot y$) sur la  [[Algèbre (brouillon)#4. Endomorphismes adjoints|Définition 5.2.3.5.]] d'ajoint $f_t^\ast$ d'un endomorphisme $f_t$ ($\forall (x , y) \in (\mathbb R^3)^2 \colon f(x) \cdot y = x \cdot f^\ast(y)$), il vient que pour $ (x , y ) \in (\mathbb R^3)^2 $ , il vient que $  x \cdot y  = f_t(x) \cdot f_t(y) =  x \cdot  (f_t^\ast \circ f_t)(y)$ , soit 
 >>$$
 >>\forall x , y \in \mathbb R^3 \colon x \cdot y  =  x \cdot  (f_t^\ast \circ f_t)(y).
 >>$$
@@ -287,7 +287,7 @@ $$
 >>$$
 >>f_t^\ast \circ f_t = \text{id}_{\mathbb R^3} .
 >>$$
->> Et la [[Mathématique/Algèbre/Algèbre#3. Isométries et endomorphismes unitaires|Proposition 5.2.3.4]] dit que une isométrie $f_t$ est injective et en dimension finie $f_t$ est bilective. Donc ici $f_t^{-1}$ existe et $\forall x , y \in \mathbb R^3 \colon x \cdot y = (f_t \circ f_t^{-1}) (x) \cdot y = f_t^{-1}(x) \cdot f_t^\ast(y) = (f_t \circ f_t^{-1}) (x) \cdot ( f_t \circ f_t^\ast) (y) = x \cdot ( f_t \circ f_t^\ast) (y)$ soit 
+>> Et la [[Algèbre (brouillon)#3. Isométries et endomorphismes unitaires|Proposition 5.2.3.4]] dit que une isométrie $f_t$ est injective et en dimension finie $f_t$ est bilective. Donc ici $f_t^{-1}$ existe et $\forall x , y \in \mathbb R^3 \colon x \cdot y = (f_t \circ f_t^{-1}) (x) \cdot y = f_t^{-1}(x) \cdot f_t^\ast(y) = (f_t \circ f_t^{-1}) (x) \cdot ( f_t \circ f_t^\ast) (y) = x \cdot ( f_t \circ f_t^\ast) (y)$ soit 
 >>$$
 >>\forall x , y \in \mathbb R^3 \colon x \cdot y  =  x \cdot  (f_t \circ f_t^\ast)(y).
 >>$$
@@ -345,7 +345,7 @@ $$
 >$$
 >antysymétrique .
 >
->L' [[Mathématique/Algèbre/Algèbre#Exercice 5. (Exponentielle d'une matrice antisymétrique)|Exercice 5.3.5.5. (Exponentielle d'une matrice antisymétrique)]] , nous dit entre autre  
+>L' [[Algèbre (brouillon)#Exercice 5. (Exponentielle d'une matrice antisymétrique)|Exercice 5.3.5.5. (Exponentielle d'une matrice antisymétrique)]] , nous dit entre autre  
 >$$
 >\forall t \in \mathbb R \colon \forall f_t \in \mathcal{SO}(\mathbb R^3) \colon  \exist g_t \in \mathfrak{so}(\mathbb R^3), f_t = \exp(g_t).
 >$$

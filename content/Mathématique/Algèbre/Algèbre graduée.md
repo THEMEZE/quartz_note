@@ -3,7 +3,7 @@ title: Algèbre graduée
 tags:
   - Science
 ---
-En  [[Mathématique]]/[mathématiques](https://fr.wikipedia.org/wiki/Math%C3%A9matiques "Mathématiques"), en [[Algèbre linéaire]]/[algèbre linéaire](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_lin%C3%A9aire "Algèbre linéaire"), on appelle **[algèbre graduée](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_gradu%C3%A9e)** une [[Algèbre]]/[algèbre](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_sur_un_anneau "Algèbre sur un anneau") dotée d'une structure supplémentaire, appelée **graduation**.
+En  [[Mathématique]]/[mathématiques](https://fr.wikipedia.org/wiki/Math%C3%A9matiques "Mathématiques"), en [[Algèbre linéaire]]/[algèbre linéaire](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_lin%C3%A9aire "Algèbre linéaire"), on appelle **[algèbre graduée](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_gradu%C3%A9e)** une [[Algèbre (brouillon)]]/[algèbre](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_sur_un_anneau "Algèbre sur un anneau") dotée d'une structure supplémentaire, appelée **graduation**.
 
 ## Définition
 

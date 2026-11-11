@@ -10,7 +10,7 @@ tags:
 
 (cf [[Algèbre graduée|Définition]] pour une définition plus détailler de Algèbre graduée )
 
-On définie  $E^p$ un espace vectoriel  sur un corps $\mathbb K$ (cf [Corps](Algèbre.md#Corps)). 
+On définie  $E^p$ un espace vectoriel  sur un corps $\mathbb K$ (cf [Corps](Algèbre%20(brouillon).md#Corps)). 
 
 >[!example]-
 >En particulier, ici on pense à :
@@ -20,7 +20,7 @@ On définie  $E^p$ un espace vectoriel  sur un corps $\mathbb K$ (cf [Corps](Alg
 >- On vera aussi l'espace vectorielle des application linéaire de dégrès $k$ de $E^p$ dans $E^{p+k}$ de dégrés $p$ : $\mathcal L^k (E^p , E^{p+k})$ acec $E^p \in \{ \Lambda^p V^\ast , \Omega^p(U) , \mathfrak g_{i \mod 2} \}$.
 
 >[!success]-  $(E^p, +)$ est un *groupe  additif abélien*.
->- $(E^p, +)$ est un groupe abélien  (cf [Groupes](Algèbre.md#Groupes)))
+>- $(E^p, +)$ est un groupe abélien  (cf [Groupes](Algèbre%20(brouillon).md#Groupes)))
 
 >[!note]- Définition des opérateur mutiplicative externe $\ast$
 >On suppose donnée une application bilinéaire :
@@ -352,9 +352,9 @@ Soit un espace vectoriel gradué :
 $$
 E^\bullet = \bigoplus_{p \in \mathbb{Z}} E^p
 $$
-Chaque composante $E^p$ est un espace vectoriel sur un corps $\mathbb K$ (cf [Corps](Algèbre.md#Corps)). En particulier :
+Chaque composante $E^p$ est un espace vectoriel sur un corps $\mathbb K$ (cf [Corps](Algèbre%20(brouillon).md#Corps)). En particulier :
 
-- $(E^p, +)$ est un groupe abélien  (cf [Groupes](Algèbre.md#Groupes)))
+- $(E^p, +)$ est un groupe abélien  (cf [Groupes](Algèbre%20(brouillon).md#Groupes)))
 - il n’y a pas, en général, de structure multiplicative interne sur $E^p$
 
 Alors :
