@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"228edb9ae3b2fe99","type":"text","text":"","x":-123,"y":-325,"width":250,"height":60},
+		{"id":"ad75c356935782f9","type":"file","file":"content/animations/anim_corde_stationnaire/animation.mp4","x":-200,"y":-200,"width":399,"height":233},
+		{"id":"a917f441e39b3561","type":"text","text":"","x":-282,"y":-325,"width":250,"height":60}
+	],
+	"edges":[]
+}
