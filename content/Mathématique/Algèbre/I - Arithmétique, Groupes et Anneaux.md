@@ -87,16 +87,23 @@ Nous supposons acquises les notions de base sur l'ensemble des entiers naturels 
 >>>	3. On a donc bien $I \subset bA$.
 >>>
 >>>Par double inclusion, $\boldsymbol{I = bA}$. L'idéal $I$ est principal, ce qui prouve que **tout anneau euclidien est un anneau principal**.
-### *Classes de congruence modulo $\boldsymbol{n}$*.
+### 1.1.1. *Classes de congruence modulo $\boldsymbol{n}$*.
 
 >[!note]- <span style="font-variant: small-caps;"> Définition 2 : congrus modulo $\boldsymbol{n}$ </span> 
 >Soient $n$ un entier naturel non nul ($\mathbb{N}^\ast$). On note $n \mathbb{Z} = \{n k \mid k \in \mathbb{Z} \}$. Si $x$ et $y$ sont deux entiers, on note $x \equiv y \quad (\text{mod}\,  n )$ si $x-y \in n\mathbb{Z}$, et on dit alors que $x$ et $y$ sont *congrus modulo $n$*.
 
+>[!note]- <span style="font-variant: small-caps;"> Définition 3 : $\boldsymbol{\mathbb{Z}/n\mathbb{Z}= \{\overline{0},\overline{1}, \cdots, \overline{n-1} \}}$ </span> 
+>Soient $n$ un entier naturel non nul ($\mathbb{N}^\ast$). L'anneau quotient de $\mathbb{Z}$ par $n \mathbb{Z}$ est noté $\mathbb{Z}/n\mathbb{Z}$. On note généralement $\overline{x}$ ( ou $\dot{x}$) la classe d'un entier $x$ dans $\mathbb{Z}/n\mathbb{Z}$. Ainsi, $\mathbb{Z}/n\mathbb{Z} = \{\overline{0},\overline{1}, \cdots, \overline{n-1} \}$.
 
+### 1.1.2. *Plus Grand Commun Diviseur (PGCD)*.
 
+>[!note]- <span style="font-variant: small-caps;"> Définition 4 : Plus Grand Commun Diviseur (PGCD) :   </span> le plus grand nombre entier qui divise à la fois deux ou plusieurs nombres sans laisser de reste
+>- Soient $a_1, \cdots , a_n$ des entiers. Il existe une unique entier naturel $d$ tel que $a_1 \mathbb{Z}+ \cdots + a_n \mathbb{Z} = d \mathbb{Z}$. Ainsi défini, $d$ s'appelle le *pgcd* de $a_1, \cdots , a_n$ et on note $d = \text{pgcd}(a_1, \cdots , a_n)$. L'entier $d$ est ainsi le plus grand entier naturel divisant tous les $a_i$ ( $1 \leq i \leq n$).
+>- Lorsque $\text{pgcd}(a_1, \cdots , a_n)=1$, on dit que les entiers $a_1, \cdots , a_n$ sont premiers entre eux *dans leur ensemble*. Lorsque $\text{pgcd}(a_i, a_j)=1$ dès que $i\neq j$, les entiers $a_i$ sont dits premiers entre eux *deux à deux*.
 
-
-
+>[!note]- <span style="font-variant: small-caps;"> Remarque 1 :    </span>
+>- Des en
+>- Lorsque $\text{pgcd}(a_1, \cdots , a_n)=1$, on dit que les entiers $a_1, \cdots , a_n$ sont premiers entre eux *dans leur ensemble*. Lorsque $\text{pgcd}(a_i, a_j)=1$ dès que $i\neq j$, les entiers $a_i$ sont dits premiers entre eux *deux à deux*.
 
 
 
