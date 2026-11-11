@@ -11,11 +11,10 @@ Nous supposons acquises les notions de base sur l'ensemble des entiers naturels 
 
 ## 1.1. Divisibilité - pgcd, ppcm
 
->[!note]+ <span style="font-variant: small-caps;"> Définition 1 : $a\mid b$ </span> 
+>[!note]- <span style="font-variant: small-caps;"> Définition 1 : $a\mid b$ </span> 
 >Soient $a$ et $b$ deux entiers relatifs. On dit que $a$ *divise* $b$ ( ou que $b$ est un $mutiple$ de $a$), et on note $a\mid b$, s'il existe un entrier $n$ tel que $b=an$. Si $a$ ne divise pas $b$ on note $a\nmid b$.
 
-
-> [!info]+ <span style="font-variant: small-caps;"> Proposition 1 (Division Euclidienne) </span>
+> [!info]- <span style="font-variant: small-caps;"> Proposition 1 (Division Euclidienne) </span>
 > Soient $a\in \mathbb{Z}, b\in \mathbb{N}^\ast$. *Il existe un unique couple $(q,r) \in \mathbb{Z}\times \mathbb{N}^\ast$ tel que
 > $$ a = bq + r, \quad \textit{avec} \quad 0 \leq r \leq b - 1 \quad (r\in \llbracket 0, b \llbracket = [\![ 0, b [\![). $$
 > $q$ s'appelle le quotient, $r$ le reste, de la division euclidienne de $a$ par $b$.*
@@ -30,7 +29,7 @@ Nous supposons acquises les notions de base sur l'ensemble des entiers naturels 
 >>>5. Par définition, il existe un entier $q \in \mathbb{N}$ tel que $r=a-qb \geq 0$, ce qui donne : $$ a = b q +r$$
 >>>6. Il reste a prouver que $r < b$. Par l'absurde, supposons que $r\geq b$. Alors on aurait $r - b \geq 0$, c'est-à-dire $(a - qb)-b = a -(q+1)b \geq 0$. Cela signifirait que $a-(q+1)b$ appartiendrais à $E$ et serait strictement plus petit que $r$, ($r-b<r$), ce qui contredit le fait que $r$ est le *plus petit élément de $E$*.
 >>>7. On en déduit donc obligatoirement que $0 \leq r <b$
->>>8. Pour $\mathbb{Z}$, on étend le résultat à $a \in \mathbb{Z}$ en appliquant le cas dans $\mathbb{N}$ à $\vert a \vert $ et $\vert b \vert$, puis en ajustant les signes de $q$ et $r$.
+>>>8. Pour $\mathbb{Z}$, on étend le résultat à $a \in \mathbb{Z}$ en appliquant le cas dans $\mathbb{N}$ à $\vert a \vert$ et $\vert b \vert$, puis en ajustant les signes de $q$ et $r$.
 >>>$\square$
 >>
 >>
@@ -38,15 +37,15 @@ Nous supposons acquises les notions de base sur l'ensemble des entiers naturels 
 >>>Supposons qu'il existe deux couples $(q,r)$ et $(q',r')$ vérifiant la relation:
 >>>$$a=bq + r, \quad \textit{avec} \quad 0 \leq r \leq b - 1 $$
 >>>$$a=bq' + r', \quad \textit{avec} \quad 0 \leq r' \leq b - 1 $$
->>>1. On a donc : $$ bq +r = bq'+r' \Rightarrow b(q-q')=r'-r$$
->>>2. En passant aux valeurs absolues :$$ \vert b \vert \cdot \vert q - q' \vert = \vert r' - r \vert $$
->>>3. Encadrons $r' -r$ :
+>>>9. On a donc : $$ bq +r = bq'+r' \Rightarrow b(q-q')=r'-r$$
+>>>10. En passant aux valeurs absolues :$$ \vert b \vert \cdot \vert q - q' \vert = \vert r' - r \vert $$
+>>>11. Encadrons $r' -r$ :
 >>>	1. Comme $0 \leq r < b$ et $0\leq r' < b$, on a $- b < -r$ et $0 \leq r' < b$.
 >>>	2. En combinant les inégalités, on obtient : $$ - b < r' - r < b \Rightarrow \vert r' - r \vert < b$$
->>>4. On réinjecte cela dans l'égalité des valeurs absolues : $$ b \cdot \vert q - q' \vert < b $$
->>>5. Comme $b\neq 0$ (donc $b > 0$), on peut diviser par $b$ : $$\vert q - q' \vert < 1 $$
->>>6. Or, $q$ et $q'$ sont des nombres entiers, donc $\vert q- q'\vert$ est un entier positif strictement inférieur à $1$. La seule possibilité est que : $$ q = q' $$
->>>7. En remplaçant $q = q'$ dans l'équation initiale $b(q-q')=r'-r$, on obtient: $$b(0) = r'-r \Ritharrow r = r'$$
+>>>12. On réinjecte cela dans l'égalité des valeurs absolues : $$ b \cdot \vert q - q' \vert < b $$
+>>>13. Comme $b\neq 0$ (donc $b > 0$), on peut diviser par $b$ : $$\vert q - q' \vert < 1 $$
+>>>14. Or, $q$ et $q'$ sont des nombres entiers, donc $\vert q- q'\vert$ est un entier positif strictement inférieur à $1$. La seule possibilité est que : $$ q = q' $$
+>>>15. En remplaçant $q = q'$ dans l'équation initiale $b(q-q')=r'-r$, on obtient: $$b(0) = r'-r \Rightarrow r = r'$$
 >>>Le couple $(q,r)$ est donc **unique**.
 >>>$\square$
 >>
@@ -54,14 +53,14 @@ Nous supposons acquises les notions de base sur l'ensemble des entiers naturels 
 >>
 >>
 
->[!infos]+ <span style="font-variant: small-caps;"> Rappel de la définition d'un anneau euclidien </span>
+>[!infos]- <span style="font-variant: small-caps;"> Rappel de la définition d'un anneau euclidien </span>
 >Soit $A$ un anneau cummutuatif intègre. On dit que $A$ est un **anneau euclidien** s'il existe une application $v \colon A \backslash \{0\} \rightarrow \mathbb{N}$ (appellée stathme euclidien) vérifiant la propriété suivante :
 >Pour tous $a, b\in A$ avec $b\neq 0$, il existe un couple $(q,r)\in A \times A$ tel que:
 >
->>[!note]+
+>>[!note]-
 >>L'**existence** fait partie intégrante de l'axiome fondateur de la strcture. Elle ne se démontre pas de manière générale pour l'anneau abstrat, elle est présupposée dés lors que l'on manipule ub tel anneau.)
 >
->>[!tip]+  <span style="font-variant: small-caps;"> Démonstration fondamentale : Tout anneau euclidien est principal </span>
+>>[!tip]-  <span style="font-variant: small-caps;"> Démonstration fondamentale : Tout anneau euclidien est principal </span>
 >>
 >>Puisque l'unicité du reste n'est pas garentie dans le cas générale, le théorème le plus important et le plus formellement démontré en algèbre pour ces structures est que la **division euclidienne sont principaux** (c'est-à-dire engendrès par un seul élément).
 >>
@@ -69,25 +68,29 @@ Nous supposons acquises les notions de base sur l'ensemble des entiers naturels 
 >>>Soit $I$ un idéal de $A$. Nous voulons démontrer qu'il existe une élément $b \in A$ tel que $I =b A$ (l'idéal engendré par $b$).
 >>>
 >>>**Étapes de la démonstration :**
->>>1. **Cas trivial :** Si $I=\{0\}$, alors $I$ est l'idéal nul engendré par $0$ ($I=0A$). La propriété est vérifiée.
->>>2. **Choix du candidat générateur :** Supposons maintenant que $I\neq \{0\}$.
+>>>16. **Cas trivial :** Si $I=\{0\}$, alors $I$ est l'idéal nul engendré par $0$ ($I=0A$). La propriété est vérifiée.
+>>>17. **Choix du candidat générateur :** Supposons maintenant que $I\neq \{0\}$.
 >>>	1. Considérons l'ensemble des valeurs des stathmes des éléments non nuls de $I:v(I\backslash \{0\})= \{ v(x) \mid x \in I, x \neq 0 \}$.
 >>>	2. Cet enssemble est une partie non vide de $\mathbb{N}$. Par le principe du bon ordre (toute partie non vide de $\mathbb{N}$ possède un plus petit élément), cet ensemble admet unminimum.
 >>>	3. Soit $b\in I \backslash \{0\}$ un élément qui attent ce minimum. Autrement dit, pour tout $x \in I \backslash \{0\}$, on a $v(b) \leq v(x)$.
->>>3. **Utilisation de la division euclidienne (Double inclusion):**
->>>	1. **Inclusion facile $\bm{(bA\subset I)}$ :** Comme $b\in I$ et que $I$ est un idéal, par définition, tout multiple de $b$ par un élément de $A$ reste dans $I$. Donc $bA \subset I$.
->>>	2. **Inclusion réciproque $\bm{( I \subset bA)}$ :** Soit $a$ un élément quelconque de $I$. Appliquons de division euclidienne de $a$ par $b$: Il existe $q,r\in A$ tels que : $$ a = bq + r \quad \textit{avec} \quad r = 0 \quad \textit{où} \quad v(r) < v(b)$$
->>>4. **Analyse du reste par minimalité :**
+>>>18. **Utilisation de la division euclidienne (Double inclusion):**
+>>>	1. **Inclusion facile $\boldsymbol{(bA\subset I)}$ :** Comme $b\in I$ et que $I$ est un idéal, par définition, tout multiple de $b$ par un élément de $A$ reste dans $I$. Donc $bA \subset I$.
+>>>	2. **Inclusion réciproque $\boldsymbol{( I \subset bA)}$ :** Soit $a$ un élément quelconque de $I$. Appliquons de division euclidienne de $a$ par $b$: Il existe $q,r\in A$ tels que : $$ a = bq + r \quad \textit{avec} \quad r = 0 \quad \textit{où} \quad v(r) < v(b)$$
+>>>19. **Analyse du reste par minimalité :**
 >>>	1. Exprimons le reste : $r = a - bq$.
->>>	2. Comme $a \in I$ et $b\in I$, et que $I$ est un idéal (stable par combinaison linéaire) on en déduit que $\bm{r \in I}$.
+>>>	2. Comme $a \in I$ et $b\in I$, et que $I$ est un idéal (stable par combinaison linéaire) on en déduit que $\boldsymbol{r \in I}$.
 >>>	3. Si $r \neq 0$, alors par définition du stathme euclidien, on doit aoir $v(r) < v(b)$.
 >>>	4. Or, $b$ a été choisi précisément pour avoir le stathme **le plus petit possible** parmi tous les élément non nuls de $I$. Une inégalité $v(r)<v(b)$ avec $r\in I \backslash \{0\}$ est donc une **contradiction**.
->>>5. **Conclusion :**
->>>	1. La seule issue possible est que $\bm{r = 0}$.
+>>>20. **Conclusion :**
+>>>	1. La seule issue possible est que $\boldsymbol{r = 0}$.
 >>>	2. Par conséquent, $a =bq$, ce qui prouve que $a\in bA$.
 >>>	3. On a donc bien $I \subset bA$.
 >>>
->>>Par double inclusion, $\bm{I = bA}$. L'idéal $I$ est principal, ce qui prouve que **tout anneau euclidien est un anneau principal**.
+>>>Par double inclusion, $\boldsymbol{I = bA}$. L'idéal $I$ est principal, ce qui prouve que **tout anneau euclidien est un anneau principal**.
+### *Classes de congruence modulo $\boldsymbol{n}$*.
+
+>[!note]- <span style="font-variant: small-caps;"> Définition 2 : congrus modulo $\boldsymbol{n}$ </span> 
+>Soient $n$ un entier naturel non nul ($\mathbb{N}^\ast$). On note $n \mathbb{Z} = \{n k \mid k \in \mathbb{Z} \}$. Si $x$ et $y$ sont deux entiers, on note $x \equiv y \quad (\text{mod}\,  n )$ si $x-y \in n\mathbb{Z}$, et on dit alors que $x$ et $y$ sont *congrus modulo $n$*.
 
 
 
