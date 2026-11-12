@@ -32,4 +32,4 @@ tags:
 
 ---
 
-# [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|I.A. Arithmétique sur les entiers]]
+# [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|I.A. Arithmétique sur les entiers]]

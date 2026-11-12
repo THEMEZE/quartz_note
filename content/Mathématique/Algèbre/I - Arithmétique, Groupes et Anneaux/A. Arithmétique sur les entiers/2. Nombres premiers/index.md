@@ -6,7 +6,7 @@ tags:
   - groupes
   - cours
 ---
-[[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|🏠 A. Arithmétique sur les entiers]] [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/1. Divisibilité - pgcd, ppcm/index| ⬅️ 1. Divisibilité - pgcd, ppcm]] [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/3. Exercices corrigés/index| ➡️ 3. Exercices corrigés]] 
+[[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|🏠 A. Arithmétique sur les entiers]] [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/1. Divisibilité - pgcd, ppcm/index| ⬅️ 1. Divisibilité - pgcd, ppcm]] [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/3. Exercices corrigés/index| ➡️ 3. Exercices corrigés]] 
 
 > [!note] <span style="font-variant: small-caps;">Définition 6 : nombre premier</span>
 > On dit qu'un entier naturel $p\geq2$ est un *nombre premier* si ses seuls diviseurs sont $p,-p,1$ et $-1$.

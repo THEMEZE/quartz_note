@@ -6,7 +6,7 @@ tags:
   - groupes
   - cours
 ---
-[[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|🏠 A. Arithmétique sur les entiers]] [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/2. Nombres premiers/index|➡️ 2. Nombres premiers]] 
+[[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|🏠 A. Arithmétique sur les entiers]] [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/2. Nombres premiers/index|➡️ 2. Nombres premiers]] 
 
 
 > [!note] <span style="font-variant: small-caps;">Définition 1 : divisibilité $a \mid b$</span>
