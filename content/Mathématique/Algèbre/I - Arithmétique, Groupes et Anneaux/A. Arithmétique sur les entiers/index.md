@@ -15,3 +15,7 @@ Nous supposons acquises les notions de base sur l'ensemble des entiers naturels 
 ---
 # [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/2. Nombres premiers/index| 📂 I.A.2. Nombres premiers]]
 ---
+# [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/3. Exercices corrigés/index| 📂 I.A.3. Exercices corrigés]]
+---
+# [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/4. Arithmétique modulaire/index| 📂 I.A.4. Arithmétique modulaire]] 
+

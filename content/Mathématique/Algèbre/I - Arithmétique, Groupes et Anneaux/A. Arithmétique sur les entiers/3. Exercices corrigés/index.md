@@ -6,7 +6,7 @@ tags:
   - groupes
   - cours
 ---
-[[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|🏠 A. Arithmétique sur les entiers]] [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/2. Nombres premiers/index| ⬅️  2. Nombres premiers]] 
+[[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|🏠 A. Arithmétique sur les entiers]] [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/2. Nombres premiers/index| ⬅️  2. Nombres premiers]] [[Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/4. Arithmétique modulaire/index| ➡️ 4. Arithmétique modulaire]] 
 
 ---
 

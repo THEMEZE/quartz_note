@@ -8,6 +8,8 @@ title: Algèbre
 	- [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/index|A. Arithmétique sur les entiers]]
 		- [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/1. Divisibilité - pgcd, ppcm/index|1. Divisibilité - pgcd, ppcm]]
 		- [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/2. Nombres premiers/index|2. Nombres premiers]]
+		-  [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/3. Exercices corrigés/index|3. Exercices corrigés]]
+		- [[content/Mathématique/Algèbre/I - Arithmétique, Groupes et Anneaux/A. Arithmétique sur les entiers/4. Arithmétique modulaire/index|4. Arithmétique modulaire]]
 
 
 ## 🔗 Sujets liés
