@@ -36,6 +36,8 @@ tags:
 > [!question]- QCM — 🌅 Début de cours
 > **Sur une corde de guitare, qu'est-ce qui change la hauteur (la fréquence) du son quand on serre la clé d'accordage ?**
 >
+> <p style="text-align:center"><a href="/animations/anim_corde_onde/animation.gif" target="_blank" rel="noopener"><img src="/animations/anim_corde_onde/animation.gif" alt="animation" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+>
 > - On augmente la tension F de la corde
 > - On change la couleur de la corde
 > - Je ne sais pas encore
@@ -45,6 +47,8 @@ tags:
 
 > [!question]- QCM — 🔄 Milieu de cours
 > **Sur une corde fixée à ses deux extrémités, en un noeud de vibration, l'amplitude du mouvement est...**
+>
+> <p style="text-align:center"><a href="/animations/anim_corde_stationnaire/animation.gif" target="_blank" rel="noopener"><img src="/animations/anim_corde_stationnaire/animation.gif" alt="animation" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 >
 > - Maximale
 > - Toujours nulle
