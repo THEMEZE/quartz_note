@@ -5,11 +5,39 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 6. Interprétation de la différentielle : approfondissement (volume, pendule, approximations) *(facultatif)*
 
+*Difficulté ●●●○○ · ⏱ 50 min · Type : Entraînement*
+
 Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mathrm{d}f$ pour une fonction de degré 3 (le volume d'une sphère), on l'applique à un calcul d'incertitude (le pendule simple), puis on utilise $\mathrm{d}f$ pour estimer des valeurs numériques sans calculatrice.
+
+> [!abstract]+ 📚 Prérequis
+> **Exercice 2**
+>
+> $\mathrm{d}f = f'(x)\,\mathrm{d}x$ et $\Delta f = f(x+\mathrm{d}x) - f(x)$ ; incertitude par la méthode différentielle.
+
+
+> [!info]+ 🎯 Objectifs
+> **Quantifier l'erreur de l'approximation linéaire**
+>
+> Savoir que l'erreur $\Delta f - \mathrm{d}f$ est d'ordre $(\mathrm{d}x)^2$, évaluer son importance relative, et prévoir son signe.
+
+
+> [!note]+ 📖 Point de cours
+> **Linéarisation et erreur**
+>
+> Pour $f$ deux fois dérivable et $\mathrm{d}x$ petit :
+> $$f(x+\mathrm{d}x) \approx f(x) + f'(x)\,\mathrm{d}x, \qquad \Delta f - \mathrm{d}f \approx \frac{1}{2}f''(x)\,(\mathrm{d}x)^2.$$
+> Le signe de $f''$ donne le signe de l'erreur : $f''>0$ (convexe) $\Rightarrow \Delta f > \mathrm{d}f$ ; $f''<0$ (concave) $\Rightarrow \Delta f < \mathrm{d}f$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Développer proprement**
+>
+> Pour $\Delta V$, développer $(r+\mathrm{d}r)^3 = r^3 + 3r^2\mathrm{d}r + 3r(\mathrm{d}r)^2 + (\mathrm{d}r)^3$.
+
 
 **1.**
 
@@ -152,6 +180,10 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 >
 >
 > Géométriquement, une courbe concave est en dessous de sa tangente, une courbe convexe est au-dessus.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Formule de Taylor-Lagrange
+> Majorer $|\Delta f - \mathrm{d}f|$ par $\frac{1}{2}\sup|f''|\,(\mathrm{d}x)^2$ et en déduire une incertitude sur l'approximation.
 
 
 > [!note] 🔗 Voir aussi

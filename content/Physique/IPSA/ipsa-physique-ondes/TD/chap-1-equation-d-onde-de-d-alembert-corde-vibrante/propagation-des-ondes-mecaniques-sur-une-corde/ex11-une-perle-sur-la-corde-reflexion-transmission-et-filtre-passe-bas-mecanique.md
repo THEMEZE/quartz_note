@@ -5,15 +5,73 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 11. Une perle sur la corde : réflexion, transmission et filtre passe-bas mécanique *(facultatif)*
+
+*Difficulté ●●●●● · ⏱ 55 min · Type : Approfondissement, problème guidé*
 
 Une corde homogène infinie, de masse linéique $\mu=0{,}02\ \text{kg}\cdot\text{m}^{-1}$ et de tension $F=50\ \text{N}$, est le siège d'ondes transversales. Une petite perle de masse $m=5\ \text{g}$ est fixée à la corde au point $x=0$. On néglige le poids et les frottements.
 
 Une onde sinusoïdale incidente $\underline{y}_i=e^{\,j(\omega t-kx)}$ arrive de la gauche ($x<0$). Il apparaît une onde réfléchie $\underline{y}_r=\underline{r}\,e^{\,j(\omega t+kx)}$ et une onde transmise $\underline{y}_t=\underline{\tau}\,e^{\,j(\omega t-kx)}$ ($x>0$).
 
 On note $c=\sqrt{F/\mu}$, $k=\omega/c$ et $Z=\sqrt{F\mu}$ l'impédance caractéristique de la corde (exercice 7).
+
+> [!question]+ 🎣 Accroche
+> **Une perle sur la corde laisse-t-elle passer l'onde ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *On fixe une petite masse sur une corde tendue le long de laquelle on envoie une vibration. Les mouvements lents passent-ils ? Les mouvements rapides ? Pourquoi une masse très lourde se comporte-t-elle comme un point **fixe** aux hautes fréquences et reste-t-elle presque transparente aux basses ? Savez-vous quel circuit électrique ce montage rappelle ?*
+>
+> **Idée clé : un défaut ponctuel impose deux conditions de raccordement.** En $x=0$ : (1) $y$ est continu ; (2) la perle obéit au PFD, $m\,\partial_t^2y=F\,[\partial_xy(0^+)-\partial_xy(0^-)]$ : la pente est discontinue. Avec $Z=\sqrt{F\mu}$ et $\beta=m\omega/(2Z)$ :
+> $$\underline\tau=\frac1{1+j\beta},\qquad\underline r=\frac{-j\beta}{1+j\beta},\qquad R=\frac{\beta^2}{1+\beta^2},\quad T=\frac1{1+\beta^2},\quad R+T=1.$$
+> La perle est un **filtre passe-bas du premier ordre**, de constante de temps $\theta=m/(2Z)$ : elle transmet les basses fréquences et réfléchit les hautes.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Exercices 5 et 7**
+>
+> Notation complexe, conditions aux limites, impédance $Z$ et puissance transportée par une onde progressive.
+
+
+> [!info]+ 🎯 Objectifs
+> **Trouver $\underline{r}$ et $\underline{\tau}$ pour un défaut ponctuel**
+>
+> Écrire les conditions de raccordement (continuité du déplacement et équation du mouvement de la perle), déduire des coefficients complexes dépendant de la fréquence, et interpréter la perle comme un filtre du premier ordre.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Notation complexe : dérivées et conditions de raccordement**
+>
+> Pour $\underline y=\underline A\,e^{j(\omega t\mp kx)}$ : $\partial_t\to j\omega$, $\partial_x\to\mp jk$. L'onde réfléchie a $\partial_xy=+jk\,\underline r\,e^{j(\omega t+kx)}$, l'onde incidente $-jk\,e^{j(\omega t-kx)}$.
+>
+> **Module et argument d'un complexe**
+>
+> $\underline\tau=\dfrac1{1+j\beta}=\dfrac{1-j\beta}{1+\beta^2}$ : $|\underline\tau|^2=\dfrac1{1+\beta^2}$ et $\arg\underline\tau=-\arctan\beta$. Multiplier numérateur et dénominateur par le conjugué est le réflexe pour passer en forme algébrique.
+>
+> **Relation $kF=\omega Z$**
+>
+> $kF=\dfrac\omega cF=\omega\sqrt{F\mu}=\omega Z$ : l'impédance remplace la tension et la célérité dans les raccordements. $[Z]=\mathrm{kg\,s^{-1}}$.
+>
+> **Équation différentielle du premier ordre**
+>
+> $\theta\dot y_t+y_t=y_i$ : pour un échelon $Y_0$, $y_t=Y_0(1-e^{-t/\theta})$ ; la constante de temps $\theta=m/2Z=2{,}5$ ms donne la fréquence de coupure $f_c=1/(2\pi\theta)\approx63{,}7$ Hz.
+>
+> **Dérivée d'une onde progressive $s(t-x/c)$**
+>
+> $\partial_x s(t-x/c)=-\dot s/c$ et $\partial_t s=\dot s$ : on passe d'une dérivée spatiale à une dérivée temporelle en divisant par $\mp c$, d'où $F/c=Z$ dans la condition (2).
+>
+> **Limites et comportements asymptotiques**
+>
+> $\beta\to0$ : $\underline\tau\to1$, $\underline r\to0$ ; $\beta\to\infty$ : $\underline\tau\to0$, $\underline r\to-1$. Étudier les limites permet de vérifier un résultat sans calcul.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Deux conditions**
+>
+> En $x=0$ : (1) la corde est continue, donc $y(0^-,t)=y(0^+,t)$ ; (2) le PFD sur la perle relie l'accélération à la différence des forces transversales exercées par la droite et par la gauche.
+
 
 **q1.** Écrire les deux conditions de raccordement en $x=0$. Pour la seconde, établir
 $$m\,\frac{\partial^2y}{\partial t^2}(0,t)=F\left[\frac{\partial y}{\partial x}(0^+,t)-\frac{\partial y}{\partial x}(0^-,t)\right].$$
@@ -167,6 +225,32 @@ Calculer $\theta$. Résoudre pour un échelon $s(t)=Y_0$ ($t>0$) et donner le d�
 > **Discussion**
 >
 > Aux basses fréquences ($\lambda\gg d$), les perles ajoutent de la masse par unité de longueur : $\mu_{\text{eff}}=\mu+m/d$, d'où une célérité plus faible. Cette célérité effective vaut $c_{\text{eff}}=c/\sqrt{1+m/(\mu d)}$. Quand $\lambda$ devient comparable à $d$, les ondes réfléchies par chaque perle interfèrent et le milieu devient dispersif, avec une bande de fréquences interdite. Le cas limite $\mu\to0$ est exactement la chaîne de masses de l'exercice 9.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Électrocinétique**
+>
+> $\underline\tau=1/(1+j\omega\theta)$ est exactement la fonction de transfert d'un filtre RC passe-bas avec $\theta=RC$ ; la fréquence de coupure à $-3$ dB est $1/(2\pi RC)$. La corde joue le rôle de la résistance ($2Z$) et la perle celui d'un condensateur d'inertie.
+>
+> **Acoustique**
+>
+> Un obstacle lourd laisse passer les sons graves (grande longueur d'onde) et arrête les aigus : c'est pourquoi on entend mieux les basses derrière un mur.
+>
+> **Génie civil**
+>
+> L'amortisseur à masse accordée (principe de la perle accrochée à un ressort) équipe les gratte-ciel et les ponts pour absorber les vibrations à une fréquence donnée (par exemple la tour Taipei 101).
+>
+> **Physique des matériaux et métamatériaux**
+>
+> Des résonateurs locaux régulièrement espacés dans un milieu ouvrent des bandes de fréquences interdites : c'est le principe des métamatériaux acoustiques et sismiques.
+>
+> **Optique**
+>
+> $R+T=1$ est la conservation de l'énergie à l'interface : réflexion et transmission d'une lame de verre, avec ici une perte nulle.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Perle amortie et ressort
+> Si la perle est reliée à un support par un ressort de raideur $K$ et un amortisseur, on obtient la résonance d'un absorbeur : pour $\omega=\sqrt{K/m}$ le déplacement de la perle devient nul en régime forcé, et l'onde est entièrement réfléchie. Principe des amortisseurs à masse accordée.
 
 
 > [!note] 🔗 Voir aussi

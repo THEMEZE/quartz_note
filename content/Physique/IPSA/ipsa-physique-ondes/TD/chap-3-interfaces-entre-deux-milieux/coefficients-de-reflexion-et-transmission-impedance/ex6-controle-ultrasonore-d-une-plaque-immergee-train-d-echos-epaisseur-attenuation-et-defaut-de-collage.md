@@ -5,9 +5,11 @@ tags:
   - chap-3-interfaces-entre-deux-milieux
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a> · <a href="/pdfs/td3_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a>
 
 ### Exercice 6. Contrôle ultrasonore d'une plaque immergée : train d'échos, épaisseur, atténuation et défaut de collage *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Application / Problème d'ingénieur*
 
 Pour contrôler une plaque d'aluminium d'épaisseur $e$ inconnue, on l'immerge dans l'eau et on envoie, sous
 incidence normale, une impulsion ultrasonore brève (fréquence centrale $5$ MHz, durée $\simeq0{,}4~\mu$s) à l'aide d'une
@@ -20,6 +22,71 @@ $r_{ij}=\dfrac{Z_j-Z_i}{Z_i+Z_j}$, $t_{ij}=1+r_{ij}$.
 Données : eau ($\rho_w=1000~\text{kg}\cdot\text{m}^{-3}$, $c_w=1500~\text{m}\cdot\text{s}^{-1}$), aluminium
 ($\rho_A=2700~\text{kg}\cdot\text{m}^{-3}$, $c_A=5110~\text{m}\cdot\text{s}^{-1}$), air ($Z_{\mathrm{air}}=442$ rayl).
 On néglige l'atténuation sauf à la question 5, et on admet que le faisceau reste plan (pas de diffraction).
+
+> [!question]+ 🎣 Accroche
+> **Comment voir la face arrière d'une plaque sans la toucher ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Une plaque de métal est plongée dans un bain d'eau. On envoie une impulsion ultrasonore : on reçoit d'abord un écho (face avant), puis une série d'autres échos de plus en plus faibles. **D'où viennent ces échos ? Que nous apprend leur espacement ? Que nous apprend la décroissance de leur amplitude ?***
+>
+> **Idée clé : chaque aller-retour dans la plaque produit un écho, dont l'amplitude est le produit des coefficients de réflexion et de transmission rencontrés.** Les temps d'arrivée donnent $e=c_A\Delta t/2$ ; la décroissance géométrique donne $r_{Aw}r_{Ab}$, donc l'impédance de la plaque ; l'énergie totale restituée est exactement celle envoyée (si la face arrière réfléchit tout) :
+> $$r_{wA}^2+\frac{(1-r_{wA}^2)^2}{1-r_{wA}^2}=1.$$
+
+
+> [!abstract]+ 📚 Prérequis
+> **Réflexion et transmission en pression à une interface fluide-solide, incidence normale**
+>
+> $R=\dfrac{Z_2-Z_1}{Z_1+Z_2}$, $T=1+R$ pour l'amplitude de pression ; pour l'énergie, $R_E=R^2$ et $T_E=1-R_E=\dfrac{4Z_1Z_2}{(Z_1+Z_2)^2}$ (TD2, exercice 4, et exercice 2 du TD3).
+>
+> **Raisonnement en régime impulsionnel**
+>
+> Une impulsion brève dont la durée est inférieure au temps d'aller-retour dans la plaque est suivie d'une succession d'échos *distincts* dans le temps : on raisonne sur chaque trajet séparément, en multipliant les coefficients rencontrés. (En régime sinusoïdal établi, tous ces échos interfèrent : TD2, exercice 8.)
+>
+> **Série géométrique**
+>
+> $\sum_{n\ge0}q^n=\dfrac1{1-q}$ pour $|q|<1$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Raisonner en échos plutôt qu'en régime établi**
+>
+> Savoir écrire l'amplitude d'un écho comme produit de coefficients de réflexion et de transmission rencontrés le long du trajet, vérifier la conservation de l'énergie en sommant sur tous les échos, extraire d'un train d'échos l'épaisseur, l'impédance et l'atténuation d'une plaque, et interpréter un changement de conditions à la face arrière (défaut de collage).
+
+
+> [!note]+ 📖 Point de cours
+> **Train d'échos d'une plaque**
+>
+> Pour une plaque (milieu $A$) entre un milieu avant $w$ et un milieu arrière $b$, l'écho $E_0$ est la réflexion directe $r_{wA}$. L'écho $E_n$ ($n\ge1$) a traversé la face avant (aller), parcouru $n$ allers-retours dans la plaque en étant $n$ fois réfléchi par la face arrière ($r_{Ab}$) et $n-1$ fois par la face avant vue de l'intérieur ($r_{Aw}$), puis a retraversé la face avant (retour) :
+> $$E_n=t_{wA}\,t_{Aw}\,r_{Ab}\,\big(r_{Aw}\,r_{Ab}\big)^{n-1}\qquad(n\ge1).$$
+> Les instants d'arrivée sont séparés de $\Delta t=2e/c_A$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Série géométrique**
+>
+> $\sum_{n=1}^{\infty}q^{\,n-1}=\dfrac1{1-q}$. Avec $q=r^2$ : $\sum_{n\ge1}E_n^2=\dfrac{(1-r^2)^2}{1-r^2}=1-r^2$.
+>
+> **Identité $(1+r)(1-r)=1-r^2$**
+>
+> $t_{wA}t_{Aw}=(1+r_{wA})(1+r_{Aw})=(1+r)(1-r)$ car $r_{Aw}=-r_{wA}$ : le produit est indépendant du signe de $r$.
+>
+> **Signe des coefficients**
+>
+> $r_{ij}>0$ si $Z_j>Z_i$ (réflexion sur un milieu plus impédant, sans inversion de pression), $r_{ij}<0$ sinon. Une chaîne de coefficients se multiplie : un nombre impair de coefficients négatifs donne un écho négatif.
+>
+> **Décibels et rapport d'amplitudes**
+>
+> Rapport d'amplitudes de pression $\rho$ : $20\log_{10}\rho$ dB ; par exemple $\rho=0{,}643$ correspond à $-3{,}8$ dB.
+>
+> **Atténuation exponentielle**
+>
+> Une onde d'amplitude atténuée en $e^{-\alpha x}$ perd, sur un aller-retour de longueur $2e$, un facteur $e^{-2\alpha e}$ ; en dB, $\alpha_{\mathrm{dB}}=8{,}686\,\alpha$ ($\alpha$ en Np/m).
+>
+> **Précision relative d'une mesure**
+>
+> $\dfrac{\Delta e}{e}=\dfrac{\Delta(\Delta t)}{\Delta t}$ si $c_A$ est connu : une résolution de $10$ ns sur $\Delta t=4{,}7~\mu$s donne $0{,}2\ \%$.
+
 
 **q1.** Calculer les impédances $Z_w$ et $Z_A$, puis $r_{wA}$, $t_{wA}$, $r_{Aw}$, $t_{Aw}$ et $r_{A,\mathrm{air}}$.
 Vérifier que $t_{wA}\,t_{Aw}=1-r_{wA}^2$. Comparer à l'interface air-aluminium de l'exercice 2.
@@ -150,6 +217,32 @@ lorsque le collage disparaît (lame d'air) ? Comment détecte-t-on le défaut ?
 > **Détection d'un décollement**
 >
 > Si le polymère se décolle, une lame d'air s'interpose et la face arrière redevient quasi parfaitement réfléchissante : $E_1$ revient à $-0{,}354$, soit une augmentation de $20\log_{10}(0{,}354/0{,}227)=20\log_{10}(1{,}56)\approx+3{,}8$ dB et des échos suivants beaucoup plus durables. En balayant la sonde sur la plaque, une zone où $E_1$ (et $E_2$) sont plus forts signale un décollement ; une zone où ils sont plus faibles signale un collage plus absorbant (ou une corrosion de la face arrière). C'est le principe de la cartographie de collage par ultrasons (C-scan).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Contrôle non destructif et maintenance industrielle**
+>
+> Mesure d'épaisseur résiduelle de réservoirs et de canalisations, détection de corrosion, de délaminage, de soudures défectueuses, de décollement de revêtements : applications quotidiennes des échos ultrasonores.
+>
+> **Imagerie médicale**
+>
+> L'échographie fonctionne en mode impulsionnel : chaque interface entre tissus renvoie un écho dont l'amplitude dépend du contraste d'impédance, et le retard donne la profondeur $z=ct/2$.
+>
+> **Télédétection : radar et sonar**
+>
+> Radar, sonar et lidar fonctionnent par échos : retard $\to$ distance, amplitude $\to$ réflectivité. Les échos multiples d'un sonar sur un fond sédimentaire donnent l'épaisseur des couches.
+>
+> **Électricité : réflectométrie temporelle (TDR)**
+>
+> Un échantillon de câble est testé en envoyant une impulsion et en observant les échos aux discontinuités d'impédance : le temps donne la position d'un défaut, le signe et l'amplitude de l'écho donnent la nature (circuit ouvert, court-circuit).
+>
+> **Optique**
+>
+> Les doubles reflets d'une lame de verre mince (réflexion sur la face avant et sur la face arrière) sont l'équivalent optique des échos $E_0$ et $E_1$ ; la mesure d'épaisseur de couches minces par interférométrie en est la version en régime sinusoïdal.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Retour au régime sinusoïdal : formule d'Airy
+> Si l'impulsion est remplacée par une onde sinusoïdale entretenue, tous les échos interfèrent. En sommant la série géométrique $r_{wA}+t_{wA}t_{Aw}r_{Ab}e^{-2i\varphi}\sum_{m\ge0}(r_{Aw}r_{Ab}e^{-2i\varphi})^m$ avec $\varphi=\omega e/c_A$, on retrouve la formule de transmission d'une lame (TD2, exercice 8) et les résonances $e=n\lambda_A/2$ : c'est le même problème vu dans deux régimes différents.
 
 
 > [!note] 🔗 Voir aussi

@@ -5,11 +5,63 @@ tags:
   - chap-4-quantite-de-mouvement-systemes-de-points-collisions
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/index|⬅ Retour]]
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/index|⬅ Retour]] · <a href="/pdfs/td6_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td6_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
 ### Exercice 5. (*) Pendule balistique *(facultatif)*
 
+*Difficulté ●●●●○ · ⏱ 55 min · Type : Exercice non guidé / Mesure d'une vitesse*
+
 Un **pendule balistique** sert à mesurer la vitesse d'une balle. Un bloc de masse $M=2{,}0$ kg est suspendu à un fil inextensible de longueur $L=1{,}00$ m. Une balle de masse $m=10$ g, tirée horizontalement à la vitesse $v$, s'y **incruste**. Le pendule s'écarte alors d'un angle maximal $\theta_{\max}=30^\circ$. On prendra $g=9{,}81~\mathrm{m\,s^{-2}}$ ; le choc est considéré comme instantané.
+
+> [!question]+ 🎣 Accroche
+> **Mesurer une balle de fusil avec un bloc et un rapporteur**
+>
+> *Durée de l'introduction : 3 min*
+>
+> *Une balle de $10$ g a une vitesse de plusieurs centaines de m/s : comment la mesurer sans chronomètre rapide ? **En l'arrêtant dans un gros bloc suspendu** et en lisant l'angle : $30^\circ$ suffisent. **Quelle fraction de l'énergie de la balle sert à soulever le bloc ?***
+>
+> **Idée clé : quantité de mouvement pendant le choc, énergie après.** Seule $\vec p$ est conservée dans le choc mou ; $99{,}5~\%$ de l'énergie est dissipée.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Les trois phases**
+>
+> Avant : balle seule. Choc : quantité de mouvement horizontale conservée (la tension est verticale). Après : énergie mécanique conservée (tension qui ne travaille pas).
+>
+> **Énergie d'un pendule**
+>
+> Montée de la hauteur $h=L(1-\cos\theta)$ ; $\tfrac12(m+M)V^2=(m+M)gh$.
+>
+> **Mouvement circulaire**
+>
+> Newton selon $\vec n$ : $T-(m+M)g\cos\theta=(m+M)\dfrac{V^2}L$ pour un pendule d'angle $\theta$ (pendule simple, fil tendu).
+
+
+> [!info]+ 🎯 Objectifs
+> **Mesurer indirectement une grandeur par une chaîne de lois**
+>
+> Savoir traduire un angle mesuré en vitesse initiale en enchaînant énergie, choc mou, énergie ; savoir calculer l'énergie dissipée ; savoir étudier une variante (balle qui traverse, tour complet).
+
+
+> [!note]+ 📖 Point de cours
+> **Formule du pendule balistique**
+>
+> $mv=(m+M)V$ ; $V=\sqrt{2gL(1-\cos\theta)}$ ; $v=\dfrac{m+M}{m}\sqrt{2gL(1-\cos\theta)}$. Fraction d'énergie dissipée dans le choc : $\dfrac{M}{m+M}$.
+>
+> **Petits angles**
+>
+> $1-\cos\theta\approx\tfrac{\theta^2}2$ : $v\approx\dfrac{m+M}m\theta\sqrt{gL}$ (l'angle est proportionnel à la vitesse).
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Résolution en chaîne**
+>
+> $v\to V\ (p)\to h\ (E_m)\to\theta$ ; on inverse la chaîne pour remonter de $\theta$ à $v$.
+>
+> **Lien angle et hauteur**
+>
+> $\cos\theta=1-h/L$ ; $h=L(1-\cos\theta)$ ; petits angles $h\approx L\theta^2/2$.
+
 
 **q1.** - [(a)] Découper le phénomène en trois phases. Pour chacune, dire quel théorème (ou quelle loi de conservation) s'applique et pourquoi.
 - [(b)] Exprimer la vitesse $V$ du système \{bloc $+$ balle\} juste après le choc en fonction de $m$, $M$ et $v$.

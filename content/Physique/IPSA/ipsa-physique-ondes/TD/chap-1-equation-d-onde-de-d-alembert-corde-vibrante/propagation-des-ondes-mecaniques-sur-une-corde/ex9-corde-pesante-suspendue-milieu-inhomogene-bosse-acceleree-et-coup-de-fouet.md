@@ -5,15 +5,73 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 9. Corde pesante suspendue : milieu inhomogène, bosse accélérée et coup de fouet *(facultatif)*
+
+*Difficulté ●●●●● · ⏱ 60 min · Type : Approfondissement, problème ouvert guidé*
 
 Une corde homogène de longueur $L$ et de masse linéique $\mu$ est suspendue verticalement par son extrémité supérieure (fixe). Son extrémité inférieure est libre. Soit $g$ l'accélération de la pesanteur.
 
 On repère un point de la corde par son abscisse $x\in[0,L]$, mesurée **vers le haut** à partir de l'extrémité libre (donc $x=0$ est l'extrémité inférieure et $x=L$ le point de suspension). Le déplacement transversal (horizontal) est noté $y(x,t)$ ; on le suppose petit.
 
 Ici la tension n'est pas constante : c'est le poids de la partie de corde située **sous** le point considéré qui la crée.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi un fouet claque-t-il ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Sur une corde horizontale tendue, une bosse avance à vitesse constante. Mais sur une corde **suspendue**, la tension n'est plus la même partout : elle est nulle en bas et maximale en haut. Une bosse lancée en bas va-t-elle accélérer, ralentir, ou rester à vitesse constante en montant ? Et que devient une onde qui **descend** vers l'extrémité libre ?*
+>
+> **Idée clé : si la tension dépend de la position, la célérité aussi.** Avec $x$ mesuré depuis l'extrémité libre, $F(x)=\mu g x$ et l'équation d'onde devient
+> $$\mu\,\partial_t^2y=\partial_x\big(F(x)\,\partial_x y\big)\ \Longrightarrow\ \partial_t^2y=g\,\partial_x(x\,\partial_x y),\qquad c(x)=\sqrt{gx}.$$
+> La bosse monte avec une **accélération constante** $g/2$ ; le temps de montée est $2\sqrt{L/g}$ ; les modes propres sont des fonctions de Bessel $J_0(2\omega\sqrt{x/g})$, de fréquences non harmoniques ; l'amplitude d'une onde descendante **croît** vers l'extrémité libre (effet de fouet).
+
+
+> [!abstract]+ 📚 Prérequis
+> **Exercices 3 et 6**
+>
+> PFD sur un tronçon de corde, approximation des petits angles, condition d'extrémité libre.
+
+
+> [!info]+ 🎯 Objectifs
+> **Adapter la démonstration de l'équation d'onde à un milieu inhomogène**
+>
+> Le raisonnement de l'exercice 3 est refait avec $F=F(x)$. On en tire une célérité qui dépend de la position, un temps de trajet par intégration, et des modes qui ne sont plus des sinusoïdes.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Dérivée d'un produit : $\partial_x(F\,\partial_x y)\neq F\,\partial_x^2y$**
+>
+> Quand $F$ dépend de $x$, la dérivée porte aussi sur $F$ : $\partial_x(\mu gx\,\partial_x y)=\mu g\,(\partial_x y+x\,\partial_x^2y)$.
+>
+> **Intégrale impropre convergente**
+>
+> $\displaystyle\int_0^L\frac{\mathrm dx}{\sqrt{gx}}=\frac2{\sqrt g}\big[\sqrt x\big]_0^L=2\sqrt{\frac Lg}$ : malgré $c(0)=0$, l'intégrale converge. Primitive à connaître : $\int x^{-1/2}\mathrm dx=2\sqrt x$.
+>
+> **Équation différentielle séparable et changement de variable**
+>
+> $\dfrac{\mathrm dx_b}{\mathrm dt}=\sqrt{gx_b}$ : en posant $u=\sqrt{x_b}$, $2u\dot u=\sqrt g\,u$, donc $\dot u=\sqrt g/2$ et $x_b=\tfrac g4t^2=\tfrac12\left(\tfrac g2\right)t^2$ : loi horaire d'un mouvement uniformément accéléré (cinématique).
+>
+> **Dérivée d'une fonction composée**
+>
+> Avec $u=\alpha\sqrt x$ : $\dfrac{\mathrm du}{\mathrm dx}=\dfrac\alpha{2\sqrt x}=\dfrac{\alpha^2}{2u}$. On l'utilise deux fois pour passer de $Y(x)$ à $Z(u)$.
+>
+> **Équation et fonctions de Bessel**
+>
+> $Z''+\dfrac1uZ'+Z=0$ a une solution régulière en $0$, $J_0(u)=1-\dfrac{u^2}{4}+\dfrac{u^4}{64}-\dots$, qui oscille en s'amortissant lentement ; ses zéros $j_{0,n}\approx(n-\tfrac14)\pi$ sont presque équidistants mais non multiples entiers de $j_{0,1}$.
+>
+> **Conservation et loi de puissance**
+>
+> $Z(x)v_m^2=\text{cte}$ avec $Z=\mu\sqrt{gx}$ donne $v_m\propto x^{-1/4}$ : rapport $100^{1/4}\approx3{,}2$ entre $x=L$ et $x=L/100$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Ordre de grandeur**
+>
+> Pour $L=10\ \text{m}$, tester chaque résultat sur cette valeur. Le temps de chute libre depuis $L$ vaut $\sqrt{2L/g}\approx1{,}43\ \text{s}$ : un temps de propagation de cet ordre est attendu.
+
 
 **q1.** Montrer que la tension vaut $F(x)=\mu g\,x$ pour la corde à l'équilibre. Puis, en appliquant le PFD au tronçon $[x,x+\mathrm{d}x]$ et en projetant sur l'horizontale, établir l'équation
 $$\frac{\partial^2y}{\partial t^2}=g\,\frac{\partial}{\partial x}\!\left(x\,\frac{\partial y}{\partial x}\right).$$
@@ -158,6 +216,32 @@ $$\frac{\partial^2y}{\partial t^2}=g\,\frac{\partial}{\partial x}\!\left(x\,\fra
 > $Z(x)v_m^2=\mu\sqrt{g\,x}\,v_m^2=\text{cste}\Rightarrow v_m(x)\propto x^{-1/4}$.
 > Le rapport des vitesses entre $x=L$ et $x=L/100$ vaut $100^{1/4}\approx3{,}2$. Dans un fouet, le rétrécissement du diamètre (donc de $\mu$ et de la tension) vers l'extrémité amplifie encore le phénomène ; la vitesse en bout atteint des valeurs supersoniques, ce qui explique le claquement.
 > Attention : l'hypothèse $\lambda\ll x$ cesse d'être valable près de $x=0$ et l'approximation des petits angles aussi. Le modèle indique la tendance, mais ne donne pas la valeur de la vitesse en $x=0$.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mathématiques**
+>
+> Les fonctions de Bessel apparaissent pour la première fois dans ce problème (D. Bernoulli, chaîne pesante, 1732). Elles décrivent aussi les modes d'une membrane de tambour, les guides d'ondes cylindriques, la diffraction par une ouverture circulaire.
+>
+> **Optique et principe de Fermat**
+>
+> Le temps de parcours $\tau=\int\mathrm dx/c(x)$ est l'analogue du chemin optique $\int n\,\mathrm dx$ dans un milieu d'indice variable ; un milieu inhomogène courbe les rayons (mirages).
+>
+> **Océanographie**
+>
+> Pour des vagues en eau peu profonde, $c=\sqrt{gh}$ avec $h$ la profondeur : même loi en $\sqrt{g\cdot\text{hauteur}}$. Sur une plage en pente, les vagues ralentissent et leur amplitude augmente, comme l'amplitude de l'onde dans la corde pesante : c'est l'origine du déferlement (loi de Green : amplitude $\propto h^{-1/4}$, la même puissance que $v_m\propto x^{-1/4}$ ici).
+>
+> **Sismologie**
+>
+> La vitesse des ondes sismiques varie avec la profondeur ; les trajets sont courbés et le temps de parcours est une intégrale du type $\int\mathrm ds/c$.
+>
+> **Mécanique et acoustique**
+>
+> L'effet de fouet : en descendant dans un milieu où $Z$ diminue, la vitesse du bout du fouet devient supérieure à celle du son, d'où un petit « bang » supersonique.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Chaîne pesante de Bernoulli
+> Ce problème est celui étudié par D. Bernoulli (1732), première apparition historique des fonctions de Bessel. Les zéros de $J_0$ sont $2{,}405$ ; $5{,}520$ ; $8{,}654$ ; $11{,}79\dots$
 
 
 > [!note] 🔗 Voir aussi

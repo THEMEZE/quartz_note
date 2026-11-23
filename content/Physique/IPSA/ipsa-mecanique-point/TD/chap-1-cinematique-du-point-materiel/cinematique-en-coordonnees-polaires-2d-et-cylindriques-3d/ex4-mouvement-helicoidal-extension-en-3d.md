@@ -5,15 +5,70 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/index|⬅ Retour]] · <a href="/pdfs/td2_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td2_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/index|⬅ Retour]] · <a href="/pdfs/td2_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td2_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 4. Mouvement hélicoïdal (extension en 3D) *(facultatif)*
+
+*Difficulté ●●●○○ · ⏱ 30 min · Type : Entraînement / Extension 3D*
 
 Dans l'espace muni d'un repère cartésien $Oxyz$, un point $M$ décrit une **hélice circulaire** d'axe $Oz$,
 d'équations horaires (en coordonnées cylindriques)
 $$\begin{cases}r(t)=a\\\theta(t)\\z(t)=h\,\theta(t)\end{cases}$$
 où $a$ et $h$ sont des paramètres constants et $\theta(t)$ est l'angle entre $Ox$ et $\overrightarrow{Om}$,
 $m$ étant la projection du point $M$ sur le plan $Oxy$. On note $\dot\theta$ la vitesse angulaire.
+
+> [!question]+ 🎣 Accroche
+> **Une trajectoire qui monte en tournant**
+>
+> *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
+>
+> *Un ressort, une vis, un escalier en colimaçon, la molécule d'ADN : la trajectoire d'un point qui tourne autour d'un axe tout en avançant le long de cet axe est une **hélice**. Si l'on déroule le cylindre sur lequel elle est tracée, que devient-elle ? Et l'inclinaison de la vitesse, est-elle constante ?*
+>
+> **Idée clé : en coordonnées cylindriques, on ajoute à la base polaire un axe fixe $\vec k$.** La vitesse gagne une composante $\dot z\,\vec k$, l'accélération une composante $\ddot z\,\vec k$ :
+> $$\vec v=\dot r\,\vec u_r+r\dot\theta\,\vec u_\theta+\dot z\,\vec k.$$
+> Pour l'hélice ($r=a$, $z=h\theta$) : $\vec v=\dot\theta\,(a\,\vec u_\theta+h\,\vec k)$. La composante horizontale ($a\dot\theta$) et la composante verticale ($h\dot\theta$) sont proportionnelles : **l'inclinaison de la vitesse est constante**.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Base cylindrique**
+>
+> La base cylindrique $(\vec u_r,\vec u_\theta,\vec k)$ est la base polaire du plan $Oxy$ complétée par l'axe fixe $\vec k$ de $Oz$. Le vecteur position est $\overrightarrow{OM}=r\,\vec u_r+z\,\vec k$, avec $\dfrac{\mathrm d\vec u_r}{\mathrm dt}=\dot\theta\,\vec u_\theta$, $\dfrac{\mathrm d\vec u_\theta}{\mathrm dt}=-\dot\theta\,\vec u_r$ et $\dfrac{\mathrm d\vec k}{\mathrm dt}=\vec0$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Étendre la cinématique polaire à la 3D**
+>
+> Savoir qu'en coordonnées cylindriques on ajoute simplement une composante selon l'axe fixe $\vec k$, calculer $\vec v$ et $\vec a$ d'un mouvement hélicoïdal, et exploiter une propriété géométrique (angle constant avec le plan $Oxy$).
+
+
+> [!note]+ 📖 Point de cours
+> **Cinématique en coordonnées cylindriques**
+>
+> $$\overrightarrow{OM}=r\,\vec u_r+z\,\vec k,\qquad\vec v=\dot r\,\vec u_r+r\dot\theta\,\vec u_\theta+\dot z\,\vec k,$$
+> $$\vec a=\left(\ddot r-r\dot\theta^2\right)\vec u_r+\left(r\ddot\theta+2\dot r\dot\theta\right)\vec u_\theta+\ddot z\,\vec k.$$
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Dérivée composée et dérivée d'un produit**
+>
+> $z=h\theta(t)$ donne $\dot z=h\dot\theta$ et $\ddot z=h\ddot\theta$ ($h$ constant). Même règle que pour toute fonction d'une fonction du temps.
+>
+> **Pythagore dans l'espace**
+>
+> $\vec u_\theta$ et $\vec k$ sont orthogonaux et unitaires : $\|a\dot\theta\,\vec u_\theta+h\dot\theta\,\vec k\|=|\dot\theta|\sqrt{a^2+h^2}$.
+>
+> **Angle entre un vecteur et un plan**
+>
+> L'angle $\alpha$ entre $\vec v$ et le plan $Oxy$ est celui entre $\vec v$ et sa projection horizontale : $\tan\alpha=\dfrac{v_z}{\|\vec v_{\text{horizontale}}\|}=\dfrac{h\dot\theta}{a\dot\theta}=\dfrac ha$. On retrouve l'idée de pente : $\alpha=\arctan(h/a)$.
+>
+> **Hélice et cylindre déroulé**
+>
+> Si l'on déroule le cylindre en un rectangle, $\theta$ devient l'abscisse curviligne $a\theta$, et l'hélice devient la droite $z=\dfrac ha\,(a\theta)$ : une droite de pente $h/a$. La longueur de l'hélice entre deux tours est $2\pi\sqrt{a^2+h^2}$ (Pythagore sur le triangle $2\pi a$, $2\pi h$).
+>
+> **Produit scalaire et orthogonalité**
+>
+> $\vec a\cdot\vec v=0$ si $\|\vec v\|$ est constante : $\tfrac12\dfrac{\mathrm d}{\mathrm dt}\|\vec v\|^2=\vec a\cdot\vec v$. En 3D comme en 2D, un mouvement uniforme a une accélération normale à la trajectoire.
+
 
 **q1.** (a) Compléter la figure avec les données du problème : représenter l'axe $Oz$, le point $M$, sa projection $m$ sur $Oxy$, les coordonnées cylindriques $(r,\theta,z)$ et la base $(\vec u_r,\vec u_\theta,\vec k)$.
 
@@ -104,6 +159,32 @@ $m$ étant la projection du point $M$ sur le plan $Oxy$. On note $\dot\theta$ la
 > $\vec a$ n'a pas de composante selon $\vec k$ : il est **parallèle au plan $Oxy$**. Il est dirigé selon $-\vec u_r$, c'est-à-dire de $M$ vers le point $(0,0,z)$ de l'axe $Oz$ situé à la même altitude : la droite d'action de $\vec a$ **coupe l'axe du cylindre**, perpendiculairement à celui-ci. On retrouve l'accélération centripète du mouvement circulaire de rayon $a$ : monter à vitesse verticale constante ($\dot z=h\omega$) n'ajoute aucune accélération.
 
 
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mathématiques (géométrie différentielle)**
+>
+> L'hélice est la courbe de l'espace de courbure et de torsion constantes. Elle se déroule en une droite sur le cylindre : on utilise la notion de longueur d'arc et de développable.
+>
+> **Électromagnétisme**
+>
+> Une particule chargée dans un champ magnétique uniforme décrit une hélice autour des lignes de champ (aurores polaires, cyclotron, tokamak) : $a$ est le rayon de Larmor et le pas dépend de la vitesse parallèle à $\vec B$.
+>
+> **Biologie et chimie**
+>
+> La double hélice de l'ADN a un rayon d'environ $1$ nm et un pas d'environ $3{,}4$ nm : $h=\dfrac{3{,}4}{2\pi}\approx0{,}54$ nm, soit $\tan\alpha=h/a\approx0{,}54$ et $\alpha\approx28^\circ$.
+>
+> **Mécanique et technologie**
+>
+> Une vis ou un tire-bouchon transforme une rotation en translation avec le **pas** $2\pi h$. L'angle d'hélice d'un filetage ou d'un engrenage hélicoïdal est défini par $\tan\alpha=h/a$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Courbure et torsion de l'hélice
+> Pour un mouvement uniforme, l'accélération est normale : $\|\vec a\|=v^2/\rho$ donne le **rayon de courbure** $\rho=\dfrac{a^2+h^2}{a}$ (qui vaut $a$ pour $h=0$, le cercle, et tend vers l'infini quand $a\to0$ ou $h\to\infty$, la droite). La **torsion** de l'hélice, mesurant son écart au plan, vaut $\dfrac{h}{a^2+h^2}$. Une hélice a donc une courbure et une torsion constantes.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Particule chargée dans un champ magnétique uniforme
+> Une particule de charge $q$ et de masse $m$ dans un champ $\vec B=B\,\vec k$ avec une vitesse $v_\perp$ perpendiculaire et $v_\parallel$ parallèle à $\vec B$ décrit une hélice d'axe $\vec B$, de rayon $a=\dfrac{mv_\perp}{|q|B}$, de pulsation $\omega_c=\dfrac{|q|B}m$ et de pas $2\pi\dfrac{v_\parallel}{\omega_c}$. Identifier les paramètres $a$ et $h=v_\parallel/\omega_c$ de l'exercice, et expliquer le guidage des particules chargées le long des lignes de champ (aurores polaires, confinement magnétique).
+
+
 > [!note] 🔗 Voir aussi
-> [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex9-virage-releve-et-frottement-solide|Exercice 9 — Virage relevé et frottement solide]] · [[physique/IPSA/ipsa-mecanique-point/TD/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]]
+> [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex9-virage-releve-et-frottement-solide|Exercice 9 — Virage relevé et frottement solide]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]]
 

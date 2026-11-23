@@ -5,13 +5,71 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 12. Adaptation d'impédance : lame quart d'onde entre deux cordes *(facultatif)*
+
+*Difficulté ●●●●● · ⏱ 55 min · Type : Approfondissement, problème guidé*
 
 On reprend les deux cordes de l'exercice 2, de même tension $F=400\ \text{N}$ et de masses linéiques $\mu_1=1{,}4\times10^{-4}\ \text{kg/m}$ et $\mu_2=2{,}8\times10^{-4}\ \text{kg/m}$. On les considère ici de longueur infinie, jointes en $x=0$. On note $Z_i=\sqrt{F\mu_i}$ leur impédance caractéristique (exercice 7) et $k_i=\omega/c_i$ leur nombre d'onde, avec $c_i=\sqrt{F/\mu_i}$.
 
 Une onde sinusoïdale incidente $\underline{y}_i=e^{\,j(\omega t-k_1x)}$ arrive de la corde 1 ($x<0$). On cherche à supprimer la réflexion en intercalant entre les deux cordes un segment de corde de longueur $d$ et de masse linéique $\mu_m$ (soumis à la même tension $F$), analogue mécanique du traitement antireflet d'une lentille optique.
+
+> [!question]+ 🎣 Accroche
+> **Comment supprimer une réflexion ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Les lentilles d'appareil photo ou de jumelles ont souvent des reflets violets : c'est une fine couche de traitement antireflet. Comment une couche **d'épaisseur bien choisie** peut-elle annuler une réflexion ? Et comment adapter l'échographe au corps humain pour que l'onde y pénètre au lieu de rebondir sur la peau ?*
+>
+> **Idée clé : la réflexion vient d'un saut d'impédance, qu'on peut compenser.** À une interface, avec la même tension :
+> $$\underline r=\frac{Z_1-Z_2}{Z_1+Z_2},\qquad T=\frac{4Z_1Z_2}{(Z_1+Z_2)^2}.$$
+> En intercalant une lame d'épaisseur $\lambda_m/4$ d'impédance $Z_m=\sqrt{Z_1Z_2}$ (soit $\mu_m=\sqrt{\mu_1\mu_2}$), les deux ondes réfléchies ($x=0$ et $x=d$) sont en opposition de phase et s'annulent : $\underline r=0$. L'adaptation est **à bande étroite**, parfaite à $f_0=c_m/(4d)$ et à ses multiples impairs.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Exercices 5, 7 et 10**
+>
+> Conditions aux limites en régime sinusoïdal, impédance caractéristique, coefficients de réflexion et transmission.
+
+
+> [!info]+ 🎯 Objectifs
+> **Adapter deux milieux**
+>
+> Calculer les coefficients à une interface, puis étudier une couche intermédiaire d'épaisseur $\lambda_m/4$ qui annule la réflexion. Comprendre le rôle de la fréquence et de l'épaisseur.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Continuité de $Y$ et de $Y'$**
+>
+> Sans masse ponctuelle et avec la même tension, $y$ et $\partial_xy$ sont continues à chaque interface. Avec $k_i=\omega Z_i/F$ (même $F$), les nombres d'onde sont proportionnels aux impédances.
+>
+> **Moyenne géométrique**
+>
+> $Z_m=\sqrt{Z_1Z_2}$ donne $\mu_m=\sqrt{\mu_1\mu_2}$ (et $c_m=\sqrt{c_1c_2}$), et non la moyenne arithmétique : pour des rapports ($Z_2/Z_1=\sqrt2$), la moyenne naturelle est géométrique.
+>
+> **Solution de $Y''+k^2Y=0$ par ses conditions initiales**
+>
+> $Y(x)=Y(0)\cos kx+\dfrac{Y'(0)}k\sin kx$, d'où $Y'(x)=-kY(0)\sin kx+Y'(0)\cos kx$. À $kd=\pi/2$ : $\cos=0$ et $\sin=1$, donc $Y(d)=Y'(0)/k$ et $Y'(d)=-kY(0)$.
+>
+> **Valeurs remarquables et périodicité**
+>
+> $\cos\dfrac\pi2=0$, $\sin\dfrac\pi2=1$, $\sin\pi=0$. La condition $k_md=\dfrac\pi2\ [\pi]$ donne $d=(2p+1)\dfrac{\lambda_m}4$ : fréquences d'adaptation $f_p=(2p+1)f_0$.
+>
+> **Différence de marche et déphasage**
+>
+> Un aller-retour dans la lame ajoute un chemin $2d=\lambda_m/2$, soit un déphasage $2k_md=\pi$ : $e^{j\pi}=-1$. Deux ondes de même amplitude et déphasées de $\pi$ s'annulent (interférence destructive).
+>
+> **Fraction rationnelle et identité remarquable**
+>
+> $\dfrac{1-\underline r}{1+\underline r}=\rho\Rightarrow\underline r=\dfrac{1-\rho}{1+\rho}$. Pour $R+T=1$ : $(Z_1-Z_2)^2+4Z_1Z_2=(Z_1+Z_2)^2$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Astuce sur les nombres d'onde**
+>
+> Puisque $F$ est la même partout, $k_i=\omega\sqrt{\mu_i/F}=\omega Z_i/F$ : les nombres d'onde sont proportionnels aux impédances.
+
 
 **q1.** Interface simple (sans lame). Écrire les conditions de continuité en $x=0$ pour l'onde incidente $\underline{y}_i$, l'onde réfléchie $\underline{r}\,e^{\,j(\omega t+k_1x)}$ et l'onde transmise $\underline{\tau}\,e^{\,j(\omega t-k_2x)}$. En déduire
 $$\underline{r}=\frac{Z_1-Z_2}{Z_1+Z_2},\qquad\underline{\tau}=\frac{2Z_1}{Z_1+Z_2}.$$
@@ -121,6 +179,36 @@ Vérifier que cette expression redonne (i) le résultat de la question 1 pour $d
 >
 > Les deux interfaces réfléchissent avec des coefficients de même signe : $\underline{r}_{1m}=\dfrac{Z_1-Z_m}{Z_1+Z_m}\approx-0{,}086$ (corde 1 / lame) et $\underline{r}_{m2}=\dfrac{Z_m-Z_2}{Z_m+Z_2}\approx-0{,}086$ (lame / corde 2). Le second écho a parcouru en plus un aller-retour $2d=\lambda_m/2$ dans la lame, soit un retard $\Delta t=\dfrac{2d}{c_m}=\dfrac{T_0}{2}=0{,}5\ \text{ms}$ à $f_0$. Pour une sinusoïde de fréquence $f_0$, ce retard correspond à un déphasage de $\pi$ : les deux ondes réfléchies sont en opposition de phase et s'annulent (interférences en couches minces, comme pour un traitement antireflet en optique). Pour une impulsion de durée très inférieure à $\Delta t=0{,}5\ \text{ms}$, les deux échos sont distincts et de même signe : rien ne s'annule et l'énergie réfléchie totale est proche de celle sans lame. La compensation est un effet spectral, limité au voisinage de $f_0$.
 
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Optique**
+>
+> Le traitement antireflet d'une lentille est une couche mince d'indice $n_m=\sqrt{n_1n_2}$ et d'épaisseur $\lambda/4n_m$ (fluorure de magnésium sur du verre) : même formule, avec $n$ à la place de $Z$. Les bulles de savon et les taches d'huile colorées relèvent de la même interférence en lames minces.
+>
+> **Électronique et hyperfréquences**
+>
+> Un transformateur quart d'onde adapte une ligne d'impédance $Z_1$ à une charge $Z_2$ avec une ligne de longueur $\lambda/4$ et d'impédance $\sqrt{Z_1Z_2}$ : c'est ce qui permet d'éviter les échos dans un câble d'antenne.
+>
+> **Imagerie médicale**
+>
+> En échographie, l'impédance acoustique $Z=\rho c$ de la peau et celle du transducteur piézo-électrique sont très différentes : une couche d'adaptation quart d'onde et un gel évitent que l'onde ne soit réfléchie.
+>
+> **Acoustique sous-marine et sismologie**
+>
+> Les sonars et les revêtements anéchoïques (cuves d'essais, sous-marins) jouent sur les impédances pour absorber ou transmettre les ondes ; en géophysique, l'écho entre deux couches renseigne sur leur contraste d'impédance.
+>
+> **Traitement du signal**
+>
+> L'adaptation à bande étroite se comprend par le spectre : une impulsion brève est composée de nombreuses fréquences, dont seule une partie est adaptée. L'élargissement de la bande demande plusieurs lames étagées.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Bande passante et lames multiples
+> Avec plusieurs lames quart d'onde d'impédances étagées (adaptation de Chebyshev ou binomiale), on élargit la bande de fréquences où $R$ reste faible. C'est le principe des adaptateurs d'impédance en hyperfréquences.
+
+
+**S'entraîner sur cet exercice (QCM)**
+
+<a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener">td1_qcm — 3 questions</a><br><a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjQiIGhlaWdodD0iMTY0IiBjbGFzcz0ic2Vnbm8iPjxwYXRoIHRyYW5zZm9ybT0ic2NhbGUoNCkiIGNsYXNzPSJxcmxpbmUiIHN0cm9rZT0iIzE2MzIzZiIgZD0iTTIgMi41aDdtMSAwaDRtMiAwaDNtMSAwaDJtNCAwaDJtMSAwaDFtMiAwaDdtLTM3IDFoMW01IDBoMW05IDBoM20xIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW01IDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGgxbTIgMGgzbTEgMGg1bTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgxbTEgMGgzbTEgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMSAwaDNtMiAwaDFtNCAwaDJtMyAwaDVtMiAwaDFtMSAwaDNtMSAwaDFtLTM3IDFoMW0xIDBoM20xIDBoMW0xIDBoMW00IDBoMW0xIDBoMW0yIDBoMW0yIDBoMW0xIDBoMW0yIDBoM20xIDBoMW0xIDBoM20xIDBoMW0tMzcgMWgxbTUgMGgxbTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgybTEgMGgybTEgMGgybTIgMGgxbTIgMGgxbTEgMGgxbTUgMGgxbS0zNyAxaDdtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDdtLTI5IDFoNm0yIDBoM20zIDBoMm0yIDBoMW0xIDBoMW0tMjkgMWgxbTMgMGgxbTEgMGgzbTEgMGgzbTEgMGgxbTMgMGgybTIgMGgxbTEgMGgxbTQgMGg1bTIgMGgxbS0zNSAxaDFtNSAwaDFtMSAwaDVtMSAwaDJtMSAwaDNtMiAwaDFtMiAwaDJtMyAwaDRtLTM2IDFoNG0yIDBoMm0zIDBoNG0xIDBoM20xIDBoOG0xIDBoMW0xIDBoMW0yIDBoMW0tMzUgMWgxbTIgMGgybTQgMGgybTEgMGgybTMgMGgybTIgMGgxbTEgMGgybTUgMGgzbTEgMGgybS0zNiAxaDJtMiAwaDFtMSAwaDFtMSAwaDFtMiAwaDJtMiAwaDVtMSAwaDRtMiAwaDVtMiAwaDNtLTM3IDFoMW0xIDBoMW0xIDBoMm0xIDBoMW0zIDBoMW0xIDBoMW0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMm0tMzQgMWgybTEgMGgybTEgMGgxbTEgMGgxbTEgMGgybTEgMGgzbTIgMGgxbTEgMGg0bTIgMGgxMG0tMzUgMWgybTIgMGgxbTMgMGgxbTEgMGgxbTIgMGgzbTIgMGgzbTIgMGgxbTYgMGgybTEgMGgxbS0zNSAxaDJtNCAwaDFtMiAwaDNtMyAwaDJtMyAwaDFtMyAwaDFtMiAwaDVtMSAwaDRtLTM1IDFoNG0xIDBoMW0xIDBoNG00IDBoM20xIDBoM20xIDBoM20xIDBoMW0xIDBoNW0tMzYgMWgybTMgMGg1bTMgMGgzbTIgMGgybTMgMGgzbTEgMGgxbTIgMGgzbS0zMiAxaDFtMSAwaDNtMSAwaDFtMiAwaDFtMSAwaDFtMSAwaDhtNCAwaDFtMyAwaDFtMyAwaDJtLTM2IDFoMm0xIDBoNG0xIDBoMm0xIDBoMW0yIDBoMW0yIDBoMW0yIDBoM200IDBoMW0xIDBoM20yIDBoMW0tMzIgMWgxbTEgMGgxbTEgMGgybTEgMGgxbTIgMGg0bTMgMGgybTEgMGgxbTEgMGgzbTEgMGgxbTEgMGgybS0zMyAxaDJtMSAwaDJtMSAwaDJtMyAwaDFtMSAwaDNtMSAwaDFtNSAwaDJtMSAwaDJtMSAwaDFtMSAwaDRtLTMzIDFoMW0xIDBoMm00IDBoNW0xIDBoNG0yIDBoM20zIDBoMm0xIDBoMm0xIDBoMW0tMzQgMWgybTMgMGgxbTEgMGgybTEgMGg0bTMgMGgybTIgMGgxbTEgMGgxbTEgMGgxbTIgMGgybTIgMGg0bS0zNyAxaDFtMiAwaDFtMSAwaDFtNCAwaDFtMyAwaDFtMSAwaDFtMiAwaDNtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMiAwaDNtLTMzIDFoNm0xIDBoNW0yIDBoMm0yIDBoMW0yIDBoMm0xIDBoMm0zIDBoMW0xIDBoMW0tMzIgMWgxbTEgMGgxbTIgMGgybTEgMGgxbTIgMGgybTIgMGgxbTMgMGgzbTIgMGgzbTIgMGgxbTIgMGgzbS0zNyAxaDNtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDZtMSAwaDFtMSAwaDFtMiAwaDFtMyAwaDVtMSAwaDFtMSAwaDFtLTI5IDFoMm0yIDBoMm0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMW0yIDBoMW0tMzYgMWg3bTEgMGgxbTEgMGgxbTQgMGgxbTIgMGgxbTIgMGg0bTMgMGgxbTEgMGgxbTEgMGgxbS0zMyAxaDFtNSAwaDFtMiAwaDFtMyAwaDFtMSAwaDJtMiAwaDNtMSAwaDJtMSAwaDFtMSAwaDFtMyAwaDNtLTM1IDFoMW0xIDBoM20xIDBoMW0xIDBoMm0yIDBoMW0yIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW0yIDBoN20xIDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGg0bTMgMGgzbTEgMGgzbTEgMGgxbTIgMGg0bTEgMGgxbTIgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMiAwaDVtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDJtMSAwaDNtMSAwaDFtMiAwaDJtLTM1IDFoMW01IDBoMW0yIDBoMW0xIDBoN20xIDBoNG0xIDBoMW0yIDBoMW0xIDBoMW0yIDBoMW0xIDBoMm0tMzYgMWg3bTEgMGgxbTEgMGgybTEgMGgxbTIgMGgybTIgMGg1bTEgMGgybTEgMGgxbTEgMGgxbTIgMGgzIi8+PC9zdmc+Cg==" width="110" height="110" alt="QR code : td1_qcm — 3 questions" style="image-rendering:pixelated"></a>
 
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex3-celerite-d-une-onde-sur-une-corde-homogene|Exercice 3 — Célérité d’une onde sur une corde homogène]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex11-une-perle-sur-la-corde-reflexion-transmission-et-filtre-passe-bas-mecanique|Exercice 11 — Une perle sur la corde : réflexion, transmission et filtre passe-bas mécanique]] · [[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex1-ondes-sur-un-ressort-long-slinky-filmees-au-ralenti-impulsions-reflexions-et-modes-propres|Exercice 1 — Ondes sur un ressort long (Slinky) filmées au ralenti : impulsions, réflexions et modes propres]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex8-energie-et-puissance-d-une-onde-sur-une-corde-impedance-caracteristique|Exercice 8 — Énergie et puissance d'une onde sur une corde : impédance caractéristique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex5-corde-fixee-a-ses-deux-extremites-et-ondes-stationnaires|Exercice 5 — Corde fixée à ses deux extrémités et ondes stationnaires]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex1-partie-a-modes-propres-d-un-ressort-helicoidal-ondes-longitudinales|Exercice 1 — Partie A — Modes propres d'un ressort hélicoïdal (ondes longitudinales)]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex4-partie-d-compatibilite-des-longueurs-d-onde-avec-le-modele-des-modes-propres|Exercice 4 — Partie D — Compatibilité des longueurs d'onde avec le modèle des modes propres]]

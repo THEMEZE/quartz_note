@@ -5,11 +5,55 @@ tags:
   - chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens/composition-du-mouvement-et-changement-de-referentiels/index|⬅ Retour]]
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens/composition-du-mouvement-et-changement-de-referentiels/index|⬅ Retour]] · <a href="/pdfs/td7_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td7_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
 ### Exercice 2. Traversée d'une rivière
 
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 20 min · Type : Application directe + extension*
+
 Un nageur plonge dans la rivière au point $A$ avec l'intention de la traverser : il nage avec une vitesse de $5\ {\rm m\cdot s^{-1}}$ **par rapport à l'eau**, en direction du point $B$ situé en face de $A$ sur l'autre rive. La rivière a un courant de $3\ {\rm m\cdot s^{-1}}$ parallèle aux berges. On prend un repère $(O,\vec i,\vec j)$ avec $\vec i$ parallèle au courant, $\vec j$ dirigé de $A$ vers $B$.
+
+> [!question]+ 🎣 Accroche
+> **Peut-on traverser un fleuve en ligne droite ?**
+>
+> *Durée de l'introduction : 3 min*
+>
+> *Un nageur nage à $5\ {\rm m\cdot s^{-1}}$, le courant est de $3\ {\rm m\cdot s^{-1}}$. Où arrive-t-il s'il vise la berge opposée en face ?*
+>
+> **Idée clé : la vitesse par rapport aux berges est la somme vectorielle de la vitesse par rapport à l'eau et de la vitesse de l'eau.**
+
+
+> [!abstract]+ 📚 Prérequis
+> **Composition des vitesses**
+>
+> $\vec v_a=\vec v_r+\vec v_e$ : ici $\mathcal R$ = berges, $\mathcal R'$ = eau, $M$ = nageur.
+>
+> **Norme et angle d'un vecteur**
+>
+> $\|\vec v\|=\sqrt{v_x^2+v_y^2}$ ; $\tan\alpha=v_x/v_y$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Identifier $\mathcal R$, $\mathcal R'$ et $M$**
+>
+> Savoir que $\vec v_r$ est la vitesse du nageur **par rapport à l'eau**, $\vec v_e$ la vitesse du courant **par rapport aux berges** (c'est l'eau qui entraîne), $\vec v_a$ la vitesse par rapport aux berges.
+>
+> **Résoudre un problème de traversée**
+>
+> Savoir calculer la dérive subie et le cap à tenir pour aboutir exactement en face.
+
+
+> [!note]+ 📖 Point de cours
+> **Translation uniforme**
+>
+> $\vec v_e$ est la vitesse du courant (translation de l'eau par rapport aux berges). La vitesse absolue est la somme vectorielle (règle du parallélogramme).
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Triangle des vitesses**
+>
+> Théorème de Pythagore, $\sin\alpha=v_e/v_r$, règle du parallélogramme.
+
 
 **q1.** - [(a)] Rappeler la loi de composition des vitesses.
 - [(b)] Déterminer la vitesse du nageur par rapport aux berges. Calculer sa norme.

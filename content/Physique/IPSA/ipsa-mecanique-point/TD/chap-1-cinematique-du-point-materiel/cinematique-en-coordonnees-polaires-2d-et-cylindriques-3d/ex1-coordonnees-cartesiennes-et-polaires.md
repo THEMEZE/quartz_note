@@ -5,13 +5,68 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/index|⬅ Retour]] · <a href="/pdfs/td2_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td2_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/index|⬅ Retour]] · <a href="/pdfs/td2_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td2_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 1. Coordonnées cartésiennes et polaires
+
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 20 min · Type : Cours actif / Fondamental*
 
 On se place dans un plan muni d'un repère cartésien $Oxy$. Un point $M$ du plan peut être repéré soit par
 ses coordonnées cartésiennes $(x,y)$, soit par ses **coordonnées polaires** $(r,\theta)$ : $r=OM$ est la
 distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ et le vecteur $\overrightarrow{OM}$.
+
+> [!question]+ 🎣 Accroche
+> **Quel système de coordonnées choisir ?**
+>
+> *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
+>
+> *Pour décrire un cercle de rayon 2, on écrit $x^2+y^2=4$ : c'est une équation à résoudre. Mais un radar, lui, repère un avion par sa **distance** et son **direction**, pas par « tant de kilomètres vers l'est et tant vers le nord ». Peut-on décrire ce même cercle en **quatre caractères** ? Et une droite passant par l'origine ?*
+>
+> **Idée clé : on choisit les coordonnées adaptées à la symétrie du problème.** Un point se repère par $(x,y)$ ou par $(r,\theta)$ avec
+> $$x=r\cos\theta,\qquad y=r\sin\theta,\qquad r=\sqrt{x^2+y^2}.$$
+> Pour un problème à symétrie de rotation autour de $O$, $r$ et $\theta$ sont plus naturels : un **cercle centré en $O$** est « $r=$ cte » et une **demi-droite issue de $O$** est « $\theta=$ cte ». C'est ce qui rendra le mouvement circulaire presque trivial dès l'exercice suivant.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Trigonométrie du cercle**
+>
+> Pour un point du cercle trigonométrique d'angle $\theta$, l'abscisse est $\cos\theta$ et l'ordonnée est $\sin\theta$. Théorème de Pythagore : $\cos^2\theta+\sin^2\theta=1$. Les angles sont définis modulo $2\pi$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Passer d'un système de coordonnées à l'autre**
+>
+> Savoir écrire sans hésiter les formules de passage cartésien $\leftrightarrow$ polaire, traduire l'équation d'une courbe dans l'autre système, et **choisir le système adapté** à la symétrie du problème.
+
+
+> [!note]+ 📖 Point de cours
+> **Coordonnées polaires**
+>
+> $$x=r\cos\theta,\qquad y=r\sin\theta,\qquad r=\sqrt{x^2+y^2}.$$
+> L'angle se déduit de $\cos\theta=x/r$ et $\sin\theta=y/r$ (et non du seul $\tan\theta=y/x$, qui ne distingue pas $\theta$ de $\theta+\pi$). L'origine $O$ ($r=0$) n'a pas d'angle défini.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Pythagore et projections**
+>
+> Le triangle rectangle de côtés $x$, $y$ et d'hypoténuse $r$ donne $r^2=x^2+y^2$, $\cos\theta=x/r$, $\sin\theta=y/r$. Passer de $(r,\theta)$ à $(x,y)$ revient à **projeter** sur les axes.
+>
+> **Réciproque de la tangente et quadrant**
+>
+> $\tan\theta=y/x$ se réécrit $\theta=\arctan(y/x)$ **seulement si** $x>0$. Pour les autres quadrants : $\theta=\arctan(y/x)+\pi$ si $x<0$. Les calculatrices et logiciels proposent la fonction $\operatorname{atan2}(y,x)$ qui gère automatiquement ce cas.
+>
+> **Périodicité et valeurs remarquables**
+>
+> $\theta$ est défini modulo $2\pi$. À connaître : $\cos$ et $\sin$ en $0,\ \tfrac\pi6,\ \tfrac\pi4,\ \tfrac\pi3,\ \tfrac\pi2$. Conversion $\pi/6$ rad $=30^\circ$.
+>
+> **Équation d'une droite par l'origine**
+>
+> $y=mx$ avec $m=\tan\theta_0$ : en polaire, $\tan\theta=\tan\theta_0$ soit $\theta=\theta_0\ [\pi]$. La pente est la tangente de l'angle.
+>
+> **Nombres complexes : module et argument**
+>
+> Avec $z=x+iy=r\,e^{i\theta}$, on a $r=|z|$ et $\theta=\arg z$ : les coordonnées polaires sont la forme trigonométrique d'un complexe. Un cercle centré en $O$ est $|z|=R$.
+
 
 **q1.** (a) Rappeler les formules de passage entre coordonnées cartésiennes et coordonnées polaires.
 
@@ -82,6 +137,32 @@ distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ e
 >
 > $$\boxed{x(t)=3\cos\!\left(\frac{\pi t}{6}\right)},\qquad \boxed{y(t)=3\sin\!\left(\frac{\pi t}{6}\right)}.$$
 > Vérification : $x^2+y^2=9$. Quelques positions : $t=0$ en $(3,0)$ ; $t=3$ s en $(0,3)$ ; $t=6$ s en $(-3,0)$ ; $t=12$ s de retour en $(3,0)$. On retrouve exactement la structure de l'exercice du TD1 sur le mouvement circulaire en base cartésienne, mais écrite ici en deux lignes en polaire : $r=3$, $\theta=\omega t$.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mathématiques**
+>
+> Nombres complexes (module, argument), changement de variables dans une intégrale double ($\mathrm dA=r\,\mathrm dr\,\mathrm d\theta$), équations de courbes.
+>
+> **Navigation et géographie**
+>
+> Un pilote ou un marin repère une position par son **cap** (angle) et sa **distance** : c'est un système polaire. La latitude et la longitude sont l'analogue sur la sphère.
+>
+> **Radar, sonar, robotique**
+>
+> Un radar mesure naturellement une distance et un angle de visée ; un robot aspirateur à capteur laser mesure son environnement en polaire avant de le convertir en carte cartésienne.
+>
+> **Électromagnétisme**
+>
+> Le champ d'un fil rectiligne infini a une symétrie de rotation autour du fil : il ne dépend que de la distance $r$ au fil. Même idée : on choisit le système de coordonnées qui épouse la symétrie.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Autres courbes en polaire
+> Tracer les courbes d'équation polaire $r=\theta$ (spirale d'Archimède), $r=2\cos\theta$ (que représente-t-elle en cartésien ? multiplier par $r$ : $x^2+y^2=2x$, un cercle de centre $(1,0)$ passant par $O$) et $r=a(1+\cos\theta)$ (cardioïde, exercice 3).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Élément d'aire et intégrales en polaire
+> L'élément d'aire en polaire est $\mathrm dA=r\,\mathrm dr\,\mathrm d\theta$ (le facteur $r$ est le jacobien du changement de variables). L'aire d'un disque de rayon $R$ se calcule en une ligne : $\displaystyle\int_0^{2\pi}\!\!\int_0^R r\,\mathrm dr\,\mathrm d\theta=\pi R^2$. Refaire le calcul en cartésien et constater la différence de difficulté.
 
 
 > [!note] 🔗 Voir aussi

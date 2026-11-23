@@ -5,14 +5,50 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 7. Ondes stationnaires sur une corde avec une extrémité libre *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 30 min · Type : Application directe du cours*
 
 On considère une corde de longueur $L$, fixée à l'extrémité $A(x=0)$ et totalement libre de se déplacer transversalement à l'extrémité $B(x=L)$. À l'extrémité libre, la force transversale est nulle, ce qui impose un nœud de tension transversale :
 $$T_y(L,t) = F \sin( \alpha( L , t )) \approx F\left.\frac{\partial y}{\partial x}\right|_{x=L} = 0$$
 
 <p style="text-align:center"><a href="/figures/td1_ex6_phv212_corde_stationaire_libre.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex6_phv212_corde_stationaire_libre.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+> [!question]+ 🎣 Accroche
+> **Fixe d'un côté, libre de l'autre : quel changement ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Une corde fixée aux deux bouts a un fondamental $f_1=c/(2L)$ et tous les harmoniques. Que se passe-t-il si l'un des bouts est **libre** (par exemple attaché à un anneau qui glisse sans frottement le long d'une tige) ? Le fondamental est-il plus grave ou plus aigu ? Pourquoi une clarinette n'a-t-elle que des harmoniques **impairs** ?*
+>
+> **Idée clé : une extrémité fixe est un nœud de déplacement, une extrémité libre est un ventre.** Fixe : $y(0,t)=0$. Libre : la force transversale est nulle, $T_y=F\,\partial_x y=0$, donc la **pente** est nulle. Il en résulte
+> $$k_NL=(2N-1)\frac\pi2,\qquad\lambda_N=\frac{4L}{2N-1},\qquad f_N=(2N-1)f_1,\ \ f_1=\frac c{4L}.$$
+> Le fondamental tient en un **quart** de longueur d'onde ($L=\lambda_1/4$) : il est deux fois plus grave que pour une corde fixée aux deux bouts, et seuls les harmoniques impairs existent.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Dérivées de $\sin$ et $\cos$**
+>
+> $\dfrac{\mathrm d}{\mathrm dx}\sin(kx)=k\cos(kx)$. La condition de pente nulle en $x=L$ s'écrit $k\cos(kL)=0$.
+>
+> **Zéros du cosinus : $\cos u=0\iff u=\dfrac\pi2+n\pi$**
+>
+> $kL=\dfrac\pi2+n\pi=(2n+1)\dfrac\pi2$ : les multiples **impairs** de $\pi/2$. En posant $N=n+1$, $kL=(2N-1)\pi/2$ avec $N\in\mathbb N^*$.
+>
+> **Conditions de Dirichlet et de Neumann**
+>
+> Fixé : la fonction s'annule ($y=0$, condition de Dirichlet). Libre : sa dérivée s'annule ($\partial_x y=0$, condition de Neumann). Les deux types de conditions aux limites se retrouvent dans tous les problèmes ondulatoires et de diffusion.
+>
+> **Décalage de phase : $\sin\!\left(\dfrac\pi2-u\right)=\cos u$**
+>
+> En repérant le mode depuis l'extrémité libre, $y_N\propto\cos\!\big(k_N(L-x)\big)$ : on retrouve la symétrie $\sin(\pi/2-u)=\cos u$ et le ventre en $x=L$.
+>
+> **Lien longueur-longueur d'onde**
+>
+> $L=(2N-1)\lambda_N/4$ : un nombre impair de quarts d'onde. Comparer avec $L=N\lambda_N/2$ (fixe-fixe, nombre entier de demi-ondes).
+
 
 **q1.** Déterminer la forme des modes propres $y_N(x,t)$ de cette corde et exprimer les fréquences propres $f_N$ en fonction de $N$, $c$ et $L$.
 
@@ -71,6 +107,24 @@ $$T_y(L,t) = F \sin( \alpha( L , t )) \approx F\left.\frac{\partial y}{\partial 
 >
 > - **Nœud :** en $x=0$ (déplacement imposé nul).
 > - **Ventre :**  en $x=L$ (déplacement transversal maximal, pente spatiale nulle).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Acoustique et instruments à vent**
+>
+> Un tuyau fermé à une extrémité et ouvert à l'autre (clarinette, tuyau d'orgue bouché) a un nœud de pression à l'extrémité ouverte et un ventre à l'extrémité fermée : $f_N=(2N-1)c/(4L)$. C'est exactement le cas fixe-libre de la corde.
+>
+> **Électricité et antennes**
+>
+> Une antenne quart d'onde ($L=\lambda/4$) fonctionne sur le même principe : ventre de courant ou de tension d'un côté, nœud de l'autre ; une ligne quart d'onde transforme les impédances.
+>
+> **Mathématiques**
+>
+> Problème de Sturm-Liouville avec conditions de Dirichlet (fixe) ou de Neumann (libre) : les valeurs propres changent selon les conditions aux limites.
+>
+> **Génie civil**
+>
+> Une poutre encastrée à un bout et libre à l'autre (mât, gratte-ciel, diapason) a des modes propres qui s'écrivent aussi avec un nœud d'un côté et un ventre de l'autre.
 
 
 > [!note] 🔗 Voir aussi

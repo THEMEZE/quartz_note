@@ -5,12 +5,39 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 3. Dérivées de fonctions composées
 
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 40 min · Type : Méthode*
+
 Objectif : savoir utiliser la règle de la chaîne pour décomposer puis calculer la dérivée de fonctions composées par rapport au temps $t$.
 Rappel : dériver une fonction composée $f(u(x))$ par rapport à $x$ se fait simplement en décomposant la dérivée grâce à la règle de la chaîne : $\frac{\mathrm{d}f}{\mathrm{d}x} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x}$.
+
+> [!abstract]+ 📚 Prérequis
+> **Règle de la chaîne**
+>
+> Comprendre la décomposition d'une dérivée composée : $\frac{\mathrm{d}f}{\mathrm{d}t} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}t}$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Appliquer la règle de la chaîne en physique**
+>
+> Savoir dériver des fonctions dont l'argument dépend implicitement ou explicitement du temps.
+
+
+> [!note]+ 📖 Point de cours
+> **Théorème de dérivation des fonctions composées**
+>
+> Si $f$ dépend de $u$, et $u$ dépend de $t$, alors :
+> $$\frac{\mathrm{d}f}{\mathrm{d}t} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}t} = \frac{\mathrm{d}f}{\mathrm{d}u} \cdot \dot{u}$$
+
+
+> [!tip]- 💡 Coup de pouce
+> **Méthode étape par étape**
+>
+> Calcule d'abord la dérivée de la fonction externe par rapport à sa variable intermédiaire, puis multiplie par la dérivée temporelle de cette variable.
+
 
 **1.**
 
@@ -110,6 +137,10 @@ Calculer (en précisant l'unité) le taux $\frac{\mathrm{d}A}{\mathrm{d}t}$ pour
 >   $$\frac{\mathrm{d}A}{\mathrm{d}t} = 2\pi \times 2 \times 0,1 = 0,4\pi \approx 1,26\text{ cm}^2\cdot\text{s}^{-1}$$
 > * Pour $r = 12\text{ cm}$ :
 >   $$\frac{\mathrm{d}A}{\mathrm{d}t} = 2\pi \times 12 \times 0,1 = 2,4\pi \approx 7,54\text{ cm}^2\cdot\text{s}^{-1}$$
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Changement de variables
+> Généralisation aux fonctions de plusieurs variables avec la règle de la chaîne partielle.
 
 
 > [!note] 🔗 Voir aussi

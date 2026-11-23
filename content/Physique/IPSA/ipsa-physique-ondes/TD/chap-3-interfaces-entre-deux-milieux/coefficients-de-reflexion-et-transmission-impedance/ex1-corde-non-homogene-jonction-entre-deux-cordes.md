@@ -5,9 +5,11 @@ tags:
   - chap-3-interfaces-entre-deux-milieux
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a> · <a href="/pdfs/td3_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a>
 
 ### Exercice 1. Corde non homogène, jonction entre deux cordes
+
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 45 min · Type : Application*
 
 Deux cordes de longueur $L$ et de masses linéiques $\mu_1$ et $\mu_2=\alpha\mu_1$
 sont attachées en un point de jonction $O$ pour former une corde tendue
@@ -23,6 +25,85 @@ des $x$ décroissants. Ces deux ondes sont aussi sinusoïdales et
 progressives, de même pulsation $\omega$.
 
 <p style="text-align:center"><a href="/figures/td3_ex1_corde_double.svg" target="_blank" rel="noopener"><img src="/figures/td3_ex1_corde_double.svg" alt="Suggestion : schéma de la corde double, jonction en $O$ ($x=0$) ; représenter la corde 1 (masse linéique $\mu_1$) où vivent l'onde incidente et l'onde réfléchie, et la corde 2 (masse linéique $\mu_2=\alpha\mu_1$) où se propage l'onde transmise, avec des flèches indiquant clairement les trois sens de propagation ($x$ décroissants pour l'incidente et la transmise, $x$ croissants pour la réfléchie)." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+> [!question]+ 🎣 Accroche
+> **L'impulsion revient-elle à l'endroit ou renversée ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Une corde fine est nouée à une corde épaisse. On envoie une impulsion le long de la corde fine : au nœud, une partie repart en arrière, une autre continue dans la corde épaisse. L'écho est-il **à l'endroit** ou **renversé** ? Et si l'on part de la corde épaisse vers la corde fine ? Que se passe-t-il si les deux cordes sont identiques ?*
+>
+> **Idée clé : à la jonction, deux conditions de raccordement relient les trois ondes.** Le nœud étant sans masse et la tension $F$ commune : (1) le déplacement est continu, $A_I+A_R=A_T$ ; (2) la pente est continue, $k_1(A_I-A_R)=k_2A_T$. Comme $k=\omega Z/F$ avec $Z=\sqrt{F\mu}$ :
+> $$r=\frac{k_1-k_2}{k_1+k_2}=\frac{1-\sqrt\alpha}{1+\sqrt\alpha}=\frac{Z_1-Z_2}{Z_1+Z_2},\qquad t=1+r=\frac{2Z_1}{Z_1+Z_2}.$$
+> $r$ s'annule pour $\alpha=1$ (corde homogène : pas d'interface) ; $r<0$ (écho renversé) quand la seconde corde est plus lourde ($\alpha>1$) ; $r>0$ quand elle est plus légère.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Équation de d'Alembert pour une corde vibrante**
+>
+> Connaître l'équation de propagation des petites déformations transversales $y(x,t)$ d'une corde tendue avec une tension $F$ et de masse linéique $\mu$ :
+> $$\frac{\partial^2 y}{\partial t^2} = c^2\,\frac{\partial^2 y}{\partial x^2}, \qquad c = \sqrt{\frac{F}{\mu}}.$$
+>
+> Connaître la forme générale d'une onde progressive sinusoïdale de pulsation $\omega$ et de déphasage $\varphi$ se propageant vers les $x$ croissants, $y(x,t) = A\cos(\omega t - kx + \varphi)$, et savoir reconnaître qu'un signe $+$ devant $kx$ (au lieu de $-$) inverse le sens de propagation, vers les $x$ décroissants.
+
+
+> [!info]+ 🎯 Objectifs
+> **Transposer la méthode de raccordement à un nouveau support physique**
+>
+> Savoir écrire, pour une onde mécanique transversale sur une corde, les deux conditions de continuité pertinentes à une jonction (continuité du déplacement, continuité de la pente liée à la force transverse), les résoudre pour obtenir des coefficients de réflexion et de transmission, et reconnaître la structure universelle de ces coefficients en fonction d'une impédance caractéristique du milieu.
+
+
+> [!note]+ 📖 Point de cours
+> **Établissement de l'équation d'onde sur une corde tendue**
+>
+> On considère un petit élément de corde compris entre les abscisses $x$ et $x+\mathrm{d}x$, de masse $\mu\,\mathrm{d}x$. Dans l'approximation des petites oscillations (angle $\theta(x,t)$ entre la corde et l'horizontale petit, tension $F$ supposée uniforme et constante en norme), la composante verticale de la tension exercée sur cet élément par le reste de la corde vaut, à chaque extrémité, $F\sin\theta \approx F\tan\theta = F\,\partial y/\partial x$.
+>
+> Le bilan des forces verticales sur l'élément s'écrit, par la loi de la quantité de mouvement (deuxième loi de Newton projetée sur $Oy$) :
+> $$\mu\,\mathrm{d}x\,\frac{\partial^2 y}{\partial t^2} = F\left[\left.\frac{\partial y}{\partial x}\right|_{x+\mathrm{d}x} - \left.\frac{\partial y}{\partial x}\right|_{x}\right] \approx F\,\frac{\partial^2 y}{\partial x^2}\,\mathrm{d}x,$$
+> d'où, après simplification par $\mathrm{d}x$, l'équation de d'Alembert
+> $$\frac{\partial^2 y}{\partial t^2} = \frac{F}{\mu}\,\frac{\partial^2 y}{\partial x^2}, \qquad c=\sqrt{\frac{F}{\mu}}.$$
+> Cette équation, formellement identique à celle obtenue pour la surpression acoustique (TD2), admet des solutions progressives sinusoïdales $y=A\cos(\omega t \mp kx+\varphi)$ avec la relation de dispersion $\omega = kc$ (non dispersive, comme en acoustique).
+>
+> **Conditions de raccordement à la jonction et impédance mécanique**
+>
+> À la jonction $O$ entre les deux cordes, deux conditions physiques doivent être satisfaites à tout instant :
+>
+> 1. **Continuité du déplacement** : la corde ne se rompt pas, donc $y_1(0,t)=y_2(0,t)$ (sinon il y aurait une discontinuité, physiquement impossible pour une corde inextensible reliée en $O$).
+>
+> 2. **Continuité de la force transverse** : le point de jonction étant considéré sans masse, la résultante des forces verticales qui s'y exercent doit être nulle à tout instant (deuxième loi de Newton appliquée à une masse nulle), ce qui, la tension $F$ étant la même de part et d'autre de la jonction, se traduit par la continuité de la pente : $\left.\partial y_1/\partial x\right|_0 = \left.\partial y_2/\partial x\right|_0$.
+>
+> On définit l'**impédance mécanique caractéristique** d'une corde par
+> $$Z = \mu c = \sqrt{F\mu},$$
+> grandeur analogue à l'impédance acoustique $Z=\rho c$ (TD2) : elle mesure la « résistance » qu'oppose la corde à être mise en mouvement transversal pour une force donnée. Comme la tension $F$ est commune aux deux cordes, on peut montrer que $Z$ et $k$ sont **directement proportionnels** (à $\omega$ et $F$ fixés) :
+> $$k = \omega\sqrt{\frac{\mu}{F}} = \frac{\omega}{F}\sqrt{F\mu} = \frac{\omega}{F}\,Z.$$
+> C'est cette proportionnalité directe (et non inverse) entre $k$ et $Z$ qui permettra, en question 8, de réexprimer les coefficients trouvés en fonction de $k_1,k_2$ directement en fonction de $Z_1,Z_2$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Sens de propagation et signe dans l'argument**
+>
+> $\cos(\omega t+kx)$ se propage vers les $x$ décroissants (argument constant : $x=-ct+\text{cte}$) et $\cos(\omega t-kx)$ vers les $x$ croissants. Il faut surveiller ce signe lors de chaque dérivation.
+>
+> **Identité vraie à tout instant**
+>
+> $(A_I+A_R-A_T)\cos\omega t=0\ \forall t$ implique $A_I+A_R=A_T$ : si une égalité est vraie pour tout $t$ et que le facteur commun n'est pas identiquement nul, on le simplifie. Même raisonnement avec $\sin\omega t$ pour la pente.
+>
+> **Dérivée d'un cosinus composé**
+>
+> $\dfrac{\partial}{\partial x}\cos(\omega t+k_1x)=-k_1\sin(\omega t+k_1x)$ et $\dfrac{\partial}{\partial x}\cos(\omega t-k_1x)=+k_1\sin(\omega t-k_1x)$ : les deux contributions n'ont pas le même signe.
+>
+> **Système linéaire à deux équations**
+>
+> $\begin{cases}A_I+A_R=A_T\\k_1(A_I-A_R)=k_2A_T\end{cases}$ : on substitue $A_T$ puis on isole $A_R$ : $A_I(k_1-k_2)=A_R(k_1+k_2)$. Le résultat ne dépend que du rapport $k_1/k_2$.
+>
+> **Proportionnalité $k\propto Z$ et simplification de rapports**
+>
+> $k_i=\dfrac\omega FZ_i$ : le facteur $\omega/F$ se simplifie dans $\dfrac{k_1-k_2}{k_1+k_2}$. De même, $k_1/k_2=1/\sqrt\alpha$ donne $r=\dfrac{1/\sqrt\alpha-1}{1/\sqrt\alpha+1}=\dfrac{1-\sqrt\alpha}{1+\sqrt\alpha}$ (on multiplie haut et bas par $\sqrt\alpha$).
+>
+> **Étude de fonction et cas limites**
+>
+> $r(\alpha)=\dfrac{1-\sqrt\alpha}{1+\sqrt\alpha}$ décroît de $1$ ($\alpha\to0$, corde 2 sans masse : extrémité libre) à $-1$ ($\alpha\to\infty$, corde 2 infiniment lourde : extrémité fixe), en passant par $0$ en $\alpha=1$. Les cas limites retrouvent les réflexions sur extrémité libre ($r=+1$) et fixe ($r=-1$) du chapitre précédent.
+
 
 **q1.** Donner l'expression de l'onde incidente $y_i(x,t)$ se déplaçant dans le sens des $x$ décroissants, d'amplitude $A_I$ et de déphasage $\phi=0$.
 
@@ -205,6 +286,36 @@ progressives, de même pulsation $\omega$.
 > Pour $\alpha=1$, on a $\mu_2=\mu_1$, donc $c_1=c_2$, $k_1=k_2$ et $Z_1=Z_2$. Les formules donnent immédiatement :
 > $$r = \frac{1-\sqrt{1}}{1+\sqrt{1}} = 0, \qquad t = \frac{2}{1+\sqrt{1}} = 1.$$
 > Ce résultat est physiquement attendu : si $\alpha=1$, les deux cordes sont en réalité identiques, et il n'existe alors plus de véritable discontinuité mécanique au point $O$ — on retrouve simplement une corde homogène le long de laquelle l'onde se propage sans aucune réflexion ($r=0$) et se transmet intégralement ($t=1$). Ce cas limite constitue une bonne vérification de cohérence des formules générales obtenues en question 8 : l'absence d'interface physique doit nécessairement se traduire par l'absence de réflexion.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mécanique quantique**
+>
+> Une particule d'énergie $E$ rencontrant une marche de potentiel : $\psi$ et $\psi'$ sont continues en $x=0$, d'où $r=\dfrac{k_1-k_2}{k_1+k_2}$ avec $k=\sqrt{2m(E-V)}/\hbar$ : exactement la même formule que pour la corde.
+>
+> **Optique**
+>
+> Les coefficients de Fresnel en incidence normale, $r=\dfrac{n_1-n_2}{n_1+n_2}$ pour l'amplitude du champ électrique, ont la même structure avec l'indice $n$ à la place de $k$ ou $Z$. L'inversion de signe de l'onde réfléchie se retrouve quand on passe d'un milieu moins réfringent à un milieu plus réfringent.
+>
+> **Électricité (lignes de transmission)**
+>
+> Une impulsion de tension dans un câble d'impédance $Z_0$ terminé par une charge $Z_L$ se réfléchit avec $r=\dfrac{Z_L-Z_0}{Z_L+Z_0}$ : $r=+1$ pour un circuit ouvert (analogue de l'extrémité libre), $r=-1$ pour un court-circuit (extrémité fixe), $r=0$ pour une charge adaptée.
+>
+> **Acoustique**
+>
+> Même structure à l'interface fluide-fluide (chapitre 2). Selon qu'on raccorde le déplacement (corde) ou la pression (acoustique), l'ordre $Z_1-Z_2$ ou $Z_2-Z_1$ s'inverse : c'est une question de grandeur choisie, pas une erreur.
+>
+> **Lutherie**
+>
+> Une corde filée, un nœud de cordes de diamètres différents ou un changement de matériau le long d'un fil ajoutent des échos : c'est l'une des causes de timbre et de perte d'énergie sur les instruments.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Coefficients énergétiques et bilan de puissance
+> La puissance moyenne transportée par une onde progressive sinusoïdale sur une corde s'écrit $\langle P\rangle = \tfrac{1}{2}Z\omega^2 A^2$. On pourra établir les coefficients de réflexion et de transmission en *puissance* $R=r^2$ et $T=(Z_2/Z_1)\,t^2$, et vérifier la conservation de l'énergie $R+T=1$ (à comparer à la démarche déjà suivie pour les coefficients énergétiques acoustiques).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Corde de masse linéique variable, approximation WKB
+> Pour une corde dont la masse linéique $\mu(x)$ varie continûment (plutôt qu'une jonction abrupte), la réflexion devient progressive et dépend du rapport entre la longueur d'onde et l'échelle de variation de $\mu(x)$ : lorsque $\mu(x)$ varie lentement devant $\lambda$, l'onde traverse presque sans réflexion (approximation WKB, adaptation d'impédance continue) — principe utilisé par exemple dans la forme des cordes de certains instruments ou dans les cônes de haut-parleurs.
 
 
 > [!note] 🔗 Voir aussi

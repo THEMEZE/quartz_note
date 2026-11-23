@@ -5,9 +5,11 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 1. Dérivation de fonctions en physique
+
+*⭐ Indispensable · Difficulté ●○○○○ · ⏱ 20 min · Type : Application*
 
 En Physique, les variables et les fonctions changent souvent de nom, d'où l'intérêt d'utiliser la notation différentielle lors du calcul de dérivées. De plus, les fonctions contiennent des paramètres (grandeurs constantes) souvent représentés par des lettres : il faut donc bien distinguer variables et paramètres.
 Notation en Physique sur les dérivées par rapport au temps $t$ : la dérivée $\frac{\mathrm{d}x}{\mathrm{d}t}$ se note $\dot{x}$.\\
@@ -38,6 +40,81 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
       
 
     }
+
+> [!abstract]+ 📚 Prérequis
+> **Dérivées usuelles et règles de dérivation**
+>
+> Connaître les dérivées des fonctions usuelles ($\ln$, $\cos$, $\sin$, puissances) et la règle de dérivation des fonctions composées $(g \circ f)' = (g' \circ f) \cdot f'$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Maîtriser la notation différentielle**
+>
+> Identifier clairement la variable d'intégration/dérivation par rapport aux paramètres constants et pratiquer la notation temporelle $\dot{x}$.
+
+
+> [!note]+ 📖 Point de cours
+> **Notation différentielle et notation pointée**
+>
+> La dérivée d'une fonction $f(x)$ par rapport à sa variable $x$ se note $\frac{\mathrm{d}f}{\mathrm{d}x}(x)$.
+> En physique, pour une fonction dépendant du temps $t$, la dérivée temporelle première se note $\frac{\mathrm{d}x}{\mathrm{d}t} = \dot{x}$, et la dérivée seconde $\frac{\mathrm{d}^2 x}{\mathrm{d}t^2} = \ddot{x}$.
+>
+> **Usuelles**
+>
+> $$
+> \begin{array}{rcl}
+> \mathrm{d}(f \circ g) & = & (f' \circ g) \cdot \mathrm{d}g,\\
+> \mathrm{d}(f \cdot g) & = & g \cdot \mathrm{d}f + f \cdot \mathrm{d}g
+> \end{array}
+> $$
+>
+> Pour $k$ constant, $\mathrm{d}k = 0$. Donc 
+> $$
+> \begin{array}{rcl}
+> \mathrm{d}(k \cdot f) & = & k \cdot \mathrm{d}f
+> \end{array}
+> $$
+>
+> On peut aussi déduire 
+> $$
+> \begin{array}{rcl}
+> \mathrm{d}(f^n) & = & n \, f^{n-1} \cdot \mathrm{d}f
+> \end{array}
+> $$
+>
+> En particulier 
+> $$
+> \begin{array}{rcl}
+> \mathrm{d}(f^{-1}) & = & -f^{-2} \cdot \mathrm{d}f ~=~ \displaystyle -\frac{\mathrm{d}f}{f^2}
+> \end{array}
+> $$
+>
+> En écrivant ${\displaystyle \mathrm{d}\left( \frac{f}{g} \right)} = \mathrm{d}(f \cdot g^{-1}) = g^{-1} \mathrm{d}f + f \cdot \mathrm{d}(g^{-1})$, il vient que 
+> $$
+> \begin{array}{rcl}
+> {\displaystyle \mathrm{d}\left( \frac{f}{g} \right)} & = & \displaystyle \frac{g \cdot \mathrm{d}f - f \cdot \mathrm{d}g}{g^2}
+> \end{array}
+> $$
+>
+> **Fonctions Usuelles**
+>
+> $$
+> \begin{array}{rcl}
+> \mathrm{d}(\exp \colon x \mapsto \exp(x) ) & \colon &  x \mapsto \exp(x) \,\mathrm{d}x,\\[1ex]
+> \mathrm{d}(\ln \colon x \mapsto  \ln x) & \colon & \displaystyle x \mapsto  \frac{\mathrm{d}x}{x},\\[1ex]
+> \mathrm{d}(\cos \colon x \mapsto  \cos x) & \colon &  x \mapsto  - \sin x \,\mathrm{d}x,\\[1ex]
+> \mathrm{d}(\sin \colon x \mapsto  \sin x) & \colon &  x \mapsto  \cos x \,\mathrm{d}x,\\[1ex]
+> \mathrm{d}(\tan \colon x \mapsto  \tan x) & \colon & x \mapsto  (1 + \tan^2 x)\,\mathrm{d}x ~=~ \displaystyle \frac{\mathrm{d}x}{\cos^2 x},\\[1ex]
+> \mathrm{d}(x \mapsto  x^\alpha) & = & x \mapsto  \alpha \, x^{\alpha-1} \,\mathrm{d}x
+> \end{array}
+> $$
+
+
+> [!tip]- 💡 Coup de pouce
+> **Identification des variables**
+>
+> Repère la variable entre parenthèses (ex. $f(x) \implies x$ est la variable, $g(t) \implies t$ est la variable). Tout le reste est considéré comme constant.
+
 
 **1.**
 
@@ -169,6 +246,12 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 
   **f)** Déterminer la dérivée de $z(t) = a t^2 - b t$ avec $a$ et $b$ constants.
 
+> [!note]+ 📖 Point de cours
+> **Dérivée d'un polynôme**
+>
+> $\frac{\mathrm{d}}{\mathrm{d}t}(t^n) = n t^{n-1}$.
+
+
 > [!tip]- 💡 Coup de pouce
 > **Dérivation terme à terme**
 >
@@ -181,6 +264,10 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > $$ \mathrm{d}z(t) = (2a t - b) \mathrm{d}t $$
 > Soit 
 > $$\dot{z}(t) = \frac{\mathrm{d}z}{\mathrm{d}t} = 2a t - b.$$
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Dérivées partielles
+> Introduction à la dérivation par rapport à une variable lorsque la fonction en comporte plusieurs : $\frac{\partial f}{\partial x}$.
 
 
 > [!note] 🔗 Voir aussi

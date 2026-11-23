@@ -5,9 +5,11 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 4. Équation des cordes vibrantes et onde progressive
+
+*⭐ Indispensable · Difficulté ●●●●○ · ⏱ 25 min · Type : Application directe du cours*
 
 Une corde homogène et inextensible, de masse linéique $\mu$, est tendue
 horizontalement (suivant l'axe $Ox$) avec une tension $F$ constante. La corde,
@@ -20,6 +22,44 @@ les forces de pesanteur. Le déplacement transversal $y(x,t)$ obéit à l'équat
 $$\dfrac{\partial^2 y}{\partial x^2} = \dfrac{1}{c^2}\dfrac{\partial^2 y}{\partial t^2}$$
 
 <p style="text-align:center"><a href="/figures/td1_ex3_phv212_demo.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex3_phv212_demo.svg" alt="Schémat tronçon de corde" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+> [!question]+ 🎣 Accroche
+> **D'où vient l'équation d'onde sur une corde ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *On vous donne l'équation de d'Alembert et la célérité $c=\sqrt{F/\mu}$. Mais pourquoi cette équation et pourquoi cette célérité ? Si on **double la tension**, de combien change $c$ ? Et sur une vraie corde, pourquoi suppose-t-on que les angles restent **petits** ?*
+>
+> **Idée clé : le PFD appliqué à un petit tronçon de corde, linéarisé pour de petits angles.** Pour un tronçon $[x,x+\mathrm dx]$, de masse $\mu\,\mathrm dx$, la composante verticale des tensions $F\sin\alpha(x+\mathrm dx)-F\sin\alpha(x)$ vaut $F\,\partial_x^2y\,\mathrm dx$ et le PFD donne
+> $$\mu\,\frac{\partial^2y}{\partial t^2}=F\,\frac{\partial^2y}{\partial x^2}\quad\Longleftrightarrow\quad c=\sqrt{F/\mu}.$$
+> Le déplacement est **transversal** ; le mouvement horizontal est négligeable (ordre 2 en $\alpha$) ; le poids, lui, ne modifie pas $c$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Développements limités pour $|\alpha|\ll1$**
+>
+> $\sin\alpha\approx\tan\alpha\approx\alpha$ et $\cos\alpha\approx1-\dfrac{\alpha^2}{2}$ ; $\sqrt{1+u}\approx1+\dfrac u2$ pour $|u|\ll1$. On garde l'ordre 1 : les termes en $\alpha^2$ sont négligés (c'est ce qui rend l'équation **linéaire**).
+>
+> **Pente et dérivée : $\tan\alpha=\partial y/\partial x$**
+>
+> L'angle de la tangente à la corde avec l'horizontale est donné par la dérivée spatiale du déplacement : $\tan\alpha=\partial_x y$.
+>
+> **Dérivée comme limite (accroissement)**
+>
+> $g(x+\mathrm dx)-g(x)=g'(x)\,\mathrm dx+o(\mathrm dx)$, ici avec $g=\partial_x y$ : $\partial_x y(x+\mathrm dx)-\partial_x y(x)\approx\partial_x^2y\,\mathrm dx$. C'est le passage du discret au continu (dérivée seconde).
+>
+> **Longueur d'un tronçon et masse**
+>
+> $\mathrm d\ell=\sqrt{\mathrm dx^2+\mathrm dy^2}=\mathrm dx\sqrt{1+(\partial_x y)^2}\approx\mathrm dx$, d'où $\mathrm dm=\mu\,\mathrm d\ell\approx\mu\,\mathrm dx$.
+>
+> **Maximum d'un cosinus et phase**
+>
+> Pour $y=a\cos\Phi$ : $v_y=\partial_t y=a\omega\sin\Phi$ et $T_y=F\,\partial_x y=-Fka\sin\Phi$ sont maximales quand $|\sin\Phi|=1$, donc quand $\cos\Phi=0$, c'est-à-dire $y=0$ : la vitesse est maximale au passage par l'équilibre.
+>
+> **Ordre de grandeur**
+>
+> $v_{\max}=a\omega=a\dfrac{2\pi c}{\lambda}=2\pi c\,\dfrac a\lambda$ : comme $a\ll\lambda$, on a $v_{\max}\ll c$. Rapport $a/\lambda$ = pente typique de l'onde.
+
 
 **q1.** Quelle est la nature de l'onde $y(x,t)$ créée par la perturbation sur la corde ?
 Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonction de $F$ et de $\mu$.
@@ -308,6 +348,28 @@ Calculer le déplacement correspondant $y(x,t)$ de l'élément de corde.
 > $$y(x,t) = a\cos\Phi(x,t) = 0$$
 > Les maxima de vitesse transversale et de tension transversale ont lieu simultanément au moment où l'élément de corde passe par sa position d'équilibre ($y=0$).
 
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mécanique du point et milieux continus**
+>
+> On applique le PFD à une « tranche » de milieu de taille $\mathrm dx$ : c'est la méthode de base de la mécanique des milieux continus (cordes, barres, fluides, solides).
+>
+> **Électricité (lignes de transmission)**
+>
+> L'équation des télégraphistes s'établit de la même façon sur une tranche de câble de longueur $\mathrm dx$ : $c=1/\sqrt{LC}$ avec $L$ et $C$ l'inductance et la capacité linéiques, analogue de $c=\sqrt{F/\mu}$ (masse linéique $\mu\leftrightarrow L$, $1/F\leftrightarrow C$).
+>
+> **Acoustique**
+>
+> Même démarche pour une tranche de fluide : bilan de quantité de mouvement et de masse, linéarisation, équation d'onde avec $c=\sqrt{1/(\rho\chi_S)}$.
+>
+> **Physique non linéaire**
+>
+> Si l'amplitude est grande, $\mathrm d\ell\neq\mathrm dx$ et la tension varie avec la déformation : l'équation devient non linéaire (cordes de piano, câbles). L'approximation des petits angles est donc ce qui rend le principe de superposition valable.
+
+
+**S'entraîner sur cet exercice (QCM)**
+
+<a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener">td1_qcm — 3 questions</a><br><a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjQiIGhlaWdodD0iMTY0IiBjbGFzcz0ic2Vnbm8iPjxwYXRoIHRyYW5zZm9ybT0ic2NhbGUoNCkiIGNsYXNzPSJxcmxpbmUiIHN0cm9rZT0iIzE2MzIzZiIgZD0iTTIgMi41aDdtMSAwaDRtMiAwaDNtMSAwaDJtNCAwaDJtMSAwaDFtMiAwaDdtLTM3IDFoMW01IDBoMW05IDBoM20xIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW01IDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGgxbTIgMGgzbTEgMGg1bTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgxbTEgMGgzbTEgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMSAwaDNtMiAwaDFtNCAwaDJtMyAwaDVtMiAwaDFtMSAwaDNtMSAwaDFtLTM3IDFoMW0xIDBoM20xIDBoMW0xIDBoMW00IDBoMW0xIDBoMW0yIDBoMW0yIDBoMW0xIDBoMW0yIDBoM20xIDBoMW0xIDBoM20xIDBoMW0tMzcgMWgxbTUgMGgxbTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgybTEgMGgybTEgMGgybTIgMGgxbTIgMGgxbTEgMGgxbTUgMGgxbS0zNyAxaDdtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDdtLTI5IDFoNm0yIDBoM20zIDBoMm0yIDBoMW0xIDBoMW0tMjkgMWgxbTMgMGgxbTEgMGgzbTEgMGgzbTEgMGgxbTMgMGgybTIgMGgxbTEgMGgxbTQgMGg1bTIgMGgxbS0zNSAxaDFtNSAwaDFtMSAwaDVtMSAwaDJtMSAwaDNtMiAwaDFtMiAwaDJtMyAwaDRtLTM2IDFoNG0yIDBoMm0zIDBoNG0xIDBoM20xIDBoOG0xIDBoMW0xIDBoMW0yIDBoMW0tMzUgMWgxbTIgMGgybTQgMGgybTEgMGgybTMgMGgybTIgMGgxbTEgMGgybTUgMGgzbTEgMGgybS0zNiAxaDJtMiAwaDFtMSAwaDFtMSAwaDFtMiAwaDJtMiAwaDVtMSAwaDRtMiAwaDVtMiAwaDNtLTM3IDFoMW0xIDBoMW0xIDBoMm0xIDBoMW0zIDBoMW0xIDBoMW0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMm0tMzQgMWgybTEgMGgybTEgMGgxbTEgMGgxbTEgMGgybTEgMGgzbTIgMGgxbTEgMGg0bTIgMGgxMG0tMzUgMWgybTIgMGgxbTMgMGgxbTEgMGgxbTIgMGgzbTIgMGgzbTIgMGgxbTYgMGgybTEgMGgxbS0zNSAxaDJtNCAwaDFtMiAwaDNtMyAwaDJtMyAwaDFtMyAwaDFtMiAwaDVtMSAwaDRtLTM1IDFoNG0xIDBoMW0xIDBoNG00IDBoM20xIDBoM20xIDBoM20xIDBoMW0xIDBoNW0tMzYgMWgybTMgMGg1bTMgMGgzbTIgMGgybTMgMGgzbTEgMGgxbTIgMGgzbS0zMiAxaDFtMSAwaDNtMSAwaDFtMiAwaDFtMSAwaDFtMSAwaDhtNCAwaDFtMyAwaDFtMyAwaDJtLTM2IDFoMm0xIDBoNG0xIDBoMm0xIDBoMW0yIDBoMW0yIDBoMW0yIDBoM200IDBoMW0xIDBoM20yIDBoMW0tMzIgMWgxbTEgMGgxbTEgMGgybTEgMGgxbTIgMGg0bTMgMGgybTEgMGgxbTEgMGgzbTEgMGgxbTEgMGgybS0zMyAxaDJtMSAwaDJtMSAwaDJtMyAwaDFtMSAwaDNtMSAwaDFtNSAwaDJtMSAwaDJtMSAwaDFtMSAwaDRtLTMzIDFoMW0xIDBoMm00IDBoNW0xIDBoNG0yIDBoM20zIDBoMm0xIDBoMm0xIDBoMW0tMzQgMWgybTMgMGgxbTEgMGgybTEgMGg0bTMgMGgybTIgMGgxbTEgMGgxbTEgMGgxbTIgMGgybTIgMGg0bS0zNyAxaDFtMiAwaDFtMSAwaDFtNCAwaDFtMyAwaDFtMSAwaDFtMiAwaDNtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMiAwaDNtLTMzIDFoNm0xIDBoNW0yIDBoMm0yIDBoMW0yIDBoMm0xIDBoMm0zIDBoMW0xIDBoMW0tMzIgMWgxbTEgMGgxbTIgMGgybTEgMGgxbTIgMGgybTIgMGgxbTMgMGgzbTIgMGgzbTIgMGgxbTIgMGgzbS0zNyAxaDNtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDZtMSAwaDFtMSAwaDFtMiAwaDFtMyAwaDVtMSAwaDFtMSAwaDFtLTI5IDFoMm0yIDBoMm0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMW0yIDBoMW0tMzYgMWg3bTEgMGgxbTEgMGgxbTQgMGgxbTIgMGgxbTIgMGg0bTMgMGgxbTEgMGgxbTEgMGgxbS0zMyAxaDFtNSAwaDFtMiAwaDFtMyAwaDFtMSAwaDJtMiAwaDNtMSAwaDJtMSAwaDFtMSAwaDFtMyAwaDNtLTM1IDFoMW0xIDBoM20xIDBoMW0xIDBoMm0yIDBoMW0yIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW0yIDBoN20xIDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGg0bTMgMGgzbTEgMGgzbTEgMGgxbTIgMGg0bTEgMGgxbTIgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMiAwaDVtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDJtMSAwaDNtMSAwaDFtMiAwaDJtLTM1IDFoMW01IDBoMW0yIDBoMW0xIDBoN20xIDBoNG0xIDBoMW0yIDBoMW0xIDBoMW0yIDBoMW0xIDBoMm0tMzYgMWg3bTEgMGgxbTEgMGgybTEgMGgxbTIgMGgybTIgMGg1bTEgMGgybTEgMGgxbTEgMGgxbTIgMGgzIi8+PC9zdmc+Cg==" width="110" height="110" alt="QR code : td1_qcm — 3 questions" style="image-rendering:pixelated"></a>
 
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex8-energie-et-puissance-d-une-onde-sur-une-corde-impedance-caracteristique|Exercice 8 — Énergie et puissance d'une onde sur une corde : impédance caractéristique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex9-corde-pesante-suspendue-milieu-inhomogene-bosse-acceleree-et-coup-de-fouet|Exercice 9 — Corde pesante suspendue : milieu inhomogène, bosse accélérée et coup de fouet]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex10-corde-discrete-chaine-de-masses-dispersion-coupure-et-vitesse-de-groupe|Exercice 10 — Corde discrète (chaîne de masses) : dispersion, coupure et vitesse de groupe]]

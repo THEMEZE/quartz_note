@@ -5,13 +5,42 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/vecteurs-en-physique-4h/index|⬅ Retour]] · <a href="/pdfs/td4_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_test_Ph110_0.pdf" target="_blank" rel="noopener">📄 PDF</a> · <a href="/pdfs/td4_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/vecteurs-en-physique-4h/index|⬅ Retour]] · <a href="/pdfs/td4_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_test_Ph110_0.pdf" target="_blank" rel="noopener">📄 PDF</a>
 
 ### Exercice 1. Tir horizontal et cinématique 2D
+
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 45 min · Type : Application*
 
 On étudie le mouvement à deux dimensions d'un projectile lancé horizontalement dans le champ de pesanteur terrestre uniformément réparti. L'axe $(Ox)$ est horizontal, dirigé vers la droite, et l'axe $(Oy)$ est vertical, dirigé vers le haut. La durée entre deux points consécutifs enregistrés est notée $\tau = \frac{1}{20}s $.
 
 <p style="text-align:center"><a href="/figures/td4_ex1_phv110_enonce.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_phv110_enonce.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+> [!abstract]+ 📚 Prérequis
+> **Vecteur position, vitesse et accélération**
+>
+> Connaître les définitions différentielles $\vec{v} = \frac{\mathrm{d}\vec{OM}}{\mathrm{d}t}$ et $\vec{a} = \frac{\mathrm{d}\vec{v}}{\mathrm{d}t}$, ainsi que l'approximation par taux de variation sur des intervalles finis : $\vec{v}_k \approx \frac{\vec{M_{k-1}M_{k+1}}}{2\tau}$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Calculs vectoriels et cinématiques**
+>
+> Savoir déterminer graphiquement et analytiquement les composantes des vecteurs position, vitesse et accélération pour un mouvement parabolique plane.
+
+
+> [!note]+ 📖 Point de cours
+> **Tir projectile dans un champ uniforme**
+>
+> Pour un tir horizontal sans frottement :
+> $x(t) = v_0 t$
+> $y(t) = -\frac{1}{2}g t^2$
+> L'accélération est constante : $\vec{a} = -g \vec{u}_y$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Choix de l'intervalle d'approximation**
+>
+> Pour calculer le vecteur vitesse au point $M_k$, utilise la différence de position entre les points $M_{k-1}$ et $M_{k+1}$ sur un intervalle de temps $\Delta t = 2\tau$.
+
 
 **Construction de vecteurs.**  (graphique page suivante)
 
@@ -51,6 +80,21 @@ On étudie le mouvement à deux dimensions d'un projectile lancé horizontalemen
   **c)** Rappeler la définition du vecteur vitesse $\vec{v}(t)$ à partir du vecteur déplacement $\Delta\overrightarrow{OM}$ et de la durée $\Delta t$.
 Déterminer le vecteur vitesse à l’instant $t_6$, calculer sa norme, puis le tracer en utilisant l’échelle prévue pour les vitesses.
 Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
+
+> [!warning] ⚠️ Attention
+> **Vecteur vitesse en $t_6$**
+>
+> Dans le TD 3, nous avons utilisé la définition approchée du vecteur vitesse :
+> $$\vec{v}(t_i)\simeq\frac{\overrightarrow{OM}(t_{i+1})-\overrightarrow{OM}(t_i)}{t_{i+1}-t_i}.$$
+>
+> Ici, pour obtenir une meilleure précision graphique, nous utiliserons une différence centrée :
+> $$\vec{v}(t_i)\simeq\frac{\overrightarrow{OM}(t_{i+1})-\overrightarrow{OM}(t_{i-1})}{t_{i+1}-t_{i-1}}.$$
+>
+> Lorsque $\Delta t$ devient très petit, ces deux expressions tendent vers la même limite, qui est la définition du vecteur vitesse instantanée :
+> $$\vec{v}(t_i)=\lim_{\Delta t\to 0}\frac{\Delta\overrightarrow{OM}}{\Delta t}.$$
+>
+> La raison pour laquelle la différence centrée permet généralement une meilleure approximation sera étudiée plus précisément en mathématiques à l’aide des développements limités.
+
 
 > [!question]- 🔭 Aller plus loin — Licence : Pourquoi la différence centrée est-elle plus précise ?
 > Soit $f$ une fonction suffisamment régulière, $x\in\mathbb{R}$ et $h$ un réel suffisamment petit.Les développements limités de $f$ au voisinage de $x$ donnent :
@@ -400,4 +444,8 @@ On néglige les frottements de l'air.
 > $$d = v_0 \cdot \Delta t = 15 \times 2{,}02 \approx 30{,}3\text{ m}$$
 >
 > On eut aussi fixer $x_0$ à 0.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Frottements fluides
+> Étude de la déviation de la trajectoire parabolique en présence d'une force de frottement quadratique $\vec{f} = -k v \vec{v}$.
 

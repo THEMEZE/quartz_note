@@ -5,11 +5,55 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 7. (*) Homogénéité d'une équation et dimension d'une grandeur : exercices avancés *(facultatif)*
 
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Approfondissement*
+
 Cet exercice reprend les deux grands usages de l'analyse dimensionnelle : **tester l'homogénéité** d'une équation (détecter une erreur) et **déterminer la dimension** d'une grandeur (ou d'une constante) à partir d'une loi. Les situations sont plus variées que dans les exercices précédents : électricité, thermodynamique, ondes, mécanique quantique, mécanique des fluides.
+
+> [!abstract]+ 📚 Prérequis
+> **Dimensions et homogénéité**
+>
+> Connaître 
+>
+>
+> - les sept dimensions de base ($M$, $L$, $T$, $I$, $\Theta$, $N$, $J$) et la notation $[\,\cdot\,]$,
+> - les règles $[ab] = [a][b]$, $[a/b] = [a]/[b]$, $[a^n] = [a]^n$ et $[a + b]$ n'a de sens que si $[a] = [b]$,
+> - les lois usuelles : $P = UI$, $E = \tfrac{1}{2} L I^2$, $F = q v B$, $PV = nRT$, \dots
+
+
+> [!info]+ 🎯 Objectifs
+> **Manipuler l'homogénéité avec assurance**
+>
+> - Tester rapidement l'homogénéité d'une équation et corriger une erreur.
+> - Comprendre que l'homogénéité est une condition **nécessaire mais non suffisante**.
+> - Déterminer la dimension d'une grandeur ou d'une constante à partir d'une loi.
+> - Reconnaître qu'un argument d'exponentielle, de logarithme ou de sinus est adimensionnel.
+
+
+> [!note]+ 📖 Point de cours
+> **Homogénéité**
+>
+> Une équation physique est **homogène** si tous ses termes ont la même dimension. C'est une condition nécessaire : une équation non homogène est **forcément fausse**. Elle n'est pas suffisante : une équation homogène peut être fausse (facteur numérique oublié, mauvaise fonction).
+>
+> **Dimensions électriques usuelles**
+>
+> $[I] = I$, $[\text{charge}] = I\,T$, $[\text{tension}] = M\,L^2\,T^{-3}\,I^{-1}$ (car $P = UI$ et $[P] = M L^2 T^{-3}$).
+
+
+> [!tip]- 💡 Coup de pouce
+> **Méthode générale
+> **
+>
+> \begin{itemize}[label=$\star$]
+> \item Écrire l'équation aux dimensions de {\bf chaque terme} séparément puis les comparer.
+> \item Les termes d'une somme ou de part et d'autre d'un signe $=$ doivent avoir la {\bf même} dimension.
+> \item Les facteurs numériques ($2$, $\pi$, $\tfrac{1}{2}$, \dots) sont adimensionnels.
+> \item L'argument d'une fonction transcendante ($\exp$, $\ln$, $\sin$, \dots) est toujours adimensionnel.
+> \end{itemize}
+
 
 **q1.** **Tester l'homogénéité d'équations**\\
 
@@ -262,6 +306,21 @@ $$
 > (d) Non : les facteurs numériques (comme $\pi$ et $8$) sont sans dimension et ne sont donc pas contraints par l'homogénéité. Il faut un calcul complet (résolution de l'équation de Navier-Stokes) ou une mesure.
 >
 > (e) $\Delta P = \dfrac{8 \eta \ell Q}{\pi R^4} = \dfrac{8 \times 1,0 \times 10^{-3} \times 1,0 \times 1,0 \times 10^{-6}}{\pi \times (1,0 \times 10^{-3})^4} = \dfrac{8,0 \times 10^{-9}}{3,14 \times 10^{-12}} \approx 2,5 \times 10^{3} ~\text{Pa}$ (soit $2$ chiffres significatifs).
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Détecter les erreurs
+
+> Relire des formules de cours et vérifier leur homogénéité sur des exemples de son choix.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Grandeurs adimensionnelles
+
+> Chercher la signification physique des nombres de Reynolds, de Péclet et de Prandtl à partir de leurs dimensions.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Systèmes d'unités
+
+> Comparer les dimensions de $\varepsilon_0$ et $\mu_0$ dans les systèmes SI et CGS gaussien.
 
 
 > [!note] 🔗 Voir aussi

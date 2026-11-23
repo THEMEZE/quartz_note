@@ -5,11 +5,324 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 4. Lois et Constantes Fondamentales en physiques
 
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 35 min · Type : Révision*
+
 L’objectif de l’exercice est d’utiliser l’analyse dimensionnelle afin de déterminer la dimension de constante intervenant dans les lois physiques.
+
+> [!abstract]+ 📚 Prérequis
+> **Grandeurs physiques et unités**
+>
+> - **Grandeurs physiques**
+>
+>
+>
+> - Savoir identifier les grandeurs physiques
+>       intervenant dans une relation.
+> - Distinguer les grandeurs fondamentales
+>       des grandeurs dérivées.
+> - Connaître les dimensions de base :
+>       masse $M$, longueur $L$, temps $T$,
+>       intensité électrique $I$, température $\Theta$
+>       et quantité de matière $N$.
+> - **Unités du Système international**
+>
+>
+>
+> - Connaître les unités SI de la masse,
+>       de la longueur et du temps.
+> - Savoir exprimer une grandeur physique
+>       dans les unités du Système international.
+> - Connaître les unités dérivées :
+>       newton, joule et pascal.
+> - **Analyse dimensionnelle**
+>
+>
+>
+> - Savoir déterminer la dimension d'une
+>       grandeur physique à partir de sa définition.
+> - Savoir manipuler les dimensions
+>       lors d'un produit ou d'un quotient.
+> - Savoir utiliser les puissances
+>       d'une grandeur dans une expression dimensionnelle.
+> - **Manipulation algébrique**
+>
+>
+>
+> - Savoir isoler une constante dans
+>       une équation physique.
+> - Savoir effectuer des transformations
+>       algébriques sur une relation littérale.
+
+
+> [!info]+ 🎯 Objectifs
+> **Identifier les grandeurs physiques**
+>
+> - **Identification des grandeurs**
+>
+>
+>
+> - Identifier les grandeurs physiques
+>       présentes dans une loi physique.
+> - Distinguer les variables physiques
+>       des constantes intervenant dans une relation.
+> - Associer chaque grandeur à sa dimension
+>       et à son unité SI.
+>
+> **Déterminer les dimensions d'une constante**
+>
+> - **Mise en équation**
+>
+>
+>
+> - Écrire l'équation aux dimensions
+>       d'une loi physique.
+> - Isoler une constante dans une relation
+>       afin de déterminer sa dimension.
+> - Exprimer la dimension de la constante
+>       en fonction des dimensions fondamentales.
+> - **Application aux lois physiques**
+>
+>
+>
+> - Déterminer la dimension de la constante
+>       de gravitation universelle $\mathcal{G}$.
+> - Déterminer la dimension de la permittivité
+>       du vide $\varepsilon_0$.
+> - Déterminer la dimension de la constante
+>       des gaz parfaits $R$.
+>
+> **Relier dimensions et unités SI**
+>
+> - **Conversion dimensionnelle**
+>
+>
+>
+> - Passer d'une dimension fondamentale
+>       à l'unité SI correspondante.
+> - Exprimer une constante en unités SI
+>       à partir de sa dimension.
+> - Vérifier la cohérence dimensionnelle
+>       d'un résultat.
+>
+> **Comprendre les limites de l'analyse dimensionnelle**
+>
+> - **Interprétation physique**
+>
+>
+>
+> - Comprendre que l'analyse dimensionnelle
+>       ne permet pas de déterminer une valeur numérique
+>       de constante.
+> - Distinguer une détermination dimensionnelle
+>       d'une détermination expérimentale.
+> - Identifier les informations supplémentaires
+>       nécessaires pour mesurer une constante physique.
+
+
+> [!note]+ 📖 Point de cours
+> **Dimensions fondamentales**
+>
+> - **Dimensions de base**
+>
+>
+>
+> - Masse : $[m] = M$.
+> - Longueur : $[r] = L$.
+> - Temps : $[t] = T$.
+> - Intensité électrique : $[I] = I$.
+> - Température thermodynamique : $[T] = \Theta$.
+> - Quantité de matière : $[n] = N$.
+> - **Grandeurs dérivées**
+>
+>
+>
+> - Force :
+>       $[F] = M L T^{-2}$.
+> - Surface :
+>       $[S] = L^2$.
+> - Volume :
+>       $[V] = L^3$.
+> - Pression :
+>       $[P] = M L^{-1} T^{-2}$.
+> - Énergie :
+>       $[E] = M L^2 T^{-2}$.
+>
+> **Règles de calcul dimensionnel**
+>
+> - **Produits et quotients**
+>
+>
+>
+> - Les dimensions se multiplient
+>       lors d'un produit de grandeurs.
+> - Les dimensions se divisent
+>       lors d'un quotient de grandeurs.
+> - Une puissance agit sur l'ensemble
+>       des exposants dimensionnels.
+> - **Addition et soustraction**
+>
+>
+>
+> - L'addition et la soustraction
+>       ne sont possibles qu'entre grandeurs
+>       de même dimension.
+> - Les termes additionnés dans une relation
+>       physique doivent avoir une dimension identique.
+> - **Constantes numériques**
+>
+>
+>
+> - Les nombres purs, tels que $4\pi$,
+>       sont sans dimension.
+> - Une constante numérique sans dimension
+>       ne modifie pas la dimension globale
+>       d'une expression.
+>
+> **Constante de gravitation universelle**
+>
+> - **Loi de Newton**
+>
+>
+>
+> - La force gravitationnelle s'écrit :
+>
+>       \[
+>         F = \mathcal{G}\frac{m m'}{r^2}.
+>       \]
+> - Les dimensions des grandeurs sont :
+>
+>       \[
+>         [F] = M L T^{-2},
+>         \qquad [m] = [m'] = M,
+>         \qquad [r] = L.
+>       \]
+> - **Dimension de la constante**
+>
+>
+>
+> - Isoler la constante :
+>
+>       \[
+>         \mathcal{G} = \frac{F r^2}{m m'}.
+>       \]
+> - Déterminer sa dimension :
+>
+>       \[
+>         [\mathcal{G}]
+>         = M^{-1}L^3T^{-2}.
+>       \]
+> - Son unité SI est :
+>
+>       \[
+>         \mathrm{kg}^{-1}\,\mathrm{m}^3\,\mathrm{s}^{-2}.
+>       \]
+>
+> **Permittivité du vide**
+>
+> - **Loi de Coulomb**
+>
+>
+>
+> - La force électrostatique s'écrit :
+>
+>       \[
+>         F = \frac{1}{4\pi\varepsilon_0}
+>         \frac{q q'}{r^2}.
+>       \]
+> - La charge électrique vérifie :
+>
+>       \[
+>         [q] = I T.
+>       \]
+> - **Dimension de la constante**
+>
+>
+>
+> - Isoler la permittivité :
+>
+>       \[
+>         \varepsilon_0
+>         = \frac{q q'}{4\pi F r^2}.
+>       \]
+> - Déterminer sa dimension :
+>
+>       \[
+>         [\varepsilon_0]
+>         = M^{-1}L^{-3}T^4I^2.
+>       \]
+> - Son unité SI est :
+>
+>       \[
+>         \mathrm{kg}^{-1}\,\mathrm{m}^{-3}\,
+>         \mathrm{s}^4\,\mathrm{A}^2.
+>       \]
+>
+> **Constante des gaz parfaits**
+>
+> - **Loi des gaz parfaits**
+>
+>
+>
+> - La loi des gaz parfaits s'écrit :
+>
+>       \[
+>         PV = nRT.
+>       \]
+> - Les dimensions des grandeurs sont :
+>
+>       \[
+>         [P] = M L^{-1}T^{-2},
+>         \quad [V] = L^3,
+>         \quad [n] = N,
+>         \quad [T] = \Theta.
+>       \]
+> - **Dimension de la constante**
+>
+>
+>
+> - Isoler la constante :
+>
+>       \[
+>         R = \frac{PV}{nT}.
+>       \]
+> - Déterminer sa dimension :
+>
+>       \[
+>         [R] = M L^2 T^{-2}\Theta^{-1}N^{-1}.
+>       \]
+> - Son unité SI est :
+>
+>       \[
+>         \mathrm{J\,K^{-1}\,mol^{-1}}.
+>       \]
+>
+> **Limites de l'analyse dimensionnelle**
+>
+> - **Détermination dimensionnelle**
+>
+>
+>
+> - L'analyse dimensionnelle permet
+>       de déterminer la dimension d'une constante.
+> - Elle permet de vérifier la cohérence
+>       dimensionnelle d'une relation physique.
+> - Elle ne permet pas de déterminer
+>       la valeur numérique d'une constante.
+> - **Détermination expérimentale**
+>
+>
+>
+> - La valeur numérique d'une constante
+>       doit être obtenue par une mesure expérimentale
+>       ou une relation physique supplémentaire.
+> - La constante gravitationnelle $\mathcal{G}$
+>       peut être déterminée expérimentalement
+>       à l'aide d'une balance de torsion.
+
 
 **q1.** **Constante de la gravitation universelle $\mathcal{G}$.**\\
 
@@ -532,6 +845,149 @@ $$
 >
 > - ${\displaystyle {\color{#2E7D5B} [R]}  =  \frac{ {\color{#8C0000} \overbrace{M * L^{-1} * T^{-2}}^{[P]}}  * {\color{#57659E} \overbrace{L^3}^{[V]}}  }{ {\color{#4A3628} \underbrace{N}_{[n]} } * {\color{#1565C0} \underbrace{\Theta}_{[T]}} } = {\color{#2E7D5B} M * L^2 * T^{-2} * \Theta^{-1} * N^{-1} } } $ .
 > - son utité est donnée en ${\color{#2E7D5B}J \cdot K^{-1} \cdot mol^{-1}} $ (ou ${\color{#2E7D5B} kg \cdot m^2 \cdot s^{-2} \cdot K^{-1} \cdot mol^{-1}} $ ).
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Vérification dimensionnelle de lois physiques
+
+> - **Application à la mécanique**
+>
+>
+>
+> - Vérifier la cohérence dimensionnelle
+>       de la relation $v = d/t$.
+> - Vérifier la dimension de l'énergie
+>       cinétique :
+>
+>       \[
+>         E_c = \frac{1}{2}mv^2.
+>       \]
+> - Déterminer la dimension de la constante
+>       de raideur $k$ dans la loi de Hooke :
+>
+>       \[
+>         F = kx.
+>       \]
+> - **Analyse d'une relation**
+>
+>
+>
+> - Vérifier qu'une relation est homogène.
+> - Identifier les termes qui ne peuvent
+>       pas être additionnés en raison de dimensions
+>       différentes.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Analyse dimensionnelle et lois d'échelle
+
+> - **Détermination d'une loi physique**
+>
+>
+>
+> - Utiliser l'analyse dimensionnelle
+>       pour proposer une dépendance fonctionnelle
+>       entre plusieurs grandeurs physiques.
+> - Étudier la période d'un pendule simple
+>       à partir de la longueur $l$ et de l'accélération
+>       de la pesanteur $g$.
+> - Identifier les limites de l'analyse
+>       dimensionnelle lorsque plusieurs
+>       grandeurs sans dimension interviennent.
+> - **Théorème de Buckingham**
+>
+>
+>
+> - Introduire le principe du théorème
+>       de Buckingham $\Pi$.
+> - Construire des groupes sans dimension
+>       à partir de grandeurs physiques.
+> - Utiliser les groupes sans dimension
+>       pour étudier des lois d'échelle.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Constantes physiques et systèmes d'unités
+
+> - **Relations entre constantes**
+>
+>
+>
+> - Étudier la relation entre la constante
+>       des gaz parfaits et la constante de Boltzmann :
+>
+>       \[
+>         R = N_A k_B.
+>       \]
+> - Vérifier la cohérence dimensionnelle
+>       de cette relation.
+> - Distinguer les grandeurs molaires
+>       des grandeurs microscopiques.
+> - **Expérience de Cavendish**
+>
+>
+>
+> - Étudier le principe de fonctionnement
+>       d'une balance de torsion.
+> - Déterminer l'expression de la constante
+>       gravitationnelle à partir de l'équilibre
+>       des couples.
+> - Identifier les sources d'incertitudes
+>       expérimentales dans la mesure de $\mathcal{G}$.
+> - **Systèmes d'unités**
+>
+>
+>
+> - Comparer les unités de la constante
+>       gravitationnelle dans différents systèmes
+>       d'unités.
+> - Comprendre le rôle des constantes physiques
+>       dans la définition des unités SI.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Gravitation, relativité et constantes fondamentales
+
+> - **Gravitation newtonienne**
+>
+>
+>
+> - Étudier la loi de gravitation universelle
+>       dans le cadre de la mécanique classique.
+> - Relier la constante gravitationnelle
+>       aux dimensions des grandeurs de la loi de Newton.
+> - **Relativité générale**
+>
+>
+>
+> - Introduire le rôle de la constante
+>       gravitationnelle dans les équations d'Einstein :
+>
+>       \[
+>         G_{\mu\nu}
+>         = \frac{8\pi\mathcal{G}}{c^4}T_{\mu\nu}.
+>       \]
+> - Vérifier la cohérence dimensionnelle
+>       des termes de l'équation.
+> - Relier les dimensions de $\mathcal{G}$
+>       et de $c$ aux grandeurs intervenant
+>       dans la relativité générale.
+> - **Gravitation quantique**
+>
+>
+>
+> - Introduire les dimensions de Planck
+>       à partir de $\hbar$, $\mathcal{G}$ et $c$.
+> - Définir la longueur de Planck :
+>
+>       \[
+>         \ell_{\mathrm P}
+>         = \sqrt{\frac{\hbar\mathcal{G}}{c^3}}.
+>       \]
+> - Définir le temps de Planck :
+>
+>       \[
+>         t_{\mathrm P}
+>         = \sqrt{\frac{\hbar\mathcal{G}}{c^5}}.
+>       \]
+> - Comprendre le rôle des constantes fondamentales
+>       dans la construction d'échelles physiques.
 
 
 > [!note] 🔗 Voir aussi

@@ -5,14 +5,54 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 5. Corde fixée à ses deux extrémités et ondes stationnaires
+
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 40 min · Type : Application directe du cours*
 
 Une corde homogène, de masse linéique $\mu$ et de longueur $L$, est fixée en ses deux extrémités $A(x=0)$ et $B(x=L)$. La corde de tension $F$, écartée de sa position d'équilibre, est abandonnée à l'instant $t=0$. Le déplacement transversal $y(x,t)$ obéit à l'équation de d'Alembert :
 $$\frac{\partial^2 y}{\partial x^2} = \frac{\mu}{F} \frac{\partial^2 y}{\partial t^2}$$
 
 <p style="text-align:center"><a href="/figures/td1_ex4_phv212_corde_fixe.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex4_phv212_corde_fixe.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi une corde ne donne-t-elle que certaines notes ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Pincez une corde de guitare : elle peut vibrer sur son fondamental, mais aussi, en la touchant légèrement au milieu, sur la note à l'octave. Pourquoi y a-t-il des fréquences « permises » et pas toutes les fréquences ? Pourquoi ces fréquences sont-elles des **multiples entiers** de la plus grave ?*
+>
+> **Idée clé : les conditions aux limites quantifient les modes.** Une onde stationnaire s'écrit à variables séparées, $y(x,t)=A\cos(kx+\varphi)\cos(\omega t+\phi)$, avec $\omega=ck$. Une corde fixée en $x=0$ et $x=L$ impose $y(0,t)=y(L,t)=0$ : $\varphi=\pi/2$ et $\sin(kL)=0$, donc
+> $$k_N=\frac{N\pi}{L},\qquad\lambda_N=\frac{2L}{N},\qquad f_N=N\,f_1,\ \ f_1=\frac c{2L}.$$
+> Le mode $N$ a $N+1$ nœuds (dont les 2 extrémités) et $N$ ventres, séparés de $\lambda_N/2$. La vibration quelconque est une **superposition** de ces modes.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Séparation des variables et oscillateur harmonique**
+>
+> Avec $y=f(x)g(t)$ : $\dfrac{f''}{f}=\dfrac1{c^2}\dfrac{g''}g=-k^2$ (constante), d'où les deux équations $f''+k^2f=0$ et $g''+\omega^2g=0$, de solutions en $\cos$/$\sin$. Le problème spatial devient un problème aux valeurs propres.
+>
+> **Zéros du sinus : $\sin u=0\iff u=N\pi$**
+>
+> $\sin(kL)=0$ impose $kL=N\pi$ avec $N\in\mathbb N^*$. Le cas $N=0$ est exclu (corde immobile). C'est la quantification : un ensemble discret de valeurs permises.
+>
+> **Formules produit-somme**
+>
+> $\sin a\cos b=\tfrac12\left[\sin(a+b)+\sin(a-b)\right]$, donc $\sin(kx)\cos(\omega t)=\tfrac12\left[\sin(kx+\omega t)+\sin(kx-\omega t)\right]$ : **une onde stationnaire est la somme de deux ondes progressives** de sens opposés (lien avec l'exercice d'Alembert).
+>
+> **Décalage de phase : $\cos(u-\pi/2)=\sin u$**
+>
+> Avec $\varphi=\pi/2\ [\pi]$, $\cos(kx+\varphi)=\mp\sin(kx)$. Savoir passer de cosinus à sinus par un décalage de $\pi/2$.
+>
+> **Dénombrement des nœuds et ventres**
+>
+> $\sin(N\pi x/L)=0$ pour $x=nL/N$, $n=0,\dots,N$ : $N+1$ points (« poteaux et intervalles »), donc $N$ fuseaux ou ventres.
+>
+> **Série de Fourier (ouverture)**
+>
+> Toute forme initiale $y(x,0)$ s'écrit $\sum_N B_N\sin(N\pi x/L)$ : décomposer en modes, c'est faire une série de Fourier en sinus.
+
 
 **q1.** On admet la solution particulière $y(x,t) = f(x)\cdot g(t)$ (séparation des variables).
 Montrer que $y(x,t) = A\cos(kx+\varphi)\cos(\omega t+\phi)$.
@@ -56,6 +96,50 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > En raison de la linéarité de l'opérateur de d'Alembert $\Box = \frac{\partial^2}{\partial x^2} - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$, toute combinaison linéaire de solutions à variables séparées est encore solution. La solution générale s'exprime par le développement en série de Fourier :
 > $$y(x,t) = \sum_{n=1}^{+\infty} f_n(x) \cdot g_n(t)$$
 > La convergence de la série dépend de la régularité des données initiales $y(x,0)$ et $\frac{\partial y}{\partial t}(x,0)$.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Réduction de l'EDP en système d'EDO Sturm-Liouville
+> **1. Injectivité et isolement des variables**\\
+>
+> Soit $y(x,t) = f(x) \cdot g(t)$ une solution non nulle. Sur l'ouvert $\{(x,t) \mid f(x)g(t) \neq 0\}$, la substitution dans l'équation de d'Alembert donne :
+> $$f''(x) \cdot g(t) = \frac{1}{c^2} f(x) \cdot g''(t)$$
+>
+> En divisant par le produit $f(x)g(t)$ :
+> $$\frac{f''(x)}{f(x)} = \frac{1}{c^2} \frac{g''(t)}{g(t)}$$
+>
+> **2. Constante de séparation (Théorème d'isolation)**\\
+> Considérons la fonction $H(x,t) = \frac{f''(x)}{f(x)} - \frac{1}{c^2} \frac{g''(t)}{g(t)} = 0$.
+> * $\frac{\partial H}{\partial t} = 0 \implies \frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{f''(x)}{f(x)}\right) = 0 \implies \frac{f''(x)}{f(x)} = K \in \mathbb{R}$
+> * $\frac{\partial H}{\partial x} = 0 \implies \frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{1}{c^2}\frac{g''(t)}{g(t)}\right) = 0 \implies \frac{1}{c^2}\frac{g''(t)}{g(t)} = K \in \mathbb{R}$
+>
+> **3. Étude spectrale du signe de la constante $K$ **\\
+> Le problème spatial s'écrit sous forme d'un problème aux valeurs propres de Sturm-Liouville :
+> $$f''(x) - K f(x) = 0 \quad \text{avec } f(0) = f(L) = 0$$
+>
+>
+>
+> 1. **Cas $K > 0$ ($K = \alpha^2, \alpha > 0$) :**
+>   $f(x) = C_1 e^{\alpha x} + C_2 e^{-\alpha x}$.
+>   $f(0) = 0 \implies C_2 = -C_1$.
+>   $f(L) = 0 \implies C_1(e^{\alpha L} - e^{-\alpha L}) = 0 \implies C_1 = C_2 = 0$ (solution triviale éliminée).
+> 2. **Cas $K = 0$ :**
+>   $f(x) = A x + B$.
+>   $f(0) = 0 \implies B = 0$ et $f(L) = 0 \implies A = 0$ (solution triviale éliminée).
+> 3. **Cas $K < 0$ ($K = -k^2, k > 0$) :**
+>   $f(x) = A \cos(kx) + B \sin(kx)$.
+>   $f(0) = 0 \implies A = 0$.
+>   $f(L) = 0 \implies B \sin(k L) = 0 \implies k_n = \frac{n\pi}{L}, \; n \in \mathbb{N}^*$.
+>
+>
+>
+> **4. Détermination des EDO associées **
+> Pour chaque mode $n \in \mathbb{N}^*$, la constante de séparation vaut $K_n = -k_n^2 = -\left(\frac{n\pi}{L}\right)^2$. On obtient deux EDO d'oscillateurs harmoniques :
+>
+> $$\begin{cases} 
+> f_n''(x) + k_n^2 f_n(x) = 0 \implies f_n(x) = B_n \sin\left(\dfrac{n\pi x}{L}\right) \\[6pt]
+> g_n''(t) + \omega_n^2 g_n(t) = 0 \implies g_n(t) = C_n \cos(\omega_n t) + D_n \sin(\omega_n t)
+> \end{cases}$$
+> avec la relation de dispersion $\omega_n = c k_n = \frac{n\pi c}{L}$.
 
 
 > [!question]- 🔭 Aller plus loin — Master : Résolution par Transformée de Fourier spatiale et spectre continu
@@ -285,6 +369,10 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > $N=1$ présente 1 fuseau (0 nœud interne), $N=4$ présente 4 fuseaux (3 nœuds internes).
 
 
+> [!question]- 🔭 Aller plus loin — CPGE : De la corde à la physique quantique
+> La quantification des modes propres d'une corde fixe ($k_N = N\pi/L$) est formellement identique à la quantification des niveaux d'énergie d'une particule dans un puits de potentiel infini en mécanique quantique.
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Analyse spectrale et séries de Fourier
 > Une déformation initiale quelconque $y(x,0)$ se décompose comme une somme infinie de modes propres $\sum y_N(x,t)$ via la décomposition en séries de Fourier.
 
@@ -303,6 +391,24 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > - $N=4$ (Harmonique 4) : \texttt{A ()()()() B} (4 fuseaux de longueur $L/4$).
 >
 > <p style="text-align:center"><a href="/figures/td1_ex4_phv212_corde_fixe_mode.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex4_phv212_corde_fixe_mode.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mécanique quantique**
+>
+> Une particule dans un puits infini de largeur $L$ a pour fonctions d'onde $\psi_n\propto\sin(n\pi x/L)$ et pour énergies $E_n\propto n^2$ : mêmes conditions aux limites, même quantification.
+>
+> **Musique et acoustique**
+>
+> Les harmoniques $f_N=Nf_1$ donnent le timbre d'un instrument. En touchant la corde en son milieu, on force un nœud en $L/2$ et on isole $N=2$ (flageolet).
+>
+> **Optique et lasers**
+>
+> Dans une cavité Fabry-Pérot de longueur $L$, les modes permis vérifient $L=N\lambda/2$ : même relation que pour la corde fixée aux deux extrémités.
+>
+> **Traitement du signal**
+>
+> Décomposer un son en harmoniques est une analyse de Fourier : spectre discret pour un signal périodique, continu pour un signal non périodique (voir la transformée de Fourier).
 
 
 > [!note] 🔗 Voir aussi

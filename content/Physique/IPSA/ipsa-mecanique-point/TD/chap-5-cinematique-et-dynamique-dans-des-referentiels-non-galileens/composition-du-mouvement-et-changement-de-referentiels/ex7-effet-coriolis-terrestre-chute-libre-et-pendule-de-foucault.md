@@ -5,11 +5,75 @@ tags:
   - chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens/composition-du-mouvement-et-changement-de-referentiels/index|⬅ Retour]]
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens/composition-du-mouvement-et-changement-de-referentiels/index|⬅ Retour]] · <a href="/pdfs/td7_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td7_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
 ### Exercice 7. Effet Coriolis terrestre : chute libre et pendule de Foucault *(facultatif)*
 
+*Difficulté ●●●●● · ⏱ 1 h · Type : Complément original / Référentiel terrestre*
+
 On étudie des mouvements à la surface de la Terre à la latitude $\lambda=48{,}85^\circ$ N (Paris). Le référentiel terrestre $\mathcal R'$ tourne autour de l'axe des pôles à la vitesse angulaire $\Omega=7{,}292\times10^{-5}\ {\rm rad\cdot s^{-1}}$ par rapport au référentiel géocentrique $\mathcal R$, supposé galiléen. On utilise le repère local $(O,\vec e_x,\vec e_y,\vec e_z)$ : $\vec e_x$ vers l'est, $\vec e_y$ vers le nord, $\vec e_z$ vertical ascendant. On prend $g=9{,}81\ {\rm m\cdot s^{-2}}$ (**pesanteur effective**, qui inclut déjà le terme centrifuge) et on néglige $\Omega^2$ devant $\Omega$ pour les effets de Coriolis.
+
+> [!question]+ 🎣 Accroche
+> **Une pierre lâchée du haut d'une tour tombe-t-elle exactement au pied de la tour ?**
+>
+> *Durée de l'introduction : 3 min*
+>
+> *Newton, Hooke puis Reich ont tenté l'expérience : la pierre tombe légèrement à l'est. Pourquoi, et de combien pour une tour de 100 m ?*
+>
+> **Idée clé : la Terre est un référentiel tournant.** Dans $\mathcal R'$ un corps en mouvement subit $-2m\vec\Omega\wedge\vec v_r$ ; la déviation est faible (cm) mais mesurable.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Vecteur rotation dans le repère local**
+>
+> $\vec\Omega=\Omega\,(\cos\lambda\,\vec e_y+\sin\lambda\,\vec e_z)$.
+>
+> **Force de Coriolis**
+>
+> $\vec F_{ic}=-2m\,\vec\Omega\wedge\vec v_r$.
+>
+> **Produit vectoriel en composantes**
+>
+> $\vec e_x\wedge\vec e_y=\vec e_z$, $\vec e_y\wedge\vec e_z=\vec e_x$, $\vec e_z\wedge\vec e_x=\vec e_y$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Calculer une déviation par perturbation**
+>
+> Savoir intégrer l'équation du mouvement à l'ordre 1 en $\Omega$ (la trajectoire d'ordre 0 est celle sans rotation).
+>
+> **Interpréter les effets de Coriolis terrestres**
+>
+> Déviation vers l'est d'un corps qui tombe, vers la droite pour une trajectoire horizontale (hémisphère Nord), rotation du plan d'oscillation du pendule de Foucault.
+
+
+> [!note]+ 📖 Point de cours
+> **Équation du mouvement**
+>
+> $\dfrac{\mathrm d\vec v_r}{\mathrm dt}=\vec g+\dfrac{\vec F}{m}-2\vec\Omega\wedge\vec v_r$.
+>
+> **Composantes de Coriolis**
+>
+> Pour $\vec v=(v_x,v_y,v_z)$ : $-2\vec\Omega\wedge\vec v=2\Omega\big(v_y\sin\lambda-v_z\cos\lambda,\ -v_x\sin\lambda,\ v_x\cos\lambda\big)$.
+>
+> **Ordres de grandeur**
+>
+> $2\Omega v\approx1{,}5\times10^{-4}\,v$ (m/s²) : négligeable pour des mouvements courts ($t\ll1/\Omega\approx3{,}8$ h) ; important pour les masses d'air (cyclones), les courants marins, la balistique à longue portée.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Intégration successive**
+>
+> $\ddot x=2\Omega gt\cos\lambda\Rightarrow\dot x=\Omega gt^2\cos\lambda\Rightarrow x=\tfrac13\Omega gt^3\cos\lambda$.
+>
+> **Notation complexe**
+>
+> $\zeta=x+\mathrm iy$ transforme le système couplé du pendule en une seule équation.
+>
+> **Développement perturbatif**
+>
+> $\vec r=\vec r_0+\Omega\vec r_1+\dots$
+
 
 **q1.** Un corps de masse $m$ est lâché sans vitesse initiale d'une hauteur $h=100$ m.
 

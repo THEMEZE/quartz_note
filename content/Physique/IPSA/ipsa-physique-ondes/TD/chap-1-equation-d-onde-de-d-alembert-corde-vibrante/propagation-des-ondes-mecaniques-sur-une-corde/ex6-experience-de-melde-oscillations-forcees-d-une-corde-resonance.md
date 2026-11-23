@@ -5,13 +5,49 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 6. Expérience de Melde, oscillations forcées d'une corde, résonance *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Application directe du cours*
 
 Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\text{m}^{-1}$ est tendue avec $F = 50\text{ N}$. Un vibreur impose en $x=0$ : $y(0,t) = a e^{j\omega t}$. On pose $k = \omega\sqrt{\mu/F}$. La corde est fixée en $x=\ell$.
 
 <p style="text-align:center"><a href="/figures/td1_ex5_phv212_corde_melde.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex5_phv212_corde_melde.svg" alt="Corde de Melde en régime forcé." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+> [!question]+ 🎣 Accroche
+> **Faire danser une corde : de l'amplitude infinie ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Un vibreur fait osciller l'extrémité d'une corde. À certaines fréquences, de beaux « fuseaux » apparaissent avec une grande amplitude ; à d'autres, la corde reste presque immobile. Pourquoi ? Et que se passerait-il, selon le modèle, si l'on excitait **exactement** à la bonne fréquence ?*
+>
+> **Idée clé : en régime forcé, la corde vibre à la fréquence imposée, avec un profil fixé par les conditions aux limites.** On cherche $\underline y(x,t)=\underline Y(x)e^{j\omega t}$ avec $\underline Y(0)=a$ et $\underline Y(\ell)=0$ :
+> $$\underline Y(x)=a\,\frac{\sin\big(k(\ell-x)\big)}{\sin(k\ell)},\qquad k=\omega\sqrt{\mu/F}.$$
+> L'amplitude diverge quand $\sin(k\ell)=0$, soit $f=Nf_1$ : c'est la **résonance**. En pratique, l'amortissement la limite à une valeur finie.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Notation complexe**
+>
+> $\underline y=\underline Y(x)e^{j\omega t}$ : dériver par rapport à $t$ revient à multiplier par $j\omega$, donc $\partial_t^2\to-\omega^2$. L'équation de d'Alembert devient $\underline Y''+k^2\underline Y=0$. Le signal physique est la partie réelle.
+>
+> **EDO linéaire du second ordre à coefficients constants**
+>
+> $\underline Y''+k^2\underline Y=0$ a pour solution $A\cos kx+B\sin kx$. Les deux constantes sont fixées par les **deux conditions aux limites** $\underline Y(0)=a$ et $\underline Y(\ell)=0$.
+>
+> **Formule de soustraction : $\sin(a-b)=\sin a\cos b-\cos a\sin b$**
+>
+> Elle permet de regrouper $\sin(k\ell)\cos(kx)-\cos(k\ell)\sin(kx)$ en $\sin\big(k(\ell-x)\big)$ : c'est ce qui donne le profil final compact.
+>
+> **Résonance : dénominateur qui s'annule**
+>
+> $\dfrac1{\sin(k\ell)}$ diverge quand $k\ell=N\pi$, soit $f_N=N\dfrac c{2\ell}=50N$ Hz avec $c=\sqrt{F/\mu}=50$ m/s et $\ell=0{,}5$ m. Valeurs de $k\ell$ à connaître : $\pi,\,2\pi,\,\dots$
+>
+> **Amplitude des ventres**
+>
+> Le profil est $a\,\dfrac{\sin(k(\ell-x))}{\sin(k\ell)}$ ; son maximum en valeur absolue vaut $\dfrac a{|\sin(k\ell)|}\ge a$ : l'amplitude des ventres est toujours supérieure à celle du vibreur.
+
 
 **q1.** Établir en régime forcé l'équation $y(x,t)$ du mouvement de la corde en tout point $M(x)$ à l'instant $t$. Conclusion.
 
@@ -160,6 +196,24 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > Le phénomène de résonance d'amplitude a lieu lorsque le dénominateur tend vers zéro :
 > $$\sin(k\ell) = 0 \implies k\ell = N\pi \implies \frac{2\pi f}{c}\ell = N\pi \implies f = N \frac{c}{2\ell} = N f_1$$
 > On observe la résonance pour toutes les fréquences harmoniques $f_N = N \times 50\text{ Hz}$ ($50\text{ Hz}, 100\text{ Hz}, 150\text{ Hz}, \dots$).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Électrocinétique**
+>
+> Un circuit RLC en régime sinusoïdal forcé présente une résonance à $\omega_0=1/\sqrt{LC}$ avec la même notation complexe et le même rôle de l'amortissement (la résistance limite le pic).
+>
+> **Mécanique (oscillateur forcé)**
+>
+> Une masse sur un ressort excitée à sa fréquence propre atteint une grande amplitude. La corde est un oscillateur à une infinité de modes, avec une résonance par mode.
+>
+> **Génie civil et sécurité**
+>
+> Les ponts, passerelles et immeubles ont des fréquences propres à éviter : l'oscillation latérale de la passerelle du Millennium Bridge (Londres, 2000) a obligé à installer des amortisseurs. (L'effondrement du pont de Tacoma, souvent cité, relève en fait d'un flottement aéroélastique plus complexe.)
+>
+> **Acoustique**
+>
+> Un verre en cristal peut se briser si on le soumet à un son pur de la fréquence de sa résonance propre ; un tuyau d'orgue amplifie sélectivement ses harmoniques.
 
 
 > [!note] 🔗 Voir aussi

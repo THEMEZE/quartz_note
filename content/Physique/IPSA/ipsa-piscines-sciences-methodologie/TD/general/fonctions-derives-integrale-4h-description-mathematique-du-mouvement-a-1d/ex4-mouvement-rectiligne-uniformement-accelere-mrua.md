@@ -5,11 +5,37 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/index|⬅ Retour]] · <a href="/pdfs/td3_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV110.pdf" target="_blank" rel="noopener">📄 PDF</a> · <a href="/pdfs/td3_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/index|⬅ Retour]] · <a href="/pdfs/td3_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV110.pdf" target="_blank" rel="noopener">📄 PDF</a>
 
 ### Exercice 4. Mouvement rectiligne uniformément accéléré (MRUA)
 
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 45 min · Type : Application*
+
 Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans des contextes réels (avion, camion, voiture).
+
+> [!abstract]+ 📚 Prérequis
+> **Équations du MRUA**
+>
+> $x(t) = \frac{1}{2}a t^2 + v_0 t + x_0$ et $v(t) = a t + v_0$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Résolution de problèmes kinématiques réels**
+>
+> Savoir manipuler le système de 2 équations à 2 inconnues pour trouver des distances, durées ou accélérations.
+
+
+> [!note]+ 📖 Point de cours
+> **Système MRUA**
+>
+> $\begin{cases} v(t) = a t + v_0 \\ x(t) = \frac{1}{2}a t^2 + v_0 t + x_0 \end{cases}$
+
+
+> [!tip]- 💡 Coup de pouce
+> **Formule intemporelle**
+>
+> On peut aussi utiliser la relation $v_B^2 - v_A^2 = 2 a (x_B - x_A)$ pour éviter de calculer explicitement le temps.
+
 
 **q1.** Un avion commence sa course au repos ($v_A = 0$) en $A$. Il décolle $30\text{ s}$ plus tard en $B$ avec une accélération constante $a$. La distance $AB = 900\text{ m}$.
 
@@ -73,6 +99,10 @@ Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans 
 > - **$a_x(t)$** : Droite horizontale d'ordonnée égale à l'accélération constante.
 > - **$v_x(t)$** : Droite affine de pente $a_x$ et d'ordonnée à l'origine $v_0$.
 > - {\bf$x(t)$} : Parabole orientée vers le haut ($a_x > 0$) ou vers le bas ($a_x < 0$), avec une tangente en $t=0$ de pente égale à $v_0$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Distance de sécurité
+> Calcul des distances de freinage incluant le temps de réaction du conducteur.
 
 
 > [!note] 🔗 Voir aussi

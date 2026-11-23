@@ -5,15 +5,93 @@ tags:
   - chap-2-ondes-acoustiques
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a> · <a href="/pdfs/td2_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a>
 
 ### Exercice 2. Onde stationnaire, tube de Kundt ouvert
+
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 40 min · Type : Application*
 
 Un haut-parleur en $x=0$ émet une onde acoustique dans un tube d'air de
 longueur $L$, ouvert aux deux extrémités ($x=0$ et $x=L$). Déplacement
 incident $\Psi_I(x,t)=A_I e^{i(\omega t - kx)}$, avec $k=\omega/c$. À la
 réflexion en $x=L$ (extrémité ouverte), le déplacement réfléchi s'écrit
 $\Psi_R(x,t)=A_I e^{i(\omega t - k(2L-x))}$.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi un tuyau ouvert sonne-t-il sur des notes précises ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Soufflez en travers d'une bouteille ou d'un tube : il ne résonne que sur certaines notes. Dans un tube ouvert aux deux bouts, que se passe-t-il à l'extrémité ouverte : le fluide y est-il **immobile** ou **libre de bouger** ? Et la pression, y est-elle maximale ou égale à la pression ambiante ?*
+>
+> **Idée clé : une onde stationnaire est la somme d'une onde incidente et d'une onde réfléchie.** Pour une extrémité ouverte, le déplacement est maximal (ventre de déplacement) mais la surpression est nulle (nœud de pression, car l'extérieur impose la pression atmosphérique) :
+> $$\Psi=2A_I\cos\big(k(L-x)\big)e^{i(\omega t-kL)},\qquad\tilde p=-2A_I\rho_0c\,\omega\sin\big(k(L-x)\big)e^{i(\omega t-kL)}.$$
+> Les profils de $\Psi$ et de $p$ sont en **quadrature spatiale** ($\cos$ contre $\sin$). La condition $p(0)=0$ impose $\sin(kL)=0$, donc $f_n=n\,c/(2L)$ : **tous** les harmoniques sont permis.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Notation complexe et onde progressive**
+>
+> Connaître le principe de la notation complexe en acoustique : une grandeur physique réelle $\psi(x,t)$ est associée à une grandeur complexe $\tilde\psi(x,t)$ telle que $\psi = \mathrm{Re}(\tilde\psi)$, ce qui permet de manipuler des exponentielles plutôt que des sinus/cosinus tout en linéarisant les opérations de dérivation.
+>
+> Connaître la forme générale d'une onde acoustique plane progressive dans la direction $+x$, $\tilde\Psi(x,t) = A\,e^{i(\omega t - kx)}$, avec $k = \omega/c$ la relation de dispersion (non dispersive) des ondes acoustiques dans un fluide homogène.
+>
+> Savoir que le principe de superposition s'applique : toute combinaison linéaire de solutions de l'équation de d'Alembert en est encore solution.
+
+
+> [!info]+ 🎯 Objectifs
+> **Construire une onde stationnaire par superposition**
+>
+> Savoir construire explicitement une onde stationnaire comme la somme d'une onde incidente et d'une onde réfléchie, factoriser la partie spatiale et la partie temporelle, et interpréter physiquement cette séparation des variables (immobilité du profil spatial, oscillation uniquement temporelle).
+>
+> Savoir traduire une condition aux limites physique (extrémité ouverte ou fermée) en une condition mathématique sur le champ de déplacement ou de pression, et en déduire les fréquences propres du système.
+
+
+> [!note]+ 📖 Point de cours
+> **Ondes stationnaires et conditions aux limites acoustiques**
+>
+> Une onde stationnaire résulte de la superposition d'une onde incidente et d'une onde réfléchie de même amplitude, de sens de propagation opposés. Pour le déplacement,
+> $$\tilde\Psi(x,t) = \tilde\Psi_I(x,t) + \tilde\Psi_R(x,t),$$
+> et le calcul mène systématiquement à une forme du type $\tilde\Psi(x,t) = f(x)\,e^{i(\omega t + \varphi)}$ : la dépendance spatiale $f(x)$ (réelle, à un facteur de phase près) est figée dans le temps, seule la phase temporelle $e^{i\omega t}$ évolue — d'où le qualificatif de « stationnaire », par opposition à une onde progressive dont le profil se translate.
+>
+> La condition physique à une extrémité **ouverte** est que la pression y reste égale à la pression atmosphérique extérieure (imposée par un réservoir infini d'air ambiant) : c'est donc un **nœud de surpression**, $p=0$. Réciproquement, le fluide y est libre de se déplacer : c'est un **ventre de déplacement**.
+>
+> La condition physique à une extrémité **fermée** (paroi rigide) est que le fluide ne peut pas traverser la paroi : la vitesse normale, donc le déplacement, y est nul — c'est un **nœud de déplacement**, et par conséquent un **ventre de surpression** (la pression peut y varier librement).
+>
+> Pour un tube ouvert aux deux extrémités, on impose donc un nœud de pression en $x=0$ *et* en $x=L$ : cette double condition, tout à fait analogue à celle d'une corde vibrante fixée à ses deux extrémités (mais portant ici sur la pression et non le déplacement), sélectionne un ensemble discret de fréquences propres — les harmoniques du tube.
+>
+> **Remarque méthodologique importante** (utile pour les questions 4 et 5) : l'expression de $\Psi_R$ donnée dans l'énoncé encode déjà, par construction, la condition de nœud de pression en $x=L$ (c'est ce qui a permis de l'écrire). La quantification des fréquences propres provient donc de l'imposition de la *même* condition à l'*autre* extrémité $x=0$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Notation complexe et partie réelle**
+>
+> Une grandeur réelle est la partie réelle de sa représentation complexe : $\psi=\operatorname{Re}\tilde\psi=2A_I\cos(k(L-x))\cos(\omega t-kL)$. La dérivation d'une exponentielle est plus simple que celle d'un produit trigonométrique.
+>
+> **Formules d'Euler : $e^{iu}+e^{-iu}=2\cos u$ et $e^{iu}-e^{-iu}=2i\sin u$**
+>
+> Elles permettent de factoriser la somme des deux ondes : $e^{ik(L-x)}+e^{-ik(L-x)}=2\cos(k(L-x))$. Il faut mettre en facteur $e^{-ikL}$ et ne pas le perdre en route.
+>
+> **Dérivée d'une fonction composée**
+>
+> $\dfrac{\mathrm d}{\mathrm dx}\cos\big(k(L-x)\big)=+k\sin\big(k(L-x)\big)$ : le signe $-x$ dans l'argument change le signe de la dérivée.
+>
+> **Quadrature : $\cos\!\left(u-\dfrac\pi2\right)=\sin u$**
+>
+> Dériver par rapport à $x$ décale la phase spatiale de $\pi/2$ : le profil de $p$ est décalé d'un quart de longueur d'onde par rapport à celui de $\Psi$. Un ventre de l'un est un nœud de l'autre.
+>
+> **Zéros du sinus et quantification**
+>
+> $\sin(kL)=0\Leftrightarrow kL=n\pi$ ($n\in\mathbb N^*$) ; avec $k=2\pi f/c$, $f_n=nc/(2L)$. Le cas $n=0$ est exclu (fréquence nulle).
+>
+> **Relation $1/\chi_S=\rho_0c^2$ et $k/\chi_S=\rho_0c\,\omega$**
+>
+> Pour passer de $\partial\Psi/\partial x$ à $\tilde p$, on remplace $\chi_S$ en fonction de $c$ et $\rho_0$, puis $k=\omega/c$. Vérifier l'homogénéité : $\rho_0c\,\omega\,\Psi$ est bien une pression.
+>
+> **Dénombrement des nœuds et ventres**
+>
+> Le mode $n$ a $n+1$ nœuds de pression ($x=L(1-m/n)$, $m=0,\dots,n$) et $n$ ventres au milieu de chaque intervalle, séparés de $\lambda_n/2=L/n$.
+
 
 **q1.** Justifier cette expression du déplacement réfléchi par un schéma.
 
@@ -131,6 +209,36 @@ $\Psi(x,t)=2A_I\cos\big(k(L-x)\big)e^{i(\omega t-kL)}$. Justifier le nom d'onde 
 >
 >
 > On retrouve la structure classique : le mode $n$ possède $n$ ventres et $n+1$ nœuds, régulièrement répartis, tout à fait analogue aux modes propres d'une corde vibrante (mais avec les rôles de nœud/ventre échangés entre déplacement et pression).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Cordes vibrantes (chapitre 1)**
+>
+> Les nœuds de pression d'un tube ouvert-ouvert jouent le rôle des nœuds de déplacement d'une corde fixée aux deux extrémités : mêmes fréquences $f_n=nc/(2L)$ avec $c=\sqrt{F/\mu}$ remplacé par la célérité du son.
+>
+> **Musique et lutherie**
+>
+> Flûte traversière, flûte à bec, tuyau d'orgue ouvert : tube ouvert-ouvert, tous les harmoniques, donc un timbre « brillant ». L'instrumentiste modifie $L$ en bouchant ou en ouvrant des trous.
+>
+> **Optique et lasers**
+>
+> Une cavité laser ou un résonateur de Fabry-Pérot sélectionne des fréquences telles que $L=n\lambda/2$ : même condition de quantification.
+>
+> **Mécanique quantique**
+>
+> La particule dans un puits de largeur $L$ a des fonctions d'onde en $\sin(n\pi x/L)$ : nœuds aux bords, comme la pression dans un tube ouvert-ouvert.
+>
+> **Ingénierie acoustique**
+>
+> Les silencieux, conduits de ventilation et tuyaux d'échappement ont des résonances dues à ces ondes stationnaires. La correction de longueur d'extrémité ($\approx0{,}6\,r$ par bout ouvert) est nécessaire pour accorder un instrument.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Correction de longueur d'extrémité (« end correction »)
+> En pratique, une extrémité ouverte n'est pas un nœud de pression parfait : le rayonnement acoustique dans l'espace libre au-delà du tube introduit une « longueur effective » supplémentaire, de l'ordre de $0{,}6\,r$ ($r$ rayon du tube) par extrémité ouverte. Les fréquences de résonance réelles sont alors légèrement décalées : $f_n \approx n\,c/(2(L+2\times 0{,}6\,r))$. On pourra proposer une mesure expérimentale simple (mesure de $f_1$ à $L$ et $r$ connus) pour mettre en évidence cet écart avec le modèle idéal.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Guides d'onde acoustiques avec écoulement moyen
+> Dans un conduit parcouru par un écoulement moyen (silencieux automobile, conduit de ventilation), l'équation de propagation se modifie (équation convective) et les modes propres dépendent du nombre de Mach de l'écoulement ; on peut également s'intéresser aux modes de section variable (équation de Webster) qui gouvernent, par exemple, l'acoustique des instruments à vent de forme conique.
 
 
 > [!note] 🔗 Voir aussi

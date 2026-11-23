@@ -5,9 +5,11 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 15. Corde amortie : atténuation, facteur de qualité et résonance de Melde *(facultatif)*
+
+*Difficulté ●●●●● · ⏱ 50 min · Type : Approfondissement / Problème de synthèse*
 
 Une corde de masse linéique $\mu$, tendue avec la force $F$ ($c=\sqrt{F/\mu}$), vibre dans un fluide visqueux (air, eau). Le fluide exerce
 sur chaque élément de corde une force de frottement fluide **linéique** $-\lambda\,\partial_ty$ (opposée à la vitesse transversale),
@@ -15,6 +17,44 @@ avec $\lambda>0$ en N$\cdot$s$\cdot$m$^{-2}$. On note $\gamma=\lambda/\mu$ (en s
 $$\frac{\partial^2y}{\partial t^2}+\gamma\,\frac{\partial y}{\partial t}=c^2\,\frac{\partial^2y}{\partial x^2}.$$
 On étudie d'abord la propagation, puis les modes propres d'une corde de longueur $\ell$ fixée en $x=0$ et $x=\ell$, enfin le montage de
 Melde (exercice 5) avec amortissement.
+
+> [!question]+ 🎣 Accroche
+> **Une résonance infinie… ou pas ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Dans l'exercice de Melde, l'amplitude des ventres devient **infinie** quand on excite à la fréquence propre. Aucune expérience ne donne une amplitude infinie : que manque-t-il dans le modèle ? Si l'on pince une corde de guitare, elle ne vibre pas éternellement : en combien de temps l'amplitude est-elle divisée par $\mathrm e$ ? Un son pur de fréquence $f$ envoyé le long d'un long câble perd-il de l'amplitude de la même façon à toute fréquence ? Que vaut le facteur de qualité d'une corde ?*
+>
+> **Idée clé : l'amortissement transforme les nombres réels (fréquences, nombres d'onde) en nombres complexes.** En notation complexe $\underline y=\underline Y\mathrm e^{j(\omega t-\underline kx)}$, l'équation donne une relation de dispersion
+> $$\underline k^2=\frac{\omega^2-j\gamma\omega}{c^2}$$
+> où $\underline k=k'-jk''$ est complexe : $k'$ décrit la propagation et $k''$ l'atténuation spatiale $\mathrm e^{-k''x}$. Pour les modes propres, c'est la **pulsation** qui devient complexe : $\underline\omega=\omega'+j\omega''$ avec $\omega''=-\gamma/2$, et l'amplitude décroît en $\mathrm e^{-\gamma t/2}$. À la résonance forcée, l'amplitude reste **finie**, de l'ordre de $Q\,a$ où $Q=\omega_n/\gamma$ est le facteur de qualité du mode.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Notation complexe avec amortissement**
+>
+> $\partial_t\to j\omega$ donne $\partial_t^2\to-\omega^2$ et $\gamma\,\partial_t\to j\gamma\omega$ : $-\omega^2+j\gamma\omega=-c^2\underline k^2$. Pour une onde progressive, on cherche $\underline k$ complexe ; pour un mode propre libre, on cherche $\underline\omega$ complexe.
+>
+> **Développement limité de la racine d'un nombre complexe**
+>
+> $\sqrt{1-j\varepsilon}\simeq1-\dfrac{j\varepsilon}2$ pour $\varepsilon\ll1$ ; la racine est choisie avec une partie réelle positive.
+>
+> **Équation caractéristique du second ordre**
+>
+> $\ddot\theta+\gamma\dot\theta+\omega_n^2\theta=0$ : solutions $\theta=\mathrm e^{st}$ avec $s^2+\gamma s+\omega_n^2=0$, soit $s=-\dfrac\gamma2\pm j\sqrt{\omega_n^2-\gamma^2/4}$. Régime pseudo-périodique si $\gamma<2\omega_n$.
+>
+> **Sinus d'un argument complexe**
+>
+> $\sin(a-jb)=\sin a\cosh b-j\cos a\sinh b$ ; $|\sin(a-jb)|^2=\sin^2a+\sinh^2b$. Pour $a=N\pi$ : $|\sin(N\pi-jb)|=\sinh b\simeq b$ si $b\ll1$.
+>
+> **Facteur de qualité**
+>
+> $Q=\omega_0\dfrac{E}{P}=\dfrac{\omega_0}{\gamma}$ pour un oscillateur d'énergie $E$ dissipant la puissance $P=\gamma E$ ; $Q\simeq\pi\times$ (nombre d'oscillations avant que l'amplitude soit divisée par $\mathrm e$). Largeur à mi-hauteur de la résonance en puissance : $\Delta\omega=\gamma$.
+>
+> **Fonctions hyperboliques**
+>
+> $\sinh b\simeq b$ pour $b\ll1$ ; $\cosh b\simeq1$.
+
 
 **q1.** **Propagation.**
 
@@ -117,6 +157,10 @@ Melde (exercice 5) avec amortissement.
 > $\sin(N\pi-jb)=-(-1)^N\,j\sinh b$ avec $b=k''\ell$.
 
 
+> [!question]- 🔭 Aller plus loin — CPGE : Puissance dissipée et facteur de qualité
+> Montrer que la puissance moyenne dissipée par le frottement dans le mode $n$ vaut $P=\gamma E_n$ avec $E_n=\tfrac14\mu\ell\,\omega_n^2b_n^2$ ; en déduire $Q_n=\omega_nE_n/P=\omega_n/\gamma$ et vérifier que l'énergie décroît en $\mathrm e^{-\gamma t}$ (deux fois plus vite que l'amplitude).
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Condition d'Heaviside : ligne sans distorsion
 > Ajoutons à l'équation un terme de rappel élastique $\omega_0^2y$ (corde sur un lit de ressorts). Montrer que $\underline k^2=(\omega^2-j\gamma\omega-\omega_0^2)/c^2$ et que l'onde se propage **sans distorsion** (célérité de phase $c$ indépendante de $\omega$, atténuation $\mathrm e^{-\gamma x/(2c)}$) si et seulement si $\omega_0=\gamma/2$. Faire le lien avec la condition d'Heaviside $R/L=G/C$ pour les lignes télégraphiques.
 
@@ -145,6 +189,24 @@ Melde (exercice 5) avec amortissement.
 > **(i) Application numérique**
 >
 > $A_v/a=\dfrac{2c}{\gamma\ell}=40\Rightarrow\gamma=\dfrac{2\times50}{40\times0{,}5}=5{,}0$ s$^{-1}$. $\omega_1=\dfrac{\pi c}\ell=314$ rad/s, donc $Q_1=\dfrac{314}5\approx63$ (cohérent avec $A_v/a=2Q_1/\pi=40$ $\surd$). La résonance a une largeur à mi-puissance $\Delta\omega=\gamma$, soit $\Delta f=\dfrac\gamma{2\pi}\approx0{,}8$ Hz pour une fréquence centrale de $50$ Hz : il faut régler le vibreur à mieux que $0{,}4$ Hz pour observer le maximum. Après arrêt du vibreur, l'amplitude décroît en $\mathrm e^{-\gamma t/2}$ : $\tau=\dfrac2\gamma=0{,}4$ s, soit $\sim20$ oscillations. **Validation** : on retrouve l'ordre de grandeur du « phénomène » visible à l'œil sur le montage de Melde (fuseaux nets, dérive lente si la fréquence est décalée).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Électrocinétique**
+>
+> Le circuit RLC série a $Q=L\omega_0/R$ ; un câble coaxial avec pertes obéit à l'**équation des télégraphistes**, dont la corde amortie est l'analogue mécanique : $\gamma\leftrightarrow R/L$.
+>
+> **Acoustique musicale**
+>
+> Le « sustain » d'une corde de guitare ou de piano est la durée de décroissance de ses modes ; les cordes aiguës (hautes fréquences) s'éteignent plus vite à cause de pertes internes croissantes avec la fréquence (non modélisées ici).
+>
+> **Ondes en milieu absorbant**
+>
+> Atténuation de la lumière dans une fibre (dB/km), des ondes radio dans la mer, des ultrasons dans les tissus : $A(x)=A_0\mathrm e^{-k''x}$ ; la profondeur de pénétration est $\delta=1/k''$.
+>
+> **Génie civil et sécurité**
+>
+> Les amortisseurs à masse accordée des gratte-ciel ou des passerelles introduisent un amortissement pour limiter les résonances (Taipei 101, Millennium Bridge de Londres).
 
 
 > [!note] 🔗 Voir aussi

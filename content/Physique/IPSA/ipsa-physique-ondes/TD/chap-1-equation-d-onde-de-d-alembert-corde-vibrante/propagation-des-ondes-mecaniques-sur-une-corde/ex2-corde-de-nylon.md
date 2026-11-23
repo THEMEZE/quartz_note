@@ -5,9 +5,11 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 2. Corde de nylon
+
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 20 min · Type : Application directe du cours*
 
 Une corde de nylon de diamètre $d = 1$ mm est tendue par une force
 extérieure de module $F = 50$ N.
@@ -17,6 +19,44 @@ extérieure de module $F = 50$ N.
 <p style="text-align:center"><a href="/animations/anim_corde_onde/animation.gif" target="_blank" rel="noopener"><img src="/animations/anim_corde_onde/animation.gif" alt="animation" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 [🎞️ Voir en .mp4](/animations/anim_corde_onde/animation.mp4)
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi une corde plus fine ou plus tendue sonne-t-elle plus aigu ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Sur une guitare, les cordes graves sont grosses et lourdes, les aiguës fines. Si l'on tend davantage une corde, la note monte. Pouvez-vous prévoir, **sans calcul**, comment la vitesse d'une onde sur la corde varie avec la tension et avec le diamètre ? Et la vitesse de l'onde est-elle la vitesse à laquelle bouge la corde ?*
+>
+> **Idée clé : la célérité ne dépend que du milieu.** Sur une corde tendue, $c=\sqrt{F/\mu}$ avec $\mu=\rho S$ la masse linéique : plus la tension est grande, plus l'onde est rapide ; plus la corde est lourde, plus elle est lente. Une onde sinusoïdale progressive s'écrit
+> $$y(x,t)=a\cos(kx-\omega t+\phi),\qquad k=\frac{2\pi}{\lambda},\ \ \omega=\frac{2\pi}{T},\ \ c=\frac\lambda T=\frac\omega k .$$
+> Il ne faut pas confondre la **célérité** $c$ de l'onde (le motif qui avance) et la **vitesse transversale** $\partial_t y$ d'un point de la corde (qui monte et descend).
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Aire d'un disque et masse linéique**
+>
+> $S=\pi d^2/4$ et $\mu=\rho S$. Penser à convertir : $1~\text{mm}=10^{-3}$ m, d'où $S=\pi(10^{-3})^2/4\approx7{,}85\times10^{-7}$ m$^2$. Maîtriser les puissances de dix évite les erreurs d'unités.
+>
+> **Analyse dimensionnelle**
+>
+> $[F/\mu]=\dfrac{\mathrm{kg\,m\,s^{-2}}}{\mathrm{kg\,m^{-1}}}=\mathrm{m^2\,s^{-2}}$ : la racine carrée est bien une vitesse. L'analyse dimensionnelle permet de **deviner** $c\propto\sqrt{F/\mu}$ à une constante sans dimension près.
+>
+> **Relations entre grandeurs ondulatoires**
+>
+> $k=2\pi/\lambda$, $\omega=2\pi/T=2\pi f$, $c=\lambda f=\omega/k$. Une période temporelle $T$ correspond à un déphasage de $2\pi$ ; une longueur d'onde $\lambda$ à un décalage spatial de $2\pi$.
+>
+> **Phase, degrés et radians**
+>
+> Une variation de phase de $60^\circ=\pi/3$ rad correspond à $\dfrac{60}{360}=\dfrac16$ de période : $\Delta t=T/6$. Règle de trois sur les angles.
+>
+> **Translation de graphe : $y(x,t+\Delta t)=y(x-c\Delta t,t)$**
+>
+> Entre $t$ et $t+T/8$ le profil se décale de $c\,T/8=\lambda/8$ vers les $x$ croissants. Même idée qu'en cinématique : un décalage $\Delta t$ correspond à un déplacement $c\,\Delta t$.
+>
+> **Dérivée partielle d'un cosinus**
+>
+> $v_y=\partial_t y=a\omega\sin(kx-\omega t+\phi)$, de valeur maximale $a\omega$. Un point où $y=0$ (passage par l'équilibre) est un point où $|v_y|=a\omega$ est maximale, car $\cos^2+\sin^2=1$.
+
 
 **q1.** Calculer la masse linéique $\mu$ de la corde, sachant que la masse
 volumique du nylon est de $950$ kg/m$^3$. Calculer la vitesse de
@@ -35,6 +75,11 @@ propagation $c$ des ondes transversales sur cette corde.
 > [!question]- 🔭 Aller plus loin — Lycée : Analogie musicale
 > Analogie avec les cordes de guitare : plus une corde est tendue ou
 > fine, plus la note produite est aiguë (fréquence plus grande).
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Analyse dimensionnelle
+> Retrouver $c=\sqrt{F/\mu}$ par analyse dimensionnelle
+> ($[F]=$ kg·m·s$^{-2}$, $[\mu]=$ kg·m$^{-1}$).
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Démonstration PFD
@@ -199,6 +244,24 @@ donnée sur la figure ci-dessus.
 > $v_y(x_P,0) = \partial_t y(x_P,0) = a\,\omega\sin(kx_P+\phi)$, lue sur la pente de la courbe en $x_P$.\\
 >
 > On note $\Phi(x, t) = k(x-ct)+\phi$ la phase. Or $y(x_P,0) \propto \cos(\Phi(x_p, t=0)) = 0$ donc $v_y(x_P,0) \propto \sin(\Phi(x_p, t=0)) = \pm 1$. Donc $v_y(x_P,0)  = \pm \, a\,\omega$.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Musique et lutherie**
+>
+> La hauteur d'une note est liée à la fréquence $f_1=c/(2L)$ : on accorde une guitare en changeant la tension $F$ (clé d'accord) et on choisit des cordes de $\mu$ différents (cordes filées pour les graves).
+>
+> **Cinématique**
+>
+> Décaler un profil de $\lambda/8$ pour $T/8$ revient à un mouvement uniforme de vitesse $c=\lambda/T$ : le motif se comporte comme un mobile.
+>
+> **Génie civil**
+>
+> On estime la tension d'un hauban de pont en le faisant vibrer et en mesurant sa fréquence propre : $F=4\mu L^2f_1^2$.
+>
+> **Électricité et signaux**
+>
+> Un signal sinusoïdal $a\cos(\omega t+\phi)$ est caractérisé par son amplitude, sa pulsation et sa phase. Le déphasage entre deux points de la corde est le même que le déphasage entre deux tensions alternatives retardées.
 
 
 > [!note] 🔗 Voir aussi

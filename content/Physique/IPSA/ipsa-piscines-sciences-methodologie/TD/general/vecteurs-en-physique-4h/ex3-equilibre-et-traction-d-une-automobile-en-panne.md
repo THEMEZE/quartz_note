@@ -5,11 +5,37 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/vecteurs-en-physique-4h/index|⬅ Retour]] · <a href="/pdfs/td4_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_test_Ph110_0.pdf" target="_blank" rel="noopener">📄 PDF</a> · <a href="/pdfs/td4_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/vecteurs-en-physique-4h/index|⬅ Retour]] · <a href="/pdfs/td4_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_test_Ph110_0.pdf" target="_blank" rel="noopener">📄 PDF</a>
 
 ### Exercice 3. Équilibre et traction d'une automobile en panne
 
+*Difficulté ●○○○○ · ⏱ 20 min · Type : Application*
+
 Une automobile en panne est tirée par deux câbles $AB$ et $AC$ exerçant des tensions $\vec{T}_{AB}$ et $\vec{T}_{AC}$. La force résultante $\vec{R}$ doit être appliquée strictement le long de l'axe longitudinal du véhicule (axe $Ox$).
+
+> [!abstract]+ 📚 Prérequis
+> **Projections trigonométriques**
+>
+> Savoir projeter des forces de traction concourantes pour former des équations d'équilibre ou de résultante.
+
+
+> [!info]+ 🎯 Objectifs
+> **Analyse de symétrie de forces**
+>
+> Utiliser les conditions de symétrie géométrique pour simplifier la résolution des problèmes de statique/traction.
+
+
+> [!note]+ 📖 Point de cours
+> **Résultante de forces concourantes**
+>
+> Deux forces de même norme inclinées d'un même angle $\alpha$ par rapport à un axe ont une résultante portée par cet axe égale à $R = 2 T \cos\alpha$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Annulation de la composante transversale**
+>
+> Puisque la résultante est purement axiale, la somme des composantes perpendiculaires à l'axe du véhicule doit être nulle ($R_y = 0$).
+
 
 Une automobile en panne est remorquée à l’aide de deux câbles
 $AB$ et $AC$.
@@ -122,4 +148,8 @@ Déterminer, à l’aide de relations trigonométriques, la tension $T_{AC}$ dan
 >
 > Finalement :
 > $$\alpha\approx43{,}6^\circ$$
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Équilibre avec frottement solide
+> Prendre en compte le coefficient de frottement statique $\mu_s$ des pneus de l'automobile sur le sol.
 

@@ -5,11 +5,54 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 9. (*) Entraînement : chiffres significatifs, incertitudes et propagation *(facultatif)*
 
+*Difficulté ●●●●○ · ⏱ 40 min · Type : Entraînement*
+
 Cet exercice d'entraînement est composé de questions directes (application immédiate des règles) puis de questions plus difficiles (calculs à plusieurs grandeurs mesurées, propagation des incertitudes, changements d'unités).
+
+> [!abstract]+ 📚 Prérequis
+> **Avoir traité l'exercice 6**
+>
+> Connaître 
+>
+>
+> - les règles sur les chiffres significatifs (somme et produit),
+> - l'écriture $x = (x_m \pm \Delta x) \text{ unité}$,
+> - les préfixes du système international ($\text{m}$, $\text{k}$, $\mu$, \dots).
+
+
+> [!info]+ 🎯 Objectifs
+> **S'entraîner jusqu'à l'automatisme**
+>
+> - Compter sans hésiter les chiffres significatifs d'une valeur.
+> - Arrondir correctement une incertitude puis la valeur associée.
+> - Estimer l'incertitude d'un résultat calculé à partir de plusieurs mesures.
+> - Identifier la mesure qui limite la précision d'un résultat.
+
+
+> [!note]+ 📖 Point de cours
+> **Propagation des incertitudes (niveau lycée)**
+>
+> Soit une grandeur $G = k \, \dfrac{x^a \, y^b}{z^c}$ où $k$ est une constante exacte. Par majoration, l'incertitude relative sur $G$ est
+> $$
+> \frac{\Delta G}{G} = |a| \frac{\Delta x}{x} + |b| \frac{\Delta y}{y} + |c| \frac{\Delta z}{z}.
+> $$
+> Pour une somme ou une différence $S = x \pm y$, ce sont les incertitudes **absolues** qui s'additionnent : $\Delta S = \Delta x + \Delta y$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Méthode générale
+> **
+>
+> \begin{itemize}[label=$\star$]
+> \item Toujours calculer d'abord avec toute la précision de la calculatrice, {\bf arrondir seulement à la fin}.
+> \item Arrondir l'incertitude à $1$ chiffre significatif {\bf par excès}, puis arrondir la valeur au même rang décimal.
+> \item Pour un produit ou un quotient, les incertitudes {\bf relatives} s'additionnent (majoration).
+> \end{itemize}
+
 
 **q1.** **Compter les chiffres significatifs (question directe)**\\
 
@@ -25,6 +68,12 @@ Donner le nombre de chiffres significatifs de chaque valeur, puis l'écrire en n
 (d) $0,00700 ~\text{mm}$
 
 (e) $4,05 \times 10^{5} ~\text{Pa}$
+
+> [!note]+ 📖 Point de cours
+> **Rappel**
+>
+> Les zéros situés à gauche du premier chiffre non nul ne sont pas significatifs. Les zéros situés à droite d'un chiffre significatif, après la virgule, le sont.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Astuce
@@ -233,6 +282,16 @@ Trois segments sont mis bout à bout : $\ell_1 = 2,34 \times 10^{-3} ~\text{m}$,
 > (c) $\ell = 1,32 \times 10^{-2} ~\text{m}$ ($3$ chiffres significatifs).
 >
 > (d) Pour une somme, les incertitudes absolues s'additionnent : $\Delta \ell = 3 \times 0,1 = 0,3 ~\text{mm}$. On écrit $\ell = (13,2 \pm 0,3) ~\text{mm}$. Le dernier chiffre significatif ($1$ décimale) est bien celui de l'incertitude : c'est cohérent avec la règle de la somme.
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Comparaison à une valeur de référence
+
+> Dire si un résultat $(x_m \pm \Delta x)$ est compatible avec une valeur tabulée $x_{ref}$, c'est-à-dire si $x_{ref}$ appartient à l'intervalle $[x_m - \Delta x ~;~ x_m + \Delta x]$.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Incertitude-type composée
+
+> Refaire la question $4$ en combinant les incertitudes-types en quadrature : $\left(\dfrac{u(G)}{G}\right)^2 = \sum_i \left(a_i \dfrac{u(x_i)}{x_i}\right)^2$ et comparer avec la majoration.
 
 
 > [!note] 🔗 Voir aussi

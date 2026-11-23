@@ -5,13 +5,71 @@ tags:
   - gravitation-optique-geometrique-et-diffusion-de-la-lumiere
 ---
 
-[[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Astrophysique_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]]
 
 ### Exercice 1. Balance de Cavendish : peser la Terre et mesurer G
+
+*⭐ Indispensable · Difficulté ●●●●○ · ⏱ 3 h (manipulation 2 h + analyse 1 h) · Type : TP expérimental avec critique des mesures*
 
 En 1798, Henry Cavendish mesure l'attraction gravitationnelle entre deux boules de plomb de quelques dizaines de centimètres à l'aide d'un fléau suspendu à un fil de torsion. Il en déduit la densité moyenne de la Terre. Sa mesure ne donne pas $G$ directement ; c'est le lien $g=GM_T/R_T^2$ qui permet, une fois $G$ connue, de « peser » la Terre.
 
 Dans ce TP, on utilise une balance de Cavendish de démonstration (deux petites masses $m$ au bout d'un fléau, deux grosses masses $M$ mobiles, miroir et pointeur laser) pour **mesurer $G$**, évaluer une incertitude, et identifier les erreurs systématiques. La valeur de $G$ obtenue est réutilisée dans le TP A3 pour déterminer la densité du Soleil.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> Loi de gravitation de Newton, moment d'une force, oscillateur de torsion $\ddot\theta+\dfrac{\kappa}{I}\theta=0$, méthode différentielle pour les incertitudes (TD2 exercices 4, 8 et 9).
+
+
+> [!info]+ 🎯 Objectifs
+> **Mesurer une force de $10^{-10}\ \text{N}$**
+>
+> Comprendre comment un instrument aussi sensible impose une critique poussée des erreurs systématiques, et savoir chiffrer une incertitude combinée.
+
+
+> [!note]+ 🧰 Matériel
+> Balance de torsion type Cavendish (fléau avec 2 masses $m$, fil, miroir), boîtier de protection
+>
+> 2 grosses masses de plomb $M\approx1{,}5\ \text{kg}$ montées sur un support tournant
+>
+> Pointeur laser (classe 2) et écran gradué (ou grande feuille millimétrée) à $L\approx3\ \text{m}$
+>
+> Chronomètre (ou caméra du smartphone), mètre ruban, pied à coulisse
+>
+> Table stable posée sur une dalle ou sur des tasseaux, éloignée des passages (vibrations)
+
+
+> [!danger] 🦺 Sécurité
+> **Plomb**
+>
+> Les boules de plomb ne doivent pas être manipulées à main nue ; se laver les mains après manipulation.
+>
+> **Laser**
+>
+> Pointeur laser de classe 2 ($<1\ \text{mW}$) uniquement. Ne jamais l'orienter vers une personne, une fenêtre ou le ciel (le pointage d'un laser vers un aéronef est un délit).
+>
+> **Instrument fragile**
+>
+> Le fil de torsion est extrêmement fin : ne jamais toucher le fléau quand il est déverrouillé.
+
+
+> [!note]+ 🔬 Manipulation
+> **1. Mise en place et attente**
+>
+> Installer la balance sur une table stable, laser et écran à $L\approx3\ \text{m}$ du miroir. Laisser le fléau se stabiliser 15 à 30 min sans toucher la table ni marcher à proximité. Mesurer $r$ (distance d'une petite masse à l'axe), $b$ (distance centre à centre entre une petite masse et une grosse masse la plus proche), $M$ et $L$.
+>
+> **2. Position d'équilibre initiale**
+>
+> Placer les grosses masses en position A. Noter la position du spot toutes les 30 s pendant $\approx2$ périodes. Ajuster la position d'équilibre $s_A$ comme le milieu des extrema successifs (moyenne de deux extrema consécutifs).
+>
+> **3. Retournement**
+>
+> Faire pivoter délicatement le support des grosses masses en position B (côté opposé). Noter la position du spot toutes les 30 s pendant $\approx2$ périodes et déterminer $s_B$. Le déplacement $\Delta s=|s_B-s_A|$ correspond à une rotation du fléau de $2\theta$.
+>
+> **4. Période d'oscillation**
+>
+> Mesurer la période $T$ des oscillations du fléau sur $\approx3$ périodes (filmer le spot). Reprendre l'ensemble (retournements A, B, A, B) pour évaluer la dispersion.
+
 
 **q1.** Modèle. Deux masses $m$ sont placées aux extrémités d'un fléau de longueur $2r$ (masse négligée) suspendu à un fil de constante de torsion $\kappa$. Chaque petite masse subit de la part de la grosse masse la plus proche, à la distance $b$, la force $GMm/b^2$ (on néglige d'abord l'attraction de la grosse masse sur l'autre petite masse). À l'équilibre le fléau a tourné de l'angle $\theta$. Écrire l'équation d'équilibre des moments et la période $T$ des petites oscillations. En déduire
 $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
@@ -138,6 +196,20 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > $g=\dfrac{GM_T}{R_T^2}\Rightarrow M_T=\dfrac{gR_T^2}{G}=\dfrac{9{,}81\times(6{,}371\times10^6)^2}{6{,}674\times10^{-11}}\approx5{,}97\times10^{24}\ \text{kg}$.
 > $\rho_T=\dfrac{M_T}{\frac{4}{3}\pi R_T^3}=\dfrac{3g}{4\pi GR_T}\approx5{,}51\times10^3\ \text{kg}\cdot\text{m}^{-3}$.
 > La croûte est constituée de roches de densité $2{,}7$ à $3{,}3$ ; la densité moyenne de $5{,}5$ impose donc un intérieur plus dense (noyau métallique de densité $10$ à $13$ vers le centre). C'est la conclusion de Cavendish en 1798 : la Terre n'est pas creuse et est bien plus dense que ses roches de surface.
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Gravimétrie aéroportée**
+>
+> La gravité varie avec l'altitude ($\approx3{,}1\times10^{-6}\ \text{m}\cdot\text{s}^{-2}$ par mètre) et avec la géologie. Les gravimètres embarqués et les centrales inertielles corrigent ces effets. Discuter pourquoi un instrument capable de mesurer $10^{-10}\ \text{N}$ doit être isolé des vibrations, et comparer avec un instrument d'avion.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Méthode dynamique et méthode d'accélération
+> Au lieu d'attendre l'équilibre, on peut mesurer la variation de période $T$ quand les grosses masses sont en position A ou B, ou l'accélération angulaire initiale du fléau. Ces méthodes évitent l'attente de l'équilibre mais sont plus sensibles au bruit.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Torsion non linéaire et frottements internes
+> Le fil de torsion présente de l'anélasticité : la position d'équilibre dérive lentement. Ajuster les données par une loi $s(t)=s_\infty+A\,e^{-t/\tau}\cos(2\pi t/T+\varphi)+\text{dérive linéaire}$.
 
 
 > [!note] 🔗 Voir aussi

@@ -5,13 +5,65 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/index|⬅ Retour]] · <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/index|⬅ Retour]] · <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 4. Abscisse curviligne et rayon de courbure d'une trajectoire parabolique
+
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 35 min · Type : Entraînement / Application complète*
 
 Dans le plan $Oxy$, les coordonnées d'une particule sont données en fonction du temps par
 $$\begin{cases}x(t)=b\,t\\ y(t)=c\,t\,(t-1)\end{cases}$$
 avec $b=2$ (S.I.) et $c=4$ (S.I.).
+
+> [!question]+ 🎣 Accroche
+> **Une accélération constante, des composantes variables**
+>
+> *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
+>
+> *Un projectile lancé dans le vide subit une accélération constante $\vec g$. Pourtant, au sommet de sa trajectoire, on dit qu'il n'a « plus d'accélération tangentielle ». Comment l'accélération peut-elle être constante en vecteur et pourtant « changer » ?*
+>
+> **Idée clé : $\vec a$ est un vecteur fixe, mais $(\vec\tau,\vec n)$ tourne.** Les composantes $a_T=\vec a\cdot\vec\tau$ et $a_N=\vec a\cdot\vec n$ dépendent de l'angle entre $\vec a$ et la tangente. Au sommet, $\vec a\perp\vec v$ : $a_T=0$ et $a_N=a$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Cinématique cartésienne**
+>
+> $\vec v=(\dot x,\dot y)$, $\vec a=(\ddot x,\ddot y)$, élimination du temps pour trouver la trajectoire.
+>
+> **Composantes tangentielle et normale**
+>
+> $a_T=\dfrac{\vec a\cdot\vec v}v$, $a_N=\dfrac{|a_xv_y-a_yv_x|}v=\sqrt{a^2-a_T^2}$, $R=\dfrac{v^2}{a_N}$.
+>
+> **Abscisse curviligne**
+>
+> $s(t)=\displaystyle\int_0^t\|\vec v\|\,\mathrm dt'$, avec $\displaystyle\int\sqrt{1+u^2}\,\mathrm du=\tfrac12\left(u\sqrt{1+u^2}+\operatorname{arsinh}u\right)$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Mener un calcul complet de $a_T$, $a_N$, $R$ et $s$ à partir d'une loi horaire**
+>
+> Éliminer le temps, calculer $\vec v$, $\vec a$, leurs composantes tangentielle et normale, le rayon de courbure en un instant donné, vérifier avec la formule en $y(x)$ et calculer la longueur parcourue.
+
+
+> [!note]+ 📖 Point de cours
+> **Mouvement à accélération constante**
+>
+> Si $\vec a$ est un vecteur constant, la trajectoire est une parabole (ou une droite si $\vec v(0)\parallel\vec a$). $\vec a$ est constant, mais $a_T=\vec a\cdot\vec\tau$ et $a_N=\vec a\cdot\vec n$ varient avec la direction de $\vec\tau$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Élimination du temps**
+>
+> $t=x/b$ puis $y=c\,\dfrac xb\left(\dfrac xb-1\right)=\dfrac c{b^2}x^2-\dfrac cbx$.
+>
+> **Produits scalaire et vectoriel plans**
+>
+> $\vec a\cdot\vec v=a_xv_x+a_yv_y$, $|\vec a\wedge\vec v|=|a_xv_y-a_yv_x|$.
+>
+> **Primitive de $\sqrt{1+u^2}$**
+>
+> $F(u)=\tfrac12\left(u\sqrt{1+u^2}+\ln(u+\sqrt{1+u^2})\right)$, impaire : $\int_{-2}^0\sqrt{1+u^2}\,\mathrm du=F(2)\approx2{,}958$.
+
 
 **q1.** (a) Déterminer l'équation de la trajectoire et la représenter sur un graphique.
 
@@ -91,6 +143,24 @@ avec $b=2$ (S.I.) et $c=4$ (S.I.).
 > **(f) Lecture graphique**
 >
 > $s(t)$ est l'aire sous la courbe $v(t)$ : $v(0)=4{,}47$, $v(0{,}5)=2$, $v(1)=4{,}47\ \mathrm{m/s}$ ; la formule des trapèzes sur $[0;0{,}5]$ donne $\dfrac{4{,}47+2}2\times0{,}5\approx1{,}62$, proche de $1{,}48$ ; la courbe $v(t)$ est convexe, la formule des trapèzes surestime légèrement l'aire $\surd$.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mécanique du vol et balistique**
+>
+> Le mouvement d'un projectile dans le vide est à accélération constante $\vec g$ ; $a_T$ et $a_N$ y sont les composantes de $\vec g$ sur la trajectoire (exercice 8).
+>
+> **Mathématiques**
+>
+> Longueur d'un arc de parabole : intégrale de $\sqrt{1+u^2}$, qui fait apparaître l'argument sinus hyperbolique.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Centre de courbure et vérification numérique
+> Calculer le centre de courbure à $t=0{,}5$ s : $C=(1;-1)+0{,}5\,\vec u_y=(1;-0{,}5)$. Vérifier avec Python (\texttt{np.gradient}) que $R(t)$ calculé numériquement coïncide avec $R=\dfrac{(4+(8t-4)^2)^{3/2}}{16}$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Mouvement uniforme sur la même parabole
+> Comparer ce mouvement (accélération constante, vitesse variable) à un mouvement sur la même parabole à vitesse constante $v_0=2\ \mathrm{m/s}$ (exercice 2) : l'accélération au sommet est la même ($8\ \mathrm{m\,s^{-2}}$) ; l'accélération en $x=0$ est différente. Écrire la loi horaire $s(t)=v_0t$ puis $x(t)$.
 
 
 > [!note] 🔗 Voir aussi

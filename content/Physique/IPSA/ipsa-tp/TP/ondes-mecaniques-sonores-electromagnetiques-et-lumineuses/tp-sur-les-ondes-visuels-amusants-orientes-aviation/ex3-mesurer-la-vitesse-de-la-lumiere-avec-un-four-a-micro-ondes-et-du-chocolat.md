@@ -5,13 +5,65 @@ tags:
   - ondes-mecaniques-sonores-electromagnetiques-et-lumineuses
 ---
 
-[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Generale_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]]
 
 ### Exercice 3. Mesurer la vitesse de la lumière avec un four à micro-ondes et du chocolat
+
+*Difficulté ●●○○○ · ⏱ 1 h 30 · Type : TP expérimental amusant*
 
 Un four à micro-ondes est une cavité métallique dans laquelle une onde électromagnétique de fréquence $f=2{,}45\ \text{GHz}$ forme une **onde stationnaire** : des nœuds où le champ électrique est nul et des ventres où il est maximal. Les aliments chauffent aux ventres et restent froids aux nœuds. Si l'on empêche le plateau de tourner, une tablette de chocolat (ou de guimauves) présente des taches fondues régulièrement espacées.
 
 La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence indiquée sur l'étiquette du four, on obtient la vitesse de la lumière $c=\lambda f$ à quelques pourcents près.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> Ondes stationnaires (nœuds, ventres, espacement $\lambda/2$), $c=\lambda f$, TD1 exercices 4 et 5.
+
+
+> [!info]+ 🎯 Objectifs
+> **De la mesure d'une distance à une vitesse**
+>
+> Comprendre pourquoi $d=\lambda/2$, calculer $c$ avec une incertitude, comparer avec la valeur de référence $c=2{,}998\times10^{8}\ \text{m}\cdot\text{s}^{-1}$.
+
+
+> [!note]+ 🧰 Matériel
+> Four à micro-ondes (fréquence indiquée sur l'étiquette au dos ou dans la notice, en général $2450\ \text{MHz}$)
+>
+> Grande tablette de chocolat (au moins $20\ \text{cm}\times15\ \text{cm}$), ou guimauves alignées, ou tranches de fromage à raclette
+>
+> Assiette en verre ou en céramique sans dorure, verre d'eau de $100\ \text{mL}$
+>
+> Règle graduée au millimètre, smartphone pour photographier
+
+
+> [!danger] 🦺 Sécurité
+> **Ne pas manger**
+>
+> Le chocolat et les guimauves utilisés en TP ne sont pas consommés (risque de points chauds et de contamination du four).
+>
+> **Four vide interdit**
+>
+> Un four à micro-ondes ne doit jamais fonctionner à vide : toujours laisser le chocolat (ou un verre de $100\ \text{mL}$ d'eau) dans l'enceinte. Durée maximale : $20$ à $30$ s à faible puissance. Ne pas utiliser d'objets métalliques.
+>
+> **Brûlures**
+>
+> Le chocolat fondu peut être très chaud : attendre $30$ s avant de retirer le support (avec un gant).
+
+
+> [!note]+ 🔬 Manipulation
+> **1. Immobiliser le plateau**
+>
+> Retirer le plateau tournant et son support, retourner un bol en verre au fond du four pour poser l'assiette. Le chocolat ne doit pas tourner pendant le chauffage.
+>
+> **2. Chauffage court**
+>
+> Poser le chocolat et le verre d'eau, puis chauffer à puissance moyenne pendant $20$ à $30$ s jusqu'à voir les premiers points fondus, sans laisser le chocolat fondre en totalité.
+>
+> **3. Mesure**
+>
+> Retirer rapidement l'assiette. Marquer le centre de chaque tache fondue, placer une règle le long de la ligne joignant les taches et mesurer la distance entre le premier et le dernier centre pour $N$ intervalles. Photographier avec la règle.
+
 
 **q1.** Justifier que les taches fondues sont espacées de $\lambda/2$ et non de $\lambda$. On rappelle que la puissance absorbée est proportionnelle à $E^2$ et que $E(x,t)=E_0\sin(kx)\cos(\omega t)$.
 
@@ -77,6 +129,20 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 >
 > (a) $\lambda=\dfrac{2{,}998\times10^{8}}{121{,}5\times10^{6}}=2{,}47\ \text{m}$ ; l'antenne quart d'onde mesure $61{,}7\ \text{cm}$. (b) $\lambda=\dfrac{2{,}998\times10^{8}}{9{,}4\times10^{9}}=3{,}19\ \text{cm}$. (c) $\lambda=19{,}0\ \text{cm}$.
 > Pour le radar météo, les gouttes ($1$–$5\ \text{mm}$) sont petites devant $3{,}2\ \text{cm}$ : c'est le régime de Rayleigh, avec une réflectivité radar proportionnelle à $D^6$ : les grosses gouttes (grêle, forte pluie) renvoient très fortement l'énergie et sont détectées de loin. Les gouttes de nuage ($\approx10\ \mu\text{m}$) sont pratiquement invisibles. C'est le même phénomène que la diffusion du ciel bleu (TP A4), avec une longueur d'onde $10^{4}$ fois plus grande.
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Antennes, radars et longueurs d'onde**
+>
+> La taille d'une antenne est liée à la longueur d'onde. Fréquence d'urgence aviation $121{,}5\ \text{MHz}$ : $\lambda=2{,}47\ \text{m}$, antenne quart d'onde $\approx62\ \text{cm}$ (les petites antennes « lame » sur le fuselage). Radar météo de bord (bande X, $9{,}4\ \text{GHz}$) : $\lambda=3{,}2\ \text{cm}$. GPS L1 ($1575{,}42\ \text{MHz}$) : $\lambda=19\ \text{cm}$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Modes de la cavité
+> Une cavité parallélépipédique de côtés $a$, $b$, $h$ admet des modes $(m,n,p)$ de fréquence $f=\dfrac{c}{2}\sqrt{\left(\dfrac{m}{a}\right)^2+\left(\dfrac{n}{b}\right)^2+\left(\dfrac{p}{h}\right)^2}$. Pour un four réel, plusieurs modes sont excités : on ne voit pas une onde stationnaire unique, d'où les taches irrégulières.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Pourquoi 2,45 GHz ?
+> La fréquence est dans la bande ISM (industrielle, scientifique, médicale). L'absorption par l'eau liquide est importante à cette fréquence sans être maximale ; elle permet de chauffer en profondeur de l'ordre de quelques centimètres.
 
 
 > [!note] 🔗 Voir aussi

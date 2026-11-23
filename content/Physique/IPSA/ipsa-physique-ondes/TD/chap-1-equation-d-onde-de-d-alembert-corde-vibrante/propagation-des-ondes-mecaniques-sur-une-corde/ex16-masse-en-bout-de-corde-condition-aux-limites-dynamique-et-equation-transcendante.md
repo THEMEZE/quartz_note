@@ -5,15 +5,51 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 16. Masse en bout de corde : condition aux limites dynamique et équation transcendante *(facultatif)*
+
+*Difficulté ●●●●● · ⏱ 50 min · Type : Approfondissement / Problème de synthèse*
 
 Une corde homogène de longueur $L$, de masse linéique $\mu$ (masse totale $m=\mu L$), tendue avec la force $F$
 ($c=\sqrt{F/\mu}$), est fixée en $x=0$. Son autre extrémité $x=L$ est attachée à une **masse ponctuelle** $M$ qui
 peut se déplacer transversalement sans frottement (par exemple le long d'une tige verticale lisse) ; on néglige la pesanteur.
 Pour de petits mouvements, la tension reste égale à $F$ et la composante transversale de la force exercée par la corde
 sur la masse est $-F\,\partial_xy(L,t)$.
+
+> [!question]+ 🎣 Accroche
+> **Entre « fixe » et « libre » : que se passe-t-il avec une masse ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Dans le cours, une extrémité est soit **fixe** ($y=0$), soit **libre** ($\partial_xy=0$). Une masse $M$ attachée au bout de la corde est un cas intermédiaire : si $M\to\infty$, elle ne bouge pas (extrémité fixe) ; si $M\to0$, elle n'oppose aucune inertie (extrémité libre). Que valent les fréquences propres pour une masse $M$ quelconque ? Sont-elles encore multiples d'un fondamental ?*
+>
+> **Idée clé : une condition aux limites peut être dynamique.** Au lieu d'imposer $y$ ou $\partial_xy$, on applique la loi de Newton à la masse : $M\,\partial_t^2y(L,t)=-F\,\partial_xy(L,t)$. Pour un mode $y=A\sin(kx)\cos(\omega t)$ avec $\omega=ck$, cela donne l'**équation transcendante**
+> $$kL\,\tan(kL)=\frac mM,\qquad m=\mu L,$$
+> qu'on résout graphiquement. Les fréquences propres ne sont plus des multiples entiers d'un fondamental ; les cas limites $M\to\infty$ et $M\to0$ redonnent respectivement la corde fixe-fixe et la corde fixe-libre.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Loi de Newton pour un point**
+>
+> Pour la masse $M$ : $M\,\ddot y_M=\sum F_{\text{transv}}$. La force de la corde sur l'extrémité est $-F\sin\alpha\simeq-F\,\partial_xy(L,t)$ pour des angles $\alpha$ petits.
+>
+> **Résolution graphique d'une équation transcendante**
+>
+> Poser $u=kL$ et chercher l'intersection des courbes $u\mapsto\tan u$ et $u\mapsto\dfrac{m/M}u$ : la première est croissante par branches, la seconde décroissante. Il y a exactement une solution par intervalle $](n-1)\pi,(n-1)\pi+\tfrac\pi2[$.
+>
+> **Développements limités de $\tan$**
+>
+> $\tan u\simeq u+\dfrac{u^3}3$ pour $u\ll1$, donc $u\tan u\simeq u^2\left(1+\dfrac{u^2}3\right)$. Autour de $n\pi$ : $\tan(n\pi+\delta)=\tan\delta\simeq\delta$.
+>
+> **Cas limites**
+>
+> $M\to\infty$ : $m/M\to0$, $u\tan u=0$, $u=n\pi$. $M\to0$ : $m/M\to\infty$, $\tan u\to\infty$, $u=(2n-1)\pi/2$. À vérifier systématiquement.
+>
+> **Masse effective de Rayleigh**
+>
+> Un système continu de masse $m$ oscillant lentement avec un profil linéaire équivaut à une masse ponctuelle $m/3$ ; ici $\omega^2\simeq\dfrac F{L(M+m/3)}$.
+
 
 **q1.** (a) Écrire la condition aux limites en $x=0$ et la condition dynamique en $x=L$.
 
@@ -98,6 +134,10 @@ sur la masse est $-F\,\partial_xy(L,t)$.
 > $y_M(t)=A\sin(kL)\cos\omega t$ : comparez $\sin u_1$ à la valeur maximale $1$.
 
 
+> [!question]- 🔭 Aller plus loin — CPGE : Deux masses aux extrémités
+> Pour une corde avec une masse $M_1$ en $x=0$ et $M_2$ en $x=L$ (même condition dynamique à gauche, de signe opposé), montrer que les fréquences propres vérifient $\tan kL=\dfrac{(M_1+M_2)k\mu}{M_1M_2k^2-\mu^2}$. Retrouver le cas $M_1=M_2\to\infty$.
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Orthogonalité modifiée des modes
 > Les modes $\sin(u_nx/L)$ ne sont plus orthogonaux au sens usuel $\int_0^Ly_ny_p\,\mathrm dx=0$ : montrer que la condition correcte est $\int_0^L\mu\,y_ny_p\,\mathrm dx+M\,y_n(L)y_p(L)=0$ (la masse contribue à l'inertie du système). Calculer la norme d'un mode et en déduire l'énergie de chaque mode.
 
@@ -121,6 +161,24 @@ sur la masse est $-F\,\partial_xy(L,t)$.
 > **(h)-(i) Amplitudes et limites**
 >
 > Le mode $n$ a pour profil $\sin(u_nx/L)$ : en $x=L$, l'amplitude vaut $A\sin u_n$. Pour $m/M=0{,}1$ et $n=1$ : $\sin0{,}311\approx0{,}306$, la masse oscille avec une amplitude trois fois plus petite que celle d'un ventre ($=A$). Pour le mode 2, $\sin(3{,}173)\approx-0{,}031$ : la masse est presque à un **nœud** (corde quasi fixe-fixe). Limites : $M\to0$, $u_n\to(2n-1)\pi/2$ et $|\sin u_n|\to1$ : ventre (extrémité libre) ; $M\to\infty$, $u_n\to n\pi$ et $\sin u_n\to0$ : nœud (extrémité fixe). Le coefficient $|\sin u_n|$ mesure donc à quel point la masse est « libre ». Pour $m/M=1$ et $n=1$ ($u_1\approx0{,}860$) : $\sin u_1\approx0{,}76$, la masse oscille avec $76\,\%$ de l'amplitude maximale $A$ du mode.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mécanique (ressorts réels)**
+>
+> La masse d'un ressort n'est pas négligeable : un ressort de masse $m_r$ portant une masse $M$ a pour pulsation $\omega^2=k/(M+m_r/3)$. C'est le même résultat que celui de l'exercice.
+>
+> **Acoustique**
+>
+> Un tuyau fermé par un piston mobile, un résonateur de Helmholtz, un haut-parleur chargé : mêmes conditions aux limites dynamiques, avec un **impédance** de charge.
+>
+> **Génie civil**
+>
+> Un câble de pont portant une masse concentrée (cabine de téléphérique, panneau) ; une poutre en console avec une masse en bout (mât d'antenne, éolienne) : les fréquences propres se calculent avec la même équation transcendante.
+>
+> **Mathématiques**
+>
+> Problème de Sturm-Liouville avec condition aux limites dépendant du paramètre propre ($\omega^2$) ; équations transcendantes et théorème des valeurs intermédiaires.
 
 
 > [!note] 🔗 Voir aussi

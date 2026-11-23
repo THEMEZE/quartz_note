@@ -5,13 +5,65 @@ tags:
   - ondes-mecaniques-sonores-electromagnetiques-et-lumineuses
 ---
 
-[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Generale_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]]
 
 ### Exercice 5. Polarisation : écrans, lunettes de pilote, reflets et plastiques sous contrainte
+
+*Difficulté ●●●○○ · ⏱ 2 h · Type : TP expérimental visuel*
 
 Les lunettes de soleil polarisantes éliminent les reflets sur l'eau ou sur une piste mouillée, mais elles peuvent rendre un écran LCD noir quand on incline la tête. Dans un cockpit, cela pose la question de la lisibilité des instruments. Ce TP étudie la polarisation de la lumière avec trois objets du quotidien : un écran, une paire de lunettes polarisantes, et des morceaux de plastique transparent.
 
 On vérifie la loi de Malus, on explique les reflets par l'angle de Brewster, on observe les couleurs dues à la contrainte dans des plastiques (visibles aussi dans certains pare-brise), et on discute l'orientation de la polarisation des écrans avec des lunettes de pilote.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> Onde transversale : polarisation rectiligne d'une onde plane (on retrouve la notion de polarisation des ondes sur la corde, TD1 exercice 0), loi de Malus $I=I_0\cos^2\theta$, lois de Snell-Descartes.
+
+
+> [!info]+ 🎯 Objectifs
+> **Manipuler une onde transversale**
+>
+> Comprendre qu'un polariseur sélectionne une direction du champ, que la réflexion polarise la lumière, et que la contrainte mécanique rend certains plastiques biréfringents.
+
+
+> [!note]+ 🧰 Matériel
+> Écran LCD blanc (téléphone, tablette, ordinateur), luminosité maximale
+>
+> Lunettes de soleil polarisantes ou film polarisant, et un second polariseur
+>
+> Capteur de luminosité du smartphone (application phyphox, lumière) ou luxmètre
+>
+> Rapporteur ou disque gradué, ruban adhésif
+>
+> Objets plastiques transparents : boîtier de CD, règle en plexiglas, ruban adhésif transparent, sac plastique, couvercle de boîte, cuillère en plastique
+>
+> Bac d'eau ou plateau brillant, lampe ou fenêtre pour observer les reflets
+
+
+> [!danger] 🦺 Sécurité
+> **Soleil**
+>
+> Ne jamais regarder le Soleil à travers un polariseur : les lunettes polarisantes ne protègent pas la vue contre le Soleil direct.
+
+
+> [!note]+ 🔬 Manipulation
+> **1. Loi de Malus**
+>
+> Poser le capteur de lumière sur l'écran LCD blanc, recouvert du polariseur ou des lunettes. Tourner le polariseur par pas de $15^\circ$ de $0^\circ$ à $180^\circ$ et relever l'éclairement. Repérer l'angle où l'intensité est maximale et minimale.
+>
+> **2. Reflets et angle de Brewster**
+>
+> Observer le reflet d'une lampe sur l'eau (ou sur un carrelage brillant) à travers le polariseur pour différents angles d'observation (de $20^\circ$ à $80^\circ$ par rapport à la verticale). Repérer l'angle de meilleure extinction du reflet et la direction du polariseur à ce moment.
+>
+> **3. Plastiques sous contrainte**
+>
+> Placer un objet en plastique transparent entre deux polariseurs croisés, devant l'écran blanc. Déformer légèrement l'objet (plier la règle, presser une cuillère en plastique) et observer les franges colorées. Superposer plusieurs couches de ruban adhésif.
+>
+> **4. Orientation de l'écran**
+>
+> Pour chaque appareil disponible (téléphone, tablette, ordinateur, écran de montre), déterminer l'angle du polariseur (lunettes) pour lequel l'écran est éteint, en mode portrait et en mode paysage.
+
 
 **q1.** Loi de Malus. Vérifier que les données suivent la loi $I=I_{\max}\cos^2\theta+I_{\min}\sin^2\theta$ avec $I_{\max}=100$ et $I_{\min}=3$. Calculer le rapport d'extinction $I_{\max}/I_{\min}$. Que vaudrait $I$ à $45^\circ$ pour un polariseur idéal ?
 
@@ -99,4 +151,18 @@ On vérifie la loi de Malus, on explique les reflets par l'angle de Brewster, on
 > $P=\dfrac{85-15}{85+15}=0{,}70$. Pour une diffusion de Rayleigh par des dipôles isotropes, à $\gamma=90^\circ$ du Soleil : $P=1$. Aux autres angles : $P(45^\circ)=\dfrac{\sin^245^\circ}{1+\cos^245^\circ}=\dfrac{0{,}5}{1{,}5}=0{,}33$.
 > Les valeurs mesurées ($\approx0{,}7$ à $0{,}8$ dans un ciel très clair) sont plus faibles parce que : la molécule d'air n'est pas un dipôle isotrope (léger dépolarisant, $\approx5\ \%$), une partie de la lumière a subi plusieurs diffusions (polarisation brouillée), la lumière réfléchie par le sol est reprise par l'atmosphère, et les aérosols (diffusion de Mie) sont peu polarisants. Dans une brume épaisse, $P$ tombe à quelques pourcents.
 > Application : la polarisation du ciel donne la direction du Soleil même sous un ciel partiellement couvert (boussole polarisée utilisée par les abeilles et par des navigateurs polaires, pour les vols dans les régions où les compas magnétiques sont peu fiables).
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Lunettes polarisantes dans le cockpit**
+>
+> Les lunettes polarisantes suppriment les reflets sur l'eau et sur les pistes mouillées, mais peuvent rendre certains écrans LCD (instruments de bord, tablettes de navigation) illisibles selon l'orientation de la tête ou de l'écran. Beaucoup de constructeurs ajoutent une lame quart d'onde pour éviter cet effet. Certains pare-brise en plexiglas montrent des motifs colorés à travers des lunettes polarisantes : ce sont les contraintes internes, sans danger, et non un défaut.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Polarisations circulaire et elliptique
+> Une lame quart d'onde convertit la polarisation rectiligne en polarisation circulaire. Un écran avec lame quart d'onde reste lisible à travers un polariseur quel que soit l'angle : l'intensité est divisée par $2$ mais ne dépend pas de l'angle.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Formules de Fresnel
+> Les coefficients de réflexion $r_s$ et $r_p$ donnent la réflectivité en fonction de l'angle ; $r_p=0$ à l'angle de Brewster.
 

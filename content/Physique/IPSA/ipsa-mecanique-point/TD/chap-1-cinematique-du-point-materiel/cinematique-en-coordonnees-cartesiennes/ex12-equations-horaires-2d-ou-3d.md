@@ -9,6 +9,8 @@ tags:
 
 ### Exercice 12. (*) Équations horaires 2D ou 3D *(facultatif)*
 
+*Difficulté ●●●●○ · ⏱ 45 min · Type : Entraînement / Approfondissement*
+
 Un mobile assimilé à un point matériel $M$ est en mouvement dans un référentiel galiléen $\mathcal R$
 d'origine $O$ et muni d'un repère cartésien $(Oxyz)$. Il est repéré par ses coordonnées cartésiennes
 suivantes, dans six cas indépendants ($a,b,c$ désignant des constantes) :
@@ -24,6 +26,79 @@ $$
 $$
 Déterminer, pour chaque cas, le vecteur position, le vecteur vitesse et le vecteur accélération du point $M$,
 ainsi que leur norme, et caractériser le mouvement obtenu.
+
+> [!question]+ 🎣 Accroche
+> **Lire un mouvement dans une formule**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *On vous donne six formules, sans dessin. En 10 secondes, peut-on dire sans rien dériver lesquelles décrivent une droite, un cercle, une spirale ? Que signifie « $\cos(2t^2)$ » : un cercle parcouru de plus en plus vite ? Quel mouvement est-il le plus facile à reconnaître dans quel repère ?*
+>
+> **Idée clé : savoir lire une loi horaire avant de la dériver.** Pour un mouvement plan, on identifie $r(t)=\sqrt{x^2+y^2}$ et $\theta(t)$ tels que $x=r\cos\theta$, $y=r\sin\theta$ :
+>
+>
+> - $r$ constant, $\dot\theta$ constant : **cercle parcouru uniformément** ;
+> - $r$ constant, $\dot\theta$ variable : **cercle parcouru non uniformément** (accélération tangentielle en plus de la centripète) ;
+> - $r$ croissant, $\dot\theta$ constant : **spirale** ;
+> - toutes les coordonnées affines ou quadratiques en $t$ : **mouvement rectiligne** uniforme ou uniformément varié.
+>
+>
+> La méthode de calcul est unique (dériver terme à terme) ; la difficulté vient de la **dérivée d'un produit** et de la **dérivée composée**.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Boîte à outils de dérivation cartésienne**
+>
+> En base cartésienne fixe $(\vec\imath,\vec\jmath,\vec k)$, on dérive terme à terme : $\vec v=\dot x\,\vec\imath+\dot y\,\vec\jmath+\dot z\,\vec k$ et $\vec a = \ddot x\,\vec\imath+\ddot y\,\vec\jmath+\ddot z\,\vec k$, avec $\|\vec v\|=\sqrt{\dot x^2+\dot y^2+\dot z^2}$ et $\|\vec a\|=\sqrt{\ddot x^2+\ddot y^2+\ddot z^2}$. Il faut maîtriser la dérivation d'un produit de fonctions du temps (règle de Leibniz), utile dès que $t$ apparaît à la fois en facteur et à l'intérieur d'un $\cos$ ou d'un $\sin$ (cas 5 et 6 ci-dessous).
+>
+> **Décomposition polaire d'un mouvement plan**
+>
+> Pour un mouvement plan, il est souvent instructif de repérer $r(t)=\|\overrightarrow{OM}\|$ et $\theta(t)$ tels que $x=r\cos\theta$, $y=r\sin\theta$, même si le calcul est mené in fine en cartésien : cela permet d'anticiper et de vérifier les résultats obtenus, notamment via $\|\vec v\|^2 = \dot r^2 + r^2\dot\theta^2$ et les composantes radiale/orthoradiale de l'accélération, $a_r = \ddot r - r\dot\theta^2$ et $a_\theta = r\ddot\theta+2\dot r\dot\theta$ (résultats de cours qui seront redémontrés plus tard, mais utilisables ici comme moyen de vérification).
+
+
+> [!info]+ 🎯 Objectifs
+> **Automatiser le calcul vectoriel et reconnaître des mouvements-types**
+>
+> Savoir dériver rapidement et sans erreur des lois horaires variées (y compris avec $t$ apparaissant à plusieurs endroits, cas 5 et 6), et surtout savoir **reconnaître, derrière le calcul**, un mouvement-type déjà rencontré (rectiligne uniforme, rectiligne uniformément varié, circulaire uniforme) ou un mouvement nouveau (circulaire non uniforme, spirale) qui anticipe les prochains chapitres du cours.
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+> **Exercice de synthèse et de reconnaissance de formes**
+>
+> Cet exercice, plus long et facultatif, vise à entraîner le réflexe de calcul mais surtout la **lecture physique** d'une loi horaire : au-delà du résultat brut, on attend des étudiants qu'ils identifient à chaque fois la nature du mouvement (translation uniforme, MRUV, circulaire uniforme ou non, spirale). Les cas 5 et 6, plus délicats (dérivée d'un produit avec argument variable dans le cosinus/sinus), sont volontairement placés en fin d'exercice et gagnent à être reliés, en aparté, aux formules polaires $a_r, a_\theta$ vues en cours, sans exiger leur redémonstration ici.
+
+
+> [!note]+ 📖 Point de cours
+> **Circulaire uniforme vs. circulaire non uniforme**
+>
+> Un mouvement à trajectoire circulaire ($r=$ cte) est **uniforme** si $\dot\theta=\omega$ est constant (cas 3), et **non uniforme** si $\dot\theta$ varie avec le temps (cas 5, où $\theta(t)=2t^2$ donne $\dot\theta=4t$, croissant) : dans ce dernier cas apparaît une accélération tangentielle non nulle, en plus de l'accélération centripète.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Dérivée d'un produit : $(uv)'=u'v+uv'$**
+>
+> Pour $x=2t\cos(4t)$ : $\dot x=2\cos(4t)+2t\,\dot{(\cos4t)}=2\cos(4t)-8t\sin(4t)$. Oublier le facteur $2t$ à l'extérieur est l'erreur classique.
+>
+> **Dérivée composée : $\dfrac{\mathrm d}{\mathrm dt}\cos(g(t))=-g'(t)\sin(g(t))$**
+>
+> Pour $\cos(2t^2)$ : $g'=4t$, donc $\dot x=-12t\sin(2t^2)$ après le facteur $3$. On dérive « de l'extérieur vers l'intérieur » : la dérivée de la fonction extérieure fois la dérivée de l'argument.
+>
+> **Passage cartésien $\leftrightarrow$ polaire**
+>
+> $r=\sqrt{x^2+y^2}$, $\tan\theta=y/x$, $x=r\cos\theta$, $y=r\sin\theta$. L'identité $\cos^2+\sin^2=1$ donne immédiatement $r$ dans les cas 3, 5 et 6.
+>
+> **Pythagore vectoriel**
+>
+> En polaire $\|\vec v\|^2=\dot r^2+r^2\dot\theta^2$ : deux composantes perpendiculaires (radiale et orthoradiale) se composent comme les côtés d'un triangle rectangle. Idem pour $\|\vec a\|^2=a_r^2+a_\theta^2$.
+>
+> **Mettre en facteur sous une racine**
+>
+> $\sqrt{144+2304t^4}=\sqrt{144\,(1+16t^4)}=12\sqrt{1+16t^4}$ : sortir le facteur commun donne une expression lisible et montre le comportement aux temps courts et longs ($\to12$ en $t=0$, $\sim48t^2$ pour $t$ grand).
+>
+> **Primitive et phase : de $\dot\theta$ à $\theta$**
+>
+> $\theta(t)=\displaystyle\int\dot\theta\,\mathrm dt$ : si $\dot\theta=4t$, alors $\theta=2t^2+\theta_0$. Inversement, lire $\theta=2t^2$ donne $\dot\theta=4t$ (la vitesse angulaire croît linéairement).
+
 
 **q1.** Cas 1 : $x(t) = 5t$, $y(t)=2$, $z(t)=15t$ (unités SI). Déterminer $\overrightarrow{OM}(t)$, $\vec v(t)$, $\vec a(t)$ et leurs normes ; caractériser le mouvement.
 
@@ -187,6 +262,40 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Le point $M$ décrit une **spirale** (spirale d'Archimède) : il s'éloigne de $O$ à vitesse radiale constante ($\dot r=2$ m/s) tout en tournant autour de $O$ à vitesse angulaire constante ($\dot\theta=4$ rad/s). Ni la norme de $\vec v$ ni celle de $\vec a$ ne sont constantes : elles croissent toutes deux avec $t$, à cause de l'augmentation continue du rayon $r(t)=2t$, qui amplifie la composante orthoradiale de la vitesse ($r\dot\theta$) et la composante centripète de l'accélération ($r\dot\theta^2$), bien que les grandeurs "purement radiales" ($\dot r$ et $a_\theta$, ici constantes) restent, elles, inchangées au cours du temps.
 
 
+> [!warning]- 🪤 Écueils classiques
+> **Dériver $t\cos(\omega t)$ comme si $t$ n'apparaissait qu'une fois**
+>
+> Dans les cas 5 et 6, une erreur très fréquente consiste à dériver uniquement l'argument du cosinus/sinus (comme au cas 3) en oubliant le facteur $t$ ou $2t$ multiplicatif à l'extérieur, qui impose une **dérivée de produit** : $\frac{\mathrm d}{\mathrm dt}\big(f(t)\cos(g(t))\big) = f'(t)\cos(g(t)) - f(t)g'(t)\sin(g(t))$.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mathématiques**
+>
+> Courbes en coordonnées polaires, spirale d'Archimède $r=k\theta$ (ici $r=\theta/2$), dérivées d'un produit et composition de fonctions.
+>
+> **Traitement du signal / ondes**
+>
+> $\cos(2t^2)$ est un signal de phase quadratique : sa fréquence instantanée $\dot\theta/2\pi=4t/2\pi$ augmente linéairement avec le temps. C'est un « chirp », utilisé en radar, en sonar, par les chauves-souris, et observé dans le signal des ondes gravitationnelles.
+>
+> **Technologie**
+>
+> Le sillon d'un disque vinyle, l'enroulement d'un ruban sur une bobine, le ressort spiral d'une montre : spirales d'Archimède.
+>
+> **Mécanique**
+>
+> Cas 3 : un volant de rayon $3$ m à $\omega=10$ rad/s subirait $300$ m/s², soit $\approx30\,g$, ce qui montre pourquoi les pièces tournantes sont limitées en vitesse.
+
+
+> [!success]- 🏁 Bilan
+> **Une même méthode, des mouvements très variés**
+>
+> Cet exercice montre qu'une méthode unique et systématique (dérivation cartésienne terme à terme) permet de traiter des mouvements de natures très différentes : translation uniforme (cas 1), MRUV rectiligne (cas 2 et 4), circulaire uniforme (cas 3), circulaire non uniforme (cas 5), et spirale (cas 6). La difficulté n'est donc pas dans la méthode elle-même, mais dans la rigueur du calcul de dérivée et dans l'interprétation physique du résultat obtenu.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Retrouver les cas 3, 5 et 6 en coordonnées polaires
+> On pourra reprendre les cas 3, 5 et 6 en identifiant $r(t)$ et $\theta(t)$, puis en utilisant directement les formules polaires $\vec v = \dot r\,\vec u_r + r\dot\theta\,\vec u_\theta$ et $\vec a = (\ddot r - r\dot\theta^2)\vec u_r + (r\ddot\theta+2\dot r\dot\theta)\vec u_\theta$ (établies plus tard dans le cours), pour constater que les normes obtenues coïncident avec celles calculées ici en cartésien, tout en simplifiant considérablement les calculs intermédiaires.
+
+
 > [!note] 🔗 Voir aussi
-> [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]]
+> [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]]
 

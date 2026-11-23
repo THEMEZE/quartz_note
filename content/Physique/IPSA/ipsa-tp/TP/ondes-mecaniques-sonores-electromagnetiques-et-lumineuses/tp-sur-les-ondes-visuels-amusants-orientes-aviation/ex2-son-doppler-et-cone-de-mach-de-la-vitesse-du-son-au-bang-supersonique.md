@@ -5,11 +5,61 @@ tags:
   - ondes-mecaniques-sonores-electromagnetiques-et-lumineuses
 ---
 
-[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Generale_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]]
 
 ### Exercice 2. Son, Doppler et cône de Mach : de la vitesse du son au bang supersonique
 
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 3 h (extérieur pour la partie Doppler) · Type : TP expérimental (smartphone) et construction géométrique*
+
 Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton au moment où il nous dépasse : c'est l'effet Doppler. Quand l'avion va plus vite que le son, il traîne derrière lui un cône d'ondes de choc, le **cône de Mach**, entendu au sol comme un « bang ». Ce TP reprend ces trois idées (vitesse du son, Doppler, Mach) avec un simple smartphone.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> Célérité des ondes sonores $c=\sqrt{\gamma RT/M}$, fréquence et période, principe de Huygens pour la construction de fronts d'onde (cf. TD1 exercice 0).
+
+
+> [!info]+ 🎯 Objectifs
+> **Mesurer, comprendre et utiliser $c$**
+>
+> Mesurer $c$ en quelques mesures simples, retrouver la vitesse d'un mobile à partir du décalage de fréquence, et relier la géométrie du cône de Mach au nombre de Mach.
+
+
+> [!note]+ 🧰 Matériel
+> $2$ smartphones avec l'application phyphox (chronomètre acoustique, spectrogramme audio) ou une application d'analyse de fréquence
+>
+> Petit haut-parleur Bluetooth ou buzzer sur piles émettant une note pure (générateur de sons)
+>
+> Mètre ruban long ($\ge30$ m) ou télémètre laser, thermomètre
+>
+> Véhicule à vitesse mesurable (vélo avec compteur, voiture télécommandée, chariot)
+>
+> Compas, règle, papier millimétré ou feuille de calcul (pour la construction du cône de Mach)
+
+
+> [!danger] 🦺 Sécurité
+> **Doppler en mouvement**
+>
+> La source sonore est portée par un véhicule lent ou par une personne à vélo sur un espace fermé, dégagé et sans circulation. Ne jamais faire tourner une source au bout d'une ficelle au-dessus d'autres personnes.
+>
+> **Son fort**
+>
+> Ne pas dépasser $85\ \text{dB}$ à l'oreille pour la source sonore ; utiliser une fréquence de $2$ à $4\ \text{kHz}$ à faible volume.
+
+
+> [!note]+ 🔬 Manipulation
+> **1. Vitesse du son par écho ou par chronométrage**
+>
+> Deux options : (a) écho : se placer à $d=30\ \text{m}$ d'un grand mur, taper dans les mains et enregistrer le signal sur le smartphone ; mesurer le retard entre le claquement et l'écho ; (b) chronomètre acoustique : deux smartphones distants de $d$, le premier détecte un claquement et déclenche le chronomètre, le second l'arrête. Relever la température de l'air.
+>
+> **2. Effet Doppler**
+>
+> Émettre une note pure de fréquence $f_0=3000\ \text{Hz}$ avec la source immobile, enregistrer la fréquence reçue (spectrogramme). Puis déplacer la source à vitesse constante $v$ sur une ligne droite passant devant le smartphone récepteur (à quelques mètres). Relever la fréquence $f_a$ pendant l'approche et $f_r$ pendant l'éloignement. Mesurer $v$ avec un compteur ou par chronométrage sur une distance connue.
+>
+> **3. Cône de Mach sur papier**
+>
+> Sur une feuille, construire les fronts d'onde émis à des instants successifs par une source qui avance sur l'axe horizontal à vitesse $v$, pour $M=v/c=0{,}5\ ;\ 1\ ;\ 2$ (prendre $c=1\ \text{cm}$ par unité de temps). Mesurer le demi-angle du cône pour $M=2$ et $M=3$.
+
 
 **q1.** (a) Calculer $c$ à partir des données de l'écho (le son fait un aller-retour). (b) Estimer l'incertitude en supposant $\Delta d=0{,}2\ \text{m}$ et $\Delta t=0{,}005\ \text{s}$. (c) Comparer avec la formule $c=331{,}3\sqrt{1+\theta/273{,}15}$. (d) Quelle est la variation de $c$ pour une température de $-56{,}5\ ^\circ\text{C}$ ?
 
@@ -99,4 +149,18 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 >
 > $n=\dfrac{2500}{60}=41{,}7\ \text{tr/s}$ et $v_{\text{rot}}=\omega\dfrac{D}{2}=2\pi n\dfrac{D}{2}=\pi Dn=249\ \text{m/s}$. Dans le référentiel de l'air, la vitesse d'un point du bord est la somme vectorielle de la rotation et de l'avance : $256\ \text{m/s}$, soit $M_{\text{pale}}=0{,}75$.
 > La vitesse augmente avec le rayon : la pointe a la vitesse la plus grande, et donc l'écoulement y est le plus proche des effets de compressibilité (bruit, traînée d'onde). Au-delà de $M\approx0{,}85$ à $0{,}9$, des ondes de choc locales apparaissent et l'efficacité chute : c'est pourquoi les hélices modernes sont limitées à quelques milliers de tours par minute, ou à des pales fines, recourbées.
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Mach, altitude et hélices**
+>
+> Un avion de ligne croise à $M\approx0{,}8$. À $11\ \text{km}$ d'altitude, l'air est à $-56{,}5\ ^\circ\text{C}$ et $c\approx295\ \text{m}\cdot\text{s}^{-1}$ : la même vitesse vraie correspond à un Mach bien plus élevé qu'au sol. La vitesse au bout des pales d'une hélice combine rotation et avance : elle limite le régime moteur (bruit et perte d'efficacité quand $M_{\text{pale}}\to1$).
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Doppler relativiste et Doppler en lumière
+> Pour la lumière, il n'y a pas de milieu : le décalage dépend de la vitesse relative $v$ et vaut $\dfrac{\Delta\lambda}{\lambda}\approx\dfrac{v}{c}$ pour $v\ll c$. Il sert au radar Doppler des aéroports et à la détection des vents.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Onde de choc et bang sonique
+> L'onde de choc forme une « onde en N » avec une surpression de l'ordre de $50$ à $100\ \text{Pa}$ pour un avion supersonique en croisière ; les niveaux dépendent fortement de l'altitude, de la forme et de la vitesse.
 

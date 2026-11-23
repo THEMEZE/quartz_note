@@ -5,13 +5,75 @@ tags:
   - gravitation-optique-geometrique-et-diffusion-de-la-lumiere
 ---
 
-[[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Astrophysique_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]]
 
 ### Exercice 4. Pourquoi le ciel est bleu et le Soleil couchant rouge : diffusion de Rayleigh dans un aquarium
+
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 2 h 30 · Type : TP expérimental visuel*
 
 La lumière du Soleil est blanche, et pourtant le ciel est bleu à midi alors que le Soleil paraît rouge-orangé à l'horizon. Les deux observations viennent de la même cause : la **diffusion de Rayleigh** de la lumière par les molécules de l'air, dont l'intensité varie en $\lambda^{-4}$. Le bleu est diffusé dans toutes les directions (d'où le ciel bleu) et il est donc retiré du faisceau direct ; plus le trajet dans l'atmosphère est long, plus le faisceau direct devient rouge.
 
 Dans ce TP, on reproduit l'effet à petite échelle : un bac d'eau très légèrement troublée (quelques gouttes de lait) est éclairé par une lampe blanche. Vu de côté, le faisceau est bleuté ; vu dans l'axe, à travers une grande longueur d'eau, le spot devient orange. On **mesure** ensuite le rapport des coefficients d'extinction dans le bleu et dans le rouge à l'aide de photographies du smartphone.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> Longueur d'onde et couleur, loi de Beer-Lambert $I=I_0e^{-\alpha L}$, polarisation (loi de Malus), régression linéaire de $\ln(I/I_0)$ en fonction de $L$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Relier une observation quotidienne à un modèle quantitatif**
+>
+> Établir que l'extinction est plus forte dans le bleu, mesurer le rapport $\alpha_B/\alpha_R$ et le comparer à la loi en $\lambda^{-4}$, et reconnaître la polarisation partielle de la lumière diffusée.
+
+
+> [!note]+ 🧰 Matériel
+> Aquarium ou bac transparent allongé (longueur $40$ à $60\ \text{cm}$, section $\ge10\times10\ \text{cm}$), en verre ou plexiglas clair
+>
+> Lampe de poche à LED blanche (ou lampe de smartphone) avec un cache percé d'un trou de $1\ \text{cm}$
+>
+> Lait demi-écrémé (pipette ou seringue), eau claire, bécher gradué
+>
+> Smartphone (appareil photo en mode manuel si possible : sensibilité et temps de pose fixes)
+>
+> Filtres colorés (bleu, rouge) ou logiciel d'analyse d'image (ImageJ, ou simple sélecteur de couleur)
+>
+> Deux polariseurs (film polarisant, verres de lunettes polarisantes, ou un écran LCD et des lunettes polarisantes)
+>
+> Feuille de papier noir pour l'arrière-plan et pièce sombre
+
+
+> [!danger] 🦺 Sécurité
+> **Produits**
+>
+> Le lait dilué est inoffensif. Si l'on choisit la version chimique (thiosulfate de sodium et acide chlorhydrique dilué), c'est l'enseignant qui prépare la solution (port de gants et de lunettes, salle aérée).
+>
+> **Eau et électricité**
+>
+> Alimenter les lampes sur piles ; ne jamais placer de prise ou de multiprise à proximité de l'aquarium.
+
+
+> [!note]+ 🔬 Manipulation
+> **1. Préparation de la suspension**
+>
+> Remplir le bac d'eau. Ajouter goutte à goutte le lait (environ $1$ à $2\ \text{mL}$ pour $10\ \text{L}$) en agitant, jusqu'à obtenir une eau à peine trouble. La pièce doit être sombre. Le fond et l'arrière du bac sont recouverts de papier noir.
+>
+> **2. Coucher de soleil dans un bac**
+>
+> Placer la lampe à une extrémité, fixer le cache, et observer le faisceau : (i) de côté, (ii) dans l'axe, depuis l'autre extrémité. Photographier en manuel (même réglage pour toutes les photographies).
+>
+> **3. Mesure de l'extinction par couleur**
+>
+> Placer un écran blanc contre la face de sortie. Pour des longueurs $L$ de $10$, $20$, $30$ et $40\ \text{cm}$ (en remplissant plus ou moins le bac ou en déplaçant la lampe), photographier le spot sur l'écran. Extraire, avec un logiciel ou un sélecteur de couleurs, les intensités $I_R$ et $I_B$ (canaux rouge et bleu) au centre du spot. Reprendre sans lait pour la référence $I_0$.
+>
+> **4. Polarisation de la lumière diffusée**
+>
+> Observer le faisceau à $90^\circ$ (de côté) à travers un polariseur que l'on fait tourner. Comparer avec l'observation dans l'axe. Puis regarder le ciel bleu (loin du Soleil, à $90^\circ$ de celui-ci) à travers des lunettes polarisantes que l'on incline.
+>
+> **5. Observations en extérieur (si possible)**
+>
+> Photographier le ciel à différentes hauteurs et directions, en particulier à $90^\circ$ du Soleil (bleu foncé et polarisé) et à l'horizon (blanchâtre). Lors d'un coucher de Soleil, photographier le disque solaire à plusieurs hauteurs (utiliser un filtre et ne pas regarder directement).
+
 
 **q1.** Diffusion de Rayleigh. L'intensité diffusée par des particules petites devant $\lambda$ varie comme $\lambda^{-4}$. Calculer les rapports $\dfrac{I(450\ \text{nm})}{I(650\ \text{nm})}$ et $\dfrac{I(400\ \text{nm})}{I(450\ \text{nm})}$. Pourquoi le ciel n'est-il pas violet, alors que le violet est plus diffusé que le bleu ?
 
@@ -121,4 +183,18 @@ Dans ce TP, on reproduit l'effet à petite échelle : un bac d'eau très légèr
 > (a) $V=\dfrac{3{,}91}{0{,}4}\approx9{,}8\ \text{km}$ (brume légère). (b) $V=\dfrac{3{,}91}{1{,}2\times10^{-2}}\approx326\ \text{km}$ : même dans un air parfaitement pur, la diffusion de Rayleigh limite la visibilité à quelques centaines de kilomètres.
 > (c) La luminance apparente d'un objet à la distance $d$ est $L=L_0e^{-\sigma d}+L_{\text{air}}(1-e^{-\sigma d})$ : le premier terme (objet) décroît et le second (lumière diffusée par l'air, plutôt bleue) augmente. Au loin, l'objet se confond avec l'horizon : c'est pourquoi les massifs lointains sont bleutés et les ombres (contraste) disparaissent, ce que les peintres appellent la perspective atmosphérique.
 > Pour un pilote, c'est un piège connu : dans une brume, les repères lointains paraissent plus éloignés qu'ils ne le sont ; dans un air très clair, ils paraissent plus proches que la réalité, ce qui conduit à sous-estimer les distances en montagne.
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Visibilité, brume et altitude**
+>
+> Les montagnes lointaines paraissent bleutées (lumière diffusée entre l'observateur et l'objet) et perdent leur contraste : la visibilité météorologique est définie par la loi de Koschmieder, $V=\dfrac{3{,}91}{\sigma}$ ($\sigma$ coefficient d'extinction). En altitude, l'air est moins dense : à $12\ \text{km}$ la pression vaut $\approx19\ \%$ de la pression au sol et le ciel au zénith paraît bleu très foncé, presque noir. Le bleu du ciel n'est pas uniforme : la lumière est fortement polarisée à $90^\circ$ du Soleil, ce qui explique pourquoi des lunettes polarisantes modifient le contraste du ciel (voir TP O5).
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Diffusion de Rayleigh et de Mie
+> Pour des particules de taille $a\ll\lambda$, la section efficace est $\sigma\propto\dfrac{a^6}{\lambda^4}$ ; pour $a\gtrsim\lambda$ (gouttelettes de nuages, brouillard), la diffusion est presque indépendante de $\lambda$ (Mie) : les nuages sont blancs.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Degré de polarisation
+> Pour une diffusion de Rayleigh par des dipôles isotropes, le degré de polarisation vaut $P(\gamma)=\dfrac{\sin^2\gamma}{1+\cos^2\gamma}$ ($\gamma$ angle de diffusion). Il est maximal ($1$ en théorie, $\approx0{,}7$ réellement à cause de la diffusion multiple et du sol) à $90^\circ$ du Soleil.
 

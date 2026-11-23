@@ -5,9 +5,11 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 1. Solutions de l'équation de d'Alembert
+
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 40 min · Type : Application directe du cours*
 
 Le déplacement transversal $y(x,t)$ d'une corde est solution de l'équation
 de d'Alembert :
@@ -22,6 +24,67 @@ $$
 où $c$ désigne la célérité des ondes transversales se propageant le long
 de la corde.
 
+> [!question]+ 🎣 Accroche
+> **Une forme qui avance sans se déformer**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Quand une secousse remonte le long d'une corde, la « bosse » avance sans changer de forme. Comment une simple fonction $f$ de la variable $x-ct$ peut-elle décrire cela ? Et pourquoi le signe « moins » correspond-il à un déplacement vers la **droite** et non vers la gauche ?*
+>
+> **Idée clé : une onde progressive est un profil qui se translate à la vitesse $c$.** Toute fonction de la forme $f(x-ct)$ ou $g(x+ct)$ est solution de l'équation de d'Alembert, et, l'équation étant **linéaire**, la somme $f(x-ct)+g(x+ct)$ aussi. Pour savoir où va l'onde, on **suit un point du profil** : son argument reste constant, donc $x-ct=\text{cte}$ donne $x=x_0+ct$, c'est-à-dire une propagation vers les $x$ croissants.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Dérivées partielles et composition**
+>
+> Savoir dériver une fonction composée à plusieurs variables par la règle
+> de la chaîne (**chain rule**). Connaître la définition d'une onde progressive
+> et de sa célérité $c$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Vérification formelle et sens de propagation**
+>
+> - Vérifier mathématiquement qu'une fonction de la forme $f(x \mp ct)$ est solution de l'équation de d'Alembert.
+> - Associer le signe devant le terme $ct$ au sens de propagation de l'onde progressive.
+> - Utiliser la propriété de linéarité de l'équation d'onde.
+
+
+> [!note]+ 📖 Point de cours
+> **Équation de d'Alembert à 1D**
+>
+> Toute fonction de classe $\mathcal{C}^2$ de la forme $y(x,t) = f(x-ct) + g(x+ct)$ est solution de l'équation d'onde 1D.\\
+>
+> La fonction $f(x-ct)$ représente une onde progressive se déplaçant vers les $x$ croissants à la vitesse $c$, tandis que
+> $g(x+ct)$ représente une onde se déplaçant vers les $x$ décroissants.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Dérivée partielle et fonction composée**
+>
+> Pour $y(x,t)=f(u)$ avec $u=x-ct$ : $\dfrac{\partial y}{\partial x}=f'(u)\dfrac{\partial u}{\partial x}=f'(u)$ et $\dfrac{\partial y}{\partial t}=f'(u)\dfrac{\partial u}{\partial t}=-c\,f'(u)$. Dériver deux fois fait apparaître le facteur $c^2$ : le signe de $c$ disparaît au carré.
+>
+> **Translation d'un graphe**
+>
+> Le graphe de $x\mapsto f(x-x_0)$ est celui de $f$ **décalé de $x_0$ vers la droite**. Ici $x_0=ct$ augmente avec le temps : le profil glisse vers la droite sans se déformer.
+>
+> **Argument constant et loi horaire**
+>
+> $x-ct=\text{cte}\Rightarrow x(t)=x_0+ct$ : c'est la loi horaire d'un mobile en mouvement rectiligne uniforme de vitesse $c$ (cinématique). Dériver par rapport à $t$ donne directement $\dfrac{\mathrm dx}{\mathrm dt}=+c$.
+>
+> **Linéarité de la dérivation**
+>
+> $\dfrac{\partial^2}{\partial x^2}(y_1+y_2)=\dfrac{\partial^2 y_1}{\partial x^2}+\dfrac{\partial^2 y_2}{\partial x^2}$ : toute combinaison linéaire de solutions d'une équation linéaire homogène est solution (espace vectoriel des solutions).
+>
+> **Coordonnées caractéristiques**
+>
+> Avec $\xi=x-ct$ et $\eta=x+ct$ : $\partial_x=\partial_\xi+\partial_\eta$ et $\partial_t=c\,(\partial_\eta-\partial_\xi)$, d'où $\partial_x^2-\dfrac1{c^2}\partial_t^2=4\,\partial_\xi\partial_\eta$. L'équation devient $\partial_\xi\partial_\eta y=0$, qui s'intègre en $y=f(\xi)+g(\eta)$.
+>
+> **Lien avec les sinusoïdes**
+>
+> $\cos(kx-\omega t)=\cos\!\big(k(x-\tfrac\omega kt)\big)$ est du type $f(x-ct)$ avec $c=\omega/k$ : les ondes sinusoïdales sont des cas particuliers d'ondes progressives.
+
+
 **q1.** Soit $f$ une fonction de classe $\mathcal{C}^2$. Montrer que
 
 $$
@@ -29,6 +92,24 @@ y(x,t)=f(x-ct)
 $$
 
 est solution de l'équation de d'Alembert.
+
+> [!abstract]+ 📚 Prérequis
+> **Dérivation de fonction composée**
+>
+> Règle de dérivation : si $u(x,t) = x - ct$, alors $\frac{\partial}{\partial x} f(u) = \frac{\partial u}{\partial x} f'(u)$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Calcul des dérivées partielles secondes**
+>
+> Savoir dériver deux fois par rapport à $x$ et par rapport à $t$ une fonction dépendante de $x-ct$.
+
+
+> [!note]+ 📖 Point de cours
+> **Onde progressive se propageant à la célérité c**
+>
+> Toute fonction $f(x-ct)$ vérifie algébriquement $\frac{\partial^2 y}{\partial x^2} = \frac{1}{c^2} \frac{\partial^2 y}{\partial t^2}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Changement de variable**
@@ -53,6 +134,10 @@ est solution de l'équation de d'Alembert.
 
 > [!question]- 🔭 Aller plus loin — Lycée : Fonctions simples
 > Tester le résultat avec $f(u) = \sin(u)$ ou $f(u) = e^{-u^2}$.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Équation aux dérivées partielles
+> Remarquer que $f$ n'a pas besoin d'être sinusoïdale : elle peut représenter un paquet d'onde ou une impulsion quelconque.
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Régularité $\mathcal{C}^2$
@@ -204,6 +289,24 @@ $$
 
 est également solution de l'équation de d'Alembert.
 
+> [!abstract]+ 📚 Prérequis
+> **Dérivation de fonction composée**
+>
+> Utilisation du changement de variable $v = x+ct$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Calcul analogue avec changement de signe**
+>
+> Observer l'effet du signe positif devant le terme $ct$ lors de la première et de la seconde dérivation.
+
+
+> [!note]+ 📖 Point de cours
+> **Onde rétrograde**
+>
+> La fonction $g(x+ct)$ est une solution de d'Alembert associée à une propagation en sens inverse.
+
+
 > [!tip]- 💡 Coup de pouce
 > **Même méthode**
 >
@@ -223,6 +326,10 @@ est également solution de l'équation de d'Alembert.
 
 > [!question]- 🔭 Aller plus loin — Lycée : Exemple concret
 > Une onde réfléchie sur un obstacle revient vers l'origine : elle est décrite par une fonction du type $g(x+ct)$.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Invariance par réflexion
+> C'est la parité spatio-temporelle de l'opérateur $\square = \frac{\partial^2}{\partial x^2} - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$ qui garantit cette double possibilité.
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Ondes stationnaires
@@ -352,6 +459,24 @@ $$
 
 est également solution de l'équation de d'Alembert.
 
+> [!abstract]+ 📚 Prérequis
+> **Linéarité de la dérivation**
+>
+> Propriété de l'opérateur dérivée : $\frac{\partial}{\partial x}(u+v) = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial x}$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Principe de superposition**
+>
+> Comprendre et appliquer le principe de superposition pour une équation différentielle linéaire et homogène.
+
+
+> [!note]+ 📖 Point de cours
+> **Principe de superposition**
+>
+> Toute combinaison linéaire de solutions d'une équation linéaire homogène est encore une solution.
+
+
 > [!tip]- 💡 Coup de pouce
 > **Linéarité**
 >
@@ -364,6 +489,60 @@ est également solution de l'équation de d'Alembert.
 
 > [!question]- 🔭 Aller plus loin — Lycée : Croisement d'ondes
 > Deux vagues arrivant en sens inverse se croisent, s'additionnent, puis poursuivent leur chemin sans altération.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Linéarité de l'équation de d'Alembert
+> L'équation de d'Alembert pour une onde se propageant dans un milieu
+> homogène s'écrit
+> \[
+>   \frac{\partial^2 y}{\partial t^2}
+>   -
+>   c^2\frac{\partial^2 y}{\partial x^2}
+>   =0.
+> \]
+> On peut introduire l'opérateur d'onde
+> \[
+>   \mathcal{D}
+>   =
+>   \frac{\partial^2}{\partial t^2}
+>   -
+>   c^2\frac{\partial^2}{\partial x^2}.
+> \]
+> Cet opérateur est **linéaire** : pour deux fonctions $y_1$ et
+> $y_2$ et deux constantes $\alpha$ et $\beta$,
+> \[
+>   \mathcal{D}(\alpha y_1+\beta y_2)
+>   =
+>   \alpha\mathcal{D}(y_1)
+>   +
+>   \beta\mathcal{D}(y_2).
+> \]
+> Ainsi, si $y_1$ et $y_2$ sont deux solutions de l'équation de
+> d'Alembert, alors
+> \[
+>   y=\alpha y_1+\beta y_2
+> \]
+> est également une solution. C'est la base mathématique du
+> **principe de superposition** des ondes.
+>
+> En revanche, si l'équation comportait un terme non linéaire, par
+> exemple
+> \[
+>   \frac{\partial^2 y}{\partial t^2}
+>   -
+>   c^2\frac{\partial^2 y}{\partial x^2}
+>   +\lambda y^2=0,
+> \]
+> l'opérateur associé ne serait plus linéaire et le principe de
+> superposition ne serait plus valable en général.
+>
+> **À retenir :** la superposition des ondes n'est pas une
+> propriété indépendante de l'équation : elle découle directement de
+> la linéarité de l'équation de propagation.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Équations non linéaires
+> Si l'équation contenait des termes non linéaires (ex: $y^2$), le principe de superposition ne s'appliquerait plus.
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Analyse spectrale
@@ -516,6 +695,24 @@ Représenter schématiquement le profil de l'onde aux instants $t_1$
 et $t_2$ sur un même graphique, en faisant apparaître le déplacement
 du point considéré. Conclure quant au sens de propagation de l'onde.
 
+> [!abstract]+ 📚 Prérequis
+> **Maniement des inégalités**
+>
+> Si $t_2 > t_1$ et $c > 0$, alors $c(t_2-t_1) > 0$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Démonstration du sens de propagation**
+>
+> Établir formellement que $f(x-ct)$ se propage vers les $x$ croissants.
+
+
+> [!note]+ 📖 Point de cours
+> **Onde progressive dans le sens direct**
+>
+> L'expression $f(x-ct)$ décrit une onde progressive se propageant dans le sens des $x$ croissants à la célérité $c$.
+
+
 > [!tip]- 💡 Coup de pouce
 > **Même point du profil**
 >
@@ -535,6 +732,10 @@ du point considéré. Conclure quant au sens de propagation de l'onde.
 
 > [!question]- 🔭 Aller plus loin — Lycée : Sens direct
 > Une onde de choc créée à gauche avance vers la droite au cours du temps.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Dérivation temporelle du suivi
+> En dérivant $x(t) - ct = \text{Cte}$ par rapport à $t$, on obtient directement la vitesse de la crête $\frac{\mathrm{d}x}{\mathrm{d}t} = +c > 0$.
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Représentation complexe
@@ -641,6 +842,24 @@ $$
 
 Conclure quant au sens de propagation de cette onde.
 
+> [!abstract]+ 📚 Prérequis
+> **Raisonnements de la question 4a**
+>
+> Maniement de l'argument de phase constant.
+
+
+> [!info]+ 🎯 Objectifs
+> **Démonstration de la propagation rétrograde**
+>
+> Établir formellement que $g(x+ct)$ se propage vers les $x$ décroissants.
+
+
+> [!note]+ 📖 Point de cours
+> **Onde progressive rétrograde**
+>
+> L'expression $g(x+ct)$ décrit une onde progressive se propageant dans le sens des $x$ décroissants à la célérité $c$.
+
+
 > [!tip]- 💡 Coup de pouce
 > **Argument constant**
 >
@@ -669,6 +888,26 @@ Conclure quant au sens de propagation de cette onde.
 >
 > correspond à une propagation vers la gauche, dans le sens des
 > $x$ décroissants.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Vitesse de phase
+> Pour une onde sinusoïdale :
+>
+> $$
+> y(x,t)=A\cos(kx-\omega t+\phi),
+> $$
+>
+> une surface de phase constante vérifie :
+>
+> $$
+> kx-\omega t=\text{constante}.
+> $$
+>
+> On retrouve ainsi une vitesse de propagation :
+>
+> $$
+> v_\varphi=\frac{\omega}{k}=c.
+> $$
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Solution générale de d'Alembert
@@ -782,4 +1021,173 @@ Conclure quant au sens de propagation de cette onde.
 >
 > <p style="text-align:center"><a href="/figures/td1_ex0_onde_x_plus_ct.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex0_onde_x_plus_ct.svg" alt="Translation du profil d'une onde $y(x,t)=g(x+ct)$ entre
 > les instants $t_1$ et $t_2$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Cinématique**
+>
+> Une crête est un « mobile » : sa position $x=x_0+ct$ est une loi horaire de mouvement rectiligne uniforme. Aucune matière ne se déplace avec elle : la corde, elle, ne fait que monter et descendre.
+>
+> **Mathématiques**
+>
+> Équations aux dérivées partielles, changement de variables, espaces vectoriels de solutions. La solution générale $f(x-ct)+g(x+ct)$ est l'analogue de la solution générale d'une EDO linéaire du second ordre (deux fonctions arbitraires au lieu de deux constantes).
+>
+> **Électromagnétisme et optique**
+>
+> Les champs $E$ et $B$ dans le vide vérifient la même équation avec $c=1/\sqrt{\varepsilon_0\mu_0}\approx3\times10^8$ m/s : la lumière est une onde progressive.
+>
+> **Océanographie et géophysique**
+>
+> Tsunamis et ondes sismiques se propagent comme des profils qui se translatent : mesurer le retard entre deux stations donne la célérité et localise la source.
+>
+> **Relativité**
+>
+> Les droites $x=\pm ct$ sont les **caractéristiques** de l'équation : ce sont aussi les trajectoires de la lumière dans un diagramme d'espace-temps (cône de lumière).
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Retard temporel
+> En physique au lycée, l'onde se propageant vers la droite s'écrit souvent $y(x,t) = s(t - \tau)$
+> avec $\tau = x/c$ le retard à l'origine. On remarque que $t - x/c = -\frac{1}{c}(x - ct)$,
+> ce qui est bien une fonction de $x-ct$.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Superposition et ondes stationnaires
+> La superposition de deux ondes identiques se propageant en sens opposés $f(x-ct) + f(x+ct)$
+> peut conduire, dans le cas d'ondes sinusoïdales, à une onde stationnaire de la forme
+> $A \cos(kx) \cos(\omega t)$ où la dépendance spatiale et la dépendance temporelle sont séparées.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Lien avec la méthode des caractéristiques
+> En introduisant les variables $\xi = x-ct$ et $\eta = x+ct$, l'équation de d'Alembert
+> se réduit à $\frac{\partial^2 y}{\partial \xi \partial \eta} = 0$, dont l'intégration
+> directe fournit la forme $y(\xi,\eta) = f(\xi) + g(\eta)$.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Lien avec les coordonnées caractéristiques et la notation covariante
+> Introduire les coordonnées caractéristiques :
+> \[
+>   \xi=x-ct,
+>   \qquad
+>   \eta=x+ct.
+> \]
+>
+> Dans ces coordonnées, l'opérateur d'onde se factorise :
+> \[
+>   \frac{\partial^2}{\partial x^2}
+>   -
+>   \frac{1}{c^2}
+>   \frac{\partial^2}{\partial t^2}
+>   =
+>   4
+>   \frac{\partial^2}{\partial\xi\,\partial\eta}.
+> \]
+>
+> Les fonctions $f(\xi)$ et $g(\eta)$ sont alors directement
+> identifiées comme les deux familles d'ondes se propageant dans
+> les directions opposées.
+>
+>
+>
+>
+> **Ouverture vers la notation covariante.**
+>
+> En relativité, les coordonnées d'espace et de temps peuvent être
+> regroupées dans un quadrivecteur
+> \[
+>   x^\mu=(ct,x,y,z).
+> \]
+> On introduit alors la dérivée covariante
+> \[
+>   \partial_\mu
+>   \equiv
+>   \frac{\partial}{\partial x^\mu}.
+> \]
+> Avec la convention de signature
+> \[
+>   \eta_{\mu\nu}=\operatorname{diag}(1,-1,-1,-1),
+> \]
+> on obtient
+> \[
+>   \partial_\mu
+>   =
+>   \left(
+>     \frac{1}{c}\frac{\partial}{\partial t},
+>     \frac{\partial}{\partial x},
+>     \frac{\partial}{\partial y},
+>     \frac{\partial}{\partial z}
+>   \right).
+> \]
+>
+> La dérivée à indice contravariant est obtenue en relevant l'indice
+> avec la métrique :
+> \[
+>   \partial^\mu
+>   =
+>   \eta^{\mu\nu}\partial_\nu.
+> \]
+> Ainsi,
+> \[
+>   \partial^\mu
+>   =
+>   \left(
+>     \frac{1}{c}\frac{\partial}{\partial t},
+>     -\frac{\partial}{\partial x},
+>     -\frac{\partial}{\partial y},
+>     -\frac{\partial}{\partial z}
+>   \right).
+> \]
+>
+> La contraction des deux dérivées donne alors l'opérateur
+> de d'Alembert :
+> \[
+>   \boxed{
+>   \partial_\mu\partial^\mu
+>   =
+>   \frac{1}{c^2}\frac{\partial^2}{\partial t^2}
+>   -
+>   \nabla^2
+>   }.
+> \]
+>
+> L'équation d'onde dans le vide,
+> \[
+>   \frac{1}{c^2}\frac{\partial^2\psi}{\partial t^2}
+>   -
+>   \nabla^2\psi
+>   =0,
+> \]
+> peut donc s'écrire de manière compacte
+> \[
+>   \boxed{\partial_\mu\partial^\mu\psi=0}.
+> \]
+>
+> Dans le cas unidimensionnel,
+> \[
+>   \partial_\mu\partial^\mu
+>   =
+>   \frac{1}{c^2}\frac{\partial^2}{\partial t^2}
+>   -
+>   \frac{\partial^2}{\partial x^2},
+> \]
+> qui est, à un signe près selon la convention choisie pour
+> l'opérateur d'onde, l'opérateur rencontré précédemment.
+>
+>
+>
+>
+> **Point important :** la distinction entre $\partial_\mu$
+> et $\partial^\mu$ ne signifie pas qu'il s'agit de deux dérivées
+> différentes. L'indice est simplement abaissé ou relevé à l'aide
+> de la métrique :
+> \[
+>   \partial^\mu=\eta^{\mu\nu}\partial_\nu.
+> \]
+> Cette notation permet d'écrire les équations relativistes sous une
+> forme indépendante du choix particulier des coordonnées.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Solutions fondamentales et fonction de Green
+> La formule de d'Alembert permet d'exprimer la solution du problème de Cauchy pour l'équation
+> des ondes avec conditions initiales $y(x,0) = y_0(x)$ et $\frac{\partial y}{\partial t}(x,0) = v_0(x)$ :
+> $y(x,t) = \frac{1}{2}[y_0(x-ct) + y_0(x+ct)] + \frac{1}{2c} \int_{x-ct}^{x+ct} v_0(s) \, \mathrm{d}s$.
 

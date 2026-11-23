@@ -5,11 +5,37 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/vecteurs-en-physique-4h/index|⬅ Retour]] · <a href="/pdfs/td4_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_test_Ph110_0.pdf" target="_blank" rel="noopener">📄 PDF</a> · <a href="/pdfs/td4_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/vecteurs-en-physique-4h/index|⬅ Retour]] · <a href="/pdfs/td4_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_test_Ph110_0.pdf" target="_blank" rel="noopener">📄 PDF</a>
 
 ### Exercice 2. Vecteurs forces, projection et composantes
 
+*⭐ Indispensable · Difficulté ●○○○○ · ⏱ 30 min · Type : Application*
+
 On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumise à deux forces $\vec{F}_1$ et $\vec{F}_2$ contenues dans le plan $(Oxy)$. L'axe $(Ox)$ est horizontal vers la droite et $(Oy)$ vertical vers le haut.
+
+> [!abstract]+ 📚 Prérequis
+> **Projections cartésiennes et coordonnées polaires**
+>
+> Savoir projeter un vecteur connaissant son module et son angle par rapport aux axes cartésiens ($F_x = F \cos\theta$, $F_y = F \sin\theta$).
+
+
+> [!info]+ 🎯 Objectifs
+> **Addition vectorielle et 2e loi de Newton**
+>
+> Calculer la résultante de forces projetées et en déduire l'accélération subie par un point matériel.
+
+
+> [!note]+ 📖 Point de cours
+> **Seconde loi de Newton**
+>
+> Dans un référentiel galiléen, la somme des forces appliquées à un point matériel de masse $m$ est égale à sa masse multipliée par son accélération : $\sum \vec{F} = m\vec{a}$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Angle de la force F2**
+>
+> Utilise la trigonométrie de base sur le triangle rectangle formé par les composantes de $\vec{F}_2$.
+
 
 **1.**
 
@@ -69,4 +95,8 @@ On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumi
 > $$a_x = \frac{4{,}50}{0{,}370} \approx 12{,}16\text{ m}\cdot\text{s}^{-2}$$
 > $$a_y = \frac{1{,}60}{0{,}370} \approx 4{,}32\text{ m}\cdot\text{s}^{-2}$$
 > Norme globale : $\|\vec{a}\| = \frac{4{,}78}{0{,}370} \approx 12{,}92\text{ m}\cdot\text{s}^{-2}$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Changement de base de projection
+> Exprimer la résultante des forces dans une base inclinée d'un angle $\alpha$ par rapport à la base d'origine.
 

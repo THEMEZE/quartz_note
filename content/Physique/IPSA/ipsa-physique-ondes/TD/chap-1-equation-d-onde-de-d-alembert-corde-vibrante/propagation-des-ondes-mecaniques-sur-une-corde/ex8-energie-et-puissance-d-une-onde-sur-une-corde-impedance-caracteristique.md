@@ -5,15 +5,73 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 8. Énergie et puissance d'une onde sur une corde : impédance caractéristique *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 45 min · Type : Approfondissement*
 
 Une corde homogène de masse linéique $\mu$, tendue avec la tension $F$, vibre transversalement dans l'approximation des petits angles. Le déplacement $y(x,t)$ vérifie l'équation de d'Alembert avec $c=\sqrt{F/\mu}$.
 
 On admet que la corde possède, par unité de longueur, l'énergie mécanique
 $$e(x,t)=\underbrace{\frac{1}{2}\mu\left(\frac{\partial y}{\partial t}\right)^2}_{\text{cinétique}}+\underbrace{\frac{1}{2}F\left(\frac{\partial y}{\partial x}\right)^2}_{\text{potentielle élastique}}.$$
 La partie gauche de la corde ($x'<x$) exerce sur la partie droite une force dont la composante transversale est $-F\,\dfrac{\partial y}{\partial x}(x,t)$.
+
+> [!question]+ 🎣 Accroche
+> **Qu'est-ce qui se propage vraiment le long d'une corde ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Quand une onde parcourt une corde, aucun morceau de corde ne voyage : chacun monte et descend sur place. Pourtant, quelque chose est transporté d'un bout à l'autre : l'**énergie**. Quelle puissance faut-il fournir à un vibreur pour entretenir l'onde ? Et pourquoi une onde **stationnaire** ne transporte-t-elle rien ?*
+>
+> **Idée clé : l'énergie obéit à une loi de conservation locale.** Avec $e=\tfrac12\mu\dot y^2+\tfrac12Fy'^2$ et $\mathcal P=-F\,\partial_x y\,\partial_t y$ (puissance de la force de tension) :
+> $$\frac{\partial e}{\partial t}+\frac{\partial\mathcal P}{\partial x}=0.$$
+> Pour une onde progressive, $\mathcal P=c\,e=Z\,(\partial_t y)^2$ avec $Z=\sqrt{F\mu}$ l'**impédance caractéristique** : l'énergie est transportée à la vitesse $c$. Pour une onde sinusoïdale, $\langle\mathcal P\rangle=\tfrac12Z\omega^2a^2$ ; pour une onde stationnaire, $\langle\mathcal P\rangle=0$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Équation de d'Alembert et ondes progressives**
+>
+> Exercices 0 et 3 : solutions $f(x-ct)$, $g(x+ct)$, équation des cordes vibrantes, modes propres d'une corde fixée (exercice 4).
+
+
+> [!info]+ 🎯 Objectifs
+> **Suivre l'énergie plutôt que le déplacement**
+>
+> Établir un bilan local d'énergie, calculer la puissance transportée par une onde progressive, comprendre pourquoi une onde stationnaire ne transporte pas d'énergie en moyenne.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Moyenne temporelle : $\langle\sin^2\rangle=\langle\cos^2\rangle=\tfrac12$**
+>
+> D'après $\cos2u=1-2\sin^2u$ et $\langle\cos2u\rangle=0$, on a $\langle\sin^2u\rangle=\tfrac12$. Oublier ce facteur double les résultats. De même $\langle\sin u\cos u\rangle=\tfrac12\langle\sin2u\rangle=0$.
+>
+> **Formule de duplication : $\sin(2x)=2\sin x\cos x$**
+>
+> Pour l'onde stationnaire, $\mathcal P=FA^2k\omega\sin kx\cos kx\sin\omega t\cos\omega t=\tfrac14FA^2k\omega\sin(2kx)\sin(2\omega t)$ : produit de deux sinus de moyenne nulle.
+>
+> **Dérivée d'un produit et dérivées croisées**
+>
+> $\partial_x(\partial_x y\,\partial_t y)=\partial_x^2y\,\partial_t y+\partial_x y\,\partial_x\partial_t y$, et $\partial_x\partial_t y=\partial_t\partial_x y$ (théorème de Schwarz). Les termes croisés se compensent dans la conservation de l'énergie.
+>
+> **Équation de continuité**
+>
+> $\partial_t e+\partial_x\mathcal P=0$ est de la forme « variation locale de densité + divergence du flux = 0 » (conservation d'une grandeur : charge, masse, énergie).
+>
+> **Intégrales trigonométriques**
+>
+> $\displaystyle\int_0^L\sin^2(kx)\,\mathrm dx=\int_0^L\cos^2(kx)\,\mathrm dx=\frac L2$ si $kL=N\pi$. Permet de calculer l'énergie totale d'un mode : $E=\tfrac14\mu\omega^2A^2L$.
+>
+> **Analyse dimensionnelle et proportionnalités**
+>
+> $[Z]=\mathrm{kg\,s^{-1}}$ ; $\langle\mathcal P\rangle\propto\omega^2a^2\sqrt F$. Doubler $\omega$ ou $a$ multiplie par $4$ ; doubler $F$ multiplie par $\sqrt2$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Stratégie générale**
+>
+> Pour chaque question, écrire $\partial_x y$ et $\partial_t y$ en fonction de la variable $u=x-ct$ (ou de la phase), puis remplacer dans $e$ ou dans $\mathcal{P}=-F\,\partial_x y\,\partial_t y$.
+
 
 **q1.** Montrer, à l'aide de l'équation de d'Alembert, que l'énergie vérifie l'équation de conservation locale
 $$\frac{\partial e}{\partial t}+\frac{\partial\mathcal{P}}{\partial x}=0,\qquad\text{avec}\qquad\mathcal{P}(x,t)=-F\,\frac{\partial y}{\partial x}\,\frac{\partial y}{\partial t}.$$
@@ -149,6 +207,32 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > $\omega_1=2\pi\times147\approx923{,}6\ \text{rad/s}$.
 > $$E=\frac{1}{4}\times5{,}04\times10^{-4}\times(923{,}6)^2\times(10^{-3})^2\times0{,}63\approx6{,}8\times10^{-5}\ \text{J}.$$
 > Cette énergie est très faible : une corde pincée seule est un mauvais radiateur acoustique, d'où la caisse de résonance.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Électromagnétisme**
+>
+> Le théorème de Poynting, $\partial_t u+\nabla\cdot\vec S=0$, est exactement la même équation avec $u$ la densité d'énergie électromagnétique et $\vec S$ le flux d'énergie.
+>
+> **Électricité (lignes et impédance)**
+>
+> Un câble coaxial a une impédance caractéristique $Z_0=\sqrt{L/C}$ qui relie tension et courant d'une onde progressive, comme $Z=\sqrt{F\mu}$ relie force et vitesse. L'adaptation d'impédance évite les réflexions.
+>
+> **Acoustique**
+>
+> L'impédance acoustique $Z=\rho c$ relie pression et vitesse ; l'intensité sonore est $I=\tfrac12Z\,v_m^2$ et se mesure en décibels.
+>
+> **Mécanique analytique**
+>
+> $e$ dérive du lagrangien $\mathcal L=\tfrac12\mu\dot y^2-\tfrac12Fy'^2$ ; l'équation d'onde est l'équation d'Euler-Lagrange et la conservation de l'énergie est le théorème de Noether pour l'invariance par translation dans le temps.
+>
+> **Lutherie**
+>
+> L'énergie d'une corde pincée est très faible ($\approx6{,}8\times10^{-5}$ J) : sans caisse de résonance, le son est inaudible à distance.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Lagrangien de la corde
+> $e$ est l'énergie associée au lagrangien $\mathcal{L}=\frac{1}{2}\mu\dot y^2-\frac{1}{2}Fy'^2$. L'équation d'onde est l'équation d'Euler-Lagrange, et $\partial_t e+\partial_x\mathcal{P}=0$ est le théorème de Noether pour l'invariance par translation dans le temps.
 
 
 > [!note] 🔗 Voir aussi

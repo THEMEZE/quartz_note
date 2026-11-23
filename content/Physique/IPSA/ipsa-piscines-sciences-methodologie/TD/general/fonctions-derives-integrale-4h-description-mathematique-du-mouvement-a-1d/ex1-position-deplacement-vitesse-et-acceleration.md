@@ -5,11 +5,40 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/index|⬅ Retour]] · <a href="/pdfs/td3_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV110.pdf" target="_blank" rel="noopener">📄 PDF</a> · <a href="/pdfs/td3_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/index|⬅ Retour]] · <a href="/pdfs/td3_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV110.pdf" target="_blank" rel="noopener">📄 PDF</a>
 
 ### Exercice 1. Position, déplacement, vitesse et accélération
 
+*⭐ Indispensable · Difficulté ●○○○○ · ⏱ 60 min · Type : Application*
+
 Ce premier exercice pose les bases de la description mathématique du mouvement à une dimension (cinématique 1D) sur un axe $(Ox)$.
+
+> [!abstract]+ 📚 Prérequis
+> **Cinématique scalaire**
+>
+> Savoir dériver et intégrer des fonctions temporelles simples ($\cos, \sin$, polynômes).
+
+
+> [!info]+ 🎯 Objectifs
+> **Définitions fondamentales de cinématique**
+>
+> Maitriser les formes différentielles et intégrales liant $x(t)$, $v_x(t)$ et $a_x(t)$, ainsi que l'interprétation de leurs signes.
+
+
+> [!note]+ 📖 Point de cours
+> **Relations cinématiques fondamentales**
+>
+> - $v_x(t) = \frac{\mathrm{d}x}{\mathrm{d}t} = \dot{x}(t)$
+> - $a_x(t) = \frac{\mathrm{d}v_x}{\mathrm{d}t} = \frac{\mathrm{d}^2 x}{\mathrm{d}t^2} = \ddot{x}(t)$
+> - $x(t) = x_0 + \int_{0}^{t} v_x(u) \, \mathrm{d}u$
+> - $v_x(t) = v_{x,0} + \int_{0}^{t} a_x(u) \, \mathrm{d}u$
+
+
+> [!tip]- 💡 Coup de pouce
+> **Signes cinématiques**
+>
+> Le signe d'une vitesse algébrique indique le sens de déplacement, tandis que l'accélération dépend du sens de la force nette ou de la variation de vitesse.
+
 
 **1.**
 
@@ -117,6 +146,10 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 > (b) $v = \frac{230}{3,6} = 63,89\text{ m}\cdot\text{s}^{-1} \implies a_{\text{moy}} = \frac{0 - 63,89}{4} = -15,97\text{ m}\cdot\text{s}^{-2}$.
 >
 > (c) $v = \frac{1440}{3,6} = 400\text{ m}\cdot\text{s}^{-1} \implies a_{\text{moy}} = \frac{400 - 0}{2} = 200\text{ m}\cdot\text{s}^{-2}$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Repère de Frénet
+> Extension des notions de vitesse et d'accélération aux mouvements 2D/3D (accélérations tangentielle et normale).
 
 
 > [!note] 🔗 Voir aussi

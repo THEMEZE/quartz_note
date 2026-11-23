@@ -11,9 +11,39 @@ tags:
 
 ### Exercice 2. Partie B — Effet de la tension sur les modes propres d'une corde <span style="color:#1565C0">(Part B — Effect of tension on the normal modes of a string)</span>
 
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 60 min · Type : Manipulation guidée*
+
 Une corde de longueur effective $L=55$ cm est excitée par le vibreur (montage de Melde, cf. TD1 ex. 5) sous trois tensions : $F=0{,}6\ ;\ 0{,}8\ ;\ 1{,}0$ N. Pour chacune, on relève les six premières fréquences propres. **Question scientifique :** comment la tension modifie-t-elle les fréquences propres et la célérité ?
 
 <span style="color:#1565C0">A string of effective length $L=55$ cm is driven by the vibrator (Melde setup, see TD1 ex. 5) at three tensions: $F=0.6,\ 0.8,\ 1.0$ N. For each one the first six natural frequencies are recorded. **Scientific question:** how does tension change the natural frequencies and the wave speed?</span>
+
+> [!question]+ 🎣 Accroche
+> **Accorder une corde : que fait la tension ? <span style="color:#1565C0">(Tuning a string: what does tension do?)</span>**
+>
+> *Durée de l'introduction : 3 min, avant les mesures*
+>
+> *Quand on tend la corde d'une guitare, la note monte. À $L$ fixée, que prévoir pour $f_1$ quand $F$ passe de $0{,}6$ à $1{,}0$ N ? Le vibreur impose la fréquence : impose-t-il aussi la vitesse de l'onde ?
+>
+> <span style="color:#1565C0">When a guitar string is tightened the note rises. At fixed $L$, what do you expect for $f_1$ when $F$ goes from 0.6 to 1.0 N? The vibrator sets the frequency: does it also set the wave speed?</span>*
+>
+> **Idée clé : $c=\sqrt{F/\mu}$ est fixée par le milieu.** $f_n=\dfrac{n}{2L}\sqrt{F/\mu}$ : à $n$ donné, $f_n\propto\sqrt F$. Prévision : $f_1(1{,}0)/f_1(0{,}6)=\sqrt{1{,}0/0{,}6}\approx1{,}29$.
+>
+> <span style="color:#1565C0">**Key idea: $c=\sqrt{F/\mu}$ is set by the medium.** $f_n=\dfrac{n}{2L}\sqrt{F/\mu}$: at given $n$, $f_n\propto\sqrt F$. Prediction: $f_1(1.0)/f_1(0.6)=\sqrt{1.0/0.6}\approx1.29$.</span>
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Racine carrée et proportionnalité <span style="color:#1565C0">(Square root and proportionality)</span>**
+>
+> $c\propto\sqrt F$ : multiplier $F$ par $4/3$ (de $0{,}6$ à $0{,}8$) multiplie $c$ par $\sqrt{4/3}\approx1{,}15$.
+>
+> <span style="color:#1565C0">$c\propto\sqrt F$: multiplying $F$ by $4/3$ (from 0.6 to 0.8) multiplies $c$ by $\sqrt{4/3}\approx1.15$.</span>
+>
+> **Propagation d'incertitude <span style="color:#1565C0">(Uncertainty propagation)</span>**
+>
+> $\dfrac{\Delta c}{c}=\dfrac{\Delta L}{L}+\dfrac{\Delta\alpha}{\alpha}$ avec $c=2L\alpha$.
+>
+> <span style="color:#1565C0">$\dfrac{\Delta c}{c}=\dfrac{\Delta L}{L}+\dfrac{\Delta\alpha}{\alpha}$ with $c=2L\alpha$.</span>
+
 
 **q1.** B1 — Régler $L=55$ cm, mesurer $L_0$ et $m$ (ou prendre $m=(3{,}0\pm0{,}1)$ g), puis proposer une incertitude $\Delta F$ sur la tension en la justifiant.
 

@@ -5,13 +5,65 @@ tags:
   - gravitation-optique-geometrique-et-diffusion-de-la-lumiere
 ---
 
-[[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Astrophysique_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]]
 
 ### Exercice 2. Image sténopéique du Soleil : diamètre angulaire, croissants sous les arbres et éclipse
+
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 2 h 30 (extérieur, par temps ensoleillé) · Type : TP expérimental en extérieur*
 
 Sous un arbre, les taches de lumière au sol sont rondes : chaque trou entre les feuilles se comporte comme un sténopé et projette une **image du Soleil**. Pendant une éclipse partielle, ces taches deviennent des croissants, images du Soleil partiellement masqué par la Lune. Le 12 août 2026, la France a connu une éclipse partielle profonde en fin de journée (plus de $90\ \%$ à Paris) ; les photographies de ce jour peuvent servir de données.
 
 Dans ce TP, on construit un sténopé, on mesure la taille de l'image du Soleil à différentes distances pour en déduire son **diamètre angulaire** $\theta$, puis son rayon. On étudie ensuite ce qui décide qu'une tache de lumière est l'image du Soleil (croissant) ou la forme du trou. La valeur de $\theta$ sera réutilisée dans le TP A3 (densité du Soleil).
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> Propagation rectiligne de la lumière, angle en radians ($\alpha\approx\tan\alpha$ pour $\alpha\ll1$), régression linéaire.
+
+
+> [!info]+ 🎯 Objectifs
+> **De l'image au diamètre angulaire**
+>
+> Savoir qu'un sténopé forme une image inversée dont la taille est proportionnelle à la distance, en déduire un angle, puis une dimension physique en utilisant une distance connue.
+
+
+> [!note]+ 🧰 Matériel
+> Boîte en carton longue (tube d'emballage, boîte à chaussures) ou deux feuilles cartonnées reliées par un tube
+>
+> Feuille d'aluminium ménager, épingle, poinçon ou perforatrice à trou de $1$ à $2\ \text{mm}$
+>
+> Écran blanc (papier calque ou feuille blanche) et ruban adhésif
+>
+> Règle graduée au demi-millimètre, mètre ruban
+>
+> Smartphone pour les photographies et les mesures d'angle (application niveau ou inclinomètre)
+>
+> Passoire, chapeau de paille, feuilles d'arbre ou grille de cuisine pour l'observation des taches (facultatif)
+
+
+> [!danger] 🦺 Sécurité
+> **Ne jamais regarder le Soleil**
+>
+> On ne regarde jamais le Soleil, ni directement, ni à travers le trou du sténopé, ni avec des jumelles ou un appareil photo sans filtre. On regarde uniquement l'**écran** sur lequel se projette l'image, en tournant le dos au Soleil. Pour observer directement une éclipse, utiliser uniquement des lunettes certifiées ISO 12312-2.
+
+
+> [!note]+ 🔬 Manipulation
+> **1. Construction du sténopé**
+>
+> Découper un carré de $5\ \text{cm}$ de côté dans le fond d'une boîte et le fermer avec une feuille d'aluminium percée d'un petit trou (épingle) que l'on agrandit progressivement. Placer un écran à l'opposé. La profondeur $D$ est réglable (longueur de la boîte, ou écran mobile).
+>
+> **2. Mesures d'image**
+>
+> En tournant le dos au Soleil, viser le Soleil avec le trou (l'ombre de la boîte doit être minimale sur l'écran) et mesurer le diamètre $d$ de l'image du Soleil pour $D=0{,}50\ ;\ 1{,}00\ ;\ 1{,}50\ ;\ 2{,}00\ \text{m}$. Mesurer chaque diamètre plusieurs fois (deux opérateurs).
+>
+> **3. Taille du trou**
+>
+> Refaire la mesure à $D=1{,}00\ \text{m}$ pour des trous de diamètres $0{,}3\ ;\ 1\ ;\ 3\ ;\ 10\ ;\ 30\ \text{mm}$. Comparer la forme de l'image et sa netteté.
+>
+> **4. Taches sous les arbres**
+>
+> Sous un arbre feuillu, mesurer le diamètre de quelques taches de lumière rondes et estimer la hauteur $h$ des feuilles concernées (mètre ruban, application d'inclinomètre). Photographier le sol avec une règle. Éventuellement, photographier les croissants lors d'une éclipse partielle.
+
 
 **q1.** Modèle. Un objet lointain vu sous l'angle $\theta$ forme, à travers un trou de très petite taille, une image de taille $d$ sur un écran situé à la distance $D$ du trou. Montrer que $d=2D\tan(\theta/2)\approx D\theta$. L'image est-elle droite ou renversée ? Est-elle plus grande ou plus petite si on double $D$ ?
 
@@ -130,4 +182,18 @@ Dans ce TP, on construit un sténopé, on mesure la taille de l'image du Soleil 
 > **Aperçu du TP A3**
 >
 > $M_\odot=\dfrac{4\pi^2a^3}{GT^2}$ et $R_\odot=\dfrac{a\theta}{2}$ donnent $\rho_\odot=\dfrac{M_\odot}{\frac{4}{3}\pi R_\odot^3}=\dfrac{3\pi}{GT^2}\left(\dfrac{a}{R_\odot}\right)^3=\dfrac{24\pi}{GT^2\theta^3}$. La seule mesure géométrique nécessaire est l'angle $\theta$, que l'on obtient avec un sténopé.
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Éblouissement et navigation astronomique**
+>
+> Les sextants à bulle utilisés en navigation aérienne jusque dans les années 1970 visaient le bord inférieur du Soleil ; on corrige la mesure du demi-diamètre apparent du Soleil ($\approx16'$). Le diamètre angulaire mesuré ici est celui de cette correction. Discuter aussi l'éblouissement en vol face au Soleil bas (par exemple lors d'un atterrissage face à l'ouest en fin de journée) et le rôle des pare-soleil.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Flou géométrique et diffraction
+> Le diamètre optimal du trou vaut $s\approx\sqrt{2{,}44\,\lambda D}\approx1{,}2\ \text{mm}$ pour $D=1\ \text{m}$ et $\lambda=550\ \text{nm}$ : c'est l'égalité du flou géométrique $s$ et de la tache de diffraction $2{,}44\lambda D/s$.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Convolution de deux ouvertures
+> L'image est la convolution du disque solaire (de brillance non uniforme à cause de l'assombrissement centre-bord) et de la forme du trou. On peut retrouver l'assombrissement centre-bord du Soleil sur une image bien contrastée.
 

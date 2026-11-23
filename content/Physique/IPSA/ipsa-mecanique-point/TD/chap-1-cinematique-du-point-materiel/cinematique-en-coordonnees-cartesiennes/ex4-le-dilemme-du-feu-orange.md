@@ -9,6 +9,8 @@ tags:
 
 ### Exercice 4. Le dilemme du feu orange *(facultatif)*
 
+*Difficulté ●●●○○ · ⏱ 40 min · Type : Modélisation / Exercice non guidé*
+
 Une voiture roule en ligne droite à la vitesse constante $v_0=50~\mathrm{km/h}$ (limitation en ville) lorsque le feu
 situé devant elle passe à l'orange. On choisit l'axe $Ox$ le long de la route, orienté dans le sens de la marche, l'origine $O$ à
 la position de la voiture à cet instant, qui est aussi l'origine des temps. La ligne d'arrêt du feu est à l'abscisse $x=D$. Le feu reste orange pendant $\tau=3{,}0~\mathrm{s}$,
@@ -22,6 +24,67 @@ Le conducteur a deux options :
 
 
 On modélise la voiture par un point matériel.
+
+> [!question]+ 🎣 Accroche
+> **Freiner ou passer : existe-t-il une distance où l'on ne peut pas bien faire ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Vous roulez à 50 km/h, le feu passe à l'orange à **44 m** de la ligne d'arrêt. Vous freinez ? Vous passez ? Existe-t-il une distance où, **quoi que vous fassiez**, vous êtes en faute (ou en danger) ? Et pourquoi les feux orange durent-ils plus longtemps sur les routes rapides ?*
+>
+> **Idée clé : un mouvement par phases se traite phase par phase, avec raccord.** Phase 1 : vitesse constante pendant le temps de réaction. Phase 2 : décélération constante jusqu'à l'arrêt. La distance parcourue est l'**aire sous la courbe $v(t)$**. Ensuite, la question « peut-on ? » devient une **inégalité** sur une distance :
+> $$\text{arrêt possible}\iff D\ge d_f,\qquad\text{passage possible}\iff D\le v_0\tau .$$
+> Quand $d_f>v_0\tau$, un intervalle de $D$ ne vérifie aucune des deux conditions : c'est la **zone de dilemme**.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Mouvement par phases : raccorder les lois horaires**
+>
+> Quand l'accélération change brusquement à l'instant $t_1$, on écrit une loi horaire par phase, et on **raccorde** : la position et la vitesse à la fin de la phase 1 sont les conditions initiales de la phase 2. Pour une phase d'accélération constante $a_x$ commençant en $t_1$ avec $x_1$ et $v_1$ :
+> $$v(t)=v_1+a_x\,(t-t_1),\qquad x(t)=x_1+v_1\,(t-t_1)+\tfrac12\,a_x\,(t-t_1)^2 .$$
+>
+> **Vitesse, distance parcourue et aire sous la courbe $v(t)$**
+>
+> La distance parcourue entre $t_a$ et $t_b$ est l'aire algébrique sous la courbe $v(t)$ : $\displaystyle\Delta x=\int_{t_a}^{t_b}v(t)\,\mathrm dt$. Pour un graphe fait de segments de droite, c'est une somme d'aires de rectangles, de triangles et de trapèzes.
+
+
+> [!info]+ 🎯 Objectifs
+> **Modéliser une décision à partir d'un mouvement par phases**
+>
+> Savoir traduire une situation concrète en deux phases (vitesse constante puis décélération constante), écrire la loi horaire de chaque phase, en déduire une distance d'arrêt, puis transformer une question de société (« peut-on s'arrêter ? peut-on passer ? ») en **inégalités** sur la distance $D$ ; interpréter ensuite le résultat littéral (dépendance en $v_0$, $t_r$, $a$, $\tau$).
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+> **Un exercice où la physique éclaire une règle de sécurité routière**
+>
+> L'exercice mobilise peu de formules mais exige de **poser le problème** : choisir les phases, les conditions de raccord, et formuler deux conditions logiques distinctes (arrêt possible, passage possible). La notion de « zone de dilemme » est contre-intuitive : on découvre qu'il peut exister des distances où **aucune** manœuvre n'est possible sans infraction ou sans freinage brutal. La question (f) montre qu'un résultat littéral permet de **prédire un seuil** (vitesse en dessous de laquelle le problème disparaît), ce que ne ferait pas un calcul numérique isolé. Les résultats dépendent de $t_r$ et $a$ : c'est l'occasion de parler de sensibilité d'un modèle aux paramètres.
+
+
+> [!note]+ 📖 Point de cours
+> **Distance d'arrêt = distance de réaction + distance de freinage**
+>
+> Pour une décélération constante $a$ et un temps de réaction $t_r$ :
+> $$d_{\rm arrêt}=\underbrace{v_0\,t_r}_{\text{réaction}}+\underbrace{\frac{v_0^2}{2a}}_{\text{freinage}},\qquad t_{\rm arrêt}=t_r+\frac{v_0}{a}.$$
+> La distance de réaction est proportionnelle à $v_0$ ; la distance de freinage est proportionnelle à $v_0^2$ : doubler la vitesse **quadruple** la distance de freinage.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Conversion $\mathrm{km/h}\leftrightarrow\mathrm{m/s}$**
+>
+> $1~\mathrm{km/h}=\dfrac1{3{,}6}~\mathrm{m/s}$. Mémoriser : $36~\mathrm{km/h}=10~\mathrm{m/s}$, $50~\mathrm{km/h}\approx13{,}9~\mathrm{m/s}$, $90~\mathrm{km/h}=25~\mathrm{m/s}$, $130~\mathrm{km/h}\approx36~\mathrm{m/s}$.
+>
+> **Aires usuelles sous une courbe**
+>
+> Rectangle : base $\times$ hauteur. Triangle : $\tfrac12\times$ base $\times$ hauteur. Trapèze : $\tfrac12(b_1+b_2)\times h$. Le freinage à $a$ constante donne un triangle d'aire $\tfrac12 v_0\cdot\dfrac{v_0}{a}=\dfrac{v_0^2}{2a}$.
+>
+> **Étudier le signe d'un produit pour résoudre une inégalité**
+>
+> $\Delta=v_0\Big(\dfrac{v_0}{2a}-(\tau-t_r)\Big)$ est un produit de deux facteurs ; $v_0>0$, donc le signe de $\Delta$ est celui de $\dfrac{v_0}{2a}-(\tau-t_r)$, qui s'annule en $v_0=2a\,(\tau-t_r)$.
+>
+> **Vérifier une expression littérale par ses dimensions**
+>
+> $v_0t_r$ : (m/s)$\times$s = m ; $\dfrac{v_0^2}{2a}$ : $\dfrac{(\mathrm{m/s})^2}{\mathrm{m/s^2}}$ = m. Toute somme de distances doit être homogène à une longueur : si ce n'est pas le cas, une erreur s'est glissée.
+
 
 **q1.** - [(a)] Écrire, pour chacune des deux phases du freinage (réaction puis décélération), la vitesse $v(t)$ et l'abscisse $x(t)$ de la voiture.
 - [(b)] Déterminer l'instant $t_s$ de l'arrêt et la distance totale $d_f$ parcourue depuis l'apparition de l'orange. Faire l'application numérique et distinguer distance de réaction et distance de freinage.
@@ -144,6 +207,70 @@ On modélise la voiture par un point matériel.
 > La condition de passage devient $D\le50{,}7$ m, tandis que l'arrêt reste possible pour $D\ge46{,}0$ m. Les deux intervalles **se recouvrent** entre $46{,}0$ et $50{,}7$ m : il n'y a plus de zone interdite, le conducteur a même le choix.
 >
 > Mais la vitesse au moment de franchir la ligne (au plus tard à $\tau$) vaut $v_0+a_{\rm acc}\tau\approx13{,}9+6=19{,}9~\mathrm{m/s}\approx72$ km/h, bien au-dessus de la limite de 50 km/h : on a « résolu » le dilemme au prix d'une infraction de vitesse, ce qui n'est pas une solution acceptable. Le dilemme se résout par la signalisation (orange plus long) et non par l'accélération.
+
+
+> [!warning]- 🪤 Écueils classiques
+> **Oublier la phase de réaction**
+>
+> Beaucoup d'étudiants ne retiennent que le freinage $v_0^2/(2a)$ et oublient que, pendant $t_r$, la voiture avance encore de $v_0 t_r\approx14$ m. Ici cette distance représente près d'un tiers de la distance d'arrêt.
+>
+> **Mélanger les unités**
+>
+> Utiliser $v_0=50$ avec $a=3~\mathrm{m\,s^{-2}}$ sans convertir : il faut $v_0=50/3{,}6\approx13{,}9~\mathrm{m\,s^{-1}}$. Un contrôle de cohérence dimensionnelle (distance en m, temps en s) évite l'erreur.
+>
+> **Écrire $x(t)=v_0t-\frac12at^2$ dès $t=0$**
+>
+> La loi de freinage n'est valable qu'à partir de $t=t_r$. Il faut écrire $-\tfrac12a\,(t-t_r)^2$, et non $-\tfrac12at^2$ (même erreur de décalage que pour l'exercice « course automobile »).
+>
+> **Confondre « pouvoir s'arrêter » et « devoir s'arrêter »**
+>
+> Les deux conditions sont **indépendantes** : $D\ge d_f$ (arrêt possible) et $D\le v_0\tau$ (passage possible). Il peut exister des $D$ qui vérifient les deux (le conducteur a le choix), ou aucune des deux (dilemme).
+
+
+> [!tip]- 🎙️ Conseils d'animation
+> **Faire voter avant de calculer**
+>
+> Demander à main levée : « Le feu passe à l'orange, vous êtes à 40 m à 50 km/h : vous freinez ou vous passez ? » puis à 45 m. Les avis divergent, ce qui motive le calcul. Faire tracer $x(t)$ au tableau avec la droite $x=D$ et l'instant $t=\tau$ pour visualiser les deux options.
+>
+> **Discuter les paramètres**
+>
+> Faire varier $t_r$ (0,7 s ; 1,5 s) et $a$ (3 ; 7 $\mathrm{m\,s^{-2}}$) avec un tableur ou Python et observer l'effet sur la largeur de la zone de dilemme : un conducteur fatigué ou une chaussée mouillée élargissent la zone.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Sécurité routière et ingénierie du trafic**
+>
+> Les durées d'orange sont dimensionnées par des formules du type $\tau=t_r+v_0/(2a)$ (formule de l'ITE). La « zone de dilemme » est un concept central de l'étude des accidents aux carrefours à feux.
+>
+> **Physiologie et psychologie cognitive**
+>
+> Le temps de réaction ($0{,}7$ à $1{,}5$ s) dépend de l'attention, de la fatigue, de l'alcool, de l'âge. Il est mesurable (test de la règle qui tombe, avec $h=\tfrac12gt^2$).
+>
+> **Droit**
+>
+> En France, l'orange fixe impose l'arrêt sauf si l'arrêt dans des conditions de sécurité suffisantes est impossible : la notion de « sécurité suffisante » se traduit par une valeur de décélération maximale admissible.
+>
+> **Ferroviaire et aéronautique**
+>
+> Même modèle en deux phases pour une distance d'arrêt de train (temps de réponse + freinage) et pour la distance de décision à la rotation d'un avion au décollage.
+
+
+> [!success]- 🏁 Bilan
+> **Deux inégalités, une zone de dilemme**
+>
+> Arrêt possible : $D\ge d_f=v_0t_r+\dfrac{v_0^2}{2a}$. Passage possible : $D\le v_0\tau$. La zone de dilemme existe lorsque $d_f>v_0\tau$, c'est-à-dire pour $v_0>2a\,(\tau-t_r)$ (ici $\approx43$ km/h), et elle disparaît dès que $\tau\ge t_r+\dfrac{v_0}{2a}$. Avec les valeurs de l'énoncé : $d_f\approx46{,}0$ m, $v_0\tau\approx41{,}7$ m, zone de dilemme de $\approx4{,}4$ m.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Intégrer la largeur du carrefour
+> Si l'on exige que la voiture ait **dégagé** le carrefour de largeur $W$ (longueur du véhicule $\ell$) avant le rouge, la condition de passage devient $D+W+\ell\le v_0\tau$. Montrer que la durée d'orange sans dilemme est alors $\tau_{\min}=t_r+\dfrac{v_0}{2a}+\dfrac{W+\ell}{v_0}$. Étudier $\tau_{\min}(v_0)$ : cette fonction passe par un **minimum** en $v_0^\star=\sqrt{2a\,(W+\ell)}$, que vaut-il ? Pour $W=15$ m et $\ell=5$ m, calculer $v_0^\star$ en km/h.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Formule de l'ITE et pente de la chaussée
+> Les ingénieurs du trafic dimensionnent l'orange par la formule $\tau=t_r+\dfrac{v_0}{2a+2gG}$ où $G$ est la pente (positive en montée). Retrouver cette expression en écrivant que la décélération effective sur une pente $G\ll1$ est $a+gG$. Discuter l'effet de la pente sur la durée d'orange nécessaire et celui d'une chaussée mouillée ($a$ plus faible).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Freinage à jerk borné
+> La décélération n'est pas instantanée : le conducteur augmente progressivement la pression sur la pédale. Modéliser la montée de $a(t)$ par une rampe de pente $j$ (« jerk ») jusqu'à la valeur $a_{\max}$. Calculer la nouvelle distance d'arrêt et montrer que la correction par rapport au modèle à décélération constante est, au premier ordre, $\Delta d\approx v_0\,\dfrac{a_{\max}}{2j}$. Le résultat exact est $\Delta d=v_0\dfrac{a_{\max}}{2j}-\dfrac{a_{\max}^3}{24\,j^2}$ ; estimer numériquement pour $j=10~\mathrm{m\,s^{-3}}$ et $a_{\max}=3~\mathrm{m\,s^{-2}}$ (on trouve $\Delta d\approx2{,}1$ m).
 
 
 > [!note] 🔗 Voir aussi

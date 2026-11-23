@@ -5,9 +5,11 @@ tags:
   - chap-2-ondes-acoustiques
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a> · <a href="/pdfs/td2_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a>
 
 ### Exercice 6. Tube d'impédance : mesurer l'absorption d'un matériau avec une onde stationnaire partielle *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Approfondissement / problème expérimental*
 
 Un ingénieur acousticien veut caractériser une mousse absorbante. Il place un échantillon à l'extrémité
 $x=0$ d'un tube rigide cylindrique de rayon $a=2{,}0$ cm. Un haut-parleur, placé loin à gauche, envoie dans
@@ -17,6 +19,64 @@ $$\tilde p_I=A\,e^{i(\omega t-kx)},\qquad\tilde p_R=R\,A\,e^{i(\omega t+kx)},\qq
 Un microphone-sonde mobile mesure l'amplitude $|\tilde p|$ en fonction de la distance $d=-x$ à l'échantillon.
 On relève : $|\tilde p|_{\max}/|\tilde p|_{\min}=3$ et le premier minimum, le plus proche de l'échantillon,
 est situé à $d_1=4{,}25$ cm.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi les studios sont-ils tapissés de mousse ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Dans une salle nue, la voix « résonne ». Si l'on tapisse les murs de mousse, elle devient sèche. En terme d'onde, qu'est devenue l'onde réfléchie ? Peut-on **mesurer** sa fraction restante avec un simple micro ?*
+>
+> **Idée clé : mesurer la somme de l'onde incidente et de l'onde réfléchie révèle l'onde réfléchie.** On a $|\tilde p|^2=A^2\big(1+|R|^2+2|R|\cos(2kx+\varphi)\big)$ : la *profondeur* de modulation donne $|R|$, la *position* des minima donne $\varphi$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Ondes stationnaires et réflexion (exercices 2, 3 et 4)**
+>
+> Savoir qu'une onde stationnaire est une superposition d'ondes incidente et réfléchie, que l'extrémité d'un tube ouvert correspond à $R=-1$ (nœud de pression) et celle d'un tube fermé par une paroi rigide à $R=+1$ (ventre de pression), et que la réflexion à une interface est décrite par $R=(Z_2-Z_1)/(Z_1+Z_2)$.
+>
+> **Impédance et vitesse particulaire**
+>
+> Pour une onde plane progressive, $\tilde v=\pm\tilde p/Z_0$ avec $Z_0=\rho_0c$. On définit l'impédance d'une extrémité (ici de l'échantillon) comme $Z_s=\tilde p(0)/\tilde v(0)$ (convention $e^{+i\omega t}$).
+>
+> **Nombres complexes**
+>
+> Module, argument, conjugué ; $|a+b|^2=|a|^2+|b|^2+2\operatorname{Re}(ab^{*})$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Passer d'une mesure à un coefficient complexe**
+>
+> Savoir interpréter un relevé expérimental (rapport maximum/minimum et position d'un minimum) pour en déduire le module et la phase d'un coefficient de réflexion complexe, puis l'impédance et le coefficient d'absorption d'un matériau.
+>
+> Savoir interpréter une onde stationnaire *partielle* comme la somme d'une onde progressive et d'une onde stationnaire pure, et situer les cas limites (paroi rigide, extrémité ouverte, matériau adapté).
+
+
+> [!note]+ 📖 Point de cours
+> **Onde stationnaire partielle et rapport d'ondes stationnaires**
+>
+> Lorsque $|R|<1$, l'onde réfléchie est plus faible que l'onde incidente : la somme n'est ni une onde progressive pure ($R=0$) ni une onde stationnaire pure ($|R|=1$). Le signal $|\tilde p|(x)$ présente des ventres de pression d'amplitude $A(1+|R|)$ et des minima non nuls $A(1-|R|)$, périodiques de période $\lambda/2$. On appelle **rapport d'ondes stationnaires** (ROS, ou TOS) $s=p_{\max}/p_{\min}\in[1,\infty[$.
+>
+> La position des minima donne la phase de $R$ : c'est l'information qui distingue deux matériaux de même absorption mais de comportements réactifs différents (masse ou raideur).
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Module d'une somme de deux complexes**
+>
+> $|a+b|^2=|a|^2+|b|^2+2\operatorname{Re}(ab^{*})$. Avec $a=e^{-ikx}$ et $b=Re^{ikx}$, $ab^{*}=R^{*}e^{-2ikx}$ : on obtient $2|R|\cos(2kx+\varphi)$ (le signe de $\varphi$ s'inverse avec le conjugué, mais le cosinus est pair).
+>
+> **Décomposition d'un complexe en partie progressive et partie stationnaire**
+>
+> $e^{-ikx}+R e^{ikx}=(1-|R|)e^{-ikx}+2|R|e^{i\varphi/2}\cos(kx+\varphi/2)$ : une composante progressive d'amplitude $1-|R|$ et une composante stationnaire pure de ventre $2|R|$.
+>
+> **Fraction homographique $\dfrac{1+R}{1-R}$**
+>
+> Pour $R=-0{,}5i$ : $\dfrac{1-0{,}5i}{1+0{,}5i}=\dfrac{(1-0{,}5i)^2}{1+0{,}25}$. Multiplier numérateur et dénominateur par le conjugué du dénominateur.
+>
+> **Résolution d'une équation linéaire dans $\mathbb C$**
+>
+> $H=\dfrac{e^{-ikx_2}+Re^{ikx_2}}{e^{-ikx_1}+Re^{ikx_1}}$ est linéaire en $R$ : on isole $R$ sans difficulté (question 6).
+
 
 **q1.** Montrer que $|\tilde p(x)|^2=A^2\big(1+|R|^2+2|R|\cos(2kx+\varphi)\big)$ et que le signal total se décompose
 en une onde progressive et une onde stationnaire pure dont on précisera les amplitudes.
@@ -139,6 +199,32 @@ haute (on admettra que la propagation est plane si $f<1{,}84\,c/(2\pi a)$) ?
 > **Conditions d'application**
 >
 > Si $k\sigma=\pi$, alors $e^{-ikx_2}=e^{-ik x_1}e^{ik\sigma}=-e^{-ikx_1}$ et de même $e^{ikx_2}=-e^{ikx_1}$ : donc $\tilde p(x_2)=-\tilde p(x_1)$ quelle que soit la valeur de $R$, et $H=-1$ ne contient plus aucune information : le dénominateur s'annule. Il faut $\sigma<\lambda/2$, soit $f<c/(2\sigma)=340/0{,}1=3{,}4$ kHz (en pratique on se limite à $0{,}45\lambda$). Pour le tube, l'hypothèse d'onde plane suppose que seul le mode de pression uniforme sur la section se propage : au-delà de $f_c=1{,}84\,c/(2\pi a)=1{,}84\times340/(2\pi\times0{,}02)\approx5$ kHz, des modes transverses apparaissent et la décomposition en deux ondes planes n'est plus valable.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Hyperfréquences et lignes de transmission**
+>
+> Le ROS (VSWR) d'une antenne ou d'une ligne coaxiale est défini à l'identique ; un ROS de $1{,}5$ correspond à $|R|=0{,}2$, soit $4\ \%$ de puissance réfléchie. Un câble mal adapté se mesure comme ce tube.
+>
+> **Acoustique architecturale**
+>
+> Le coefficient d'absorption $\alpha=1-|R|^2$ à incidence normale est l'une des grandeurs tabulées pour les panneaux, tentures et plafonds acoustiques, mesuré en tube d'impédance.
+>
+> **Optique**
+>
+> Un traitement antireflet est un tube d'impédance « optique » : on cherche à annuler $R$ (cf. exercice 8). Les franges d'une lame d'air entre un miroir et un faisceau en incidence normale sont des ondes stationnaires partielles.
+>
+> **Instrumentation médicale**
+>
+> Le tube d'impédance sert à caractériser les matériaux d'adaptation et les absorbeurs de sondes ultrasonores, et les prothèses auditives.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Méthode normalisée à deux microphones
+> La norme ISO 10534-2 remplace le microphone mobile par deux microphones fixes, ce qui permet de mesurer $R(f)$ sur toute une bande de fréquences d'un seul coup à partir de la fonction de transfert entre les deux signaux (question 6).
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Diagramme de Smith
+> Le coefficient de réflexion complexe $R$ et l'impédance normalisée $Z_s/Z_0$ sont reliés par une transformation homographique : c'est l'abaque de Smith, outil standard des ingénieurs en hyperfréquences, qui s'applique mot pour mot ici.
 
 
 > [!note] 🔗 Voir aussi

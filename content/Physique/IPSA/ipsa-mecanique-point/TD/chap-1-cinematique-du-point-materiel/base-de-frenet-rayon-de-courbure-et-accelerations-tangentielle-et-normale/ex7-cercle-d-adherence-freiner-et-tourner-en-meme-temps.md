@@ -5,9 +5,11 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/index|⬅ Retour]] · <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/index|⬅ Retour]] · <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 7. Cercle d'adhérence : freiner et tourner en même temps *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 40 min · Type : Entraînement / Application technique*
 
 Une voiture roule sur une route horizontale. Les seules forces horizontales qu'elle subit sont les forces de
 frottement des pneus sur le sol, dont la norme est bornée par l'**adhérence** : $F\le\mu\,mg$ où $\mu$ est le
@@ -17,6 +19,56 @@ $$\|\vec a\|=\sqrt{a_T^2+a_N^2}\le\mu g.$$
 Dans le plan $(a_N,a_T)$, les accélérations réalisables sont donc à l'intérieur du **cercle d'adhérence** de rayon
 $\mu g$ : tout ce qu'on utilise pour tourner ($a_N=v^2/R$) n'est plus disponible pour freiner ($a_T<0$) ou accélérer
 ($a_T>0$). On prendra $g=9{,}81\ \mathrm{m\,s^{-2}}$ et $\mu=0{,}8$ (route sèche), sauf mention contraire.
+
+> [!question]+ 🎣 Accroche
+> **Freiner ou tourner : il faut choisir ?**
+>
+> *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
+>
+> *Sur route mouillée, on vous conseille de ne pas freiner dans un virage mais avant. Pourquoi ? Si un virage consomme déjà « presque toute » l'adhérence disponible, combien de décélération reste-t-il pour freiner ? Peut-on freiner dans un virage sans sortir de la route ?*
+>
+> **Idée clé : l'adhérence est un budget partagé entre $a_T$ et $a_N$.** Elle limite la norme totale de l'accélération, pas chaque composante : $a_T^2+a_N^2\le(\mu g)^2$. Un virage pris à la limite ($a_N=\mu g$) ne laisse **aucun** budget pour freiner.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Composantes tangentielle et normale**
+>
+> $\vec a=a_T\,\vec\tau+a_N\,\vec n$, $a_T=\dot v$, $a_N=v^2/R$, $\|\vec a\|^2=a_T^2+a_N^2$.
+>
+> **Mouvement rectiligne uniformément varié**
+>
+> $v=v_0+a_Tt$, $d=v_0t+\tfrac12a_Tt^2$, $v^2=v_0^2+2a_Td$.
+>
+> **Rayon de courbure d'une parabole**
+>
+> $R(x)=\dfrac{(1+4k^2x^2)^{3/2}}{2k}$ pour $y=kx^2$ (exercice 2).
+
+
+> [!info]+ 🎯 Objectifs
+> **Utiliser la décomposition de Frenet pour résoudre un problème d'ingénierie**
+>
+> Traduire une contrainte physique (adhérence) en inégalité sur les composantes $a_T$ et $a_N$, en déduire les vitesses limites en virage, les décélérations possibles en courbe et un profil de vitesse maximale le long d'une trajectoire de courbure variable.
+
+
+> [!note]+ 📖 Point de cours
+> **Cercle d'adhérence**
+>
+> $a_T^2+a_N^2\le(\mu g)^2$ avec $a_N=v^2/R$. En virage stationnaire ($a_T=0$) : $v_{\max}=\sqrt{\mu gR}$. En ligne droite ($a_N=0$) : $a_T\ge-\mu g$, soit une distance de freinage $d=\dfrac{v^2}{2\mu g}$. En virage, la décélération possible est $|a_T|\le\sqrt{(\mu g)^2-v^4/R^2}$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Inéquation du disque**
+>
+> $a_T^2\le(\mu g)^2-a_N^2$, soit $|a_T|\le\sqrt{(\mu g)^2-a_N^2}$ : valable si $a_N\le\mu g$.
+>
+> **Racine quatrième**
+>
+> $v_0^4\le R^2\left[(\mu g)^2-b^2\right]$ conduit à $v_0\le\left(R^2\left[(\mu g)^2-b^2\right]\right)^{1/4}$.
+>
+> **Mouvement rectiligne uniformément décéléré**
+>
+> $d=\dfrac{v_0^2}{2|a_T|}$ et $t=\dfrac{v_0}{|a_T|}$.
+
 
 **q1.** **1/ Virage stationnaire et freinage droit.**
 
@@ -106,6 +158,32 @@ $\mu g$ : tout ce qu'on utilise pour tourner ($a_N=v^2/R$) n'est plus disponible
 > **(g) Stratégie**
 >
 > $v_{\max}$ est minimale au sommet (virage le plus serré) et croît quand on s'en éloigne. La voiture doit donc **freiner avant** le sommet (de manière à y arriver à moins de $71\ \mathrm{km/h}$) et peut **accélérer après** le sommet (puisque $R$ augmente). Le freinage doit être terminé **avant** la zone la plus courbée : dans la zone serrée, la voiture ne peut plus décélérer (disque presque saturé par $a_N$). Une stratégie « freiner tard puis tourner » est dangereuse.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Sécurité routière**
+>
+> Distance de freinage : $d=v^2/(2\mu g)$ ; adhérence sur sec ($\mu\approx0{,}8$), mouillé ($\approx0{,}5$), neige ($\approx0{,}2$), verglas ($\approx0{,}1$). Les systèmes ESP et ABS cherchent à maintenir le véhicule à l'intérieur du disque d'adhérence.
+>
+> **Sport automobile**
+>
+> Le « diagramme g-g » (accélération latérale en abscisse, longitudinale en ordonnée) est l'outil standard des ingénieurs de course ; la trajectoire idéale est celle qui reste au bord du disque.
+>
+> **Robotique et véhicules autonomes**
+>
+> La planification de vitesse sur une trajectoire donnée impose $v(s)\le\sqrt{\mu g/\kappa(s)}$ ; un véhicule autonome ralentit à l'avance avant un virage serré.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Appui aérodynamique
+> Pour une voiture de F1, l'appui aérodynamique augmente la force normale avec la vitesse : $\mu_{\rm eff}\,g=\mu g(1+\kappa v^2)$. Montrer que $v_{\max}$ en virage vérifie $v^2=\mu gR(1+\kappa v^2)$, soit $v_{\max}^2=\dfrac{\mu gR}{1-\mu g\kappa R}$, valable si $\mu g\kappa R<1$ : au-delà, il n'y a plus de limite d'adhérence (le virage est « plat »). Appliquer aux virages de Monaco (exercice 3).
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Profil de vitesse optimal
+> Sur un circuit de courbure $\kappa(s)$ donnée, le profil de vitesse le plus rapide vérifie $v\dot v=a_T v$ avec $a_T=\pm\sqrt{(\mu g)^2-v^4\kappa^2}$ (freinage en entrée, accélération en sortie) : intégrer numériquement l'équation $\dfrac{\mathrm dv}{\mathrm ds}=\dfrac{a_T(v,s)}v$ pour la parabole de la question 4 et comparer au profil de vitesse stationnaire $\sqrt{\mu g R(s)}$.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Frottement anisotrope et glissement
+> Dans un modèle plus réaliste, le disque devient une ellipse (adhérence longitudinale différente de l'adhérence latérale). Comparer au « diagramme g-g » des ingénieurs de course.
 
 
 > [!note] 🔗 Voir aussi

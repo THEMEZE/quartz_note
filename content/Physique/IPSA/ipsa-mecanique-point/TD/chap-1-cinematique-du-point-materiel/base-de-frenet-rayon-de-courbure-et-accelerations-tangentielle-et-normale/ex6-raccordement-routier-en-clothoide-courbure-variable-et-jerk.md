@@ -5,9 +5,11 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/index|⬅ Retour]] · <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/index|⬅ Retour]] · <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 6. Raccordement routier en clothoïde (courbure variable et « jerk ») *(facultatif)*
+
+*Difficulté ●●●●● · ⏱ 50 min · Type : Approfondissement / Problème technique*
 
 Sur une route (ou une voie ferrée), le passage d'un alignement droit à un virage circulaire de rayon $R_f$ ne se
 fait jamais brutalement : si le rayon passait instantanément de $\infty$ à $R_f$, l'accélération normale
@@ -18,6 +20,60 @@ $$\frac1{R(s)}=\frac s{A^2},\qquad A>0\ \text{constante (en mètres)},$$
 courbe appelée **clothoïde** (ou spirale d'Euler, spirale de Cornu). L'abscisse curviligne $s$ est comptée depuis
 le début du raccordement, où la route est rectiligne et tangente à $Ox$. Un véhicule la parcourt à vitesse de norme
 $v$ constante.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi une route droite ne se raccorde jamais directement à un cercle ?**
+>
+> *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
+>
+> *Imaginez rouler à $90$ km/h sur une ligne droite qui se raccorde brusquement à un virage circulaire. Que ressentez-vous au point de raccord ? Et que doit faire le conducteur de ses mains ? Comment une route peut-elle « préparer » le conducteur à un virage ?*
+>
+> **Idée clé : la courbure est la donnée, la trajectoire en est la conséquence.** À vitesse constante, l'accélération latérale ressentie est $a_N=v^2\kappa(s)$. Pour qu'elle croisse **progressivement**, la courbure doit croître progressivement. Le choix le plus simple est $\kappa$ linéaire en $s$ : c'est la clothoïde.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Base de Frenet**
+>
+> $\vec a=\dot v\,\vec\tau+\dfrac{v^2}R\,\vec n$ ; $\dfrac1R=\left|\dfrac{\mathrm d\alpha}{\mathrm ds}\right|$ où $\alpha$ est l'angle de la tangente avec $Ox$ ; $\mathrm d\overrightarrow{OM}=\mathrm ds\,\vec\tau=\mathrm ds\,(\cos\alpha,\sin\alpha)$.
+>
+> **Développements limités**
+>
+> $\cos u=1-\dfrac{u^2}2+\cdots$ et $\sin u=u-\dfrac{u^3}6+\cdots$ pour $u\to0$.
+>
+> **Dérivée de l'accélération (jerk)**
+>
+> Le **jerk** (à-coup) est $\vec j=\dfrac{\mathrm d\vec a}{\mathrm dt}$ ; en mouvement rectiligne, $j=\ddot v$. Un jerk élevé est ressenti comme un choc ; les normes de confort sont de l'ordre de $0{,}3$ à $0{,}6\ \mathrm{m\,s^{-3}}$ (route, rail).
+
+
+> [!info]+ 🎯 Objectifs
+> **Reconstruire une trajectoire à partir de sa courbure**
+>
+> Savoir qu'une courbe plane est déterminée par sa courbure $\kappa(s)=1/R(s)$ : $\alpha(s)=\int\kappa\,\mathrm ds$, puis $x=\int\cos\alpha\,\mathrm ds$, $y=\int\sin\alpha\,\mathrm ds$. Relier la courbure au confort via $a_N=v^2\kappa$ et au jerk, et dimensionner un raccordement avec des données réalistes.
+
+
+> [!note]+ 📖 Point de cours
+> **Courbure et construction d'une courbe plane**
+>
+> Pour une courbe paramétrée par l'abscisse curviligne : $\dfrac{\mathrm d\alpha}{\mathrm ds}=\kappa(s)$ (courbure algébrique), $\dfrac{\mathrm dx}{\mathrm ds}=\cos\alpha$, $\dfrac{\mathrm dy}{\mathrm ds}=\sin\alpha$. À vitesse constante : $a_N=v^2\kappa(s)$ et le « jerk latéral » est $j_N=\dfrac{\mathrm da_N}{\mathrm dt}=v^3\dfrac{\mathrm d\kappa}{\mathrm ds}$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Reconstruction d'une courbe plane à partir de sa courbure**
+>
+> $\alpha(s)=\alpha_0+\int_0^s\kappa(\sigma)\,\mathrm d\sigma$ ; $x(s)=x_0+\int_0^s\cos\alpha\,\mathrm d\sigma$ ; $y(s)=y_0+\int_0^s\sin\alpha\,\mathrm d\sigma$.
+>
+> **Développements limités sous l'intégrale**
+>
+> Pour $\alpha=\dfrac{s^2}{2A^2}\ll1$ : $\cos\alpha\simeq1-\dfrac{s^4}{8A^4}$ et $\sin\alpha\simeq\dfrac{s^2}{2A^2}-\dfrac{s^6}{48A^6}$ ; en intégrant : $x\simeq s-\dfrac{s^5}{40A^4}$, $y\simeq\dfrac{s^3}{6A^2}-\dfrac{s^7}{336A^6}$.
+>
+> **Fonctions de Fresnel**
+>
+> $C(z)=\displaystyle\int_0^z\cos\left(\tfrac{\pi t^2}2\right)\mathrm dt$ et $S(z)=\int_0^z\sin\left(\tfrac{\pi t^2}2\right)\mathrm dt$ ; $C(\infty)=S(\infty)=\tfrac12$. Disponibles dans \texttt{scipy.special.fresnel} (qui renvoie $(S,C)$).
+>
+> **Conversion $v^3$**
+>
+> $v^3=(25)^3=15\,625\ \mathrm{m^3\,s^{-3}}$ pour $90\ \mathrm{km/h}$ ; à $130\ \mathrm{km/h}$ ($36{,}1\ \mathrm{m/s}$) : $47\,000$. Le cube explique pourquoi la longueur de raccordement augmente très vite avec la vitesse.
+
 
 **q1.** **1/ La courbe.**
 
@@ -138,6 +194,32 @@ $v$ constante.
 > plt.plot(x, y); plt.axis('equal'); plt.show()
 > print(x[-1], y[-1], L**2/(6*Rf))
 > \end{verbatim}
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Génie civil et ferroviaire**
+>
+> Les raccordements en clothoïde sont la norme pour les routes et les voies ferrées ; les montagnes russes utilisent le même principe pour les boucles (les boucles verticales sont des clothoïdes plutôt que des cercles, pour limiter le jerk et l'accélération maximale).
+>
+> **Optique**
+>
+> La spirale de Cornu donne l'amplitude de l'onde diffractée par un bord ou une fente (diffraction de Fresnel) : les intégrales $C$ et $S$ sont les parties réelle et imaginaire de $\int\mathrm e^{i\pi t^2/2}\mathrm dt$.
+>
+> **Robotique et véhicules autonomes**
+>
+> Planification de trajectoire à courbure continue : les robots et les voitures autonomes utilisent des clothoïdes (ou des splines) pour des trajectoires lisses où le volant tourne à vitesse constante.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Simulation et comparaison avec un raccordement brutal
+> Simuler $a_N(t)$ pour un virage brutal (créneau) et un raccordement progressif (rampe), et en déduire le jerk. Tracer la trajectoire du véhicule et le cercle osculateur au début, au milieu et à la fin du raccordement.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Intégrales de Fresnel et spirale de Cornu
+> Avec $s=A\sqrt\pi\,\tau$ : $x=A\sqrt\pi\,C(\tau)$ et $y=A\sqrt\pi\,S(\tau)$ où $C(\tau)=\int_0^\tau\cos\frac{\pi u^2}2\mathrm du$ et $S(\tau)=\int_0^\tau\sin\frac{\pi u^2}2\mathrm du$. Montrer que la courbe converge vers le point $\left(\frac{A\sqrt\pi}2,\frac{A\sqrt\pi}2\right)$ quand $s\to\infty$ ; la longueur de la courbe est cependant **infinie**. Interpréter en optique (diffraction de Fresnel par un bord).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Courbes de courbure imposée et optimisation
+> La clothoïde minimise le jerk latéral maximal pour une variation de courbure imposée sur une longueur donnée. Généraliser : trouver la loi $\kappa(s)$ qui minimise $\int\left(\frac{\mathrm d\kappa}{\mathrm ds}\right)^2\mathrm ds$ à longueur et angle imposés (courbe d'énergie minimale) et comparer à la clothoïde. Application aux trajectoires de véhicules autonomes.
 
 
 > [!note] 🔗 Voir aussi

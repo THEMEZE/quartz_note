@@ -5,9 +5,11 @@ tags:
   - chap-2-ondes-acoustiques
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a> · <a href="/pdfs/td2_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a>
 
 ### Exercice 5. Énergie, intensité acoustique et niveau sonore : de l'oreille humaine à l'onde stationnaire *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Approfondissement*
 
 L'air est modélisé comme un fluide parfait, de masse volumique au repos
 $\rho_0=1{,}2~\text{kg}\cdot\text{m}^{-3}$, de célérité $c=340~\text{m}\cdot\text{s}^{-1}$
@@ -18,6 +20,66 @@ On rappelle les équations de l'acoustique linéaire à une dimension :
 $$\rho_0\frac{\partial v}{\partial t}=-\frac{\partial p}{\partial x},\qquad \frac{\partial\rho'}{\partial t}+\rho_0\frac{\partial v}{\partial x}=0,\qquad \rho'=\rho_0\chi\,p.$$
 
 L'*intensité acoustique* est la moyenne temporelle de la puissance transportée par unité de surface, $I=\langle p\,v\rangle$. Le *niveau sonore* est $L=10\log_{10}(I/I_0)$ avec $I_0=10^{-12}~\text{W}\cdot\text{m}^{-2}$ (seuil d'audition à 1 kHz), exprimé en décibels (dB).
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi deux haut-parleurs ne sonnent-ils pas deux fois plus fort ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Un haut-parleur émet à $70$ dB. On en ajoute un second, identique. Quel est le nouveau niveau ? Et si les deux émettent **exactement** le même signal en phase ? Et en opposition de phase ?*
+>
+> **Idée clé : l'énergie est quadratique en l'amplitude, et le décibel est logarithmique.** Deux sources incohérentes : $I\to2I$, soit $+3$ dB. Deux sources cohérentes en phase : $p\to2p$, $I\to4I$, soit $+6$ dB. En opposition de phase : $I\to0$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Équations de l'acoustique linéaire et impédance**
+>
+> Connaître l'équation d'Euler linéarisée, l'équation de conservation de la masse linéarisée et l'équation d'état linéarisée $\rho'=\rho_0\chi p$ (cf. exercice 1), ainsi que la relation $\tilde p=\pm Z\tilde v$ pour une onde plane progressive (cf. exercice 4).
+>
+> **Produit de deux grandeurs réelles et notation complexe**
+>
+> Une grandeur énergétique est quadratique : on ne peut **pas** la calculer à partir des représentations complexes $\tilde p$, $\tilde v$ en les multipliant directement. Il faut revenir aux parties réelles, ou utiliser $\langle ab\rangle=\tfrac12\operatorname{Re}(\tilde a\,\tilde b^{*})$.
+>
+> **Résultats de l'exercice 2**
+>
+> La question 6 réutilise l'onde stationnaire du tube ouvert-ouvert : $\Psi=2A_I\cos(k(L-x))\cos(\omega t-kL)$ et $p=-2A_I\rho_0c\,\omega\sin(k(L-x))\cos(\omega t-kL)$, avec $kL=n\pi$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Manipuler une grandeur énergétique et une échelle logarithmique**
+>
+> Établir un bilan d'énergie local à partir des équations linéarisées, relier l'intensité à la pression efficace et à l'impédance, passer de l'intensité au niveau en dB et inversement, et additionner correctement des niveaux sonores selon que les sources sont cohérentes ou non.
+>
+> Savoir juger, à partir d'ordres de grandeur, de la validité de l'approximation acoustique, y compris pour des sons extrêmes (seuil de douleur).
+
+
+> [!note]+ 📖 Point de cours
+> **Énergie et intensité d'une onde acoustique**
+>
+> Les équations linéarisées conduisent à une loi de conservation locale de l'énergie,
+> $$\frac{\partial e}{\partial t}+\frac{\partial\Pi}{\partial x}=0,\qquad e=\frac12\rho_0v^2+\frac12\chi p^2,\qquad \Pi=p\,v,$$
+> où $e$ est la densité volumique d'énergie (cinétique + potentielle élastique) et $\Pi$ le flux d'énergie (analogue du vecteur de Poynting). Pour une onde plane progressive, $I=\langle p v\rangle=p_{\mathrm{eff}}^2/Z$ et $I=c\,\langle e\rangle$ : l'énergie voyage à la célérité $c$.
+>
+> **Niveau sonore** : $L=10\log_{10}(I/I_0)$. À $I_0=10^{-12}$ W/m$^2$ correspond $p_{\mathrm{ref}}=2\times10^{-5}$ Pa. Pour des sources *incohérentes*, les intensités s'ajoutent ; pour des sources *cohérentes*, ce sont les amplitudes qui s'ajoutent.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Moyenne temporelle de $\cos^2$ et de $\sin\cdot\cos$**
+>
+> $\langle\cos^2\omega t\rangle=\langle\sin^2\omega t\rangle=\tfrac12$ et $\langle\sin\omega t\cos\omega t\rangle=\tfrac12\langle\sin2\omega t\rangle=0$.
+>
+> **Logarithme décimal et décibels**
+>
+> $10\log_{10}2\approx3{,}0$ ; $20\log_{10}2\approx6{,}0$ ; $10\log_{10}10=10$. Multiplier $I$ par $10^n$ revient à ajouter $10n$ dB.
+>
+> **Produit scalaire de deux fonctions en quadrature**
+>
+> Si $a=a_0\cos\omega t$ et $b=b_0\sin\omega t$, alors $\langle ab\rangle=0$ : pas de transport net d'énergie. Si $b=b_0\cos\omega t$ (en phase), $\langle ab\rangle=\tfrac12a_0b_0$.
+>
+> **Intégrale de $\cos^2$ sur un nombre entier de demi-périodes**
+>
+> $\int_0^L\cos^2\big(k(L-x)\big)\,\mathrm dx=L/2$ lorsque $kL=n\pi$ : c'est la condition de résonance du tube qui rend l'énergie totale indépendante du temps.
+
 
 **q1.** À partir des équations linéarisées de l'énoncé, établir la loi de conservation
 $\dfrac{\partial e}{\partial t}+\dfrac{\partial \Pi}{\partial x}=0$ avec
@@ -194,6 +256,32 @@ $\Psi=2A_I\cos(kx')\cos\varphi$ et $p=-2A_I\rho_0c\,\omega\sin(kx')\cos\varphi$ 
 > Avec $\int_0^L\cos^2(kx')\mathrm dx=\int_0^L\sin^2(kx')\mathrm dx=L/2$ (car $kL=n\pi$) :
 > $$E(t)=S\int_0^Le\,\mathrm dx=\rho_0A_I^2\omega^2SL\,(\sin^2\varphi+\cos^2\varphi)=\rho_0A_I^2\omega^2SL=\text{cste}.$$
 > L'énergie totale est constante, mais sa forme oscille : tout cinétique quand $\varphi=\pi/2$ (fluide en mouvement, pression uniforme), tout potentielle quand $\varphi=0$ (fluide immobile, comprimé). C'est exactement le comportement d'un oscillateur harmonique, d'où la notion de facteur de qualité d'un résonateur : l'énergie stockée est entretenue par un apport très faible, nécessaire seulement pour compenser les pertes.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Électromagnétisme**
+>
+> $e=\tfrac12\epsilon_0E^2+\tfrac1{2\mu_0}B^2$ et $\vec\Pi=\vec E\wedge\vec B/\mu_0$ jouent le rôle de $e$ et de $pv$ ; pour une onde plane, $\langle\Pi\rangle=c\langle e\rangle$ dans les deux cas.
+>
+> **Physiologie de l'audition**
+>
+> L'oreille couvre un rapport $10^{12}$ en intensité. La loi de Weber-Fechner (la sensation est proportionnelle au logarithme de l'excitation) justifie l'échelle logarithmique.
+>
+> **Santé et sécurité au travail**
+>
+> Les réglementations sur l'exposition au bruit sont exprimées en dB(A) sur une durée de référence de 8 h, avec un seuil d'action autour de 80 à 85 dB(A). Chaque $+3$ dB double l'énergie reçue.
+>
+> **Traitement du signal et télécommunications**
+>
+> Le décibel est l'unité universelle des rapports de puissance ($10\log$) et d'amplitude ($20\log$) : rapport signal sur bruit, gain d'un amplificateur, atténuation d'un câble.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Pondération A et sonie
+> L'oreille n'est pas également sensible à toutes les fréquences (maximum vers 3 à 4 kHz, cf. exercice 3). Le niveau en dB(A) pondère le spectre par la courbe de sensibilité de l'oreille. On pourra comparer deux sons de même $L$ en dB mais de fréquences différentes et discuter la différence entre grandeur physique (intensité) et perception (sonie).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Contrôle actif du bruit
+> Un casque antibruit émet une onde de même amplitude et en opposition de phase : $I\to0$ par interférence destructive. On pourra montrer que la zone de silence est limitée à environ $\lambda/10$ autour du microphone d'erreur, ce qui explique que le contrôle actif ne fonctionne bien qu'aux basses fréquences.
 
 
 > [!note] 🔗 Voir aussi

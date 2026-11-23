@@ -5,9 +5,11 @@ tags:
   - chap-3-interfaces-entre-deux-milieux
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a> · <a href="/pdfs/td3_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a>
 
 ### Exercice 4. Incidence oblique : lois de Snell-Descartes, angle critique, réflexion totale et onde évanescente *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 55 min · Type : Approfondissement*
 
 Deux fluides parfaits semi-infinis sont séparés par le plan $x=0$ : le milieu (1) ($\rho_1,c_1,Z_1=\rho_1c_1$)
 occupe $x<0$, le milieu (2) ($\rho_2,c_2,Z_2=\rho_2c_2$) occupe $x>0$. Une onde plane sinusoïdale de pulsation $\omega$
@@ -21,6 +23,70 @@ Données : air ($\rho=1{,}2~\text{kg}\cdot\text{m}^{-3}$, $c=340~\text{m}\cdot\t
 ($\rho=1000~\text{kg}\cdot\text{m}^{-3}$, $c=1500~\text{m}\cdot\text{s}^{-1}$), sable saturé
 ($\rho=1900~\text{kg}\cdot\text{m}^{-3}$, $c=1700~\text{m}\cdot\text{s}^{-1}$), vase
 ($\rho=1400~\text{kg}\cdot\text{m}^{-3}$, $c=1450~\text{m}\cdot\text{s}^{-1}$).
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi n'entend-on presque rien de ce qui se dit au-dessus de l'eau quand on est sous l'eau ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Un plongeur sous l'eau entend très mal les voix à la surface. On a vu (exercice 2) que le désaccord d'impédance réfléchit l'essentiel de l'énergie. Mais la vitesse du son est aussi très différente dans l'air et dans l'eau. **Cela ajoute-t-il une restriction sur les directions dans lesquelles le son peut entrer dans l'eau ?** Et dans l'autre sens : un son émis sous l'eau ressort-il dans toutes les directions ?*
+>
+> **Idée clé : la composante tangentielle $k_y=k\sin\theta$ est conservée à l'interface.** Elle impose $\dfrac{\sin\theta_1}{c_1}=\dfrac{\sin\theta_2}{c_2}$. De l'air ($340$ m/s) vers l'eau ($1500$ m/s), $\sin\theta_2=4{,}4\sin\theta_1$ : le son ne peut entrer dans l'eau que si $\theta_1<\theta_c=13^\circ$. Dans l'autre sens, $\sin\theta_2=0{,}23\sin\theta_1$ : tout le son qui sort de l'eau est concentré dans un cône de $13^\circ$ autour de la verticale. L'impédance, elle, devient $Z/\cos\theta$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Interface en incidence normale (TD2, exercice 4 ; exercice 2 du TD3)**
+>
+> Connaître les conditions de continuité de $p$ et de $v_x$, la relation $\tilde p=\pm Z\tilde v$ pour une onde plane progressive, les coefficients $R=\dfrac{Z_2-Z_1}{Z_1+Z_2}$ et $T=1+R$ en amplitude de pression, et les coefficients énergétiques.
+>
+> **Onde plane dans une direction quelconque**
+>
+> Savoir qu'une onde plane s'écrit $e^{i(\omega t-\mathbf k\cdot\mathbf r)}$ avec $\|\mathbf k\|=\omega/c$, que la direction de propagation est celle de $\mathbf k$, et que le vecteur vitesse est colinéaire à $\mathbf k$.
+>
+> **Nombres complexes**
+>
+> Racine carrée d'un réel négatif ($\sqrt{-a}=\pm i\sqrt a$), module et argument d'un quotient $\dfrac{a+ib}{a-ib}$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Étendre le raccord à l'incidence oblique et comprendre l'origine géométrique de Snell-Descartes**
+>
+> Savoir démontrer les lois de la réflexion et de la réfraction à partir de la continuité des phases le long de l'interface, calculer les coefficients $R(\theta_1)$ et $T(\theta_1)$ à l'aide d'une impédance apparente $Z/\cos\theta$, déterminer l'existence et la valeur d'un angle critique, et interpréter la réflexion totale par une onde évanescente qui ne transporte pas d'énergie.
+
+
+> [!note]+ 📖 Point de cours
+> **Conservation de la composante tangentielle du vecteur d'onde**
+>
+> L'interface étant invariante par translation selon $y$ et $t$, les conditions de raccord, valables en tout point de l'interface et à tout instant, imposent que la dépendance en $y$ et en $t$ soit la même pour les trois ondes : $k_y$ et $\omega$ sont conservés. C'est ce principe général (et non une construction géométrique) qui donne :
+> $$\theta_1'=\theta_1,\qquad\frac{\sin\theta_1}{c_1}=\frac{\sin\theta_2}{c_2}\ \ (\text{Snell-Descartes}).$$
+> Les coefficients de Fresnel acoustiques s'obtiennent alors en écrivant la continuité de la pression et de la vitesse normale, avec $v_x=\pm p\cos\theta/Z$ : tout se passe comme en incidence normale en remplaçant l'impédance $Z$ par l'impédance apparente $Z/\cos\theta$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Identification de dépendances en $y$ et en $t$**
+>
+> Si $a\,e^{i\alpha y}+b\,e^{i\beta y}=c\,e^{i\gamma y}$ pour tout $y$, alors $\alpha=\beta=\gamma$ (sauf si un des termes est nul) : c'est l'argument qui donne la conservation de $k_y$ à l'interface.
+>
+> **Trigonométrie : $\cos$ à partir de $\sin$**
+>
+> $\cos\theta_2=\sqrt{1-\sin^2\theta_2}=\sqrt{1-n^2\sin^2\theta_1}$ avec $n=c_2/c_1$. Si $n\sin\theta_1>1$, cette quantité est imaginaire pure : $\cos\theta_2=-i\sqrt{n^2\sin^2\theta_1-1}$ (signe choisi pour une onde décroissante).
+>
+> **Module d'un complexe de la forme $\dfrac{a+ib}{a-ib}$**
+>
+> $\left|\dfrac{a+ib}{a-ib}\right|=1$ et $\dfrac{a+ib}{a-ib}=e^{2i\psi}$ avec $\psi=\arctan(b/a)$ : le déphasage à la réflexion totale est $\varphi=2\arctan(b/a)$.
+>
+> **Système linéaire $2\times2$**
+>
+> $\begin{cases}1+R=T\\\dfrac{\cos\theta_1}{Z_1}(1-R)=\dfrac{\cos\theta_2}{Z_2}T\end{cases}$ : on remplace $T$ par $1+R$ puis on isole $R$.
+>
+> **Mise au carré et existence d'une solution**
+>
+> L'équation $Z_2\cos\theta_1=Z_1\cos\theta_2$ (pas de réflexion) devient, par élévation au carré, $Z_2^2(1-s^2)=Z_1^2(1-n^2s^2)$, où $s=\sin\theta_1$ : on la résout en $s^2$ puis on vérifie $0\le s^2\le1$.
+>
+> **Ordres de grandeur d'angles et de profondeurs de pénétration**
+>
+> $\arcsin(340/1500)=13{,}1^\circ$ ; $\arcsin(1500/1700)=61{,}9^\circ$ ; profondeur de pénétration d'une onde évanescente $\delta=1/\kappa=\lambda_1/\big(2\pi\sqrt{\sin^2\theta_1-\sin^2\theta_c}\big)$.
+
 
 **q1.** En écrivant la continuité de $p$ en $x=0$ pour tout $y$ et tout $t$, retrouver les lois de la réflexion
 et de la réfraction de Snell-Descartes. Quelle grandeur physique est conservée à la traversée de l'interface ?
@@ -191,6 +257,40 @@ l'interface eau $\to$ vase et vérifier numériquement que $R=0$.
 > $Z_1=1{,}5\times10^6$, $Z_2=1400\times1450=2{,}03\times10^6$, $n=0{,}967$ :
 > $$\sin^2\theta_B=\frac{4{,}12-2{,}25}{4{,}12-2{,}10}=\frac{1{,}871}{2{,}018}=0{,}927\ \Rightarrow\ \theta_B\approx74^\circ.$$
 > Vérification : $\cos\theta_1=0{,}270$, $\sin\theta_2=0{,}967\times0{,}963=0{,}931$, $\cos\theta_2=0{,}366$ ; $a=Z_2\cos\theta_1=5{,}49\times10^5$ et $b=Z_1\cos\theta_2=5{,}49\times10^5$ : $a=b$ donc $R=0$ et la transmission est totale à cet angle, bien que l'impédance soit différente. C'est l'analogue acoustique de l'angle de Brewster.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Optique**
+>
+> Snell-Descartes, angle limite, réflexion totale et onde évanescente de la fibre optique et du prisme à réflexion totale ont des analogues exacts. La différence entre onde de pression (ici) et champ électrique (optique polarisée perpendiculairement au plan d'incidence) se traduit par la forme des coefficients de Fresnel.
+>
+> **Sonar et acoustique sous-marine**
+>
+> Le fond marin est un milieu plus rapide que l'eau : au-delà de l'angle critique, la réflexion est totale et le son se propage à grande distance par réflexions successives entre la surface et le fond (propagation par guide). Un angle de Brewster acoustique existe pour les sédiments vaseux.
+>
+> **Sismologie**
+>
+> Les lois de Snell expliquent la courbure des rayons sismiques dans la Terre (vitesse croissant avec la profondeur) et la détection du noyau par les zones d'ombre (exercice 5 pour la sismique réfraction).
+>
+> **Échographie et imagerie ultrasonore**
+>
+> Les interfaces obliques (parois d'organes, os) dévient et réfléchissent le faisceau : un os ou une côte, très rapides et très impédants, provoquent une réflexion totale à partir d'un angle faible, ce qui produit des zones d'ombre.
+>
+> **Mécanique quantique**
+>
+> La réflexion totale avec onde évanescente est analogue à la réflexion d'une particule sur une barrière de potentiel haute ($E<V$) : l'onde pénètre sur une longueur $1/\kappa$ sans transporter de courant.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Ondes de surface et guide d'onde
+> Une couche de fluide entre deux milieux plus rapides piège les rayons dont l'incidence dépasse l'angle critique : c'est le guide d'onde (canal SOFAR, fibre optique). La condition de réflexion avec déphasage $\varphi(\theta)$ établie en question 5, associée à la condition d'aller-retour $2k_1h\cos\theta-\varphi_1-\varphi_2=2\pi m$, donne les modes du guide.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Solide : conversion de mode et angles critiques multiples
+> Pour un solide, deux angles critiques apparaissent (ondes longitudinales et transversales) et le raccord impose la continuité des contraintes tangentielles. On pourra examiner comment les valeurs de $\theta_c^L$ et $\theta_c^T$ pour l'interface eau-aluminium sont utilisées en contrôle non destructif pour générer des ondes de surface (ondes de Rayleigh).
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Effet tunnel frustré
+> Si une lame fine du milieu (1) est interposée à nouveau derrière le milieu (2), l'onde évanescente peut ``traverser'' la lame et une partie de l'énergie est transmise malgré la réflexion « totale » : c'est l'analogue acoustique et optique de l'effet tunnel quantique (voir exercice 11 du chapitre 1 pour la lame).
 
 
 > [!note] 🔗 Voir aussi

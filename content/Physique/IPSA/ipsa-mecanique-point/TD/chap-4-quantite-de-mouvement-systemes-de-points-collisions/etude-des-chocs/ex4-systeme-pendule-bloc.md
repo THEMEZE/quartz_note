@@ -5,11 +5,59 @@ tags:
   - chap-4-quantite-de-mouvement-systemes-de-points-collisions
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/index|⬅ Retour]]
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/index|⬅ Retour]] · <a href="/pdfs/td6_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td6_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
 ### Exercice 4. (*) Système pendule-bloc
 
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 50 min · Type : Synthèse / Révisions (trois phases)*
+
 Une boule de masse $m=500$ g est retenue par une corde de longueur $R=1{,}80$ m. La boule est écartée de sa position d'équilibre d'un angle $\theta=\pi/2$ (corde tendue horizontalement), puis lâchée sans vitesse initiale. En bas de sa trajectoire elle percute **de plein fouet** un bloc de masse $M=1{,}5$ kg posé sur un plan horizontal. Le choc est parfaitement élastique, toutes les vitesses sont colinéaires. Après le choc, le bloc parcourt une distance $d$ sur le plan rugueux (coefficient de frottement cinétique $\mu_c=0{,}1$) et la boule remonte jusqu'à une hauteur $h<R$. On prendra $g=9{,}81~\mathrm{m\,s^{-2}}$.
+
+> [!question]+ 🎣 Accroche
+> **Une bille lourde ou légère : qui pousse le plus loin ?**
+>
+> *Durée de l'introduction : 3 min*
+>
+> *Une boule suspendue est lâchée et percute un bloc. **Le bloc va-t-il plus loin si la boule est plus lourde ?** Que se passe-t-il si le bloc est beaucoup plus lourd que la boule ?*
+>
+> **Idée clé : trois phases, trois outils.** Chute : énergie. Choc : quantité de mouvement. Glissement : énergie avec frottement.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Énergie mécanique d'un pendule**
+>
+> La tension du fil est perpendiculaire à la vitesse : elle ne travaille pas ; seul le poids travaille ; $E_m=\text{cte}$.
+>
+> **Choc élastique frontal**
+>
+> Cible au repos : $v'=\dfrac{m-M}{m+M}v$, $w'=\dfrac{2m}{m+M}v$.
+>
+> **Théorème de l'énergie cinétique avec frottement**
+>
+> $\Delta E_c=W_{\rm frottement}=-\mu_cMg\,d$ pour un glissement horizontal jusqu'à l'arrêt.
+
+
+> [!info]+ 🎯 Objectifs
+> **Enchaîner trois phases avec les bons théorèmes**
+>
+> Savoir utiliser **l'énergie** avant le choc (chute du pendule), la **quantité de mouvement et l'énergie** pendant le choc (élastique), puis de nouveau **l'énergie ou Newton** après (remontée, frottement sur le bloc).
+
+
+> [!note]+ 📖 Point de cours
+> **Les trois phases**
+>
+> (1) Avant : TEC ou $E_m$. (2) Choc : $p$ (+ $E_c$ si élastique), projection sur la direction du choc. (3) Après : $E_m$ (sans frottement) ou TEC (avec frottement) ou Newton.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Racines et rapports de masses**
+>
+> $\dfrac{m-M}{m+M}=\dfrac{0{,}5-1{,}5}{2}=-\tfrac12$ ; $\dfrac{2m}{m+M}=\dfrac12$.
+>
+> **Hauteur et angle**
+>
+> $h=R(1-\cos\theta_1)$ pour un fil de longueur $R$ ; $\theta_1=\arccos(1-h/R)$.
+
 
 **q1.** **1/ Avant la collision.**
 

@@ -5,9 +5,11 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 14. Corde de piano raide : dispersion et inharmonicité *(facultatif)*
+
+*Difficulté ●●●●● · ⏱ 50 min · Type : Approfondissement / Problème de synthèse*
 
 Une corde de piano en acier (diamètre $d_c=1{,}0$ mm, masse volumique $\rho=7800$ kg/m$^3$, module d'Young
 $E=2{,}0\times10^{11}$ Pa) de longueur $L=0{,}63$ m est tendue par la force $F$ de façon que sa fréquence fondamentale
@@ -16,6 +18,42 @@ de d'Alembert, une corde métallique épaisse **résiste à la flexion** : en pl
 élastique de rappel de flexion. Pour de petits mouvements transversaux, on admet l'équation
 $$\mu\,\frac{\partial^2y}{\partial t^2}=F\,\frac{\partial^2y}{\partial x^2}-EI\,\frac{\partial^4y}{\partial x^4},\qquad I=\frac{\pi d_c^4}{64},$$
 où $I$ est le moment quadratique de la section. Les deux extrémités sont **appuyées** : $y=0$ et $\partial_x^2y=0$ en $x=0$ et $x=L$.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi les pianos sont-ils accordés « faux » ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Les accordeurs de piano « étirent » volontairement l'accord : les notes aiguës sont accordées un peu plus haut que ce que donnerait le calcul exact par octaves, et les notes graves un peu plus bas. Pourquoi ? Une corde idéale de longueur $L$ a pour fréquences propres $f_n=nf_1$ (tous les harmoniques sont des multiples exacts du fondamental). Une vraie corde de piano a-t-elle le même spectre ? Si les harmoniques d'une note sont décalés vers le haut, que doit faire l'accordeur pour que les octaves « battent » le moins possible ?*
+>
+> **Idée clé : la raideur rend la corde dispersive.** Une onde plane $y=a\cos(\omega t-kx)$ est solution à condition de vérifier une **relation de dispersion** $\omega(k)$ qui n'est plus $\omega=ck$ : ici $\omega^2=c^2k^2\left(1+\dfrac{EI}Fk^2\right)$. La célérité de phase $\omega/k$ dépend de $k$ (les petites longueurs d'onde vont plus vite) et les fréquences propres $f_n$ ne sont plus des multiples exacts de $f_0$ : on parle d'**inharmonicité**. L'écart augmente avec le rang $n$ de l'harmonique ; il est de l'ordre de $\tfrac12Bn^2$, où $B$ est le coefficient d'inharmonicité, d'où les accords « étirés ».
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Onde plane et relation de dispersion**
+>
+> Pour une équation linéaire à coefficients constants, injecter $y=\Re\,[\,a\,\mathrm e^{j(\omega t-kx)}]$ transforme $\partial_t\to j\omega$ et $\partial_x\to-jk$ : $\partial_x^2\to-k^2$, $\partial_x^4\to+k^4$, $\partial_t^2\to-\omega^2$. On obtient une équation algébrique $\omega(k)$.
+>
+> **Vitesses de phase et de groupe**
+>
+> $v_\varphi=\dfrac\omega k$ (vitesse d'une phase) ; $v_g=\dfrac{\mathrm d\omega}{\mathrm dk}$ (vitesse de propagation de l'énergie et de l'enveloppe d'un paquet d'ondes). Si $\omega=ck$ (non dispersif), $v_\varphi=v_g=c$.
+>
+> **Développement limité**
+>
+> $\sqrt{1+\varepsilon}\simeq1+\dfrac\varepsilon2$ pour $\varepsilon\ll1$. Ici $\varepsilon=Bn^2$ avec $B\sim10^{-4}$.
+>
+> **Cents (musique)**
+>
+> L'écart entre deux fréquences $f$ et $f'$ en **cents** est $1200\log_2(f'/f)$ ; $100$ cents $=1$ demi-ton ; $\lesssim5$ cents est imperceptible, $\gtrsim10$ cents donne des battements audibles.
+>
+> **Analyse dimensionnelle**
+>
+> $[EI]=\mathrm{N\,m^2}$, $[EI/F]=\mathrm m^2$ : $\ell_c=\sqrt{EI/F}$ est une **longueur caractéristique** au-delà de laquelle la raideur est négligeable.
+>
+> **Moment quadratique d'une section circulaire**
+>
+> $I=\dfrac{\pi d_c^4}{64}$ : forte dépendance en $d_c^4$ : une corde deux fois plus épaisse est $16$ fois plus raide en flexion.
+
 
 **q1.** (a) Vérifier l'homogénéité de l'équation donnée. Que devient-elle pour $EI\to0$ ? Pour quelles longueurs d'onde le terme de raideur est-il négligeable ?
 
@@ -101,6 +139,10 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > $\omega=ck\sqrt{1+\kappa k^2}$ : dérivez par rapport à $k$ (dérivée d'un produit).
 
 
+> [!question]- 🔭 Aller plus loin — CPGE : Effet de l'épaisseur
+> Pour une même note, $B\propto d_c^4/(FL^2)$. Pourquoi les pianos droits (cordes plus courtes, $L$ plus petit) sont-ils plus inharmoniques que les pianos à queue ? Pourquoi les cordes graves sont-elles **filées** (un fil central fin entouré d'un enroulement de cuivre) au lieu d'être simplement plus épaisses ?
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Conditions aux limites encastrées
 > Pour une corde **encastrée** ($y=0$, $y'=0$), les modes ne sont plus des sinus purs : ils présentent une couche limite de largeur $\sqrt{EI/F}$ près des extrémités. Montrer qu'à l'ordre un, $f_n\simeq nf_0\left(1+\dfrac2{\pi}\dfrac{\ell_c}{L}+\dots\right)\sqrt{1+Bn^2}$ avec $\ell_c=\sqrt{EI/F}$.
 
@@ -135,6 +177,24 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > **(h) Conséquence pour l'accord**
 >
 > Le $2^{\text{e}}$ partiel de $do_3$ est à $f_2=523{,}6$ Hz, un peu plus haut que $2f_0=523{,}2$ Hz, fréquence « idéale » de $do_4$. Si l'accordeur accorde $do_4$ sur $2f_0$, le battement entre le partiel de $do_3$ et le fondamental de $do_4$ est $\Delta f\approx0{,}4$ Hz ; pour l'annuler, il **monte** $do_4$ à $f_2$. De proche en proche, chaque octave est élargie : par rapport au milieu du clavier, les notes aiguës sont accordées de plus en plus haut et les graves de plus en plus bas. C'est l'**accord étiré** : l'accordeur préfère des octaves légèrement « fausses » mais sans battements.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Musique et lutherie**
+>
+> L'inharmonicité de la corde de piano est responsable de l'accord « étiré » (courbe de Railsback) et d'une partie du timbre caractéristique du piano ; sur une guitare à cordes nylon, elle est beaucoup plus faible.
+>
+> **Résistance des matériaux**
+>
+> Une poutre fléchie obéit à $EI\,\partial_x^4y=q$ ; sa vibration libre ($EI\,\partial_x^4y=-\mu\ddot y$) est dispersive, avec $\omega\propto k^2$. La corde raide est un intermédiaire entre la corde idéale ($\omega\propto k$) et la poutre ($\omega\propto k^2$).
+>
+> **Optique et ondes dispersives**
+>
+> Dans un prisme ou une fibre optique, l'indice dépend de la longueur d'onde : la lumière blanche s'étale. Ici, la vitesse dépend de $k$ : une impulsion se déforme (précurseurs aigus, « chirp »), comme dans les ondes de surface de l'eau.
+>
+> **Acoustique musicale et traitement du signal**
+>
+> Les logiciels d'accordage et de synthèse corrigent l'inharmonicité en décalant la fréquence des partiels : $f_n=nf_0\sqrt{1+Bn^2}$.
 
 
 > [!note] 🔗 Voir aussi

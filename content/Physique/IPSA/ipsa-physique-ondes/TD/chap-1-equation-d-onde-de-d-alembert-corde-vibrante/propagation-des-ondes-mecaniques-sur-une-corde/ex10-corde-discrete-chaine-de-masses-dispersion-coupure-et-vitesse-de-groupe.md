@@ -5,11 +5,73 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 10. Corde discrète (chaîne de masses) : dispersion, coupure et vitesse de groupe *(facultatif)*
 
+*Difficulté ●●●●● · ⏱ 60 min · Type : Approfondissement, problème guidé*
+
 Une corde n'est pas un milieu continu : on modélise ici une corde « discrète » par $N$ masses ponctuelles identiques $m$, régulièrement espacées de la distance $a$ au repos, reliées par des fils sans masse tendus avec la tension $F$ (constante, considérée comme identique pour tous les fils). La masse $n$ a pour position au repos $x_n=na$ et se déplace transversalement de $y_n(t)$. On suppose les déplacements petits devant $a$.
+
+> [!question]+ 🎣 Accroche
+> **Et si la corde n'était pas continue ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Une corde réelle est faite d'atomes, donc de « grains ». Pour des ondes très longues, elle se comporte comme un milieu continu, mais que se passe-t-il quand la longueur d'onde devient comparable à la distance entre les grains ? Les ondes de toutes les fréquences se propagent-elles à la même vitesse ? Existe-t-il une fréquence au-delà de laquelle l'onde **ne passe plus** ?*
+>
+> **Idée clé : un milieu discret est dispersif.** Pour $N$ masses $m$ espacées de $a$, reliées par des fils de tension $F$ :
+> $$m\ddot y_n=\frac Fa\,(y_{n+1}-2y_n+y_{n-1})\ \Longrightarrow\ \omega=\omega_{\max}\left|\sin\frac{ka}2\right|,\quad\omega_{\max}=2\sqrt{\frac F{ma}}.$$
+> La vitesse de phase $v_\varphi=\omega/k$ et la vitesse de groupe $v_g=\mathrm d\omega/\mathrm dk$ diffèrent ; pour $\omega>\omega_{\max}$ l'onde est **évanescente** (filtre passe-bas) ; pour $ka\ll1$ on retrouve d'Alembert ($\omega\simeq c_0k$). L'énergie se propage à la vitesse de groupe.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Exercices 3 et 4**
+>
+> Approximation des petits angles, ondes progressives sinusoïdales, relation de dispersion $\omega(k)$, modes propres d'une corde fixée à ses deux extrémités.
+
+
+> [!info]+ 🎯 Objectifs
+> **Comprendre pourquoi la corde continue est une approximation**
+>
+> Établir la relation de dispersion d'un milieu discret, en déduire une fréquence de coupure, distinguer la vitesse de phase et la vitesse de groupe, et retrouver l'équation de d'Alembert comme limite.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Développement de Taylor jusqu'à l'ordre 4**
+>
+> $y(x\pm a)=y\pm ay'+\dfrac{a^2}2y''\pm\dfrac{a^3}6y'''+\dfrac{a^4}{24}y''''+\dots$ La somme $y(x+a)+y(x-a)-2y(x)=a^2y''+\dfrac{a^4}{12}y''''+\dots$ élimine les termes impairs. Le terme en $y''''$ est l'origine de la dispersion.
+>
+> **Formule de linéarisation : $2\cos\theta-2=-4\sin^2(\theta/2)$**
+>
+> Issue de $\cos\theta=1-2\sin^2(\theta/2)$. Elle transforme $e^{jka}+e^{-jka}-2$ en $-4\sin^2(ka/2)$ et donne la relation de dispersion en sinus.
+>
+> **Équivalent pour les petits arguments**
+>
+> $\sin u\approx u$ pour $|u|\ll1$ : $\omega\approx\omega_{\max}\dfrac{ka}2=c_0k$. C'est ce qui justifie la limite continue.
+>
+> **Dérivée et vitesses de phase et de groupe**
+>
+> $\dfrac{\mathrm d}{\mathrm dk}\sin\dfrac{ka}2=\dfrac a2\cos\dfrac{ka}2$, d'où $v_g=c_0\cos\dfrac{ka}2$ et $v_\varphi=c_0\dfrac{\sin(ka/2)}{ka/2}$. Pour $ka=\pi$ : $v_g=0$ et $v_\varphi=2c_0/\pi$.
+>
+> **Périodicité en $k$**
+>
+> $e^{-jk'na}=e^{-jkna}$ si $k'=k+2\pi p/a$ : deux nombres d'onde qui diffèrent de $2\pi/a$ décrivent les mêmes déplacements. On se restreint à $|k|\le\pi/a$ (première zone de Brillouin).
+>
+> **Fonctions hyperboliques et nombre d'onde complexe**
+>
+> Pour $ka=\pi+jq$ : $\sin\!\left(\dfrac\pi2+j\dfrac q2\right)=\cosh\dfrac q2$, d'où $\cosh\dfrac q2=\dfrac\omega{\omega_{\max}}\ge1$ et $q=2\operatorname{arcosh}\dfrac\omega{\omega_{\max}}$. Un nombre d'onde complexe correspond à une décroissance exponentielle $e^{-qn}$.
+>
+> **Modes d'une chaîne finie**
+>
+> $\sin\dfrac{np\pi}{N+1}$ avec $p=1,\dots,N$ : pour $p=N+1$ tous les $y_n$ sont nuls, donc il y a exactement $N$ modes (autant que de masses).
+
+
+> [!tip]- 💡 Coup de pouce
+> **Structure du problème**
+>
+> Le mouvement de la masse $n$ ne dépend que de $y_{n-1}$, $y_n$, $y_{n+1}$. On cherche des solutions en $y_n=\text{Re}\left[A\,e^{\,j(\omega t-kna)}\right]$ (onde progressive discrète).
+
 
 **q1.** Écrire le PFD sur la masse $n$ (projection transversale, petits angles) et établir
 $$m\,\ddot y_n=\frac{F}{a}\left(y_{n+1}-2y_n+y_{n-1}\right).$$
@@ -158,6 +220,36 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > Pour $N=3$ ($\omega_{\max}=200\ \text{rad/s}$) : $\omega_1=200\sin\dfrac{\pi}{8}\approx76{,}5$, $\omega_2=200\sin\dfrac{\pi}{4}\approx141{,}4$, $\omega_3=200\sin\dfrac{3\pi}{8}\approx184{,}8\ \text{rad/s}$.
 > Corde continue de longueur $L=0{,}4\ \text{m}$ et $c_0=10\ \text{m/s}$ : $\omega_p^{\text{cont}}=\dfrac{p\pi c_0}{L}=78{,}5\,p\ \text{rad/s}$.
 > Le nombre de modes de la chaîne est limité à $N$ et leurs fréquences s'écartent d'autant plus des harmoniques $pf_1$ que $p$ est grand : le modèle continu n'est valable que pour $ka\ll1$, c'est-à-dire pour les premiers modes ($p\ll N+1$).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Physique du solide**
+>
+> Les atomes d'un cristal forment une chaîne de masses reliées par des ressorts : $\omega=2\sqrt{K/m}\,|\sin(ka/2)|$ est la relation de dispersion des phonons. Avec deux masses alternées apparaissent une bande interdite et une branche optique.
+>
+> **Électricité (ligne à retard)**
+>
+> Une chaîne de cellules $L$-$C$ (ligne à retard, filtre passe-bas) a pour fréquence de coupure $\omega_c=2/\sqrt{LC}$ : même relation en sinus, avec $m\leftrightarrow L$ et $a/F\leftrightarrow C$.
+>
+> **Traitement du signal et informatique**
+>
+> Échantillonner à pas $a$ ne permet de représenter que $|k|\le\pi/a$, comme le théorème de Shannon limite la fréquence à $f_e/2$ : au-delà, deux nombres d'onde sont indiscernables (repliement de spectre ou aliasing).
+>
+> **Simulation numérique**
+>
+> Résoudre l'équation d'onde par différences finies revient exactement à ce modèle : le terme en $a^2y''''/12$ est l'erreur de dispersion numérique, qui déforme les signaux très courts (de longueur d'onde $\lambda\sim a$).
+>
+> **Optique et télécommunications**
+>
+> Dans une fibre optique, la différence entre vitesse de phase et vitesse de groupe élargit les impulsions (dispersion chromatique) et limite le débit.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Phonons
+> Le même calcul avec des ressorts de raideur $K$ et des déplacements longitudinaux donne $\omega=2\sqrt{K/m}\,|\sin(ka/2)|$ : c'est la relation de dispersion des phonons d'un cristal monoatomique unidimensionnel.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Chaîne diatomique
+> Avec deux masses alternées $m_1\neq m_2$, apparaît une bande interdite (gap) au bord de la zone de Brillouin et une branche optique.
 
 
 > [!note] 🔗 Voir aussi

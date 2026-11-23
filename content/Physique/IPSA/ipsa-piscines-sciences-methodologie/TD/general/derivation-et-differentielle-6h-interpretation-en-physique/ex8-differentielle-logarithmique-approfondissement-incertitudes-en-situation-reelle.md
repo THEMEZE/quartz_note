@@ -5,14 +5,43 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 8. Différentielle logarithmique : approfondissement (incertitudes en situation réelle) *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Entraînement $\&$ Calcul*
 
 Cet exercice prolonge l'exercice 4 avec des formules réelles de physique et des données numériques. On applique la méthode de la différentielle logarithmique pour obtenir l'incertitude **maximale** (somme des contributions en valeur absolue), on identifie la mesure qui domine l'incertitude, et on rencontre un cas où le logarithme ne suffit pas directement (formule des lentilles).
 
 Pour une grandeur $f = k\,x^\alpha y^\beta z^\gamma$ ($k$ constant) :
 $$\frac{\Delta f}{f} = |\alpha|\frac{\Delta x}{x} + |\beta|\frac{\Delta y}{y} + |\gamma|\frac{\Delta z}{z}.$$
+
+> [!abstract]+ 📚 Prérequis
+> **Exercices 4 et 6**
+>
+> Méthode logarithmique, différence entre $\delta f$ (variation algébrique) et $\Delta f$ (incertitude maximale, toujours positive).
+
+
+> [!info]+ 🎯 Objectifs
+> **Propager des incertitudes dans des formules réelles**
+>
+> Écrire le résultat d'une mesure avec son incertitude, avec le bon nombre de chiffres significatifs, et identifier la grandeur qui limite la précision.
+
+
+> [!note]+ 📖 Point de cours
+> **Rappel de la méthode**
+>
+> 1. Prendre $\ln f$ et développer.
+> 2. Différentier : $\dfrac{\mathrm{d}f}{f} = \dots$
+> 3. Regrouper les termes en $\mathrm{d}x_i$.
+> 4. Remplacer $\mathrm{d}$ par $\Delta$ et mettre chaque coefficient en **valeur absolue**.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Chiffres significatifs**
+>
+> L'incertitude s'écrit avec 1 (parfois 2) chiffre significatif, et la valeur est arrondie à la même décimale que l'incertitude.
+
 
 **1.**
 
@@ -121,6 +150,10 @@ $\dfrac{\Delta f}{f} \overset{?}{=} \dfrac{\Delta p}{p} + \dfrac{\Delta p'}{p'} 
 > $\dfrac{\Delta f}{f} = 3\dfrac{\Delta x}{x} + 2\dfrac{\Delta y}{y} + \dfrac{\Delta z}{z} = 3 + 4 + 4 = 11\ \%$.
 > Contributions : $x$ : 3 (27 %), $y$ : 4 (36 %), $z$ : 4 (36 %). $y$ et $z$ dominent à égalité.
 > Pour $\dfrac{\Delta f}{f}\le 10\ \%$ avec $x$ et $y$ inchangés : $3 + 4 + \dfrac{\Delta z}{z}\le 10$, donc $\dfrac{\Delta z}{z}\le 3\ \%$.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Combinaison quadratique
+> Refaire les questions avec une somme quadratique des contributions. Voir l'exercice 9 pour une famille de combinaisons (norme $p$).
 
 
 > [!note] 🔗 Voir aussi

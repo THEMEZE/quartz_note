@@ -5,9 +5,11 @@ tags:
   - chap-2-ondes-acoustiques
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a> · <a href="/pdfs/td2_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a>
 
 ### Exercice 7. Résonateur de Helmholtz : la bouteille qui chante *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 45 min · Type : Modélisation / Approfondissement*
 
 Lorsqu'on souffle en travers du goulot d'une bouteille, on entend une note grave bien définie. On modélise la
 bouteille par une cavité de volume $V$ communiquant avec l'extérieur par un goulot cylindrique de section $S$ et de
@@ -18,6 +20,66 @@ $\ell'=\ell+1{,}7\,a$ est une longueur effective tenant compte de l'air entraîn
 
 Données : $V=0{,}75$ L, $a=9$ mm, $\ell=8$ cm, $P_0=10^5$ Pa, $\rho_0=1{,}2~\text{kg}\cdot\text{m}^{-3}$,
 $\gamma=1{,}4$, $c=340~\text{m}\cdot\text{s}^{-1}$. On note $\xi(t)$ le déplacement du bouchon vers l'intérieur de la cavité.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi la bouteille chante-t-elle plus aigu quand on la remplit ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *En soufflant en travers d'une bouteille, on entend une note. En remplissant un peu d'eau, la note monte. Pourtant, la longueur du goulot n'a pas changé, et ni sa section ! Qu'est-ce qui a changé ? Et pourquoi la note est-elle bien plus **grave** que ce qu'un tube de $8$ cm laisserait prévoir ($\approx1$ kHz) ?*
+>
+> **Idée clé : une masse (bouchon d'air) et un ressort (air comprimé dans la cavité).** Le goulot oscille comme un piston ; la cavité est un ressort de raideur $K=\gamma P_0S^2/V$. L'oscillateur masse-ressort a pour pulsation $\omega_0=\sqrt{K/m}=c\sqrt{S/(V\ell')}$. Moins d'air dans la bouteille, ressort plus raide, note plus aiguë.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Compressibilité isentropique**
+>
+> Connaître $\chi_S=-\dfrac1V\left(\dfrac{\partial V}{\partial P}\right)_S=\dfrac1{\gamma P_0}$ pour un gaz parfait et le lien $c^2=\gamma P_0/\rho_0=1/(\rho_0\chi_S)$ (exercice 1).
+>
+> **Oscillateur harmonique**
+>
+> Savoir que $m\ddot\xi=-K\xi$ conduit à $\omega_0=\sqrt{K/m}$ et à un mouvement sinusoïdal à cette pulsation, et connaître l'analogie avec le circuit $LC$ ($\omega_0=1/\sqrt{LC}$).
+>
+> **Notion de «~onde longue~» (acoustique en basses fréquences)**
+>
+> Si la plus grande dimension $D$ d'un système est très inférieure à $\lambda$, la pression est uniforme dans chaque cavité à tout instant et le fluide d'un conduit étroit se déplace d'un bloc.
+
+
+> [!info]+ 🎯 Objectifs
+> **Reconnaître un oscillateur masse-ressort dans un système acoustique**
+>
+> Savoir identifier, dans un système de fluide à petites dimensions, l'élément qui stocke l'énergie potentielle (la cavité compressible, «~ressort~») et celui qui stocke l'énergie cinétique (le bouchon d'air, «~masse~»), écrire l'équation du mouvement et en déduire une fréquence propre.
+>
+> Savoir utiliser une mesure de fréquence pour discriminer hypothèses isotherme et isentropique (comme à l'exercice 1).
+
+
+> [!note]+ 📖 Point de cours
+> **Éléments acoustiques localisés (« lumped elements »)**
+>
+> Lorsque les dimensions sont petites devant $\lambda$, on remplace la propagation par des éléments localisés : un conduit étroit de section $S$ et de longueur effective $\ell'$ se comporte comme une **masse** (inertance) $m=\rho_0S\ell'$ ; une cavité de volume $V$ se comporte comme un **ressort** (compliance) : une variation de volume $\Delta V$ crée une surpression $p=-\Delta V/(\chi_SV)$. Un résonateur de Helmholtz est l'association d'une masse et d'un ressort : c'est le plus simple des résonateurs acoustiques.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Équation différentielle de l'oscillateur harmonique**
+>
+> $\ddot\xi+\omega_0^2\xi=0\Longrightarrow\xi=\xi_m\cos(\omega_0t+\phi)$. La pulsation propre est lue directement sur le coefficient de $\xi$.
+>
+> **Différentielle logarithmique**
+>
+> $f_0\propto V^{-1/2}$ donne $\dfrac{\mathrm df_0}{f_0}=-\dfrac12\dfrac{\mathrm dV}{V}$ : $10\ \%$ de volume en moins donne $\approx+5\ \%$ de fréquence.
+>
+> **Ordres de grandeur et petits paramètres**
+>
+> L'hypothèse «~$k\ell\ll1$~» se vérifie par $k\ell=2\pi\ell/\lambda$ ; on veut $\ll1$ pour justifier que le bouchon est incompressible.
+>
+> **Linéarisation de $p=p(V)$**
+>
+> $p=-\dfrac{\Delta V}{\chi_SV}$ est la linéarisation à l'ordre 1 de $P=P_0(V_0/V)^\gamma$ : $P\approx P_0\big(1-\gamma\Delta V/V_0\big)$.
+>
+> **Racines carrées de rapports**
+>
+> $\sqrt{\gamma}=1{,}18$ ; $\sqrt{1{,}5}=1{,}22$ ; $\sqrt{2}=1{,}41$ (une octave $=\times2$ en fréquence, donc $\times4$ en volume).
+
 
 **q1.** Calculer $S$, la fréquence approximative $f_0$ (voir question 3) et la longueur d'onde associée.
 Justifier que le bouchon peut être traité comme un bloc rigide et la pression dans la cavité
@@ -167,6 +229,40 @@ $S=1{,}0\times10^{-2}$ m$^2$ et $\ell'=10$ cm. Quel volume de cavité faut-il ? 
 > On impose $\omega_0=2\pi\times34\approx214~\text{rad}\cdot\text{s}^{-1}$ :
 > $$V=\frac{c^2S}{\omega_0^2\ell'}=\frac{340^2\times10^{-2}}{214^2\times0{,}10}\approx\frac{1156}{4580}\approx0{,}25~\text{m}^3.$$
 > Il faut une cavité de $250$ L : les basses fréquences exigent de grands volumes ($V\propto1/\omega_0^2$), ce qui explique pourquoi l'absorption des graves est coûteuse en place. Pour un résonateur plus compact, on réduit $S$ ou on allonge le col, au prix d'un amortissement plus fort et d'une bande plus étroite.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Électrocinétique**
+>
+> Analogie électro-acoustique : surpression $\leftrightarrow$ tension, débit volumique $q=S\dot\xi\leftrightarrow$ courant, masse $\leftrightarrow$ inductance, cavité $\leftrightarrow$ capacité. Le résonateur de Helmholtz est un circuit $LC$ série.
+>
+> **Automobile et aéronautique**
+>
+> Le battement ($\sim15$ à $30$ Hz) ressenti quand on ouvre une seule vitre en roulant, et le grondement des toits ouvrants, sont des résonances de Helmholtz de l'habitacle (cavité) et de l'ouverture (goulot). Les silencieux d'échappement utilisent aussi des chambres de Helmholtz.
+>
+> **Instruments de musique**
+>
+> Le corps d'une guitare acoustique, avec sa rosace, a une résonance de Helmholtz vers $100$ Hz qui renforce les graves ; l'ocarina est un résonateur de Helmholtz presque pur.
+>
+> **Biologie**
+>
+> La vessie natatoire d'un poisson, les sacs vocaux des grenouilles, la bulle d'air en oscillation (bulle de Minnaert) sont des résonateurs de ce type.
+>
+> **Acoustique architecturale**
+>
+> Panneaux perforés devant une cavité d'air, bass traps : absorbeurs sélectifs fondés sur la résonance de Helmholtz.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Amortissement et facteur de qualité
+> Les pertes par rayonnement (le goulot rayonne comme un piston dans un écran infini), par viscosité et par conduction thermique aux parois ajoutent un terme d'amortissement $\dfrac{\omega_0}{Q}\dot\xi$ dans l'équation du mouvement. On pourra établir la largeur de la résonance $\Delta f=f_0/Q$ et estimer le facteur de qualité lié au seul rayonnement à partir de la puissance rayonnée par le goulot, en comparant à l'énergie stockée $\tfrac12K\xi_m^2$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Résonateurs en acoustique des salles : bass traps
+> Un résonateur de Helmholtz accordé sur un mode propre de la salle sert d'absorbeur très sélectif. On pourra dimensionner le volume nécessaire pour absorber le mode axial fondamental d'une salle de $5$ m (question 7).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Génération du son : instabilités de cisaillement
+> Le souffle en travers du goulot crée une couche de cisaillement instable qui excite le résonateur : c'est un mécanisme de «~retour acoustique~» identique à celui de la flûte. Il explique pourquoi on entend la fréquence propre quand on souffle à la bonne vitesse.
 
 
 > [!note] 🔗 Voir aussi

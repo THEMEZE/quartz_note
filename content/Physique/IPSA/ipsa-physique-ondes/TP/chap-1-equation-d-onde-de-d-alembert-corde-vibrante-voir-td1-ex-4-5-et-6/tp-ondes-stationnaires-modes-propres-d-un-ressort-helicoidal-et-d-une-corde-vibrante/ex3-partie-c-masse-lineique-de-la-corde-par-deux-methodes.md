@@ -11,9 +11,45 @@ tags:
 
 ### Exercice 3. Partie C — Masse linéique de la corde par deux méthodes <span style="color:#1565C0">(Part C — Linear mass density of the string by two methods)</span>
 
+*⭐ Indispensable · Difficulté ●●●●○ · ⏱ 60 min · Type : Analyse de données et incertitudes*
+
 On détermine $\mu$ (1) à partir des célérités de la partie B via $c^2=F/\mu$, (2) par mesure directe $\mu=m/L_0$, puis on compare et on prédit $c_{\text{th}}$ pour les trois tensions. **Question scientifique :** peut-on déterminer $\mu$ par deux méthodes indépendantes et cohérentes ?
 
 <span style="color:#1565C0">We determine $\mu$ (1) from the speeds of Part B through $c^2=F/\mu$, (2) by direct measurement $\mu=m/L_0$, then compare and predict $c_{\text{th}}$ for the three tensions. **Scientific question:** can $\mu$ be determined by two independent, consistent methods?</span>
+
+> [!question]+ 🎣 Accroche
+> **Peser une corde sans la peser <span style="color:#1565C0">(Weighing a string without weighing it)</span>**
+>
+> *Durée de l'introduction : 3 min, avant les calculs*
+>
+> *On a mesuré des fréquences et une tension, jamais la masse de la corde. Peut-on en déduire la masse par mètre ? Quelle droite faut-il tracer pour que la pente donne directement $\mu$ ou $1/\mu$ ?
+>
+> <span style="color:#1565C0">We measured frequencies and a tension, never the mass of the string. Can we deduce the mass per meter? Which line must be plotted so that the slope gives $\mu$ or $1/\mu$ directly?</span>*
+>
+> **Idée clé : linéariser.** $c^2=F/\mu$ est une droite de pente $1/\mu$ en variables $(F,c^2)$ ; la mesure directe $\mu=m/L_0$ donne une valeur indépendante pour comparer.
+>
+> <span style="color:#1565C0">**Key idea: linearize.** $c^2=F/\mu$ is a line of slope $1/\mu$ in the variables $(F,c^2)$; the direct measurement $\mu=m/L_0$ gives an independent value to compare with.</span>
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Différentielle logarithmique <span style="color:#1565C0">(Logarithmic differential)</span>**
+>
+> $\mu=m/L_0$ : $\dfrac{\Delta\mu}{\mu}=\dfrac{\Delta m}{m}+\dfrac{\Delta L_0}{L_0}$. $c=\sqrt{F/\mu}$ : $\dfrac{\Delta c}{c}=\dfrac12\left(\dfrac{\Delta F}{F}+\dfrac{\Delta\mu}{\mu}\right)$.
+>
+> <span style="color:#1565C0">$\mu=m/L_0$: $\dfrac{\Delta\mu}{\mu}=\dfrac{\Delta m}{m}+\dfrac{\Delta L_0}{L_0}$. $c=\sqrt{F/\mu}$: $\dfrac{\Delta c}{c}=\dfrac12\left(\dfrac{\Delta F}{F}+\dfrac{\Delta\mu}{\mu}\right)$.</span>
+>
+> **Compatibilité de deux valeurs <span style="color:#1565C0">(Compatibility of two values)</span>**
+>
+> Deux valeurs $x_1\pm\Delta_1$ et $x_2\pm\Delta_2$ sont compatibles si $|x_1-x_2|\le\Delta_1+\Delta_2$.
+>
+> <span style="color:#1565C0">Two values $x_1\pm\Delta_1$ and $x_2\pm\Delta_2$ are compatible if $|x_1-x_2|\le\Delta_1+\Delta_2$.</span>
+>
+> **Unités SI <span style="color:#1565C0">(SI units)</span>**
+>
+> $3{,}0$ g $=3{,}0\times10^{-3}$ kg ; vérifier $\mu\sim10^{-3}$ kg/m pour une ficelle fine.
+>
+> <span style="color:#1565C0">3.0 g $=3.0\times10^{-3}$ kg; check $\mu\sim10^{-3}$ kg/m for a thin string.</span>
+
 
 **q1.** C1–C2 — Calculer $c_{\exp}^2$ pour chaque tension et tracer $c^2=f(F)$ (graphique C.1). Relever l'équation de l'ajustement.
 

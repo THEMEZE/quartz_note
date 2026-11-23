@@ -5,13 +5,63 @@ tags:
   - ondes-mecaniques-sonores-electromagnetiques-et-lumineuses
 ---
 
-[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Generale_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]]
 
 ### Exercice 4. Un cheveu, un CD et un laser : diffraction, réseaux et limite de résolution
+
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 2 h · Type : TP expérimental visuel*
 
 Un pointeur laser éclairant un cheveu tendu forme sur un mur une figure de diffraction faite de taches régulièrement espacées. La lumière contourne les obstacles : c'est la nature ondulatoire de la lumière. Le même laser envoyé sur un CD, un DVD ou un Blu-ray forme des taches à des angles très différents selon le disque, ce qui révèle le pas des pistes.
 
 Ce TP mesure le diamètre d'un cheveu, le pas de pistes d'un CD et d'un DVD, puis relie la diffraction à des questions d'aviation : la limite de résolution de l'œil et l'ouverture du faisceau d'une antenne radar.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> Diffraction de Fraunhofer par une fente : $\sin\theta=\dfrac{n\lambda}{a}$ pour les minima ; formule des réseaux $\sin\theta=\dfrac{n\lambda}{p}$ (incidence normale) ; principe de Babinet.
+
+
+> [!info]+ 🎯 Objectifs
+> **Mesurer des tailles microscopiques avec la lumière**
+>
+> Déterminer le diamètre d'un cheveu ($\approx70\ \mu\text{m}$) et le pas des pistes d'un disque ($1{,}6\ \mu\text{m}$, $0{,}74\ \mu\text{m}$) à partir d'angles et de distances de l'ordre du mètre.
+
+
+> [!note]+ 🧰 Matériel
+> Pointeur laser rouge de classe 2 ($\lambda=650\pm10\ \text{nm}$ ; valeur à lire sur la notice)
+>
+> Cheveu tendu sur un cadre (papier cartonné ou cadre de diapositive), fil de pêche, fente réglable (facultatif)
+>
+> CD, DVD, Blu-ray, un morceau de réseau du commerce (facultatif)
+>
+> Mur blanc ou écran à $L=3{,}00\ \text{m}$ du cheveu, mètre ruban, règle ou papier millimétré, rapporteur
+>
+> Pied ou support pour fixer le laser, ruban adhésif
+
+
+> [!danger] 🦺 Sécurité
+> **Laser**
+>
+> Utiliser uniquement un pointeur de classe 2 ($<1\ \text{mW}$, longueur d'onde $635$–$650\ \text{nm}$ ou $532\ \text{nm}$). Ne jamais viser une personne, une vitre, une surface très réfléchissante non contrôlée ou le ciel. Le pointage d'un laser vers un aéronef est une infraction et met en danger l'équipage.
+>
+> **Surfaces réfléchissantes**
+>
+> Le CD renvoie le faisceau dans plusieurs directions : le tenir à l'écart de la hauteur des yeux et utiliser un écran ou un mur, hors de la trajectoire des personnes.
+
+
+> [!note]+ 🔬 Manipulation
+> **1. Diffraction par le cheveu**
+>
+> Fixer le laser à hauteur du cheveu, à $L=3{,}00\ \text{m}$ du mur. Placer le cheveu dans le faisceau : on doit voir une tache centrale allongée et des taches secondaires régulières perpendiculairement au cheveu. Marquer les centres des minima (ou des taches) sur du papier et mesurer la distance $D_{10}$ correspondant à $10$ intervalles.
+>
+> **2. CD et DVD**
+>
+> Envoyer le faisceau sur la face gravée d'un CD, sous incidence normale (rayon réfléchi revenant vers le laser). Repérer les taches d'ordre $\pm1$ sur un écran situé entre le laser et le CD (feuille avec un trou pour laisser passer le faisceau). Mesurer l'angle $\theta_1$ entre l'ordre $0$ et l'ordre $1$ avec $L$ et la distance $x_1$ au centre. Répéter avec un DVD, puis un Blu-ray.
+>
+> **3. Lien avec l'observation de la lumière naturelle**
+>
+> Regarder la face gravée d'un CD à la lumière du jour (arc-en-ciel), et l'aile d'un papillon ou une plume d'oiseau contre un point lumineux. Photographier.
+
 
 **q1.** Diffraction par le cheveu. (a) Justifier que la distance entre deux minima consécutifs vaut $i=\dfrac{\lambda L}{a}$ pour $x\ll L$. (b) Calculer $i$ avec $D_{10}$, puis le diamètre $a$ du cheveu. (c) Incertitude relative et résultat. (d) Que devient la figure pour un cheveu plus fin ?
 
@@ -80,4 +130,18 @@ Ce TP mesure le diamètre d'un cheveu, le pas de pistes d'un CD et d'un DVD, pui
 > **Discussion**
 >
 > (i) $\lambda$ : les pointeurs bon marché ont $\pm10\ \text{nm}$ ; la calibrer avec un réseau connu (par exemple $600$ traits/mm) réduit cette source d'erreur. (ii) Pointé : les minima sont larges ; on pointe le milieu des zones sombres et l'on mesure sur $10$ intervalles. (iii) Géométrie : un mur non perpendiculaire déforme les distances ; mesurer $L$ le long du faisceau. (iv) Le cheveu doit être tendu et perpendiculaire au faisceau. Une fente calibrée évite les variations de diamètre d'un cheveu à l'autre mais nécessite un réglage à mieux que le micromètre.
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Résolution de l'œil et faisceau radar**
+>
+> L'œil humain est limité par la diffraction de la pupille ($\theta\approx1{,}22\lambda/D$). Une antenne de radar météo de bord de $75\ \text{cm}$ à $9{,}4\ \text{GHz}$ a un faisceau limité par la même formule : quelques degrés. Ces deux limites ont la même origine physique que la figure de diffraction du cheveu.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Diffraction et transformée de Fourier
+> La figure de diffraction de Fraunhofer est la transformée de Fourier de l'ouverture. Un objet de taille $a$ a un spectre spatial de largeur $\sim1/a$.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Structure de couleurs des plumes
+> Les couleurs de nombreuses plumes et ailes de papillon ne sont pas des pigments mais des structures périodiques de l'ordre de $\lambda/2$ (couleurs structurelles).
 

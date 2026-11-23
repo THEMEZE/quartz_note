@@ -5,15 +5,72 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/index|⬅ Retour]] · <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/index|⬅ Retour]] · <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 5. Cycloïde : point d'une roue qui roule sans glisser *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 45 min · Type : Entraînement / Problème de synthèse*
 
 Une roue de rayon $R_0$ roule **sans glisser** sur l'axe horizontal $Ox$. Son centre $C$ se déplace à
 la vitesse constante $\vec V=R_0\omega\,\vec u_x$ ; la roue tourne (dans le sens horaire) à la vitesse angulaire
 constante $\omega>0$. On étudie le mouvement d'un point $M$ de la jante (par exemple une valve ou un caillou
 coincé dans la bande de roulement). À $t=0$, $M$ est en contact avec le sol, en $O$. On note $\varphi=\omega t$ l'angle
 dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
+
+> [!question]+ 🎣 Accroche
+> **Un point de la roue est immobile**
+>
+> *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
+>
+> *Un cycliste roule à $36$ km/h. Quelle est la vitesse, par rapport au sol, du point de la roue qui touche le sol ? Et du point tout en haut ? Quelle est la forme de la trajectoire d'une valve de chambre à air ? Y a-t-il un moment où elle revient en arrière ?*
+>
+> **Idée clé : composer translation et rotation.** Dans le référentiel du sol, la position de $M$ est $\overrightarrow{OC}+\overrightarrow{CM}$ : le centre avance, la jante tourne autour du centre. Résultat : la cycloïde. À chaque instant, la roue tourne autour du point de contact $I$ qui est immobile : la vitesse de $M$ est perpendiculaire à $IM$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Roulement sans glissement**
+>
+> Le point de la roue en contact avec le sol a une vitesse nulle (dans le référentiel du sol) : le centre avance de $R_0\varphi$ quand la roue tourne de $\varphi$ ($x_C=R_0\omega t$).
+>
+> **Base de Frenet**
+>
+> $\vec a=a_T\,\vec\tau+a_N\,\vec n$, $a_T=\dfrac{\vec a\cdot\vec v}v$, $a_N=\sqrt{a^2-a_T^2}$, $R=\dfrac{v^2}{a_N}$.
+>
+> **Formules d'angle moitié**
+>
+> $1-\cos\varphi=2\sin^2\dfrac\varphi2$, $1+\cos\varphi=2\cos^2\dfrac\varphi2$, $\sin\varphi=2\sin\dfrac\varphi2\cos\dfrac\varphi2$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Étudier une courbe non triviale avec toute la machinerie de Frenet**
+>
+> Établir les équations paramétriques de la cycloïde, calculer $\vec v$, $\vec a$, $a_T$, $a_N$, $R$ et la longueur d'une arche, interpréter le point de rebroussement, et relier le résultat à la géométrie du roulement (centre instantané de rotation).
+
+
+> [!note]+ 📖 Point de cours
+> **Cycloïde**
+>
+> $$x=R_0(\varphi-\sin\varphi),\qquad y=R_0(1-\cos\varphi),\qquad\varphi=\omega t.$$
+> La vitesse du point de contact est nulle ; le point du haut de la roue va à $2R_0\omega$. La roue tourne à chaque instant autour du point de contact $I$ (centre instantané de rotation) : $\|\vec v\|=\omega\,IM$ et $\vec v\perp\overrightarrow{IM}$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Composition de mouvements**
+>
+> $\overrightarrow{OM}=\overrightarrow{OC}+\overrightarrow{CM}$ avec $\overrightarrow{OC}=(R_0\omega t,R_0)$ et $\overrightarrow{CM}=R_0(-\sin\varphi,-\cos\varphi)$ pour une roue qui tourne dans le sens horaire avec $M$ au bas à $t=0$.
+>
+> **Angle moitié**
+>
+> $\sqrt{2(1-\cos\varphi)}=2\sin\dfrac\varphi2$ (pour $\varphi\in[0,2\pi]$) ; $\sin\varphi=2\sin\dfrac\varphi2\cos\dfrac\varphi2$.
+>
+> **Intégrale de $\sin(\varphi/2)$**
+>
+> $\displaystyle\int_0^{2\pi}\sin\dfrac\varphi2\,\mathrm d\varphi=\left[-2\cos\dfrac\varphi2\right]_0^{2\pi}=4$.
+>
+> **Centre instantané de rotation**
+>
+> Pour un solide plan en mouvement, il existe en général un point $I$ de vitesse nulle (à l'instant considéré) : la vitesse de tout autre point est $\vec v=\vec\Omega\wedge\overrightarrow{IM}$, de norme $\Omega\,IM$, perpendiculaire à $IM$.
+
 
 **q1.** **1/ Équations de la trajectoire.**
 
@@ -118,6 +175,32 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 > **(h) Application numérique**
 >
 > $V=36\ \mathrm{km/h}=10\ \mathrm{m/s}$ ; $\omega=\dfrac V{R_0}=\dfrac{10}{0{,}35}\approx28{,}6\ \mathrm{rad/s}$ (environ $4{,}5$ tours par seconde). Période de rotation : $T=\dfrac{2\pi}\omega\approx0{,}22\ \mathrm s$. **Point haut** : $v=2V=20\ \mathrm{m/s}=72\ \mathrm{km/h}$ ; $a=R_0\omega^2=\dfrac{V^2}{R_0}\approx286\ \mathrm{m\,s^{-2}}$ ; $R=4R_0=1{,}4\ \mathrm m$. **Point bas** : $v=0$ (au contact). **Longueur d'une arche** : $L=8R_0=2{,}8\ \mathrm m$ (alors que $2\pi R_0=2{,}2\ \mathrm m$ est la distance parcourue par le centre). Le caillou sur la jante subit en permanence $a=R_0\omega^2\approx286\ \mathrm{m\,s^{-2}}\approx29\,g$ : c'est pourquoi il faut un collage solide et pourquoi les gouttes d'eau se détachent de la roue (dont $a_N$ est trop grande pour la tension superficielle).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mécanique, ingénierie**
+>
+> Roues, engrenages (dents en développante de cercle ou en cycloïde dans les horloges), bielle-manivelle, trains (boudin de roue qui dépasse le contact : trochoïde allongée).
+>
+> **Histoire des sciences**
+>
+> La cycloïde est la « Hélène des géomètres » (XVIIe siècle) : Galilée, Mersenne, Roberval, Pascal, Huygens, Bernoulli ont étudié sa longueur, son aire, sa tautochronie et sa brachistochronie.
+>
+> **Physique des vélos et véhicules**
+>
+> La boue projetée par la roue part tangentiellement à la trajectoire de la roue avec la vitesse $v=2V\sin(\varphi/2)$ : les garde-boue sont placés pour intercepter ces projections.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Développée de la cycloïde (Huygens)
+> Le centre de courbure est $C_c=M+R\,\vec n$ avec $\vec n=\left(\cos\frac\varphi2\ ;\ -\sin\frac\varphi2\right)$. Montrer que $C_c=\left(R_0(\varphi+\sin\varphi)\ ;\ -R_0(1-\cos\varphi)\right)$ : c'est la même cycloïde, translatée du vecteur $(-\pi R_0\ ;\ -2R_0)$ (poser $\psi=\varphi+\pi$). Cette propriété permet de construire un pendule **isochrone** (Huygens).
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Aire sous une arche et brachistochrone
+> L'aire sous une arche vaut $\int_0^{2\pi R_0}y\,\mathrm dx=3\pi R_0^2$, soit trois fois l'aire de la roue (Roberval, Galilée). La cycloïde est aussi la courbe de plus courte durée (**brachistochrone**) et la courbe tautochrone : une bille lâchée sans vitesse d'un point quelconque d'une cycloïde inversée arrive en bas au même instant.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Trochoïdes
+> Un point à la distance $d\neq R_0$ du centre décrit une trochoïde : $x=R_0\varphi-d\sin\varphi$, $y=R_0-d\cos\varphi$. Pour $d<R_0$ (point intérieur) la courbe est sans rebroussement ; pour $d>R_0$ (point extérieur, ex. : boudin d'une roue de train) elle présente des boucles qui font **reculer** le point au bas de la roue. Montrer que la vitesse du point bas du boudin est dirigée vers l'arrière.
 
 
 > [!note] 🔗 Voir aussi

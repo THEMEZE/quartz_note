@@ -5,11 +5,84 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 6. (*) Grandeurs numériques : mesures, incertitudes $\&$ chiffres significatifs *(facultatif)*
 
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 25 min · Type : Révision*
+
 Cet exercice aborde la manipulation des grandeurs expérimentales, la gestion des incertitudes et l'application stricte des règles sur les chiffres significatifs lors des opérations physiques.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions de base de métrologie**
+>
+> Connaître 
+>
+>
+> - les opérations arithmétiques de base,
+> - la notion de pourcentage,
+> - l'écriture scientifique et
+> - la définition d'un chiffre significatif
+
+
+> [!info]+ 🎯 Objectifs
+> **Savoir présenter un résultat expérimental**
+>
+> - Distinguer incertitude absolue et incertitude relative.
+> - Écrire un résultat sous la forme $x = (x_m \pm \Delta x) \text{ unité}$ de manière cohérente.
+> - Conserver le bon nombre de chiffres significatifs après une opération (somme ou produit).
+
+
+> [!note]+ 📖 Point de cours
+> **Chiffre significatif**
+>
+> - **Chiffres significatifs** : les chiffres significatifs d'une
+>   valeur numérique sont les chiffres qui apportent une information sur
+>   la précision de la mesure. On ne conserve que les chiffres justifiés
+>   par la précision de l'expérience afin de ne pas donner une précision
+>   artificielle au résultat.
+> - **Influence de l'unité choisie** : le nombre de chiffres
+>   significatifs d'une grandeur physique doit rester cohérent lorsque
+>   l'on change d'unité. La valeur numérique et l'unité évoluent
+>   conjointement, mais la précision physique de la mesure reste
+>   inchangée. Par exemple :
+>   $$
+>   0,0040~\text{m} = 4,0 \times 10^{-3}~\text{m}
+>   = 4,0~\text{mm}.
+>   $$
+>   Ces trois écritures possèdent toutes **2 chiffres significatifs**.
+>   Les zéros servant uniquement à positionner la virgule ne sont pas
+>   significatifs.
+> - **Lien avec l'écriture scientifique** : l'écriture scientifique
+>   permet de faire apparaître explicitement le nombre de chiffres
+>   significatifs. Elle s'écrit sous la forme
+>   $$
+>   a \times 10^n, \qquad 1 \leq |a| < 10.
+>   $$
+>   Les chiffres significatifs sont alors ceux du coefficient $a$.
+>   Par exemple, $0,0040 = 4,0 \times 10^{-3}$ comporte 2 chiffres
+>   significatifs, tandis que $4 \times 10^{-3}$ n'en comporte qu'un.
+>
+>
+> **Merci DECHAUX Tom pour les precisions**\\
+>
+> **Incertitudes et chiffres significatifs**
+>
+> - **Incertitude absolue** $\Delta x$ : même dimension et unité que $x$. Elle s'arrondit généralement à $1$ seul chiffre significatif par excès.
+> - **Incertitude relative** $\frac{\Delta x}{x}$ : grandeur adimensionnelle (souvent exprimée en $\%$).
+> - Le dernier chiffre significatif conservé sur la valeur mesurée $x_m$ doit correspondre à la position du chiffre de l'incertitude $\Delta x$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Gestion des chiffres significatifs
+> **
+>
+> \begin{itemize}[label=$\star$]
+> \item Pour une addition/soustraction, aligne les puissances de 10 puis compte le nombre de chiffres {\bf après la virgule} (décimales).
+> \item Pour une multiplication/division, compte le nombre total de {\bf chiffres significatifs} des données entrantes.
+> \item L'incertitude absolue subit la même unité et la même dimension que la grandeur mesurée.
+> \end{itemize}
+
 
 **q1.** **Mesures $\&$ incertitudes**\\
 
@@ -27,6 +100,22 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 (c) Donner l’intervalle contenant la valeur réelle.
 
 (d) Combien de chiffres significatifs contient la mesure ? Le chiffre 6 est-il certain ?
+
+> [!note]+ 📖 Point de cours
+> **Définitions de base**
+>
+> Soit $x$ une grandeur physique.\\
+>
+>
+> - L’**incertitude absolue** sur $x$, notée $\Delta x$ est la différence entre la valeur mesurée $x_m$ et la valeur exacte $x_e$ (vraie valeur inaccessible) :
+>     $$
+>     \Delta x = \vert x_m - x_e \vert \quad \text{Donc } x_e = x_m \pm \Delta x
+>     $$
+> - L’**incertitude relative** sur $x$ est le quotient : ${\displaystyle \frac{\Delta x}{x_m}}$
+>
+>
+> En général, l’erreur sur la mesure (absolue ou relative) est une donnée de l’expérience. Elle dépend des méthodes de mesure et de l’appareillage.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Calcul de $\Delta m$
@@ -64,6 +153,19 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 (b) Calculer le volume $V$ d’un cylindre de rayon $r= 1,26 ~ cm$ et de hauteur $h= 7,3 ~cm$.
 
 (c) Exprimer avec le bon nombre de chiffres significatifs la somme de : $0,056 \times 10^2 + 11,8 \times 10^{-1}$
+
+> [!note]+ 📖 Point de cours
+> **Règles de présentation et de calcul**
+>
+> Symbole de la grandeur = (Valeur numérique $\pm$ Incertitude) (Symbole de l’unité).\\
+>
+>
+> - L’unité de la grandeur numérique doit toujours être précisée.
+> - La valeur numérique est donnée en écriture scientifique de préférence.
+> - Le **nombre** de **chiffres significatifs** doit être adapté à la précision de la mesure.
+> - Le résultat d’une addition/soustraction comporte au maximum autant de décimales que la grandeur qui en a le moins.
+> - Le résultat d’un produit/quotient comporte au maximum autant de chiffres significatifs que le facteur qui en a le moins.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Calculs géométriques et sommes
@@ -156,6 +258,26 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 >   $$
 >   \text{Somme} = 6,8
 >   $$
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Vocabulaire des mesures
+
+> Identifier l'incertitude de lecture sur des instruments gradués (règle, éprouvette) ou digitaux (balance).
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Propagation des incertitudes
+
+> Utiliser la méthode des différentielles logarithmiques ou le calcul d'incertitude-type composée (NF EN ISO/IEC Guide 98-3) pour des fonctions à plusieurs variables.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Incertitudes de type A et B
+
+> Évaluer l'incertitude-type par approche statistique (Type A, écart-type de la moyenne) ou par loi de probabilité a priori (Type B, distribution uniforme/rectangulaire).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Inférence bayésienne en métrologie
+
+> Traiter l'ajustement de données expérimentales complexes et estimer les incertitudes via des méthodes Monte-Carlo.
 
 
 > [!note] 🔗 Voir aussi

@@ -5,11 +5,63 @@ tags:
   - chap-3-travail-energie-cinetique-energie-potentielle-energie-mecanique
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-3-travail-energie-cinetique-energie-potentielle-energie-mecanique/travail-et-energie/index|⬅ Retour]]
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-3-travail-energie-cinetique-energie-potentielle-energie-mecanique/travail-et-energie/index|⬅ Retour]] · <a href="/pdfs/td5_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td5_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
 ### Exercice 4. Looping vertical
 
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 45 min · Type : Application / Synthèse énergie et Newton*
+
 Le wagon d'un manège, de masse $m$ assimilé à un point matériel $M$, est lâché **sans vitesse initiale** d'une hauteur $H$ au point $A$, glisse le long d'une grande descente, puis effectue un looping circulaire de rayon $R=19$ m. Le point $B$ est le sommet du looping, le point $C$ le point le plus bas. On néglige les frottements, on prendra $g=9{,}81~\mathrm{m\,s^{-2}}$ et on repère l'altitude $z$ à partir du sol (point $C$).
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi ne tombe-t-on pas la tête en bas ?**
+>
+> *Durée de l'introduction : 3 min*
+>
+> *Au sommet d'un looping, les passagers sont **la tête en bas** et ne tombent pas, sans être attachés par le haut. **À quelle vitesse minimale** faut-il arriver au sommet ? De quelle hauteur faut-il lâcher le wagon ?*
+>
+> **Idée clé : au sommet, le poids seul peut fournir la force centripète.** $N+mg=mv^2/R$ : si $v^2=gR$, $N=0$ et le poids suffit ; au-dessus, le rail pousse. La vitesse vient de l'énergie : $v^2=2g(H-2R)$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Conservation de l'énergie mécanique**
+>
+> La réaction normale du rail lisse est perpendiculaire à $\vec v$, elle ne travaille pas ; seul le poids travaille : $E_m=\tfrac12mv^2+mgz=\text{cte}$.
+>
+> **Base de Frenet**
+>
+> $\vec a=\dfrac{\mathrm dv}{\mathrm dt}\vec t+\dfrac{v^2}{\rho}\vec n$, $\vec n$ dirigé vers le centre de courbure ; sur un cercle, $\rho=R$.
+>
+> **Condition de contact**
+>
+> $N\ge0$ ; le contact est rompu quand $N=0$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Combiner énergie et loi de Newton**
+>
+> Savoir obtenir la vitesse par l'énergie, la réaction par la projection normale, puis écrire la condition $N\ge0$ et en déduire une hauteur minimale. Chercher le **point le plus critique** du trajet.
+
+
+> [!note]+ 📖 Point de cours
+> **Méthode**
+>
+> (1) Conservation de $E_m$ entre $A$ et le point étudié ; (2) PFD projeté sur la normale ; (3) $N\ge0$ en chaque point ; (4) étude du minimum de $N$ sur le trajet.
+>
+> **Rail lisse : un paramètre angulaire**
+>
+> Repérer la position par l'angle $\theta$ (mesuré depuis le bas du looping) : $z=R(1-\cos\theta)$. La projection de $m\vec a=m\vec g+\vec N$ sur la normale centripète donne $N-mg\cos\theta=\dfrac{mv^2}R$ ($\theta=0$ en bas, $\theta=\pi$ en haut).
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Résolution d'inégalités**
+>
+> $2g(H-2R)\ge gR\iff H\ge\tfrac52R$ (diviser par $g>0$).
+>
+> **Position angulaire sur un cercle**
+>
+> Avec $\theta$ depuis le bas : $z=R(1-\cos\theta)$, composante radiale du poids $-mg\cos\theta$ (vers le centre pour $\cos\theta<0$).
+
 
 **q1.** - [(a)] Appliquer la conservation de l'énergie mécanique du wagon entre $A$ et $B$.
 - [(b)] En déduire l'expression de sa vitesse $v_B$ au point $B$ en fonction de $H$, $R$ et $g$.

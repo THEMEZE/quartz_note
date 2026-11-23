@@ -5,9 +5,11 @@ tags:
   - chap-3-interfaces-entre-deux-milieux
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a> · <a href="/pdfs/td3_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a>
 
 ### Exercice 3. Perle sur une corde : jonction massive, filtre passe-bas puis passe-bande *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Approfondissement / Problème de synthèse*
 
 Deux cordes tendues horizontalement avec la même tension $F$ sont reliées en $O$ ($x=0$) : la corde (1),
 de masse linéique $\mu_1$, occupe $x<0$ ; la corde (2), de masse linéique $\mu_2$, occupe $x>0$. On note
@@ -22,6 +24,74 @@ en amplitude de *déplacement*.
 
 Données numériques (cordes identiques, parties numériques) : $F=100$ N, $\mu_1=\mu_2=4{,}0~\text{g}\cdot\text{m}^{-1}$,
 $M=2{,}0$ g.
+
+> [!question]+ 🎣 Accroche
+> **Une toute petite masse peut-elle bloquer une onde ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Sur une corde tendue, on fixe une perle de $2$ g, dont la masse est comparable à celle de $50$ cm de corde. Une ondulation lente (large) passe-t-elle ? Une ondulation rapide (étroite) passe-t-elle ? **Qu'est-ce qui change entre les deux ?** Et si on ajoute un ressort entre la perle et le support ?*
+>
+> **Idée clé : la perle ajoute en série une impédance $iM\omega$ qui grandit avec la fréquence.** Les coefficients ne sont plus ceux de l'exercice 1 mais
+> $$r=\frac{Z_1-Z_2-iM\omega}{Z_1+Z_2+iM\omega},\qquad t=\frac{2Z_1}{Z_1+Z_2+iM\omega}.$$
+> À basse fréquence ($M\omega\ll Z$), on retrouve la corde sans perle ; à haute fréquence ($M\omega\gg Z$), $t\to0$ et $r\to-1$ : tout est réfléchi, la perle se comporte comme un point fixe.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Jonction entre deux cordes (exercice 1)**
+>
+> Connaître les deux conditions de raccord en l'absence de masse en $O$ (continuité de $y$ et de $\partial_xy$), les coefficients $r=\dfrac{Z_1-Z_2}{Z_1+Z_2}$ et $t=\dfrac{2Z_1}{Z_1+Z_2}$ qui en résultent, et la relation $k_i=\omega Z_i/F$.
+>
+> **Deuxième loi de Newton pour un point matériel**
+>
+> $M\,\ddot y=\sum F_{\mathrm{transv}}$. La force transverse exercée par une corde de tension $F$ sur une extrémité est $\pm F\,\partial_xy$ (petits angles), avec le signe $+$ si la corde est située à droite du point et $-$ si elle est à gauche.
+>
+> **Puissance transportée par une onde de corde**
+>
+> Pour une onde progressive sinusoïdale de déplacement d'amplitude $A$, $\langle\mathcal P\rangle=\tfrac12Z\omega^2A^2$ (cf. exercice 1, aller plus loin).
+
+
+> [!info]+ 🎯 Objectifs
+> **Modifier une condition de raccord et en tirer la conséquence en fréquence**
+>
+> Savoir écrire le bilan des forces sur une masse placée à une jonction, en déduire de nouveaux coefficients $r(\omega)$ et $t(\omega)$ *complexes et dépendant de la fréquence*, et interpréter la perle comme une impédance additionnelle placée en série avec celle de la corde (analogie avec une inductance).
+>
+> Savoir passer du domaine fréquentiel au domaine temporel (multiplication par $i\omega$ $\leftrightarrow$ dérivation, $e^{-i\omega\tau}\leftrightarrow$ retard $\tau$) et reconnaître un filtre passe-bas puis passe-bande.
+
+
+> [!note]+ 📖 Point de cours
+> **Impédance mécanique et éléments en série**
+>
+> Pour une onde progressive vers $+x$ sur une corde, la force transverse que la partie gauche exerce sur la partie droite est $-F\,\partial_xy=ikF\,y$ et la vitesse transverse est $\partial_ty=i\omega y$ : leur rapport est $kF/\omega=Z$. L'impédance mécanique est donc le rapport *force transverse / vitesse transverse*.
+>
+> Un élément ponctuel placé en $O$ partage la même vitesse transverse que les deux cordes ($y$ est continu) et les forces s'y additionnent : il se met donc en **série** avec elles, comme dans un circuit où la vitesse joue le rôle du courant et la force celui de la tension. Une masse a pour impédance $iM\omega$ (comme une inductance $iL\omega$), un ressort de raideur $K$ relié à un support fixe a pour impédance $K/(i\omega)$ (comme une capacité), un amortisseur visqueux de coefficient $\eta$ a pour impédance $\eta$ (comme une résistance).
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Fractions complexes et module au carré**
+>
+> $|a+ib|^2=a^2+b^2$ ; $\left|\dfrac{a-ib}{a+ib}\right|^2=1$ quand $a,b$ sont réels. Pour $|r|^2$ et $|t|^2$, écrire numérateur et dénominateur sous la forme $a+ib$.
+>
+> **Dérivation par rapport au temps et notation complexe**
+>
+> $\partial_t\to i\omega$ : $\partial_t^2y=-\omega^2y$ ; réciproquement, la multiplication d'un spectre par $i\omega$ correspond à une dérivation temporelle et celle par $e^{-i\omega\tau}$ à un retard $\tau$.
+>
+> **Développement limité en $\omega\tau$**
+>
+> $\dfrac1{1+i\omega\tau}\approx1-i\omega\tau\approx e^{-i\omega\tau}$ pour $\omega\tau\ll1$ ; $\dfrac{-i\omega\tau}{1+i\omega\tau}\approx-i\omega\tau$.
+>
+> **Filtre du premier ordre : fréquence de coupure et décibels**
+>
+> $T_E=\dfrac1{1+(\omega/\omega_c)^2}$ vaut $\tfrac12$ ($-3$ dB) en $\omega_c$ ; à haute fréquence $T_E\approx(\omega_c/\omega)^2$, soit $-6$ dB par octave ($-20$ dB par décade).
+>
+> **Résonance : réactance et largeur à mi-puissance**
+>
+> Avec $X(\omega)=M\omega-K/\omega$, $X(\omega_0)=0$ et, au voisinage de $\omega_0$, $X\approx2M(\omega-\omega_0)$. La transmission $T_E=\dfrac{4Z^2}{4Z^2+X^2}$ tombe à $1/2$ pour $|X|=2Z$, soit $|\omega-\omega_0|=Z/M$.
+>
+> **Intégrale ou maximum d'une gaussienne dérivée**
+>
+> $\dfrac{\mathrm d}{\mathrm dt}e^{-t^2/2\sigma^2}=-\dfrac t{\sigma^2}e^{-t^2/2\sigma^2}$ ; $te^{-t^2/2\sigma^2}$ est maximal en $t=\sigma$ et vaut $\sigma e^{-1/2}$.
+
 
 **q1.** Écrire la condition de continuité sur $y$ en $x=0$ et l'équation du mouvement de la perle de masse $M$.
 Justifier le signe des deux forces de tension exercées sur la perle.
@@ -189,6 +259,40 @@ et le facteur de qualité de ce passe-bande.
 > **Application numérique**
 >
 > $\omega_0=2\pi\times250=1571$ rad/s donc $K=M\omega_0^2=2{,}0\times10^{-3}\times2{,}47\times10^6\approx4{,}9\times10^3~\text{N}\cdot\text{m}^{-1}$. Au voisinage de $\omega_0$, $X\approx2M(\omega-\omega_0)$ et $T_E=\tfrac12$ pour $|X|=2Z$, soit $|\omega-\omega_0|=Z/M=316$ rad/s. La largeur à mi-puissance est donc $\Delta\omega=2Z/M=\omega_c=632$ rad/s, soit $\Delta f\approx100$ Hz, et le facteur de qualité $Q=\dfrac{f_0}{\Delta f}\approx\dfrac{250}{100}=2{,}5$. Le filtre est peu sélectif : pour le rendre plus fin, il faut une perle plus lourde (ou des cordes plus légères).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Électrocinétique**
+>
+> Une inductance série dans une ligne de transmission est un filtre passe-bas ; une inductance et une capacité en série forment un passe-bande, exactement comme ici (force $\leftrightarrow$ tension, vitesse $\leftrightarrow$ courant, masse $\leftrightarrow$ inductance, ressort $\leftrightarrow$ capacité).
+>
+> **Acoustique du bâtiment**
+>
+> La loi de masse d'une paroi (TD2, exercice 8) est le même calcul avec une masse surfacique ; la résonance du double vitrage est le montage perle + ressort.
+>
+> **Instruments à cordes**
+>
+> Le chevalet, la sourdine (petite masse sur le chevalet de violon), le capodastre et les masses d'accord des guitares ajoutent un élément ponctuel sur la corde : ils filtrent les harmoniques élevés et modifient le timbre.
+>
+> **Génie civil et sismologie**
+>
+> Les amortisseurs à masse accordée (une masse montée sur ressort fixée à un bâtiment ou à un pont) sont l'application du montage perle + ressort : en transparence totale à $\omega_0$, on évacue l'énergie vers l'oscillateur au lieu de la réfléchir.
+>
+> **Physique du solide**
+>
+> La chaîne de masses reliées par des ressorts, modèle de cristal unidimensionnel, a une fréquence de coupure et des bandes interdites ; la perle isolée en est le défaut ponctuel.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Amortisseur : terminaison et absorption
+> Un amortisseur visqueux (coefficient $\eta$) fixé en $O$ ajoute en série une impédance réelle $\eta$. On pourra montrer que la fraction d'énergie absorbée est $1-R_E-T_E=\dfrac{4Z_1\eta}{(Z_1+Z_2+\eta)^2}$ pour $\omega$ quelconque, et qu'une corde semi-infinie terminée par $\eta=Z$ n'a aucune réflexion (terminaison adaptée, principe de l'absorbeur d'extrémité d'une corde ou d'une ligne).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Corde chargée périodiquement : réseau de perles
+> Pour des perles de masse $m$ régulièrement espacées d'une distance $a$ sur une corde, on établit la relation de dispersion $\omega=2\sqrt{\dfrac{F}{ma}}\,\left|\sin\dfrac{ka}2\right|$ : le milieu devient dispersif et il existe une fréquence de coupure $\omega_{\max}=2\sqrt{F/(ma)}$ au-delà de laquelle l'onde ne se propage plus (bande interdite). C'est la version mécanique du filtre passe-bas à cellules LC, et le premier modèle de vibration d'un cristal.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Matrice de transfert d'un élément ponctuel
+> Un élément de impédance série $Z_s$ s'écrit sous la forme d'une matrice $\begin{pmatrix}1&Z_s\\0&1\end{pmatrix}$ reliant (force, vitesse) de part et d'autre ; l'association d'éléments en série, de lames et d'interfaces se traite alors par produit de matrices (voir TD2, exercice 8).
 
 
 > [!note] 🔗 Voir aussi

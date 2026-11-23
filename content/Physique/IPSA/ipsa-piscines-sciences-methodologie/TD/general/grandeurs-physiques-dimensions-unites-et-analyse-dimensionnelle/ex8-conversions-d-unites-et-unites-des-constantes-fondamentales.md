@@ -5,11 +5,51 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 8. (*) Conversions d'unités et unités des constantes fondamentales *(facultatif)*
 
+*Difficulté ●●●○○ · ⏱ 40 min · Type : Entraînement*
+
 Cet exercice comporte deux volets. Le premier travaille les **conversions d'unités** (questions directes puis conversions composées). Le second montre comment **déterminer l'unité d'une constante fondamentale** à partir d'une loi physique, puis comment combiner des constantes pour fabriquer une grandeur de dimension donnée.
+
+> [!abstract]+ 📚 Prérequis
+> **Unités du système international**
+>
+> Connaître 
+>
+>
+> - les sept unités de base du SI et les préfixes usuels ($\text{n}$, $\mu$, $\text{m}$, $\text{k}$, $\text{M}$, $\text{G}$),
+> - les équations aux dimensions ($[\,\cdot\,]$) des grandeurs mécaniques et électriques usuelles,
+> - les lois physiques de base (Newton, Coulomb, énergie cinétique, \dots).
+
+
+> [!info]+ 🎯 Objectifs
+> **Convertir sans erreur et retrouver l'unité d'une constante**
+>
+> - Convertir une grandeur simple ou composée (vitesse, masse volumique, débit, énergie) en unité SI.
+> - Retrouver la dimension et l'unité SI d'une constante à partir d'une loi qui la contient.
+> - Combiner des constantes fondamentales pour obtenir une grandeur de dimension imposée.
+
+
+> [!note]+ 📖 Point de cours
+> **Conversions et constantes**
+>
+> - **Conversion** : la valeur numérique change mais la grandeur reste la même. Par exemple $1~\text{h} = 3\,600~\text{s}$.
+> - **Constante fondamentale** : une constante intervenant dans une loi, comme $G$, $h$, $k_B$ ou $\varepsilon_0$, a une dimension telle que la loi soit homogène.
+> - **Unités dérivées utiles** : $1~\text{N} = 1~\text{kg.m.s}^{-2}$, $1~\text{J} = 1~\text{kg.m}^2\text{.s}^{-2}$, $1~\text{W} = 1~\text{J.s}^{-1}$, $1~\text{C} = 1~\text{A.s}$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Méthode générale
+> **
+>
+> \begin{itemize}[label=$\star$]
+> \item Conversion : multiplier par des rapports égaux à $1$, par exemple $\dfrac{1~\text{km}}{10^{3}~\text{m}}$, de sorte que l'ancienne unité se simplifie.
+> \item Constante : isoler la constante dans la loi, puis remplacer chaque grandeur par son unité SI.
+> \item Pour une puissance, la conversion se fait aussi à la puissance : $1~\text{cm}^3 = (10^{-2}~\text{m})^3 = 10^{-6}~\text{m}^3$.
+> \end{itemize}
+
 
 **q1.** **Conversions directes**\\
 
@@ -202,6 +242,21 @@ La troisième loi de Kepler s'écrit $T^2 = K \, a^3$ où $T$ est la période de
 > (d) $K = 2,97 \times 10^{-19} \times \dfrac{(1,50 \times 10^{11})^3}{(3,16 \times 10^{7})^2} = 2,97 \times 10^{-19} \times \dfrac{3,38 \times 10^{33}}{9,99 \times 10^{14}} \approx 1,00 ~\text{an}^2\text{.UA}^{-3}$. Dans ces unités, la constante vaut $1$ : c'est pourquoi les astronomes utilisent l'an et l'UA.
 >
 > (e) $a^3 = \dfrac{T^2}{K} = 11,9^2 = 141,6 ~\text{UA}^3$ donc $a = \sqrt[3]{141,6} \approx 5,21 ~\text{UA}$ (il s'agit de Jupiter).
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Unités hors système international
+
+> Rechercher l'origine du nœud, de l'électron-volt, de l'année-lumière et de l'unité astronomique.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Système d'unités naturelles
+
+> Poser $\hbar = c = k_B = 1$ et exprimer une énergie, une longueur et une température dans la même unité.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Redéfinition du SI de 2019
+
+> Expliquer comment les valeurs fixées de $h$, $e$, $k_B$ et $N_A$ définissent désormais le kilogramme, l'ampère, le kelvin et la mole.
 
 
 > [!note] 🔗 Voir aussi

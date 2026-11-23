@@ -5,15 +5,51 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 2. Interprétation de la différentielle : petite variation $\&$ calcul d'incertitude
 
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 50 min · Type : Compréhension $\&$ Application*
+
 Cet exercice vise à comprendre le lien géométrique et physique entre la variation exacte d'une fonction $\Delta f$ et sa différentielle $\mathrm{d}f$, puis à appliquer cette notion à l'approximation des petites variations et au calcul d'incertitude.
+
+> [!abstract]+ 📚 Prérequis
+> **Différentielle d'une fonction d'une variable**
+>
+> Savoir que $\mathrm{d}f = f'(x) \mathrm{d}x$ et comprendre la notion de développement limité d'ordre 1.
+
+
+> [!info]+ 🎯 Objectifs
+> **Distinguer $\Delta f$ et $\mathrm{d}f$**
+>
+> Comprendre que $\mathrm{d}f$ est l'approximation linéaire de la variation réelle $\Delta f$ pour de petits accroissements $\mathrm{d}x$.
+
+
+> [!note]+ 📖 Point de cours
+> **Définition de la différentielle**
+>
+> Pour une fonction $f(x)$ dérivable, la différentielle s'écrit :
+> $$\mathrm{d}f = f'(x) \mathrm{d}x$$
+> Pour un accroissement fini $\Delta x = \mathrm{d}x$ petit :
+> $$\Delta f = f(x+\Delta x) - f(x) \approx \mathrm{d}f$$
+
+
+> [!tip]- 💡 Coup de pouce
+> **Différence entre $\Delta S$ et $\mathrm{d}S$
+> **
+>
+> Développe $S(x+\mathrm{d}x) = (x+\mathrm{d}x)^2$ pour faire apparaître la différence entre la variation exacte et la partie linéaire.
+
 
 **1.**
 
   **a)** La surface $S$ d'un carré de côté $x$ est donnée par $S(x) = x^2$. Déterminer la dérivée de $S$ par rapport à $x$, qu'on notera $\frac{\mathrm{d}S}{\mathrm{d}x}$. Vérifier l'homogénéité du résultat.
+
+> [!note]+ 📖 Point de cours
+> **Homogénéité d'une dérivée**
+>
+> La dimension d'une dérivée est le quotient de la dimension de la fonction par celle de la variable.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Vérification des dimensions**
@@ -162,6 +198,10 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 >
 > $$\ddot{z}(t) = \frac{\mathrm{d}^2 z}{\mathrm{d}t^2} = -4 \quad (\text{en cm}\cdot\text{s}^{-2})$$
 > $\ddot{z}$ représente **l'accélération** de la particule. Elle est constante et négative.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Développement de Taylor
+> Rattacher $\Delta f - \mathrm{d}f$ au reste de Taylor $f''(x) \frac{(\mathrm{d}x)^2}{2} + o((\mathrm{d}x)^2)$.
 
 
 > [!note] 🔗 Voir aussi

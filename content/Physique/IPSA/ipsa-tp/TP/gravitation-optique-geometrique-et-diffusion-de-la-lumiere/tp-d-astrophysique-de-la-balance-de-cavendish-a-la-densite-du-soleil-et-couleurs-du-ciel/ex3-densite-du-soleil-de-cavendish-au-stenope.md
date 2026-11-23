@@ -5,15 +5,37 @@ tags:
   - gravitation-optique-geometrique-et-diffusion-de-la-lumiere
 ---
 
-[[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Astrophysique_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/index|⬅ Retour]]
 
 ### Exercice 3. Densité du Soleil : de Cavendish au sténopé
+
+*⭐ Indispensable · Difficulté ●●●●○ · ⏱ 1 h 30 (analyse et discussion, sans manipulation nouvelle) · Type : TP de synthèse et de critique*
 
 Sans quitter la Terre, on peut trouver la densité moyenne du Soleil à partir de trois mesures : la constante de gravitation $G$ (TP A1, balance de Cavendish), le diamètre angulaire du Soleil $\theta$ (TP A2, sténopé) et la durée d'une année $T$. Aucune distance n'est nécessaire.
 
 L'idée : la troisième loi de Kepler donne la combinaison $GM_\odot$, mais pas $M_\odot$ ; il faut $G$ pour passer à la masse. Le rayon s'obtient avec le sténopé si on connaît la distance, mais la distance disparaît dans le calcul de la densité.
 
 On utilisera les résultats obtenus dans les TP précédents. À défaut, prendre $G=(6{,}70\pm0{,}37)\times10^{-11}\ \text{m}^3\cdot\text{kg}^{-1}\cdot\text{s}^{-2}$, $\theta=(9{,}31\pm0{,}28)\ \text{mrad}$ et $T=1\ \text{an}=3{,}156\times10^{7}\ \text{s}$.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> Mouvement circulaire uniforme et gravitation, différentielle logarithmique et combinaison des incertitudes (TD2 exercices 8 et 9), TP A1 et A2.
+
+
+> [!info]+ 🎯 Objectifs
+> **Enchaîner plusieurs mesures indépendantes**
+>
+> Écrire une grandeur en fonction de mesures indépendantes, propager les incertitudes, identifier la mesure limitante et discuter la validité d'un modèle.
+
+
+> [!note]+ 🧰 Matériel
+> Résultats des TP A1 et A2 (valeurs et incertitudes)
+>
+> Calculatrice ou tableur
+>
+> Tableau de données : $a=1{,}496\times10^{11}\ \text{m}$, $\rho_{\text{eau}}=1000\ \text{kg}\cdot\text{m}^{-3}$, $\rho_{\text{Terre}}=5510\ \text{kg}\cdot\text{m}^{-3}$
+
 
 **q1.** Établir la relation $GM_\odot=\dfrac{4\pi^2a^3}{T^2}$ pour une orbite circulaire de rayon $a$ et de période $T$ (Terre de masse $m\ll M_\odot$).
 
@@ -121,6 +143,20 @@ où $\theta$ est le diamètre angulaire ($\theta=2R_\odot/a$). Vérifier l'homog
 >
 > Le Soleil est presque uniquement composé d'hydrogène (73 %) et d'hélium (25 %). La densité moyenne est comparable à celle de l'eau parce que la gravité comprime fortement le gaz, dont la pression centrale atteint $2\times10^{16}\ \text{Pa}$. À ces densités et à $1{,}5\times10^{7}\ \text{K}$, le gaz est complètement ionisé (plasma) et se comporte comme un gaz parfait. Le Soleil ne s'effondre pas car le gradient de pression équilibre la pesanteur ($\mathrm{d}P/\mathrm{d}r=-\rho g$) : la pression thermique est entretenue par l'énergie des réactions de fusion.
 > Jupiter (densité voisine) est un cas différent : sa pression interne résulte de la dégénérescence électronique et non de la fusion.
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Navigation et mécanique orbitale**
+>
+> Les trajectoires des satellites de navigation (GPS, Galileo) obéissent à la même loi de Kepler : pour un satellite à $a=26\,560\ \text{km}$ (GPS), $T=2\pi\sqrt{a^3/(GM_T)}\approx11\ \text{h}\,58\ \text{min}$. Refaire le calcul avec $GM_T=3{,}986\times10^{14}\ \text{m}^3\cdot\text{s}^{-2}$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Densité centrale du Soleil
+> La densité moyenne est de $1{,}41\ \text{g}\cdot\text{cm}^{-3}$, mais elle atteint environ $150\ \text{g}\cdot\text{cm}^{-3}$ au centre et tombe à $10^{-7}\ \text{g}\cdot\text{cm}^{-3}$ dans la photosphère. L'équilibre hydrostatique impose une décroissance monotone.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Étoiles et exoplanètes
+> La même formule $\rho_\star=\dfrac{3\pi}{GT^2}\left(\dfrac{a}{R_\star}\right)^3$ permet de déterminer la densité d'une étoile hôte à partir de la seule photométrie d'un transit (durée du transit, période) : c'est ainsi que Kepler et TESS estiment la densité de milliers d'étoiles.
 
 
 > [!note] 🔗 Voir aussi

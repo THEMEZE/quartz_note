@@ -5,14 +5,44 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 7. Dérivées de fonctions composées : approfondissement (taux liés) *(facultatif)*
+
+*Difficulté ●●●○○ · ⏱ 50 min · Type : Entraînement*
 
 Cet exercice prolonge l'exercice 3. On utilise la règle de la chaîne avec plusieurs niveaux de composition, puis dans des problèmes de **taux liés** : plusieurs grandeurs dépendent du temps et sont reliées entre elles par une relation géométrique.
 
 Règle de la chaîne à plusieurs niveaux : si $f = f(v)$, $v = v(u)$ et $u = u(t)$, alors
 $$\frac{\mathrm{d}f}{\mathrm{d}t} = \frac{\mathrm{d}f}{\mathrm{d}v}\cdot\frac{\mathrm{d}v}{\mathrm{d}u}\cdot\frac{\mathrm{d}u}{\mathrm{d}t}.$$
+
+> [!abstract]+ 📚 Prérequis
+> **Exercices 1, 3 et 5**
+>
+> Règle de la chaîne, notation pointée, dérivées usuelles.
+
+
+> [!info]+ 🎯 Objectifs
+> **Décomposer, relier, calculer**
+>
+> Décomposer une fonction en couches, exprimer la relation entre les grandeurs d'un problème, puis dériver cette relation par rapport au temps.
+
+
+> [!note]+ 📖 Point de cours
+> **Dérivée par rapport à $t$ d'une relation**
+>
+> Si deux grandeurs $x(t)$ et $y(t)$ sont liées par $F(x,y)=\text{constante}$, dériver cette relation par rapport à $t$ relie leurs vitesses de variation $\dot{x}$ et $\dot{y}$. Par exemple $\dfrac{\mathrm{d}(x^2)}{\mathrm{d}t} = 2x\dot{x}$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Méthode pour un problème de taux liés**
+>
+> \begin{enumerate}[label=\arabic*)]
+>   \item Identifier les grandeurs qui varient avec $t$ et la relation qui les lie.
+>   \item Dériver cette relation par rapport à $t$ (règle de la chaîne).
+>   \item Remplacer les valeurs numériques \textbf{après} avoir dérivé.
+> \end{enumerate}
+
 
 **1.**
 
@@ -142,6 +172,10 @@ $$\frac{\mathrm{d}f}{\mathrm{d}t} = \frac{\mathrm{d}f}{\mathrm{d}v}\cdot\frac{\m
 > $$\dot{x}(t) \approx -L\,\theta_0\,\omega\,\sin(\omega t).$$
 > L'amplitude de la vitesse est $v_{\max} = L\theta_0\omega$.
 > **Homogénéité** : $\theta_0$ est sans dimension et $[\omega] = \text{s}^{-1}$, donc $[L\theta_0\omega] = \text{m}\cdot\text{s}^{-1}$, une vitesse.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Différentielle totale
+> Pour $F(x,y)$, $\dfrac{\mathrm{d}F}{\mathrm{d}t} = \dfrac{\partial F}{\partial x}\dot{x} + \dfrac{\partial F}{\partial y}\dot{y}$.
 
 
 > [!note] 🔗 Voir aussi

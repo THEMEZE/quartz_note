@@ -5,9 +5,11 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 3. Célérité d’une onde sur une corde homogène
+
+*⭐ Indispensable · Difficulté ●○○○○ · ⏱ 5 min · Type : Application directe du cours*
 
 Deux cordes ont été nouées ensemble au point $O$ et leurs autres extrémités
 ont été attachées à deux supports rigides. La première corde est soumise à
@@ -16,6 +18,34 @@ sont : $L_1 = 3$ m, $L_2 = 2$ m, $\mu_1 = 1.4\times10^{-4}$ kg·m$^{-1}$,
 $\mu_2 = 2.8\times10^{-4}$ kg·m$^{-1}$.
 
 <p style="text-align:center"><a href="/figures/td1_ex2_cordes_nouees.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex2_cordes_nouees.svg" alt="Cordes nouées au point O." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+> [!question]+ 🎣 Accroche
+> **Course entre deux impulsions**
+>
+> *Durée de l'introduction : 3 min, avant de lire l'énoncé*
+>
+> *Deux cordes sont nouées l'une à l'autre : l'une est deux fois plus lourde au mètre, mais plus courte. On envoie en même temps une impulsion depuis chaque extrémité. **Laquelle arrive la première au nœud ?** Le plus court trajet l'emporte-t-il forcément ?*
+>
+> **Idée clé : la vitesse d'une impulsion est fixée par le milieu, pas par l'impulsion.** Sur une corde de tension $F$ et de masse linéique $\mu$, $c=\sqrt{F/\mu}$ ; la durée d'un trajet de longueur $L$ est donc $t=L/c=L\sqrt{\mu/F}$. Comme le nœud est de masse nulle, la **tension est la même** des deux côtés ; seule la masse linéique change, donc la célérité.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Racine carrée et comparaison de rapports**
+>
+> Comparer $t_1$ et $t_2$ sans calculatrice : $\dfrac{t_1}{t_2}=\dfrac{L_1}{L_2}\sqrt{\dfrac{\mu_1}{\mu_2}}=\dfrac32\times\dfrac1{\sqrt2}\approx1{,}06>1$. Un rapport suffit, inutile de connaître $F$.
+>
+> **Proportionnalités**
+>
+> $c\propto\mu^{-1/2}$ : doubler $\mu$ divise $c$ par $\sqrt2$ ($\approx1{,}41$, d'où $c_1/c_2=1690/1195$). Savoir lire une loi en puissance.
+>
+> **Notation scientifique et ordres de grandeur**
+>
+> $1{,}4\times10^{-4}$ kg/m, $1{,}7\times10^3$ m/s, $1{,}8\times10^{-3}$ s. Une corde de piano typique a des vitesses de l'ordre de quelques centaines de m/s : les durées sont de l'ordre de la milliseconde.
+>
+> **Relation distance-vitesse-durée**
+>
+> $t=L/c$ : application directe de la cinématique à un signal qui avance à vitesse constante.
+
 
 **q1.** Simultanément, de chaque extrémité est envoyée une impulsion vers $O$.
 Quelle est celle qui atteint $O$ la première ?
@@ -55,6 +85,20 @@ Quelle est celle qui atteint $O$ la première ?
 >
 >
 > Puisque $t_2 < t_1$, l'impulsion sur la corde 2 met moins de temps à parcourir la distance $L_2$ et atteint le nœud $O$ en premier.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Optique**
+>
+> Une corde lourde joue le rôle d'un milieu où l'onde va plus lentement, comme la lumière dans le verre (indice $n=c_0/c$). Au passage d'un milieu à l'autre, une partie de l'onde est réfléchie et une partie transmise : même phénomène qu'à la surface d'une vitre.
+>
+> **Électronique et télécommunications**
+>
+> La réflectométrie envoie une impulsion dans un câble et mesure le temps d'écho : la distance à un défaut est $d=c\,\Delta t/2$. Même principe qu'au nœud entre deux cordes.
+>
+> **Sismologie**
+>
+> Les ondes sismiques sont partiellement réfléchies et transmises aux interfaces entre couches de nature différente : la mesure des retards permet de reconstituer la structure du sous-sol (prospection pétrolière).
 
 
 > [!note] 🔗 Voir aussi

@@ -5,11 +5,37 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/index|⬅ Retour]] · <a href="/pdfs/td3_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV110.pdf" target="_blank" rel="noopener">📄 PDF</a> · <a href="/pdfs/td3_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/index|⬅ Retour]] · <a href="/pdfs/td3_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td3_PhV110.pdf" target="_blank" rel="noopener">📄 PDF</a>
 
 ### Exercice 2. Chute libre : expérience et modèle
 
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 60 min · Type : Modélisation $\&$ Expérimentation*
+
 Étude expérimentale puis théorique du mouvement de chute libre d'une bille de billard lâchée sans vitesse initiale. Le référentiel terrestre est supposé galiléen.
+
+> [!abstract]+ 📚 Prérequis
+> **Principe fondamental de la dynamique (PFD)**
+>
+> $\sum \vec{F} = m \vec{a}$ et intégration des équations différentielles simples.
+
+
+> [!info]+ 🎯 Objectifs
+> **Confrontation expérience / modèle**
+>
+> Savoir exploiter une série de données expérimentales pour retrouver la valeur de l'intensité de la pesanteur $g$.
+
+
+> [!note]+ 📖 Point de cours
+> **Chute libre à 1D**
+>
+> Seule la force de pesanteur $\vec{P} = m\vec{g}$ s'applique. L'accélération subie par le corps est égale à $\vec{a} = \vec{g}$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Repère pour la chute**
+>
+> Orienter l'axe vertical vers le bas permet d'avoir $a_x = +g$ et d'éliminer les signes moins.
+
 
 **q1.** **Étude expérimentale**
 
@@ -89,6 +115,10 @@ Une masse $m$ est en chute libre sans vitesse initiale dans le champ $\vec{g}$.
 > (a) Profondeur $h = \frac{1}{2}g t^2 = 0,5 \times 9,81 \times 1,5^2 \approx 11,04\text{ m}$. Vitesse $v = g t = 9,81 \times 1,5 \approx 14,72\text{ m}\cdot\text{s}^{-1}$.
 >
 > (b) $h = \frac{1}{2}g t^2 \implies t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{2 \times 0,5}{9,81}} \approx 0,32\text{ s}$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Frottements fluides
+> Ajout de forces de frottement en $-k v$ ou $-k v^2$ menant à l'apparition d'une vitesse limite.
 
 
 > [!note] 🔗 Voir aussi

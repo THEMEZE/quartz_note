@@ -9,6 +9,8 @@ tags:
 
 ### Exercice 5. Le poisson-archer, expert en balistique *(facultatif)*
 
+*Difficulté ●●●○○ · ⏱ 30 min · Type : Entraînement / Exercice non guidé*
+
 Après avoir repéré un insecte posé sur une branche au-dessus de l'eau, le poisson-archer s'oriente et
 projette un jet d'eau afin de l'atteindre et de le faire tomber.
 
@@ -18,6 +20,76 @@ doit être lancée sous un angle $\alpha$ différent de l'angle de visée $\varp
 
 On néglige les frottements de l'air et la réfraction de la lumière à l'interface eau-air, et on
 assimile la goutte à un point matériel en chute libre.
+
+> [!question]+ 🎣 Accroche
+> **Viser n'est pas tirer : l'astuce du poisson-archer**
+>
+> *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
+>
+> *Un poisson-archer repère un insecte sur une branche. S'il crache **droit vers lui**, la goutte passe-t-elle au-dessus ou en dessous ? Et la distance à la cible ou la vitesse du jet changent-elles l'angle de tir, comme on le croit souvent ? Réponse à deviner avant de calculer.*
+>
+> **Idée clé : au sommet de la trajectoire, la composante verticale de la vitesse est nulle.** Pour un projectile en chute libre :
+> $$v_x=v_0\cos\alpha\ (\text{constante}),\qquad v_y=v_0\sin\alpha-gt,\qquad v_y=0\ \Rightarrow\ t_S=\frac{v_0\sin\alpha}{g}.$$
+> Au sommet, la vitesse n'est **pas nulle** : il reste $v_0\cos\alpha$. Deux voies mènent à la même hauteur : la cinématique ($v_y=0$) ou la conservation de l'énergie mécanique $E_m=\tfrac12mv^2+mgy$. Le **rapport** entre ordonnée et abscisse du sommet élimine $v_0$ et $g$ et donne une condition purement géométrique sur l'angle.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Mouvement d'un projectile en chute libre**
+>
+> Un point lancé de l'origine avec la vitesse $v_0$ sous l'angle $\alpha$ par rapport à l'horizontale, soumis uniquement à son poids ($\vec a=-g\,\vec u_y$), a pour équations horaires
+> $$x(t)=v_0\cos\alpha\;t,\qquad y(t)=v_0\sin\alpha\;t-\tfrac12 g\,t^2,$$
+> et pour composantes de vitesse $v_x=v_0\cos\alpha$ (constante) et $v_y=v_0\sin\alpha-g\,t$.
+>
+> **Sommet de la trajectoire**
+>
+> Le sommet est le point où la composante verticale de la vitesse s'annule : $v_y=0$. À cet instant la vitesse est purement horizontale, de norme $v_0\cos\alpha$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Exploiter une condition géométrique sur la trajectoire**
+>
+> Savoir traduire « la cible est au sommet de la trajectoire » en une condition sur la vitesse ($v_y=0$), en déduire les coordonnées du sommet, puis une relation entre l'angle de tir $\alpha$ et l'angle de visée $\varphi$ **indépendante de la vitesse initiale et de la distance**.
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+> **Deux méthodes pour une même condition, puis ouverture vers le formalisme hamiltonien**
+>
+> L'exercice se résout par la cinématique (annulation de $v_y$) ou par le théorème de l'énergie mécanique. Il est l'occasion de montrer que les deux approches sont équivalentes, puis d'ouvrir vers le fait que le mouvement horizontal et le mouvement vertical sont **dynamiquement découplés** (énergies $E_x$ et $E_y$ séparément conservées), ce qui prépare la notion de séparabilité et d'intégrabilité abordée en master.
+
+
+> [!note]+ 📖 Point de cours
+> **Théorème de l'énergie mécanique**
+>
+> Pour un point matériel de masse $m$ soumis à des forces conservatives (énergie potentielle $E_p$) et à des forces non conservatives de puissance $\mathcal P_{nc}$ :
+> $$\frac{\mathrm{d}E_m}{\mathrm{d}t}=\mathcal P_{nc},\qquad E_m=E_c+E_p .$$
+> En l'absence de forces non conservatives, $E_m$ est constante. Pour la chute libre : $E_m=\tfrac12 m v^2+m g y$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Tangente : $\tan\alpha=\sin\alpha/\cos\alpha$ et arctangente**
+>
+> Le rapport $y_S/x_S=\dfrac{\sin\alpha}{2\cos\alpha}$ se lit $\tfrac12\tan\alpha$. L'angle se retrouve par $\alpha=\arctan(2\tan\varphi)$ : $\tan$ est une pente, $\arctan$ la fonction réciproque (à vérifier sur la calculatrice en degrés).
+>
+> **Formule de duplication $\sin(2x)=2\sin x\cos x$**
+>
+> L'abscisse du sommet $x_S=\dfrac{v_0^2\sin\alpha\cos\alpha}{g}=\dfrac{v_0^2\sin(2\alpha)}{2g}$ vaut exactement la moitié de la portée $\dfrac{v_0^2\sin(2\alpha)}{g}$ : le sommet est à mi-portée par symétrie de la parabole, car $\sin(\pi-2\alpha)=\sin2\alpha$.
+>
+> **Propriété géométrique de la parabole**
+>
+> Pour $y=kx(2x_S-x)$, la pente de la tangente à l'origine est $2kx_S$, et la pente de la corde origine-sommet est $kx_S$ : **la tangente a une pente double**. D'où $\tan\alpha=2\tan\varphi$, qui est une propriété connue d'Archimède.
+>
+> **Extremum : dérivée nulle**
+>
+> Le sommet est le maximum de $y(t)$ : $\dot y=v_y=0$. Même idée que pour tout extremum d'une fonction dérivable.
+>
+> **Intégrale et travail : le lien avec l'énergie**
+>
+> Le travail d'une force est $W=\displaystyle\int\vec F\cdot\mathrm d\vec r$ (aire sous la courbe $F(x)$). Pour le poids, $W=-mg\,\Delta y$, d'où l'énergie potentielle $E_p=mgy$, **primitive** (au signe près) de la force. Le théorème de l'énergie cinétique résume : $\Delta E_c=W$.
+>
+> **Raisonner sur un rapport**
+>
+> Diviser deux équations (ici $y_S$ par $x_S$) élimine les inconnues communes ($v_0$, $g$). C'est une technique générale pour montrer qu'un résultat est **indépendant** de certains paramètres.
+
 
 **q1.** Si $\varphi=36^\circ$ et $d=0{,}900$ m, quel est l'angle de lancement $\alpha$ nécessaire pour que la goutte d'eau atteigne l'insecte **au sommet de sa trajectoire** ?
 
@@ -89,6 +161,106 @@ assimile la goutte à un point matériel en chute libre.
 > La goutte passe donc **sous** l'insecte, de la quantité $\Delta y=\dfrac{g\,x_c^2}{2v_0^2\cos^2\varphi}$ : c'est la chute due à la gravité pendant la durée du vol. Avec $v_0\approx3{,}9$ m/s, $\Delta y\approx0{,}26$ m : le tir direct manque nettement sa cible, ce qui justifie que le poisson doive tirer au-dessus de la ligne de visée.
 
 
+> [!warning]- 🪤 Écueils classiques
+> **Confondre angle de visée et angle de tir**
+>
+> Le poisson **voit** la cible sous l'angle $\varphi$, mais doit **tirer** sous un angle $\alpha>\varphi$. Si le poisson tirait directement vers la cible ($\alpha=\varphi$), la goutte passerait sous l'insecte, car la gravité courbe la trajectoire.
+>
+> **Appliquer l'énergie mécanique sans tenir compte de $v_x$**
+>
+> Au sommet, la vitesse n'est **pas nulle** : il reste la composante horizontale $v_0\cos\alpha$. Écrire $\tfrac12 m v_0^2=m g y_S$ est une erreur classique : on trouverait la hauteur maximale d'un tir vertical.
+>
+> **Chercher une valeur numérique de $v_0$ ou croire qu'elle est nécessaire**
+>
+> La question ne donne pas $v_0$. L'angle $\alpha$ ne dépend en fait que de $\varphi$ : $\tan\alpha=2\tan\varphi$. La vitesse $v_0$ ne sert qu'à calculer **avec quelle vitesse** le poisson doit tirer.
+
+
+> [!tip]- 🎙️ Conseils d'animation
+> **Faire deviner le résultat avant le calcul**
+>
+> Demander aux étudiants si $\alpha$ dépend de $d$ ou de $v_0$ avant de calculer. Beaucoup répondent oui. Le résultat $\tan\alpha=2\tan\varphi$ est alors une surprise utile, et se retrouve géométriquement : au sommet d'une parabole, la tangente au point de lancement coupe l'horizontale du sommet à mi-portée (propriété d'Archimède de la parabole).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Optique**
+>
+> Le vrai poisson corrige la **réfraction** : la loi de Snell-Descartes $n_1\sin i_1=n_2\sin i_2$ relie l'image perçue à la position réelle de l'insecte (voir « aller plus loin »).
+>
+> **Énergétique**
+>
+> Le théorème de l'énergie mécanique donne la hauteur du sommet sans résoudre l'équation du mouvement ; on retrouve la même méthode pour un pendule, un looping, un satellite.
+>
+> **Mathématiques (coniques)**
+>
+> Parabole, tangente, symétrie. Les antennes paraboliques et les phares exploitent une autre propriété de la même courbe : les rayons parallèles à l'axe convergent vers le foyer.
+>
+> **Sport et biologie**
+>
+> Le basketteur choisit un angle d'entrée dans le panier, le lanceur de javelot une vitesse et un angle : même modèle de projectile. Le poisson-archer est un cas d'étude en éthologie, car il intègre mentalement angle et distance.
+
+
+> [!success]- 🏁 Bilan
+> **Sommet de la trajectoire et relation $\tan\alpha = 2\tan\varphi$**
+>
+> Atteindre la cible au sommet de la trajectoire impose $\tan\alpha=2\tan\varphi$, soit pour $\varphi=36^\circ$ un angle de tir $\alpha\approx55{,}5^\circ$. Le résultat est indépendant de $d$ et de $v_0$ : seule la vitesse nécessaire dépend de $d$ ($v_0\approx3{,}9$ m/s pour $d=0{,}900$ m). La condition $v_y=0$ et le théorème de l'énergie mécanique conduisent à la même hauteur de sommet.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Le théorème de l'énergie mécanique : énoncé complet et application au sommet
+> **Énoncé.** Pour un point matériel de masse $m$ dans un référentiel galiléen, le théorème de l'énergie cinétique s'écrit $\frac{\mathrm{d}E_c}{\mathrm{d}t}=\mathcal P_{\rm ext}=\vec F\cdot\vec v$. Si une partie des forces dérive d'une énergie potentielle, $\vec F_{\rm cons}=-\vec\nabla E_p$, alors $\mathcal P_{\rm cons}=-\frac{\mathrm{d}E_p}{\mathrm{d}t}$ et
+> $$\frac{\mathrm{d}}{\mathrm{d}t}\left(E_c+E_p\right)=\mathcal P_{nc}.$$
+> Sans force non conservative, $E_m=E_c+E_p$ est une constante du mouvement.
+>
+> **Application à la goutte.** Avec $E_p=m g y$, la conservation entre le lancement ($y=0$, vitesse $v_0$) et le sommet ($y=y_S$, vitesse $v_S$) donne
+> $$\tfrac12 m v_0^2=\tfrac12 m v_S^2+m g\,y_S .$$
+> Le théorème seul ne détermine pas $v_S$. Il faut une seconde information : **la composante horizontale de la vitesse est conservée** (aucune force horizontale), donc $v_S=v_0\cos\alpha$ puisque $v_y=0$ au sommet. Ainsi
+> $$y_S=\frac{v_0^2-v_0^2\cos^2\alpha}{2g}=\frac{v_0^2\sin^2\alpha}{2g},$$
+> ce qui est exactement le résultat de la méthode cinématique. L'énergie n'a pas remplacé la dynamique : elle a fourni la hauteur sans résoudre l'équation du mouvement, mais la direction de la vitesse au sommet reste donnée par la conservation de la quantité de mouvement horizontale.
+>
+> **Variante.** Si la goutte devait atteindre l'insecte avec une vitesse donnée $v_c$ à la hauteur $y_c$ (sans être au sommet), on obtient directement $v_0^2=v_c^2+2g\,y_c$, sans connaître l'angle ni la durée du vol.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Parabole de sûreté : où peut-on atteindre ?
+> Pour une vitesse initiale $v_0$ fixée, l'ensemble des points atteignables est délimité par l'enveloppe de toutes les trajectoires, la **parabole de sûreté**
+> $$y=\frac{v_0^2}{2g}-\frac{g}{2v_0^2}\,x^2 .$$
+> Montrer que la cible à $(d\cos\varphi,\,d\sin\varphi)$ n'est atteignable que si elle est sous cette parabole, et trouver la vitesse minimale de tir pour l'atteindre : $v_{0,\min}^2=g\left(d\sin\varphi+d\right)$. Dans ce cas limite, un seul angle de tir convient, $\alpha=\tfrac{\pi}{4}+\tfrac{\varphi}{2}$ (à comparer avec $\alpha=\arctan(2\tan\varphi)$ obtenu ici, qui correspond à un tir plus rapide et à une cible au sommet).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Formalisme de Hamilton : séparabilité du mouvement horizontal et vertical
+> Pour la goutte (masse $m$), le hamiltonien est
+> $$\mathcal H(x,y,p_x,p_y)=\frac{p_x^2}{2m}+\frac{p_y^2}{2m}+m g y=\underbrace{\frac{p_x^2}{2m}}_{\mathcal H_x}+\underbrace{\frac{p_y^2}{2m}+m g y}_{\mathcal H_y}.$$
+> Les équations de Hamilton, $\dot q_i=\partial\mathcal H/\partial p_i$ et $\dot p_i=-\partial\mathcal H/\partial q_i$, donnent $\dot p_x=0$ (la coordonnée $x$ est **cyclique**) et $\dot p_y=-mg$. Comme $\mathcal H=\mathcal H_x+\mathcal H_y$, chaque degré de liberté évolue indépendamment : $\mathcal H_x=E_x$ et $\mathcal H_y=E_y$ sont deux intégrales premières, avec $E=E_x+E_y$.
+>
+> **Lecture sur le problème.** Au sommet, $p_y=0$, donc $E_y=m g\,y_S$. Au lancement, $E_y=\tfrac12 m v_0^2\sin^2\alpha$. La conservation de $E_y$ redonne $y_S=v_0^2\sin^2\alpha/(2g)$ **sans aucun recours à $v_x$** : c'est la séparation des énergies qui explique pourquoi la hauteur de montée ne dépend que de la composante verticale. La conservation de $E_x=\tfrac12 m v_0^2\cos^2\alpha$ est celle du mouvement uniforme horizontal.
+>
+> **Intégrabilité de Liouville.** Un système à $n=2$ degrés de liberté est intégrable s'il possède $n$ intégrales premières indépendantes en involution, $\{F_i,F_j\}=0$. Ici $F_1=\mathcal H_x$ et $F_2=\mathcal H_y$ conviennent, car $\{\mathcal H_x,\mathcal H_y\}=0$ (elles ne dépendent pas des mêmes variables conjuguées). La séparabilité de $\mathcal H$ en somme de termes à une variable est donc une condition **suffisante** d'intégrabilité ; elle n'est pas nécessaire (le problème de Kepler est intégrable sans que $\mathcal H$ soit une somme évidente en coordonnées cartésiennes, grâce au moment cinétique et au vecteur de Runge-Lenz).
+>
+> **Couplage.** Si l'on ajoutait un terme de couplage, par exemple un potentiel $\lambda\,x\,y$, on aurait $\dot p_x=-\lambda y$ et $\dot p_y=-mg-\lambda x$ : l'énergie totale reste conservée, mais $E_x$ et $E_y$ échangent de la puissance ($\dot E_x=-\dot E_y\neq0$), ce que l'on peut écrire $\dot E_i=P_{j\to i}$ avec $P_{j\to i}=-P_{i\to j}$.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Lien avec les torseurs : puissance du poids
+> Pour un système matériel étendu, la puissance des actions extérieures s'écrit avec le comoment du torseur des actions mécaniques $\{\mathcal T\}=\{\vec R,\vec M_O\}_O$ et du torseur cinématique $\{\mathcal V\}=\{\vec V_O,\vec\Omega\}$ :
+> $$\mathcal P=\{\mathcal T\}\cdot\{\mathcal V\}=\vec R\cdot\vec V_O+\vec M_O\cdot\vec\Omega .$$
+> Pour un solide de masse $m$ dans le champ de pesanteur uniforme, le torseur du poids en son centre de masse $G$ est $\{m\vec g,\ \vec 0\}_G$, et sa puissance vaut $\mathcal P=m\vec g\cdot\vec V_G=-m g\,\dot y_G=-\frac{\mathrm{d}}{\mathrm{d}t}(m g y_G)$. Pour un point matériel, $\vec\Omega$ n'intervient pas et on retrouve exactement la puissance $\vec F\cdot\vec v$ utilisée ci-dessus. Discuter ce que devient le problème si la « goutte » est remplacée par un solide en rotation (ballon) : l'énergie cinétique contient alors un terme de rotation, $E_c=\tfrac12 m V_G^2+\tfrac12 I\,\Omega^2$, et la hauteur du sommet reste inchangée tant que le poids est la seule action (la rotation est découplée, comme $x$ l'était de $y$).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Hamilton-Jacobi : le projectile comme problème séparable
+> L'équation de Hamilton-Jacobi $\partial_t S+\mathcal H(q,\partial_q S)=0$ se résout par séparation des variables : $S=-E\,t+p_x\,x+W(y)$ avec
+> $$W(y)=\int\sqrt{2m\left(E_y-m g y\right)}\;\mathrm{d}y,\qquad E_y=E-\frac{p_x^2}{2m}.$$
+> La trajectoire s'obtient par $\partial S/\partial E=\text{cste}$ et $\partial S/\partial p_x=\text{cste}$ ; on retrouve la parabole. Le sommet correspond au point de rebroussement de $W$, où l'argument de la racine s'annule : $y_S=E_y/(m g)$. Cet exemple est le prototype des systèmes pour lesquels il existe des coordonnées « action-angle ».
+
+
+> [!question]- 🔭 Aller plus loin — Doctorat : Au-delà de l'idéal : frottement, non-séparabilité et chaos
+> **Frottement linéaire.** Avec $-\gamma m\vec v$, les équations en $x$ et en $y$ restent découplées ; on obtient $v_x=v_{0x}e^{-\gamma t}$ et $v_y=\left(v_{0y}+g/\gamma\right)e^{-\gamma t}-g/\gamma$. Le système est dissipatif, mais peut encore se mettre sous forme hamiltonienne dépendant explicitement du temps (hamiltonien de Caldirola-Kanai $\mathcal H=e^{-\gamma t}\,p^2/2m+e^{\gamma t}\,V$), au prix d'une énergie qui n'a plus son sens physique usuel.
+>
+> **Frottement quadratique.** Avec $-\beta\,\|\vec v\|\,\vec v$, le terme $\|\vec v\|=\sqrt{v_x^2+v_y^2}$ **couple** $x$ et $y$ : la séparabilité est détruite et il n'existe pas de solution analytique simple de la trajectoire. Seule l'intégration numérique est possible. Le sommet n'est plus à mi-portée et la trajectoire est asymétrique (retombée plus raide que la montée).
+>
+> **Culture.** Les systèmes hamiltoniens intégrables perdent leurs tores invariants quand on les perturbe par un couplage : c'est le théorème KAM (Kolmogorov, Arnold, Moser), à l'origine de la compréhension moderne du chaos hamiltonien. La parabole du projectile est elle-même l'approximation locale d'une ellipse de Kepler dont le foyer est le centre de la Terre, à grande distance (champ $\propto 1/r^2$ remplacé par un champ uniforme $g$) : la trajectoire réelle d'un projectile sans frottement est un arc d'ellipse.
+
+
+> [!question]- 🔭 Aller plus loin — Doctorat : Le vrai poisson-archer : réfraction et jet pulsé
+> Notre modèle néglige la **réfraction** : l'image de l'insecte vue par le poisson est déplacée par la loi de Snell-Descartes $n_{\rm eau}\sin i_{\rm eau}=n_{\rm air}\sin i_{\rm air}$ ($n_{\rm eau}\approx1{,}33$), si bien que la position apparente diffère de la position réelle, sauf si le poisson vise presque à la verticale. Les études éthologiques indiquent que le poisson compense très bien cet effet. Les travaux sur la dynamique du jet suggèrent par ailleurs que le poisson ne tire pas une simple goutte : il module la vitesse d'éjection de façon à ce que le jet se rassemble en une masse unique (instabilité de Rayleigh-Plateau contrôlée) au moment de l'impact, ce qui augmente la force transmise à la proie. Exercice ouvert : estimer l'erreur commise sur $\alpha$ si l'on néglige la réfraction pour un tir à $\varphi=36^\circ$ avec le jet émergeant à travers l'interface.
+
+
 > [!note] 🔗 Voir aussi
-> [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex6-parabole-de-s-rete-et-tir-sur-une-pente|Exercice 6 — Parabole de sûreté et tir sur une pente]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]]
+> [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex6-parabole-de-s-rete-et-tir-sur-une-pente|Exercice 6 — Parabole de sûreté et tir sur une pente]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]]
 

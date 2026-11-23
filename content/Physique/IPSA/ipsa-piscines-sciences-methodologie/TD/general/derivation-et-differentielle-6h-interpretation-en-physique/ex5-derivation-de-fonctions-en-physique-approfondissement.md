@@ -5,13 +5,45 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 5. Dérivation de fonctions en physique (approfondissement) *(facultatif)*
+
+*Difficulté ●●●○○ · ⏱ 40 min · Type : Entraînement*
 
 Cet exercice prolonge l'exercice 1 avec des fonctions plus riches (produits, quotients, exponentielles, fonctions composées de plusieurs niveaux, puissances fractionnaires). Comme dans l'exercice 1, il faut d'abord identifier la **variable** et les **paramètres constants**, puis utiliser la notation différentielle. Pour les dérivées par rapport au temps, on utilise la notation pointée $\dot{x} = \frac{\mathrm{d}x}{\mathrm{d}t}$ et $\ddot{x} = \frac{\mathrm{d}^2x}{\mathrm{d}t^2}$.
 
 Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'homogénéité du résultat lorsque les grandeurs ont une dimension physique.
+
+> [!abstract]+ 📚 Prérequis
+> **Exercice 1 et règles de dérivation**
+>
+> Dérivée d'un produit, d'un quotient, d'une composée ; dérivées de $\exp$, $\ln$, $\cos$, $\sin$, $\tan$ et des puissances.
+
+
+> [!info]+ 🎯 Objectifs
+> **Enchaîner plusieurs règles de dérivation**
+>
+> Combiner produit et composition dans une même fonction, garder une écriture propre en notation différentielle, et reconnaître des formes simplifiables.
+
+
+> [!note]+ 📖 Point de cours
+> **Rappels utiles**
+>
+> $$
+> \begin{array}{rcl}
+> \mathrm{d}(\exp(u)) & = & \exp(u)\,\mathrm{d}u,\\[1ex]
+> \mathrm{d}(\ln u) & = & \dfrac{\mathrm{d}u}{u},\\[1ex]
+> \mathrm{d}(\sqrt{u}) & = & \dfrac{\mathrm{d}u}{2\sqrt{u}}.
+> \end{array}
+> $$
+
+
+> [!tip]- 💡 Coup de pouce
+> **Méthode**
+>
+> Écrire la fonction comme une composition (ou un produit) de fonctions simples, puis appliquer $\mathrm{d}(f\circ g) = (f'\circ g)\,\mathrm{d}g$ et $\mathrm{d}(fg) = g\,\mathrm{d}f + f\,\mathrm{d}g$ de l'extérieur vers l'intérieur.
+
 
 **1.**
 
@@ -192,6 +224,10 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > & & \qquad - 2\lambda^2\cos\omega t - 2\lambda\omega\sin\omega t + (\lambda^2+\omega^2)\cos\omega t\Big] ~=~ 0.
 > \end{array}
 > $$
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Équation différentielle
+> La question 2 montre que l'oscillateur amorti vérifie $\ddot{x} + 2\lambda\dot{x} + (\lambda^2+\omega^2)x = 0$ : vérifier une solution est plus simple que la trouver.
 
 
 > [!note] 🔗 Voir aussi

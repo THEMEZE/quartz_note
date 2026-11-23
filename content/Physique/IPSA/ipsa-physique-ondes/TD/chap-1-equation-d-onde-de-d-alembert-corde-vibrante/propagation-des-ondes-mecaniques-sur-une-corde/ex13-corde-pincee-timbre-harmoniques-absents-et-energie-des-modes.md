@@ -5,15 +5,55 @@ tags:
   - chap-1-equation-d-onde-de-d-alembert-corde-vibrante
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a> · <a href="/pdfs/td1_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_PhV212_fiche)</a> · <a href="/pdfs/td1_ex1_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_ex1_fiche)</a> · <a href="/pdfs/td1_exs_maison_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant (td1_exs_maison_fiche)</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/index|⬅ Retour]] · <a href="/pdfs/td1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_aides)</a> · <a href="/pdfs/td1_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td1_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td1_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_ex1_coup_de_pouce.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_coup_de_pouce)</a> · <a href="/pdfs/td1_ex1_solution_detaillee.pdf" target="_blank" rel="noopener">📄 PDF (td1_ex1_solution_detaillee)</a>
 
 ### Exercice 13. Corde pincée : timbre, harmoniques absents et énergie des modes *(facultatif)*
+
+*Difficulté ●●●●● · ⏱ 55 min · Type : Approfondissement / Problème de synthèse*
 
 Une corde de guitare de longueur $L$, de masse linéique $\mu$, tendue avec la force $F$ ($c=\sqrt{F/\mu}$), est
 fixée à ses deux extrémités $y(0,t)=y(L,t)=0$. À $t=0$, on la pince en $x=d$ ($0<d<L$) en l'écartant d'une hauteur $h\ll L$
 de sorte que son profil est formé de deux segments de droite, puis on la lâche **sans vitesse initiale** :
 $$y(x,0)=\begin{cases}h\,\dfrac xd & 0\le x\le d\\[2mm] h\,\dfrac{L-x}{L-d} & d\le x\le L\end{cases},\qquad\partial_ty(x,0)=0.$$
 On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi une guitare pincée près du chevalet sonne-t-elle plus « métallique » ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *Un guitariste peut pincer la même corde près de la rosace (au milieu) ou tout près du chevalet. La **hauteur** de la note est la même, mais le **timbre** change nettement : plus rond au milieu, plus brillant et nasillard près du chevalet. Que change-t-on exactement dans la vibration ? Existe-t-il des endroits où l'on peut pincer pour « supprimer » un harmonique ?*
+>
+> **Idée clé : la forme initiale fixe le poids de chaque mode propre.** La solution générale d'une corde fixée aux deux bouts est la superposition de ses modes,
+> $$y(x,t)=\sum_{n\ge1}\big(A_n\cos\omega_nt+B_n\sin\omega_nt\big)\sin\frac{n\pi x}L,\qquad\omega_n=n\omega_1,$$
+> et les conditions initiales ($y(x,0)$ et $\partial_ty(x,0)$) déterminent les $A_n$ et $B_n$ par **projection** sur les modes (orthogonalité des $\sin$). La hauteur de la note est donnée par $f_1$ ; le **timbre** par les amplitudes relatives des harmoniques. Comme tous les $\omega_n$ sont multiples de $\omega_1$, le mouvement est **périodique** de période $T=2L/c$.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Orthogonalité des modes**
+>
+> $\displaystyle\int_0^L\sin\frac{n\pi x}L\sin\frac{m\pi x}L\,\mathrm dx=\frac L2\,\delta_{nm}$. Si $y(x,0)=\sum_nA_n\sin\frac{n\pi x}L$, alors $A_n=\dfrac2L\displaystyle\int_0^Ly(x,0)\sin\frac{n\pi x}L\,\mathrm dx$.
+>
+> **Intégration par parties répétée et dérivée seconde au sens des distributions**
+>
+> Si $g(0)=g(L)=0$, alors $\displaystyle\int_0^Lg(x)\sin(ax)\,\mathrm dx=-\frac1{a^2}\int_0^Lg''(x)\sin(ax)\,\mathrm dx$ (deux intégrations par parties, avec $\sin''=-a^2\sin$). Pour un profil triangulaire, $g''$ n'est nulle qu'en $x=d$ : c'est une impulsion $-\dfrac{hL}{d(L-d)}\,\delta(x-d)$, dont l'effet est lu directement sur la valeur du sinus en $d$.
+>
+> **Somme de série utile**
+>
+> $\displaystyle\sum_{n=1}^{\infty}\frac{\sin^2(n\theta)}{n^2}=\frac{\theta(\pi-\theta)}2$ pour $0\le\theta\le\pi$. Permet de vérifier que la somme des énergies modales redonne l'énergie initiale.
+>
+> **Énergie d'un mode**
+>
+> Pour $y=b\sin(kx)\cos(\omega t)$, l'énergie cinétique maximale est $\tfrac12\mu\omega^2b^2\int_0^L\sin^2=\tfrac14\mu L\omega^2b^2$, égale à l'énergie totale du mode : $E_n=\tfrac14\mu L\,\omega_n^2b_n^2$.
+>
+> **Énergie potentielle d'une corde déformée**
+>
+> $E_p=\dfrac F2\displaystyle\int_0^L\left(\frac{\partial y}{\partial x}\right)^2\mathrm dx$ pour de petits écarts. À $t=0$ la corde est immobile : toute l'énergie est potentielle.
+>
+> **Valeurs remarquables de $\sin(n\pi\beta)$**
+>
+> Si $\beta=1/m$ ($m$ entier), $\sin(n\pi/m)=0$ pour $n$ multiple de $m$ : les harmoniques de rang $m,2m,\dots$ sont absents.
+
 
 **q1.** (a) Justifier la forme $y(x,t)=\sum_n(A_n\cos\omega_nt+B_n\sin\omega_nt)\sin\dfrac{n\pi x}L$ et montrer que la condition $\partial_ty(x,0)=0$ impose $B_n=0$ pour tout $n$.
 
@@ -105,6 +145,10 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > $E_n=\tfrac14\mu L\omega_n^2b_n^2$ avec $\mu\omega_1^2=F\pi^2/L^2$. La somme $\sum\sin^2(n\pi\beta)/n^2=\pi^2\beta(1-\beta)/2$ permet de conclure.
 
 
+> [!question]- 🔭 Aller plus loin — CPGE : Corde frappée (piano)
+> Un marteau de largeur négligeable frappe la corde en $x=d$ avec la vitesse $v_0$ : $y(x,0)=0$ et $\partial_ty(x,0)=v_0\delta(x-d)$. Montrer que $A_n=0$, $B_n=\dfrac{2v_0}{L\omega_n}\sin\dfrac{n\pi d}L$ et que les amplitudes décroissent en $1/n$ (et non $1/n^2$) : spectre plus riche que pour la corde pincée.
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Pincement par une pointe finie : filtrage
 > Si le doigt a une largeur $w$, le profil initial est arrondi sur $w$ : le coefficient $b_n$ est multiplié par $\dfrac{\sin(n\pi w/(2L))}{n\pi w/(2L)}$, un **sinus cardinal**. Montrer que cela atténue les harmoniques de rang $n\gtrsim2L/w$ et expliquer pourquoi le jeu au doigt est plus doux qu'au médiator.
 
@@ -137,6 +181,24 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > Pour $\beta=\tfrac15$, $\dfrac{2h}{\pi^2\beta(1-\beta)}=\dfrac{6{,}0\ \text{mm}}{1{,}579}\approx3{,}80$ mm, d'où
 > $$b_1\approx2{,}23,\ \ b_2\approx0{,}90,\ \ b_3\approx0{,}40,\ \ b_4\approx0{,}14,\ \ b_5=0\ \ (\text{mm}).$$
 > Parts d'énergie : $E_1/E_0\approx44\,\%$, $E_2/E_0\approx29\,\%$, $E_3/E_0\approx13\,\%$, $E_4/E_0\approx3\,\%$, $E_5=0$ : environ $88\,\%$ dans les quatre premiers modes. Pour $\beta=\tfrac12$ (même $h$) : $b_1=8h/\pi^2\approx2{,}43$ mm, $b_2=0$, $b_3\approx-0{,}27$ mm : le fondamental domine ($81\,\%$ de l'énergie) et le deuxième harmonique est absent. **Validation** : le fondamental est un peu plus fort au milieu (même $h$), mais le spectre est nettement plus pauvre.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Musique et lutherie**
+>
+> Le point de pincement (ou de frappe pour un piano, de passage de l'archet pour un violon) est choisi pour favoriser ou éliminer certains harmoniques : un marteau de piano frappe à environ $1/8$ de la longueur pour atténuer le $7^{\text{e}}$ harmonique, dissonant.
+>
+> **Traitement du signal**
+>
+> Les coefficients $b_n$ sont les coefficients de Fourier (série en sinus) du profil initial ; le spectre de raies d'un signal périodique de période $T$ a pour fréquences $nf_1$. Un profil à pente discontinue donne des coefficients en $1/n^2$.
+>
+> **Synthèse sonore**
+>
+> Synthèse additive : on construit un son en sommant des sinusoïdes de fréquences $nf_1$ et d'amplitudes $b_n$ ; le modèle de la corde pincée (algorithme de Karplus-Strong) est à la base de la synthèse de sons de guitare en temps réel.
+>
+> **Mathématiques**
+>
+> Séries de Fourier, problème de Sturm-Liouville, phénomène de Gibbs, distributions (dérivée seconde d'une fonction affine par morceaux).
 
 
 > [!note] 🔗 Voir aussi

@@ -11,9 +11,33 @@ tags:
 
 ### Exercice 5. Synthèse scientifique du TP <span style="color:#1565C0">(Scientific summary of the lab)</span>
 
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 20 min · Type : Bilan et conclusion*
+
 L'étudiant reporte les résultats clés dans un tableau, puis conclut sur la validité du modèle des modes propres. Il doit appuyer chaque affirmation sur un graphique ou une valeur.
 
 <span style="color:#1565C0">Students record the key results in a table, then conclude on the validity of the normal-mode model. Each statement must be supported by a graph or a value.</span>
+
+> [!question]+ 🎣 Accroche
+> **Conclure, ce n'est pas répéter <span style="color:#1565C0">(Concluding is not repeating)</span>**
+>
+> *Durée de l'introduction : 2 min*
+>
+> *En trois phrases : le modèle marche-t-il, jusqu'où, et qu'est-ce qui limite la comparaison ?
+>
+> <span style="color:#1565C0">In three sentences: does the model work, how far, and what limits the comparison?</span>*
+>
+> **Idée clé : valider un modèle, c'est quantifier l'accord et nommer ses limites.**
+>
+> <span style="color:#1565C0">**Key idea: validating a model means quantifying the agreement and naming its limits.**</span>
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Écart relatif <span style="color:#1565C0">(Relative deviation)</span>**
+>
+> $\dfrac{|x_1-x_2|}{x_2}$ à comparer à l'incertitude relative cumulée.
+>
+> <span style="color:#1565C0">$\dfrac{|x_1-x_2|}{x_2}$ to be compared with the cumulative relative uncertainty.</span>
+
 
 **q1.** E1 — Reporter dans le tableau de synthèse : célérité dans le ressort ; célérité dans la corde pour $F=0{,}6\ ;\ 0{,}8\ ;\ 1{,}0$ N ; $\mu$ par les ondes ; $\mu$ par mesure directe.
 

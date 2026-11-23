@@ -5,9 +5,11 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 3. Homogénéité et Analyse Dimensinnelle
+
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 25 min · Type : Révision*
 
 L'analyse dimensionnelle est un outil permettant de vérifier rapidement
 la cohérence d'une relation physique. Elle repose notamment sur le principe
@@ -17,6 +19,106 @@ la même dimension, et les deux membres d'une équation physique doivent
 
 Cet exercice permet de revoir les règles fondamentales de l'analyse
 dimensionnelle et de les appliquer à différentes relations physiques.
+
+> [!abstract]+ 📚 Prérequis
+> **Grandeurs fondamentales et dérivées du S.I.**
+>
+> - Connaître les grandeurs fondamentales du S.I. et leurs dimensions :
+>     longueur $L$, masse $M$, temps $T$.
+> - Savoir exprimer la dimension des grandeurs dérivées à partir
+>     des dimensions fondamentales.
+> - Connaître notamment :
+>     \[
+>       [v]=L*T^{-1},
+>       \qquad
+>       [a]=L*T^{-2}.
+>     \]
+>
+> **Calcul dimensionnel**
+>
+> - **Calcul dimensionnel **
+>
+>
+> - Savoir calculer la dimension d'un produit ou d'un quotient
+>       de grandeurs.
+> - Savoir utiliser les puissances d'une grandeur dans une
+>       expression dimensionnelle.
+> - Savoir reconnaître une grandeur sans dimension.
+> - **Opérations sur les grandeurs physiques **
+>
+>
+> - Savoir que l'addition et la soustraction ne sont possibles
+>       qu'entre grandeurs de même dimension.
+> - Savoir que les dimensions se multiplient lors d'un produit
+>       et se divisent lors d'un quotient.
+
+
+> [!info]+ 🎯 Objectifs
+> - **Vérification de l'homogénéité ** 
+>
+> - Savoir déterminer si une équation physique est homogène en comparant les dimensions de ses différents termes et de ses deux membres.
+> - Savoir identifier rapidement une relation nécessairement fausse lorsqu'elle n'est pas homogène.
+> - **Détermination de la dimension d'une constante ** 
+>
+> - Savoir retrouver la dimension d'une constante ou d'un paramètre physique à partir d'une relation connue.
+> - Savoir isoler dimensionnellement une grandeur inconnue à partir d'une équation physique.
+> - **Fonctions mathématiques ** 
+>
+> - Savoir que les arguments des fonctions trigonométriques, exponentielles et logarithmiques doivent être sans dimension.
+> - Savoir déterminer les dimensions des grandeurs intervenant dans l'argument d'une fonction mathématique.
+> - **Utilisation de l'analyse dimensionnelle ** 
+>
+> - Utiliser l'analyse dimensionnelle comme outil de contrôle rapide d'une relation physique.
+> - Comprendre qu'une relation homogène n'est pas nécessairement vraie, mais qu'une relation non homogène ne peut pas être correcte.
+
+
+> [!note]+ 📖 Point de cours
+> **Principe d'homogénéité**
+>
+> Une relation physique doit être homogène : tous les termes qui sont
+> additionnés ou soustraits doivent avoir la même dimension et les deux
+> membres d'une équation doivent avoir la même dimension.
+>
+> **Règles de calcul dimensionnel**
+>
+> - Pour un produit :
+>     \[
+>       [AB]=[A][B].
+>     \]
+> - Pour un quotient :
+>     \[
+>       \left[\frac{A}{B}\right]=\frac{[A]}{[B]}.
+>     \]
+> - Pour une puissance :
+>     \[
+>       [A^n]=[A]^n.
+>     \]
+> - Pour une somme ou une différence, les termes doivent avoir
+>     la même dimension.
+>
+> **Grandeurs sans dimension $\&$ Fonctions mathématiques**
+>
+> - **Grandeurs sans dimension **
+>
+>
+> - Une grandeur sans dimension possède une dimension égale à $1$..
+> - Les constantes numériques pures sont sans dimension et ne modifient pas la dimension d'une expression.
+> - **Fonctions mathématiques**
+>
+>
+> - Les fonctions $\exp$, $\cos$, $\sin$ et $\ln$ prennent un argument sans dimension. Ainsi, si $f(x)$ désigne l'une de ces fonctions, l'argument $x$ doit vérifier :
+>       \[
+>         [x]=1.
+>       \]
+>
+> **Dérivation**
+>
+> Pour une grandeur $f$ dépendant d'une variable $x$, la dimension
+> de la dérivée est donnée par :
+> \[
+>   \left[\frac{df}{dx}\right]=\frac{[f]}{[x]}.
+> \]
+
 
 **q1_intro.** **Notions de cours S.I.** 
 %Répondre aux questions de cours relatives à l'homogénéité
@@ -172,6 +274,36 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 >
 >
 >     donc $\mathcal{E}_p = mgz$ est bien homogène a une énergie
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Vérifier des relations physiques simples
+
+> Utiliser l'analyse dimensionnelle pour vérifier les relations
+> classiques de mécanique et d'électricité, par exemple
+> $v=d/t$, $E_c=\frac12mv^2$ ou $P=UI$.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Retrouver une relation par analyse dimensionnelle
+
+> Utiliser l'analyse dimensionnelle pour déterminer la forme possible
+> d'une loi physique à partir des grandeurs dont elle dépend.
+> On pourra notamment introduire l'analyse dimensionnelle de lois
+> faisant intervenir plusieurs paramètres.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Théorème de Vaschy-Buckingham
+
+> Introduire le théorème $\Pi$ de Vaschy-Buckingham et la construction
+> de grandeurs sans dimension. Montrer comment cette méthode permet
+> de réduire le nombre de paramètres indépendants d'un problème physique.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Analyse d'échelles et similitude
+
+> Étendre l'analyse dimensionnelle à l'analyse d'échelles, aux lois
+> d'échelle et aux nombres sans dimension utilisés en physique
+> et en mécanique des fluides, tels que les nombres de Reynolds,
+> de Froude ou de Mach.
 
 
 > [!note] 🔗 Voir aussi

@@ -5,9 +5,11 @@ tags:
   - chap-1-cinematique-du-point-materiel
 ---
 
-[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/index|⬅ Retour]] · <a href="/pdfs/td2_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td2_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/index|⬅ Retour]] · <a href="/pdfs/td2_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td2_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 5. Perle sur une tige tournante *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 40 min · Type : Entraînement / Approfondissement*
 
 Dans un plan horizontal, une tige rectiligne $OA$ tourne autour de $O$ à vitesse angulaire **constante**
 $\omega$ : l'angle $\theta$ entre $Ox$ et la tige vaut $\theta(t)=\omega t$. Une petite perle $M$ coulisse sur la
@@ -16,6 +18,59 @@ tige ; sa position est repérée par $r(t)=OM$. On étudie deux mouvements de la
 
 - **cas A** : la perle est entraînée à vitesse radiale constante $u$ à partir de $O$, soit $r(t)=ut$ ;
 - **cas B** : la perle est **libre** sur une tige lisse : la tige ne peut exercer sur elle qu'une action perpendiculaire à la tige, donc l'accélération n'a **aucune composante radiale**, $a_r=0$. La perle est lâchée à $r(0)=r_0$ avec $\dot r(0)=0$.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi la perle est-elle éjectée ?**
+>
+> *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
+>
+> *Une perle enfilée sur une tige lisse que l'on fait tourner. Aucune force ne pousse la perle le long de la tige, et pourtant elle s'éloigne de plus en plus vite. Dans quelle direction l'accélération pointe-t-elle ? Vers le centre ? Vers l'extérieur ? Autre chose ?*
+>
+> **Idée clé : en polaire, l'accélération a deux composantes qui mélangent $r$ et $\theta$.**
+> $$a_r=\ddot r-r\dot\theta^2,\qquad a_\theta=r\ddot\theta+2\dot r\dot\theta.$$
+> Imposer une condition sur l'une des composantes (par exemple $a_r=0$) fournit une équation différentielle sur $r(t)$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Vitesse et accélération en base polaire**
+>
+> $\vec v=\dot r\,\vec u_r+r\dot\theta\,\vec u_\theta$ et $\vec a=(\ddot r-r\dot\theta^2)\,\vec u_r+(r\ddot\theta+2\dot r\dot\theta)\,\vec u_\theta$.
+>
+> **Fonctions hyperboliques**
+>
+> $\cosh x=\dfrac{\mathrm e^x+\mathrm e^{-x}}2$, $\sinh x=\dfrac{\mathrm e^x-\mathrm e^{-x}}2$, $\cosh^2x-\sinh^2x=1$, $\cosh'=\sinh$, $\sinh'=\cosh$ et $\cosh2x=\cosh^2x+\sinh^2x$. L'équation $\ddot r=\omega^2r$ a pour solutions $\mathrm e^{\pm\omega t}$, donc $\cosh\omega t$ et $\sinh\omega t$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Interpréter chaque terme de l'accélération polaire**
+>
+> Identifier le terme centripète $-r\dot\theta^2$ et le terme $2\dot r\dot\theta$ (accélération de Coriolis), savoir à quelle situation physique conduit une condition portant sur une composante de $\vec a$ ($a_r=0$ ici), et résoudre l'équation différentielle obtenue.
+
+
+> [!note]+ 📖 Point de cours
+> **Accélération en coordonnées polaires**
+>
+> $$a_r=\ddot r-r\dot\theta^2,\qquad a_\theta=r\ddot\theta+2\dot r\dot\theta=\frac1r\frac{\mathrm d}{\mathrm dt}\left(r^2\dot\theta\right).$$
+> Le terme $-r\dot\theta^2$ est l'accélération **centripète** ; le terme $2\dot r\dot\theta$ est l'accélération **de Coriolis** : il apparaît dès que l'on s'éloigne de l'axe en tournant.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Équation $\ddot r=\omega^2r$**
+>
+> Solution générale $r=A\cosh\omega t+B\sinh\omega t$. Avec $r(0)=r_0$ et $\dot r(0)=0$ : $A=r_0$, $B=0$. Attention : c'est $+\omega^2$ (exponentielles réelles), pas $-\omega^2$ (sinusoïdes).
+>
+> **Identités hyperboliques**
+>
+> $\cosh^2x-\sinh^2x=1$ et $\cosh^2x+\sinh^2x=\cosh2x$. Donc $\sinh^2\omega t+\cosh^2\omega t=\cosh2\omega t$. Pour inverser : $\operatorname{arcosh}y=\ln\left(y+\sqrt{y^2-1}\right)$.
+>
+> **Rayon de courbure d'une trajectoire plane**
+>
+> $\rho=\dfrac{\|\vec v\|^3}{\|\vec v\wedge\vec a\|}$ avec, dans le plan, $\|\vec v\wedge\vec a\|=|v_ra_\theta-v_\theta a_r|$.
+>
+> **Angle entre la vitesse et la tige**
+>
+> L'angle $\beta$ entre $\vec v$ et $\vec u_r$ vérifie $\tan\beta=\dfrac{r\dot\theta}{\dot r}$.
+
 
 **q1.** **Cas A : $r(t)=ut$, $\theta(t)=\omega t$.**
 
@@ -115,6 +170,28 @@ tige ; sa position est repérée par $r(t)=OM$. On étudie deux mouvements de la
 > $\omega=2\pi$ rad/s. La perle quitte la tige quand $r_0\cosh\omega t=1{,}00$ m, soit $\cosh\omega t=10$ et $\omega t=\ln(10+\sqrt{99})\approx2{,}99$ rad : $t\approx0{,}48$ s (la tige a tourné de $\approx0{,}48$ tour). On a alors $v_r=r_0\omega\sinh\omega t\approx6{,}25$ m/s et $v_\theta=r_0\omega\cosh\omega t\approx6{,}28$ m/s, soit $\|\vec v\|=r_0\omega\sqrt{2\cdot100-1}\approx8{,}9$ m/s. Ordre de grandeur plausible : la perle, partie quasiment du repos, atteint $9$ m/s en une demi-seconde, car l'éjection est exponentielle.
 
 
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mécanique**
+>
+> Référentiel tournant : forces centrifuge et de Coriolis, bille sur un plateau tournant, essoreuse à salade, régulateur centrifuge.
+>
+> **Météorologie et océanographie**
+>
+> La déviation des masses d'air ou d'eau qui se déplacent à la surface de la Terre est due à la même accélération $2\dot r\dot\theta$ : sens de rotation des cyclones.
+>
+> **Ingénierie**
+>
+> Tri centrifuge (bols vibrants, tambours), turbines et pompes centrifuges : une particule libre sur une pale radiale suit un mouvement en $\cosh\omega t$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : La perle libre : interprétation dynamique
+> Dans le référentiel de la tige, la perle est soumise à la force d'inertie d'entraînement centrifuge $m\omega^2r\,\vec u_r$ : son équation du mouvement radial est $\ddot r=\omega^2r$, exactement celle du cas B. Montrer que la grandeur $\dot r^2-\omega^2r^2$ est conservée (c'est $-\omega^2r_0^2$) et l'interpréter comme conservation de l'énergie dans le référentiel tournant.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Perle avec rappel élastique
+> On attache la perle à $O$ par un ressort (raideur $k$, longueur à vide nulle). L'équation radiale devient $\ddot r=(\omega^2-k/m)\,r$. Discuter les trois régimes selon le signe de $\omega^2-k/m$ ($\cosh$, mouvement uniforme, $\cos$) et la notion de **vitesse critique de rotation**.
+
+
 > [!note] 🔗 Voir aussi
-> [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-3-travail-energie-cinetique-energie-potentielle-energie-mecanique/travail-et-energie/ex5-bille-sur-une-sphere-angle-de-decollage|Exercice 5 — (*) Bille sur une sphère : angle de décollage]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens/composition-du-mouvement-et-changement-de-referentiels/ex3-vitesse-et-acceleration-en-coordonnees-polaires|Exercice 3 — Vitesse et accélération en coordonnées polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]] · [[physique/IPSA/ipsa-mecanique-point/TD/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]]
+> [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-3-travail-energie-cinetique-energie-potentielle-energie-mecanique/travail-et-energie/ex5-bille-sur-une-sphere-angle-de-decollage|Exercice 5 — (*) Bille sur une sphère : angle de décollage]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens/composition-du-mouvement-et-changement-de-referentiels/ex3-vitesse-et-acceleration-en-coordonnees-polaires|Exercice 3 — Vitesse et accélération en coordonnées polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]]
 

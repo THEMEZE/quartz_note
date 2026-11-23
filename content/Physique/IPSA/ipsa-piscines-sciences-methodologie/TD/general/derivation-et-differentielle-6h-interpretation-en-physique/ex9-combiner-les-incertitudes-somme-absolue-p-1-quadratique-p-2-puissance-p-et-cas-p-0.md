@@ -5,9 +5,11 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td2_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/index|⬅ Retour]] · <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 9. Combiner les incertitudes : somme absolue ($p=1$), quadratique ($p=2$), puissance $p$ et cas $p=0$ *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Méthode $\&$ Réflexion*
 
 Pour une grandeur $f(x_1,\dots,x_n)$, la différentielle
 $$\mathrm{d}f = \sum_{i=1}^{n}\frac{\partial f}{\partial x_i}\,\mathrm{d}x_i$$
@@ -23,6 +25,36 @@ $$\boxed{\;\Delta_p f = \left(\sum_{i=1}^{n} c_i^{\,p}\right)^{1/p}\;}\qquad (p>
 
 
 Attention : ce $p$ est l'exposant de la combinaison. Il n'a rien à voir avec les exposants $\alpha,\beta,\gamma$ de la formule $f = x^\alpha y^\beta z^\gamma$.
+
+> [!abstract]+ 📚 Prérequis
+> **Exercices 4, 6 et 8**
+>
+> Différentielle d'une fonction de plusieurs variables (en notation $\mathrm{d}f=\sum a_i\,\mathrm{d}x_i$), incertitude maximale, méthode logarithmique.
+
+
+> [!info]+ 🎯 Objectifs
+> **Comprendre les deux règles usuelles comme deux cas d'une famille**
+>
+> Situer la somme absolue ($p=1$) et la somme quadratique ($p=2$), comprendre pourquoi $\Delta_2\le\Delta_1$, et voir ce qui se passe à $p\to\infty$ et $p\to 0$.
+
+
+> [!note]+ 📖 Point de cours
+> **Familles de combinaisons**
+>
+> $$
+> \begin{array}{lll}
+> p=1 & \Delta_1 f = \sum_i c_i & \text{pire cas (tous les signes défavorables)}\\[1mm]
+> p=2 & \Delta_2 f = \sqrt{\sum_i c_i^2} & \text{contributions indépendantes et aléatoires}\\[1mm]
+> p\to\infty & \Delta_\infty f = \max_i c_i & \text{seule la contribution dominante compte}
+> \end{array}
+> $$
+
+
+> [!tip]- 💡 Coup de pouce
+> **Travailler avec les contributions relatives**
+>
+> Pour $f = k\,x^\alpha y^\beta z^\gamma$, $c_i = f\,r_i$ avec $r_x = |\alpha|\dfrac{\Delta x}{x}$, $r_y = |\beta|\dfrac{\Delta y}{y}$, $r_z = |\gamma|\dfrac{\Delta z}{z}$, donc $\dfrac{\Delta_p f}{f} = \left(\sum r_i^p\right)^{1/p}$.
+
 
 **1.**
 
@@ -209,6 +241,15 @@ Attention : ce $p$ est l'exposant de la combinaison. Il n'a rien à voir avec le
 >
 >
 > Conclusion : « L'incertitude relative sur $f$ vaut $11\ \%$ en incertitude maximale (pire cas) et $6{,}4\ \%$ en combinaison quadratique (incertitudes-types indépendantes) ; les mesures de $y$ et $z$ dominent. » Il faut toujours préciser quelle règle a été utilisée.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Incertitudes corrélées
+> Si les mesures sont corrélées, il faut ajouter des termes croisés $2\,\rho_{ij}\,c_i c_j$ à la somme quadratique.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Normes $\ell^p$
+
+> $\Delta_p f$ est la norme $\ell^p$ du vecteur des contributions. Pour $0<p<1$ ce n'est plus une norme (l'inégalité triangulaire n'est plus vérifiée).
 
 
 > [!note] 🔗 Voir aussi

@@ -5,14 +5,83 @@ tags:
   - chap-2-ondes-acoustiques
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a> · <a href="/pdfs/td2_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a>
 
 ### Exercice 1. Célérité d'une onde acoustique dans un fluide parfait
+
+*⭐ Indispensable · Difficulté ●●●○○ · ⏱ 30 min · Type : Cours actif / Application*
 
 Le fluide considéré est de l'air, modélisé comme un fluide parfait, de
 rapport des capacités calorifiques $\gamma = C_P/C_V = 1.4$. Masse molaire
 $M = 29$ g/mol, température $T = 293$ K, $R = 8.32$ J·mol$^{-1}$·K$^{-1}$.
 On rappelle le coefficient de compressibilité $\chi = -\dfrac{1}{V}\dfrac{\partial V}{\partial P}$.
+
+> [!abstract]+ 📚 Prérequis
+> **Coefficient de compressibilité et équation d'état**
+>
+> Connaître la définition du coefficient de compressibilité isotherme $\chi_T = -\dfrac{1}{V}\left(\dfrac{\partial V}{\partial P}\right)_T$ et de son analogue isentropique $\chi_S = -\dfrac{1}{V}\left(\dfrac{\partial V}{\partial P}\right)_S$, ainsi que l'équation d'état des gaz parfaits $PV=nRT$.
+>
+> Connaître la relation générale établie en cours reliant la célérité d'une onde acoustique à la compressibilité et à la masse volumique du milieu :
+> $$c^2 = \frac{1}{\rho\,\chi}.$$
+>
+> Cette relation est indépendante de l'hypothèse thermodynamique faite sur la transformation ; seule la valeur de $\chi$ (isotherme ou isentropique) change selon le modèle physique retenu pour décrire la propagation.
+
+
+> [!info]+ 🎯 Objectifs
+> **Choisir le bon modèle thermodynamique pour une situation physique**
+>
+> Savoir mobiliser les outils de thermodynamique (équation d'état, capacités calorifiques, lois de Laplace) pour calculer une grandeur de propagation ondulatoire.
+>
+> Savoir confronter un résultat théorique à une valeur expérimentale de référence pour juger de la pertinence d'une hypothèse de modélisation, et savoir en tirer une conclusion physique argumentée plutôt qu'une simple constatation d'écart numérique.
+
+
+> [!note]+ 📖 Point de cours
+> **Proposition de progression**
+>
+> **À introduire**
+>
+>
+>
+> 1. **Les lois de Laplace**
+>
+>     Pour un gaz parfait en transformation adiabatique réversible :
+>     $$PV^\gamma=\mathrm{cste},\qquad TV^{\gamma-1}=\mathrm{cste}.$$
+>
+>     On peut démontrer la première loi à partir du premier principe, en utilisant :
+>     $$dU=nC_V\,dT,\qquad PV=nRT.$$
+>
+>     La deuxième loi se déduit ensuite de l'équation d'état.
+> 2. **Retrouver la célérité du son dans un gaz parfait**
+>
+>     On admet le résultat acoustique :
+>     $$c^2=\left(\frac{\partial P}{\partial\rho}\right)_S.$$
+>
+>     Avec
+>     $$P\rho^{-\gamma}=\mathrm{cste},$$
+>     on obtient :
+>     $$\left(\frac{\partial P}{\partial\rho}\right)_S=\gamma\frac{P}{\rho}.$$
+>
+>     Donc :
+>     $$\boxed{c=\sqrt{\frac{\gamma P}{\rho}}}.$$
+>
+>     Cette application donne un sens physique concret à $\gamma$.
+>
+>
+>
+> **Pour approfondir**
+>
+>
+>
+> 1. \setcounter{enumi}{2}
+> 2. **Le rapport des compressibilités**
+>
+>   On peut introduire l'identité thermodynamique :
+>   $$
+>   \frac{\chi_T}{\chi_S}=\frac{C_p}{C_V}=\gamma.
+>   $$
+>
+>   On la présentera comme une identité thermodynamique complémentaire, avec une démonstration seulement si les relations de Maxwell et les dérivées partielles sont déjà bien maîtrisées.
+
 
 **q1.** On suppose que lors du passage de l'onde acoustique, le fluide subit
 une transformation isotherme. En le modélisant comme un gaz parfait,
@@ -140,6 +209,14 @@ montrer que $c_T = \sqrt{RT/M}$.
 > En partant de $T_0=293~\text{K}$ au niveau de la mer, on obtient $T\approx 235{,}5~\text{K}$ au sommet, soit :
 > $$c_S(\text{sommet}) = \sqrt{\frac{1{,}4\times 8{,}32\times 235{,}5}{0{,}029}} \approx 308~\text{m}\cdot\text{s}^{-1},$$
 > à comparer à $c_S(\text{mer})\approx 343~\text{m}\cdot\text{s}^{-1}$ : soit une baisse d'environ $10\%$, uniquement due à la baisse de température, et non un facteur 3 comme le suggérerait un raisonnement naïf basé sur $\rho$ seul.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Vitesse du son dans un gaz réel
+> Pour un gaz réel décrit par l'équation d'état de van der Waals $\left(P + \dfrac{an^2}{V^2}\right)(V-nb) = nRT$, la compressibilité isentropique diffère de celle du gaz parfait et $c_S$ acquiert une dépendance explicite en pression, en plus de la température. On pourra établir un développement de $c_S$ au premier ordre en pression et discuter du signe de la correction selon les valeurs relatives de $a$ (terme attractif) et $b$ (covolume), ce qui relie la thermodynamique microscopique des gaz réels à une grandeur macroscopique mesurable.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Vitesse du son dans un mélange de gaz
+> Pour un mélange de gaz parfaits (par exemple l'air humide, mélange d'air sec et de vapeur d'eau), on pourra établir l'expression de $c_S$ en fonction des fractions molaires $x_i$, des masses molaires $M_i$ et des $\gamma_i$ de chaque constituant, et discuter pourquoi le son se propage légèrement plus vite dans l'air humide que dans l'air sec à température égale.
 
 
 > [!note] 🔗 Voir aussi

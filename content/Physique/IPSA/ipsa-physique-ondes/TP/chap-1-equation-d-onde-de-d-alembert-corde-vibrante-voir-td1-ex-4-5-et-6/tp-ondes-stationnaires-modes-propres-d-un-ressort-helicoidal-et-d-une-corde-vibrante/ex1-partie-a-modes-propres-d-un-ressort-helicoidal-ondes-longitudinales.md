@@ -11,9 +11,39 @@ tags:
 
 ### Exercice 1. Partie A — Modes propres d'un ressort hélicoïdal (ondes longitudinales) <span style="color:#1565C0">(Part A — Normal modes of a helical spring, longitudinal waves)</span>
 
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 40 min · Type : Manipulation guidée*
+
 Un ressort hélicoïdal est accroché entre une tige support et la tige mobile du vibreur. On cherche ses six premiers modes propres et on teste $f_n=nc/(2L)$. **Question scientifique :** le ressort confirme-t-il le modèle des modes propres ?
 
 <span style="color:#1565C0">A helical spring is hooked between a support rod and the moving rod of the vibrator. We look for its first six normal modes and test $f_n=nc/(2L)$. **Scientific question:** does the spring confirm the normal-mode model?</span>
+
+> [!question]+ 🎣 Accroche
+> **Une onde longitudinale peut-elle être stationnaire ? <span style="color:#1565C0">(Can a longitudinal wave be standing?)</span>**
+>
+> *Durée de l'introduction : 3 min, avant de toucher au matériel*
+>
+> *Dans un ressort, les spires oscillent **dans la direction de propagation**. Peut-on malgré cela voir des nœuds et des ventres ? Pourquoi la fréquence augmente-t-elle quand on passe d'un mode au suivant ?
+>
+> <span style="color:#1565C0">In a spring the coils oscillate **along the direction of propagation**. Can we still see nodes and antinodes? Why does the frequency increase from one mode to the next?</span>*
+>
+> **Idée clé : les conditions aux limites sélectionnent des fréquences.** Avec deux extrémités quasi fixes, $L=n\lambda_n/2$ et $f_n=nc/(2L)$ : la fréquence est **proportionnelle** à $n$, la pente de $f_n=f(n)$ vaut $c/(2L)$.
+>
+> <span style="color:#1565C0">**Key idea: boundary conditions select frequencies.** With two quasi-fixed ends, $L=n\lambda_n/2$ and $f_n=nc/(2L)$: the frequency is **proportional** to $n$, and the slope of $f_n$ versus $n$ is $c/(2L)$.</span>
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Régression linéaire <span style="color:#1565C0">(Linear regression)</span>**
+>
+> Pour $f_n=\alpha n$ avec $\alpha=c/(2L)$ : $c=2L\alpha$. Vérifier que l'ordonnée à l'origine est proche de $0$.
+>
+> <span style="color:#1565C0">For $f_n=\alpha n$ with $\alpha=c/(2L)$: $c=2L\alpha$. Check that the intercept is close to $0$.</span>
+>
+> **Incertitude sur la pente <span style="color:#1565C0">(Uncertainty on the slope)</span>**
+>
+> Excel (DROITEREG) donne l'incertitude-type de la pente ; sinon encadrer par deux droites extrêmes. $\Delta c/c=\Delta L/L+\Delta\alpha/\alpha$.
+>
+> <span style="color:#1565C0">Excel (LINEST) gives the standard error of the slope; otherwise bracket with two extreme lines. $\Delta c/c=\Delta L/L+\Delta\alpha/\alpha$.</span>
+
 
 **q1.** A1 — Mesurer la longueur effective $L$ du ressort entre ses deux points d'attache et estimer l'incertitude.
 

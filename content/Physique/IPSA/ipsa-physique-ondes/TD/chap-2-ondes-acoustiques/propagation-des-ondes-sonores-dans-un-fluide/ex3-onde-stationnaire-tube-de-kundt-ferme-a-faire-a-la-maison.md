@@ -5,12 +5,74 @@ tags:
   - chap-2-ondes-acoustiques
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a> · <a href="/pdfs/td2_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/index|⬅ Retour]] · <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a>
 
 ### Exercice 3. Onde stationnaire, tube de Kundt fermé (à faire à la maison) *(facultatif)*
 
+*Difficulté ●●●○○ · ⏱ 25 min (à la maison) · Type : Application (facultatif)*
+
 Même dispositif que l'exercice 2, mais le tube est ouvert en $x=0$ et
 fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-x))}$.
+
+> [!question]+ 🎣 Accroche
+> **Pourquoi la clarinette sonne-t-elle une octave plus grave ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *À longueur égale, une clarinette sonne environ une octave plus bas qu'une flûte, avec un timbre plus « creux ». Notre conduit auditif, fermé au fond par le tympan, mesure environ $2{,}5$ cm : à quelle fréquence résonne-t-il ? Et pourquoi y a-t-il **moins** de notes possibles quand on ferme un bout du tube ?*
+>
+> **Idée clé : fermer un bout change la condition aux limites, donc les fréquences.** Une paroi rigide impose un nœud de déplacement (ventre de pression) en $x=L$, tandis que l'extrémité ouverte est un nœud de pression en $x=0$. Le déplacement réfléchi change de signe : $\Psi_R=-A_Ie^{i(\omega t-k(2L-x))}$. Il vient $\tilde\theta\propto\cos(k(L-x))$ et la condition $\tilde\theta(0)=0$ donne $\cos(kL)=0$ :
+> $$kL=(2n-1)\frac\pi2,\qquad f_n=(2n-1)\frac c{4L}.$$
+> Le fondamental tient en **un quart de longueur d'onde** ($L=\lambda_1/4$), deux fois plus grave que pour un tube ouvert-ouvert, et **seuls les harmoniques impairs** existent.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Résultats de l'exercice 2 (tube ouvert-ouvert)**
+>
+> Cet exercice réutilise directement la méthode de l'exercice 2 (construction de l'onde stationnaire par superposition, lien entre déplacement et surpression/dilatation via $\chi_S$). Il est vivement conseillé de le traiter après avoir bien assimilé le cas ouvert-ouvert, afin de se concentrer ici sur l'unique différence : la condition à l'extrémité $x=L$, désormais fermée.
+
+
+> [!info]+ 🎯 Objectifs
+> **Transposer une méthode à une nouvelle condition aux limites**
+>
+> Savoir adapter la méthode de résolution développée pour un cas (tube ouvert-ouvert) à un cas voisin (tube ouvert-fermé), en identifiant précisément ce qui change dans les conditions aux limites et ce qui reste inchangé dans la structure de la solution.
+
+
+> [!note]+ 📖 Point de cours
+> **Configuration « quart d'onde » et harmoniques impairs**
+>
+> Dans la configuration ouverte-fermée, la condition en $x=0$ reste un nœud de pression / ventre de déplacement (extrémité ouverte), tandis qu'en $x=L$ on impose désormais un nœud de déplacement / ventre de pression (extrémité fermée). La distance entre un nœud et le ventre adjacent valant $\lambda/4$, le mode fondamental correspond à un quart de longueur d'onde contenu dans le tube : $L = \lambda_1/4$.
+>
+> Cette dissymétrie des conditions aux limites a une conséquence remarquable : seuls les harmoniques **impairs** du mode fondamental sont des solutions du problème (contrairement au cas ouvert-ouvert où tous les harmoniques sont permis), d'où l'expression $f_n=(2n-1)c/(4L)$.
+>
+> **Remarque méthodologique** (comme dans l'exercice 2) : l'expression de $\Psi_R$ encode déjà, par construction, le nœud de déplacement en $x=L$. La quantification des fréquences provient donc, ici encore, de l'imposition de la condition à l'*autre* extrémité $x=0$ — mais cette condition porte cette fois sur la **dilatation** (nœud en $x=0$, car cette extrémité est ouverte), et non sur le déplacement.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Signe moins à la réflexion : $e^{i\pi}=-1$**
+>
+> Une réflexion sur paroi rigide inverse le déplacement, donc multiplie l'amplitude par $-1=e^{i\pi}$ (déphasage de $\pi$). Vérification : $\Psi_I(L)+\Psi_R(L)=A_Ie^{i(\omega t-kL)}-A_Ie^{i(\omega t-kL)}=0$.
+>
+> **Formule d'Euler : $e^{iu}-e^{-iu}=2i\sin u$**
+>
+> Avec $u=k(L-x)$ : $\Psi=2iA_I\sin(k(L-x))e^{i(\omega t-kL)}$. Contrairement au cas ouvert-ouvert (somme, $\cos$), on trouve ici une différence ($\sin$).
+>
+> **Dérivée de $\sin(k(L-x))$**
+>
+> $\dfrac{\partial}{\partial x}\sin\big(k(L-x)\big)=-k\cos\big(k(L-x)\big)$ : la dilatation $\tilde\theta=\partial_x\Psi$ varie en $\cos$, en quadrature avec le déplacement.
+>
+> **Zéros du cosinus : $\cos u=0\iff u=\dfrac{(2n-1)\pi}2$**
+>
+> $\cos(kL)=0$ impose $kL=\dfrac\pi2,\dfrac{3\pi}2,\dfrac{5\pi}2,\dots$ (multiples **impairs** de $\pi/2$) ; on renumérote $n=m+1$ pour que $n$ commence à $1$. À comparer avec $\sin(kL)=0$ du cas ouvert-ouvert, qui autorise tous les entiers.
+>
+> **Décalage de phase : $\sin\!\left(\dfrac\pi2-u\right)=\cos u$**
+>
+> Pour changer de repère (d'une extrémité à l'autre), un sinus devient un cosinus par décalage de $\pi/2$ : ce qui est nœud pour l'un est ventre pour l'autre.
+>
+> **Dénombrement**
+>
+> Le mode $n$ a exactement $n$ nœuds et $n$ ventres de dilatation, avec un nœud en $x=0$ et un ventre en $x=L$ ; les positions sont $x=L-(2m-1)\lambda_n/4$.
+
 
 **q1.** Justifier ce signe moins par un schéma.
 
@@ -113,6 +175,36 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 >
 >
 > On retrouve la dissymétrie caractéristique de la configuration quart d'onde : chaque mode $n$ possède exactement $n$ nœuds et $n$ ventres (au lieu de $n$ ventres et $n+1$ nœuds dans le cas ouvert-ouvert), avec systématiquement un nœud en $x=0$ et un ventre en $x=L$.
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Musique**
+>
+> Clarinette, tuyau d'orgue bouché (bourdon), flûte de Pan : tubes fermés à un bout. Sans harmoniques pairs, le timbre est plus « creux » (ou « rond »), et la note est une octave plus grave qu'un tube ouvert de même longueur.
+>
+> **Physiologie de l'audition**
+>
+> Le conduit auditif ($L\approx2{,}5$ cm, fermé par le tympan) résonne à $f_1=c/(4L)\approx3{,}4$ kHz : c'est la zone où l'oreille est la plus sensible.
+>
+> **Cordes vibrantes (chapitre 1)**
+>
+> Une corde fixe-libre a les mêmes fréquences $f_N=(2N-1)c/(4L)$ : le tube fermé à un bout est l'analogue exact (exercice 6 du chapitre 1).
+>
+> **Électricité et antennes**
+>
+> L'antenne monopole quart d'onde sur plan de masse est un résonateur fermé à un bout : $L=\lambda/4$ et seulement les multiples impairs.
+>
+> **Mathématiques**
+>
+> Conditions aux limites de Dirichlet (la fonction s'annule) et de Neumann (la dérivée s'annule) : le mélange des deux (Dirichlet-Neumann) donne les valeurs propres $(2n-1)\pi/(2L)$.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Timbre des instruments à vent : clarinette contre flûte
+> La clarinette (anche fermant quasiment le tube côté bouche) se comporte acoustiquement comme un tube fermé-ouvert, tandis que la flûte traversière se comporte comme un tube ouvert-ouvert. On pourra expliquer pourquoi, à longueur de tube comparable, la clarinette sonne environ une octave plus grave que la flûte, et pourquoi son timbre est perçu comme plus « creux » (absence des harmoniques pairs dans le spectre théorique du tube fermé).
+
+
+> [!question]- 🔭 Aller plus loin — Master : Facteur de qualité et pertes aux parois
+> En réalité, les couches limites visqueuse et thermique au voisinage des parois du tube dissipent de l'énergie acoustique, ce qui élargit chaque résonance autour de $f_n$ (facteur de qualité $Q_n$ fini) au lieu d'un pic infiniment fin prédit par le modèle sans pertes. On pourra établir, à partir d'un modèle d'oscillateur amorti équivalent, comment $Q_n$ dépend de la fréquence, du rayon du tube et des propriétés de transport du fluide (viscosité, diffusivité thermique).
 
 
 > [!note] 🔗 Voir aussi

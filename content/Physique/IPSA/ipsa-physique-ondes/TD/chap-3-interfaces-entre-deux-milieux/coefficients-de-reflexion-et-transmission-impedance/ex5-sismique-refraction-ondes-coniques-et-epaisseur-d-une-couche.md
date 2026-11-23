@@ -5,9 +5,11 @@ tags:
   - chap-3-interfaces-entre-deux-milieux
 ---
 
-[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a> · <a href="/pdfs/td3_PhV212_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/index|⬅ Retour]] · <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a>
 
 ### Exercice 5. Sismique réfraction : ondes coniques et épaisseur d'une couche *(facultatif)*
+
+*Difficulté ●●●●○ · ⏱ 50 min · Type : Application / Problème d'ingénieur*
 
 Pour déterminer l'épaisseur $h$ d'une couche de sol meuble reposant sur un substratum rocheux, on frappe le sol en
 une source $S$ (masse tombante) et on enregistre les temps d'arrivée de l'onde de compression en des capteurs
@@ -24,6 +26,70 @@ $$\begin{array}{c|cccccccccc}
   \hline
   t\ (\text{ms}) & 10{,}0 & 20{,}0 & 30{,}0 & 40{,}0 & 50{,}0 & 57{,}7 & 61{,}0 & 64{,}4 & 71{,}0 & 77{,}7
 \end{array}$$
+
+> [!question]+ 🎣 Accroche
+> **Comment mesurer une couche enfouie sans creuser ?**
+>
+> *Durée de l'introduction : 5 min, avant de lire l'énoncé*
+>
+> *On frappe le sol avec une masse et on enregistre les temps d'arrivée aux capteurs. Les ondes qui vont tout droit à la surface sont-elles toujours les premières ? Peut-on imaginer un trajet plus rapide qui descend dans le sol, parcourt un bout de chemin à grande vitesse et remonte ? **Quel lien avec l'angle critique et la réflexion totale ?***
+>
+> **Idée clé : au-delà de la distance de croisement, l'onde la plus rapide est celle qui plonge à l'angle critique, glisse le long du substratum rapide ($c_2$) et remonte.** Son temps d'arrivée est une droite de pente $1/c_2$ :
+> $$t_h=\frac x{c_2}+\frac{2h\cos\theta_c}{c_1},\qquad x_c=2h\sqrt{\frac{c_2+c_1}{c_2-c_1}}.$$
+> La cassure de pente du graphe $t(x)$ donne la profondeur $h$.
+
+
+> [!abstract]+ 📚 Prérequis
+> **Lois de Snell-Descartes et angle critique (exercice 4)**
+>
+> Savoir que $\sin\theta_1/c_1=\sin\theta_2/c_2$, qu'il existe un angle critique $\theta_c=\arcsin(c_1/c_2)$ quand $c_2>c_1$, et qu'au-delà de $\theta_c$ la réflexion est totale ($|R|=1$) avec une onde évanescente le long de l'interface.
+>
+> **Coefficient de réflexion en incidence normale**
+>
+> $R=\dfrac{Z_2-Z_1}{Z_1+Z_2}$ pour la pression, avec $Z=\rho c$.
+>
+> **Géométrie élémentaire**
+>
+> Trigonométrie du triangle rectangle, longueur d'un trajet oblique de $h$ de hauteur à l'angle $\theta$ : $h/\cos\theta$, projection horizontale $h\tan\theta$.
+
+
+> [!info]+ 🎯 Objectifs
+> **Utiliser Snell-Descartes pour résoudre un problème d'ingénieur**
+>
+> Savoir identifier les trois types de trajets (direct, réfléchi, conique), calculer leurs temps de parcours, établir le temps d'arrivée de l'onde conique par construction géométrique, interpréter un graphe de temps d'arrivée (« dromochronique ») pour en déduire $c_1$, $c_2$ et $h$, et discuter les hypothèses (couche plus lente que le substratum, longueurs d'onde, ondes S ignorées).
+
+
+> [!note]+ 📖 Point de cours
+> **Onde conique (head wave) et principe de Fermat**
+>
+> Quand $\theta_1=\theta_c$, le rayon transmis rase l'interface ($\theta_2=90^\circ$). Il existe alors un trajet particulier où l'énergie se propage le long de l'interface à la vitesse $c_2$ du milieu rapide, en rayonnant continuellement vers le milieu (1) sous le même angle critique (principe de Huygens). Le temps total de ce trajet est inférieur à celui de l'onde directe à grande distance si $c_2>c_1$, ce qui en fait la première arrivée au-delà d'une distance de croisement $x_c$. L'onde conique est la manifestation macroscopique de l'onde évanescente de l'exercice 4 (question 5) : elle est de faible amplitude, mais elle est première.
+
+
+> [!note]- 🧮 Outils mathématiques
+> **Construction géométrique d'un trajet brisé**
+>
+> Pour un trajet qui descend de $h$ à l'angle $\theta$, la longueur est $h/\cos\theta$ et la projection horizontale $h\tan\theta$ : deux descentes/remontées couvrent $2h\tan\theta$ horizontalement et $2h/\cos\theta$ de trajet.
+>
+> **Simplification trigonométrique avec $\sin\theta_c=c_1/c_2$**
+>
+> $\dfrac1{c_1}-\dfrac{c_1}{c_2^2}=\dfrac1{c_1}\left(1-\sin^2\theta_c\right)=\dfrac{\cos^2\theta_c}{c_1}$ : cette identité fait disparaître $\tan\theta_c$ et donne la forme simple de $t_h$.
+>
+> **Résolution d'équation du premier degré (distance de croisement)**
+>
+> $x\left(\dfrac1{c_1}-\dfrac1{c_2}\right)=\dfrac{2h\cos\theta_c}{c_1}$ avec $\cos\theta_c=\sqrt{c_2^2-c_1^2}/c_2$ : $x_c=2h\sqrt{\dfrac{c_2+c_1}{c_2-c_1}}$.
+>
+> **Régression linéaire à la main**
+>
+> Pente $=\Delta t/\Delta x$ entre deux points éloignés ; ordonnée à l'origine en prolongeant la droite jusqu'à $x=0$. Précision à estimer : un écart de $0{,}1$ ms sur $\Delta t\sim20$ ms donne $0{,}5\ \%$ sur $c_2$.
+>
+> **Hyperbole de réflexion**
+>
+> $t_r^2=\dfrac{x^2}{c_1^2}+t_0^2$ avec $t_0=\dfrac{2h}{c_1}$ : en traçant $t^2$ en fonction de $x^2$, on obtient une droite de pente $1/c_1^2$ et d'ordonnée $t_0^2$.
+>
+> **Arcsin et angles remarquables**
+>
+> $\sin\theta_c=1/3$ donne $\theta_c=19{,}5^\circ$, $\cos\theta_c=2\sqrt2/3=0{,}943$, $\tan\theta_c=1/(2\sqrt2)=0{,}354$.
+
 
 **q1.** Donner les temps de parcours de l'onde directe $t_d(x)$ et de l'onde réfléchie sur le toit du substratum $t_r(x)$
 (réflexion spéculaire). Quel est le temps de réflexion minimal $t_r(0)$ ?
@@ -149,6 +215,40 @@ $\lambda<h/3$. (c) Que change une interface inclinée ?
 > (b) Le raisonnement en rayons suppose $\lambda\ll h$. Avec $\lambda<h/3\approx6{,}7$ m dans la couche (1), $f=c_1/\lambda>1000/6{,}7\approx150$ Hz : les sources de sismique réfraction proche surface utilisent des fréquences de quelques dizaines à quelques centaines de Hz. En dessous, l'onde ne ``voit'' plus la couche comme une interface nette.
 >
 > (c) Si l'interface est inclinée d'un angle $\beta$, les vitesses apparentes de l'onde conique diffèrent selon le sens du tir ($c_2/\sin(\theta_c\pm\beta)$) : un tir direct et un tir inverse sont nécessaires pour séparer pente et vitesse (cf. aller plus loin).
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Géophysique appliquée**
+>
+> La sismique réfraction est utilisée en génie civil (profondeur du toit du rocher avant une fondation), en hydrogéologie (niveau de la nappe), en prospection pétrolière (au tout début de l'exploration). Elle est complétée par la sismique réflexion.
+>
+> **Sismologie et structure de la Terre**
+>
+> Mohorovičić a découvert en 1909 la discontinuité entre la croûte et le manteau par l'observation d'une onde conique ($P_n$) qui devance l'onde directe au-delà d'une distance de croisement de l'ordre de $100$ à $200$ km : exactement le phénomène de cet exercice avec $c_2\approx8$ km/s sous une croûte à $c_1\approx6$ km/s.
+>
+> **Optique**
+>
+> Les ondes coniques ont un équivalent optique : l'onde de tunnel frustrée, et, pour les ondes radio, les ondes de surface le long du sol. Le principe de Fermat (minimisation du temps de trajet) explique le trajet.
+>
+> **Contrôle non destructif**
+>
+> Les ondes ``longitudinales rasantes'' (Lcr) utilisées pour mesurer les contraintes dans les pièces métalliques sont des ondes coniques : le capteur est incliné à l'angle critique de l'interface résine-acier pour générer un rayon rasant.
+>
+> **Mathématiques : problèmes de minimisation**
+>
+> Le trajet de l'onde conique est celui qui minimise le temps parmi tous les trajets de la source à la surface passant par l'interface : c'est un problème de calcul variationnel (principe de Fermat) qui conduit à Snell-Descartes.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Interface inclinée et tir inversé
+> Si l'interface est inclinée de l'angle $\beta$, les vitesses apparentes obtenues en tirant dans les deux sens sont $c_2/\sin(\theta_c\pm\beta)$ : on retrouve $\beta$ et $c_2$ par un tir direct et un tir inverse. On pourra établir ce résultat par la méthode de l'exercice (construction géométrique) et en déduire les épaisseurs aux deux extrémités.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Plusieurs couches et gradient de vitesse
+> Pour $N$ couches de vitesses croissantes, la dromochronique est une succession de segments de pentes $1/c_i$ et d'ordonnées à l'origine qui se calculent de proche en proche. Quand la vitesse croît continûment avec la profondeur (cas de la croûte terrestre), les rayons sont courbes (ondes plongeantes) ; c'est l'origine des zones d'ombre et de la détection du noyau.
+
+
+> [!question]- 🔭 Aller plus loin — Doctorat : Amplitude de l'onde conique
+> L'onde conique décroît en $x^{-2}$ (plus vite que l'onde directe en $x^{-1}$ en 2D) et sa forme est la dérivée de la source : on pourra l'établir par la théorie de Cagniard-de Hoop. En pratique, les capteurs doivent détecter un signal très faible après l'arrivée de l'onde directe.
 
 
 > [!note] 🔗 Voir aussi

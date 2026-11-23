@@ -5,11 +5,62 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 10. (*) Théorème $\Pi$ et similitude : dimensionner une maquette *(facultatif)*
 
+*Difficulté ●●●●○ · ⏱ 90 min · Type : Approfondissement*
+
 Comment prévoir la force qui s'exerce sur une voiture ou un navire avant de le construire ? On teste une **maquette** à échelle réduite, mais il faut choisir les conditions d'essai pour que les résultats soient transposables au **prototype** réel. Le théorème $\Pi$ (Vaschy-Buckingham) fournit les groupes adimensionnels qui doivent rester identiques entre la maquette et le prototype. Les questions $1$ à $4$ posent la méthode (pendule, voiture, navire) ; les questions $5$ à $10$ l'appliquent à l'aéronautique : **avion**, **drone**, **fusée**, **montgolfière**, **parachute** et comparaison des régimes de vol.
+
+> [!abstract]+ 📚 Prérequis
+> **Analyse dimensionnelle**
+>
+> Connaître 
+>
+>
+> - les dimensions fondamentales $M$, $L$, $T$ et l'équation aux dimensions d'une grandeur dérivée,
+> - la résolution d'un petit système linéaire,
+> - les unités de la force, de la masse volumique et de la viscosité.
+
+
+> [!info]+ 🎯 Objectifs
+> **Utiliser le théorème $\Pi$ comme outil de conception**
+>
+> - Déterminer le nombre de groupes adimensionnels indépendants.
+> - Construire ces groupes à partir des équations aux dimensions.
+> - Imposer l'égalité des groupes entre maquette et prototype pour fixer la vitesse d'essai.
+> - En déduire la force sur le prototype à partir de la mesure sur la maquette.
+
+
+> [!note]+ 📖 Point de cours
+> **Théorème $\Pi$ de Vaschy-Buckingham**
+>
+> Si un phénomène physique fait intervenir $n$ grandeurs $x_1, \dots, x_n$ dont les dimensions s'expriment à l'aide de $k$ dimensions fondamentales indépendantes, alors la relation $f(x_1, \dots, x_n) = 0$ peut se réécrire comme une relation entre seulement $n-k$ groupes adimensionnels :
+> $$
+> F(\Pi_1, \dots, \Pi_{n-k}) = 0 \quad \text{ou} \quad \Pi_1 = \varphi(\Pi_2, \dots, \Pi_{n-k}).
+> $$
+>
+> **Similitude maquette / prototype**
+>
+> Notons $E_p$ la valeur d'une grandeur sur le **prototype** et $E_m$ sur la **maquette**. Si tous les groupes $\Pi$ d'entrée sont égaux, alors le groupe $\Pi$ de sortie est aussi égal :
+> $$
+> \Pi_{i,m} = \Pi_{i,p} \quad \Longrightarrow \quad \text{les résultats de la maquette sont transposables.}
+> $$
+> Le facteur d'échelle géométrique est $\lambda = \dfrac{L_p}{L_m}$.
+
+
+> [!tip]- 💡 Coup de pouce
+> **Méthode du théorème $\Pi$
+> **
+>
+> \begin{itemize}[label=$\star$]
+> \item {\bf Étape 1} : lister les $n$ variables physiques du problème.
+> \item {\bf Étape 2} : écrire l'équation aux dimensions de chacune et compter le nombre $k$ de dimensions fondamentales indépendantes.
+> \item {\bf Étape 3} : choisir $k$ variables « de base » dont les dimensions sont indépendantes.
+> \item {\bf Étape 4} : former $n-k$ groupes $\Pi_i = (\text{variable restante}) \times (\text{variables de base})^{\text{puissances}}$ sans dimension.
+> \end{itemize}
+
 
 **q1.** **Échauffement : le pendule simple**\\
 
@@ -371,6 +422,21 @@ On calcule le nombre de Reynolds $\mathrm{Re} = \dfrac{v L}{\nu}$ avec $\nu_{air
 > (a) Moustique : $\mathrm{Re} = \dfrac{0,30 \times 3,0 \times 10^{-3}}{1,5 \times 10^{-5}} = 60$. Drone : $\mathrm{Re} = \dfrac{10 \times 0,30}{1,5 \times 10^{-5}} = 2,0 \times 10^{5}$. Avion : $\mathrm{Re} = \dfrac{70 \times 4,0}{1,5 \times 10^{-5}} \approx 1,9 \times 10^{7}$. Le moustique vole dans un régime où la viscosité domine ($\mathrm{Re} \ll 10^3$) ; le drone et l'avion sont dans un régime d'inertie, l'avion avec un écoulement fortement turbulent.
 >
 > (b) $v_m = v_p \dfrac{L_p}{L_m} = 70 \times 50 = 3\,500 ~\text{m.s}^{-1}$ soit $\mathrm{Ma} = \dfrac{3\,500}{340} \approx 10$ : vitesse hypersonique, physiquement absurde pour un essai. On ne peut pas respecter $\mathrm{Re}$ dans l'air ambiant avec une petite maquette : on augmente la masse volumique (soufflerie pressurisée) ou on refroidit le gaz (soufflerie cryogénique), comme à la question 5.
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Nombres adimensionnels usuels
+
+> Rechercher la signification physique des nombres de Reynolds, de Froude et de Mach.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Similitude partielle
+
+> Étudier pourquoi les bassins des carènes respectent Froude alors que les souffleries respectent Reynolds, et comment on corrige les effets d'échelle.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Preuve du théorème $\Pi$
+
+> Démontrer le théorème en utilisant le rang de la matrice des exposants dimensionnels.
 
 
 > [!note] 🔗 Voir aussi

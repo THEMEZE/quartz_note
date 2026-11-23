@@ -5,13 +5,65 @@ tags:
   - ondes-mecaniques-sonores-electromagnetiques-et-lumineuses
 ---
 
-[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]] · <a href="/pdfs/TP_IPSA_Generale_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/index|⬅ Retour]]
 
 ### Exercice 1. Ondes sur un ressort long (Slinky) filmées au ralenti : impulsions, réflexions et modes propres
+
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 2 h · Type : TP expérimental visuel (vidéo au ralenti)*
 
 Un ressort long et mou (Slinky en métal ou en plastique) tendu sur le sol ou sur une longue table est un excellent « milieu de propagation à taille humaine » : les impulsions se déplacent à quelques mètres par seconde, on les voit avec l'œil nu et on peut les mesurer avec la vidéo au ralenti d'un smartphone (240 images par seconde).
 
 On y retrouve, à l'échelle visible, les résultats du TD1 : célérité, réflexion sur une extrémité fixe ou libre, ondes stationnaires et fréquences propres. Le résultat le plus surprenant est que la célérité est **proportionnelle à la longueur tendue**, contrairement à une corde ordinaire.
+
+> [!abstract]+ 📚 Prérequis
+> **Notions**
+>
+> TD1 exercices 0 à 6 : ondes progressives, $c=\sqrt{F/\mu}$, conditions aux limites fixe et libre, modes propres.
+
+
+> [!info]+ 🎯 Objectifs
+> **Voir les résultats du cours**
+>
+> Mesurer une célérité à partir d'une vidéo, voir l'inversion de signe à une extrémité fixe, retrouver expérimentalement les fréquences propres de la corde fixée-fixée et fixée-libre.
+
+
+> [!note]+ 🧰 Matériel
+> Ressort long (Slinky métallique ou plastique), longueur au repos $\approx7\ \text{cm}$ pour $\approx60$ spires
+>
+> Sol lisse (carrelage, parquet) ou grande table, mètre ruban ($5$ m), craie ou ruban adhésif pour marquer le sol tous les $50\ \text{cm}$
+>
+> Smartphone en mode ralenti ($240$ images par seconde), trépied ou support
+>
+> Ficelle fine ($\approx20\ \text{cm}$) pour créer une extrémité libre, cordon ou aimant pour fixer l'autre bout
+>
+> Application de métronome ou générateur de sons (fréquences de $0{,}2$ à $2\ \text{Hz}$)
+>
+> Balance de cuisine ($\pm1\ \text{g}$) et poids marqués (facultatif, pour la mesure de $K$)
+
+
+> [!danger] 🦺 Sécurité
+> **Ressort**
+>
+> Ne jamais lâcher brusquement un ressort étiré (il peut se coincer et se détendre violemment). Toujours étirer et relâcher lentement, ne pas dépasser $4$ à $5$ fois la longueur au repos pour un ressort métallique.
+
+
+> [!note]+ 🔬 Manipulation
+> **1. Impulsion transversale**
+>
+> Deux opérateurs tendent le ressort à la longueur $L=4{,}0\ \text{m}$, posé sur le sol. L'un des opérateurs donne un coup de poignet transversal rapide, qui crée une bosse se propageant vers l'autre bout. Filmer au ralenti depuis le dessus, avec les repères tous les $50\ \text{cm}$. Relever, image par image, l'instant où la bosse passe devant chaque repère.
+>
+> **2. Célérité en fonction de la longueur**
+>
+> Refaire pour $L=2{,}0\ ;\ 3{,}0\ ;\ 4{,}0\ \text{m}$. Pour chaque longueur, mesurer $c$. Attention : garder la même méthode d'étirement (mesurer la longueur avec le ruban).
+>
+> **3. Réflexions**
+>
+> Filmer une impulsion réfléchie sur une extrémité tenue fixe (fixée à un pied de table), puis sur une extrémité libre (attachée à la ficelle, elle-même tenue lâchement). Comparer le signe de l'impulsion réfléchie.
+>
+> **4. Ondes stationnaires**
+>
+> Extrémités fixes, $L=4{,}0\ \text{m}$. Un opérateur excite l'extrémité de façon périodique avec le métronome (période de $2{,}1$ s environ, puis $1{,}05$ s, puis $0{,}70$ s). Chercher les fréquences pour lesquelles l'amplitude est maximale et compter les nœuds. Refaire avec une extrémité libre.
+
 
 **q1.** Traiter la mesure de $c$ pour $L=4{,}0\ \text{m}$ : en supposant que la mesure de la durée est faite à $\pm3$ images près et celle de la distance à $\pm5\ \text{cm}$, calculer $c$ et son incertitude relative. Combien de temps faudrait-il pour détecter un écart de $2\ \%$ entre deux mesures ?
 
@@ -91,6 +143,20 @@ On y retrouve, à l'échelle visible, les résultats du TD1 : célérité, réfl
 > $F=KL=0{,}18\times4{,}0=0{,}72\ \text{N}$ ; $\mu=\dfrac{M}{L}=0{,}05\ \text{kg/m}$ ; $Z=\sqrt{0{,}72\times0{,}05}=0{,}19\ \text{kg/s}$ (et $c=\sqrt{F/\mu}=3{,}8\ \text{m/s}$, cohérent). $\omega=2\pi\times0{,}475=2{,}99\ \text{rad/s}$.
 > $\langle\mathcal{P}\rangle=\tfrac{1}{2}\times0{,}19\times2{,}99^2\times0{,}1^2=8{,}5\times10^{-3}\ \text{W}$.
 > Une très petite puissance suffit à entretenir l'onde ; c'est pourquoi les pertes (frottements) sont visibles : une onde stationnaire s'atténue en quelques secondes si on arrête d'exciter.
+
+
+> [!note]- ✈️ Lien avec l'aviation
+> **Essais de vibration au sol et flottement**
+>
+> Avant le premier vol d'un avion, on réalise un essai de vibration au sol (GVT) : des excitateurs font vibrer la structure et on cherche les fréquences propres. Ce sont exactement les fréquences de la question 4 pour l'aile. Le flottement (flutter) survient lorsque l'excitation aérodynamique se couple à un de ces modes propres.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Dispersion d'un ressort
+> Le ressort est un milieu discret : pour de courtes longueurs d'onde (de l'ordre de quelques spires), la vitesse de phase diminue (voir TD1 exercice 9, chaîne de masses). Les impulsions très brèves s'étalent en se propageant.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Onde non linéaire
+> Pour de grandes amplitudes, la tension varie pendant la propagation et la vitesse dépend de l'amplitude : l'impulsion se déforme (raidissement).
 
 
 > [!note] 🔗 Voir aussi

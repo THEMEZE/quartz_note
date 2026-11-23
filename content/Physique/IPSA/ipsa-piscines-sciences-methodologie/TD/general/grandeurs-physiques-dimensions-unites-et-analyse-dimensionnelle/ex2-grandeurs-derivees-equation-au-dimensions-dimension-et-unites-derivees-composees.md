@@ -5,9 +5,142 @@ tags:
   - general
 ---
 
-[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td1_PhV110_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
+[[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/index|⬅ Retour]] · <a href="/pdfs/td1_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
 ### Exercice 2. Grandeurs Dérivées : Équation au dimensions , dimension et unités dérivées (composées)
+
+*⭐ Indispensable · Difficulté ●●○○○ · ⏱ 25 min · Type : Révision*
+
+> [!abstract]+ 📚 Prérequis
+> - **Grandeurs fondamentales du S.I.**
+>
+>
+> - Connaître les principales grandeurs fondamentales du Système international : longueur, masse, temps et quantité de matière, ainsi que leurs unités respectives : mètre (m), kilogramme (kg), seconde (s) et mole (mol).).
+> - **Relations entre grandeurs physiques**
+>
+>
+> - Savoir utiliser une relation simple entre grandeurs physiques, notamment une relation de définition comme $v=\frac{\mathrm{d}x}{\mathrm{d}t}$,
+> $\rho=\frac{m}{V}$ ou $F=ma$.
+> - **Puissances de dix et préfixes**
+>
+>
+> - Maîtriser les puissances de dix et les principaux préfixes du S.I. (kilo, centi, milli, micro...) afin de pouvoir effectuer des conversions
+> d'unités.
+> - **Conversions d'unités**
+>
+>
+> - Savoir convertir une grandeur d'une unité à une autre et comprendre qu'une conversion de surface ou de volume doit également tenir compte de la puissance associée à l'unité.
+
+
+> [!info]+ 🎯 Objectifs
+> - **Identifier une grandeur dérivée**
+>
+>
+> - Reconnaître qu'une grandeur dérivée est définie à partir d'une ou plusieurs grandeurs fondamentales et identifier quelques exemples usuels : vitesse, accélération, surface, volume, masse volumique, force, énergie et pression.
+> - **Établir une équation aux dimensions**
+>
+>
+> - Savoir déterminer la dimension d'une grandeur physique à partir de sa relation de définition en utilisant les dimensions des grandeurs fondamentales..
+> - **Retrouver une dimension à partir d'une unité**
+>
+>
+> - Savoir analyser une unité S.I. composée pour retrouver la grandeur physique correspondante et son équation aux dimensions.
+> - **Relier dimension et unité**
+>
+>
+> - Comprendre la correspondance entre les dimensions fondamentales et les unités S.I. et savoir passer de l'une à l'autre.
+> - **Effectuer des conversions**
+>
+>
+> - Savoir convertir correctement des unités de longueur, de surface, de volume et de vitesse, notamment entre $\mathrm{km/h}$ et $\mathrm{m/s}$.
+
+
+> [!note]+ 📖 Point de cours
+> - **Grandeurs fondamentales et grandeurs dérivées**
+>
+>
+> - Les grandeurs fondamentales du S.I. sont indépendantes les unes des autres. Les grandeurs dérivées sont définies à partir de ces grandeurs fondamentales par des relations mathématiques.
+>
+>       Exemples :
+>       $[v]=\mathsf{L}\mathsf{T}^{-1}$,
+>       $[S]=\mathsf{L}^2$,
+>       $[V]=\mathsf{L}^3$,
+>       $[\rho]=\mathsf{M}\mathsf{L}^{-3}$.
+> - **Équation aux dimensions**
+>
+>
+> - Une grandeur physique $X$ peut s'écrire sous la forme
+>
+>         \[
+>         [X]=\mathsf{L}^a\mathsf{M}^b\mathsf{T}^c
+>         \mathsf{I}^d\mathsf{\Theta}^e\mathsf{N}^f\mathsf{J}^g.
+>         \]
+>
+>         L'équation aux dimensions permet de caractériser la nature
+>         dimensionnelle d'une grandeur indépendamment du système d'unités utilisé.
+> - **Retrouver une dimension à partir d'une relation**
+>
+>
+> - Pour déterminer la dimension d'une grandeur, on part d'une relation
+>         connue puis on remplace chaque grandeur par sa dimension.
+>
+>         Par exemple, avec $v=\frac{\mathrm{d}x}{\mathrm{d}t}$ :
+>
+>         \[
+>         [v]=\frac{[x]}{[t]}
+>         =\frac{\mathsf{L}}{\mathsf{T}}
+>         =\mathsf{L}\mathsf{T}^{-1}.
+>         \]
+> - **Dimension et unité S.I.**
+>
+>
+> - L'unité S.I. permet également de retrouver la dimension correspondante :
+>         $\mathrm{m}\leftrightarrow\mathsf{L}$,
+>         $\mathrm{kg}\leftrightarrow\mathsf{M}$,
+>         $\mathrm{s}\leftrightarrow\mathsf{T}$,
+>         $\mathrm{mol}\leftrightarrow\mathsf{N}$.
+>
+>         Ainsi, $\mathrm{kg}\cdot\mathrm{m}^{-3}$ correspond à
+>         $\mathsf{M}\mathsf{L}^{-3}$.
+> - **Conversions de surfaces et de volumes**
+>
+>
+> - Lorsqu'une unité est élevée au carré ou au cube, le facteur de conversion
+>         doit également être élevé au carré ou au cube.
+>
+>         Par exemple :
+>
+>         \[
+>         1\,\mathrm{cm}^2=(10^{-2}\,\mathrm{m})^2
+>         =10^{-4}\,\mathrm{m}^2
+>         \]
+>
+>         et
+>
+>         \[
+>         1\,\mathrm{cm}^3=(10^{-2}\,\mathrm{m})^3
+>         =10^{-6}\,\mathrm{m}^3.
+>         \]
+> - **Conversion des vitesses**
+>
+>
+> - Lorsqu'une unité est élevée au carré ou au cube, le facteur de conversion
+>         doit également être élevé au carré ou au cube.
+>
+>         Par exemple :
+>
+>         \[
+>         1\,\mathrm{cm}^2=(10^{-2}\,\mathrm{m})^2
+>         =10^{-4}\,\mathrm{m}^2
+>         \]
+>
+>         et
+>
+>         \[
+>         1\,\mathrm{cm}^3=(10^{-2}\,\mathrm{m})^3
+>         =10^{-6}\,\mathrm{m}^3.
+>         \]
+
 
 **q1_intro.** **Notions de cours S.I.**\\
 
@@ -148,6 +281,10 @@ Trouver l’équation aux dimensions d’une grandeur peut se faire simplement e
     $$
     }
 
+> [!note]+ 📖 Point de cours
+> L'unité S.I. traduit directement la dimension : m donne L, kg donne M, s donne T, mol donne N.
+
+
 > [!example]- 📝 Solution détaillée
 > {
 > %\fontsize{20pt}{10pt}\selectfont
@@ -216,6 +353,10 @@ Convertir les grandeurs suivantes dans l'unité demandée : (a) $8*10^{-6} ~ m^2
   
 
 }
+
+> [!note]+ 📖 Point de cours
+> Pour élever une conversion au carré ou au cube, la puissance de 10 associée au préfixe est également élevée à cette puissance : $(10^{-3} ~ m)^3 = 10^{-9} ~ m^3$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Exemple, pour convertir : $3\,\mathrm{cm}^2$ en  $m^2$  sachant que $1\,\mathrm{cm}=10^{-2}\,\mathrm{m}$ :
@@ -300,6 +441,34 @@ Convertir les grandeurs suivantes dans l'unité demandée : (a) $8*10^{-6} ~ m^2
 > \begin{center}
 > **Table 4 :** Savoir retrouver rapidement la dimension d’une grandeur connaissant son unité !!
 > \end{center}
+
+
+> [!question]- 🔭 Aller plus loin — Lycée : Vérifier la cohérence d'une formule
+
+> Utiliser les dimensions pour vérifier qu'une relation physique est
+> homogène. Par exemple, comparer les dimensions des deux membres d'une
+> équation avant de rechercher une valeur numérique.
+
+
+> [!question]- 🔭 Aller plus loin — CPGE : Analyse dimensionnelle
+
+> Utiliser l'analyse dimensionnelle pour retrouver la forme possible
+> d'une relation physique à partir des grandeurs pertinentes et de leurs
+> dimensions.
+
+
+> [!question]- 🔭 Aller plus loin — Licence : Système international et unités dérivées
+
+> Étudier plus systématiquement les sept grandeurs fondamentales du S.I.
+> et les unités dérivées associées. Relier les dimensions des grandeurs
+> mécaniques aux unités telles que le newton, le joule, le watt et le pascal.
+
+
+> [!question]- 🔭 Aller plus loin — Master : Analyse dimensionnelle et lois d'échelle
+
+> Étendre l'analyse dimensionnelle aux lois d'échelle et à la recherche
+> de nombres sans dimension. Cette approche permet notamment de comparer
+> différents régimes physiques et de construire des modèles réduits.
 
 
 > [!note] 🔗 Voir aussi
