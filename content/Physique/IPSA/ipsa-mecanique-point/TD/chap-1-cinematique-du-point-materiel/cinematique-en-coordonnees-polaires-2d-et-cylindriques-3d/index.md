@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-mecanique-point/index|⬅ Mécanique du point — IPSA]]
 
+
 > [!info] ℹ️ Chap. 1 — Cinématique du point matériel
 > Séance 2
 
 
+
 <a href="/pdfs/td2_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td2_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Un radar, une planète, un faucon : un seul système de coordonnées ?**
 >
 > *Durée de l'introduction : 5 à 8 min, avant les exercices*
@@ -24,7 +27,9 @@ tags:
 > $$\vec v=\dot r\,\vec u_r+r\dot\theta\,\vec u_\theta,\qquad\vec a=(\ddot r-r\dot\theta^2)\,\vec u_r+(r\ddot\theta+2\dot r\dot\theta)\,\vec u_\theta.$$
 > Chaque terme a un sens physique (variation de distance, rotation, centripète, Coriolis). En 3D, on ajoute simplement l'axe fixe $\vec k$.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Cinématique cartésienne (TD1)**
 >
 > Savoir dériver une loi horaire pour obtenir $\vec v$ et $\vec a$, intégrer avec des conditions initiales, calculer une norme, éliminer le temps pour obtenir une trajectoire. Mouvement circulaire uniforme en cartésien : $x=R\cos\omega t$, $y=R\sin\omega t$, $\vec a=-\omega^2\overrightarrow{OM}$.
@@ -53,7 +58,9 @@ tags:
 >
 > $[\dot\theta]=\mathrm T^{-1}$ (le radian est sans dimension), $[r\dot\theta]=\mathrm{L\,T^{-1}}$, $[\vec a]=\mathrm{L\,T^{-2}}$ ; accélération centripète d'une voiture dans un virage $\sim3$ à $5\ \mathrm{m\,s^{-2}}$, vitesse orbitale de la Terre $\simeq30$ km/s.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Choisir et utiliser le système de coordonnées adapté**
 >
 > Passer des coordonnées cartésiennes aux coordonnées polaires, cylindriques et inversement ; choisir celles qui épousent la symétrie du problème (rotation autour d'un point ou d'un axe) ; écrire sans hésiter $\overrightarrow{OM}$, $\vec v$ et $\vec a$ dans la base polaire ou cylindrique.
@@ -78,7 +85,9 @@ tags:
 >
 > Faire un schéma soigné avec les bases locales, mener des calculs trigonométriques et exponentiels sans erreur de signe, **valider** (homogénéité, cas limites, ordre de grandeur), utiliser Python pour tracer trajectoires, vecteurs et hodographes.
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Coordonnées polaires et base polaire**
 >
 > $$x=r\cos\theta,\quad y=r\sin\theta,\quad r=\sqrt{x^2+y^2},\quad\cos\theta=\frac xr,\quad\sin\theta=\frac yr.$$
@@ -109,6 +118,8 @@ tags:
 > **Méthode d'étude d'un mouvement en polaire**
 >
 > (1) Schéma avec $O$, $\vec u_r$, $\vec u_\theta$ (et $\vec k$). (2) Écrire $r(t)$ et $\theta(t)$ (ou $r(\theta)$ et $\theta(t)$ et en déduire $r(t)$). (3) Dériver : $\dot r$, $\dot\theta$, $\ddot r$, $\ddot\theta$. (4) Reporter dans les formules de $\vec v$ et $\vec a$. (5) Calculer normes, angles, extrémas. (6) Valider : cas limites, homogénéité, ordre de grandeur.
+
+
 
 > [!note]- 🧮 Outils mathématiques
 > **Dérivée d'un vecteur de base et dérivée composée**
@@ -144,6 +155,7 @@ tags:
 > $\vec a\cdot\vec v=\tfrac12\dfrac{\mathrm d\|\vec v\|^2}{\mathrm dt}$ : $\|\vec v\|=$ cte $\iff\vec a\perp\vec v$. L'angle entre deux vecteurs se lit sur $\cos\varphi=\dfrac{\vec A\cdot\vec B}{\|\vec A\|\|\vec B\|}$.
 
 
+
 ## Exercices
 
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]]
@@ -154,6 +166,7 @@ tags:
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]]
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]]
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]]
+
 
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Mathématiques**
@@ -184,18 +197,29 @@ tags:
 >
 > Représentation de trajectoires par intégration numérique (Euler, Runge--Kutta), moteurs physiques de jeux vidéo, animation d'orbites, algorithmes de poursuite et de flocage.
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Simulation numérique de mouvements polaires
 > Intégrer par la méthode d'Euler (puis \texttt{solve\_ivp}) les équations $\ddot r=r\dot\theta^2+f_r$ et $r\ddot\theta=-2\dot r\dot\theta+f_\theta$ pour la poursuite à $n$ drones ou pour une perle sur tige ; comparer à la solution analytique ($r=r_0\cosh\omega t$) et étudier l'erreur en fonction du pas.
+
+
 
 > [!question]- 🔭 Aller plus loin — Licence : Repère de Frenet et rayon de courbure en polaire
 > Établir, pour une courbe $r(\theta)$, la formule $\rho=\dfrac{(r^2+r'^2)^{3/2}}{r^2+2r'^2-rr''}$ et la comparer aux rayons de courbure obtenus dans le TD : cardioïde, spirale équiangulaire ($\rho=r\sqrt{1+k^2}$), ellipse. Vérifier $a_n=v^2/\rho$.
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Coordonnées sphériques
 > Écrire $\overrightarrow{OM}=r\,\vec u_r$ en base sphérique $(\vec u_r,\vec u_\theta,\vec u_\varphi)$ et établir $\vec v=\dot r\,\vec u_r+r\dot\theta\,\vec u_\theta+r\sin\theta\,\dot\varphi\,\vec u_\varphi$. Traiter le mouvement d'un point à la surface d'une sphère ($r=R$) et la trajectoire d'un satellite en orbite polaire.
+
+
 
 > [!question]- 🔭 Aller plus loin — Master : Mécanique lagrangienne et coordonnées généralisées
 > Les coordonnées $(r,\theta)$ sont des exemples de **coordonnées généralisées**. Écrire l'énergie cinétique $\tfrac12m(\dot r^2+r^2\dot\theta^2)$, les équations d'Euler--Lagrange et retrouver $a_\theta=\dfrac1r\dfrac{\mathrm d}{\mathrm dt}(r^2\dot\theta)$ (conservation de $r^2\dot\theta$ pour un potentiel central) et l'équation radiale de l'exercice 5.
 
+
+
 > [!question]- 🔭 Aller plus loin — Doctorat : Symétrie cachée du problème de Kepler
 > L'hodographe circulaire (exercice 8) est la manifestation de la conservation du vecteur de Runge--Lenz. Montrer que le groupe de symétrie du problème de Kepler est $SO(4)$ (ou $SO(3,1)$ pour les orbites non liées) et que l'hodographe devient un grand cercle de la sphère $S^3$ (projection de Fock).
+
 

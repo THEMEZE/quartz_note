@@ -15,7 +15,8 @@ Une automobile s'engage sur une portion de route en forme de bosse. Le véhicule
 
 On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol tout au long de son chemin.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Le dos-d'âne : à quelle vitesse décolle-t-on ?**
 >
 > *Durée de l'introduction : 3 min*
@@ -25,7 +26,9 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 > **Idée clé : projeter la 2\textsuperscript{e} loi sur la direction radiale.** En mouvement circulaire uniforme, $\vec a=-\dfrac{v^2}R\vec e_r$. La projection radiale donne $-mg\cos\theta+N=-\dfrac{mv^2}R$, donc $N=m\Big(g\cos\theta-\dfrac{v^2}R\Big)$. Le contact est maintenu tant que $N\ge0$, et la masse $m$ disparaît de la condition.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Base polaire et dérivées des vecteurs unitaires**
 >
 > $\vec e_r$ est le vecteur unitaire radial (de $O$ vers $M$), $\vec e_\theta$ le vecteur unitaire orthoradial (rotation de $+90^\circ$). $\dfrac{\mathrm d\vec e_r}{\mathrm d\theta}=\vec e_\theta$ et $\dfrac{\mathrm d\vec e_\theta}{\mathrm d\theta}=-\vec e_r$ (exercice « dérivée d'un vecteur unitaire tournant » du TD1).
@@ -35,22 +38,30 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 > $\overrightarrow{OM}=r\,\vec e_r$, $\vec v=\dot r\,\vec e_r+r\dot\theta\,\vec e_\theta$, $\vec a=(\ddot r-r\dot\theta^2)\,\vec e_r+(r\ddot\theta+2\dot r\dot\theta)\,\vec e_\theta$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Relier cinématique polaire et dynamique**
 >
 > Savoir établir $\vec v$ et $\vec a$ en polaires pour un mouvement circulaire uniforme, faire le bilan des forces avec réaction normale et tangentielle, projeter sur $\vec e_r$, traduire « garder le contact » par $N\ge0$, et discuter une condition valable pour tous les angles de l'arc.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Le premier exercice qui relie cinématique polaire et dynamique**
 >
 > L'exercice guide pas à pas : cinématique (1), dynamique (2). La condition $N\ge0$ pour tout $\theta\in[-\alpha,\alpha]$ amène à chercher le **pire cas** (cosinus minimal, donc $\theta=\pm\alpha$). C'est le moment d'insister sur la différence entre « pour un angle donné » et « pour tous les angles ». Le résultat $v\le\sqrt{gR\cos\alpha}$ est contre-intuitif : plus la bosse est « pointue » (petit $R$) et plus la vitesse maximale est faible. Les composantes tangentielles (frottement, moteur) n'influent pas sur la projection radiale.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Condition de contact**
 >
 > Le sol ne peut que pousser : $\vec N\cdot\vec n\ge0$, où $\vec n$ est la normale sortante. Quand $N$ s'annule, le véhicule décolle. En mouvement circulaire uniforme, $\vec a=-\dfrac{v^2}R\,\vec e_r$ (centripète), de norme $v^2/R$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -71,6 +82,7 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 > $7{,}6~\mathrm{m/s}\times3{,}6\approx27$ km/h.
 
 
+
 **q1.** **1/ Cinématique**
 
 
@@ -78,12 +90,17 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 - [(b)] Rappeler l'expression des dérivées de ces deux vecteurs par rapport à $\theta(t)$. (Si vous avez oublié, refaire le calcul.)
 - [(c)] Donner, dans le cas général, l'expression du vecteur vitesse $\vec v$ en coordonnées polaires. Que devient-elle pour la voiture sur la partie courbe ?
 
+
 > [!tip]- 💡 Coup de pouce
 > $\vec e_r$ pointe de $O$ vers $M$ et $\vec e_\theta$ s'en déduit par une rotation de $+90^\circ$. Sur l'arc, $r=R$ est constant.
 
 
+
+
 > [!success]- ✅ Correction
 > $\dfrac{\mathrm d\vec e_r}{\mathrm d\theta}=\vec e_\theta$, $\dfrac{\mathrm d\vec e_\theta}{\mathrm d\theta}=-\vec e_r$ ; $\vec v=\dot r\,\vec e_r+r\dot\theta\,\vec e_\theta$ ; sur l'arc $\vec v=R\dot\theta\,\vec e_\theta$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -100,15 +117,21 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 > $\overrightarrow{OM}=r\,\vec e_r\Rightarrow\boxed{\vec v=\dot r\,\vec e_r+r\dot\theta\,\vec e_\theta}$. Sur l'arc, $r=R$ donc $\dot r=0$ et $\boxed{\vec v=R\dot\theta\,\vec e_\theta}$ : vitesse tangente à l'arc.
 
 
+
 **q2.** - [(d)] Déterminer l'expression reliant $v$, $R$ et $\mathrm d\theta/\mathrm dt$ en analysant soigneusement le signe de $\mathrm d\theta/\mathrm dt$.
 - [(e)] Donner, dans le cas général, l'expression du vecteur accélération $\vec a$ en polaires. Que devient-elle pour la voiture sur la partie courbe ?
+
 
 > [!tip]- 💡 Coup de pouce
 > La voiture va vers la droite au sommet ; que fait $\theta$ ? $v$ est la norme de $\vec v$, donc positive. Dérivez $\vec v$ en utilisant les dérivées de $\vec e_r$ et $\vec e_\theta$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\dot\theta=-\dfrac vR$ ; $\vec a=(\ddot r-r\dot\theta^2)\vec e_r+(r\ddot\theta+2\dot r\dot\theta)\vec e_\theta$ ; sur l'arc $\vec a=-\dfrac{v^2}R\,\vec e_r$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -127,6 +150,7 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 > Accélération centripète, dirigée vers $O$ (vers le bas au sommet), indépendante du signe de $\dot\theta$.
 
 
+
 **q3.** **2/ Dynamique**
 
 
@@ -134,12 +158,17 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 - [(b)] Comment exprimer au moyen d'une inégalité sur $\vec N$ que la voiture est ou non en contact avec la route ?
 - [(c)] En appliquant la relation fondamentale de la dynamique projetée sur $\vec e_r$, donner l'expression reliant $\|\vec N\|$, $m$, $v$, $R$, $g$ et $\theta$.
 
+
 > [!tip]- 💡 Coup de pouce
 > Le poids est vertical vers le bas ; $\vec N$ est perpendiculaire à la route, donc selon $\vec e_r$ ; $\vec T$ est tangent, donc selon $\vec e_\theta$. Le contact exige que la route « pousse ».
 
 
+
+
 > [!success]- ✅ Correction
 > Forces : $m\vec g$, $\vec N=N\vec e_r$, $\vec T=T\vec e_\theta$. Contact $\iff N\ge0$. $N=m\Big(g\cos\theta-\dfrac{v^2}R\Big)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -158,16 +187,22 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 > La projection sur $\vec e_\theta$ donne $0=mg\sin\theta+T$, soit $T=-mg\sin\theta$ : le frottement (ou la force motrice) maintient la vitesse constante.
 
 
+
 **q4.** - [(d)] Quelle inégalité relie $v$, $R$, $g$ et $\theta$ pour que la voiture reste sur la route quel que soit l'angle $\theta$ ?
 - [(e)] En déduire la relation liant $v$, $R$, $g$ et $\alpha$ pour que la voiture reste sur la route tout le long du trajet.
 - [(f)] Application numérique : calculer $v_{\max}$ pour $\alpha=10^\circ$ et $R=6{,}0$ m.
+
 
 > [!tip]- 💡 Coup de pouce
 > $N\ge0$ s'écrit $v^2\le gR\cos\theta$. Cette inégalité doit être vraie pour tous les $\theta\in[-\alpha,\alpha]$ : cherchez la valeur de $\theta$ qui rend le second membre minimal.
 
 
+
+
 > [!success]- ✅ Correction
 > $v\le\sqrt{gR\cos\theta}$ ; pour tout l'arc $v\le\sqrt{gR\cos\alpha}$ ; $v_{\max}\approx7{,}6~\mathrm{m/s}\approx27$ km/h.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -185,6 +220,24 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 >
 > $$v_{\max}=\sqrt{9{,}81\times6{,}0\times\cos10^\circ}=\sqrt{57{,}97}\approx\boxed{7{,}6~\mathrm{m/s}}\approx27~\text{km/h}.$$
 > Au-delà, la voiture décolle dès l'entrée de l'arc. Ordre de grandeur cohérent avec la vitesse de franchissement prudente d'un dos-d'âne ($\approx30$ km/h).
+
+
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Génie civil et sécurité routière**
+>
+> Les ralentisseurs et les profils en long des routes sont dimensionnés pour garder $N>0$ à la vitesse réglementaire ; les ponts « en dos d'âne » imposent des limites de vitesse.
+>
+> **Parcs d'attractions**
+>
+> Les montagnes russes à « airtime » recherchent justement $N\approx0$ en haut des bosses : sensation d'apesanteur.
+>
+> **Astronomie**
+>
+> Un satellite en orbite basse est un « objet qui décolle » : $v^2=gR$ est la vitesse orbitale ($7{,}9$ km/s pour la Terre).
+
+
 
 
 > [!warning]- 🪤 Écueils classiques
@@ -205,6 +258,8 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 > La force tangentielle $\vec T$ n'a pas de composante radiale : elle disparaît de l'équation selon $\vec e_r$.
 
 
+
+
 > [!tip]- 🎙️ Conseils d'animation
 > **Demander un ressenti**
 >
@@ -215,38 +270,35 @@ On cherche à quelle condition sur $v$ l'automobile garde le contact avec le sol
 > Faire refaire l'exercice pour un creux (centre au-dessus de la route) : $N=mg\cos\theta+mv^2/R>0$, il n'y a jamais décollage, mais la réaction est plus grande que le poids.
 
 
-> [!note]- 🔗 Liens avec d'autres disciplines
-> **Génie civil et sécurité routière**
->
-> Les ralentisseurs et les profils en long des routes sont dimensionnés pour garder $N>0$ à la vitesse réglementaire ; les ponts « en dos d'âne » imposent des limites de vitesse.
->
-> **Parcs d'attractions**
->
-> Les montagnes russes à « airtime » recherchent justement $N\approx0$ en haut des bosses : sensation d'apesanteur.
->
-> **Astronomie**
->
-> Un satellite en orbite basse est un « objet qui décolle » : $v^2=gR$ est la vitesse orbitale ($7{,}9$ km/s pour la Terre).
 
 
-> [!success]- 🏁 Bilan
+> [!success]- 🏁 Bilan pédagogique
 > **Bosse circulaire**
 >
 > $\|\vec N\|=m\Big(g\cos\theta-\dfrac{v^2}R\Big)$ ; contact maintenu $\iff v^2\le gR\cos\theta$ ; pour tout l'arc $v\le\sqrt{gR\cos\alpha}$ ; application $v_{\max}\approx7{,}6~\mathrm{m/s}\approx27$ km/h pour $\alpha=10^\circ$, $R=6{,}0$ m.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Vitesse variable : bosse avec décélération
 > Si la vitesse varie ($\dot v\ne0$), l'accélération tangentielle $\dot v\,\vec e_\theta$ apparaît, mais la composante radiale reste $-v^2/R$ : montrer que la condition $N\ge0$ est inchangée à chaque instant, et que le frottement $\vec T$ fixe $\dot v$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Décollage et trajectoire ensuite
 > Pour $v>\sqrt{gR\cos\alpha}$, la voiture décolle en $\theta=\alpha$ (point où $N$ s'annule en premier si $v$ est juste au-dessus). Déterminer la trajectoire parabolique ensuite et la distance de saut, en prenant pour vitesse initiale celle du point de décollage ($v$, tangente à l'arc).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Bosse à profil quelconque
 > Pour une route $y=h(x)$, la condition de contact s'écrit $v^2\kappa\le g\cos\gamma$ où $\kappa=-h''/(1+h'^2)^{3/2}$ est la courbure et $\gamma$ la pente. Retrouver le cas du cercle ($\kappa=1/R$).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex1-exercices-elementaires|Exercice 1 — Exercices élémentaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex2-decollage-d-un-corps|Exercice 2 — Décollage d'un corps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex3-machine-d-atwood|Exercice 3 — Machine d'Atwood]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex4-systeme-de-deux-blocs|Exercice 4 — Système de deux blocs]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex6-navette-columbia|Exercice 6 — (*) Navette Columbia]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex7-chute-avec-frottement-fluide-vitesse-limite|Exercice 7 — Chute avec frottement fluide : vitesse limite]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex9-virage-releve-et-frottement-solide|Exercice 9 — Virage relevé et frottement solide]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/ex4-systeme-pendule-bloc|Exercice 4 — (*) Système pendule-bloc]]
+
 

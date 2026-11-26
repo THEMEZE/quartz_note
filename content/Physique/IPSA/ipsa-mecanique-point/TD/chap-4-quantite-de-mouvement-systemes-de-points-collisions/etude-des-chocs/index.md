@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-mecanique-point/index|⬅ Mécanique du point — IPSA]]
 
+
 > [!info] ℹ️ Chap. 4 — Quantité de mouvement, systèmes de points, collisions
 > Séance 6
 
 
+
 <a href="/pdfs/td6_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td6_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi un airbag sauve-t-il des vies ?**
 >
 > *Durée de l'introduction : 5 min*
@@ -22,7 +25,9 @@ tags:
 >
 > **Idée clé : pendant un choc, $\vec p$ se conserve (pseudo-isolé) ; l'énergie cinétique, elle, est en général dissipée.** $\bar F=\Delta p/\Delta t$ : allonger la durée du choc réduit la force. L'énergie perdue vaut $\tfrac12\mu_rv_{\rm rel}^2(1-e^2)$.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Les lois de Newton et la quantité de mouvement**
 >
 > $\vec p=m\vec v$ ; $\dfrac{\mathrm d\vec p}{\mathrm dt}=\sum\vec F_{\rm ext}$ ; pour un système de points $\vec P=\sum m_i\vec v_i=M\vec v_G$.
@@ -39,7 +44,9 @@ tags:
 >
 > Système $2\times2$ linéaire (substitution, combinaison) ; identité remarquable $a^2-b^2=(a-b)(a+b)$ ; développement limité $(1+\epsilon)^n\approx1+n\epsilon$.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Savoir ce qui se conserve dans un choc**
 >
 > Savoir justifier la conservation de la quantité de mouvement (système pseudo-isolé), distinguer choc élastique ($E_c$ conservée), partiellement élastique et parfaitement mou, calculer l'énergie dissipée, utiliser un coefficient de restitution.
@@ -52,7 +59,9 @@ tags:
 >
 > Savoir découper un problème en phases : (1) avant le choc (énergie), (2) choc (quantité de mouvement), (3) après le choc (énergie ou Newton). Utiliser les bons outils à chaque phase.
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Quantité de mouvement et système pseudo-isolé**
 >
 > $\vec p=m\vec v$. Pour un système de points : $\vec P=\sum_im_i\vec v_i=M\vec v_G$ et $\dfrac{\mathrm d\vec P}{\mathrm dt}=\sum\vec F_{\rm ext}$. Si $\sum\vec F_{\rm ext}=\vec0$ (système isolé) ou si elles sont négligeables devant les forces impulsives (pseudo-isolé), $\vec P$ est conservée : $\vec P_{\rm avant}=\vec P_{\rm après}$. La conservation est **vectorielle** : une équation par composante.
@@ -89,6 +98,8 @@ tags:
 >
 > Pendule balistique, boule qui frappe un bloc : (1) **avant** : énergie mécanique (chute sans frottement), (2) **choc** : quantité de mouvement (et énergie si élastique), (3) **après** : énergie ou Newton (remontée, frottement). Ne jamais appliquer la conservation de $E_m$ à travers le choc sauf choc élastique, ni la conservation de $p$ à travers la phase de glissement (frottement extérieur non négligeable).
 
+
+
 > [!note]- 🧮 Outils mathématiques
 > **Résolution d'un système linéaire $2\times2$**
 >
@@ -109,6 +120,7 @@ tags:
 > **Trigonométrie**
 >
 > $\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$ ; $\cos30^\circ=\tfrac{\sqrt3}2$, $\sin45^\circ=\tfrac{\sqrt2}2$.
+
 
 
 ## Exercices

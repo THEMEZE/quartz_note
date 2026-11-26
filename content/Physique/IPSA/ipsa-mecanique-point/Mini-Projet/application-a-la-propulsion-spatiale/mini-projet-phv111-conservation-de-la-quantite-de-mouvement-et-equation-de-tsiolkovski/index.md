@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-mecanique-point/index|⬅ Mécanique du point — IPSA]]
 
+
 > [!info] ℹ️ Application à la propulsion spatiale
 > Séance 1
 
 
+
 <a href="/pdfs/projet1_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/projet1_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/Phv111_MP_Falcon9_Launch.xlsx" target="_blank" rel="noopener">📊 Fichier Excel – Falcon 9</a>
 
-> [!info]+ 🗓️ Organisation
+
+> [!info]- 🗓️ Organisation
 > **Séance 1 (choc et quantité de mouvement)**
 >
 > Partie I.1 théorie du choc (30 min), I.2 exploitation de la chronophotographie de l'annexe : vitesses, quantités de mouvement, forces (60 min), I.3--I.4 conservation de $\vec p$ et bilan d'énergie (30 min). À l'issue de la séance 1 : **synthèse** (rappel théorique, tracés, résultats) déposée en PDF sur Moodle **sous deux semaines**.
@@ -26,7 +29,9 @@ tags:
 >
 > **Compte rendu final** à déposer avant le **vendredi 10 décembre** : démarches, résultats numériques avec incertitudes, discussion critique.
 
-> [!question]+ 🎣 Accroche
+
+
+> [!question]- 🪝 Accroche
 > **Du billard à la fusée : une seule loi**
 >
 > *Durée de l'introduction : 5 min*
@@ -35,7 +40,9 @@ tags:
 >
 > **Idée clé : la quantité de mouvement totale d'un système isolé est conservée.** Dans un choc, elle se redistribue entre deux mobiles ; dans une fusée, entre la fusée et son gaz d'éjection. La 3\textsuperscript{e} loi de Newton garantit que ce que l'un gagne, l'autre le perd.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Cinématique du point**
 >
 > Vecteur vitesse, mouvement rectiligne uniforme, repérage par coordonnées cartésiennes, échelle d'une figure.
@@ -52,7 +59,9 @@ tags:
 >
 > Tableur (formules, graphique), logarithme népérien, incertitudes de mesure.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Comprendre la conservation de la quantité de mouvement**
 >
 > Démontrer $\vec p_{\rm tot}=\text{cte}$ à partir de la 3\textsuperscript{e} loi, la vérifier expérimentalement sur une chronophotographie, la classer parmi les lois de conservation (énergie, moment cinétique).
@@ -69,7 +78,9 @@ tags:
 >
 > Structurer un rapport (introduction, méthode, résultats, discussion), justifier les approximations, présenter les résultats avec leurs unités et incertitudes.
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Quantité de mouvement et deuxième loi**
 >
 > $\vec p=m\vec v$ ; $\dfrac{\mathrm d\vec p}{\mathrm dt}=\sum\vec F_{\rm ext}$ ; $\Delta\vec p=\bar{\vec F}\,\Delta t$. Pour un système isolé : $\vec p_{\rm tot}=\text{cte}$.
@@ -85,6 +96,8 @@ tags:
 > **Étagement**
 >
 > Les $\Delta V$ des étages s'ajoutent ; un étage unique est limité à $v_e\ln(1/\varepsilon)$ ($\varepsilon$ : coefficient de structure).
+
+
 
 > [!note]- 🧮 Outils mathématiques
 > **Vecteurs**
@@ -102,6 +115,7 @@ tags:
 > **Tableur**
 >
 > Formules, références absolues, graphique $v(t)$ ; comparaison de plusieurs jeux de paramètres.
+
 
 
 ## Exercices

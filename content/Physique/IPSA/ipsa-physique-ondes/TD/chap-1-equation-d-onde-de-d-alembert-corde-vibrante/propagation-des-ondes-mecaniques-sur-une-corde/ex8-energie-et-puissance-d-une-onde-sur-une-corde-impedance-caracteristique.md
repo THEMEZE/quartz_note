@@ -17,7 +17,8 @@ On admet que la corde possède, par unité de longueur, l'énergie mécanique
 $$e(x,t)=\underbrace{\frac{1}{2}\mu\left(\frac{\partial y}{\partial t}\right)^2}_{\text{cinétique}}+\underbrace{\frac{1}{2}F\left(\frac{\partial y}{\partial x}\right)^2}_{\text{potentielle élastique}}.$$
 La partie gauche de la corde ($x'<x$) exerce sur la partie droite une force dont la composante transversale est $-F\,\dfrac{\partial y}{\partial x}(x,t)$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Qu'est-ce qui se propage vraiment le long d'une corde ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -29,16 +30,22 @@ La partie gauche de la corde ($x'<x$) exerce sur la partie droite une force dont
 > Pour une onde progressive, $\mathcal P=c\,e=Z\,(\partial_t y)^2$ avec $Z=\sqrt{F\mu}$ l'**impédance caractéristique** : l'énergie est transportée à la vitesse $c$. Pour une onde sinusoïdale, $\langle\mathcal P\rangle=\tfrac12Z\omega^2a^2$ ; pour une onde stationnaire, $\langle\mathcal P\rangle=0$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Équation de d'Alembert et ondes progressives**
 >
 > Exercices 0 et 3 : solutions $f(x-ct)$, $g(x+ct)$, équation des cordes vibrantes, modes propres d'une corde fixée (exercice 4).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Suivre l'énergie plutôt que le déplacement**
 >
 > Établir un bilan local d'énergie, calculer la puissance transportée par une onde progressive, comprendre pourquoi une onde stationnaire ne transporte pas d'énergie en moyenne.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -67,15 +74,19 @@ La partie gauche de la corde ($x'<x$) exerce sur la partie droite une force dont
 > $[Z]=\mathrm{kg\,s^{-1}}$ ; $\langle\mathcal P\rangle\propto\omega^2a^2\sqrt F$. Doubler $\omega$ ou $a$ multiplie par $4$ ; doubler $F$ multiplie par $\sqrt2$.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Stratégie générale**
 >
 > Pour chaque question, écrire $\partial_x y$ et $\partial_t y$ en fonction de la variable $u=x-ct$ (ou de la phase), puis remplacer dans $e$ ou dans $\mathcal{P}=-F\,\partial_x y\,\partial_t y$.
 
 
+
 **q1.** Montrer, à l'aide de l'équation de d'Alembert, que l'énergie vérifie l'équation de conservation locale
 $$\frac{\partial e}{\partial t}+\frac{\partial\mathcal{P}}{\partial x}=0,\qquad\text{avec}\qquad\mathcal{P}(x,t)=-F\,\frac{\partial y}{\partial x}\,\frac{\partial y}{\partial t}.$$
 Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une force).
+
 
 > [!tip]- 💡 Coup de pouce
 > **Dériver $e$**
@@ -83,10 +94,14 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > Calculer $\partial_t e$ et $\partial_x\mathcal{P}$ séparément, puis regrouper les termes en $\partial_t y$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\partial_t e+\partial_x\mathcal{P}=\partial_t y\,(\mu\,\partial_t^2y-F\,\partial_x^2y)=0$. $\mathcal{P}$ est la puissance que la partie gauche fournit à la partie droite à travers la section $x$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -101,7 +116,9 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > **Signification :** la force transversale exercée par la gauche sur la droite en $x$ est $-F\,\partial_x y$ ; la vitesse du point d'application est $\partial_t y$. La puissance de cette force est donc $-F\,\partial_x y\,\partial_t y=\mathcal{P}$ : c'est le flux d'énergie qui traverse la section $x$ de gauche à droite.
 
 
+
 **q2.** Onde progressive $y=f(x-ct)$. Montrer que $e=F f'^2$, puis que $\mathcal{P}=c\,e$. En déduire que $\mathcal{P}=Z\left(\partial_t y\right)^2$ avec $Z=\sqrt{F\mu}$. Que devient ce résultat pour une onde régressive $y=g(x+ct)$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Dérivées**
@@ -109,10 +126,14 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > $\partial_x y=f'$ et $\partial_t y=-c\,f'$. N'oubliez pas $\mu c^2=F$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $e=Ff'^2$, $\mathcal{P}=Fc\,f'^2=c\,e$, et comme $F/c=\sqrt{F\mu}=Z$ : $\mathcal{P}=Z(\partial_t y)^2>0$. Pour $g(x+ct)$ : $\mathcal{P}=-Z(\partial_t y)^2<0$ (énergie transportée vers les $x$ décroissants).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -127,7 +148,9 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > **Interprétation de $Z$ :** $Z$ est le rapport (au signe près) entre la force transversale $-F\partial_x y$ et la vitesse transversale $\partial_t y$ : $-F\,\partial_x y=Z\,\partial_t y$ pour une onde progressive. Sa dimension est $[Z]=\text{kg}\cdot\text{s}^{-1}$.
 
 
+
 **q3.** Onde sinusoïdale progressive $y=a\cos(kx-\omega t)$. Calculer la puissance moyenne $\langle\mathcal{P}\rangle$ et la densité linéique d'énergie moyenne $\langle e\rangle$. Application numérique avec les données de l'exercice 3 : $\mu=0{,}12\ \text{kg}\cdot\text{m}^{-1}$, $F=20\ \text{N}$, $a=2\ \text{mm}$, $\lambda=0{,}25\ \text{m}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Moyenne**
@@ -135,10 +158,14 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > $\langle\sin^2\rangle=\tfrac{1}{2}$ sur une période. Calculer $\omega=2\pi c/\lambda$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\langle\mathcal{P}\rangle=\tfrac{1}{2}Z\omega^2a^2$ et $\langle e\rangle=\tfrac{1}{2}\mu\omega^2a^2$, avec $\langle\mathcal{P}\rangle=c\langle e\rangle$. Ici $c\approx12{,}9\ \text{m/s}$, $Z\approx1{,}55\ \text{kg/s}$, $\omega\approx324\ \text{rad/s}$, $\langle e\rangle\approx0{,}025\ \text{J/m}$ et $\langle\mathcal{P}\rangle\approx0{,}33\ \text{W}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -153,12 +180,16 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > Vérification : $c\langle e\rangle=12{,}91\times0{,}0253\approx0{,}326\ \text{W}$.
 
 
+
 **q4.** Comment varie $\langle\mathcal{P}\rangle$ si (i) on double la fréquence à amplitude $a$ constante ; (ii) on double la tension $F$ à $\mu$, $\omega$ et $a$ constants ; (iii) on double l'amplitude ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (i) $\times4$ ; (ii) $\times\sqrt{2}$ (car $Z\propto\sqrt{F}$) ; (iii) $\times4$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -167,7 +198,9 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > $\langle\mathcal{P}\rangle=\tfrac{1}{2}\sqrt{F\mu}\,\omega^2a^2$. Elle est proportionnelle à $\omega^2$ (donc à $f^2$), à $a^2$ et à $\sqrt{F}$. Doubler $F$ multiplie donc $\langle\mathcal{P}\rangle$ par $\sqrt{2}$.
 
 
+
 **q5.** Onde stationnaire $y=A\sin(kx)\cos(\omega t)$ avec $\omega=ck$. Calculer $\mathcal{P}(x,t)$ et sa moyenne temporelle. Que dire du transport d'énergie ? Calculer ensuite, pour le mode $N$ d'une corde fixée en $x=0$ et $x=L$ ($kL=N\pi$), les énergies cinétique $K(t)$ et potentielle $U(t)$ et leur somme.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Formules trigonométriques**
@@ -175,10 +208,14 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > $\sin kx\cos kx=\tfrac{1}{2}\sin2kx$ et $\int_0^L\sin^2kx\,\mathrm{d}x=\int_0^L\cos^2kx\,\mathrm{d}x=\dfrac{L}{2}$ pour $kL=N\pi$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\mathcal{P}=\dfrac{1}{4}FA^2k\omega\,\sin(2kx)\sin(2\omega t)$, de moyenne nulle : pas de transport net d'énergie. $K=\dfrac{1}{4}\mu\omega^2A^2L\sin^2\omega t$, $U=\dfrac{1}{4}\mu\omega^2A^2L\cos^2\omega t$, $E=K+U=\dfrac{1}{4}\mu\omega^2A^2L$ constante.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -193,12 +230,16 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > Donc $E=K+U=\dfrac{1}{4}\mu\omega^2A^2L$ ne dépend pas du temps. L'énergie cinétique est maximale quand la corde passe par sa position d'équilibre, et l'énergie potentielle maximale quand la corde est à son élongation maximale.
 
 
+
 **q6.** Application : la troisième corde de guitare de l'exercice 4 ($\mu=5{,}04\times10^{-4}\ \text{kg/m}$, $L=63\ \text{cm}$, $f_1=147\ \text{Hz}$) vibre sur son fondamental avec une amplitude de $1\ \text{mm}$ au ventre. Calculer son énergie mécanique.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $E=\tfrac{1}{4}\mu\omega_1^2A^2L\approx6{,}8\times10^{-5}\ \text{J}$ (environ $68\ \mu\text{J}$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -207,6 +248,8 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > $\omega_1=2\pi\times147\approx923{,}6\ \text{rad/s}$.
 > $$E=\frac{1}{4}\times5{,}04\times10^{-4}\times(923{,}6)^2\times(10^{-3})^2\times0{,}63\approx6{,}8\times10^{-5}\ \text{J}.$$
 > Cette énergie est très faible : une corde pincée seule est un mauvais radiateur acoustique, d'où la caisse de résonance.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -231,10 +274,15 @@ Donner la signification physique de $\mathcal{P}$ (indication : puissance d'une 
 > L'énergie d'une corde pincée est très faible ($\approx6{,}8\times10^{-5}$ J) : sans caisse de résonance, le son est inaudible à distance.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Lagrangien de la corde
 > $e$ est l'énergie associée au lagrangien $\mathcal{L}=\frac{1}{2}\mu\dot y^2-\frac{1}{2}Fy'^2$. L'équation d'onde est l'équation d'Euler-Lagrange, et $\partial_t e+\partial_x\mathcal{P}=0$ est le théorème de Noether pour l'invariance par translation dans le temps.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex4-equation-des-cordes-vibrantes-et-onde-progressive|Exercice 4 — Équation des cordes vibrantes et onde progressive]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex9-corde-pesante-suspendue-milieu-inhomogene-bosse-acceleree-et-coup-de-fouet|Exercice 9 — Corde pesante suspendue : milieu inhomogène, bosse accélérée et coup de fouet]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex10-corde-discrete-chaine-de-masses-dispersion-coupure-et-vitesse-de-groupe|Exercice 10 — Corde discrète (chaîne de masses) : dispersion, coupure et vitesse de groupe]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex11-une-perle-sur-la-corde-reflexion-transmission-et-filtre-passe-bas-mecanique|Exercice 11 — Une perle sur la corde : réflexion, transmission et filtre passe-bas mécanique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex12-adaptation-d-impedance-lame-quart-d-onde-entre-deux-cordes|Exercice 12 — Adaptation d'impédance : lame quart d'onde entre deux cordes]]
+
 

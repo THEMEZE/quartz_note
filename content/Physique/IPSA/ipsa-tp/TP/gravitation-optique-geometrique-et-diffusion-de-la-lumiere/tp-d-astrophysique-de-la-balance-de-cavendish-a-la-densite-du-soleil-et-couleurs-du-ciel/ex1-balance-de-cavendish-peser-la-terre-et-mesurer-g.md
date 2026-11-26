@@ -15,19 +15,24 @@ En 1798, Henry Cavendish mesure l'attraction gravitationnelle entre deux boules 
 
 Dans ce TP, on utilise une balance de Cavendish de démonstration (deux petites masses $m$ au bout d'un fléau, deux grosses masses $M$ mobiles, miroir et pointeur laser) pour **mesurer $G$**, évaluer une incertitude, et identifier les erreurs systématiques. La valeur de $G$ obtenue est réutilisée dans le TP A3 pour déterminer la densité du Soleil.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Notions**
 >
 > Loi de gravitation de Newton, moment d'une force, oscillateur de torsion $\ddot\theta+\dfrac{\kappa}{I}\theta=0$, méthode différentielle pour les incertitudes (TD2 exercices 4, 8 et 9).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Mesurer une force de $10^{-10}\ \text{N}$**
 >
 > Comprendre comment un instrument aussi sensible impose une critique poussée des erreurs systématiques, et savoir chiffrer une incertitude combinée.
 
 
-> [!note]+ 🧰 Matériel
+
+
+> [!note]- 🧰 Matériel nécessaire
 > Balance de torsion type Cavendish (fléau avec 2 masses $m$, fil, miroir), boîtier de protection
 >
 > 2 grosses masses de plomb $M\approx1{,}5\ \text{kg}$ montées sur un support tournant
@@ -37,6 +42,8 @@ Dans ce TP, on utilise une balance de Cavendish de démonstration (deux petites 
 > Chronomètre (ou caméra du smartphone), mètre ruban, pied à coulisse
 >
 > Table stable posée sur une dalle ou sur des tasseaux, éloignée des passages (vibrations)
+
+
 
 
 > [!danger] 🦺 Sécurité
@@ -53,7 +60,9 @@ Dans ce TP, on utilise une balance de Cavendish de démonstration (deux petites 
 > Le fil de torsion est extrêmement fin : ne jamais toucher le fléau quand il est déverrouillé.
 
 
-> [!note]+ 🔬 Manipulation
+
+
+> [!note]- 🔬 Manipulation
 > **1. Mise en place et attente**
 >
 > Installer la balance sur une table stable, laser et écran à $L\approx3\ \text{m}$ du miroir. Laisser le fléau se stabiliser 15 à 30 min sans toucher la table ni marcher à proximité. Mesurer $r$ (distance d'une petite masse à l'axe), $b$ (distance centre à centre entre une petite masse et une grosse masse la plus proche), $M$ et $L$.
@@ -71,8 +80,10 @@ Dans ce TP, on utilise une balance de Cavendish de démonstration (deux petites 
 > Mesurer la période $T$ des oscillations du fléau sur $\approx3$ périodes (filmer le spot). Reprendre l'ensemble (retournements A, B, A, B) pour évaluer la dispersion.
 
 
+
 **q1.** Modèle. Deux masses $m$ sont placées aux extrémités d'un fléau de longueur $2r$ (masse négligée) suspendu à un fil de constante de torsion $\kappa$. Chaque petite masse subit de la part de la grosse masse la plus proche, à la distance $b$, la force $GMm/b^2$ (on néglige d'abord l'attraction de la grosse masse sur l'autre petite masse). À l'équilibre le fléau a tourné de l'angle $\theta$. Écrire l'équation d'équilibre des moments et la période $T$ des petites oscillations. En déduire
 $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
+
 
 > [!tip]- 💡 Coup de pouce
 > **Deux relations**
@@ -80,10 +91,14 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > Équilibre : $\kappa\theta=2r\times\dfrac{GMm}{b^2}$. Oscillations : $I\ddot\theta=-\kappa\theta$ avec $I=2mr^2$. Éliminer $\kappa$ pour que la masse $m$ disparaisse.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\kappa=\dfrac{4\pi^2I}{T^2}=\dfrac{8\pi^2mr^2}{T^2}$ et $\kappa\theta=\dfrac{2rGMm}{b^2}$, d'où $G=\dfrac{4\pi^2rb^2\theta}{MT^2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -95,12 +110,16 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > Remarque : la mesure de $G$ se ramène à la mesure d'un angle, d'une période et de longueurs ; on n'a besoin ni de $\kappa$ ni de $m$. C'est un avantage essentiel, puisque $\kappa$ (de l'ordre de $10^{-8}\ \text{N}\cdot\text{m}/\text{rad}$) est difficile à mesurer directement.
 
 
+
 **q2.** Levier optique. Un miroir solidaire du fléau renvoie un faisceau laser sur un écran situé à $L$ du miroir. Montrer qu'un retournement des grosses masses qui fait tourner le fléau de $2\theta$ déplace le spot de $\Delta s=4\theta L$. Application numérique pour $\Delta s=78\ \text{mm}$ et $L=3{,}00\ \text{m}$.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > Rotation du fléau : $2\theta$. Rotation du faisceau réfléchi : $4\theta$. Donc $\Delta s\approx4\theta L$ et $\theta=\dfrac{\Delta s}{4L}=6{,}5\ \text{mrad}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -111,7 +130,9 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > Ainsi $G=\dfrac{\pi^2rb^2\,\Delta s}{M\,L\,T^2}$. Le levier optique amplifie l'angle de $6{,}5\ \text{mrad}$ (déplacement du fléau de $r\theta\approx0{,}3\ \text{mm}$) en $78\ \text{mm}$ sur l'écran.
 
 
+
 **q3.** Correction de la géométrie. Les grosses masses attirent aussi la petite masse la plus éloignée, dont le moment s'oppose au moment principal. En plaçant chaque grosse masse à la distance $b$ perpendiculairement au fléau devant une petite masse, la distance à l'autre petite masse est $D=\sqrt{b^2+4r^2}$. Montrer que le moment total est $\Gamma=\dfrac{2rGMm}{b^2}(1-\beta)$ avec $\beta=\dfrac{b^3}{D^3}$. Calculer $\beta$ pour $b=46\ \text{mm}$ et $r=50\ \text{mm}$. Quelle conséquence sur $G$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Composante utile**
@@ -119,10 +140,14 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > La force de la grosse masse $A$ sur la petite masse éloignée fait un angle avec la perpendiculaire au fléau : sa composante utile est $\dfrac{GMm}{D^2}\times\dfrac{b}{D}$, avec un bras de levier $r$ et un signe opposé.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\beta=\dfrac{b^3}{(b^2+4r^2)^{3/2}}\approx0{,}073$. Sans correction, $G$ serait sous-estimée de $7{,}3\ \%$ ; la vraie valeur est $G=\dfrac{G_{\text{brut}}}{1-\beta}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -134,7 +159,9 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > Cette correction est un effet de $7\ \%$ : plus grande que l'incertitude statistique. Une critique sérieuse de l'expérience ne peut pas l'ignorer.
 
 
+
 **q4.** Calculer $G$ avec les données de l'énoncé, avant puis après correction. Estimer l'incertitude relative sur $G$ (i) par la méthode logarithmique en somme absolue (TD2 exercice 8), (ii) en somme quadratique (TD2 exercice 9). Comparer avec la valeur tabulée $6{,}674\times10^{-11}\ \text{N}\cdot\text{m}^2\cdot\text{kg}^{-2}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Exposants**
@@ -142,10 +169,14 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > $G\propto r\,b^2\,\Delta s\,M^{-1}L^{-1}T^{-2}$ : les exposants $1,2,1,-1,-1,-2$ pondèrent les incertitudes relatives (le facteur $1-\beta$ est traité à part).
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $G_{\text{brut}}\approx6{,}21\times10^{-11}$ et $G\approx6{,}70\times10^{-11}\ \text{N}\cdot\text{m}^2\cdot\text{kg}^{-2}$ après correction. $\dfrac{\Delta G}{G}\approx10{,}8\ \%$ (somme absolue) ou $5{,}5\ \%$ (somme quadratique). Résultat : $G=(6{,}7\pm0{,}4)\times10^{-11}$ en quadratique, compatible avec $6{,}674\times10^{-11}$ (écart $0{,}3\ \%$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -162,12 +193,16 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > La distance $b$ domine l'incertitude (elle intervient au carré et elle est mal définie, car $b$ dépend de la position exacte du fléau). Améliorer la mesure de $b$ est la priorité.
 
 
+
 **q5.** Critique des mesures. Pour chacune des sources suivantes, dire dans quel sens elle biaise $G$ et proposer une manière de la contrôler : (a) équilibre non atteint, (b) courants d'air et gradients thermiques, (c) forces électrostatiques, (d) attraction des murs, de la table et de l'opérateur, (e) fil de torsion non linéaire et dérive, (f) fléau de masse non nulle, (g) mesure de $b$.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (a) sous-estime $\Delta s$, donc $G$ ; ajuster l'équilibre par une loi sinusoïde amortie. (b) bruit et dérive ; boîtier fermé, pièce thermostatée, mesures de nuit. (c) forces parasites de charges statiques ; boîtier métallique relié à la terre, ne pas toucher le verre. (d) masses proches ; s'éloigner, opérer à distance en pilotant le retournement. (e) dérive lente ; comparer plusieurs cycles A-B-A-B. (f) $I$ plus grand, $T$ plus grand, $G$ surestimée ; l'inclure dans $I$. (g) $b$ étant au carré, dominante ; la mesurer avec un pied à coulisse à travers la vitre.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -182,12 +217,16 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > - **(g) $b$ :** $\dfrac{\Delta G}{G}=2\dfrac{\Delta b}{b}$. Une erreur de $1\ \text{mm}$ sur $46\ \text{mm}$ donne $4{,}3\ \%$.
 
 
+
 **q6.** Peser la Terre. Avec $g=9{,}81\ \text{m}\cdot\text{s}^{-2}$ et $R_T=6{,}371\times10^{6}\ \text{m}$, calculer la masse $M_T$ et la densité moyenne $\rho_T$ de la Terre à partir de votre valeur de $G$. Comparer avec la valeur de Cavendish ($5{,}45\ \text{g}\cdot\text{cm}^{-3}$) et avec les densités du granite ($2{,}7$) et du fer ($7{,}9$). Que peut-on en conclure sur l'intérieur de la Terre ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $M_T=\dfrac{gR_T^2}{G}\approx5{,}97\times10^{24}\ \text{kg}$ (avec $G=6{,}674\times10^{-11}$) et $\rho_T=\dfrac{3g}{4\pi GR_T}\approx5{,}5\times10^{3}\ \text{kg}\cdot\text{m}^{-3}$. Avec $G=6{,}70\times10^{-11}$ : $M_T\approx5{,}94\times10^{24}\ \text{kg}$ et $\rho_T\approx5{,}49\times10^{3}\ \text{kg}\cdot\text{m}^{-3}$. La densité moyenne est le double de celle du granite : l'intérieur est bien plus dense que la croûte (noyau de fer et de nickel).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -198,20 +237,29 @@ $$G=\frac{4\pi^2\,r\,b^2\,\theta}{M\,T^2}.$$
 > La croûte est constituée de roches de densité $2{,}7$ à $3{,}3$ ; la densité moyenne de $5{,}5$ impose donc un intérieur plus dense (noyau métallique de densité $10$ à $13$ vers le centre). C'est la conclusion de Cavendish en 1798 : la Terre n'est pas creuse et est bien plus dense que ses roches de surface.
 
 
-> [!note]- ✈️ Lien avec l'aviation
+
+
+> [!example]- ✈️ Application à l'aviation
 > **Gravimétrie aéroportée**
 >
 > La gravité varie avec l'altitude ($\approx3{,}1\times10^{-6}\ \text{m}\cdot\text{s}^{-2}$ par mètre) et avec la géologie. Les gravimètres embarqués et les centrales inertielles corrigent ces effets. Discuter pourquoi un instrument capable de mesurer $10^{-10}\ \text{N}$ doit être isolé des vibrations, et comparer avec un instrument d'avion.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Méthode dynamique et méthode d'accélération
 > Au lieu d'attendre l'équilibre, on peut mesurer la variation de période $T$ quand les grosses masses sont en position A ou B, ou l'accélération angulaire initiale du fléau. Ces méthodes évitent l'attente de l'équilibre mais sont plus sensibles au bruit.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Torsion non linéaire et frottements internes
 > Le fil de torsion présente de l'anélasticité : la position d'équilibre dérive lentement. Ajuster les données par une loi $s(t)=s_\infty+A\,e^{-t/\tau}\cos(2\pi t/T+\varphi)+\text{dérive linéaire}$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/ex3-densite-du-soleil-de-cavendish-au-stenope|Exercice 3 — Densité du Soleil : de Cavendish au sténopé]]
+
 

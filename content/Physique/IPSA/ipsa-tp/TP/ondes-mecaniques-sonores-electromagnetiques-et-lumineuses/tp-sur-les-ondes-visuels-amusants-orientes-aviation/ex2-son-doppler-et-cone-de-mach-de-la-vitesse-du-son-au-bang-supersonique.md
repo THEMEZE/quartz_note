@@ -13,19 +13,24 @@ tags:
 
 Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton au moment où il nous dépasse : c'est l'effet Doppler. Quand l'avion va plus vite que le son, il traîne derrière lui un cône d'ondes de choc, le **cône de Mach**, entendu au sol comme un « bang ». Ce TP reprend ces trois idées (vitesse du son, Doppler, Mach) avec un simple smartphone.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Notions**
 >
 > Célérité des ondes sonores $c=\sqrt{\gamma RT/M}$, fréquence et période, principe de Huygens pour la construction de fronts d'onde (cf. TD1 exercice 0).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Mesurer, comprendre et utiliser $c$**
 >
 > Mesurer $c$ en quelques mesures simples, retrouver la vitesse d'un mobile à partir du décalage de fréquence, et relier la géométrie du cône de Mach au nombre de Mach.
 
 
-> [!note]+ 🧰 Matériel
+
+
+> [!note]- 🧰 Matériel nécessaire
 > $2$ smartphones avec l'application phyphox (chronomètre acoustique, spectrogramme audio) ou une application d'analyse de fréquence
 >
 > Petit haut-parleur Bluetooth ou buzzer sur piles émettant une note pure (générateur de sons)
@@ -35,6 +40,8 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > Véhicule à vitesse mesurable (vélo avec compteur, voiture télécommandée, chariot)
 >
 > Compas, règle, papier millimétré ou feuille de calcul (pour la construction du cône de Mach)
+
+
 
 
 > [!danger] 🦺 Sécurité
@@ -47,7 +54,9 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > Ne pas dépasser $85\ \text{dB}$ à l'oreille pour la source sonore ; utiliser une fréquence de $2$ à $4\ \text{kHz}$ à faible volume.
 
 
-> [!note]+ 🔬 Manipulation
+
+
+> [!note]- 🔬 Manipulation
 > **1. Vitesse du son par écho ou par chronométrage**
 >
 > Deux options : (a) écho : se placer à $d=30\ \text{m}$ d'un grand mur, taper dans les mains et enregistrer le signal sur le smartphone ; mesurer le retard entre le claquement et l'écho ; (b) chronomètre acoustique : deux smartphones distants de $d$, le premier détecte un claquement et déclenche le chronomètre, le second l'arrête. Relever la température de l'air.
@@ -61,12 +70,16 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > Sur une feuille, construire les fronts d'onde émis à des instants successifs par une source qui avance sur l'axe horizontal à vitesse $v$, pour $M=v/c=0{,}5\ ;\ 1\ ;\ 2$ (prendre $c=1\ \text{cm}$ par unité de temps). Mesurer le demi-angle du cône pour $M=2$ et $M=3$.
 
 
+
 **q1.** (a) Calculer $c$ à partir des données de l'écho (le son fait un aller-retour). (b) Estimer l'incertitude en supposant $\Delta d=0{,}2\ \text{m}$ et $\Delta t=0{,}005\ \text{s}$. (c) Comparer avec la formule $c=331{,}3\sqrt{1+\theta/273{,}15}$. (d) Quelle est la variation de $c$ pour une température de $-56{,}5\ ^\circ\text{C}$ ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (a) $c=\dfrac{2d}{\Delta t}=\dfrac{60}{0{,}175}=343\ \text{m/s}$. (b) $\dfrac{\Delta c}{c}=\dfrac{0{,}2}{30}+\dfrac{0{,}005}{0{,}175}=0{,}7\ \%+2{,}9\ \%=3{,}5\ \%$ soit $\pm12\ \text{m/s}$. (c) $c(20\ ^\circ\text{C})=343{,}2\ \text{m/s}$ : accord parfait. (d) $c(-56{,}5\ ^\circ\text{C})=295\ \text{m/s}$, soit $14\ \%$ de moins.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -77,7 +90,9 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > Remarque : $c$ ne dépend que de la température (pas de la pression ni de la fréquence, en air sec), d'où le fait que la vitesse du son diminue avec l'altitude jusqu'à la tropopause.
 
 
+
 **q2.** Mach et altitude. Un avion de ligne vole à la vitesse vraie $v=236\ \text{m}\cdot\text{s}^{-1}$ ($850\ \text{km/h}$). Calculer son nombre de Mach (a) au niveau de la mer à $15\ ^\circ\text{C}$ et (b) à $11\ \text{km}$ où $\theta=-56{,}5\ ^\circ\text{C}$. Un chasseur croise à $M=1{,}5$ : calculer l'angle du cône de Mach. Concorde volait à $M=2{,}02$ à $18\ \text{km}$ d'altitude : à quelle distance derrière l'avion se situe le point du sol où l'on entend le bang au moment où l'avion est à la verticale de ce point ? (voir la construction de la question 4).
+
 
 > [!tip]- 💡 Coup de pouce
 > **Formule**
@@ -85,10 +100,14 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > $\sin\mu=\dfrac{1}{M}$. Le point du sol touché à l'instant $t$ par le cône est à la distance horizontale $\dfrac{h}{\tan\mu}$ derrière l'avion.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (a) $M=\dfrac{236}{340{,}3}=0{,}69$. (b) $M=\dfrac{236}{295{,}1}=0{,}80$. Chasseur : $\mu=\arcsin\dfrac{1}{1{,}5}=41{,}8^\circ$. Concorde : $\mu=29{,}7^\circ$ et $\dfrac{h}{\tan\mu}=\dfrac{18}{0{,}570}\approx31{,}6\ \text{km}$ : l'avion est déjà à $31{,}6\ \text{km}$ du point où l'on entend son bang.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -98,7 +117,9 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > $\mu=\arcsin\dfrac{1}{M}$ : $M=1{,}5\Rightarrow41{,}8^\circ$ ; $M=2{,}02\Rightarrow29{,}7^\circ$. Pour Concorde, l'onde de choc atteint le sol à la distance horizontale $x=\dfrac{h}{\tan\mu}=\dfrac{18\ \text{km}}{0{,}570}=31{,}6\ \text{km}$ derrière l'avion : l'observateur entend le bang bien après le passage.
 
 
+
 **q3.** Doppler. (a) Établir $f_a=\dfrac{f_0}{1-v/c}$ pour une source qui se rapproche d'un récepteur immobile, et $f_r=\dfrac{f_0}{1+v/c}$ pour un éloignement. (b) Montrer que $v=c\,\dfrac{f_a-f_r}{f_a+f_r}$ (indépendante de $f_0$). (c) Calculer $v$ avec les données ($c=343\ \text{m/s}$). (d) Déduire l'incertitude sur $v$ si $\Delta f=3\ \text{Hz}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Longueur d'onde reçue**
@@ -106,10 +127,14 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > Pendant une période $T_0$, la source parcourt $vT_0$. La longueur d'onde reçue est $\lambda_a=(c-v)T_0$, et $f_a=\dfrac{c}{\lambda_a}$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (a) $f_a=\dfrac{c}{(c-v)T_0}=\dfrac{f_0}{1-v/c}$ ; $f_r=\dfrac{f_0}{1+v/c}$. (b) $\dfrac{f_a-f_r}{f_a+f_r}=\dfrac{v}{c}$. (c) $v=343\times\dfrac{87}{6001}=4{,}97\ \text{m/s}$. (d) $\Delta v\approx0{,}3\ \text{m/s}$ ($5$ à $7\ \%$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -121,12 +146,16 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > (d) $\dfrac{\Delta v}{v}=\dfrac{\Delta(f_a-f_r)}{f_a-f_r}+\dots\approx\dfrac{6}{87}=7\ \%$ en somme absolue avec deux erreurs de $3\ \text{Hz}$ (ou $5\ \%$ en quadratique) : $v=(5{,}0\pm0{,}3)\ \text{m/s}$. Utiliser une fréquence plus élevée ou une vitesse plus grande améliore la précision relative.
 
 
+
 **q4.** Construction de Mach. Une source se déplace sur un axe à la vitesse $v=Mc$ et émet une impulsion à chaque instant $t_n=n\tau$. (a) Décrire les fronts à l'instant $t=5\tau$ pour $M=0{,}5$, $M=1$ et $M=2$ : la source est-elle devant ou derrière ses propres fronts ? (b) Montrer que pour $M>1$ l'enveloppe des fronts est un cône de demi-angle $\mu$ tel que $\sin\mu=\dfrac{c\,t}{v\,t}=\dfrac{1}{M}$. (c) Mesurer $\mu$ sur la construction pour $M=2$ et $M=3$ et comparer à $30^\circ$ et $19{,}5^\circ$.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $M<1$ : fronts non emboîtés, la source est à l'intérieur ; $M=1$ : tous les fronts tangents au point de la source (mur du son, accumulation d'énergie) ; $M>1$ : la source est en avance sur ses fronts, l'enveloppe est un cône de demi-angle $\sin\mu=1/M$ ($30^\circ$ pour $M=2$, $19{,}5^\circ$ pour $M=3$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -136,12 +165,16 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > En dimension $3$, les cercles sont des sphères et l'enveloppe est un cône de révolution : c'est le cône de Mach. La surface du cône est l'onde de choc, où la pression varie brusquement ; c'est le « bang » perçu par un observateur au sol quand le cône passe sur lui.
 
 
+
 **q5.** (*) Hélice. Une hélice de diamètre $D=1{,}9\ \text{m}$ tourne à $2500\ \text{tr/min}$ ; l'avion vole à $60\ \text{m}\cdot\text{s}^{-1}$ au niveau de la mer ($c=340\ \text{m/s}$). Calculer la vitesse en bout de pale et le nombre de Mach correspondant. Pourquoi la pointe des pales est-elle la partie la plus bruyante ? À quel régime le bout de pale atteindrait-il $M=1$ ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $v_{\text{rot}}=\pi Dn=\pi\times1{,}9\times41{,}7=249\ \text{m/s}$ ; vitesse totale $\sqrt{249^2+60^2}=256\ \text{m/s}$, $M=0{,}75$. Bout de pale à $M=1$ pour $v_{\text{rot}}=\sqrt{340^2-60^2}=335\ \text{m/s}$, soit $n=\dfrac{335}{\pi\times1{,}9}=56\ \text{tr/s}=3370\ \text{tr/min}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -151,16 +184,23 @@ Un avion qui passe au-dessus de nous fait entendre un son qui descend d'un ton a
 > La vitesse augmente avec le rayon : la pointe a la vitesse la plus grande, et donc l'écoulement y est le plus proche des effets de compressibilité (bruit, traînée d'onde). Au-delà de $M\approx0{,}85$ à $0{,}9$, des ondes de choc locales apparaissent et l'efficacité chute : c'est pourquoi les hélices modernes sont limitées à quelques milliers de tours par minute, ou à des pales fines, recourbées.
 
 
-> [!note]- ✈️ Lien avec l'aviation
+
+
+> [!example]- ✈️ Application à l'aviation
 > **Mach, altitude et hélices**
 >
 > Un avion de ligne croise à $M\approx0{,}8$. À $11\ \text{km}$ d'altitude, l'air est à $-56{,}5\ ^\circ\text{C}$ et $c\approx295\ \text{m}\cdot\text{s}^{-1}$ : la même vitesse vraie correspond à un Mach bien plus élevé qu'au sol. La vitesse au bout des pales d'une hélice combine rotation et avance : elle limite le régime moteur (bruit et perte d'efficacité quand $M_{\text{pale}}\to1$).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Doppler relativiste et Doppler en lumière
 > Pour la lumière, il n'y a pas de milieu : le décalage dépend de la vitesse relative $v$ et vaut $\dfrac{\Delta\lambda}{\lambda}\approx\dfrac{v}{c}$ pour $v\ll c$. Il sert au radar Doppler des aéroports et à la détection des vents.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Onde de choc et bang sonique
 > L'onde de choc forme une « onde en N » avec une surpression de l'ordre de $50$ à $100\ \text{Pa}$ pour un avion supersonique en croisière ; les niveaux dépendent fortement de l'altitude, de la forme et de la vitesse.
+
 

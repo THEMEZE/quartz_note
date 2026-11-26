@@ -7,8 +7,10 @@ tags:
 
 [[physique/IPSA/ipsa-mecanique-point/index|⬅ Mécanique du point — IPSA]]
 
+
 > [!info] ℹ️ Chap. 1 — Cinématique du point matériel
 > Séance 3
+
 
 
 <a href="/pdfs/td3_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td3_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>

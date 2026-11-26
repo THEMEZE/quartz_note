@@ -11,7 +11,8 @@ tags:
 
 *⭐ Indispensable · Difficulté ●●○○○ · ⏱ 25 min · Type : Révision*
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > - **Grandeurs fondamentales du S.I.**
 >
 >
@@ -32,7 +33,9 @@ tags:
 > - Savoir convertir une grandeur d'une unité à une autre et comprendre qu'une conversion de surface ou de volume doit également tenir compte de la puissance associée à l'unité.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > - **Identifier une grandeur dérivée**
 >
 >
@@ -55,7 +58,9 @@ tags:
 > - Savoir convertir correctement des unités de longueur, de surface, de volume et de vitesse, notamment entre $\mathrm{km/h}$ et $\mathrm{m/s}$.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > - **Grandeurs fondamentales et grandeurs dérivées**
 >
 >
@@ -142,6 +147,7 @@ tags:
 >         \]
 
 
+
 **q1_intro.** **Notions de cours S.I.**\\
 
 
@@ -156,6 +162,7 @@ tags:
 
 (e) Connaissant l’unité de la vitesse, peut on retrouver sa dimension ?
 
+
 > [!success]- ✅ Correction
 > (a) Une **grandeur dérivée** s'exprime à partir des grandeurs fondamentales.
 >       Exemple : le volume $[V] = L^3$ ; la vitesse : $[v] = L * T^{-1}$
@@ -169,11 +176,14 @@ tags:
 > (e) Oui, $m/s$ correspond bien à $L * T^{-1}$.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > Une **grandeur dérivée** (ou composée) est une grandeur physique définie à partir des grandeurs de base du Système international (SI) — comme la longueur, la masse ou le temps — en utilisant des relations mathématiques (multiplications ou divisions).
 > Par opposition aux sept grandeurs de base qui sont indépendantes, les grandeurs dérivées s'expriment à l'aide d'une équation aux dimensions qui combine ces grandeurs fondamentales.
 >
 > $$\begin{array}{l l l l} \textbf{Grandeur} & \textbf{Formule / Définition} & \textbf{Dimension} & \textbf{Unités S.I. et autres} \\ \hline \textbf{Vitesse} & v = \frac{d}{t} & \mathsf{L}\ast\mathsf{T}^{-1} & \text{m}\cdot\text{s}^{-1} \\ \textbf{Surface (Aire)} & S = L \times l & \mathsf{L}^2 & \text{m}^2 \\ \textbf{Volume} & V = L \times l \times h & \mathsf{L}^3 & \text{m}^3 \\ \textbf{Masse volumique} & \rho = \frac{m}{V} & \mathsf{M}\ast\mathsf{L}^{-3} & \text{kg}\cdot\text{m}^{-3} \\ \hline \textbf{Force} & F = m \times a & \mathsf{M}\ast\mathsf{L}\ast\mathsf{T}^{-2} & \text{N} \quad (\text{kg}\cdot\text{m}\cdot\text{s}^{-2}) \\ \textbf{Pression} & P = \frac{F}{S} & \mathsf{M}\ast\mathsf{L}^{-1}\ast\mathsf{T}^{-2} & \text{Pa} \quad (\text{kg}\cdot\text{m}^{-1}\cdot\text{s}^{-2}) \\ \textbf{Énergie / Travail} & E = F \times d & \mathsf{M}\ast\mathsf{L}^2\ast\mathsf{T}^{-2} & \text{J} \quad (\text{kg}\cdot\text{m}^2\cdot\text{s}^{-2}) \\ \textbf{Puissance} & P = \frac{E}{t} & \mathsf{M}\ast\mathsf{L}^2\ast\mathsf{T}^{-3} & \text{W} \quad (\text{kg}\cdot\text{m}^2\cdot\text{s}^{-3}) \end{array}$$
+
 
 
 **q2.** **Équation aux dimensions d’une grandeur à partir de sa relation de définition.**\\
@@ -215,6 +225,7 @@ On considère les grandeurs dérivées dans le tableau ci-dessous. Établir leur
       \text{**Table 3 :** Savoir retrouver rapidement la dimension et l’unité SI d’une grandeur dérivée}
     \end{center}
 
+
 > [!tip]- 💡 Coup de pouce
 > Méthode pour établir l’équation aux dimensions d’une grandeur :
 >
@@ -222,6 +233,8 @@ On considère les grandeurs dérivées dans le tableau ci-dessous. Établir leur
 > - exprimer la grandeur à l’aide d’une formule simple ou une relation de définition
 > - exprimer les dimensions des grandeurs intervenant dans la formule précédente
 > - conclure sur la dimension de la grandeur recherchée
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -261,6 +274,7 @@ On considère les grandeurs dérivées dans le tableau ci-dessous. Établir leur
 > \end{center}
 
 
+
 **q3.** **Équation aux dimensions d’une grandeur à partir de son unité.**\\
 
 Trouver l’équation aux dimensions d’une grandeur peut se faire simplement en analysant son unité si on la connaît.
@@ -281,8 +295,11 @@ Trouver l’équation aux dimensions d’une grandeur peut se faire simplement e
     $$
     }
 
-> [!note]+ 📖 Point de cours
+
+> [!tip]- 📖 Rappel de cours
 > L'unité S.I. traduit directement la dimension : m donne L, kg donne M, s donne T, mol donne N.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -303,6 +320,7 @@ Trouver l’équation aux dimensions d’une grandeur peut se faire simplement e
 > \begin{center}
 >   \text{**Table 4 :** Savoir retrouver rapidement la dimension d’une grandeur connaissant son unité !!}
 > \end{center}
+
 
 
 **q4.** **Unités dérivées et conversion.**\\
@@ -354,8 +372,11 @@ Convertir les grandeurs suivantes dans l'unité demandée : (a) $8*10^{-6} ~ m^2
 
 }
 
-> [!note]+ 📖 Point de cours
+
+> [!tip]- 📖 Rappel de cours
 > Pour élever une conversion au carré ou au cube, la puissance de 10 associée au préfixe est également élevée à cette puissance : $(10^{-3} ~ m)^3 = 10^{-9} ~ m^3$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -407,6 +428,8 @@ Convertir les grandeurs suivantes dans l'unité demandée : (a) $8*10^{-6} ~ m^2
 > - Pour passer de **$\mathrm{m/s}$ à $\mathrm{km/h}$**, on multiplie par $3{,}6$.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > {
 > %\fontsize{10pt}{10pt}\selectfont
@@ -443,11 +466,15 @@ Convertir les grandeurs suivantes dans l'unité demandée : (a) $8*10^{-6} ~ m^2
 > \end{center}
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Vérifier la cohérence d'une formule
 
 > Utiliser les dimensions pour vérifier qu'une relation physique est
 > homogène. Par exemple, comparer les dimensions des deux membres d'une
 > équation avant de rechercher une valeur numérique.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Analyse dimensionnelle
@@ -457,11 +484,15 @@ Convertir les grandeurs suivantes dans l'unité demandée : (a) $8*10^{-6} ~ m^2
 > dimensions.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Système international et unités dérivées
 
 > Étudier plus systématiquement les sept grandeurs fondamentales du S.I.
 > et les unités dérivées associées. Relier les dimensions des grandeurs
 > mécaniques aux unités telles que le newton, le joule, le watt et le pascal.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Analyse dimensionnelle et lois d'échelle
@@ -471,6 +502,9 @@ Convertir les grandeurs suivantes dans l'unité demandée : (a) $8*10^{-6} ~ m^2
 > différents régimes physiques et de construire des modèles réduits.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex1-grandeurs-physiques-fondamentales-dimensions-et-unites-de-base|Exercice 1 — Grandeurs physiques fondamentales : dimensions et unités de base]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex3-homogeneite-et-analyse-dimensinnelle|Exercice 3 — Homogénéité et Analyse Dimensinnelle]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex4-lois-et-constantes-fondamentales-en-physiques|Exercice 4 — Lois et Constantes Fondamentales en physiques]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex5-l-analyse-dimensionnelle-comme-outil-de-prediction|Exercice 5 — L'analyse dimensionnelle comme outil de prédiction]]
+
 

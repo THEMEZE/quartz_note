@@ -15,7 +15,8 @@ On reprend les deux cordes de l'exercice 2, de même tension $F=400\ \text{N}$ e
 
 Une onde sinusoïdale incidente $\underline{y}_i=e^{\,j(\omega t-k_1x)}$ arrive de la corde 1 ($x<0$). On cherche à supprimer la réflexion en intercalant entre les deux cordes un segment de corde de longueur $d$ et de masse linéique $\mu_m$ (soumis à la même tension $F$), analogue mécanique du traitement antireflet d'une lentille optique.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Comment supprimer une réflexion ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -27,16 +28,22 @@ Une onde sinusoïdale incidente $\underline{y}_i=e^{\,j(\omega t-k_1x)}$ arrive 
 > En intercalant une lame d'épaisseur $\lambda_m/4$ d'impédance $Z_m=\sqrt{Z_1Z_2}$ (soit $\mu_m=\sqrt{\mu_1\mu_2}$), les deux ondes réfléchies ($x=0$ et $x=d$) sont en opposition de phase et s'annulent : $\underline r=0$. L'adaptation est **à bande étroite**, parfaite à $f_0=c_m/(4d)$ et à ses multiples impairs.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercices 5, 7 et 10**
 >
 > Conditions aux limites en régime sinusoïdal, impédance caractéristique, coefficients de réflexion et transmission.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Adapter deux milieux**
 >
 > Calculer les coefficients à une interface, puis étudier une couche intermédiaire d'épaisseur $\lambda_m/4$ qui annule la réflexion. Comprendre le rôle de la fréquence et de l'épaisseur.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -65,15 +72,19 @@ Une onde sinusoïdale incidente $\underline{y}_i=e^{\,j(\omega t-k_1x)}$ arrive 
 > $\dfrac{1-\underline r}{1+\underline r}=\rho\Rightarrow\underline r=\dfrac{1-\rho}{1+\rho}$. Pour $R+T=1$ : $(Z_1-Z_2)^2+4Z_1Z_2=(Z_1+Z_2)^2$.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Astuce sur les nombres d'onde**
 >
 > Puisque $F$ est la même partout, $k_i=\omega\sqrt{\mu_i/F}=\omega Z_i/F$ : les nombres d'onde sont proportionnels aux impédances.
 
 
+
 **q1.** Interface simple (sans lame). Écrire les conditions de continuité en $x=0$ pour l'onde incidente $\underline{y}_i$, l'onde réfléchie $\underline{r}\,e^{\,j(\omega t+k_1x)}$ et l'onde transmise $\underline{\tau}\,e^{\,j(\omega t-k_2x)}$. En déduire
 $$\underline{r}=\frac{Z_1-Z_2}{Z_1+Z_2},\qquad\underline{\tau}=\frac{2Z_1}{Z_1+Z_2}.$$
 Calculer les coefficients de réflexion et de transmission en puissance $R$ et $T$ (rappel : $T=\dfrac{Z_2}{Z_1}|\underline{\tau}|^2$) pour les deux cordes de l'énoncé. Vérifier $R+T=1$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Continuité**
@@ -81,10 +92,14 @@ Calculer les coefficients de réflexion et de transmission en puissance $R$ et $
 > $y$ continue : $1+\underline{r}=\underline{\tau}$. $\partial_x y$ continue : $k_1(1-\underline{r})=k_2\underline{\tau}$. Utiliser $k_i\propto Z_i$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\underline{r}=\dfrac{Z_1-Z_2}{Z_1+Z_2}=\dfrac{1-\sqrt2}{1+\sqrt2}\approx-0{,}172$ ; $R=\underline{r}^2\approx2{,}9\ \%$ et $T=\dfrac{4Z_1Z_2}{(Z_1+Z_2)^2}\approx97{,}1\ \%$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -98,9 +113,11 @@ Calculer les coefficients de réflexion et de transmission en puissance $R$ et $
 > Le signe négatif de $\underline{r}$ indique une inversion du signe de l'onde, car on passe d'une corde légère à une corde plus lourde.
 
 
+
 **q2.** On insère entre $x=0$ et $x=d$ un segment de corde $m$ (impédance $Z_m$, nombre d'onde $k_m$). Dans ce segment, $\underline{Y}(x)$ (amplitude complexe) vérifie $\underline{Y}''+k_m^2\underline{Y}=0$. Pour $x>d$ on a seulement une onde transmise : $\underline{Y}(x)=\underline{\tau}\,e^{-jk_2x}$. On choisit $d=\lambda_m/4$ (c'est-à-dire $k_md=\pi/2$).
 Montrer que $\underline{Y}(d)=\underline{Y}'(0)/k_m$ et $\underline{Y}'(d)=-k_m\underline{Y}(0)$. En écrivant la continuité de $\underline{Y}$ et de $\underline{Y}'$ en $x=d$, puis en $x=0$, établir
 $$\frac{1-\underline{r}}{1+\underline{r}}=\frac{Z_m^2}{Z_1Z_2}.$$
+
 
 > [!tip]- 💡 Coup de pouce
 > **Solution dans la lame**
@@ -112,10 +129,14 @@ $$\frac{1-\underline{r}}{1+\underline{r}}=\frac{Z_m^2}{Z_1Z_2}.$$
 > En $x=d$, $\underline{Y}'(d)=-jk_2\underline{Y}(d)$ (car il n'y a que l'onde progressive $e^{-jk_2x}$). En $x=0^-$ : $\underline{Y}(0)=1+\underline{r}$ et $\underline{Y}'(0)=-jk_1(1-\underline{r})$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\underline{Y}(d)=\underline{Y}'(0)/k_m$ et $\underline{Y}'(d)=-k_m\underline{Y}(0)$. La condition en $d$ donne $\underline{Y}'(0)/\underline{Y}(0)=-jk_m^2/k_2$, soit $\dfrac{1-\underline{r}}{1+\underline{r}}=\dfrac{k_m^2}{k_1k_2}=\dfrac{Z_m^2}{Z_1Z_2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -129,12 +150,16 @@ $$\frac{1-\underline{r}}{1+\underline{r}}=\frac{Z_m^2}{Z_1Z_2}.$$
 > Avec $\rho=\dfrac{Z_m^2}{Z_1Z_2}$ : $\underline{r}=\dfrac{1-\rho}{1+\rho}=\dfrac{Z_1Z_2-Z_m^2}{Z_1Z_2+Z_m^2}$.
 
 
+
 **q3.** En déduire la condition d'adaptation, l'expression de $\mu_m$ en fonction de $\mu_1$ et $\mu_2$ et la valeur numérique de $\mu_m$. Calculer la célérité $c_m$ dans la lame, puis la longueur $d$ pour une adaptation parfaite à $f_0=1000\ \text{Hz}$. À quelles autres fréquences la réflexion est-elle nulle ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\underline{r}=0\Leftrightarrow Z_m^2=Z_1Z_2$, soit $\mu_m=\sqrt{\mu_1\mu_2}\approx1{,}98\times10^{-4}\ \text{kg/m}$. $c_m=\sqrt{c_1c_2}\approx1421\ \text{m/s}$ et $d=\dfrac{c_m}{4f_0}\approx35{,}5\ \text{cm}$. La réflexion est nulle aux fréquences $f_p=(2p+1)f_0$ ($p\in\mathbb{N}$) : $1000$, $3000$, $5000\ \text{Hz},\dots$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -147,14 +172,18 @@ $$\frac{1-\underline{r}}{1+\underline{r}}=\frac{Z_m^2}{Z_1Z_2}.$$
 > Le segment coûte peu : la puissance transmise passe de $97{,}1\ \%$ à $100\ \%$ à $f_0$.
 
 
+
 **q4.** (*) Pour une longueur $d$ quelconque, on admet que
 $$\frac{1-\underline{r}}{1+\underline{r}}=\frac{Z_m}{Z_1}\,\frac{Z_2\cos\varphi+jZ_m\sin\varphi}{Z_m\cos\varphi+jZ_2\sin\varphi},\qquad\varphi=k_md.$$
 Vérifier que cette expression redonne (i) le résultat de la question 1 pour $d=0$ et (ii) celui de la question 2 pour $\varphi=\pi/2$. Puis, avec $d$ fixée par la question 3 et $Z_m$ adapté, on donne la valeur de $R$ pour $\varphi=\pi/4$ ($f=f_0/2$), $\pi/2$ ($f=f_0$), $3\pi/4$ ($f=3f_0/2$) et $\pi$ ($f=2f_0$) : $R\approx1{,}5\ \%$, $0$, $1{,}5\ \%$ et $2{,}9\ \%$. Commenter.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (i) $\varphi=0$ : $\dfrac{1-\underline{r}}{1+\underline{r}}=\dfrac{Z_m}{Z_1}\dfrac{Z_2}{Z_m}=\dfrac{Z_2}{Z_1}$, soit $\underline{r}=\dfrac{Z_1-Z_2}{Z_1+Z_2}$. (ii) $\varphi=\pi/2$ : $\dfrac{Z_m}{Z_1}\dfrac{jZ_m}{jZ_2}=\dfrac{Z_m^2}{Z_1Z_2}$. La lame est efficace autour de $f_0$ ($R\le1{,}5\ \%$ pour $f_0/2\le f\le3f_0/2$) et sans effet pour $f=2f_0$ (lame demi-onde : elle est « invisible », on retrouve $R=2{,}9\ \%$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -166,7 +195,9 @@ Vérifier que cette expression redonne (i) le résultat de la question 1 pour $d
 > Commentaire : à la fréquence de conception $f_0$, la réflexion est nulle ; elle reste inférieure à $1{,}5\ \%$ pour $f_0/2\le f\le3f_0/2$ et ne dépasse jamais la valeur $R_0=2{,}9\ \%$ sans lame. Pour $f=2f_0$, $\varphi=\pi$ : la lame est une demi-onde et se comporte comme si elle n'existait pas ($R=R_0=2{,}9\ \%$). L'adaptation est donc à bande étroite ; en élargissant la bande avec plusieurs lames, on obtient une transmission très proche de $1$ sur un large intervalle de fréquences.
 
 
+
 **q5.** (*) Fonctionnement en impulsion. Pourquoi une impulsion brève ne peut-elle pas être parfaitement adaptée par la lame quart d'onde de la question 3 ? Que se passe-t-il pour la partie de l'impulsion réfléchie sur chaque interface ? Estimer le retard entre les deux échos.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
@@ -174,10 +205,14 @@ Vérifier que cette expression redonne (i) le résultat de la question 1 pour $d
 > Une impulsion brève contient un large spectre de fréquences, alors que l'adaptation est parfaite seulement à $f_0$ et ses multiples impairs. Deux échos apparaissent, réfléchis à $x=0$ et $x=d$, séparés par $\Delta t=\dfrac{2d}{c_m}=\dfrac{1}{2f_0}=0{,}5\ \text{ms}$ ; ils sont de même signe : pour une impulsion, ils ne s'annulent pas. Ils ne se compensent que pour une sinusoïde de fréquence $f_0$, car le retard $\Delta t$ vaut alors une demi-période.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Discussion**
 >
 > Les deux interfaces réfléchissent avec des coefficients de même signe : $\underline{r}_{1m}=\dfrac{Z_1-Z_m}{Z_1+Z_m}\approx-0{,}086$ (corde 1 / lame) et $\underline{r}_{m2}=\dfrac{Z_m-Z_2}{Z_m+Z_2}\approx-0{,}086$ (lame / corde 2). Le second écho a parcouru en plus un aller-retour $2d=\lambda_m/2$ dans la lame, soit un retard $\Delta t=\dfrac{2d}{c_m}=\dfrac{T_0}{2}=0{,}5\ \text{ms}$ à $f_0$. Pour une sinusoïde de fréquence $f_0$, ce retard correspond à un déphasage de $\pi$ : les deux ondes réfléchies sont en opposition de phase et s'annulent (interférences en couches minces, comme pour un traitement antireflet en optique). Pour une impulsion de durée très inférieure à $\Delta t=0{,}5\ \text{ms}$, les deux échos sont distincts et de même signe : rien ne s'annule et l'énergie réfléchie totale est proche de celle sans lame. La compensation est un effet spectral, limité au voisinage de $f_0$.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -202,14 +237,19 @@ Vérifier que cette expression redonne (i) le résultat de la question 1 pour $d
 > L'adaptation à bande étroite se comprend par le spectre : une impulsion brève est composée de nombreuses fréquences, dont seule une partie est adaptée. L'élargissement de la bande demande plusieurs lames étagées.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Bande passante et lames multiples
 > Avec plusieurs lames quart d'onde d'impédances étagées (adaptation de Chebyshev ou binomiale), on élargit la bande de fréquences où $R$ reste faible. C'est le principe des adaptateurs d'impédance en hyperfréquences.
+
 
 
 **S'entraîner sur cet exercice (QCM)**
 
 <a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener">td1_qcm — 3 questions</a><br><a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjQiIGhlaWdodD0iMTY0IiBjbGFzcz0ic2Vnbm8iPjxwYXRoIHRyYW5zZm9ybT0ic2NhbGUoNCkiIGNsYXNzPSJxcmxpbmUiIHN0cm9rZT0iIzE2MzIzZiIgZD0iTTIgMi41aDdtMSAwaDRtMiAwaDNtMSAwaDJtNCAwaDJtMSAwaDFtMiAwaDdtLTM3IDFoMW01IDBoMW05IDBoM20xIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW01IDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGgxbTIgMGgzbTEgMGg1bTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgxbTEgMGgzbTEgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMSAwaDNtMiAwaDFtNCAwaDJtMyAwaDVtMiAwaDFtMSAwaDNtMSAwaDFtLTM3IDFoMW0xIDBoM20xIDBoMW0xIDBoMW00IDBoMW0xIDBoMW0yIDBoMW0yIDBoMW0xIDBoMW0yIDBoM20xIDBoMW0xIDBoM20xIDBoMW0tMzcgMWgxbTUgMGgxbTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgybTEgMGgybTEgMGgybTIgMGgxbTIgMGgxbTEgMGgxbTUgMGgxbS0zNyAxaDdtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDdtLTI5IDFoNm0yIDBoM20zIDBoMm0yIDBoMW0xIDBoMW0tMjkgMWgxbTMgMGgxbTEgMGgzbTEgMGgzbTEgMGgxbTMgMGgybTIgMGgxbTEgMGgxbTQgMGg1bTIgMGgxbS0zNSAxaDFtNSAwaDFtMSAwaDVtMSAwaDJtMSAwaDNtMiAwaDFtMiAwaDJtMyAwaDRtLTM2IDFoNG0yIDBoMm0zIDBoNG0xIDBoM20xIDBoOG0xIDBoMW0xIDBoMW0yIDBoMW0tMzUgMWgxbTIgMGgybTQgMGgybTEgMGgybTMgMGgybTIgMGgxbTEgMGgybTUgMGgzbTEgMGgybS0zNiAxaDJtMiAwaDFtMSAwaDFtMSAwaDFtMiAwaDJtMiAwaDVtMSAwaDRtMiAwaDVtMiAwaDNtLTM3IDFoMW0xIDBoMW0xIDBoMm0xIDBoMW0zIDBoMW0xIDBoMW0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMm0tMzQgMWgybTEgMGgybTEgMGgxbTEgMGgxbTEgMGgybTEgMGgzbTIgMGgxbTEgMGg0bTIgMGgxMG0tMzUgMWgybTIgMGgxbTMgMGgxbTEgMGgxbTIgMGgzbTIgMGgzbTIgMGgxbTYgMGgybTEgMGgxbS0zNSAxaDJtNCAwaDFtMiAwaDNtMyAwaDJtMyAwaDFtMyAwaDFtMiAwaDVtMSAwaDRtLTM1IDFoNG0xIDBoMW0xIDBoNG00IDBoM20xIDBoM20xIDBoM20xIDBoMW0xIDBoNW0tMzYgMWgybTMgMGg1bTMgMGgzbTIgMGgybTMgMGgzbTEgMGgxbTIgMGgzbS0zMiAxaDFtMSAwaDNtMSAwaDFtMiAwaDFtMSAwaDFtMSAwaDhtNCAwaDFtMyAwaDFtMyAwaDJtLTM2IDFoMm0xIDBoNG0xIDBoMm0xIDBoMW0yIDBoMW0yIDBoMW0yIDBoM200IDBoMW0xIDBoM20yIDBoMW0tMzIgMWgxbTEgMGgxbTEgMGgybTEgMGgxbTIgMGg0bTMgMGgybTEgMGgxbTEgMGgzbTEgMGgxbTEgMGgybS0zMyAxaDJtMSAwaDJtMSAwaDJtMyAwaDFtMSAwaDNtMSAwaDFtNSAwaDJtMSAwaDJtMSAwaDFtMSAwaDRtLTMzIDFoMW0xIDBoMm00IDBoNW0xIDBoNG0yIDBoM20zIDBoMm0xIDBoMm0xIDBoMW0tMzQgMWgybTMgMGgxbTEgMGgybTEgMGg0bTMgMGgybTIgMGgxbTEgMGgxbTEgMGgxbTIgMGgybTIgMGg0bS0zNyAxaDFtMiAwaDFtMSAwaDFtNCAwaDFtMyAwaDFtMSAwaDFtMiAwaDNtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMiAwaDNtLTMzIDFoNm0xIDBoNW0yIDBoMm0yIDBoMW0yIDBoMm0xIDBoMm0zIDBoMW0xIDBoMW0tMzIgMWgxbTEgMGgxbTIgMGgybTEgMGgxbTIgMGgybTIgMGgxbTMgMGgzbTIgMGgzbTIgMGgxbTIgMGgzbS0zNyAxaDNtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDZtMSAwaDFtMSAwaDFtMiAwaDFtMyAwaDVtMSAwaDFtMSAwaDFtLTI5IDFoMm0yIDBoMm0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMW0yIDBoMW0tMzYgMWg3bTEgMGgxbTEgMGgxbTQgMGgxbTIgMGgxbTIgMGg0bTMgMGgxbTEgMGgxbTEgMGgxbS0zMyAxaDFtNSAwaDFtMiAwaDFtMyAwaDFtMSAwaDJtMiAwaDNtMSAwaDJtMSAwaDFtMSAwaDFtMyAwaDNtLTM1IDFoMW0xIDBoM20xIDBoMW0xIDBoMm0yIDBoMW0yIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW0yIDBoN20xIDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGg0bTMgMGgzbTEgMGgzbTEgMGgxbTIgMGg0bTEgMGgxbTIgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMiAwaDVtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDJtMSAwaDNtMSAwaDFtMiAwaDJtLTM1IDFoMW01IDBoMW0yIDBoMW0xIDBoN20xIDBoNG0xIDBoMW0yIDBoMW0xIDBoMW0yIDBoMW0xIDBoMm0tMzYgMWg3bTEgMGgxbTEgMGgybTEgMGgxbTIgMGgybTIgMGg1bTEgMGgybTEgMGgxbTEgMGgxbTIgMGgzIi8+PC9zdmc+Cg==" width="110" height="110" alt="QR code : td1_qcm — 3 questions" style="image-rendering:pixelated"></a>
 
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex3-celerite-d-une-onde-sur-une-corde-homogene|Exercice 3 — Célérité d’une onde sur une corde homogène]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex11-une-perle-sur-la-corde-reflexion-transmission-et-filtre-passe-bas-mecanique|Exercice 11 — Une perle sur la corde : réflexion, transmission et filtre passe-bas mécanique]] · [[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex1-ondes-sur-un-ressort-long-slinky-filmees-au-ralenti-impulsions-reflexions-et-modes-propres|Exercice 1 — Ondes sur un ressort long (Slinky) filmées au ralenti : impulsions, réflexions et modes propres]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex8-energie-et-puissance-d-une-onde-sur-une-corde-impedance-caracteristique|Exercice 8 — Énergie et puissance d'une onde sur une corde : impédance caractéristique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex5-corde-fixee-a-ses-deux-extremites-et-ondes-stationnaires|Exercice 5 — Corde fixée à ses deux extrémités et ondes stationnaires]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex1-partie-a-modes-propres-d-un-ressort-helicoidal-ondes-longitudinales|Exercice 1 — Partie A — Modes propres d'un ressort hélicoïdal (ondes longitudinales)]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex4-partie-d-compatibilite-des-longueurs-d-onde-avec-le-modele-des-modes-propres|Exercice 4 — Partie D — Compatibilité des longueurs d'onde avec le modèle des modes propres]]
+
 

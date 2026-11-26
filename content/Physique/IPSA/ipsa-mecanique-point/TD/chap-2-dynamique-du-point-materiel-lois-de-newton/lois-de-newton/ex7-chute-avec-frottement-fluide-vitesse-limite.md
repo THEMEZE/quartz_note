@@ -13,7 +13,8 @@ tags:
 
 Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide visqueux (huile). En plus de son poids, elle subit une force de frottement fluide $\vec f=-\lambda\,\vec v$ avec $\lambda=0{,}50~\mathrm{kg\,s^{-1}}$. On néglige la poussée d'Archimède. On prendra $g=9{,}81~\mathrm{m\,s^{-2}}$. L'axe $Oz$ est vertical **descendant**, l'origine $O$ est le point de lâcher, et $t=0$ est l'instant du lâcher.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi une bille ne tombe-t-elle pas de plus en plus vite dans l'huile ?**
 >
 > *Durée de l'introduction : 4 min*
@@ -23,7 +24,9 @@ Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide vi
 > **Idée clé : le frottement croît avec la vitesse jusqu'à compenser le poids.** $m\dot v=mg-\lambda v$. À la vitesse limite, $\dot v=0$ donc $v_\ell=mg/\lambda$. La solution $v=v_\ell(1-\mathrm e^{-t/\tau})$ approche $v_\ell$ avec le temps caractéristique $\tau=m/\lambda$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Équation différentielle linéaire du premier ordre**
 >
 > $\dfrac{\mathrm dv}{\mathrm dt}+\dfrac v\tau=\dfrac{v_\ell}\tau$ a pour solution générale $v(t)=v_\ell+C\,\mathrm e^{-t/\tau}$ ; la constante $C$ est fixée par la condition initiale. Le temps $\tau$ est le temps caractéristique de relaxation.
@@ -33,22 +36,30 @@ Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide vi
 > $\displaystyle\int\mathrm e^{-t/\tau}\,\mathrm dt=-\tau\,\mathrm e^{-t/\tau}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Résoudre un mouvement à accélération non constante**
 >
 > Savoir établir l'équation différentielle de la vitesse, la résoudre avec la condition initiale, identifier la vitesse limite et le temps caractéristique, intégrer pour obtenir la position, et vérifier les cas limites (temps courts : chute libre ; temps longs : vitesse limite).
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Premier mouvement non uniformément accéléré du cours**
 >
 > Jusqu'ici l'accélération était constante : ici elle décroît de $g$ à $0$. L'exercice introduit l'équation différentielle, le temps caractéristique $\tau=m/\lambda$ et la vitesse limite $v_\ell=mg/\lambda$ (que l'on peut obtenir **sans résoudre l'équation** en posant $\mathrm dv/\mathrm dt=0$). La question (g) (lancer vers le haut) rend l'exercice difficile : la hauteur maximale se calcule exactement et on vérifie que la limite $\lambda\to0$ redonne $v_0^2/(2g)$ — un bon exemple de test par cas limite.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Chute avec frottement linéaire**
 >
 > $m\dot v=mg-\lambda v\Rightarrow v(t)=v_\ell\big(1-\mathrm e^{-t/\tau}\big)$ avec $\tau=\dfrac m\lambda$, $v_\ell=\dfrac{mg}\lambda=g\tau$. Position : $z(t)=v_\ell\big[t-\tau(1-\mathrm e^{-t/\tau})\big]$. À $t\ll\tau$ : $v\approx gt$ (chute libre) ; à $t\gg\tau$ : $v\approx v_\ell$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -69,16 +80,22 @@ Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide vi
 > Méthode d'Euler : $v_{n+1}=v_n+\big(g-v_n/\tau\big)\Delta t$ avec $\Delta t\ll\tau$ ; à comparer à la solution analytique.
 
 
+
 **q1.** - [(a)] Établir l'équation différentielle vérifiée par la vitesse $v(t)=\dot z$ de la bille.
 - [(b)] Sans résoudre l'équation, déterminer la vitesse limite $v_\ell$ et le temps caractéristique $\tau$. Applications numériques.
 - [(c)] Résoudre l'équation avec la condition initiale. Tracer $v(t)$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Avec $Oz$ descendant : poids $+mg$, frottement $-\lambda v$. La vitesse limite correspond à $\mathrm dv/\mathrm dt=0$. Solution de la forme $v=v_\ell+C\mathrm e^{-t/\tau}$.
 
 
+
+
 > [!success]- ✅ Correction
 > $m\dot v+\lambda v=mg$ ; $v_\ell=mg/\lambda\approx0{,}98$ m/s, $\tau=m/\lambda=0{,}10$ s ; $v=v_\ell(1-\mathrm e^{-t/\tau})$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -98,16 +115,22 @@ Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide vi
 > Courbe : part de $0$ avec la pente $g$ (tangente $v=gt$), croît en concavité vers le bas, tend vers l'asymptote horizontale $v_\ell$. À $t=\tau$ : $63\%$ de $v_\ell$ ($0{,}62$ m/s) ; à $t=0{,}2$ s : $0{,}85$ m/s.
 
 
+
 **q2.** - [(d)] Déterminer $z(t)$. Quelle distance la bille a-t-elle parcourue au bout de $0{,}50$ s ?
 - [(e)] À quel instant la vitesse atteint-elle $99\%$ de $v_\ell$ ? Quelle distance a été parcourue alors ?
 - [(f)] Montrer que pour $t\ll\tau$ on retrouve la chute libre.
+
 
 > [!tip]- 💡 Coup de pouce
 > Intégrez $v(t)$ avec $z(0)=0$. Pour (e), résolvez $\mathrm e^{-t/\tau}=0{,}01$. Pour (f), développez l'exponentielle à l'ordre $2$.
 
 
+
+
 > [!success]- ✅ Correction
 > $z(t)=v_\ell\big[t-\tau(1-\mathrm e^{-t/\tau})\big]$ ; $z(0{,}5)\approx0{,}39$ m ; $t_{99}=\tau\ln100\approx0{,}46$ s, $z\approx0{,}35$ m ; $z\approx\tfrac12gt^2$ pour $t\ll\tau$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -125,15 +148,21 @@ Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide vi
 > Pour $x=t/\tau\ll1$ : $\mathrm e^{-x}\approx1-x+\dfrac{x^2}2$, d'où $v\approx v_\ell\Big(\dfrac t\tau-\dfrac{t^2}{2\tau^2}\Big)\approx gt$ (car $v_\ell/\tau=g$) et $z\approx v_\ell\dfrac{t^2}{2\tau}=\tfrac12gt^2$. Le frottement est négligeable tant que $t\ll\tau$ : c'est le régime de chute libre.
 
 
+
 **q3.** - [(g)] La bille est maintenant lancée **vers le haut** avec la vitesse $v_0=2{,}0~\mathrm{m/s}$ dans le même fluide (axe $Oz$ désormais ascendant). Établir la vitesse $v_z(t)$, l'instant $t_s$ du sommet et la hauteur maximale $h$. Application numérique.
 - [(h)] Vérifier que le résultat redonne $h=v_0^2/(2g)$ quand le frottement tend vers $0$ ($\lambda\to0$). Comparer à la valeur numérique sans frottement.
+
 
 > [!tip]- 💡 Coup de pouce
 > Avec $Oz$ ascendant : $m\dot v_z=-mg-\lambda v_z$. Posez $v_\ell=mg/\lambda$ : la solution est $v_z=-v_\ell+(v_0+v_\ell)\mathrm e^{-t/\tau}$. Le sommet est atteint quand $v_z=0$. Pour (h), développez $\ln(1+x)$ à l'ordre $2$.
 
 
+
+
 > [!success]- ✅ Correction
 > $t_s=\tau\ln\Big(1+\dfrac{v_0}{v_\ell}\Big)\approx0{,}111$ s ; $h=v_0\tau-v_\ell\tau\ln\Big(1+\dfrac{v_0}{v_\ell}\Big)\approx9{,}1$ cm (contre $20{,}4$ cm sans frottement) ; limite $\lambda\to0$ : $v_0^2/(2g)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -151,6 +180,24 @@ Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide vi
 > Quand $\lambda\to0$, $v_\ell\to\infty$ avec $v_\ell/\tau=g$ fixé, donc $x=v_0/v_\ell\to0$. Avec $\ln(1+x)\approx x-\dfrac{x^2}2$ :
 > $$h\approx v_0\tau-v_\ell\tau\Big(\frac{v_0}{v_\ell}-\frac{v_0^2}{2v_\ell^2}\Big)=\frac{v_0^2\tau}{2v_\ell}=\frac{v_0^2}{2g}.\ \surd$$
 > Numériquement, sans frottement : $h_0=\dfrac{4}{2\times9{,}81}\approx0{,}204$ m : le frottement visqueux divise la hauteur atteinte par $\approx2{,}2$.
+
+
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mécanique des fluides**
+>
+> Loi de Stokes, nombre de Reynolds, viscosimètre à chute de bille.
+>
+> **Électricité**
+>
+> Même équation que la charge d'un condensateur $\tau=RC$ ou d'une bobine $\tau=L/R$ : relaxation exponentielle.
+>
+> **Biologie et environnement**
+>
+> Sédimentation de particules, de planctons, des poussières dans l'air : $v_\ell\propto r^2$ en régime de Stokes.
+
+
 
 
 > [!warning]- 🪤 Écueils classiques
@@ -171,6 +218,8 @@ Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide vi
 > À $t=\tau$, $v=63\%$ de $v_\ell$ ; $99\%$ à $t=\tau\ln100\approx4{,}6\tau$. Il n'existe pas de temps fini pour atteindre exactement $v_\ell$.
 
 
+
+
 > [!tip]- 🎙️ Conseils d'animation
 > **Manipulation : bille dans le glycérol**
 >
@@ -181,38 +230,35 @@ Une bille de masse $m=50$ g est lâchée sans vitesse initiale dans un fluide vi
 > Le frottement linéaire est valable aux faibles vitesses (nombre de Reynolds petit : fluide visqueux, bille petite). Pour un parachutiste, le frottement est en $v^2$ (voir « aller plus loin »).
 
 
-> [!note]- 🔗 Liens avec d'autres disciplines
-> **Mécanique des fluides**
->
-> Loi de Stokes, nombre de Reynolds, viscosimètre à chute de bille.
->
-> **Électricité**
->
-> Même équation que la charge d'un condensateur $\tau=RC$ ou d'une bobine $\tau=L/R$ : relaxation exponentielle.
->
-> **Biologie et environnement**
->
-> Sédimentation de particules, de planctons, des poussières dans l'air : $v_\ell\propto r^2$ en régime de Stokes.
 
 
-> [!success]- 🏁 Bilan
+> [!success]- 🏁 Bilan pédagogique
 > **Relaxation vers une vitesse limite**
 >
 > $\tau=m/\lambda=0{,}10$ s ; $v_\ell=mg/\lambda=0{,}98$ m/s ; $v(t)=v_\ell(1-\mathrm e^{-t/\tau})$ ; $z(t)=v_\ell[t-\tau(1-\mathrm e^{-t/\tau})]$ ; pour un lancer vers le haut à $v_0$, hauteur maximale $h=v_0\tau-v_\ell\tau\ln(1+v_0/v_\ell)\xrightarrow[\lambda\to0]{}\dfrac{v_0^2}{2g}$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Frottement quadratique
 > Avec $\vec f=-k\,v\,\vec v$ (parachutiste), montrer que $v_\ell=\sqrt{mg/k}$ et que $v(t)=v_\ell\tanh(gt/v_\ell)$. Comparer la montée vers la vitesse limite avec le cas linéaire.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Poussée d'Archimède
 > Tenir compte de la poussée d'Archimède $\rho_fV g$ : le poids apparent devient $(m-\rho_fV)g$ ; réexprimer $v_\ell$ en fonction des masses volumiques. Pour une bille d'acier ($7800~\mathrm{kg/m^3}$) dans de l'huile ($900~\mathrm{kg/m^3}$), estimer la correction relative sur $v_\ell$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Loi de Stokes et viscosimètre
 > Pour une sphère de rayon $r$ en régime laminaire, $\lambda=6\pi\eta r$ (loi de Stokes). En déduire la viscosité $\eta$ à partir de la mesure de $v_\ell$, et la limite de validité (nombre de Reynolds $Re=\rho_fv_\ell\,2r/\eta\ll1$).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex1-exercices-elementaires|Exercice 1 — Exercices élémentaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex2-decollage-d-un-corps|Exercice 2 — Décollage d'un corps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex3-machine-d-atwood|Exercice 3 — Machine d'Atwood]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex4-systeme-de-deux-blocs|Exercice 4 — Système de deux blocs]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex6-navette-columbia|Exercice 6 — (*) Navette Columbia]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex9-virage-releve-et-frottement-solide|Exercice 9 — Virage relevé et frottement solide]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/ex4-systeme-pendule-bloc|Exercice 4 — (*) Système pendule-bloc]]
+
 

@@ -13,19 +13,24 @@ tags:
 
 Ce premier exercice pose les bases de la description mathématique du mouvement à une dimension (cinématique 1D) sur un axe $(Ox)$.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Cinématique scalaire**
 >
 > Savoir dériver et intégrer des fonctions temporelles simples ($\cos, \sin$, polynômes).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Définitions fondamentales de cinématique**
 >
 > Maitriser les formes différentielles et intégrales liant $x(t)$, $v_x(t)$ et $a_x(t)$, ainsi que l'interprétation de leurs signes.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Relations cinématiques fondamentales**
 >
 > - $v_x(t) = \frac{\mathrm{d}x}{\mathrm{d}t} = \dot{x}(t)$
@@ -34,10 +39,13 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 > - $v_x(t) = v_{x,0} + \int_{0}^{t} a_x(u) \, \mathrm{d}u$
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Signes cinématiques**
 >
 > Le signe d'une vitesse algébrique indique le sens de déplacement, tandis que l'accélération dépend du sens de la force nette ou de la variation de vitesse.
+
 
 
 **1.**
@@ -68,6 +76,7 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 - Exprimer $x(t)$ à partir de $v_x(t)$ et $x_0 = x(0)$.
 - Exprimer $v_x(t)$ à partir de $a_x(t)$ et $v_x(0)$.
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution des notions fondamentales**
 >
@@ -86,6 +95,7 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 > - $v_x(t) = v_x(0) + \int_{0}^{t} a_x(u)\,\mathrm{d}u$
 
 
+
 **2.**
 
   **a)** **Mouvements particuliers**
@@ -98,6 +108,7 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 
 (c) Décrire les caractéristiques d'un mouvement rectiligne uniformément accéléré (MRUA).
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution sur les mouvements particuliers**
 >
@@ -106,6 +117,7 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 > (b) **Non**. Un mouvement uniforme signifie seulement que la norme de la vitesse est constante ($v = \text{Cte}$). Exemple : le Mouvement Circulaire Uniforme (MCU) où la direction du vecteur vitesse varie en permanence (accélération non nulle).
 >
 > (c) **MRUA** : Trajectoire droite, $a_x(t) = a_0 = \text{Cte}$, $v_x(t) = a_0 t + v_0$, $x(t) = \frac{1}{2}a_0 t^2 + v_0 t + x_0$.
+
 
 
 **3.**
@@ -118,12 +130,14 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 
 (b) Serait-il en infraction dans une zone limitée à $30\text{ km}\cdot\text{h}^{-1}$ ?
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution Usain Bolt**
 >
 > (a) $v_{\text{moy}} = \frac{\Delta x}{\Delta t} = \frac{100}{9,58} \approx 10,44\text{ m}\cdot\text{s}^{-1}$.
 >
 > (b) En $\text{km}\cdot\text{h}^{-1}$ : $10,44 \times 3,6 = 37,58\text{ km}\cdot\text{h}^{-1}$. $37,58 > 30$, il serait donc en infraction.
+
 
 
 **4.**
@@ -138,6 +152,7 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 
 (c) Capsule d'entraînement : atteint $1440\text{ km}\cdot\text{h}^{-1}$ en $2\text{ s}$.
 
+
 > [!example]- 📝 Solution détaillée
 > **Calculs d'accélérations moyennes**
 >
@@ -148,10 +163,15 @@ Ce premier exercice pose les bases de la description mathématique du mouvement 
 > (c) $v = \frac{1440}{3,6} = 400\text{ m}\cdot\text{s}^{-1} \implies a_{\text{moy}} = \frac{400 - 0}{2} = 200\text{ m}\cdot\text{s}^{-2}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Repère de Frénet
 > Extension des notions de vitesse et d'accélération aux mouvements 2D/3D (accélérations tangentielle et normale).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex2-chute-libre-experience-et-modele|Exercice 2 — Chute libre : expérience et modèle]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex3-equations-de-mouvement|Exercice 3 — Équations de mouvement]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex4-mouvement-rectiligne-uniformement-accelere-mrua|Exercice 4 — Mouvement rectiligne uniformément accéléré (MRUA)]]
+
 

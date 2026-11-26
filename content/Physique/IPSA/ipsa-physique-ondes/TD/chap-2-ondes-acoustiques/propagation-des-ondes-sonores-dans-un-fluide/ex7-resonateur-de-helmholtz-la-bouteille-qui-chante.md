@@ -21,7 +21,8 @@ $\ell'=\ell+1{,}7\,a$ est une longueur effective tenant compte de l'air entraîn
 Données : $V=0{,}75$ L, $a=9$ mm, $\ell=8$ cm, $P_0=10^5$ Pa, $\rho_0=1{,}2~\text{kg}\cdot\text{m}^{-3}$,
 $\gamma=1{,}4$, $c=340~\text{m}\cdot\text{s}^{-1}$. On note $\xi(t)$ le déplacement du bouchon vers l'intérieur de la cavité.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi la bouteille chante-t-elle plus aigu quand on la remplit ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -31,7 +32,9 @@ $\gamma=1{,}4$, $c=340~\text{m}\cdot\text{s}^{-1}$. On note $\xi(t)$ le déplace
 > **Idée clé : une masse (bouchon d'air) et un ressort (air comprimé dans la cavité).** Le goulot oscille comme un piston ; la cavité est un ressort de raideur $K=\gamma P_0S^2/V$. L'oscillateur masse-ressort a pour pulsation $\omega_0=\sqrt{K/m}=c\sqrt{S/(V\ell')}$. Moins d'air dans la bouteille, ressort plus raide, note plus aiguë.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Compressibilité isentropique**
 >
 > Connaître $\chi_S=-\dfrac1V\left(\dfrac{\partial V}{\partial P}\right)_S=\dfrac1{\gamma P_0}$ pour un gaz parfait et le lien $c^2=\gamma P_0/\rho_0=1/(\rho_0\chi_S)$ (exercice 1).
@@ -45,7 +48,9 @@ $\gamma=1{,}4$, $c=340~\text{m}\cdot\text{s}^{-1}$. On note $\xi(t)$ le déplace
 > Si la plus grande dimension $D$ d'un système est très inférieure à $\lambda$, la pression est uniforme dans chaque cavité à tout instant et le fluide d'un conduit étroit se déplace d'un bloc.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Reconnaître un oscillateur masse-ressort dans un système acoustique**
 >
 > Savoir identifier, dans un système de fluide à petites dimensions, l'élément qui stocke l'énergie potentielle (la cavité compressible, «~ressort~») et celui qui stocke l'énergie cinétique (le bouchon d'air, «~masse~»), écrire l'équation du mouvement et en déduire une fréquence propre.
@@ -53,10 +58,14 @@ $\gamma=1{,}4$, $c=340~\text{m}\cdot\text{s}^{-1}$. On note $\xi(t)$ le déplace
 > Savoir utiliser une mesure de fréquence pour discriminer hypothèses isotherme et isentropique (comme à l'exercice 1).
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Éléments acoustiques localisés (« lumped elements »)**
 >
 > Lorsque les dimensions sont petites devant $\lambda$, on remplace la propagation par des éléments localisés : un conduit étroit de section $S$ et de longueur effective $\ell'$ se comporte comme une **masse** (inertance) $m=\rho_0S\ell'$ ; une cavité de volume $V$ se comporte comme un **ressort** (compliance) : une variation de volume $\Delta V$ crée une surpression $p=-\Delta V/(\chi_SV)$. Un résonateur de Helmholtz est l'association d'une masse et d'un ressort : c'est le plus simple des résonateurs acoustiques.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -81,16 +90,22 @@ $\gamma=1{,}4$, $c=340~\text{m}\cdot\text{s}^{-1}$. On note $\xi(t)$ le déplace
 > $\sqrt{\gamma}=1{,}18$ ; $\sqrt{1{,}5}=1{,}22$ ; $\sqrt{2}=1{,}41$ (une octave $=\times2$ en fréquence, donc $\times4$ en volume).
 
 
+
 **q1.** Calculer $S$, la fréquence approximative $f_0$ (voir question 3) et la longueur d'onde associée.
 Justifier que le bouchon peut être traité comme un bloc rigide et la pression dans la cavité
 comme uniforme.
+
 
 > [!tip]- 💡 Coup de pouce
 > Comparez $\lambda$ aux dimensions de la bouteille (goulot : $\ell'\approx10$ cm ; cavité : $\sim20$ cm) via les produits $k\ell'$ et $kD$.
 
 
+
+
 > [!success]- ✅ Correction
 > $S=2{,}5\times10^{-4}$ m$^2$ ; $f_0\approx102$ Hz ; $\lambda\approx3{,}3$ m ; $k\ell'\approx0{,}2\ll1$ : hypothèses de basse fréquence satisfaites.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -104,16 +119,22 @@ comme uniforme.
 > Sur la longueur du goulot, la phase de l'onde varie de moins de $0{,}2$ rad : tout le bouchon se déplace en bloc (fluide incompressible à cette échelle). De même, la cavité est petite devant $\lambda$ et la pression y est uniforme à chaque instant. Les hypothèses d'éléments localisés sont satisfaites, avec une précision de l'ordre de $10\ \%$.
 
 
+
 **q2.** Exprimer la surpression $p(t)$ dans la cavité en fonction de $\xi$ (compression isentropique), puis
 écrire l'équation du mouvement du bouchon. En déduire la pulsation propre $\omega_0$ en fonction de $c$,
 $S$, $V$ et $\ell'$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Pour un déplacement $\xi$ vers l'intérieur, $\Delta V=-S\xi$. Utilisez la définition de $\chi_S$ pour obtenir $p$. La pression extérieure $P_0$ agit sur la face externe du bouchon : seule la surpression compte dans le bilan de forces.
 
 
+
+
 > [!success]- ✅ Correction
 > $p=\gamma P_0S\xi/V$ ; $\ddot\xi+\omega_0^2\xi=0$ avec $\omega_0=c\sqrt{S/(V\ell')}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -131,11 +152,15 @@ $S$, $V$ et $\ell'$.
 > La raideur équivalente est $K=\gamma P_0S^2/V$ et la masse $m=\rho_0S\ell'$ : on retrouve bien $\omega_0=\sqrt{K/m}$.
 
 
+
 **q3.** Calculer numériquement $f_0$. Comparer au résultat sans longueur effective ($\ell'\to\ell$) et à l'estimation
 d'un tube quart d'onde $c/(4\ell)$. Une mesure donne $f_{\mathrm{exp}}=103$ Hz : conclure.
 
+
 > [!success]- ✅ Correction
 > $f_0\approx102$ Hz ; sans correction $\approx111$ Hz ; $c/(4\ell)\approx1{,}06$ kHz ; accord à $1\ \%$ avec l'expérience.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -149,15 +174,21 @@ d'un tube quart d'onde $c/(4\ell)$. Une mesure donne $f_{\mathrm{exp}}=103$ Hz :
 > $f_{\mathrm{exp}}=103$ Hz est en excellent accord (à $1\ \%$) avec la prédiction du modèle masse-ressort avec longueur effective. Il confirme à la fois l'hypothèse des éléments localisés et la correction d'extrémité.
 
 
+
 **q4.** Refaire le calcul en supposant que l'air de la cavité subit une transformation isotherme. Quelle fréquence
 prédit-on ? L'expérience de la question 3 permet-elle de trancher, comme à l'exercice 1 ?
+
 
 > [!tip]- 💡 Coup de pouce
 > Remplacez $\chi_S$ par $\chi_T=1/P_0$ dans l'expression de $p(\xi)$.
 
 
+
+
 > [!success]- ✅ Correction
 > $f_T=f_0/\sqrt\gamma\approx86$ Hz : en désaccord à $16\ \%$ avec $f_{\mathrm{exp}}=103$ Hz ; l'hypothèse isentropique est la bonne.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -171,12 +202,16 @@ prédit-on ? L'expérience de la question 3 permet-elle de trancher, comme à l'
 > L'écart de $16\ \%$ avec la mesure ($103$ Hz) est très supérieur à l'incertitude expérimentale : comme à l'exercice 1, le modèle isotherme est exclu. À $100$ Hz, la période est de $10$ ms et le temps caractéristique de diffusion thermique sur les dimensions de la bouteille ($\sim D^2/D_{\mathrm{th}}\sim(0{,}1)^2/(2\times10^{-5})\sim500$ s) est incomparablement plus long : la compression de l'air est bien adiabatique. (Le gradient thermique reste efficace dans une fine couche limite proche des parois, ce qui explique l'amortissement.)
 
 
+
 **q5.** On verse de l'eau dans la bouteille de façon que le volume d'air tombe à $V'=0{,}50$ L. Calculer la nouvelle
 fréquence et vérifier le sens de variation observé expérimentalement. Dans quel rapport faut-il changer
 $V$ pour monter d'une octave ?
 
+
 > [!success]- ✅ Correction
 > $f'=f_0\sqrt{V/V'}\approx125$ Hz ; une octave exige $V'=V/4$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -187,16 +222,22 @@ $V$ pour monter d'une octave ?
 > La note monte quand la bouteille se remplit : le ressort est plus raide ($K\propto1/V$) pour la même masse. Pour gagner une octave ($f'=2f_0$), il faut diviser le volume par quatre : $V'=V/4$.
 
 
+
 **q6.** Montrer que le résonateur est analogue à un circuit $LC$. On définit le débit volumique
 $q=S\dot\xi$. Identifier la tension, le courant, l'inductance $L_a$ et la capacité $C_a$, et retrouver
 $\omega_0=1/\sqrt{L_aC_a}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Écrivez la loi du bouchon sous la forme $p=L_a\dot q$ et la loi de la cavité sous la forme $\dot p=q/C_a$ (au signe près selon l'orientation).
 
 
+
+
 > [!success]- ✅ Correction
 > $L_a=\rho_0\ell'/S$ ; $C_a=V/(\rho_0c^2)$ ; $\omega_0=1/\sqrt{L_aC_a}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -207,16 +248,22 @@ $\omega_0=1/\sqrt{L_aC_a}$.
 > Cette analogie permet de traiter de grands systèmes (silencieux, instruments, haut-parleurs) comme des circuits électriques.
 
 
+
 **q7.** Une salle parallélépipédique de longueur $L=5$ m (murs rigides) possède un mode axial gênant (boum
 de basses). Calculer sa fréquence. On veut absorber ce mode avec un résonateur de Helmholtz de goulot
 $S=1{,}0\times10^{-2}$ m$^2$ et $\ell'=10$ cm. Quel volume de cavité faut-il ? Commenter.
+
 
 > [!tip]- 💡 Coup de pouce
 > Entre deux parois rigides, les modes de pression ont des ventres aux deux bouts : $f_n=nc/(2L)$ (comme le tube ouvert-ouvert de l'exercice 2, mais ici avec des ventres de pression).
 
 
+
+
 > [!success]- ✅ Correction
 > $f_1=c/(2L)=34$ Hz ; $V=c^2S/(\omega_0^2\ell')\approx0{,}25$ m$^3$ = 250 L.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -229,6 +276,8 @@ $S=1{,}0\times10^{-2}$ m$^2$ et $\ell'=10$ cm. Quel volume de cavité faut-il ? 
 > On impose $\omega_0=2\pi\times34\approx214~\text{rad}\cdot\text{s}^{-1}$ :
 > $$V=\frac{c^2S}{\omega_0^2\ell'}=\frac{340^2\times10^{-2}}{214^2\times0{,}10}\approx\frac{1156}{4580}\approx0{,}25~\text{m}^3.$$
 > Il faut une cavité de $250$ L : les basses fréquences exigent de grands volumes ($V\propto1/\omega_0^2$), ce qui explique pourquoi l'absorption des graves est coûteuse en place. Pour un résonateur plus compact, on réduit $S$ ou on allonge le col, au prix d'un amortissement plus fort et d'une bande plus étroite.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -253,18 +302,27 @@ $S=1{,}0\times10^{-2}$ m$^2$ et $\ell'=10$ cm. Quel volume de cavité faut-il ? 
 > Panneaux perforés devant une cavité d'air, bass traps : absorbeurs sélectifs fondés sur la résonance de Helmholtz.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Amortissement et facteur de qualité
 > Les pertes par rayonnement (le goulot rayonne comme un piston dans un écran infini), par viscosité et par conduction thermique aux parois ajoutent un terme d'amortissement $\dfrac{\omega_0}{Q}\dot\xi$ dans l'équation du mouvement. On pourra établir la largeur de la résonance $\Delta f=f_0/Q$ et estimer le facteur de qualité lié au seul rayonnement à partir de la puissance rayonnée par le goulot, en comparant à l'énergie stockée $\tfrac12K\xi_m^2$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Résonateurs en acoustique des salles : bass traps
 > Un résonateur de Helmholtz accordé sur un mode propre de la salle sert d'absorbeur très sélectif. On pourra dimensionner le volume nécessaire pour absorber le mode axial fondamental d'une salle de $5$ m (question 7).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Génération du son : instabilités de cisaillement
 > Le souffle en travers du goulot crée une couche de cisaillement instable qui excite le résonateur : c'est un mécanisme de «~retour acoustique~» identique à celui de la flûte. Il explique pourquoi on entend la fréquence propre quand on souffle à la bonne vitesse.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex1-celerite-d-une-onde-acoustique-dans-un-fluide-parfait|Exercice 1 — Célérité d'une onde acoustique dans un fluide parfait]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex4-reflexion-et-transmission-d-une-onde-acoustique-a-une-interface-entre-deux-fluides|Exercice 4 — Réflexion et transmission d'une onde acoustique à une interface entre deux fluides]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex8-transmission-a-travers-une-lame-adaptation-d-impedance-loi-de-masse-et-double-vitrage|Exercice 8 — Transmission à travers une lame : adaptation d'impédance, loi de masse et double vitrage]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex5-energie-intensite-acoustique-et-niveau-sonore-de-l-oreille-humaine-a-l-onde-stationnaire|Exercice 5 — Énergie, intensité acoustique et niveau sonore : de l'oreille humaine à l'onde stationnaire]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex6-tube-d-impedance-mesurer-l-absorption-d-un-materiau-avec-une-onde-stationnaire-partielle|Exercice 6 — Tube d'impédance : mesurer l'absorption d'un matériau avec une onde stationnaire partielle]]
+
 

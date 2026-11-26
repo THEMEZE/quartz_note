@@ -7,8 +7,10 @@ tags:
 
 [[physique/IPSA/ipsa-piscines-sciences-methodologie/index|⬅ Piscine de sciences et méthodologie]]
 
+
 > [!info] ℹ️ 
 > Séance 1
+
 
 
 <a href="/pdfs/td2_PhV110_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td2_PhV110_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>

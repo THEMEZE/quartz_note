@@ -13,7 +13,8 @@ tags:
 
 Comment prévoir la force qui s'exerce sur une voiture ou un navire avant de le construire ? On teste une **maquette** à échelle réduite, mais il faut choisir les conditions d'essai pour que les résultats soient transposables au **prototype** réel. Le théorème $\Pi$ (Vaschy-Buckingham) fournit les groupes adimensionnels qui doivent rester identiques entre la maquette et le prototype. Les questions $1$ à $4$ posent la méthode (pendule, voiture, navire) ; les questions $5$ à $10$ l'appliquent à l'aéronautique : **avion**, **drone**, **fusée**, **montgolfière**, **parachute** et comparaison des régimes de vol.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Analyse dimensionnelle**
 >
 > Connaître 
@@ -24,7 +25,9 @@ Comment prévoir la force qui s'exerce sur une voiture ou un navire avant de le 
 > - les unités de la force, de la masse volumique et de la viscosité.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Utiliser le théorème $\Pi$ comme outil de conception**
 >
 > - Déterminer le nombre de groupes adimensionnels indépendants.
@@ -33,7 +36,9 @@ Comment prévoir la force qui s'exerce sur une voiture ou un navire avant de le 
 > - En déduire la force sur le prototype à partir de la mesure sur la maquette.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Théorème $\Pi$ de Vaschy-Buckingham**
 >
 > Si un phénomène physique fait intervenir $n$ grandeurs $x_1, \dots, x_n$ dont les dimensions s'expriment à l'aide de $k$ dimensions fondamentales indépendantes, alors la relation $f(x_1, \dots, x_n) = 0$ peut se réécrire comme une relation entre seulement $n-k$ groupes adimensionnels :
@@ -50,6 +55,8 @@ Comment prévoir la force qui s'exerce sur une voiture ou un navire avant de le 
 > Le facteur d'échelle géométrique est $\lambda = \dfrac{L_p}{L_m}$.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Méthode du théorème $\Pi$
 > **
@@ -60,6 +67,7 @@ Comment prévoir la force qui s'exerce sur une voiture ou un navire avant de le 
 > \item {\bf Étape 3} : choisir $k$ variables « de base » dont les dimensions sont indépendantes.
 > \item {\bf Étape 4} : former $n-k$ groupes $\Pi_i = (\text{variable restante}) \times (\text{variables de base})^{\text{puissances}}$ sans dimension.
 > \end{itemize}
+
 
 
 **q1.** **Échauffement : le pendule simple**\\
@@ -73,11 +81,14 @@ On suppose que la période $T$ d'un pendule simple dépend de sa masse $m$, de s
 
 (c) En déduire la forme de $T$. La masse intervient-elle ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Système sur les exposants
 > **
 >
 > Écrire $[\Pi] = M^b \, L^{c+d} \, T^{a-2d} = 1$ et annuler chaque exposant.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -94,6 +105,7 @@ On suppose que la période $T$ d'un pendule simple dépend de sa masse $m$, de s
 > (c) Un seul groupe adimensionnel est nécessairement une constante : $\dfrac{g\,T^2}{L} = C$, soit $T = \sqrt{C}\,\sqrt{\dfrac{L}{g}}$. La masse $m$ n'intervient pas (son exposant $b$ est nul). L'analyse dimensionnelle ne donne pas la constante ($C = 4\pi^2$ par un calcul complet).
 
 
+
 **q2.** **Force sur un objet dans un fluide**\\
 
 La force de traînée $F$ sur un objet de taille caractéristique $D$ placé dans un écoulement de vitesse $v$ dépend de la masse volumique $\rho$ et de la viscosité dynamique $\mu$ du fluide. On rappelle $[\mu] = M \, L^{-1} \, T^{-1}$.
@@ -105,11 +117,14 @@ La force de traînée $F$ sur un objet de taille caractéristique $D$ placé dan
 
 (c) Montrer que $F = \rho \, v^2 D^2 \, \varphi(\mathrm{Re})$ où $\mathrm{Re} = \dfrac{\rho \, v \, D}{\mu}$ est le nombre de Reynolds.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Groupes attendus
 > **
 >
 > Chercher $\Pi_1 = F \, \rho^{a} v^{b} D^{c}$ et $\Pi_2 = \mu \, \rho^{a'} v^{b'} D^{c'}$. On peut vérifier le résultat final par les dimensions : $[\rho\,v^2 D^2]$ doit être une force.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -133,6 +148,7 @@ La force de traînée $F$ sur un objet de taille caractéristique $D$ placé dan
 >   Vérification : $[\rho \, v^2 D^2] = M L^{-3} \cdot L^2 T^{-2} \cdot L^2 = M\,L\,T^{-2}$, c'est bien une force.
 
 
+
 **q3.** **Maquette de voiture en soufflerie**\\
 
 Un constructeur veut prévoir la force de traînée sur une voiture (prototype) de longueur $L_p = 4,0 ~\text{m}$ roulant à $v_p = 30 ~\text{m.s}^{-1}$ dans l'air. Il teste une maquette de longueur $L_m = 1,0 ~\text{m}$ (échelle $1/4$). On utilise le résultat de la question 2 : les deux écoulements sont semblables si $\mathrm{Re}_m = \mathrm{Re}_p$.
@@ -150,11 +166,14 @@ Données : viscosité cinématique $\nu = \dfrac{\mu}{\rho}$ ; $\nu_{air} = 1,5 
 
 (e) On mesure $F_m = 1,0 ~\text{kN}$ dans l'eau. Quelle est la traînée $F_p$ sur la voiture réelle ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Conservation de $\mathrm{Re}$ et de $\varphi$
 > **
 >
 > Si $\mathrm{Re}_m = \mathrm{Re}_p$ alors $\varphi(\mathrm{Re}_m) = \varphi(\mathrm{Re}_p)$, donc le groupe $\Pi_1 = \dfrac{F}{\rho v^2 D^2}$ prend la même valeur pour la maquette et le prototype.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -176,6 +195,7 @@ Données : viscosité cinématique $\nu = \dfrac{\mu}{\rho}$ ; $\nu_{air} = 1,5 
 > (e) $F_p = 0,27 \times 1,0 ~\text{kN} \approx 0,27 ~\text{kN} = 2,7 \times 10^{2} ~\text{N}$.
 
 
+
 **q4.** **Maquette de navire : la similitude de Froude**\\
 
 Pour un navire, la résistance à l'avancement due aux vagues dépend de la vitesse $v$, de la longueur $L$, de la masse volumique de l'eau $\rho$, de l'intensité de la pesanteur $g$ et de la force $F$. Un cargo (prototype) de longueur $L_p = 100 ~\text{m}$ navigue à $v_p = 10 ~\text{m.s}^{-1}$. Sa maquette est à l'échelle $1/25$ et testée dans de l'eau, avec le même $g$.
@@ -189,11 +209,14 @@ Pour un navire, la résistance à l'avancement due aux vagues dépend de la vite
 
 (d) Calculer le rapport $\dfrac{\mathrm{Re}_m}{\mathrm{Re}_p}$ en supposant le même fluide. Peut-on respecter à la fois $\mathrm{Fr}$ et $\mathrm{Re}$ ? Que conclure ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Groupe contenant $g$
 > **
 >
 > $[g L] = L^2 T^{-2}$ et $[v^2] = L^2 T^{-2}$ : le rapport $\dfrac{g L}{v^2}$ est déjà sans dimension.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -210,6 +233,7 @@ Pour un navire, la résistance à l'avancement due aux vagues dépend de la vite
 >   $F_p = 15\,625 \times 12 = 187\,500 ~\text{N}$. Avec $2$ chiffres significatifs (limités par $12 ~\text{N}$) : **$F_p = 1,9 \times 10^{5} ~\text{N}$**.
 >
 > (d) $\dfrac{\mathrm{Re}_m}{\mathrm{Re}_p} = \dfrac{v_m L_m}{v_p L_p} = \dfrac{1}{5} \times \dfrac{1}{25} = \dfrac{1}{125}$. Le nombre de Reynolds de la maquette est $125$ fois plus petit : on ne peut pas respecter $\mathrm{Fr}$ et $\mathrm{Re}$ en même temps avec le même fluide. C'est une **similitude partielle** : pour un navire, on respecte le Froude (effet dominant des vagues) et on corrige les effets de viscosité par des méthodes empiriques.
+
 
 
 **q5.** **Maquette d'avion : Mach et Reynolds (soufflerie pressurisée)**\\
@@ -229,11 +253,14 @@ Prototype en croisière : $L_p = 20 ~\text{m}$, $v_p = 240 ~\text{m.s}^{-1}$, $\
 
 (e) Dans ces conditions, calculer $F_p/F_m$. On mesure $F_m = 25 ~\text{kN}$ : en déduire $F_p$ et la masse soutenue par la portance en vol horizontal.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Trois groupes
 > **
 >
 > Ici $n = 6$ et $k = 3$ donc $3$ groupes $\Pi$. Pour la similitude complète, **deux** groupes d'entrée doivent être conservés : $\mathrm{Ma}$ et $\mathrm{Re}$. La seule variable à ajuster est alors la masse volumique de la soufflerie.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -255,6 +282,7 @@ Prototype en croisière : $L_p = 20 ~\text{m}$, $v_p = 240 ~\text{m.s}^{-1}$, $\
 >   $F_p \approx 14,7 \times 25 ~\text{kN} \approx 3,7 \times 10^{5} ~\text{N}$. En vol horizontal, $F_p = m g$ donc $m = \dfrac{3,7 \times 10^{5}}{9,81} \approx 3,7 \times 10^{4} ~\text{kg}$, soit environ $37$ tonnes.
 
 
+
 **q6.** **Hélice de drone : coefficients de poussée et de puissance**\\
 
 La poussée $T$ d'une hélice de diamètre $D$ tournant à la fréquence $N$ (en tours par seconde) dans l'air de masse volumique $\rho$ est étudiée. On néglige la viscosité (Reynolds élevé) et la compressibilité.
@@ -270,11 +298,14 @@ La poussée $T$ d'une hélice de diamètre $D$ tournant à la fréquence $N$ (en
 
 (e) Un drone quadricoptère de masse $m = 2,0 ~\text{kg}$ utilise quatre de ces hélices ($D = 0,50 ~\text{m}$). Quelle fréquence de rotation faut-il en vol stationnaire ? L'exprimer en $\text{tr.min}^{-1}$ et calculer la puissance totale nécessaire.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Variables de l'hélice
 > **
 >
 > Pour $T$, les variables sont $T$, $\rho$, $N$, $D$ donc $n = 4$, $k = 3$ et un seul groupe $\Pi$. Avec $[N] = T^{-1}$, chercher $\Pi = T \, \rho^{a} N^{b} D^{c}$. Pour la question e), en vol stationnaire la poussée totale compense le poids.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -294,6 +325,7 @@ La poussée $T$ d'une hélice de diamètre $D$ tournant à la fréquence $N$ (en
 >   Puissance par hélice : $C_P \, \rho N^3 D^5 = 0,075 \times 1,2 \times 22,1^3 \times 0,50^5 \approx 31 ~\text{W}$, soit $P_{tot} \approx 1,2 \times 10^{2} ~\text{W}$ pour les quatre.
 
 
+
 **q7.** **Fusée : poussée et limites de la maquette réduite**\\
 
 
@@ -306,11 +338,14 @@ La poussée $T$ d'une hélice de diamètre $D$ tournant à la fréquence $N$ (en
 
 (d) La masse du prototype est $m_p = 5,0 \times 10^{5} ~\text{kg}$ ; la masse de la maquette est proportionnelle à $L^3$ (même masse volumique moyenne). Montrer que $\Pi = \dfrac{F}{m g}$ est sans dimension, puis comparer sa valeur pour le prototype et pour la maquette. Conclusion ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Rang de la matrice
 > **
 >
 > Ici $[F]$, $[q_m]$ et $[v_e]$ ne font intervenir que $M$, $L$, $T$, mais les trois vecteurs d'exposants sont liés : le rang est $2$ et non $3$. Le nombre de groupes $\Pi$ est $n$ moins le **rang**, soit $3 - 2 = 1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -326,6 +361,7 @@ La poussée $T$ d'une hélice de diamètre $D$ tournant à la fréquence $N$ (en
 > (d) $[F/(m g)] = \dfrac{M L T^{-2}}{M \cdot L T^{-2}} = 1$. Prototype : $\dfrac{7,5 \times 10^{6}}{5,0 \times 10^{5} \times 9,81} \approx 1,5$. Maquette : $m_m = 5,0 \times 10^{2} ~\text{kg}$ donc $\dfrac{7,5 \times 10^{4}}{5,0 \times 10^{2} \times 9,81} \approx 15$. Le rapport poussée/poids de la maquette est $10$ fois plus grand ($F \propto L^2$, $m g \propto L^3$). La maquette n'est **pas semblable dynamiquement** : elle décolle beaucoup plus violemment. Elle sert à tester la tuyère ou l'aérodynamique, pas la trajectoire complète.
 
 
+
 **q8.** **Maquette de montgolfière : similitude de flottabilité**\\
 
 La vitesse ascensionnelle $v$ d'une montgolfière de diamètre $L$ dépend de $L$, de $g$, de la masse volumique de l'air extérieur $\rho$ et de l'écart de masse volumique $\Delta\rho = \rho - \rho_{int}$ entre l'air extérieur et l'air chaud intérieur.
@@ -339,11 +375,14 @@ La vitesse ascensionnelle $v$ d'une montgolfière de diamètre $L$ dépend de $L
 
 (d) La force ascensionnelle est $F = \Delta\rho \, V g$. Calculer $F_p/F_m$. Le prototype soulève une charge utile de $1,2 \times 10^{3} ~\text{kg}$ : quelle charge la maquette peut-elle soulever ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Conservation de $\Pi_2$
 > **
 >
 > Même température intérieure et extérieure donc même $\Delta\rho/\rho$ : il reste à conserver $\Pi_1$, c'est-à-dire le nombre de Froude. Le volume est proportionnel à $L^3$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -359,6 +398,7 @@ La vitesse ascensionnelle $v$ d'une montgolfière de diamètre $L$ dépend de $L
 > (d) $\dfrac{F_p}{F_m} = \dfrac{V_p}{V_m} = \left(\dfrac{L_p}{L_m}\right)^3 = 10^3$. La maquette soulève $\dfrac{1,2 \times 10^{3}}{10^3} = 1,2 ~\text{kg}$. En pratique, la maquette se refroidit plus vite (rapport surface/volume plus grand) : la similitude thermique n'est pas respectée sur de longues durées.
 
 
+
 **q9.** **Parachute : vitesse limite et maquette**\\
 
 On suppose que la vitesse limite de chute $v$ d'un parachute de diamètre $D$ ne dépend que du poids total $W = m g$ et de la masse volumique de l'air $\rho$.
@@ -372,11 +412,14 @@ On suppose que la vitesse limite de chute $v$ d'un parachute de diamètre $D$ ne
 
 (d) Avec la même maquette chargée de $2,0 ~\text{kg}$, quelle est la vitesse de chute ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Variables
 > **
 >
 > Les variables sont $v$, $W$, $\rho$, $D$ : $n = 4$, $k = 3$. Chercher $\Pi = v^{\alpha} W^{\beta} \rho^{\gamma} D^{\delta}$ en fixant $\beta = -1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -390,6 +433,7 @@ On suppose que la vitesse limite de chute $v$ d'un parachute de diamètre $D$ ne
 > (c) Même $v$ donc même $\dfrac{W}{D^2}$ : $m_m = m_p \left(\dfrac{D_m}{D_p}\right)^2 = 80 \times \dfrac{1}{64} = 1,25 ~\text{kg}$.
 >
 > (d) $v = 5,0 \times \sqrt{\dfrac{2,0}{1,25}} \approx 6,3 ~\text{m.s}^{-1}$ : plus la charge est lourde, plus la chute est rapide, en $\sqrt{m}$.
+
 
 
 **q10.** **Régimes de vol : du moustique à l'avion**\\
@@ -408,11 +452,14 @@ On calcule le nombre de Reynolds $\mathrm{Re} = \dfrac{v L}{\nu}$ avec $\nu_{air
 
 (b) Pour une maquette de l'avion à l'échelle $1/50$ dans l'air ambiant, quelle vitesse conserverait $\mathrm{Re}$ ? Calculer le nombre de Mach correspondant ($c = 340 ~\text{m.s}^{-1}$). Conclusion ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Ordres de grandeur
 > **
 >
 > Écrire chaque $\mathrm{Re}$ en notation scientifique avec $2$ chiffres significatifs. Pour b), imposer $v_m L_m = v_p L_p$ dans le même fluide.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -424,9 +471,13 @@ On calcule le nombre de Reynolds $\mathrm{Re} = \dfrac{v L}{\nu}$ avec $\nu_{air
 > (b) $v_m = v_p \dfrac{L_p}{L_m} = 70 \times 50 = 3\,500 ~\text{m.s}^{-1}$ soit $\mathrm{Ma} = \dfrac{3\,500}{340} \approx 10$ : vitesse hypersonique, physiquement absurde pour un essai. On ne peut pas respecter $\mathrm{Re}$ dans l'air ambiant avec une petite maquette : on augmente la masse volumique (soufflerie pressurisée) ou on refroidit le gaz (soufflerie cryogénique), comme à la question 5.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Nombres adimensionnels usuels
 
 > Rechercher la signification physique des nombres de Reynolds, de Froude et de Mach.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Similitude partielle
@@ -434,11 +485,16 @@ On calcule le nombre de Reynolds $\mathrm{Re} = \dfrac{v L}{\nu}$ avec $\nu_{air
 > Étudier pourquoi les bassins des carènes respectent Froude alors que les souffleries respectent Reynolds, et comment on corrige les effets d'échelle.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Preuve du théorème $\Pi$
 
 > Démontrer le théorème en utilisant le rang de la matrice des exposants dimensionnels.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex7-homogeneite-d-une-equation-et-dimension-d-une-grandeur-exercices-avances|Exercice 7 — (*) Homogénéité d'une équation et dimension d'une grandeur : exercices avancés]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex8-conversions-d-unites-et-unites-des-constantes-fondamentales|Exercice 8 — (*) Conversions d'unités et unités des constantes fondamentales]]
+
 

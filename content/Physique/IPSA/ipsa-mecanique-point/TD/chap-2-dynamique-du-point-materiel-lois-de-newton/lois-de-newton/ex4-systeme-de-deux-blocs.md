@@ -13,7 +13,8 @@ tags:
 
 Deux blocs de masses $m_A=4$ kg et $m_B=5$ kg sont reliés par une corde passant par une poulie fixée au sommet d'un bloc triangulaire dont les faces sont inclinées de $\alpha=30^\circ$ (face portant $A$) et $\beta=60^\circ$ (face portant $B$). On néglige tous les frottements ainsi que les masses de la corde et de la poulie, la corde est inextensible, et on prendra $g=10~\mathrm{m\,s^{-2}}$. Le système est initialement au repos ; les blocs sont lâchés à $t=0$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Deux pentes, une corde, qui l'emporte ?**
 >
 > *Durée de l'introduction : 3 min*
@@ -23,7 +24,9 @@ Deux blocs de masses $m_A=4$ kg et $m_B=5$ kg sont reliés par une corde passant
 > **Idée clé : seule la composante du poids le long de la pente compte.** Pour A : $m_Ag\sin\alpha=20$ N ; pour B : $m_Bg\sin\beta\approx43$ N. Le plus « tirant » l'emporte et, la corde étant inextensible, les deux blocs ont la même accélération.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Projection du poids sur un plan incliné**
 >
 > Pour un plan incliné d'un angle $\varphi$ : composante du poids **le long de la pente** $mg\sin\varphi$, **perpendiculairement** $mg\cos\varphi$ ; la réaction normale équilibre cette dernière.
@@ -33,22 +36,30 @@ Deux blocs de masses $m_A=4$ kg et $m_B=5$ kg sont reliés par une corde passant
 > La corde a la même tension $T$ des deux côtés de la poulie, et un déplacement $s_A$ le long d'une face s'accompagne d'un déplacement $s_B$ de même longueur le long de l'autre face.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Système lié sur deux plans inclinés**
 >
 > Savoir choisir un repère adapté à chaque bloc (axe le long de la pente), écrire la 2\textsuperscript{e} loi pour chacun, relier les accélérations par la contrainte du fil, résoudre pour $a$ et $T$, puis utiliser la cinématique pour la vitesse.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **L'atwood sur plan incliné**
 >
 > C'est la généralisation de la machine d'Atwood : seuls changent les facteurs $\sin\alpha$ et $\sin\beta$. Chaque bloc a son propre repère, pas besoin de repère commun : on choisit l'axe positif dans le sens du mouvement présumé (A monte, B descend) et la contrainte devient $a_A=a_B$. Faire remarquer que le sens du mouvement se devine par comparaison de $m_B\sin\beta$ et $m_A\sin\alpha$, et que le calcul le confirme par le signe de $a$.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Système lié par un fil**
 >
 > Pour des solides reliés par un fil tendu, inextensible : mêmes accélérations (en norme) le long du fil, même tension en tout point si le fil et la poulie sont idéaux. On écrit la 2\textsuperscript{e} loi pour chaque solide en projetant sur l'axe du mouvement.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -65,16 +76,22 @@ Deux blocs de masses $m_A=4$ kg et $m_B=5$ kg sont reliés par une corde passant
 > Départ du repos : $v^2=2ad$ (élimination du temps entre $v=at$ et $d=\tfrac12at^2$).
 
 
+
 **q1.** - [(a)] Citer et représenter sur la figure les forces qui s'exercent sur le bloc $A$ et sur le bloc $B$.
 - [(b)] Pour chaque bloc, tracer un repère et donner les composantes des forces.
 - [(c)] Relier le déplacement $s_A$ du bloc $A$ au déplacement $s_B$ du bloc $B$. En déduire la relation entre les accélérations.
+
 
 > [!tip]- 💡 Coup de pouce
 > Pour chaque bloc, prenez un axe $Ox$ le long de la pente, orienté dans le sens du mouvement présumé (A monte, B descend), et un axe $Oy$ perpendiculaire.
 
 
+
+
 > [!success]- ✅ Correction
 > Forces : poids, réaction normale, tension. Composantes selon la pente : $A$ : $(T-m_Ag\sin\alpha,\ N_A-m_Ag\cos\alpha)$ ; $B$ : $(m_Bg\sin\beta-T,\ N_B-m_Bg\cos\beta)$. $s_A=s_B$ donc $a_A=a_B=a$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -94,17 +111,23 @@ Deux blocs de masses $m_A=4$ kg et $m_B=5$ kg sont reliés par une corde passant
 > $$\boxed{s_A=s_B}\ \Rightarrow\ \boxed{a_A=a_B=a}.$$
 
 
+
 **q2.** - [(d)] Énoncer le principe fondamental de la dynamique et l'appliquer à chaque bloc.
 - [(e)] Déterminer l'accélération des deux blocs.
 - [(f)] En déduire la tension de la corde.
 - [(g)] Quelle est la vitesse des blocs lorsqu'ils se sont déplacés d'une distance $d=40$ cm ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Projetez la 2\textsuperscript{e} loi sur l'axe de la pente pour chaque bloc, avec la même accélération $a$. Additionnez les deux équations pour éliminer $T$.
 
 
+
+
 > [!success]- ✅ Correction
 > $a=g\dfrac{m_B\sin\beta-m_A\sin\alpha}{m_A+m_B}\approx2{,}59~\mathrm{m\,s^{-2}}$ ; $T=m_A(g\sin\alpha+a)\approx30{,}4$ N ; $v=\sqrt{2ad}\approx1{,}44~\mathrm{m/s}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -130,6 +153,20 @@ Deux blocs de masses $m_A=4$ kg et $m_B=5$ kg sont reliés par une corde passant
 > $$v=\sqrt{2\times2{,}59\times0{,}40}\approx\boxed{1{,}44~\mathrm{m/s}}.$$
 
 
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Ingénierie**
+>
+> Funiculaires, téléphériques à contrepoids, remontées mécaniques : le contrepoids sur une pente réduit la puissance motrice.
+>
+> **Mathématiques**
+>
+> Résolution de systèmes linéaires, trigonométrie des angles remarquables.
+
+
+
+
 > [!warning]- 🪤 Écueils classiques
 > **Se tromper de sens du mouvement**
 >
@@ -148,6 +185,8 @@ Deux blocs de masses $m_A=4$ kg et $m_B=5$ kg sont reliés par une corde passant
 > Le mouvement se fait le long des pentes : la réaction normale n'entre pas dans les équations de mouvement (elle sert seulement à vérifier que les blocs restent en contact).
 
 
+
+
 > [!tip]- 🎙️ Conseils d'animation
 > **Prédire avant de calculer**
 >
@@ -158,34 +197,35 @@ Deux blocs de masses $m_A=4$ kg et $m_B=5$ kg sont reliés par une corde passant
 > Plan incliné à rail avec chronomètre : mesurer $a$ pour différents angles et vérifier $a\propto\sin$.
 
 
-> [!note]- 🔗 Liens avec d'autres disciplines
-> **Ingénierie**
->
-> Funiculaires, téléphériques à contrepoids, remontées mécaniques : le contrepoids sur une pente réduit la puissance motrice.
->
-> **Mathématiques**
->
-> Résolution de systèmes linéaires, trigonométrie des angles remarquables.
 
 
-> [!success]- 🏁 Bilan
+> [!success]- 🏁 Bilan pédagogique
 > **Résultats**
 >
 > $a=g\,\dfrac{m_B\sin\beta-m_A\sin\alpha}{m_A+m_B}\approx2{,}59~\mathrm{m\,s^{-2}}$ ; $T=m_A(g\sin\alpha+a)\approx30{,}4$ N ; $v=\sqrt{2ad}\approx1{,}44~\mathrm{m/s}$ pour $d=40$ cm. Si $\alpha=\beta=90^\circ$ on retrouve la machine d'Atwood.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Avec frottements de Coulomb
 > Avec un coefficient de frottement $\mu$ sur chaque face, le frottement est $\mu m_Ag\cos\alpha$ sur A et $\mu m_Bg\cos\beta$ sur B, opposé au mouvement. Calculer $a(\mu)$ et la valeur $\mu_c$ au-delà de laquelle le système reste immobile.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Force exercée sur le support
 > Déterminer la force totale exercée par les blocs, la corde et la poulie sur le bloc triangulaire, et la force horizontale de maintien nécessaire pour qu'il ne glisse pas sur le sol sans frottement.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Bloc triangulaire libre de glisser
 > Si le bloc triangulaire peut glisser sans frottement sur le sol, son mouvement horizontal se couple à celui des blocs. Écrire les équations (conservation de la quantité de mouvement horizontale) et calculer $a_A$ et l'accélération du triangle.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex1-exercices-elementaires|Exercice 1 — Exercices élémentaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex2-decollage-d-un-corps|Exercice 2 — Décollage d'un corps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex3-machine-d-atwood|Exercice 3 — Machine d'Atwood]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex6-navette-columbia|Exercice 6 — (*) Navette Columbia]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex7-chute-avec-frottement-fluide-vitesse-limite|Exercice 7 — Chute avec frottement fluide : vitesse limite]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex9-virage-releve-et-frottement-solide|Exercice 9 — Virage relevé et frottement solide]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/ex4-systeme-pendule-bloc|Exercice 4 — (*) Système pendule-bloc]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/ex5-pendule-balistique|Exercice 5 — (*) Pendule balistique]]
+
 

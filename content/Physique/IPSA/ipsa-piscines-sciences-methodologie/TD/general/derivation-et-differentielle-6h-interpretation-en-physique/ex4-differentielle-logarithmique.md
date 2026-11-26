@@ -14,19 +14,24 @@ tags:
 La méthode de la différentielle logarithmique est un outil puissant pour calculer la variation relative ou l'incertitude relative d'une grandeur donnée sous forme de produits, quotients ou puissances.
 Rappel : $\mathrm{d}(\ln f) = \frac{\mathrm{d}f}{f}$.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Propriétés du logarithme népérien**
 >
 > $\ln(ab) = \ln a + \ln b$, $\ln(a/b) = \ln a - \ln b$, $\ln(a^n) = n \ln a$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Maîtriser la méthode logarithmique**
 >
 > Calculer facilement $\frac{\mathrm{d}f}{f}$, $\delta f$ et l'incertitude absolue $\Delta f$ pour des fonctions multi-variables.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Méthode de la différentielle logarithmique**
 >
 > 1. Écrire $f(x,y,\dots)$.
@@ -37,11 +42,14 @@ Rappel : $\mathrm{d}(\ln f) = \frac{\mathrm{d}f}{f}$.
 > 6. Application au calcul d'incertitudes $\Delta f$ : remplacer $\mathrm{d}$ par $\Delta$ en comptant chaque terme d'une somme positivement.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Passage aux incertitudes $\Delta$
 > **
 >
 > Pour obtenir l'incertitude maximale $\Delta f$, remplace tous les $\mathrm{d}$ par des $\Delta$ et mets {\bf tous les signes en valeur absolue (+)}.
+
 
 
 **1.**
@@ -94,6 +102,7 @@ Rappel : $\mathrm{d}(\ln f) = \frac{\mathrm{d}f}{f}$.
 % * $\mathrm{d}\ln f = \mathrm{d}(2\ln x - \dots) = 2 \mathrm{d}\ln x - \dots = \dots \implies \frac{\mathrm{d}f}{f} = \dots$ et $\mathrm{d}f = \dots$
 % * Petite variation de $f$ : $\delta f = \dots$
 % * Incertitude relative : $\frac{\Delta f}{f} = \dots$ et absolue : $\Delta f = \dots$
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -152,9 +161,11 @@ Rappel : $\mathrm{d}(\ln f) = \frac{\mathrm{d}f}{f}$.
 > %  $$\text{Absolue : } \Delta f = \frac{x^2}{y} \left(2 \frac{\Delta x}{x} + \frac{\Delta y}{y}\right) = \frac{2x}{y}\Delta x + \frac{x^2}{y^2}\Delta y$$
 
 
+
 **2.**
 
   **a)** Calculer la variation $\delta f$ et l'incertitude absolue $\Delta f$ pour la fonction $f(x) = x^2$ par la méthode logarithmique.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -166,7 +177,9 @@ Rappel : $\mathrm{d}(\ln f) = \frac{\mathrm{d}f}{f}$.
 > 5. Incertitude absolue : $\Delta f = 2 x \Delta x$
 
 
+
   **b)** Calculer la variation $\delta f$ et l'incertitude absolue $\Delta f$ pour la fonction $f(x,y) = xy$ par la méthode logarithmique.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -178,7 +191,9 @@ Rappel : $\mathrm{d}(\ln f) = \frac{\mathrm{d}f}{f}$.
 > 5. Incertitude absolue : $\Delta f = y \Delta x + x \Delta y$
 
 
+
   **c)** Calculer la variation $\delta f$ et l'incertitude absolue $\Delta f$ pour la fonction $f(x,y,z) = \frac{xy}{z}$ par la méthode logarithmique.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -190,8 +205,12 @@ Rappel : $\mathrm{d}(\ln f) = \frac{\mathrm{d}f}{f}$.
 > 5. Incertitude absolue : $\Delta f = \frac{xy}{z} \left(\frac{\Delta x}{x} + \frac{\Delta y}{y} + \frac{\Delta z}{z}\right) = \frac{y}{z}\Delta x + \frac{x}{z}\Delta y + \frac{xy}{z^2}\Delta z$
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Incertitudes au plurielle
 > Comparer la méthode des incertitudes maximales à la combinaison quadratique $\left(\frac{\Delta f}{f}\right)^2 = \sum \left(\frac{\Delta x_i}{x_i}\right)^2$.\\
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Incertitudes au pluriel : comparer les méthodes
@@ -436,6 +455,9 @@ Rappel : $\mathrm{d}(\ln f) = \frac{\mathrm{d}f}{f}$.
 > de chaque grandeur.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex1-derivation-de-fonctions-en-physique|Exercice 1 — Dérivation de fonctions en physique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex2-interpretation-de-la-differentielle-petite-variation-calcul-d-incertitude|Exercice 2 — Interprétation de la différentielle : petite variation $\&$ calcul d'incertitude]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex3-derivees-de-fonctions-composees|Exercice 3 — Dérivées de fonctions composées]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex5-derivation-de-fonctions-en-physique-approfondissement|Exercice 5 — Dérivation de fonctions en physique (approfondissement)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex6-interpretation-de-la-differentielle-approfondissement-volume-pendule-approximations|Exercice 6 — Interprétation de la différentielle : approfondissement (volume, pendule, approximations)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex7-derivees-de-fonctions-composees-approfondissement-taux-lies|Exercice 7 — Dérivées de fonctions composées : approfondissement (taux liés)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex8-differentielle-logarithmique-approfondissement-incertitudes-en-situation-reelle|Exercice 8 — Différentielle logarithmique : approfondissement (incertitudes en situation réelle)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex9-combiner-les-incertitudes-somme-absolue-p-1-quadratique-p-2-puissance-p-et-cas-p-0|Exercice 9 — Combiner les incertitudes : somme absolue ($p=1$), quadratique ($p=2$), puissance $p$ et cas $p=0$]]
+
 

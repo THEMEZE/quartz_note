@@ -13,29 +13,37 @@ tags:
 
 Exercices d'application directe sur le passage entre position $x(t)$, vitesse $v_x(t)$ et accélération $a_x(t)$ par dérivation et intégration avec conditions initiales.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivation et intégration de polynômes**
 >
 > $\frac{\mathrm{d}}{\mathrm{d}t}(t^n) = n t^{n-1}$ et $\int t^n \mathrm{d}t = \frac{t^{n+1}}{n+1} + \text{Cte}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Déterminer les équations horaires**
 >
 > Trouver les instants particuliers d'arrêt ou de changement de sens de mouvement.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Phases du mouvement**
 >
 > * $v_x \cdot a_x > 0 \implies$ Le mouvement est accéléré.
 > * $v_x \cdot a_x < 0 \implies$ Le mouvement est ralenti.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Recherche des extrémums**
 >
 > La vitesse s'annule là où la position $x(t)$ atteint un extremum local ($\frac{\mathrm{d}x}{\mathrm{d}t} = 0$).
+
 
 
 **q1.** Soit une particule de position $x(t) = 6t^2 - t^3$ (en m).
@@ -52,6 +60,7 @@ Exercices d'application directe sur le passage entre position $x(t)$, vitesse $v
 
 (e) Décrire le mouvement après $t=6\text{ s}$.
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution question 1**
 >
@@ -66,6 +75,7 @@ Exercices d'application directe sur le passage entre position $x(t)$, vitesse $v
 > (e) $t > 6\text{ s}$ : $x(t) < 0$, $v_x < 0$, $a_x < 0 \implies$ poursuite du mouvement vers les $x$ négatifs en **accélérant**.
 
 
+
 **q2.** Soit la position $x(t) = t^3 - 6t^2 - 15t + 40$ (en m).
 
 
@@ -76,6 +86,7 @@ Exercices d'application directe sur le passage entre position $x(t)$, vitesse $v
 
 (c) Calculer l'accélération à cet instant.
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution question 2**
 >
@@ -84,6 +95,7 @@ Exercices d'application directe sur le passage entre position $x(t)$, vitesse $v
 > (b) $x(5) = 5^3 - 6(5)^2 - 15(5) + 40 = 125 - 150 - 75 + 40 = -60\text{ m}$.
 >
 > (c) $a_x(t) = 6t - 12 \implies a_x(5) = 6(5) - 12 = 18\text{ m}\cdot\text{s}^{-2}$.
+
 
 
 **q3.** L'accélération d'une particule est $a(t) = 12t - 6$ ($\text{m}\cdot\text{s}^{-2}$). À $t=0$, $v_0 = 4\text{ m}\cdot\text{s}^{-1}$ et $x_0 = -3\text{ m}$.
@@ -96,6 +108,7 @@ Exercices d'application directe sur le passage entre position $x(t)$, vitesse $v
 
 (c) Déterminer l'instant où la vitesse s'annule.
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution question 3**
 >
@@ -106,10 +119,15 @@ Exercices d'application directe sur le passage entre position $x(t)$, vitesse $v
 > (c) $v(t) = 0 \implies 6t^2 - 6t + 4 = 0 \implies 3t^2 - 3t + 2 = 0$. Le discriminant $\Delta = 9 - 24 = -15 < 0$. **La vitesse ne s'annule jamais** sur $\mathbb{R}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Accélération variable
 > Étude du 'jerk' (dérivée première de l'accélération) en ingénierie des transports.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex1-position-deplacement-vitesse-et-acceleration|Exercice 1 — Position, déplacement, vitesse et accélération]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex2-chute-libre-experience-et-modele|Exercice 2 — Chute libre : expérience et modèle]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex4-mouvement-rectiligne-uniformement-accelere-mrua|Exercice 4 — Mouvement rectiligne uniformément accéléré (MRUA)]]
+
 

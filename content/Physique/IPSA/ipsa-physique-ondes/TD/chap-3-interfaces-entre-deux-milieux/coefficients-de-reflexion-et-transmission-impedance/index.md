@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-physique-ondes/index|⬅ Physique des ondes]]
 
+
 > [!info] ℹ️ Chap. 3 — Interfaces entre deux milieux
 > Séance 4
 
 
+
 <a href="/pdfs/td3_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_PhV212_enonce)</a> · <a href="/pdfs/td3_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td3_enonce)</a> · <a href="/pdfs/td3_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td3_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_PhV212_corrige)</a> · <a href="/pdfs/td3_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td3_corrige)</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi un écho vient-il à l'endroit ou à l'envers, et pourquoi le gel est-il nécessaire ?**
 >
 > *Durée de l'introduction : 10 min, en début de séance*
@@ -24,7 +27,9 @@ tags:
 > $$r=\frac{Z_1-Z_2}{Z_1+Z_2},\qquad R_E=r^2,\qquad T_E=\frac{4Z_1Z_2}{(Z_1+Z_2)^2}.$$
 > Une interface très désadaptée réfléchit tout (air/solide) ; une interface oblique ajoute la conservation de $k_y$ (Snell-Descartes) ; un élément localisé ajoute une impédance en série.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Équation de d'Alembert et ondes progressives (chapitres 1 et 2)**
 >
 > Savoir que les petites perturbations d'une corde tendue ($y$) et d'un fluide ($p$, $v$) obéissent à $\partial_t^2u=c^2\partial_x^2u$, avec $c=\sqrt{F/\mu}$ pour une corde et $c=\sqrt{1/(\rho_0\chi_S)}$ pour un fluide ; savoir qu'une onde progressive sinusoïdale s'écrit $\cos(\omega t\mp kx)$ ou $e^{i(\omega t\mp kx)}$ avec $k=\omega/c$ et que le signe devant $kx$ fixe le sens de propagation.
@@ -49,7 +54,9 @@ tags:
 >
 > Formules de trigonométrie ($\sin^2+\cos^2=1$, $\arcsin$), résolution d'un système linéaire $2\times2$, calculs avec des puissances de $10$ et des décibels, développement limité d'une fraction.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Savoir établir et interpréter des coefficients de réflexion et de transmission**
 >
 > Savoir écrire les conditions de raccord à une jonction (corde ou fluide), résoudre le système obtenu, exprimer $r$ et $t$ en fonction des impédances, en déduire les coefficients énergétiques $R_E=|r|^2$ et $T_E=1-R_E$, et vérifier systématiquement la conservation de l'énergie.
@@ -70,7 +77,9 @@ tags:
 >
 > Savoir exploiter un enregistrement (temps d'arrivée en sismique réfraction, train d'échos ultrasonore) pour en déduire une vitesse, une épaisseur, une impédance, une atténuation ou un défaut, en justifiant les hypothèses et en estimant les incertitudes.
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Synthèse du chapitre : de la jonction de deux cordes aux interfaces acoustiques**
 >
 > 1. **Raccord à une interface plane en incidence normale**
@@ -104,6 +113,8 @@ tags:
 > $$
 > Pour la variable de type « vitesse » (déplacement de la corde, courant, $H$), $r$ change de signe : $r_{\mathrm{vitesse}}=-r_{\mathrm{force}}=\dfrac{Z_1-Z_2}{Z_1+Z_2}$. C'est la raison de la différence de signe entre l'exercice 1 de ce TD (déplacement) et les exercices du TD2 (pression).
 
+
+
 > [!note]- 🧮 Outils mathématiques
 > **Système linéaire $2\times2$ de raccord**
 >
@@ -134,6 +145,7 @@ tags:
 > Pente d'une droite sur un graphe de temps d'arrivée, ordonnée à l'origine, intersection de deux droites : outils indispensables pour la sismique réfraction (exercice 5).
 
 
+
 ## Exercices
 
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex1-corde-non-homogene-jonction-entre-deux-cordes|Exercice 1 — Corde non homogène, jonction entre deux cordes]]
@@ -142,6 +154,7 @@ tags:
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex4-incidence-oblique-lois-de-snell-descartes-angle-critique-reflexion-totale-et-onde-evanescente|Exercice 4 — Incidence oblique : lois de Snell-Descartes, angle critique, réflexion totale et onde évanescente]]
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex5-sismique-refraction-ondes-coniques-et-epaisseur-d-une-couche|Exercice 5 — Sismique réfraction : ondes coniques et épaisseur d'une couche]]
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex6-controle-ultrasonore-d-une-plaque-immergee-train-d-echos-epaisseur-attenuation-et-defaut-de-collage|Exercice 6 — Contrôle ultrasonore d'une plaque immergée : train d'échos, épaisseur, atténuation et défaut de collage]]
+
 
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Optique**
@@ -180,21 +193,34 @@ tags:
 >
 > L'oreille moyenne est un adaptateur d'impédance entre l'air et le liquide de l'oreille interne ; la perte à l'interface air-eau explique que l'on entend mal sous l'eau.
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Coefficients énergétiques, adaptation d'impédance et lames
 > Établir $R_E+T_E=1$ pour la corde et l'acoustique, puis étudier une couche d'épaisseur $\lambda/4$ et d'impédance $\sqrt{Z_1Z_3}$ qui annule la réflexion entre deux milieux (TD2, exercice 8 ; exercice 6 en régime impulsionnel). Faire le lien avec les antireflets optiques et les transformateurs quart d'onde en hyperfréquences.
+
+
 
 > [!question]- 🔭 Aller plus loin — Licence : Ondes de surface et ondes guidées
 > Au-delà de l'angle critique, l'onde évanescente se propage le long de l'interface : c'est l'origine des ondes de surface (Rayleigh, Scholte) et de la propagation guidée (fibre optique, canal sonore profond SOFAR, guides d'ondes acoustiques).
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Matrices de transfert et milieux stratifiés
 > Le raccord de $N$ couches se traite par produit de matrices $2\times2$ reliant $(p,v)$ ; on retrouve les résonances d'un empilement (miroir de Bragg, cristal phononique) et les bandes interdites.
+
+
 
 > [!question]- 🔭 Aller plus loin — Master : Solides : ondes P et S, conversions de mode, ondes de Rayleigh
 > Dans un solide, une interface en incidence oblique convertit les ondes P en ondes S et inversement ; le raccord impose la continuité des contraintes normale et tangentielle. On pourra établir les équations de Zoeppritz et les deux angles critiques d'une interface eau-acier.
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Interface en mouvement et effet Doppler
 > Si l'interface se déplace à la vitesse $V$, la fréquence réfléchie est décalée : c'est le principe de l'échographie Doppler (mesure de la vitesse du sang) et du radar routier. On pourra établir $f_r=f\,\dfrac{c+V}{c-V}$ pour une réflexion sur un obstacle approchant.
 
+
+
 > [!question]- 🔭 Aller plus loin — Doctorat : Métamatériaux et réflexion non réciproque
 > Des résonateurs locaux (perles sur ressort, cavités de Helmholtz) intégrés à l'interface permettent de dépasser la loi de masse, de créer des bandes interdites ou des interfaces non réciproques ; la jonction à perle de l'exercice 3 en est la brique de base.
+
 

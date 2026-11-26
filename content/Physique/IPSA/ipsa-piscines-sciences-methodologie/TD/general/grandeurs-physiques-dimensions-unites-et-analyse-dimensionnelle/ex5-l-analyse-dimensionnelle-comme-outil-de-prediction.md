@@ -13,7 +13,8 @@ tags:
 
 L’analyse des dimensions d’un problème complexe permet de prédire la forme d’une loi physique.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Grandeurs physiques et dimensions**
 >
 > - **Dimensions fondamentales**
@@ -72,7 +73,9 @@ L’analyse des dimensions d’un problème complexe permet de prédire la forme
 >       d'une expression algébrique.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Identifier les grandeurs pertinentes**
 >
 > - **Analyse du problème physique**
@@ -168,7 +171,9 @@ L’analyse des dimensions d’un problème complexe permet de prédire la forme
 >       dimensionnelle.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Principe de l'analyse dimensionnelle**
 >
 > - **Objectif de la méthode**
@@ -402,6 +407,8 @@ L’analyse des dimensions d’un problème complexe permet de prédire la forme
 >       par une simple approche en puissances.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Méthodologie 
 > **
@@ -422,6 +429,7 @@ L’analyse des dimensions d’un problème complexe permet de prédire la forme
 >   \item En déduire le système d’équations vérifié par $\alpha$, $\beta$, $\gamma$.
 >   \item Résoudre le système et conclure sur l’expression de $X$.
 > \end{enumerate}
+
 
 
 **q1.** **Loi de Stokes.**\\
@@ -454,8 +462,11 @@ La loi de Stokes donne la force de frottement sur une sphère en déplacement da
 
 (f) Peut on déterminer la valeur de la constante $k$ par analyse dimensionnelle ?
 
+
 > [!tip]- 💡 Coup de pouce
 > On écrit $X = k * A^\alpha * B^\beta * C^\gamma$. L'égalité des puissances de $M$, $L$,$T$ de chaque côté génère un système linéaire sur $\alpha$, $\beta$, $\gamma$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -486,6 +497,7 @@ La loi de Stokes donne la force de frottement sur une sphère en déplacement da
 > (e) [f)] $k$ ne peut pas être déterminé uniquement par l'analyse dimensionnelle.
 
 
+
 **q2.** **(${}^\ast$) Période $\bm{T}$ des oscillations d’un pendule simple**\\
 
 Soit un pendule simple constitué d’une masse $m$ accrochée à l’extrémité d’un fil de longueur $\ell$. L’étude s’effectue dans le référentiel terrestre où le champ de pesanteur est $\vec{g}$ .
@@ -496,8 +508,11 @@ Soit un pendule simple constitué d’une masse $m$ accrochée à l’extrémit�
 
 (b) Déterminer l’expression de la période $T$ par analyse dimensionnelle. *Appliquer la méthode !*
 
+
 > [!tip]- 💡 Coup de pouce
 > Si la dimension d'une grandeur n'apparaît pas dans le membre de gauche, son exposant correspondant dans le système doit être égal à 0.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -524,6 +539,8 @@ Soit un pendule simple constitué d’une masse $m$ accrochée à l’extrémit�
 >   $$
 >   T = k  \sqrt{\frac{\ell}{g}}
 >   $$
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Lycée : Vérification dimensionnelle de lois physiques
@@ -557,6 +574,8 @@ Soit un pendule simple constitué d’une masse $m$ accrochée à l’extrémit�
 >       dans une formule de physique.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Théorème de Buckingham et lois d'échelle
 
 > - **Théorème de Buckingham**
@@ -582,6 +601,8 @@ Soit un pendule simple constitué d’une masse $m$ accrochée à l’extrémit�
 >       \]
 > - Relier le nombre de Reynolds
 >       aux régimes d'écoulement.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Analyse dimensionnelle et lois physiques exactes
@@ -614,6 +635,8 @@ Soit un pendule simple constitué d’une masse $m$ accrochée à l’extrémit�
 >       sans dimension dans la modélisation.
 > - Identifier les limites d'une
 >       approche purement dimensionnelle.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Similarité physique et modélisation avancée
@@ -653,6 +676,9 @@ Soit un pendule simple constitué d’une masse $m$ accrochée à l’extrémit�
 >       et les approximations de modèles.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex1-grandeurs-physiques-fondamentales-dimensions-et-unites-de-base|Exercice 1 — Grandeurs physiques fondamentales : dimensions et unités de base]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex2-grandeurs-derivees-equation-au-dimensions-dimension-et-unites-derivees-composees|Exercice 2 — Grandeurs Dérivées : Équation au dimensions , dimension et unités dérivées (composées)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex3-homogeneite-et-analyse-dimensinnelle|Exercice 3 — Homogénéité et Analyse Dimensinnelle]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex4-lois-et-constantes-fondamentales-en-physiques|Exercice 4 — Lois et Constantes Fondamentales en physiques]]
+
 

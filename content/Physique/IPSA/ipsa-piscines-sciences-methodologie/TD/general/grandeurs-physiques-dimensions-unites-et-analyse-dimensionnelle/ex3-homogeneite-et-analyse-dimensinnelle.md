@@ -20,7 +20,8 @@ la même dimension, et les deux membres d'une équation physique doivent
 Cet exercice permet de revoir les règles fondamentales de l'analyse
 dimensionnelle et de les appliquer à différentes relations physiques.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Grandeurs fondamentales et dérivées du S.I.**
 >
 > - Connaître les grandeurs fondamentales du S.I. et leurs dimensions :
@@ -53,7 +54,9 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 >       et se divisent lors d'un quotient.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > - **Vérification de l'homogénéité ** 
 >
 > - Savoir déterminer si une équation physique est homogène en comparant les dimensions de ses différents termes et de ses deux membres.
@@ -72,7 +75,9 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 > - Comprendre qu'une relation homogène n'est pas nécessairement vraie, mais qu'une relation non homogène ne peut pas être correcte.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Principe d'homogénéité**
 >
 > Une relation physique doit être homogène : tous les termes qui sont
@@ -120,6 +125,7 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 > \]
 
 
+
 **q1_intro.** **Notions de cours S.I.** 
 %Répondre aux questions de cours relatives à l'homogénéité
 %(a) Définir une équation homogène. (b) Une équation homogène est-elle forcément vraie ? (c) Une équation non homogène peut-elle être vraie ? (d) Quelles sont les règles d'addition/soustraction ? (e) De multiplication/division ? (f) Quelle est la dimension d'une dérivée df/dx ? (g) Quelle est la dimension des fonctions transcendentales (exp, cos, ln) et de leurs arguments ?
@@ -139,6 +145,7 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 
 (g) Que peut on dire de la dimension des fonctions mathématiques $\exp(x)$ , $\cos(x)$ , $\ln(x)$ ? Et de leur argument ?
 
+
 > [!example]- 📝 Solution détaillée
 > (a) Une équation est homogène si tous ses termes ont la même dimension.
 >
@@ -153,6 +160,7 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 > (f) $[df/dx] = [f] / [x]$.
 >
 > (g) Les fonctions transcendentales et leurs arguments sont adimensionnels $([f] = 1, [x] = 1)$.
+
 
 
 **q2.** **L’analyse dimensionnelle pour vérifier l’homogénéité.**\\
@@ -171,6 +179,7 @@ dimensionnelle et de les appliquer à différentes relations physiques.
     Quelles sont les dimensions des constantes $R$ , $\omega$  et $\varphi$ ?
 
 (d) Vérifier l’homogénéité de l’énergie potentielle de pesanteur : $\mathcal{E}_p = mgz$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Vérifier l'homogénéité d'une équation
@@ -232,6 +241,8 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 > - Comparer les deux résultats pour conclure sur l'homogénéité.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > (a) 1. $x = a t$
 >     \vspace{-1cm}
@@ -276,11 +287,15 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 >     donc $\mathcal{E}_p = mgz$ est bien homogène a une énergie
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Vérifier des relations physiques simples
 
 > Utiliser l'analyse dimensionnelle pour vérifier les relations
 > classiques de mécanique et d'électricité, par exemple
 > $v=d/t$, $E_c=\frac12mv^2$ ou $P=UI$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Retrouver une relation par analyse dimensionnelle
@@ -291,11 +306,15 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 > faisant intervenir plusieurs paramètres.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Théorème de Vaschy-Buckingham
 
 > Introduire le théorème $\Pi$ de Vaschy-Buckingham et la construction
 > de grandeurs sans dimension. Montrer comment cette méthode permet
 > de réduire le nombre de paramètres indépendants d'un problème physique.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Analyse d'échelles et similitude
@@ -306,6 +325,9 @@ dimensionnelle et de les appliquer à différentes relations physiques.
 > de Froude ou de Mach.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex1-grandeurs-physiques-fondamentales-dimensions-et-unites-de-base|Exercice 1 — Grandeurs physiques fondamentales : dimensions et unités de base]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex2-grandeurs-derivees-equation-au-dimensions-dimension-et-unites-derivees-composees|Exercice 2 — Grandeurs Dérivées : Équation au dimensions , dimension et unités dérivées (composées)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex4-lois-et-constantes-fondamentales-en-physiques|Exercice 4 — Lois et Constantes Fondamentales en physiques]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex5-l-analyse-dimensionnelle-comme-outil-de-prediction|Exercice 5 — L'analyse dimensionnelle comme outil de prédiction]]
+
 

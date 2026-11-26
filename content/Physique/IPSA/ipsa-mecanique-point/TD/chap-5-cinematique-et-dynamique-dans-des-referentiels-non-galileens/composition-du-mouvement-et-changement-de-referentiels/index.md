@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-mecanique-point/index|⬅ Mécanique du point — IPSA]]
 
+
 > [!info] ℹ️ Chap. 5 — Cinématique et dynamique dans des référentiels non galiléens
 > Séance 7
 
 
+
 <a href="/pdfs/td7_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td7_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi une balle lancée droit sur un manège semble-t-elle courber ?**
 >
 > *Durée de l'introduction : 5 min*
@@ -22,7 +25,9 @@ tags:
 >
 > **Idée clé : le mouvement est relatif ; les forces d'inertie sont le prix à payer pour décrire le monde dans un référentiel non galiléen.** Pour l'observateur au sol, la trajectoire est droite ; pour l'enfant, elle est courbée par la force de Coriolis $-2m\vec\Omega\wedge\vec v_r$.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivée d'un vecteur dans une base mobile**
 >
 > Pour un vecteur $\vec A$ : $\left(\dfrac{\mathrm d\vec A}{\mathrm dt}\right)_{\mathcal R}=\left(\dfrac{\mathrm d\vec A}{\mathrm dt}\right)_{\mathcal R'}+\vec\Omega\wedge\vec A$. Pour une base tournant autour de $Oz$ avec $\dot\theta=\omega$ : $\dot{\vec e}_x{}'=\omega\,\vec e_y{}'$ et $\dot{\vec e}_y{}'=-\omega\,\vec e_x{}'$.
@@ -39,7 +44,9 @@ tags:
 >
 > Règle de la main droite, double produit vectoriel $\vec a\wedge(\vec b\wedge\vec c)=\vec b(\vec a\cdot\vec c)-\vec c(\vec a\cdot\vec b)$, norme $\|\vec a\wedge\vec b\|=ab\sin\alpha$.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Composer vitesses et accélérations**
 >
 > Savoir écrire et appliquer $\vec v_a=\vec v_r+\vec v_e$ et $\vec a_a=\vec a_r+\vec a_e+\vec a_c$, identifier à chaque fois le mouvement relatif, d'entraînement, et savoir calculer $\vec a_e$ et $\vec a_c=2\vec\Omega\wedge\vec v_r$.
@@ -52,7 +59,9 @@ tags:
 >
 > Savoir écrire le principe fondamental $m\vec a_r=\sum\vec F+\vec F_{ie}+\vec F_{ic}$ avec $\vec F_{ie}=-m\vec a_e$ et $\vec F_{ic}=-m\vec a_c$, et en déduire équilibres relatifs et petites oscillations (exercices 5 à 7).
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Mouvement absolu, relatif, d'entraînement**
 >
 > Le mouvement de $M$ dans $\mathcal R$ est le **mouvement absolu**, dans $\mathcal R'$ le **mouvement relatif**. Le **mouvement d'entraînement** est celui du point $M'$ **fixe dans $\mathcal R'$** qui coïncide à l'instant $t$ avec $M$, vu depuis $\mathcal R$ : c'est le mouvement que $M$ aurait s'il était fixé à $\mathcal R'$.
@@ -92,6 +101,8 @@ tags:
 >
 > Rotation à $\Omega=\dfrac{2\pi}{23\,{\rm h}\,56\,{\rm min}\,4\,{\rm s}}=7{,}292\times10^{-5}\ {\rm rad\cdot s^{-1}}$. Pesanteur effective $\vec g=\vec g_0+\Omega^2\overrightarrow{HM}$ (correction $\le3{,}4\times10^{-2}\ {\rm m\cdot s^{-2}}$ à l'équateur, soit 0,35 \%). Coriolis : déviation vers la droite dans l'hémisphère Nord ; composante verticale de $\vec\Omega$ à la latitude $\lambda$ : $\Omega\sin\lambda$.
 
+
+
 > [!note]- 🧮 Outils mathématiques
 > **Dérivation de vecteurs**
 >
@@ -108,6 +119,7 @@ tags:
 > **Développement limité à l'ordre 1**
 >
 > $\sin\varphi\approx\varphi$, $\cos\varphi\approx1-\varphi^2/2$, $\cosh\varphi\approx1+\varphi^2/2$ (pour le cas Coriolis et le pendule dans le train).
+
 
 
 ## Exercices

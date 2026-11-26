@@ -13,7 +13,8 @@ tags:
 
 On considère deux oscillateurs mécaniques dissymétriques. Les masses sont identiques et égales à $m$, mais les ressorts sont de raideurs différentes $k$, $2k$, $4k$ de gauche à droite. À l'équilibre, ceux-ci sont tous à leur longueur à vide et possèdent la même longueur $d$. Les masses sont assujetties à se déplacer le long de l'axe des $x$ et on note $x_1(t)$ et $x_2(t)$ leurs positions en mouvement comptées depuis leur position d'équilibre respective.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Et si les deux oscillateurs ne sont pas identiques ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -23,7 +24,9 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > **Idée clé : sans symétrie, les modes ont des amplitudes inégales, et il faut diagonaliser.** La matrice de raideur $K=k\begin{pmatrix}3&-2\\-2&6\end{pmatrix}$ a pour valeurs propres $2k$ et $7k$ et pour vecteurs propres $(2,1)$ et $(1,-2)$ : les deux masses sont toujours en phase ou en opposition de phase dans un mode, mais avec des amplitudes dans le rapport $2:1$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Allongement algébrique et force d'un ressort**
 >
 > L'allongement algébrique $e=\ell_s-\ell_0$ fixe le signe de la force : un ressort étiré ($e>0$) tire chacune de ses extrémités vers son centre.
@@ -41,7 +44,9 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > $x_j=\underline A_je^{i\omega t}$, $\ddot x_j=-\omega^2x_j$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Mettre en équation un système de ressorts sans erreur de signe**
 >
 > Savoir calculer les allongements algébriques de trois ressorts, justifier le sens de chaque force, et vérifier les signes par un raisonnement par l'absurde.
@@ -53,6 +58,8 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > **Interpréter des modes dissymétriques**
 >
 > Savoir décrire les deux modes (amplitudes inégales), écrire la solution générale, décomposer des conditions initiales sur les modes et discuter à quelles conditions des battements existent.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -77,7 +84,9 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > $\cos p+\cos q=2\cos\dfrac{p+q}2\cos\dfrac{p-q}2$ ; permet de voir quand une somme de deux sinusoïdes s'écrit comme un produit.
 
 
+
 **q1.** Quels sont les allongements des trois ressorts ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Longueur instantanée moins longueur à vide**
@@ -85,10 +94,14 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > Repérez chaque extrémité de ressort par son abscisse. L'allongement est la longueur instantanée moins la longueur à vide $d$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Allongements**
 >
 > Ressort de gauche (raideur $k$) : $x_1$ ; ressort central ($2k$) : $x_2-x_1$ ; ressort de droite ($4k$) : $-x_2$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -106,7 +119,9 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > **Signification des signes.** Si $x_1>0$, la masse 1 s'éloigne du mur de gauche : le ressort de gauche est étiré ($e_a>0$). Si $x_2>0$, la masse 2 se rapproche du mur de droite : le ressort de droite est comprimé ($e_c<0$). Le ressort central est étiré si $x_2>x_1$ (les masses s'écartent).
 
 
+
 **q2.** Établir, en utilisant le raisonnement par l'absurde, le système d'équations différentielles couplées que vérifient les deux variables du mouvement $x_1(t)$ et $x_2(t)$ lors des oscillations libres. Le changement de variables $S=x_1+x_2$ et $D=x_1-x_2$ est-il adapté ici ? Le calcul n'est pas demandé.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Règle des forces**
@@ -122,11 +137,15 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > Comparez les coefficients de $x_1$ dans la première équation et de $x_2$ dans la seconde : sont-ils égaux ? Rappelez-vous la condition trouvée à l'exercice 1.
 
 
+
+
 > [!success]- ✅ Correction
 > **Système**
 >
 > $$m\ddot x_1=-kx_1+2k(x_2-x_1),\qquad m\ddot x_2=-2k(x_2-x_1)-4kx_2,$$
 > soit, avec $\omega_0^2=k/m$ : $\ddot x_1+3\omega_0^2x_1-2\omega_0^2x_2=0$ et $\ddot x_2+6\omega_0^2x_2-2\omega_0^2x_1=0$. Le changement $S,D$ n'est pas adapté.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -158,7 +177,9 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > Les équations restent couplées : on a seulement remplacé un couplage par un autre. (Les équations en $S$ et $D$ du corrigé de l'établissement ne sont pas correctes : coefficients $\omega_0^2/2$ au lieu de $5\omega_0^2/2$ dans la première, et rôles de $S$ et $D$ intervertis dans la seconde.) L'idée reste valable sous une forme généralisée : voir la question suivante.
 
 
+
 **q3.** Chercher les modes propres et écrire l'expression de la solution générale du régime libre. Quels battements est-il possible d'obtenir et à quelles conditions ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Chercher une solution harmonique**
@@ -174,6 +195,8 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > Une somme de deux cosinus se factorise en produit. Quelles relations entre amplitudes l'autorisent ? Quelle condition sur les pulsations donne une enveloppe lente ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Modes propres**
 >
@@ -186,6 +209,8 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > **Battements**
 >
 > Possibles sur $x_1$ seule si $A'=\pm A''$, sur $x_2$ seule si $A'=\pm4A''$, jamais sur les deux ; mais $\omega''/\omega'=\sqrt{7/2}\simeq1{,}87$ : pas d'enveloppe lente, donc pas de battement au sens usuel.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -230,6 +255,8 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > **Condition physique supplémentaire.** Un battement est une modulation *lente* de l'amplitude, ce qui demande $|\omega''-\omega'|\ll\omega'+\omega''$. Ici $\omega''/\omega'=\sqrt{7/2}\simeq1{,}87$ : la pulsation de modulation $(\omega''-\omega')/2=0{,}62\,\omega_0$ est du même ordre que celle de la porteuse $(\omega''+\omega')/2=2{,}03\,\omega_0$. La factorisation est mathématiquement possible, mais il n'y a pas de véritable phénomène de battement. Des battements nets existeraient pour des oscillateurs presque identiques et faiblement couplés (exercices 1 et 7).
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Physique des molécules**
 >
@@ -240,18 +267,27 @@ On considère deux oscillateurs mécaniques dissymétriques. Les masses sont ide
 > Un bâtiment à deux étages de raideurs différentes : mode fondamental avec les deux étages en phase (amplitude croissante avec la hauteur), second mode avec un nœud.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Élimination et équation du quatrième ordre
 > Éliminer $x_2$ entre les deux équations conduit à $x_1''''+9\omega_0^2x_1''+14\omega_0^4x_1=0$, équation scalaire d'ordre $4$ dont le polynôme caractéristique $(r^2+2\omega_0^2)(r^2+7\omega_0^2)$ redonne les pulsations propres (voir le petit cours sur les équations d'ordre $N$).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Le ressort central est-il jamais au repos ?
 > Il serait au repos pour tout $t$ si $x_2-x_1\equiv0$. Dans la solution générale, $x_2-x_1=-\tfrac32A'\cos(\omega't+\varphi')-3A''\cos(\omega''t+\varphi'')$ ne peut être identiquement nul que pour $A'=A''=0$ : pas de mouvement.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Perturbation d'un système symétrique
 > Pour des raideurs $k$, $k(1+\delta)$, $k$ avec $\delta\ll1$, étudier comment la dissymétrie mélange les modes $(1,\pm1)$ et décale les fréquences (voir l'exercice 7).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex3-oscillations-libres-et-forcees-d-un-couplage-pendule-chariot|Exercice 3 — Oscillations libres et forcées d'un couplage pendule-chariot]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex4-frequence-propre-d-une-molecule-diatomique|Exercice 4 — Fréquence propre d'une molécule diatomique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex5-complement-niveau-1-cpge-pendules-couples-par-un-ressort-attache-a-mi-hauteur|Exercice 5 — Complément (niveau 1, CPGE) : pendules couplés par un ressort attaché à mi-hauteur]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex6-complement-niveau-2-ambitieux-trois-masses-quatre-ressorts-diagonalisation-et-perturbation|Exercice 6 — Complément (niveau 2, ambitieux) : trois masses, quatre ressorts, diagonalisation et perturbation]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex7-complement-niveau-2-ambitieux-oscillateurs-desaccordes-anticroisement-et-transfert-d-energie|Exercice 7 — Complément (niveau 2, ambitieux) : oscillateurs désaccordés, anticroisement et transfert d'énergie]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex8-complement-niveau-3-ens-modes-non-lineaires-de-deux-pendules-couples-stabilite-et-instabilite-parametrique|Exercice 8 — Complément (niveau 3, ENS) : modes non linéaires de deux pendules couplés, stabilité et instabilité paramétrique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex9-complement-niveau-3-ens-anneau-de-n-oscillateurs-modes-de-fourier-et-propagation-du-signal|Exercice 9 — Complément (niveau 3, ENS) : anneau de N oscillateurs, modes de Fourier et propagation du signal]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex1-pendules-couples-et-battements|Exercice 1 — Pendules couplés et battements]]
+
 

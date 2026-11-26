@@ -7,8 +7,10 @@ tags:
 
 [[physique/IPSA/ipsa-tp/index|⬅ Travaux pratiques — IPSA]]
 
+
 > [!info] ℹ️ Ondes mécaniques, sonores, électromagnétiques et lumineuses
 > Séance 1
+
 
 
 - [[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex1-ondes-sur-un-ressort-long-slinky-filmees-au-ralenti-impulsions-reflexions-et-modes-propres|Exercice 1 — Ondes sur un ressort long (Slinky) filmées au ralenti : impulsions, réflexions et modes propres]]

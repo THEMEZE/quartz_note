@@ -13,7 +13,8 @@ tags:
 
 L’objectif de l’exercice est d’utiliser l’analyse dimensionnelle afin de déterminer la dimension de constante intervenant dans les lois physiques.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Grandeurs physiques et unités**
 >
 > - **Grandeurs physiques**
@@ -58,7 +59,9 @@ L’objectif de l’exercice est d’utiliser l’analyse dimensionnelle afin de
 >       algébriques sur une relation littérale.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Identifier les grandeurs physiques**
 >
 > - **Identification des grandeurs**
@@ -123,7 +126,9 @@ L’objectif de l’exercice est d’utiliser l’analyse dimensionnelle afin de
 >       nécessaires pour mesurer une constante physique.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Dimensions fondamentales**
 >
 > - **Dimensions de base**
@@ -324,6 +329,7 @@ L’objectif de l’exercice est d’utiliser l’analyse dimensionnelle afin de
 >       à l'aide d'une balance de torsion.
 
 
+
 **q1.** **Constante de la gravitation universelle $\mathcal{G}$.**\\
 
 La force d’attraction qui s’exerce entre deux points matériels, de masse $m$ et $m'$ , séparés par une distance $r$, est donnée, en module, par la loi d’interaction gravitationnelle de Newton :
@@ -340,8 +346,11 @@ $$
 (c) Peut-on calculer sa valeur numérique ? \\
   *Remarque*  : la constante $\mathcal{G}$ a été mesurée directement la première fois par Henry Cavendish en 1798 au moyen de sa balance de torsion et il trouva une valeur de $6,6 10^{-11}$ S.I. (à des erreurs expérimentales près)
 
+
 > [!tip]- 💡 Coup de pouce
 > En isolant la constante dans l'équation de la loi physique, on détermine sa dimension globale : $[\mathcal{G}] = [F] * [r]^2 / ([m] * [m'])$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : valeur de $\mathcal{G}$
@@ -363,6 +372,8 @@ $$
 >
 >
 > En 1798 Henry Cavendish mesure $6,6\times10^{-11}~\mathrm{kg}^{-1}\,\mathrm{m}^3\,\mathrm{s}^{-2}$. Et aujourd'hui la mesure la plus précise est $(6,67430 \pm 0,00015)\times10^{-11}~\mathrm{kg}^{-1}\,\mathrm{m}^3\,\mathrm{s}^{-2}$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Équilibre des couples
@@ -442,6 +453,8 @@ $$
 > <p style="text-align:center"><a href="/figures/cavendish_exp.svg" target="_blank" rel="noopener"><img src="/figures/cavendish_exp.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Remarques $\&$ Précautions expérimentales
 
 > 1. **Isolation aérodynamique et thermique :** 
@@ -454,6 +467,8 @@ $$
 >       Chaque grosse masse $m'$ attire fortement la petite masse $m$ voisine, mais exerce aussi une attraction résiduelle plus faible sur la masse $m$ située à l'autre extrémité de la tige. Une correction géométrique sur la distance doit être appliquée pour les calculs de haute précision.
 > 5. **Effets parasites électrostatiques et magnétiques :** 
 >       Les masses et le châssis doivent être reliés à la terre ou constitués de matériaux amagnétiques (plomb, laiton) pour éviter que des forces électrostatiques ou magnétiques ne masquent l'interaction gravitationnelle.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : De la force gravitationnelle à la courbure de l'espace-temps
@@ -497,6 +512,8 @@ $$
 >   Gravitational Physics, « The curvature of spacetime ».*
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Pourquoi les corps tombent-ils ?
 
 > (a) [b)] **Pourquoi les corps tombent-ils ?**
@@ -531,6 +548,8 @@ $$
 >
 >   *Référence : Einstein Online, Max Planck Institute for
 >   Gravitational Physics, « Falling freely ».*
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Masse inertielle et masse gravitationnelle.
@@ -573,6 +592,8 @@ $$
 >
 >   *Référence : Einstein Online, Max Planck Institute for
 >   Gravitational Physics, « Newtonian limit of general relativity ».*
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Gravitation et interactions quantiques.
@@ -634,6 +655,8 @@ $$
 >   *Référence : CERN, « The Standard Model ».*
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Dimmension de $[\mathcal{G}]$
 > **
@@ -682,6 +705,7 @@ $$
 > (c) [c)] L'analyse dimensionnelle ne donne pas la valeur numérique de $G$.
 
 
+
 **q2.** **(${}^*$) Constante diélectrique $\bm{\varepsilon_0}$** (ou permittivité du vide)\\
 
 Coulomb énonce la loi d’interaction électrostatique en 1785 : la force qui s’exerce entre deux charges électriques $q$ et $q'$ , séparées par une distance $r$, est donnée par
@@ -695,14 +719,19 @@ $$
 
 (b) Écrire l’équation aux dimensions et en déduire la dimension de la constante diélectrique. Donner son unité dans le S.I.
 
+
 > [!tip]- 💡 Coup de pouce
 > En isolant la constante dans l'équation de la loi physique, on détermine sa dimension globale : $[\varepsilon_0] = 1 / [F] * [q] * [q']/ [r]^2 $.
 >
 > L'intensité électrique I est une dimension de base. La charge q s'exprime comme q = I * t, d'où [q] = I * T.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence
 > $\varepsilon_0 = \frac{ 10^7}{ 4 \pi c^2 }\, F\cdot m\cdot s^{-2} = 8,854~187\times 10^{-12} ~{\color{#2E7D5B} \overbrace{kg^{-1}\cdot m^{-3}\cdot s^4\cdot A^2}^{F/m}}$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -750,6 +779,7 @@ $$
 > - son unité est donnée en ${\color{#2E7D5B} kg^{-1}\cdot m^{-3}\cdot s^4\cdot A^2} $
 
 
+
 **q3.** **(${}^*$) Constante des gaz parfait $\bm{R}$** \\
 
 La loi des gaz parfait relie le volume $V$, la pression $P$ et la température $T$ de $n$ moles de gaz :
@@ -763,12 +793,17 @@ $$
 
 (b) Écrire l’équation aux dimensions et en déduire la dimension de la constante des gaz parfait $R$. Donner son unité dans le S.I.
 
+
 > [!tip]- 💡 Coup de pouce
 > Le produit de la pression par le volume $P * V$ représente une dimension d'énergie :$M * L^2 * T^{-2}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence
 > $R = N_A \cdot k_B = 8,314 ~ {\color{#2E7D5B} \text{J} \cdot \text{mol}^{-1} \cdot \text{K}^{-1} }$ avec $N_A = 6,022 \times 10^{23} ~ \text{mol}^{-1}$ (nombre d'Avogadro) et $k_B = 1,380 \times 10^{-23} ~ \text{J} \cdot \text{K}^{-1}$ (constante de Boltzmann)
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -847,6 +882,8 @@ $$
 > - son utité est donnée en ${\color{#2E7D5B}J \cdot K^{-1} \cdot mol^{-1}} $ (ou ${\color{#2E7D5B} kg \cdot m^2 \cdot s^{-2} \cdot K^{-1} \cdot mol^{-1}} $ ).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Vérification dimensionnelle de lois physiques
 
 > - **Application à la mécanique**
@@ -877,6 +914,8 @@ $$
 >       différentes.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Analyse dimensionnelle et lois d'échelle
 
 > - **Détermination d'une loi physique**
@@ -902,6 +941,8 @@ $$
 >       à partir de grandeurs physiques.
 > - Utiliser les groupes sans dimension
 >       pour étudier des lois d'échelle.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Constantes physiques et systèmes d'unités
@@ -940,6 +981,8 @@ $$
 >       d'unités.
 > - Comprendre le rôle des constantes physiques
 >       dans la définition des unités SI.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Gravitation, relativité et constantes fondamentales
@@ -990,6 +1033,9 @@ $$
 >       dans la construction d'échelles physiques.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex1-grandeurs-physiques-fondamentales-dimensions-et-unites-de-base|Exercice 1 — Grandeurs physiques fondamentales : dimensions et unités de base]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex2-grandeurs-derivees-equation-au-dimensions-dimension-et-unites-derivees-composees|Exercice 2 — Grandeurs Dérivées : Équation au dimensions , dimension et unités dérivées (composées)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex3-homogeneite-et-analyse-dimensinnelle|Exercice 3 — Homogénéité et Analyse Dimensinnelle]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex5-l-analyse-dimensionnelle-comme-outil-de-prediction|Exercice 5 — L'analyse dimensionnelle comme outil de prédiction]]
+
 

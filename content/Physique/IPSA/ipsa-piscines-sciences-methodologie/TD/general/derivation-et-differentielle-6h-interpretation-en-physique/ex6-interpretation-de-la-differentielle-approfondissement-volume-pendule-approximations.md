@@ -13,24 +13,31 @@ tags:
 
 Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mathrm{d}f$ pour une fonction de degré 3 (le volume d'une sphère), on l'applique à un calcul d'incertitude (le pendule simple), puis on utilise $\mathrm{d}f$ pour estimer des valeurs numériques sans calculatrice.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercice 2**
 >
 > $\mathrm{d}f = f'(x)\,\mathrm{d}x$ et $\Delta f = f(x+\mathrm{d}x) - f(x)$ ; incertitude par la méthode différentielle.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Quantifier l'erreur de l'approximation linéaire**
 >
 > Savoir que l'erreur $\Delta f - \mathrm{d}f$ est d'ordre $(\mathrm{d}x)^2$, évaluer son importance relative, et prévoir son signe.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Linéarisation et erreur**
 >
 > Pour $f$ deux fois dérivable et $\mathrm{d}x$ petit :
 > $$f(x+\mathrm{d}x) \approx f(x) + f'(x)\,\mathrm{d}x, \qquad \Delta f - \mathrm{d}f \approx \frac{1}{2}f''(x)\,(\mathrm{d}x)^2.$$
 > Le signe de $f''$ donne le signe de l'erreur : $f''>0$ (convexe) $\Rightarrow \Delta f > \mathrm{d}f$ ; $f''<0$ (concave) $\Rightarrow \Delta f < \mathrm{d}f$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -39,9 +46,11 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > Pour $\Delta V$, développer $(r+\mathrm{d}r)^3 = r^3 + 3r^2\mathrm{d}r + 3r(\mathrm{d}r)^2 + (\mathrm{d}r)^3$.
 
 
+
 **1.**
 
   **a)** Le volume d'une sphère de rayon $r$ est $V(r) = \dfrac{4}{3}\pi r^3$. Calculer $\dfrac{\mathrm{d}V}{\mathrm{d}r}$, vérifier l'homogénéité et reconnaître le résultat.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -51,7 +60,9 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > On reconnaît la surface $S$ de la sphère : $\dfrac{\mathrm{d}V}{\mathrm{d}r} = S(r)$.
 
 
+
   **b)** En déduire $\mathrm{d}V$ et interpréter géométriquement.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -60,7 +71,9 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > C'est le volume d'une coquille sphérique d'épaisseur $\mathrm{d}r$, approximée par « surface $\times$ épaisseur ».
 
 
+
   **c)** Exprimer exactement $\Delta V = V(r+\mathrm{d}r) - V(r)$ et l'écrire sous la forme $\mathrm{d}V + (\text{termes d'ordre supérieur})$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -74,7 +87,9 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > $$
 
 
+
   **d)** Pour $r = 10\ \text{cm}$, calculer $\mathrm{d}V$, $\Delta V$ et l'erreur relative $\dfrac{\Delta V - \mathrm{d}V}{\Delta V}$ pour $\mathrm{d}r = 1\ \text{cm}$, $0{,}1\ \text{cm}$ et $0{,}01\ \text{cm}$. Que constate-t-on ?
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -87,7 +102,9 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > L'erreur relative est divisée par 10 quand $\mathrm{d}r$ est divisé par 10. En effet le terme dominant de l'erreur est $4\pi r(\mathrm{d}r)^2$, donc $\dfrac{4\pi r(\mathrm{d}r)^2}{4\pi r^2\,\mathrm{d}r} = \dfrac{\mathrm{d}r}{r}$.
 
 
+
   **e)** Vérifier que le terme $4\pi r(\mathrm{d}r)^2$ est égal à $\dfrac{1}{2}V''(r)(\mathrm{d}r)^2$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -96,14 +113,18 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > Le terme correctif principal est bien donné par la dérivée seconde. Le terme $\frac{4}{3}\pi(\mathrm{d}r)^3$ est d'ordre 3.
 
 
+
 **2.**
 
   **a)** Pendule simple : $T(L) = 2\pi\sqrt{\dfrac{L}{g}}$, avec $g = 9{,}81\ \text{m}\cdot\text{s}^{-2}$ (supposé exact) et $L = 0{,}500 \pm 0{,}002\ \text{m}$. Calculer $T$ puis $\dfrac{\mathrm{d}T}{\mathrm{d}L}$ à $L = 0{,}500\ \text{m}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Rappel**
 >
 > D'après l'exercice 5, $\dfrac{\mathrm{d}T}{\mathrm{d}L} = \dfrac{\pi}{\sqrt{gL}} = \dfrac{T}{2L}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -113,7 +134,9 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > $$\frac{\mathrm{d}T}{\mathrm{d}L} = \frac{T}{2L} = \frac{1{,}419}{2\times 0{,}500} \approx 1{,}419\ \text{s}\cdot\text{m}^{-1}.$$
 
 
+
   **b)** En déduire l'incertitude $\Delta T$ par la méthode différentielle, puis vérifier avec les valeurs extrêmes de $L$. Écrire le résultat avec le bon nombre de chiffres significatifs.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -125,13 +148,16 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > **Résultat** : $T = (1{,}419 \pm 0{,}003)\ \text{s}$.
 
 
+
   **c)** Comparer l'incertitude relative $\dfrac{\Delta T}{T}$ à $\dfrac{\Delta L}{L}$. Que dire du rapport ?
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
 >
 > $\dfrac{\Delta T}{T} = \dfrac{1}{2}\dfrac{\Delta L}{L} = \dfrac{1}{2}\times 0{,}4\ \% = 0{,}2\ \%$.
 > Le rapport vaut $1/2$, qui est l'exposant de $L$ dans $T\propto L^{1/2}$. Les exposants se lisent directement sur les incertitudes relatives (voir exercice 8).
+
 
 
 **3.**
@@ -144,10 +170,13 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 2. $\dfrac{1}{1{,}02}$ \quad ($\approx 0{,}980392$)
 3. $\sin(31^\circ)$ \quad ($\approx 0{,}515038$)
 
+
 > [!tip]- 💡 Coup de pouce
 > **Point de départ**
 >
 > Choisir un point $x_0$ proche où la fonction est connue : $x_0 = 4$, $x_0 = 1$, $x_0 = 30^\circ = \pi/6$, puis $f(x_0+\mathrm{d}x) \approx f(x_0) + f'(x_0)\,\mathrm{d}x$. Pour (iii), convertir $1^\circ$ en radians.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -161,14 +190,18 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > Les erreurs sont respectivement $\approx 2{,}5\times 10^{-5}$, $4\times 10^{-4}$ et $8\times 10^{-5}$.
 
 
+
 **4.**
 
   **a)** (*) Dans les trois estimations précédentes, dire si l'approximation par la différentielle est une valeur par excès ou par défaut. Relier la réponse au signe de $f''$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Point de cours**
 >
 > $\Delta f - \mathrm{d}f \approx \dfrac{1}{2}f''(x_0)(\mathrm{d}x)^2$ : le signe de l'erreur est celui de $f''$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -182,10 +215,15 @@ Cet exercice prolonge l'exercice 2. On y étudie la différence $\Delta f - \mat
 > Géométriquement, une courbe concave est en dessous de sa tangente, une courbe convexe est au-dessus.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Formule de Taylor-Lagrange
 > Majorer $|\Delta f - \mathrm{d}f|$ par $\frac{1}{2}\sup|f''|\,(\mathrm{d}x)^2$ et en déduire une incertitude sur l'approximation.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex1-derivation-de-fonctions-en-physique|Exercice 1 — Dérivation de fonctions en physique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex2-interpretation-de-la-differentielle-petite-variation-calcul-d-incertitude|Exercice 2 — Interprétation de la différentielle : petite variation $\&$ calcul d'incertitude]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex3-derivees-de-fonctions-composees|Exercice 3 — Dérivées de fonctions composées]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex4-differentielle-logarithmique|Exercice 4 — Différentielle logarithmique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex5-derivation-de-fonctions-en-physique-approfondissement|Exercice 5 — Dérivation de fonctions en physique (approfondissement)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex7-derivees-de-fonctions-composees-approfondissement-taux-lies|Exercice 7 — Dérivées de fonctions composées : approfondissement (taux liés)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex8-differentielle-logarithmique-approfondissement-incertitudes-en-situation-reelle|Exercice 8 — Différentielle logarithmique : approfondissement (incertitudes en situation réelle)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex9-combiner-les-incertitudes-somme-absolue-p-1-quadratique-p-2-puissance-p-et-cas-p-0|Exercice 9 — Combiner les incertitudes : somme absolue ($p=1$), quadratique ($p=2$), puissance $p$ et cas $p=0$]]
+
 

@@ -13,7 +13,8 @@ tags:
 
 Cet exercice aborde la manipulation des grandeurs expérimentales, la gestion des incertitudes et l'application stricte des règles sur les chiffres significatifs lors des opérations physiques.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Notions de base de métrologie**
 >
 > Connaître 
@@ -25,7 +26,9 @@ Cet exercice aborde la manipulation des grandeurs expérimentales, la gestion de
 > - la définition d'un chiffre significatif
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Savoir présenter un résultat expérimental**
 >
 > - Distinguer incertitude absolue et incertitude relative.
@@ -33,7 +36,9 @@ Cet exercice aborde la manipulation des grandeurs expérimentales, la gestion de
 > - Conserver le bon nombre de chiffres significatifs après une opération (somme ou produit).
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Chiffre significatif**
 >
 > - **Chiffres significatifs** : les chiffres significatifs d'une
@@ -73,6 +78,8 @@ Cet exercice aborde la manipulation des grandeurs expérimentales, la gestion de
 > - Le dernier chiffre significatif conservé sur la valeur mesurée $x_m$ doit correspondre à la position du chiffre de l'incertitude $\Delta x$.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Gestion des chiffres significatifs
 > **
@@ -82,6 +89,7 @@ Cet exercice aborde la manipulation des grandeurs expérimentales, la gestion de
 > \item Pour une multiplication/division, compte le nombre total de {\bf chiffres significatifs} des données entrantes.
 > \item L'incertitude absolue subit la même unité et la même dimension que la grandeur mesurée.
 > \end{itemize}
+
 
 
 **q1.** **Mesures $\&$ incertitudes**\\
@@ -101,7 +109,8 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 
 (d) Combien de chiffres significatifs contient la mesure ? Le chiffre 6 est-il certain ?
 
-> [!note]+ 📖 Point de cours
+
+> [!tip]- 📖 Rappel de cours
 > **Définitions de base**
 >
 > Soit $x$ une grandeur physique.\\
@@ -117,11 +126,15 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 > En général, l’erreur sur la mesure (absolue ou relative) est une donnée de l’expérience. Elle dépend des méthodes de mesure et de l’appareillage.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Calcul de $\Delta m$
 > **
 >
 > Calculer l'incertitude absolue en effectuant $2\%$ de $15,6 \text{ g}$, puis arrondir l'incertitude absolue à $1$ chiffre significatif par excès.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -139,6 +152,7 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 > (d) La valeur $15,6 \text{ g}$ comporte **3 chiffres significatifs** ($1$, $5$ et $6$). Le chiffre $6$ est incertain (sa valeur réelle oscille entre $3$ et $9$).
 
 
+
 **q2.** **Expression rigoureuse d’une grandeur numérique**\\
 
 
@@ -154,7 +168,8 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 
 (c) Exprimer avec le bon nombre de chiffres significatifs la somme de : $0,056 \times 10^2 + 11,8 \times 10^{-1}$
 
-> [!note]+ 📖 Point de cours
+
+> [!tip]- 📖 Rappel de cours
 > **Règles de présentation et de calcul**
 >
 > Symbole de la grandeur = (Valeur numérique $\pm$ Incertitude) (Symbole de l’unité).\\
@@ -167,12 +182,16 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 > - Le résultat d’un produit/quotient comporte au maximum autant de chiffres significatifs que le facteur qui en a le moins.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Calculs géométriques et sommes
 > **
 >
 > * Volume du cylindre : $V = \pi r^2 h$. Compter le nombre de CS de $r$ ($3$ CS) et $h$ ($2$ CS).
 > * Pour la somme : écrire les deux nombres avec la même puissance de $10$ avant d'additionner.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -260,9 +279,13 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 >   $$
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Vocabulaire des mesures
 
 > Identifier l'incertitude de lecture sur des instruments gradués (règle, éprouvette) ou digitaux (balance).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Propagation des incertitudes
@@ -270,9 +293,13 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 > Utiliser la méthode des différentielles logarithmiques ou le calcul d'incertitude-type composée (NF EN ISO/IEC Guide 98-3) pour des fonctions à plusieurs variables.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Incertitudes de type A et B
 
 > Évaluer l'incertitude-type par approche statistique (Type A, écart-type de la moyenne) ou par loi de probabilité a priori (Type B, distribution uniforme/rectangulaire).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Inférence bayésienne en métrologie
@@ -280,6 +307,9 @@ Soit une mesure de la masse $m$ dont le résultat est $15,6 ~g$ avec une incerti
 > Traiter l'ajustement de données expérimentales complexes et estimer les incertitudes via des méthodes Monte-Carlo.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex9-entrainement-chiffres-significatifs-incertitudes-et-propagation|Exercice 9 — (*) Entraînement : chiffres significatifs, incertitudes et propagation]]
+
 

@@ -20,7 +20,8 @@ extérieure de module $F = 50$ N.
 
 [🎞️ Voir en .mp4](/animations/anim_corde_onde/animation.mp4)
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi une corde plus fine ou plus tendue sonne-t-elle plus aigu ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -30,6 +31,8 @@ extérieure de module $F = 50$ N.
 > **Idée clé : la célérité ne dépend que du milieu.** Sur une corde tendue, $c=\sqrt{F/\mu}$ avec $\mu=\rho S$ la masse linéique : plus la tension est grande, plus l'onde est rapide ; plus la corde est lourde, plus elle est lente. Une onde sinusoïdale progressive s'écrit
 > $$y(x,t)=a\cos(kx-\omega t+\phi),\qquad k=\frac{2\pi}{\lambda},\ \ \omega=\frac{2\pi}{T},\ \ c=\frac\lambda T=\frac\omega k .$$
 > Il ne faut pas confondre la **célérité** $c$ de l'onde (le motif qui avance) et la **vitesse transversale** $\partial_t y$ d'un point de la corde (qui monte et descend).
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -58,9 +61,11 @@ extérieure de module $F = 50$ N.
 > $v_y=\partial_t y=a\omega\sin(kx-\omega t+\phi)$, de valeur maximale $a\omega$. Un point où $y=0$ (passage par l'équilibre) est un point où $|v_y|=a\omega$ est maximale, car $\cos^2+\sin^2=1$.
 
 
+
 **q1.** Calculer la masse linéique $\mu$ de la corde, sachant que la masse
 volumique du nylon est de $950$ kg/m$^3$. Calculer la vitesse de
 propagation $c$ des ondes transversales sur cette corde.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Indication géométrique**
@@ -72,9 +77,13 @@ propagation $c$ des ondes transversales sur cette corde.
 > La vitesse des ondes transverses sur une corde tendue est $c=\sqrt{F/\mu}$. (relation de d'Alembert, vue en cours).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Analogie musicale
 > Analogie avec les cordes de guitare : plus une corde est tendue ou
 > fine, plus la note produite est aiguë (fréquence plus grande).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Analyse dimensionnelle
@@ -82,8 +91,12 @@ propagation $c$ des ondes transversales sur cette corde.
 > ($[F]=$ kg·m·s$^{-2}$, $[\mu]=$ kg·m$^{-1}$).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Démonstration PFD
 > Redémontrer $c=\sqrt{F/\mu}$ à partir du PFD appliqué à un élément de corde $[x,x+dx]$ (cf. exercice 3).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Modèle de dispersion
@@ -92,11 +105,15 @@ propagation $c$ des ondes transversales sur cette corde.
 > (câble métallique épais).
 
 
+
+
 > [!success]- ✅ Correction
 > **Méthode directe**
 >
 > $\mu = \rho\,S = \rho\,\dfrac{\pi d^2}{4} \approx 7.46\times10^{-4}\ \text{kg/m}.$
 > $c=\sqrt{F/\mu}=\sqrt{50/7.46\times10^{-4}}\approx 259\ \text{m/s}.$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -113,6 +130,7 @@ propagation $c$ des ondes transversales sur cette corde.
 > est bien homogène à une vitesse : $[\sqrt{F/\mu}]=\sqrt{\text{N/(kg/m)}}=\text{m/s}$.
 
 
+
 On suppose qu'une onde plane transversale se propage sur la corde dans
 le sens des $x$ croissants. À l'instant $t=0$, la corde a l'allure
 donnée sur la figure ci-dessus.
@@ -122,16 +140,21 @@ donnée sur la figure ci-dessus.
 
   **a)** Quelle est la longueur d'onde $\lambda$ de l'onde se propageant sur la corde ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Graphique**
 >
 > Lisez directement $\lambda$ sur la figure (distance entre deux motifs identiques).
 
 
+
+
 > [!success]- ✅ Correction
 > **Lecture**
 >
 > $\lambda = 4\text{cm}$ m (lecture graphique directe sur la figure \ref{fig:cordet0}).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -142,7 +165,9 @@ donnée sur la figure ci-dessus.
 > <p style="text-align:center"><a href="/figures/td1_ex1_corde_t0_lambda.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_corde_t0_lambda.svg" alt="Allure de la corde à $t=0$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **b)** Quelle est sa période temporelle $T$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Relation célérité-période**
@@ -150,10 +175,14 @@ donnée sur la figure ci-dessus.
 > Utilisez $c=\lambda/T$ avec la célérité trouvée en 1.
 
 
+
+
 > [!success]- ✅ Correction
 > **Calcul de T**
 >
 > $T=\lambda/c\approx 1/259\approx 1.55\times10^{-4}$ s.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -162,7 +191,9 @@ donnée sur la figure ci-dessus.
 > $T=\lambda/c\approx 1/259\approx 1.55\times10^{-4}$ s.
 
 
+
   **c)** Quel est le temps nécessaire pour que la phase en un point donné varie de $60°$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Proportionnalité de phase**
@@ -170,10 +201,14 @@ donnée sur la figure ci-dessus.
 > Une variation de phase de $2\pi$ (ou $360^\circ$) correspond à une durée $T$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Calcul de durée**
 >
 > $\Delta t = \dfrac{60}{360}T \approx 2.6\times10^{-5}$ s.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -182,7 +217,9 @@ donnée sur la figure ci-dessus.
 > $\Delta t = \dfrac{60}{360}T \approx 2.6\times10^{-5}$ s.
 
 
+
   **d)** Dessiner l'allure de la corde à l'instant $t=T/8$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Décalage spatial**
@@ -190,10 +227,14 @@ donnée sur la figure ci-dessus.
 > Un décalage temporel $T/8$ correspond à un décalage spatial de $\lambda/8$ dans le sens de propagation.
 
 
+
+
 > [!success]- ✅ Correction
 > **Interpretation graphique**
 >
 > La corde de la figure 1 est translatée de $\lambda/8$ vers les $x$ croissants.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -204,12 +245,16 @@ donnée sur la figure ci-dessus.
 > <p style="text-align:center"><a href="/figures/td1_ex1_corde_t_t8.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_corde_t_t8.svg" alt="Allure de la corde à $t = T/8$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **e)** Donner la loi $y(x,t)$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Forme générale**
 >
 > Une onde plane progressive sinusoïdale se propageant vers les $x$ croissants s'écrit $y(x,t)=a\cos(kx-\omega t+\phi)$.
+
+
 
 
 > [!success]- ✅ Correction
@@ -218,18 +263,24 @@ donnée sur la figure ci-dessus.
 > $y(x,t) = a\cos\!\big(k(x-ct)+\phi\big)$ avec $k=2\pi/\lambda$, $a$ et $\phi$ fixés par la figure 1.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Expression**
 >
 > $y(x,t) = a\cos\!\big(k(x-ct)+\phi\big)$ avec $k=2\pi/\lambda$, $a$ et $\phi$ fixés par la figure 1.
 
 
+
   **f)** Quelle est la vitesse du point $P$ de la corde à l'instant $t=0$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Vitesse particulaire vs célérité**
 >
 > La vitesse transversale d'un point est $\partial y/\partial t$, à ne pas confondre avec la célérité $c$ de l'onde.
+
+
 
 
 > [!success]- ✅ Correction
@@ -238,12 +289,16 @@ donnée sur la figure ci-dessus.
 > $v_y(x_P,0) = \partial_t y(x_P,0) = a\,\omega\sin(kx_P+\phi)$, lue sur la pente de la courbe en $x_P$.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Derivation temporel**
 >
 > $v_y(x_P,0) = \partial_t y(x_P,0) = a\,\omega\sin(kx_P+\phi)$, lue sur la pente de la courbe en $x_P$.\\
 >
 > On note $\Phi(x, t) = k(x-ct)+\phi$ la phase. Or $y(x_P,0) \propto \cos(\Phi(x_p, t=0)) = 0$ donc $v_y(x_P,0) \propto \sin(\Phi(x_p, t=0)) = \pm 1$. Donc $v_y(x_P,0)  = \pm \, a\,\omega$.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -264,6 +319,9 @@ donnée sur la figure ci-dessus.
 > Un signal sinusoïdal $a\cos(\omega t+\phi)$ est caractérisé par son amplitude, sa pulsation et sa phase. Le déphasage entre deux points de la corde est le même que le déphasage entre deux tensions alternatives retardées.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex3-partie-c-masse-lineique-de-la-corde-par-deux-methodes|Exercice 3 — Partie C — Masse linéique de la corde par deux méthodes]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex3-celerite-d-une-onde-sur-une-corde-homogene|Exercice 3 — Célérité d’une onde sur une corde homogène]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex2-partie-b-effet-de-la-tension-sur-les-modes-propres-d-une-corde|Exercice 2 — Partie B — Effet de la tension sur les modes propres d'une corde]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex5-synthese-scientifique-du-tp|Exercice 5 — Synthèse scientifique du TP]] · [[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex1-ondes-sur-un-ressort-long-slinky-filmees-au-ralenti-impulsions-reflexions-et-modes-propres|Exercice 1 — Ondes sur un ressort long (Slinky) filmées au ralenti : impulsions, réflexions et modes propres]]
+
 

@@ -27,7 +27,8 @@ $$
 Déterminer, pour chaque cas, le vecteur position, le vecteur vitesse et le vecteur accélération du point $M$,
 ainsi que leur norme, et caractériser le mouvement obtenu.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Lire un mouvement dans une formule**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -46,7 +47,9 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > La méthode de calcul est unique (dériver terme à terme) ; la difficulté vient de la **dérivée d'un produit** et de la **dérivée composée**.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Boîte à outils de dérivation cartésienne**
 >
 > En base cartésienne fixe $(\vec\imath,\vec\jmath,\vec k)$, on dérive terme à terme : $\vec v=\dot x\,\vec\imath+\dot y\,\vec\jmath+\dot z\,\vec k$ et $\vec a = \ddot x\,\vec\imath+\ddot y\,\vec\jmath+\ddot z\,\vec k$, avec $\|\vec v\|=\sqrt{\dot x^2+\dot y^2+\dot z^2}$ et $\|\vec a\|=\sqrt{\ddot x^2+\ddot y^2+\ddot z^2}$. Il faut maîtriser la dérivation d'un produit de fonctions du temps (règle de Leibniz), utile dès que $t$ apparaît à la fois en facteur et à l'intérieur d'un $\cos$ ou d'un $\sin$ (cas 5 et 6 ci-dessous).
@@ -56,22 +59,30 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Pour un mouvement plan, il est souvent instructif de repérer $r(t)=\|\overrightarrow{OM}\|$ et $\theta(t)$ tels que $x=r\cos\theta$, $y=r\sin\theta$, même si le calcul est mené in fine en cartésien : cela permet d'anticiper et de vérifier les résultats obtenus, notamment via $\|\vec v\|^2 = \dot r^2 + r^2\dot\theta^2$ et les composantes radiale/orthoradiale de l'accélération, $a_r = \ddot r - r\dot\theta^2$ et $a_\theta = r\ddot\theta+2\dot r\dot\theta$ (résultats de cours qui seront redémontrés plus tard, mais utilisables ici comme moyen de vérification).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Automatiser le calcul vectoriel et reconnaître des mouvements-types**
 >
 > Savoir dériver rapidement et sans erreur des lois horaires variées (y compris avec $t$ apparaissant à plusieurs endroits, cas 5 et 6), et surtout savoir **reconnaître, derrière le calcul**, un mouvement-type déjà rencontré (rectiligne uniforme, rectiligne uniformément varié, circulaire uniforme) ou un mouvement nouveau (circulaire non uniforme, spirale) qui anticipe les prochains chapitres du cours.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Exercice de synthèse et de reconnaissance de formes**
 >
 > Cet exercice, plus long et facultatif, vise à entraîner le réflexe de calcul mais surtout la **lecture physique** d'une loi horaire : au-delà du résultat brut, on attend des étudiants qu'ils identifient à chaque fois la nature du mouvement (translation uniforme, MRUV, circulaire uniforme ou non, spirale). Les cas 5 et 6, plus délicats (dérivée d'un produit avec argument variable dans le cosinus/sinus), sont volontairement placés en fin d'exercice et gagnent à être reliés, en aparté, aux formules polaires $a_r, a_\theta$ vues en cours, sans exiger leur redémonstration ici.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Circulaire uniforme vs. circulaire non uniforme**
 >
 > Un mouvement à trajectoire circulaire ($r=$ cte) est **uniforme** si $\dot\theta=\omega$ est constant (cas 3), et **non uniforme** si $\dot\theta$ varie avec le temps (cas 5, où $\theta(t)=2t^2$ donne $\dot\theta=4t$, croissant) : dans ce dernier cas apparaît une accélération tangentielle non nulle, en plus de l'accélération centripète.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -100,14 +111,20 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > $\theta(t)=\displaystyle\int\dot\theta\,\mathrm dt$ : si $\dot\theta=4t$, alors $\theta=2t^2+\theta_0$. Inversement, lire $\theta=2t^2$ donne $\dot\theta=4t$ (la vitesse angulaire croît linéairement).
 
 
+
 **q1.** Cas 1 : $x(t) = 5t$, $y(t)=2$, $z(t)=15t$ (unités SI). Déterminer $\overrightarrow{OM}(t)$, $\vec v(t)$, $\vec a(t)$ et leurs normes ; caractériser le mouvement.
+
 
 > [!tip]- 💡 Coup de pouce
 > Toutes les coordonnées sont des fonctions affines de $t$ : quel type de mouvement cela évoque-t-il ?
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v=(5,0,15)$ constant, $\vec a=\vec 0$ : mouvement rectiligne uniforme, $\|\vec v\|=5\sqrt{10}\approx15{,}8$ m/s.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -123,14 +140,20 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Les trois coordonnées étant des fonctions affines de $t$ (dont $y$ constante), le vecteur vitesse est constant et l'accélération est nulle : il s'agit d'un **mouvement rectiligne uniforme**, le long de la droite de vecteur directeur $5\,\vec\imath+15\,\vec k$, à l'altitude fixe $y=2$.
 
 
+
 **q2.** Cas 2 : $x(t)=2$, $y(t)=0$, $z(t)=4t^2-8t$ (unités SI). Déterminer $\overrightarrow{OM}(t)$, $\vec v(t)$, $\vec a(t)$ et leurs normes ; caractériser le mouvement.
+
 
 > [!tip]- 💡 Coup de pouce
 > Seule la coordonnée $z$ varie, et de façon quadratique : quel est le mouvement le long de $Oz$ ?
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v=(0,0,8t-8)$, $\vec a=(0,0,8)$ constant : mouvement rectiligne uniformément accéléré le long de $Oz$, avec inversion du sens du mouvement à $t=1$ s.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -145,14 +168,20 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Les coordonnées $x=2$ et $y=0$ sont constantes : le point $M$ se déplace uniquement le long de la droite verticale $x=2, y=0$ (parallèle à $Oz$). C'est un **mouvement rectiligne uniformément accéléré** ($\vec a$ constant), avec une vitesse initiale $\vec v(0) = -8\,\vec k$ (le mobile part donc vers les $z$ décroissants), qui s'annule à $t=1$ s puis change de signe : le mobile ralentit, s'arrête un instant à $z=4-8=-4$ m, puis repart en sens inverse (vers les $z$ croissants), avec une accélération constante orientée vers $+\vec k$ tout du long.
 
 
+
 **q3.** Cas 3 : $x(t)=3\cos(10t)$, $y(t)=3\sin(10t)$, $z(t)=2$ (unités SI). Déterminer $\overrightarrow{OM}(t)$, $\vec v(t)$, $\vec a(t)$ et leurs normes ; caractériser le mouvement.
+
 
 > [!tip]- 💡 Coup de pouce
 > C'est le mouvement circulaire de l'exercice 3, mais décalé le long de $Oz$.
 
 
+
+
 > [!success]- ✅ Correction
 > Mouvement circulaire uniforme de rayon $R=3$ m, $\omega=10$ rad/s, dans le plan $z=2$. $\|\vec v\|=30$ m/s, $\|\vec a\|=300$ m/s².
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -168,14 +197,20 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Dans le plan horizontal $z=2$, on reconnaît exactement la structure de l'exercice 3 ($R=3$ m, $\omega=10$ rad/s) : c'est un **mouvement circulaire uniforme**, de rayon $3$ m, parcouru à vitesse angulaire constante $10$ rad/s, dans le plan $z=2$ (l'axe du cercle est donc la droite $x=0,y=0$, parallèle à $Oz$). L'accélération, purement centripète, vérifie $\vec a=-\omega^2(\overrightarrow{OM}-2\vec k)$, pointant à chaque instant vers l'axe du cercle.
 
 
+
 **q4.** Cas 4 : $x(t)=at^2-bt+c$, $y(t)=2c$, $z(t)=0$ ($a,b,c$ constantes). Déterminer $\overrightarrow{OM}(t)$, $\vec v(t)$, $\vec a(t)$ et leurs normes ; caractériser le mouvement.
+
 
 > [!tip]- 💡 Coup de pouce
 > Comparez à l'exercice 1, question 1 : ici c'est $Ox$ qui joue le rôle de l'axe du mouvement quadratique.
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v=(2at-b)\,\vec\imath$, $\vec a=2a\,\vec\imath$ constant : mouvement rectiligne uniformément accéléré le long de la droite $y=2c$, $z=0$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -190,14 +225,20 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Les coordonnées $y=2c$ et $z=0$ étant constantes, le mouvement est entièrement contenu sur la droite parallèle à $Ox$ passant par le point $(0,2c,0)$. La coordonnée $x(t)$ étant quadratique en $t$, à accélération $2a$ constante, il s'agit d'un **mouvement rectiligne uniformément varié** le long de cette droite (accéléré ou décéléré selon les signes relatifs de $a$ et de la vitesse instantanée $2at-b$), analogue à la situation étudiée en question 1(f) de l'exercice 1, mais ici le long de $Ox$ plutôt que de $Oy$.
 
 
+
 **q5.** Cas 5 : $x(t)=3\cos(2t^2)$, $y(t)=3\sin(2t^2)$, $z(t)=0$ (unités SI). Déterminer $\overrightarrow{OM}(t)$, $\vec v(t)$, $\vec a(t)$ et leurs normes ; caractériser le mouvement.
+
 
 > [!tip]- 💡 Coup de pouce
 > Posez $\\theta(t)=2t^2$ : la trajectoire est-elle circulaire ? La vitesse angulaire $\dot\theta$ est-elle constante ?
 
 
+
+
 > [!success]- ✅ Correction
 > Mouvement circulaire de rayon 3 m, mais **non uniforme** ($\dot\theta=4t$ croissant) : $\|\vec v\|=12t$, $\|\vec a\|=\sqrt{144+2304t^4}=12\sqrt{1+16t^4}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -226,14 +267,20 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Il s'agit d'un **mouvement circulaire non uniforme** : la trajectoire est un cercle de rayon fixe (3 m), mais parcouru à vitesse angulaire croissante ($\dot\theta=4t$), donc à vitesse (en norme) elle-même croissante ($\|\vec v\|=12t$). Contrairement au cas 3, l'accélération possède ici une composante tangentielle non nulle (et constante, $a_t=12$ m/s²) en plus de la composante centripète (croissante, $a_n=48t^2$).
 
 
+
 **q6.** Cas 6 : $x(t)=2t\cos(4t)$, $y(t)=2t\sin(4t)$, $z(t)=0$ (unités SI). Déterminer $\overrightarrow{OM}(t)$, $\vec v(t)$, $\vec a(t)$ et leurs normes ; caractériser le mouvement.
+
 
 > [!tip]- 💡 Coup de pouce
 > Ici $r(t)=\|\overrightarrow{OM}\|=2t$ n'est plus constant : ce n'est plus un cercle. Identifiez $r(t)$ et $\theta(t)$ pour interpréter le mouvement.
 
 
+
+
 > [!success]- ✅ Correction
 > Mouvement en spirale ($r=2t$, $\theta=4t$) : $\|\vec v\|=2\sqrt{1+16t^2}$, $\|\vec a\|=16\sqrt{1+4t^2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -262,10 +309,6 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Le point $M$ décrit une **spirale** (spirale d'Archimède) : il s'éloigne de $O$ à vitesse radiale constante ($\dot r=2$ m/s) tout en tournant autour de $O$ à vitesse angulaire constante ($\dot\theta=4$ rad/s). Ni la norme de $\vec v$ ni celle de $\vec a$ ne sont constantes : elles croissent toutes deux avec $t$, à cause de l'augmentation continue du rayon $r(t)=2t$, qui amplifie la composante orthoradiale de la vitesse ($r\dot\theta$) et la composante centripète de l'accélération ($r\dot\theta^2$), bien que les grandeurs "purement radiales" ($\dot r$ et $a_\theta$, ici constantes) restent, elles, inchangées au cours du temps.
 
 
-> [!warning]- 🪤 Écueils classiques
-> **Dériver $t\cos(\omega t)$ comme si $t$ n'apparaissait qu'une fois**
->
-> Dans les cas 5 et 6, une erreur très fréquente consiste à dériver uniquement l'argument du cosinus/sinus (comme au cas 3) en oubliant le facteur $t$ ou $2t$ multiplicatif à l'extérieur, qui impose une **dérivée de produit** : $\frac{\mathrm d}{\mathrm dt}\big(f(t)\cos(g(t))\big) = f'(t)\cos(g(t)) - f(t)g'(t)\sin(g(t))$.
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -286,16 +329,31 @@ ainsi que leur norme, et caractériser le mouvement obtenu.
 > Cas 3 : un volant de rayon $3$ m à $\omega=10$ rad/s subirait $300$ m/s², soit $\approx30\,g$, ce qui montre pourquoi les pièces tournantes sont limitées en vitesse.
 
 
-> [!success]- 🏁 Bilan
+
+
+> [!warning]- 🪤 Écueils classiques
+> **Dériver $t\cos(\omega t)$ comme si $t$ n'apparaissait qu'une fois**
+>
+> Dans les cas 5 et 6, une erreur très fréquente consiste à dériver uniquement l'argument du cosinus/sinus (comme au cas 3) en oubliant le facteur $t$ ou $2t$ multiplicatif à l'extérieur, qui impose une **dérivée de produit** : $\frac{\mathrm d}{\mathrm dt}\big(f(t)\cos(g(t))\big) = f'(t)\cos(g(t)) - f(t)g'(t)\sin(g(t))$.
+
+
+
+
+> [!success]- 🏁 Bilan pédagogique
 > **Une même méthode, des mouvements très variés**
 >
 > Cet exercice montre qu'une méthode unique et systématique (dérivation cartésienne terme à terme) permet de traiter des mouvements de natures très différentes : translation uniforme (cas 1), MRUV rectiligne (cas 2 et 4), circulaire uniforme (cas 3), circulaire non uniforme (cas 5), et spirale (cas 6). La difficulté n'est donc pas dans la méthode elle-même, mais dans la rigueur du calcul de dérivée et dans l'interprétation physique du résultat obtenu.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Retrouver les cas 3, 5 et 6 en coordonnées polaires
 > On pourra reprendre les cas 3, 5 et 6 en identifiant $r(t)$ et $\theta(t)$, puis en utilisant directement les formules polaires $\vec v = \dot r\,\vec u_r + r\dot\theta\,\vec u_\theta$ et $\vec a = (\ddot r - r\dot\theta^2)\vec u_r + (r\ddot\theta+2\dot r\dot\theta)\vec u_\theta$ (établies plus tard dans le cours), pour constater que les normes obtenues coïncident avec celles calculées ici en cartésien, tout en simplifiant considérablement les calculs intermédiaires.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]]
+
 

@@ -17,7 +17,8 @@ constante $\omega>0$. On étudie le mouvement d'un point $M$ de la jante (par ex
 coincé dans la bande de roulement). À $t=0$, $M$ est en contact avec le sol, en $O$. On note $\varphi=\omega t$ l'angle
 dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Un point de la roue est immobile**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -27,7 +28,9 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 > **Idée clé : composer translation et rotation.** Dans le référentiel du sol, la position de $M$ est $\overrightarrow{OC}+\overrightarrow{CM}$ : le centre avance, la jante tourne autour du centre. Résultat : la cycloïde. À chaque instant, la roue tourne autour du point de contact $I$ qui est immobile : la vitesse de $M$ est perpendiculaire à $IM$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Roulement sans glissement**
 >
 > Le point de la roue en contact avec le sol a une vitesse nulle (dans le référentiel du sol) : le centre avance de $R_0\varphi$ quand la roue tourne de $\varphi$ ($x_C=R_0\omega t$).
@@ -41,17 +44,23 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 > $1-\cos\varphi=2\sin^2\dfrac\varphi2$, $1+\cos\varphi=2\cos^2\dfrac\varphi2$, $\sin\varphi=2\sin\dfrac\varphi2\cos\dfrac\varphi2$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Étudier une courbe non triviale avec toute la machinerie de Frenet**
 >
 > Établir les équations paramétriques de la cycloïde, calculer $\vec v$, $\vec a$, $a_T$, $a_N$, $R$ et la longueur d'une arche, interpréter le point de rebroussement, et relier le résultat à la géométrie du roulement (centre instantané de rotation).
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Cycloïde**
 >
 > $$x=R_0(\varphi-\sin\varphi),\qquad y=R_0(1-\cos\varphi),\qquad\varphi=\omega t.$$
 > La vitesse du point de contact est nulle ; le point du haut de la roue va à $2R_0\omega$. La roue tourne à chaque instant autour du point de contact $I$ (centre instantané de rotation) : $\|\vec v\|=\omega\,IM$ et $\vec v\perp\overrightarrow{IM}$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -72,6 +81,7 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 > Pour un solide plan en mouvement, il existe en général un point $I$ de vitesse nulle (à l'instant considéré) : la vitesse de tout autre point est $\vec v=\vec\Omega\wedge\overrightarrow{IM}$, de norme $\Omega\,IM$, perpendiculaire à $IM$.
 
 
+
 **q1.** **1/ Équations de la trajectoire.**
 
 
@@ -79,12 +89,17 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 
 (b) Tracer l'arche de cycloïde ($0\le\varphi\le2\pi$) en plaçant les points $\varphi=0,\ \frac\pi2,\ \pi,\ \frac{3\pi}2,\ 2\pi$.
 
+
 > [!tip]- 💡 Coup de pouce
 > $\overrightarrow{OM}=\overrightarrow{OC}+\overrightarrow{CM}$ avec $\overrightarrow{CM}=R_0(-\sin\varphi,-\cos\varphi)$ : à $t=0$ le point est en bas de la roue ($\overrightarrow{CM}=-R_0\vec u_y$) et la roue tourne dans le sens horaire.
 
 
+
+
 > [!success]- ✅ Correction
 > $x=R_0(\omega t-\sin\omega t)$, $y=R_0(1-\cos\omega t)$. Points : $(0,0)$, $(0{,}57R_0,R_0)$, $(\pi R_0,2R_0)$, $(5{,}71R_0,R_0)$, $(2\pi R_0,0)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -100,6 +115,7 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 > L'arche est **symétrique** par rapport à la verticale $x=\pi R_0$, de hauteur $2R_0$ et de largeur $2\pi R_0$ (le périmètre de la roue). Aux extrémités ($\varphi=0,2\pi$), la tangente est **verticale** : points de rebroussement.
 
 
+
 **q2.** **2/ Cinématique.**
 
 
@@ -111,12 +127,17 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 
 (d) Valeurs particulières : sommet ($\varphi=\pi$) et contact ($\varphi\to0$). Commenter.
 
+
 > [!tip]- 💡 Coup de pouce
 > Dérivez $x(t)$ et $y(t)$. Utilisez les angles moitié : $1-\cos\varphi=2\sin^2\frac\varphi2$. Pour (e), $a_T=\vec a\cdot\vec v/v$ puis $a_N=\sqrt{a^2-a_T^2}$ et $R=v^2/a_N$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v=R_0\omega(1-\cos\varphi\ ;\ \sin\varphi)$, $v=2R_0\omega\sin\frac\varphi2$ ; $\vec a=R_0\omega^2(\sin\varphi\ ;\ \cos\varphi)$, $a=R_0\omega^2$ constante, dirigée vers $C$ ; $a_T=R_0\omega^2\cos\frac\varphi2$, $a_N=R_0\omega^2\sin\frac\varphi2$ ; $R=4R_0\sin\frac\varphi2$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -149,6 +170,7 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 > **Contact** ($\varphi\to0^+$) : $v\to0$, $a_T\to R_0\omega^2$ (la vitesse croît à partir de zéro), $a_N\to0$ et $R\to0$ ; $\vec a\to R_0\omega^2\,\vec u_y$ est **verticale** vers le haut. Le point arrive vertical, s'arrête une fraction d'instant puis repart verticalement : c'est un **point de rebroussement** ; $R=0$ ne signifie pas que le mouvement s'interrompt, mais que la tangente tourne de $180^\circ$ en un temps infiniment bref.
 
 
+
 **q3.** **3/ Longueur et application numérique.**
 
 
@@ -156,12 +178,17 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 
 (b) Application. Une roue de vélo de rayon $R_0=0{,}35\ \mathrm m$ roule à $36\ \mathrm{km/h}$. Calculer $\omega$, la vitesse et l'accélération du point haut, la période de rotation, la longueur d'une arche et l'accélération (en unités de $g$) d'un caillou sur la jante.
 
+
 > [!tip]- 💡 Coup de pouce
 > $L=\int_0^{2\pi/\omega}v\,\mathrm dt$ avec $v=2R_0\omega\sin\frac{\omega t}2$. Pour $\alpha$ : $\vec\tau=(\sin\frac\varphi2,\cos\frac\varphi2)=(\cos\alpha,\sin\alpha)$ donne $\alpha=\frac\pi2-\frac\varphi2$.
 
 
+
+
 > [!success]- ✅ Correction
 > $L=8R_0$ ; $\alpha=\frac\pi2-\frac\varphi2$, $\mathrm ds=2R_0\sin\frac\varphi2\,\mathrm d\varphi$, $\left|\dfrac{\mathrm d\alpha}{\mathrm ds}\right|=\dfrac1{4R_0\sin(\varphi/2)}$ $\surd$. AN : $\omega\approx28{,}6$ rad/s, $v_{haut}=72$ km/h, $a=R_0\omega^2\approx286\ \mathrm{m\,s^{-2}}\approx29\,g$, $T\approx0{,}22$ s, $L=2{,}8$ m.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -175,6 +202,8 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 > **(h) Application numérique**
 >
 > $V=36\ \mathrm{km/h}=10\ \mathrm{m/s}$ ; $\omega=\dfrac V{R_0}=\dfrac{10}{0{,}35}\approx28{,}6\ \mathrm{rad/s}$ (environ $4{,}5$ tours par seconde). Période de rotation : $T=\dfrac{2\pi}\omega\approx0{,}22\ \mathrm s$. **Point haut** : $v=2V=20\ \mathrm{m/s}=72\ \mathrm{km/h}$ ; $a=R_0\omega^2=\dfrac{V^2}{R_0}\approx286\ \mathrm{m\,s^{-2}}$ ; $R=4R_0=1{,}4\ \mathrm m$. **Point bas** : $v=0$ (au contact). **Longueur d'une arche** : $L=8R_0=2{,}8\ \mathrm m$ (alors que $2\pi R_0=2{,}2\ \mathrm m$ est la distance parcourue par le centre). Le caillou sur la jante subit en permanence $a=R_0\omega^2\approx286\ \mathrm{m\,s^{-2}}\approx29\,g$ : c'est pourquoi il faut un collage solide et pourquoi les gouttes d'eau se détachent de la roue (dont $a_N$ est trop grande pour la tension superficielle).
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -191,18 +220,27 @@ dont la roue a tourné. La trajectoire de $M$ est appelée **cycloïde**.
 > La boue projetée par la roue part tangentiellement à la trajectoire de la roue avec la vitesse $v=2V\sin(\varphi/2)$ : les garde-boue sont placés pour intercepter ces projections.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Développée de la cycloïde (Huygens)
 > Le centre de courbure est $C_c=M+R\,\vec n$ avec $\vec n=\left(\cos\frac\varphi2\ ;\ -\sin\frac\varphi2\right)$. Montrer que $C_c=\left(R_0(\varphi+\sin\varphi)\ ;\ -R_0(1-\cos\varphi)\right)$ : c'est la même cycloïde, translatée du vecteur $(-\pi R_0\ ;\ -2R_0)$ (poser $\psi=\varphi+\pi$). Cette propriété permet de construire un pendule **isochrone** (Huygens).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Aire sous une arche et brachistochrone
 > L'aire sous une arche vaut $\int_0^{2\pi R_0}y\,\mathrm dx=3\pi R_0^2$, soit trois fois l'aire de la roue (Roberval, Galilée). La cycloïde est aussi la courbe de plus courte durée (**brachistochrone**) et la courbe tautochrone : une bille lâchée sans vitesse d'un point quelconque d'une cycloïde inversée arrive en bas au même instant.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Trochoïdes
 > Un point à la distance $d\neq R_0$ du centre décrit une trochoïde : $x=R_0\varphi-d\sin\varphi$, $y=R_0-d\cos\varphi$. Pour $d<R_0$ (point intérieur) la courbe est sans rebroussement ; pour $d>R_0$ (point extérieur, ex. : boudin d'une roue de train) elle présente des boucles qui font **reculer** le point au bas de la roue. Montrer que la vitesse du point bas du boudin est dirigée vers l'arrière.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex1-base-de-frenet-demonstrations-de-cours-et-applications|Exercice 1 — Base de Frenet : démonstrations de cours et applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex2-mouvement-curviligne-uniforme-cercle-parabole-applications|Exercice 2 — Mouvement curviligne uniforme : cercle, parabole, applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex3-circuit-de-monaco-courbure-et-acceleration-a-vitesse-constante|Exercice 3 — Circuit de Monaco : courbure et accélération à vitesse constante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex4-abscisse-curviligne-et-rayon-de-courbure-d-une-trajectoire-parabolique|Exercice 4 — Abscisse curviligne et rayon de courbure d'une trajectoire parabolique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex6-raccordement-routier-en-clothoide-courbure-variable-et-jerk|Exercice 6 — Raccordement routier en clothoïde (courbure variable et « jerk »)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex7-cercle-d-adherence-freiner-et-tourner-en-meme-temps|Exercice 7 — Cercle d'adhérence : freiner et tourner en même temps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex8-tir-parabolique-vu-dans-la-base-de-frenet|Exercice 8 — Tir parabolique vu dans la base de Frenet]]
+
 

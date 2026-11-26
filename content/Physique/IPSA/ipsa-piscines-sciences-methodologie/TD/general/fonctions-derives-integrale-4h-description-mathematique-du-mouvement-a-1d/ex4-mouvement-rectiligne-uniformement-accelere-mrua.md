@@ -13,28 +13,36 @@ tags:
 
 Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans des contextes réels (avion, camion, voiture).
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Équations du MRUA**
 >
 > $x(t) = \frac{1}{2}a t^2 + v_0 t + x_0$ et $v(t) = a t + v_0$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Résolution de problèmes kinématiques réels**
 >
 > Savoir manipuler le système de 2 équations à 2 inconnues pour trouver des distances, durées ou accélérations.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Système MRUA**
 >
 > $\begin{cases} v(t) = a t + v_0 \\ x(t) = \frac{1}{2}a t^2 + v_0 t + x_0 \end{cases}$
+
+
 
 
 > [!tip]- 💡 Coup de pouce
 > **Formule intemporelle**
 >
 > On peut aussi utiliser la relation $v_B^2 - v_A^2 = 2 a (x_B - x_A)$ pour éviter de calculer explicitement le temps.
+
 
 
 **q1.** Un avion commence sa course au repos ($v_A = 0$) en $A$. Il décolle $30\text{ s}$ plus tard en $B$ avec une accélération constante $a$. La distance $AB = 900\text{ m}$.
@@ -45,12 +53,14 @@ Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans 
 
 (b) Calculer la vitesse de décollage $v_B$.
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution avion**
 >
 > (a) $x(t) = \frac{1}{2}a t^2 \implies 900 = \frac{1}{2} a (30)^2 = 450 a \implies a = \frac{900}{450} = 2\text{ m}\cdot\text{s}^{-2}$.
 >
 > (b) $v_B = a t = 2 \times 30 = 60\text{ m}\cdot\text{s}^{-1}$ (soit $216\text{ km}\cdot\text{h}^{-1}$).
+
 
 
 **q2.** Un camion parcourt $164\text{ m}$ en $8\text{ s}$ lors d'une décélération constante de $0,5\text{ m}\cdot\text{s}^{-2}$.
@@ -63,6 +73,7 @@ Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans 
 
 (c) Calculer la distance parcourue pendant le premier intervalle de $0,6\text{ s}$.
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution camion**
 >
@@ -73,6 +84,7 @@ Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans 
 > (c) $x(0,6) = \frac{1}{2}(-0,5)(0,6)^2 + 22,5(0,6) = -0,09 + 13,5 = 13,41\text{ m}$.
 
 
+
 **q3.** Une voiture a une vitesse $v_A = 50\text{ km}\cdot\text{h}^{-1}$ au point $A$ et subit une accélération de $a = 3\text{ m}\cdot\text{s}^{-2}$.
 
 
@@ -80,6 +92,7 @@ Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans 
 (a) Calculer le temps mis pour atteindre le point $B$ situé à $50\text{ m}$ de $A$.
 
 (b) Calculer la vitesse au point $B$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution voiture**
@@ -91,7 +104,9 @@ Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans 
 > (b) $v_B = a t + v_A = 3(2,77) + 13,89 = 22,20\text{ m}\cdot\text{s}^{-1}$ (soit $\approx 79,9\text{ km}\cdot\text{h}^{-1}$).
 
 
+
 **q4.** Tracer et commenter les caractéristiques des courbes $x(t)$, $v_x(t)$ et $a_x(t)$ pour les trois mouvements.
+
 
 > [!example]- 📝 Solution détaillée
 > **Allure des courbes MRUA**
@@ -101,10 +116,15 @@ Exercices pratiques sur l'utilisation des équations cinématiques du MRUA dans 
 > - {\bf$x(t)$} : Parabole orientée vers le haut ($a_x > 0$) ou vers le bas ($a_x < 0$), avec une tangente en $t=0$ de pente égale à $v_0$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Distance de sécurité
 > Calcul des distances de freinage incluant le temps de réaction du conducteur.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex1-position-deplacement-vitesse-et-acceleration|Exercice 1 — Position, déplacement, vitesse et accélération]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex2-chute-libre-experience-et-modele|Exercice 2 — Chute libre : expérience et modèle]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex3-equations-de-mouvement|Exercice 3 — Équations de mouvement]]
+
 

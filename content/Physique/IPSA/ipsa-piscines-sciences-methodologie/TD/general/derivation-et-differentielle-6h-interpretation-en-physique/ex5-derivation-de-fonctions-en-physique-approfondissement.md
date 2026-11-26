@@ -15,19 +15,24 @@ Cet exercice prolonge l'exercice 1 avec des fonctions plus riches (produits, quo
 
 Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'homogénéité du résultat lorsque les grandeurs ont une dimension physique.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercice 1 et règles de dérivation**
 >
 > Dérivée d'un produit, d'un quotient, d'une composée ; dérivées de $\exp$, $\ln$, $\cos$, $\sin$, $\tan$ et des puissances.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Enchaîner plusieurs règles de dérivation**
 >
 > Combiner produit et composition dans une même fonction, garder une écriture propre en notation différentielle, et reconnaître des formes simplifiables.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Rappels utiles**
 >
 > $$
@@ -39,20 +44,26 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > $$
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Méthode**
 >
 > Écrire la fonction comme une composition (ou un produit) de fonctions simples, puis appliquer $\mathrm{d}(f\circ g) = (f'\circ g)\,\mathrm{d}g$ et $\mathrm{d}(fg) = g\,\mathrm{d}f + f\,\mathrm{d}g$ de l'extérieur vers l'intérieur.
 
 
+
 **1.**
 
   **a)** Déterminer la dérivée de $u(x) = x\ln x - x$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Produit**
 >
 > $\mathrm{d}(x\ln x) = \ln x\,\mathrm{d}x + x\,\mathrm{d}(\ln x)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -67,12 +78,16 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > Donc $\dfrac{\mathrm{d}u}{\mathrm{d}x} = \ln x$ : $u$ est une primitive de $\ln$.
 
 
+
   **b)** Oscillateur amorti : $x(t) = A\,e^{-\lambda t}\cos(\omega t + \varphi)$ avec $A$, $\lambda$, $\omega$, $\varphi$ constants. Déterminer $\dot{x}(t)$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Produit de deux composées**
 >
 > $x = A\,e^{-\lambda t}\cdot\cos(\omega t+\varphi)$ : produit de deux fonctions de $t$, chacune composée.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -88,7 +103,9 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > $$\dot{x}(t) = -A\,e^{-\lambda t}\left[\lambda\cos(\omega t+\varphi) + \omega\sin(\omega t+\varphi)\right].$$
 
 
+
   **c)** Charge d'un système du premier ordre : $v(t) = v_0\left(1 - e^{-t/\tau}\right)$ avec $v_0$ et $\tau$ constants. Déterminer $\dot{v}(t)$, puis $\dot{v}(0)$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -99,12 +116,16 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > La pente à l'origine vaut $v_0/\tau$ : la tangente en $t=0$ coupe l'asymptote $v=v_0$ en $t=\tau$.
 
 
+
   **d)** Période d'un pendule simple : $T(L) = 2\pi\sqrt{\dfrac{L}{g}}$ avec $g$ constant. Déterminer $\dfrac{\mathrm{d}T}{\mathrm{d}L}$, l'exprimer avec $T$ et $L$, et vérifier l'homogénéité.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Puissance fractionnaire**
 >
 > $T = 2\pi g^{-1/2}\,L^{1/2}$, donc $\mathrm{d}\!\left(L^{1/2}\right) = \frac{1}{2}L^{-1/2}\mathrm{d}L$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -116,12 +137,16 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > **Homogénéité** : $\left[\dfrac{\mathrm{d}T}{\mathrm{d}L}\right] = \dfrac{\text{s}}{\text{m}}$ et $\left[\dfrac{1}{\sqrt{gL}}\right] = \dfrac{1}{\sqrt{\text{m}\cdot\text{s}^{-2}\cdot\text{m}}} = \dfrac{\text{s}}{\text{m}}$. Le résultat est homogène.
 
 
+
   **e)** Déterminer la dérivée de $\varphi(\theta) = \dfrac{\sin\theta}{1+\cos\theta}$ et la simplifier.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Quotient**
 >
 > $\mathrm{d}\!\left(\dfrac{f}{g}\right) = \dfrac{g\,\mathrm{d}f - f\,\mathrm{d}g}{g^2}$ avec $f=\sin\theta$ et $g = 1+\cos\theta$. Utiliser $\sin^2\theta + \cos^2\theta = 1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -137,12 +162,16 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > Remarque : $\varphi(\theta) = \tan(\theta/2)$ et $\dfrac{1}{2\cos^2(\theta/2)} = \dfrac{1}{1+\cos\theta}$, ce qui confirme le résultat.
 
 
+
   **f)** Potentiel de Lennard-Jones : $U(r) = \varepsilon\left[\left(\dfrac{r_0}{r}\right)^{12} - 2\left(\dfrac{r_0}{r}\right)^{6}\right]$ avec $\varepsilon$ et $r_0$ constants. Déterminer $\dfrac{\mathrm{d}U}{\mathrm{d}r}$ puis la position $r_{\mathrm{eq}}$ où cette dérivée s'annule.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Puissances de $r$**
 >
 > $\left(\dfrac{r_0}{r}\right)^{n} = r_0^{\,n}\,r^{-n}$ : seule $r$ est la variable.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -158,12 +187,16 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > Cette dérivée s'annule si $\left(\dfrac{r_0}{r}\right)^{7}\left[1 - \left(\dfrac{r_0}{r}\right)^{6}\right] = 0$, soit $r_{\mathrm{eq}} = r_0$. Pour $r<r_0$ la dérivée est négative, pour $r>r_0$ elle est positive : c'est un minimum de $U$.
 
 
+
   **g)** Déterminer la dérivée de $y(t) = \ln\!\left[\tan\!\left(\dfrac{\omega t}{2}\right)\right]$ pour $0 < \omega t < \pi$, avec $\omega$ constant.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Trois niveaux**
 >
 > $u = \omega t/2$, puis $v = \tan u$, puis $y = \ln v$. On rappelle $\mathrm{d}(\tan u) = \dfrac{\mathrm{d}u}{\cos^2 u}$. Simplifier avec $\sin(2u) = 2\sin u\cos u$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -178,12 +211,16 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > $$\dot{y}(t) = \frac{\omega/2}{\frac{1}{2}\sin(\omega t)} = \frac{\omega}{\sin(\omega t)}.$$
 
 
+
   **h)** Facteur de Lorentz : $\gamma(v) = \left(1 - \dfrac{v^2}{c^2}\right)^{-1/2}$ avec $c$ constant. Montrer que $\dfrac{\mathrm{d}\gamma}{\mathrm{d}v} = \dfrac{v}{c^2}\,\gamma^3$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Puissance d'une composée**
 >
 > $\mathrm{d}(u^n) = n\,u^{n-1}\mathrm{d}u$ avec $u = 1 - v^2/c^2$ et $n=-\tfrac{1}{2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -198,14 +235,18 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > Pour $v\ll c$, $\gamma\approx 1$ et $\dfrac{\mathrm{d}\gamma}{\mathrm{d}v}\approx\dfrac{v}{c^2}$ ; quand $v\to c$, la dérivée diverge.
 
 
+
 **2.**
 
   **a)** On reprend $x(t) = A\,e^{-\lambda t}\cos(\omega t)$ (avec $\varphi = 0$). Calculer $\ddot{x}$, puis montrer que $\ddot{x} + 2\lambda\dot{x} + (\lambda^2 + \omega^2)\,x = 0$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Dériver deux fois**
 >
 > Utiliser $\dot{x} = -A\,e^{-\lambda t}\left[\lambda\cos(\omega t) + \omega\sin(\omega t)\right]$ (question 1b avec $\varphi = 0$), puis dériver à nouveau ce produit.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -226,10 +267,15 @@ Déterminer la dérivée de chacune des fonctions suivantes, puis vérifier l'ho
 > $$
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Équation différentielle
 > La question 2 montre que l'oscillateur amorti vérifie $\ddot{x} + 2\lambda\dot{x} + (\lambda^2+\omega^2)x = 0$ : vérifier une solution est plus simple que la trouver.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex1-derivation-de-fonctions-en-physique|Exercice 1 — Dérivation de fonctions en physique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex2-interpretation-de-la-differentielle-petite-variation-calcul-d-incertitude|Exercice 2 — Interprétation de la différentielle : petite variation $\&$ calcul d'incertitude]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex3-derivees-de-fonctions-composees|Exercice 3 — Dérivées de fonctions composées]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex4-differentielle-logarithmique|Exercice 4 — Différentielle logarithmique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex6-interpretation-de-la-differentielle-approfondissement-volume-pendule-approximations|Exercice 6 — Interprétation de la différentielle : approfondissement (volume, pendule, approximations)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex7-derivees-de-fonctions-composees-approfondissement-taux-lies|Exercice 7 — Dérivées de fonctions composées : approfondissement (taux liés)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex8-differentielle-logarithmique-approfondissement-incertitudes-en-situation-reelle|Exercice 8 — Différentielle logarithmique : approfondissement (incertitudes en situation réelle)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex9-combiner-les-incertitudes-somme-absolue-p-1-quadratique-p-2-puissance-p-et-cas-p-0|Exercice 9 — Combiner les incertitudes : somme absolue ($p=1$), quadratique ($p=2$), puissance $p$ et cas $p=0$]]
+
 

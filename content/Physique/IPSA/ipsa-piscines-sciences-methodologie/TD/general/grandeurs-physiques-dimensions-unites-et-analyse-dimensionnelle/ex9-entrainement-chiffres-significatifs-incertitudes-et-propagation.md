@@ -13,7 +13,8 @@ tags:
 
 Cet exercice d'entraînement est composé de questions directes (application immédiate des règles) puis de questions plus difficiles (calculs à plusieurs grandeurs mesurées, propagation des incertitudes, changements d'unités).
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Avoir traité l'exercice 6**
 >
 > Connaître 
@@ -24,7 +25,9 @@ Cet exercice d'entraînement est composé de questions directes (application imm
 > - les préfixes du système international ($\text{m}$, $\text{k}$, $\mu$, \dots).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **S'entraîner jusqu'à l'automatisme**
 >
 > - Compter sans hésiter les chiffres significatifs d'une valeur.
@@ -33,7 +36,9 @@ Cet exercice d'entraînement est composé de questions directes (application imm
 > - Identifier la mesure qui limite la précision d'un résultat.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Propagation des incertitudes (niveau lycée)**
 >
 > Soit une grandeur $G = k \, \dfrac{x^a \, y^b}{z^c}$ où $k$ est une constante exacte. Par majoration, l'incertitude relative sur $G$ est
@@ -41,6 +46,8 @@ Cet exercice d'entraînement est composé de questions directes (application imm
 > \frac{\Delta G}{G} = |a| \frac{\Delta x}{x} + |b| \frac{\Delta y}{y} + |c| \frac{\Delta z}{z}.
 > $$
 > Pour une somme ou une différence $S = x \pm y$, ce sont les incertitudes **absolues** qui s'additionnent : $\Delta S = \Delta x + \Delta y$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -52,6 +59,7 @@ Cet exercice d'entraînement est composé de questions directes (application imm
 > \item Arrondir l'incertitude à $1$ chiffre significatif {\bf par excès}, puis arrondir la valeur au même rang décimal.
 > \item Pour un produit ou un quotient, les incertitudes {\bf relatives} s'additionnent (majoration).
 > \end{itemize}
+
 
 
 **q1.** **Compter les chiffres significatifs (question directe)**\\
@@ -69,10 +77,13 @@ Donner le nombre de chiffres significatifs de chaque valeur, puis l'écrire en n
 
 (e) $4,05 \times 10^{5} ~\text{Pa}$
 
-> [!note]+ 📖 Point de cours
+
+> [!tip]- 📖 Rappel de cours
 > **Rappel**
 >
 > Les zéros situés à gauche du premier chiffre non nul ne sont pas significatifs. Les zéros situés à droite d'un chiffre significatif, après la virgule, le sont.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -80,6 +91,8 @@ Donner le nombre de chiffres significatifs de chaque valeur, puis l'écrire en n
 > **
 >
 > Écrire d'abord la valeur sous la forme $a \times 10^n$ avec $1 \leq a < 10$, puis compter les chiffres de $a$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -97,6 +110,7 @@ Donner le nombre de chiffres significatifs de chaque valeur, puis l'écrire en n
 > (e) $4,05 \times 10^{5} ~\text{Pa}$ : **3 chiffres significatifs**.
 
 
+
 **q2.** **Écrire correctement un résultat (question directe)**\\
 
 Pour chaque mesure, arrondir l'incertitude absolue à $1$ chiffre significatif par excès puis écrire le résultat sous la forme $(x_m \pm \Delta x) \text{ unité}$ :
@@ -110,11 +124,14 @@ Pour chaque mesure, arrondir l'incertitude absolue à $1$ chiffre significatif p
 
 (d) $v = 3,0 \times 10^{8} ~\text{m.s}^{-1}$ avec $\Delta v = 1 \times 10^{6} ~\text{m.s}^{-1}$
 
+
 > [!tip]- 💡 Coup de pouce
 > **Ordre des opérations
 > **
 >
 > Calculer $\Delta x$ (si besoin), l'arrondir **par excès** à un chiffre significatif, puis arrondir la valeur mesurée à la même décimale que l'incertitude.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -134,6 +151,7 @@ Pour chaque mesure, arrondir l'incertitude absolue à $1$ chiffre significatif p
 >   $$v = (3,00 \pm 0,01) \times 10^{8} ~\text{m.s}^{-1}$$
 
 
+
 **q3.** **Opérations et chiffres significatifs (question directe)**\\
 
 Effectuer les opérations suivantes en donnant le résultat avec le bon nombre de chiffres significatifs :
@@ -147,11 +165,14 @@ Effectuer les opérations suivantes en donnant le résultat avec le bon nombre d
 
 (d) $1,5 \times 10^{3} + 2,50 \times 10^{2}$
 
+
 > [!tip]- 💡 Coup de pouce
 > **Quelle règle ?
 > **
 >
 > Somme : compter les **décimales**. Produit ou quotient : compter les **chiffres significatifs**.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -165,6 +186,7 @@ Effectuer les opérations suivantes en donnant le résultat avec le bon nombre d
 > (c) Quotient : $8,0 / 3,00 = 2,666\ldots$ Le facteur le moins précis ($8,0$) a $2$ chiffres significatifs : **$2,7$**.
 >
 > (d) Mettons les deux termes à la même puissance de $10$ : $1,5 \times 10^{3} + 0,250 \times 10^{3} = 1,750 \times 10^{3}$. Le terme le moins précis ($1,5 \times 10^3$) a $1$ décimale : **$1,8 \times 10^{3}$**.
+
 
 
 **q4.** **Masse volumique d'un cylindre (question difficile)**\\
@@ -185,11 +207,14 @@ $$
 
 (e) Écrire $\rho$ en $\text{g.cm}^{-3}$ puis en $\text{kg.m}^{-3}$, avec son incertitude.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Attention à l'exposant
 > **
 >
 > $\rho = \dfrac{4m}{\pi D^2 h}$. Comme $D$ est au carré, son incertitude relative intervient avec un facteur $2$. Les constantes $4$ et $\pi$ n'ont pas d'incertitude.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -210,6 +235,7 @@ $$
 >   (Conversion : $1 ~\text{g.cm}^{-3} = 10^{3} ~\text{kg.m}^{-3}$.)
 
 
+
 **q5.** **Mesure de $g$ avec un pendule simple (question difficile)**\\
 
 Pour un pendule simple de longueur $L$ et de petites oscillations, la période est $T = 2\pi \sqrt{\dfrac{L}{g}}$. On mesure
@@ -228,11 +254,14 @@ $$
 
 (e) Le résultat est-il compatible avec la valeur tabulée $g = 9,81 ~\text{m.s}^{-2}$ ? Quelle mesure faut-il améliorer en priorité ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Isoler $g$
 > **
 >
 > Élever au carré : $T^2 = 4\pi^2 \dfrac{L}{g}$. Comme $T$ est au carré, l'incertitude relative de $T$ compte deux fois.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -251,6 +280,7 @@ $$
 > (e) L'intervalle est $[9,5 ~;~ 10,1] ~\text{m.s}^{-2}$ : il contient $9,81 ~\text{m.s}^{-2}$, le résultat est **compatible** avec la valeur tabulée. La mesure de $T$ (incertitude relative $\approx 1,1 \%$, comptée deux fois) est la principale source d'incertitude : il vaut mieux mesurer la durée de plusieurs périodes.
 
 
+
 **q6.** **Somme de longueurs avec unités mélangées (question difficile)**\\
 
 Trois segments sont mis bout à bout : $\ell_1 = 2,34 \times 10^{-3} ~\text{m}$, $\ell_2 = 4,1 ~\text{mm}$ et $\ell_3 = 0,0068 ~\text{m}$.
@@ -264,11 +294,14 @@ Trois segments sont mis bout à bout : $\ell_1 = 2,34 \times 10^{-3} ~\text{m}$,
 
 (d) Le segment $\ell_2$ est mesuré avec une incertitude de $0,1 ~\text{mm}$ et $\ell_1$, $\ell_3$ avec la même incertitude. Que vaut l'incertitude absolue sur $\ell$ ? Cela est-il cohérent avec le résultat de la question b) ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Unité commune
 > **
 >
 > Pour une somme, il faut d'abord exprimer tous les termes dans la **même unité**, puis compter les décimales.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -284,9 +317,13 @@ Trois segments sont mis bout à bout : $\ell_1 = 2,34 \times 10^{-3} ~\text{m}$,
 > (d) Pour une somme, les incertitudes absolues s'additionnent : $\Delta \ell = 3 \times 0,1 = 0,3 ~\text{mm}$. On écrit $\ell = (13,2 \pm 0,3) ~\text{mm}$. Le dernier chiffre significatif ($1$ décimale) est bien celui de l'incertitude : c'est cohérent avec la règle de la somme.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Comparaison à une valeur de référence
 
 > Dire si un résultat $(x_m \pm \Delta x)$ est compatible avec une valeur tabulée $x_{ref}$, c'est-à-dire si $x_{ref}$ appartient à l'intervalle $[x_m - \Delta x ~;~ x_m + \Delta x]$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Incertitude-type composée
@@ -294,6 +331,9 @@ Trois segments sont mis bout à bout : $\ell_1 = 2,34 \times 10^{-3} ~\text{m}$,
 > Refaire la question $4$ en combinant les incertitudes-types en quadrature : $\left(\dfrac{u(G)}{G}\right)^2 = \sum_i \left(a_i \dfrac{u(x_i)}{x_i}\right)^2$ et comparer avec la majoration.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex6-grandeurs-numeriques-mesures-incertitudes-chiffres-significatifs|Exercice 6 — (*) Grandeurs numériques : mesures, incertitudes $\&$ chiffres significatifs]]
+
 

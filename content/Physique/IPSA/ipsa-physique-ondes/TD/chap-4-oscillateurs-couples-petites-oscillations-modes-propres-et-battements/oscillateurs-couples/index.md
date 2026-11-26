@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-physique-ondes/index|⬅ Physique des ondes]]
 
+
 > [!info] ℹ️ Chap. 4 — Oscillateurs couplés : petites oscillations, modes propres et battements
 > Séance 5
 
 
+
 <a href="/pdfs/td4_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td4_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td4_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Deux balançoires reliées par une corde : pourquoi l'une s'arrête-t-elle quand l'autre repart ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -23,7 +26,9 @@ tags:
 > **Idée clé : un système couplé a plusieurs fréquences propres, et le mouvement général est leur superposition.** Pour deux oscillateurs identiques de pulsation $\omega_0$ couplés, il existe deux mouvements « purs » : en phase (le couplage ne travaille pas, $\omega_1=\omega_0$) et en opposition de phase (le couplage ajoute de la raideur, $\omega_2>\omega_0$). Un mouvement quelconque est la somme des deux ; comme les fréquences diffèrent légèrement, les deux composantes se déphasent lentement et l'énergie oscille d'un oscillateur à l'autre :
 > $$x_1=a\sin\frac{\omega_2-\omega_1}2t\ \sin\frac{\omega_1+\omega_2}2t,\qquad x_2=a\cos\frac{\omega_2-\omega_1}2t\ \cos\frac{\omega_1+\omega_2}2t.$$
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Mouvement du point matériel dans une base locale**
 >
 > Savoir exprimer position, vitesse et accélération d'un point en coordonnées cartésiennes puis en base polaire ; savoir que $\dfrac{\mathrm d\vec e_r}{\mathrm dt}=\dot\theta\,\vec e_\theta$ et $\dfrac{\mathrm d\vec e_\theta}{\mathrm dt}=-\dot\theta\,\vec e_r$ ; savoir projeter un vecteur sur un axe à l'aide d'un produit scalaire.
@@ -48,7 +53,9 @@ tags:
 >
 > $\partial_t\to i\omega$ pour $e^{i\omega t}$ ; passage de $\mathrm{Re}\big[\underline Ae^{i\omega t}\big]$ à l'amplitude et à la phase ; formules de trigonométrie de somme et de produit.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Comprendre ce que l'on projette**
 >
 > Savoir distinguer un vecteur de ses coordonnées, choisir une base adaptée (cartésienne ou locale), justifier chaque signe d'une projection à l'aide du schéma et d'un produit scalaire, et expliquer pourquoi une base locale varie avec le temps.
@@ -69,7 +76,9 @@ tags:
 >
 > Savoir ramener une équation d'ordre $N$ à un système du premier ordre $Y'=AY$, relier les solutions exponentielles aux valeurs propres de $A$, et ne pas confondre valeurs propres de $A$ et pulsations propres $\omega$ du problème mécanique.
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Projeter correctement : bases cartésienne et locale, vecteurs et coordonnées**
 >
 > **Un vecteur n'est pas ses coordonnées.** Le vecteur $\vec F$ est un objet géométrique (une flèche) qui existe indépendamment de tout repère ; ses *coordonnées* ne sont que sa « lecture » dans une base : $\vec F=F_x\vec e_x+F_y\vec e_y=F_r\vec e_r+F_\alpha\vec e_\alpha$. Changer de base change les coordonnées, pas le vecteur.
@@ -216,6 +225,8 @@ tags:
 > - **Échanges d'énergie.** Pour deux oscillateurs identiques faiblement couplés, l'énergie passe périodiquement de l'un à l'autre. Le transfert est *complet* si les fréquences sont égales avant couplage et si les deux modes ont le même poids ; il est partiel si les oscillateurs sont désaccordés (exercice 7).
 > - **Réponse forcée.** En régime sinusoïdal forcé à la pulsation $\omega$, $(K-\omega^2M)\underline X=\underline F$ : l'amplitude diverge (idéalement) à chaque pulsation propre (résonances) et peut s'annuler en un point donné pour une pulsation particulière (antirésonance, exercice 3).
 
+
+
 > [!note]- 🧮 Outils mathématiques
 > **Produit scalaire et projection**
 >
@@ -254,6 +265,7 @@ tags:
 > $e^{At}=\sum_kA^kt^k/k!$ ; $\dfrac{\mathrm d}{\mathrm dt}e^{At}=Ae^{At}$ ; $e^{P\,D\,P^{-1}t}=P\,e^{Dt}P^{-1}$ pour $D$ diagonale.
 
 
+
 ## Exercices
 
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex1-pendules-couples-et-battements|Exercice 1 — Pendules couplés et battements]]
@@ -265,6 +277,7 @@ tags:
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex7-complement-niveau-2-ambitieux-oscillateurs-desaccordes-anticroisement-et-transfert-d-energie|Exercice 7 — Complément (niveau 2, ambitieux) : oscillateurs désaccordés, anticroisement et transfert d'énergie]]
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex8-complement-niveau-3-ens-modes-non-lineaires-de-deux-pendules-couples-stabilite-et-instabilite-parametrique|Exercice 8 — Complément (niveau 3, ENS) : modes non linéaires de deux pendules couplés, stabilité et instabilité paramétrique]]
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex9-complement-niveau-3-ens-anneau-de-n-oscillateurs-modes-de-fourier-et-propagation-du-signal|Exercice 9 — Complément (niveau 3, ENS) : anneau de N oscillateurs, modes de Fourier et propagation du signal]]
+
 
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Chimie et spectroscopie**
@@ -295,18 +308,29 @@ tags:
 >
 > Un cristal est un très grand système d'oscillateurs couplés : ses modes normaux (phonons) obéissent à $\omega(k)=2\sqrt{K/m}\,|\sin(ka/2)|$ pour une chaîne monoatomique (exercice 9 et TD 1, exercice 9).
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Formalisme lagrangien : où naissent $M$ et $K$
 > Avec $L=\tfrac12\dot X^{\mathsf T}M\dot X-V(X)$, les équations d'Euler--Lagrange donnent $M\ddot X=-\nabla V$ ; au voisinage d'un équilibre, $\nabla V\simeq KX$ avec $K$ la hessienne de $V$. Retrouver ainsi les équations de l'exercice 1 en deux lignes (potentiel $V=-mg\ell(\cos\alpha_1+\cos\alpha_2)+\tfrac12k(\ell_{\mathrm{ressort}}-d)^2$), et comprendre que la linéarisation est un développement de $V$ à l'ordre $2$.
+
+
 
 > [!question]- 🔭 Aller plus loin — Licence : Anticroisement des niveaux et théorie des perturbations
 > Pour deux oscillateurs de pulsations propres voisines $\omega_a,\omega_b$ et de couplage $\Omega^2$, les pulsations propres de l'ensemble ne se croisent jamais quand on fait varier $\omega_b-\omega_a$ : leur écart minimal vaut $2\Omega^2$ (exercices 3 et 7). Le même phénomène existe en mécanique quantique (système à deux niveaux) et en optique (guides couplés).
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Instabilité paramétrique et modes non linéaires
 > Pour deux pendules identiques couplés, le mode en phase est solution *exacte* des équations non linéaires pour toute amplitude (le ressort reste à sa longueur naturelle) ; sa stabilité face au mode en opposition se discute par une équation de Hill--Mathieu et présente un seuil d'amplitude (exercice 8).
+
+
 
 > [!question]- 🔭 Aller plus loin — Master : De $N$ oscillateurs à la corde : limite continue
 > Une chaîne de $N$ masses reliées par des ressorts possède $N$ modes ; pour $N\to\infty$ avec $a\to0$ ($L=Na$ fixé), les modes deviennent ceux de la corde vibrante du TD 1 et la relation $\omega_p=2\omega_0\sin(k_pa/2)$ devient $\omega=ck$ (exercice 9 et TD 1, exercice 9).
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Spectroscopie de vibration
 > Les nombres d'onde de vibration d'une molécule (infrarouge, Raman) donnent directement les constantes de raideur des liaisons ; les modes normaux d'une molécule polyatomique (par exemple $\mathrm{CO_2}$, $\mathrm{H_2O}$) se calculent par la diagonalisation de $M^{-1}K$ présentée ici.
+
 

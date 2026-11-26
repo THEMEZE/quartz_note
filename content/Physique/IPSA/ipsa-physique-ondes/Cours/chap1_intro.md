@@ -17,11 +17,13 @@ transport de matière : chaque point du milieu oscille autour de sa
 position d'équilibre, et c'est cette oscillation qui se propage,
 décalée dans le temps, aux points voisins.
 
+
 > [!info] 💡 Remarque
 > Ne pas confondre la vitesse de propagation de l'onde $c$ (vitesse à
 > laquelle l'information voyage) avec la vitesse d'un point du milieu
 > $v_y = \partial y/\partial t$ (mouvement local, transverse pour une
 > onde sur une corde).
+
 
 
 ## 2. Équation de d'Alembert
@@ -33,11 +35,13 @@ $$\frac{\partial^2 y}{\partial x^2} = \frac{1}{c^2}\frac{\partial^2 y}{\partial 
 
 <p style="text-align:center"><a href="/figures/td1_ex1_corde_t0.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_corde_t0.svg" alt="Exemple d'onde progressive sinusoïdale sur une corde." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
+
 > [!question]- 🔭 Aller plus loin — Master
 > Cette équation se généralise en 3D à l'équation de d'Alembert
 > $\Delta \psi = \dfrac{1}{c^2}\partial_t^2\psi$, point de départ de
 > l'électromagnétisme (équation de propagation du champ dans le vide)
 > et de l'acoustique 3D.
+
 
 
 ## 3. Onde plane progressive sinusoïdale

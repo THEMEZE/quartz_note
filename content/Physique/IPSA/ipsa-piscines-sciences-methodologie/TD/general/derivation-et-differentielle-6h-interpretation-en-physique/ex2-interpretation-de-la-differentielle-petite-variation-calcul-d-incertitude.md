@@ -13,25 +13,32 @@ tags:
 
 Cet exercice vise à comprendre le lien géométrique et physique entre la variation exacte d'une fonction $\Delta f$ et sa différentielle $\mathrm{d}f$, puis à appliquer cette notion à l'approximation des petites variations et au calcul d'incertitude.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Différentielle d'une fonction d'une variable**
 >
 > Savoir que $\mathrm{d}f = f'(x) \mathrm{d}x$ et comprendre la notion de développement limité d'ordre 1.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Distinguer $\Delta f$ et $\mathrm{d}f$**
 >
 > Comprendre que $\mathrm{d}f$ est l'approximation linéaire de la variation réelle $\Delta f$ pour de petits accroissements $\mathrm{d}x$.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Définition de la différentielle**
 >
 > Pour une fonction $f(x)$ dérivable, la différentielle s'écrit :
 > $$\mathrm{d}f = f'(x) \mathrm{d}x$$
 > Pour un accroissement fini $\Delta x = \mathrm{d}x$ petit :
 > $$\Delta f = f(x+\Delta x) - f(x) \approx \mathrm{d}f$$
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -41,20 +48,26 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > Développe $S(x+\mathrm{d}x) = (x+\mathrm{d}x)^2$ pour faire apparaître la différence entre la variation exacte et la partie linéaire.
 
 
+
 **1.**
 
   **a)** La surface $S$ d'un carré de côté $x$ est donnée par $S(x) = x^2$. Déterminer la dérivée de $S$ par rapport à $x$, qu'on notera $\frac{\mathrm{d}S}{\mathrm{d}x}$. Vérifier l'homogénéité du résultat.
 
-> [!note]+ 📖 Point de cours
+
+> [!tip]- 📖 Rappel de cours
 > **Homogénéité d'une dérivée**
 >
 > La dimension d'une dérivée est le quotient de la dimension de la fonction par celle de la variable.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
 > **Vérification des dimensions**
 >
 > Une surface $S$ est en $\text{m}^2$, un côté $x$ est en $\text{m}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -64,7 +77,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > **Homogénéité** : $[S] = L^2$, $[x] = L \implies \left[\frac{\mathrm{d}S}{\mathrm{d}x}\right] = \frac{L^2}{L} = L$. De même, $[2x] = L$. Le résultat est bien homogène à une longueur.
 
 
+
   **b)** En déduire la différentielle $\mathrm{d}S$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -72,7 +87,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > $$\mathrm{d}S = 2x \mathrm{d}x ~ (=  S'(x)\mathrm{d}x )  $$
 
 
+
   **c)** Exprimer la variation $\Delta S = S(x+\mathrm{d}x) - S(x)$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -81,7 +98,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > $$\Delta S = \overbrace{2x\mathrm{d}x}^{\mathrm{d}S}  + (\mathrm{d}x)^2$$
 
 
+
   **d)** Comparer $\Delta S$ et $\mathrm{d}S$ : les représenter sur la figure. Calculer pour $x = 10\text{ m}$ avec : $\mathrm{d}x = 3\text{ m}$, $\mathrm{d}x = 0,5\text{ m}$ et $\mathrm{d}x = 0,1\text{ m}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -99,7 +118,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > <p style="text-align:center"><a href="/figures/td2_phv110_surface.svg" target="_blank" rel="noopener"><img src="/figures/td2_phv110_surface.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **e)** Commenter l'égalité $\Delta S \approx \mathrm{d}S$ et interpréter.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -111,9 +132,11 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > <p style="text-align:center"><a href="/figures/td2_phv110_surface_graph.svg" target="_blank" rel="noopener"><img src="/figures/td2_phv110_surface_graph.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **f)** Soit la mesure du côté $a$ d'un carré : $a = 2,5 \pm 0,1\text{ cm}$. Calculer la surface $S$ du carré et déterminer son incertitude $\Delta S$ :
 (i) soit en exprimant la valeur maximale et minimale de $S$
 (ii) soit par la méthode différentielle ($\Delta S \approx \mathrm{d}S$).
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -141,9 +164,11 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > **Résultat**  : $S = (6,3 \pm 0,5)\text{ cm}^2$. (Attention 2 CS)
 
 
+
 **2.**
 
   **a)** Soit la position $z(t) = 1 - 2t^2$ (en cm) d'une particule sur un axe $Oz$ en fonction du temps $t$ (en s). Calculer la dérivée $\frac{\mathrm{d}z}{\mathrm{d}t} = \dot{z}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -151,7 +176,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > $$\dot{z}(t) = \frac{\mathrm{d}z}{\mathrm{d}t} = -4t \quad (\text{en cm}\cdot\text{s}^{-1})$$
 
 
+
   **b)** En déduire l'expression de $\mathrm{d}z$ en fonction de $t$ et $\mathrm{d}t$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -159,7 +186,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > $$\mathrm{d}z = -4t \mathrm{d}t ~ (=  \dot{z}(t)\mathrm{d}t ) $$
 
 
+
   **c)** Exprimer la différence $z(t+\mathrm{d}t) - z(t)$ et comparer avec $\mathrm{d}z$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -169,7 +198,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > $$\Delta z  - \mathrm{d}z =  - 2(\mathrm{d}t)^2$$
 
 
+
   **d)** Dans quelles conditions peut-on écrire $z(t+\mathrm{d}t) - z(t) = \mathrm{d}z$ ? Donner une interprétation de la différentielle $\mathrm{d}z$ et de la dérivée $\dot{z}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -181,7 +212,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > - $\mathrm{d}z$ représente le **déplacement élémentaire** sur un intervalle de temps très court $\mathrm{d}t$.
 
 
+
   **e)** Tracer la courbe représentant $z$ en fonction de $t$ puis représenter sur le graphique la différence $z(t+\mathrm{d}t)-z(t)$ et la différentielle $\mathrm{d}z$ à un instant $t$ fixé et pour une durée $\mathrm{d}t$ donnée.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -191,7 +224,9 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > <p style="text-align:center"><a href="/figures/td2_phv110_position_graph.svg" target="_blank" rel="noopener"><img src="/figures/td2_phv110_position_graph.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **f)** Déterminer la dérivée seconde $\ddot{z}$ et interpréter.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -200,10 +235,15 @@ Cet exercice vise à comprendre le lien géométrique et physique entre la varia
 > $\ddot{z}$ représente **l'accélération** de la particule. Elle est constante et négative.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Développement de Taylor
 > Rattacher $\Delta f - \mathrm{d}f$ au reste de Taylor $f''(x) \frac{(\mathrm{d}x)^2}{2} + o((\mathrm{d}x)^2)$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex1-derivation-de-fonctions-en-physique|Exercice 1 — Dérivation de fonctions en physique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex3-derivees-de-fonctions-composees|Exercice 3 — Dérivées de fonctions composées]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex4-differentielle-logarithmique|Exercice 4 — Différentielle logarithmique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex5-derivation-de-fonctions-en-physique-approfondissement|Exercice 5 — Dérivation de fonctions en physique (approfondissement)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex6-interpretation-de-la-differentielle-approfondissement-volume-pendule-approximations|Exercice 6 — Interprétation de la différentielle : approfondissement (volume, pendule, approximations)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex7-derivees-de-fonctions-composees-approfondissement-taux-lies|Exercice 7 — Dérivées de fonctions composées : approfondissement (taux liés)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex8-differentielle-logarithmique-approfondissement-incertitudes-en-situation-reelle|Exercice 8 — Différentielle logarithmique : approfondissement (incertitudes en situation réelle)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex9-combiner-les-incertitudes-somme-absolue-p-1-quadratique-p-2-puissance-p-et-cas-p-0|Exercice 9 — Combiner les incertitudes : somme absolue ($p=1$), quadratique ($p=2$), puissance $p$ et cas $p=0$]]
+
 

@@ -13,7 +13,8 @@ tags:
 
 Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage circulaire de rayon $R=100$ m dont la chaussée est **relevée** d'un angle $\beta=10^\circ$ vers l'intérieur du virage (la route est inclinée comme un plan incliné, le bord intérieur étant plus bas). La voiture roule à vitesse constante $v$ sur un cercle horizontal de rayon $R$ et centre $C$ sur l'axe vertical du virage. Le contact route--pneus est modélisé par la loi de Coulomb du frottement solide : la réaction $\vec R=\vec N+\vec f$ avec $\vec N$ normale à la route et $\vec f$ tangentielle (dans le plan incliné, perpendiculaire à la vitesse donc dirigée dans la **pente**), $\|\vec f\|\le\mu\|\vec N\|$ où $\mu$ est le coefficient d'adhérence. On prendra $g=9{,}81~\mathrm{m\,s^{-2}}$. On travaille dans le référentiel terrestre galiléen, avec un repère $(\vec e_r,\vec e_\varphi,\vec u_z)$ cylindrique d'axe vertical passant par $C$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi relève-t-on les virages ?**
 >
 > *Durée de l'introduction : 4 min*
@@ -23,7 +24,9 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 > **Idée clé : la réaction oblique fournit la force centripète.** La composante horizontale de $\vec N$ ($N\sin\beta$) pointe vers le centre du virage. Pour $v_0=\sqrt{gR\tan\beta}$ elle suffit, sans frottement. Au-delà ou en deçà, le frottement (borné par $\mu N$) doit compléter : cela borne $v$ entre $v_{\min}$ et $v_{\max}$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Lois de Coulomb du frottement solide**
 >
 > Sans glissement : $\|\vec f\|\le\mu\|\vec N\|$ ($\mu$ = coefficient d'adhérence). Au seuil de glissement : $\|\vec f\|=\mu\|\vec N\|$, la force de frottement s'oppose à la vitesse de glissement (ou à la tendance au glissement).
@@ -37,22 +40,30 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 > Sur une route inclinée de $\beta$ : le vecteur normal fait l'angle $\beta$ avec la verticale ; $\vec N=N(\sin\beta\,(-\vec e_r)+\cos\beta\,\vec u_z)$ (vers l'intérieur du virage et vers le haut).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Encadrer une vitesse par des conditions d'adhérence**
 >
 > Savoir poser un problème de seuil de glissement : écrire la 2\textsuperscript{e} loi avec une réaction oblique, projeter horizontalement et verticalement, éliminer $N$, et obtenir deux vitesses limites (maximale et minimale), puis discuter selon la valeur de $\mu$ par rapport à $\tan\beta$.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Exercice de synthèse sur le frottement et le mouvement circulaire**
 >
 > Trois ingrédients : mouvement circulaire uniforme, réaction oblique, loi de Coulomb. L'étudiant découvre qu'il existe une **vitesse idéale** $v_0=\sqrt{gR\tan\beta}$ pour laquelle aucun frottement n'est nécessaire (c'est le principe des virages relevés), et que le frottement élargit l'intervalle de vitesses permises. Piège : au seuil de glissement **par le bas** (vitesse trop faible), le frottement change de sens ; si $\mu>\tan\beta$, il n'existe plus de vitesse minimale (on peut s'arrêter dans le virage sans glisser). C'est l'exercice le plus difficile du TD ; prévoir des coups de pouce progressifs.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Seuil de glissement**
 >
 > Les équations de Newton projetées donnent $\|\vec f\|$ et $\|\vec N\|$ ; la condition de non-glissement est $\|\vec f\|\le\mu\|\vec N\|$. Chercher les bornes de $v$ revient à résoudre $\|\vec f\|=\mu\|\vec N\|$, avec le bon sens pour $\vec f$ (vers le haut de la pente pour un risque de glissement vers le bas, vers le bas de la pente dans l'autre cas).
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -73,15 +84,21 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 > Vérifier $v_{\min}\le v_0\le v_{\max}$ : le frottement ne fait qu'élargir l'intervalle autour de $v_0$.
 
 
+
 **q1.** - [(a)] Faire le schéma en coupe du virage (plan vertical contenant l'axe) et le bilan des forces s'exerçant sur $M$ dans le cas **sans frottement**.
 - [(b)] Écrire la 2\textsuperscript{e} loi de Newton et la projeter horizontalement (sur $-\vec e_r$, vers le centre) et verticalement. En déduire l'expression de la vitesse $v_0$ pour laquelle la voiture reste sur la trajectoire sans aucun frottement. Application numérique.
+
 
 > [!tip]- 💡 Coup de pouce
 > Sans frottement, il ne reste que le poids et la réaction normale, inclinée de $\beta$ par rapport à la verticale. L'accélération est horizontale, dirigée vers l'axe.
 
 
+
+
 > [!success]- ✅ Correction
 > $N\cos\beta=mg$ et $N\sin\beta=mv_0^2/R$ ; $v_0=\sqrt{gR\tan\beta}\approx13{,}2$ m/s $\approx47$ km/h.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -98,6 +115,7 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 > Indépendante de la masse. C'est la vitesse de dimensionnement du virage.
 
 
+
 **q2.** On tient maintenant compte de l'adhérence de coefficient $\mu$.
 
 
@@ -105,12 +123,17 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 - [(d)] Exprimer la condition de non-glissement $\|\vec f\|\le\mu N$ et en déduire la vitesse maximale $v_{\max}$ en fonction de $g$, $R$, $\beta$, $\mu$.
 - [(e)] Application numérique pour $\mu=0{,}1$ (route mouillée) et $\mu=0{,}7$ (route sèche).
 
+
 > [!tip]- 💡 Coup de pouce
 > À vitesse élevée, la voiture « part vers l'extérieur » : elle tend à remonter la pente. Le frottement s'y oppose, donc il est dirigé vers le bas de la pente. Au seuil, $f=\mu N$. Divisez les deux projections pour éliminer $N$.
 
 
+
+
 > [!success]- ✅ Correction
 > $f$ dirigée vers le bas de la pente ; $N\sin\beta+f\cos\beta=mv^2/R$, $N\cos\beta-f\sin\beta=mg$ ; $v_{\max}^2=gR\dfrac{\tan\beta+\mu}{1-\mu\tan\beta}$ ; $\mu=0{,}1$ : $16{,}6$ m/s ($60$ km/h) ; $\mu=0{,}7$ : $31{,}3$ m/s ($113$ km/h).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -138,16 +161,22 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 > Sans relèvement ($\beta=0$) on aurait seulement $\sqrt{\mu gR}$ : $9{,}9$ m/s ($36$ km/h) et $26{,}2$ m/s ($94$ km/h).
 
 
+
 **q3.** - [(f)] Pour $v<v_0$, dans quel sens la voiture a-t-elle tendance à glisser ? En déduire la vitesse minimale $v_{\min}$ en dessous de laquelle elle glisse vers l'intérieur du virage.
 - [(g)] Quelle condition sur $\mu$ et $\beta$ assure qu'il n'existe aucune vitesse minimale ? Discuter pour $\mu=0{,}1$ et $\mu=0{,}7$.
 - [(h)] Écrire $v_{\min}$ et $v_{\max}$ à l'aide de l'angle de frottement $\varphi$ défini par $\tan\varphi=\mu$. Commenter.
+
 
 > [!tip]- 💡 Coup de pouce
 > À basse vitesse, la voiture « tombe vers l'intérieur » : elle tend à descendre la pente. Le frottement est alors dirigé vers le haut de la pente : changez le signe de $\mu$ dans les formules précédentes. Pour (h), utilisez la formule d'addition de la tangente.
 
 
+
+
 > [!success]- ✅ Correction
 > $v_{\min}^2=gR\dfrac{\tan\beta-\mu}{1+\mu\tan\beta}$ si $\mu<\tan\beta$ ; $\mu=0{,}1$ : $8{,}6$ m/s ($31$ km/h) ; si $\mu\ge\tan\beta$ ($0{,}7$) : pas de minimum ; $v_{\min}=\sqrt{gR\tan(\beta-\varphi)}$, $v_{\max}=\sqrt{gR\tan(\beta+\varphi)}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -168,6 +197,24 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 > Le frottement élargit symétriquement l'angle effectif de la réaction : la réaction totale $\vec R$ peut s'incliner de $\beta-\varphi$ à $\beta+\varphi$ par rapport à la verticale (cône de frottement). Si $\beta+\varphi\ge90^\circ$, $v_{\max}$ diverge : la voiture ne peut plus glisser (à $\mu=0{,}7$ ici, $\beta+\varphi=10^\circ+35^\circ=45^\circ<90^\circ$, donc $v_{\max}$ reste fini).
 
 
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Génie civil routier et ferroviaire**
+>
+> Le dévers des routes et des voies ferrées est dimensionné pour la vitesse de référence $v_0=\sqrt{gR\tan\beta}$ ; les trains « à dévers » (pendulaires) compensent en inclinant la caisse.
+>
+> **Sport automobile et cyclisme**
+>
+> Pistes ovales (NASCAR), vélodromes à virages relevés (jusqu'à $42^\circ$), pistes de bobsleigh.
+>
+> **Aéronautique**
+>
+> Un avion en virage s'incline : la portance joue le rôle de $\vec N$ et le facteur de charge vaut $1/\cos\beta$ ($2$ pour $60^\circ$).
+
+
+
+
 > [!warning]- 🪤 Écueils classiques
 > **Mettre le frottement horizontal**
 >
@@ -186,6 +233,8 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 > Si $\mu\ge\tan\beta$ (ici $\tan10^\circ=0{,}176$ : route sèche), la voiture ne glisse jamais vers le bas, même à l'arrêt, et $v_{\min}=0$.
 
 
+
+
 > [!tip]- 🎙️ Conseils d'animation
 > **Piste de course**
 >
@@ -196,38 +245,35 @@ Une voiture, assimilée à un point matériel $M$ de masse $m$, prend un virage 
 > Pour $\beta=0$, la condition de non-glissement devient $v\le\sqrt{\mu gR}$ : $35{,}7$ km/h seulement pour $\mu=0{,}1$ (route verglacée ou mouillée), $94$ km/h pour $\mu=0{,}7$. Le relèvement ajoute $\approx25$ km/h dans le cas mouillé ($\mu=0{,}1$).
 
 
-> [!note]- 🔗 Liens avec d'autres disciplines
-> **Génie civil routier et ferroviaire**
->
-> Le dévers des routes et des voies ferrées est dimensionné pour la vitesse de référence $v_0=\sqrt{gR\tan\beta}$ ; les trains « à dévers » (pendulaires) compensent en inclinant la caisse.
->
-> **Sport automobile et cyclisme**
->
-> Pistes ovales (NASCAR), vélodromes à virages relevés (jusqu'à $42^\circ$), pistes de bobsleigh.
->
-> **Aéronautique**
->
-> Un avion en virage s'incline : la portance joue le rôle de $\vec N$ et le facteur de charge vaut $1/\cos\beta$ ($2$ pour $60^\circ$).
 
 
-> [!success]- 🏁 Bilan
+> [!success]- 🏁 Bilan pédagogique
 > **Virage relevé**
 >
 > Vitesse sans frottement : $v_0=\sqrt{gR\tan\beta}\approx13{,}2$ m/s ($47$ km/h). Avec adhérence : $v_{\min}=\sqrt{gR\dfrac{\tan\beta-\mu}{1+\mu\tan\beta}}$ (si $\mu<\tan\beta$, sinon $0$) et $v_{\max}=\sqrt{gR\dfrac{\tan\beta+\mu}{1-\mu\tan\beta}}$. Pour $\mu=0{,}1$ : $v\in[8{,}6;\,16{,}6]$ m/s ($31$ à $60$ km/h) ; pour $\mu=0{,}7$ : $v\le31{,}3$ m/s ($113$ km/h), pas de minimum. Avec $\beta=0$ : $v_{\max}=\sqrt{\mu gR}$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Moto et angle d'inclinaison
 > Une moto n'a pas de chaussée relevée : elle s'incline de l'angle $\psi$ avec $\tan\psi=\dfrac{v^2}{gR}$ pour que la résultante des forces passe par le centre de gravité. Calculer $\psi$ pour $v=80$ km/h et $R=100$ m, et la vitesse maximale pour $\mu=0{,}8$ (angle limite $\arctan\mu\approx38{,}7^\circ$).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Dimension du véhicule et basculement
 > Le véhicule a une hauteur de centre de gravité $h$ et une voie $\ell$. Montrer que le basculement (renversement) précède le glissement si $\mu>\ell/(2h)$ et déterminer la vitesse de renversement $v=\sqrt{gR\,\dfrac{\ell}{2h}}$ en route plate.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Vitesse variable dans le virage
 > Si la voiture accélère le long du virage (accélération tangentielle $a_t$), le frottement a deux composantes (une pour l'accélération centripète, une pour $a_t$). Écrire la condition $\sqrt{f_{\rm lat}^2+f_{\rm long}^2}\le\mu N$ (cercle de frottement) et discuter le compromis freinage/virage.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex1-exercices-elementaires|Exercice 1 — Exercices élémentaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex2-decollage-d-un-corps|Exercice 2 — Décollage d'un corps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex3-machine-d-atwood|Exercice 3 — Machine d'Atwood]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex4-systeme-de-deux-blocs|Exercice 4 — Système de deux blocs]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex6-navette-columbia|Exercice 6 — (*) Navette Columbia]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex7-chute-avec-frottement-fluide-vitesse-limite|Exercice 7 — Chute avec frottement fluide : vitesse limite]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/ex4-systeme-pendule-bloc|Exercice 4 — (*) Système pendule-bloc]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-3-travail-energie-cinetique-energie-potentielle-energie-mecanique/travail-et-energie/ex6-chaine-qui-glisse-d-une-table|Exercice 6 — (*) Chaîne qui glisse d'une table]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]]
+
 

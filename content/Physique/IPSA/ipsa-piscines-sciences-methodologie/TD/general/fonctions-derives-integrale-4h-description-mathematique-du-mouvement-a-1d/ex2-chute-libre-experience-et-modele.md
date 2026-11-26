@@ -13,28 +13,36 @@ tags:
 
 Étude expérimentale puis théorique du mouvement de chute libre d'une bille de billard lâchée sans vitesse initiale. Le référentiel terrestre est supposé galiléen.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Principe fondamental de la dynamique (PFD)**
 >
 > $\sum \vec{F} = m \vec{a}$ et intégration des équations différentielles simples.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Confrontation expérience / modèle**
 >
 > Savoir exploiter une série de données expérimentales pour retrouver la valeur de l'intensité de la pesanteur $g$.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Chute libre à 1D**
 >
 > Seule la force de pesanteur $\vec{P} = m\vec{g}$ s'applique. L'accélération subie par le corps est égale à $\vec{a} = \vec{g}$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
 > **Repère pour la chute**
 >
 > Orienter l'axe vertical vers le bas permet d'avoir $a_x = +g$ et d'éliminer les signes moins.
+
 
 
 **q1.** **Étude expérimentale**
@@ -55,6 +63,7 @@ Une bille est photographiée toutes les $\tau = 1/30\text{ s}$.
 
 (f) Déterminer l'accélération $a_x(t)$ graphiquement puis par le calcul. Qualifier le mouvement.
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution expérimentale**
 >
@@ -69,6 +78,7 @@ Une bille est photographiée toutes les $\tau = 1/30\text{ s}$.
 > (e) Par calcul : $v_x(t) = \frac{\mathrm{d}x}{\mathrm{d}t} = 2k t = 9,8 t\text{ m}\cdot\text{s}^{-1}$.
 >
 > (f) $a_x = \frac{\mathrm{d}v_x}{\mathrm{d}t} \approx 9,8\text{ m}\cdot\text{s}^{-2} = \text{Cte}$. Le mouvement est **rectiligne uniformément accéléré (MRUA)**.
+
 
 
 **q2.** **Modélisation théorique**
@@ -87,6 +97,7 @@ Une masse $m$ est en chute libre sans vitesse initiale dans le champ $\vec{g}$.
 
 (e) Estimer l'intensité de la pesanteur $g$ depuis l'étude expérimentale.
 
+
 > [!example]- 📝 Solution détaillée
 > **Résolution théorique**
 >
@@ -101,6 +112,7 @@ Une masse $m$ est en chute libre sans vitesse initiale dans le champ $\vec{g}$.
 > (e) Par identification avec $x(t) = k t^2$ où $k \approx 4,9\text{ m}\cdot\text{s}^{-2}$, on a $g = 2k \approx 9,8\text{ m}\cdot\text{s}^{-2}$.
 
 
+
 **q3.** **Applications**
 
 
@@ -108,6 +120,7 @@ Une masse $m$ est en chute libre sans vitesse initiale dans le champ $\vec{g}$.
 (a) Une pierre tombe dans un puits et touche l'eau après $1,5\text{ s}$. Déterminer la profondeur du puits et la vitesse d'impact ($g = 9,81\text{ m}\cdot\text{s}^{-2}$).
 
 (b) Calculer la durée de chute lors d'une tombe d'une chaise haute de $0,5\text{ m}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Calculs d'applications**
@@ -117,10 +130,15 @@ Une masse $m$ est en chute libre sans vitesse initiale dans le champ $\vec{g}$.
 > (b) $h = \frac{1}{2}g t^2 \implies t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{2 \times 0,5}{9,81}} \approx 0,32\text{ s}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Frottements fluides
 > Ajout de forces de frottement en $-k v$ ou $-k v^2$ menant à l'apparition d'une vitesse limite.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex1-position-deplacement-vitesse-et-acceleration|Exercice 1 — Position, déplacement, vitesse et accélération]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex3-equations-de-mouvement|Exercice 3 — Équations de mouvement]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/fonctions-derives-integrale-4h-description-mathematique-du-mouvement-a-1d/ex4-mouvement-rectiligne-uniformement-accelere-mrua|Exercice 4 — Mouvement rectiligne uniformément accéléré (MRUA)]]
+
 

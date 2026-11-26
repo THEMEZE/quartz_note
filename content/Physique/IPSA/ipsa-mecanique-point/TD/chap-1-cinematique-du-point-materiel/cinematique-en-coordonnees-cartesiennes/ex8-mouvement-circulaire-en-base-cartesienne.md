@@ -15,7 +15,8 @@ Un point matériel $M$ se déplace dans un plan muni d'un repère cartésien $(O
 Son rayon vecteur $\vec r$ s'écrit en fonction du temps :
 $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \text{avec } R,\,\omega \text{ constantes}.$$
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Accélérer sans aller plus vite**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -27,28 +28,38 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 > L'accélération est **centripète** (dirigée vers le centre), perpendiculaire à $\vec v$ : elle ne fait que **courber** la trajectoire. Seule une composante **tangentielle** de l'accélération modifie la norme de la vitesse.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivation en base cartésienne fixe**
 >
 > La base $(\vec\imath,\vec\jmath)$ étant fixe (indépendante du temps), la dérivation d'un vecteur exprimé dans cette base se fait composante par composante, sans terme supplémentaire lié à la rotation de la base elle-même — contrairement à ce qui se passera en base polaire, étudiée plus tard dans le cours.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Retrouver le mouvement circulaire uniforme par le calcul cartésien**
 >
 > Savoir montrer, à partir des seules équations horaires cartésiennes, qu'un mouvement est circulaire et uniforme, et interpréter physiquement le fait que l'accélération puisse être non nulle alors que la norme de la vitesse est constante (accélération purement centripète).
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Préparer la base polaire**
 >
 > Cet exercice, mené intégralement en coordonnées cartésiennes, est volontairement plus lourd en calcul qu'un traitement en base polaire (qui sera vu plus tard). L'objectif pédagogique est de faire ressentir cette lourdeur relative, pour motiver l'introduction des coordonnées polaires : ici, $\|\vec v\|$ et $\|\vec a\|$ constants n'apparaissent qu'après simplification trigonométrique, alors qu'ils seraient immédiats en base $(\vec u_r,\vec u_\theta)$.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Identité trigonométrique fondamentale**
 >
 > Pour tout $\theta$, $\cos^2\theta + \sin^2\theta = 1$. C'est cette identité qui permet de retrouver l'équation d'un cercle à partir des équations horaires paramétriques, et de simplifier les normes de $\vec v$ et $\vec a$ dans cet exercice.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -77,6 +88,7 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 > On peut écrire $x+iy=R\,e^{i\omega t}$. Dériver revient à multiplier par $i\omega$ (rotation de $90^\circ$ et facteur $\omega$) : on retrouve $\vec v$ et $\vec a=-\omega^2\vec r$ en une ligne.
 
 
+
 **q1.** Équations horaires et trajectoire de $M$.
 
 
@@ -92,12 +104,17 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 
 (f) Que peut-on dire du mouvement de $M$ ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Utilisez $\cos^2+\sin^2=1$ pour éliminer $t$ entre $x(t)$ et $y(t)$.
 
 
+
+
 > [!success]- ✅ Correction
 > $x^2+y^2=R^2$ : cercle de rayon $R$ centré en $O$, parcouru à vitesse angulaire constante $\omega$ (mouvement circulaire uniforme).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -143,6 +160,7 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 > Le point $M$ décrit un **mouvement circulaire uniforme** : trajectoire circulaire de rayon $R$, parcourue à vitesse angulaire constante $\omega$ (le paramètre $\theta(t)=\omega t$ croît linéairement avec le temps).
 
 
+
 **q2.** Vitesse et accélération de $M$.
 
 
@@ -156,12 +174,17 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 
 (e) Donner la définition d'un mouvement uniforme. Le mouvement de $M$ peut-il être uniforme si son accélération est non nulle ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Dérivez composante par composante ; pour la norme, ressortez le facteur commun $R\omega$ (ou $R\omega^2$) avant d'utiliser $\cos^2+\sin^2=1$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v = -R\omega\sin(\omega t)\vec\imath + R\omega\cos(\omega t)\vec\jmath$, $\|\vec v\|=R\omega$ (constant). $\vec a = -\omega^2\vec r$, $\|\vec a\|=R\omega^2$ (constant). Oui, le mouvement est uniforme malgré $\vec a\neq\vec 0$ : l'accélération est purement centripète.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -191,6 +214,7 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 > Ici, on a montré en (a) que $\|\vec v\|=R\omega$ est bien constant : le mouvement circulaire est donc **uniforme**, bien que $\vec a\neq\vec 0$ (question (b)). Ceci est possible car l'accélération est ici **purement radiale (centripète)**, donc perpendiculaire à $\vec v$ à chaque instant : elle ne fait que courber la trajectoire (faire tourner la direction de $\vec v$) sans jamais modifier sa norme. On retiendra que : **accélération non nulle n'implique pas mouvement non uniforme** — seule une composante d'accélération tangentielle (colinéaire à $\vec v$) modifie la norme de la vitesse.
 
 
+
 **q3.** Application : le mouvement de révolution de la Lune autour de la Terre s'accomplit en 28 jours sur une trajectoire assimilée à un cercle, parcourue de façon uniforme.
 
 
@@ -198,12 +222,17 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 
 (b) Quelle serait la vitesse angulaire si soudainement la vitesse (linéaire) était réduite de moitié et si le rayon de l'orbite quadruplait ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Utilisez $\omega = v/R$ (issu de $v=R\omega$, question 2a) pour la question (b).
 
 
+
+
 > [!success]- ✅ Correction
 > $\omega \approx 2{,}6\times10^{-6}$ rad/s ; $\omega' = \omega/8$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -219,16 +248,6 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 > La vitesse angulaire est donc divisée par 8 : elle est affectée à la fois par la réduction de la vitesse linéaire (facteur $1/2$) et par l'augmentation du rayon (facteur $1/4$ supplémentaire), les deux effets se cumulant pour ralentir la rotation.
 
 
-> [!warning]- 🪤 Écueils classiques
-> **Croire qu'accélération non nulle implique mouvement non uniforme**
->
-> Erreur fréquente : penser que si $\vec a \neq \vec 0$, la vitesse (en norme) doit varier. Il est essentiel de bien distinguer variation de la **direction** du vecteur vitesse (qui nécessite une accélération, même à norme constante) et variation de sa **norme** (qui nécessite spécifiquement une composante d'accélération tangentielle à la trajectoire). Ici $\vec a$ est purement radiale (centripète), donc ne modifie que la direction de $\vec v$, jamais sa norme.
-
-
-> [!tip]- 🎙️ Conseils d'animation
-> **Faire deviner la nature du mouvement avant de calculer**
->
-> Avant de faire calculer $x^2+y^2$, demander aux étudiants ce que suggère la forme de $\vec r(t)$ (avec $\cos$ et $\sin$ du même argument $\omega t$) : beaucoup reconnaîtront intuitivement un mouvement circulaire, ce qui rend le calcul de vérification plus motivé.
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -249,16 +268,39 @@ $$\vec r(t) = R\cos(\omega t)\,\vec\imath + R\sin(\omega t)\,\vec\jmath \qquad \
 > Orbites quasi circulaires de la Lune et des satellites, troisième loi de Kepler $T^2\propto R^3$.
 
 
-> [!success]- 🏁 Bilan
+
+
+> [!warning]- 🪤 Écueils classiques
+> **Croire qu'accélération non nulle implique mouvement non uniforme**
+>
+> Erreur fréquente : penser que si $\vec a \neq \vec 0$, la vitesse (en norme) doit varier. Il est essentiel de bien distinguer variation de la **direction** du vecteur vitesse (qui nécessite une accélération, même à norme constante) et variation de sa **norme** (qui nécessite spécifiquement une composante d'accélération tangentielle à la trajectoire). Ici $\vec a$ est purement radiale (centripète), donc ne modifie que la direction de $\vec v$, jamais sa norme.
+
+
+
+
+> [!tip]- 🎙️ Conseils d'animation
+> **Faire deviner la nature du mouvement avant de calculer**
+>
+> Avant de faire calculer $x^2+y^2$, demander aux étudiants ce que suggère la forme de $\vec r(t)$ (avec $\cos$ et $\sin$ du même argument $\omega t$) : beaucoup reconnaîtront intuitivement un mouvement circulaire, ce qui rend le calcul de vérification plus motivé.
+
+
+
+
+> [!success]- 🏁 Bilan pédagogique
 > **Signature du mouvement circulaire uniforme**
 >
 > Le mouvement circulaire uniforme est caractérisé par une vitesse angulaire $\omega$ constante, une vitesse (en norme) constante $v=R\omega$, et une accélération purement centripète de norme constante $a=R\omega^2=v^2/R$, dirigée en permanence vers le centre $O$. Cette structure ($\vec a = -\omega^2\vec r$) reviendra très souvent en physique (oscillateur harmonique, force centrale, etc.).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Passage en coordonnées polaires
 > On pourra reprendre entièrement cet exercice en base polaire $(\vec u_r,\vec u_\theta)$, avec $\theta(t)=\omega t$, et comparer la longueur des calculs : $\vec v = R\dot\theta\,\vec u_\theta$ et $\vec a = -R\dot\theta^2\,\vec u_r$ s'obtiennent alors directement, sans développement trigonométrique, ce qui illustre l'intérêt de choisir un système de coordonnées adapté à la symétrie du problème.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]]
+
 

@@ -17,19 +17,24 @@ L'idée : la troisième loi de Kepler donne la combinaison $GM_\odot$, mais pas 
 
 On utilisera les résultats obtenus dans les TP précédents. À défaut, prendre $G=(6{,}70\pm0{,}37)\times10^{-11}\ \text{m}^3\cdot\text{kg}^{-1}\cdot\text{s}^{-2}$, $\theta=(9{,}31\pm0{,}28)\ \text{mrad}$ et $T=1\ \text{an}=3{,}156\times10^{7}\ \text{s}$.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Notions**
 >
 > Mouvement circulaire uniforme et gravitation, différentielle logarithmique et combinaison des incertitudes (TD2 exercices 8 et 9), TP A1 et A2.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Enchaîner plusieurs mesures indépendantes**
 >
 > Écrire une grandeur en fonction de mesures indépendantes, propager les incertitudes, identifier la mesure limitante et discuter la validité d'un modèle.
 
 
-> [!note]+ 🧰 Matériel
+
+
+> [!note]- 🧰 Matériel nécessaire
 > Résultats des TP A1 et A2 (valeurs et incertitudes)
 >
 > Calculatrice ou tableur
@@ -37,12 +42,16 @@ On utilisera les résultats obtenus dans les TP précédents. À défaut, prendr
 > Tableau de données : $a=1{,}496\times10^{11}\ \text{m}$, $\rho_{\text{eau}}=1000\ \text{kg}\cdot\text{m}^{-3}$, $\rho_{\text{Terre}}=5510\ \text{kg}\cdot\text{m}^{-3}$
 
 
+
 **q1.** Établir la relation $GM_\odot=\dfrac{4\pi^2a^3}{T^2}$ pour une orbite circulaire de rayon $a$ et de période $T$ (Terre de masse $m\ll M_\odot$).
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\dfrac{GM_\odot m}{a^2}=m\,a\left(\dfrac{2\pi}{T}\right)^2\Rightarrow GM_\odot=\dfrac{4\pi^2a^3}{T^2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -51,14 +60,18 @@ On utilisera les résultats obtenus dans les TP précédents. À défaut, prendr
 > PFD appliqué à la Terre en mouvement circulaire uniforme autour du Soleil (référentiel héliocentrique supposé galiléen) : la force gravitationnelle $\dfrac{GM_\odot m}{a^2}$ est centripète et vaut $m\,\omega^2a$ avec $\omega=\dfrac{2\pi}{T}$. Donc $GM_\odot=\omega^2a^3=\dfrac{4\pi^2a^3}{T^2}$, ce qui est la troisième loi de Kepler ($a^3/T^2$ est constante). Numériquement, $GM_\odot=\dfrac{4\pi^2\times(1{,}496\times10^{11})^3}{(3{,}156\times10^{7})^2}=1{,}327\times10^{20}\ \text{m}^3\cdot\text{s}^{-2}$.
 
 
+
 **q2.** Montrer que la densité moyenne du Soleil s'écrit
 $$\rho_\odot=\frac{3\pi}{G\,T^2}\left(\frac{a}{R_\odot}\right)^3=\frac{24\pi}{G\,T^2\,\theta^3}$$
 où $\theta$ est le diamètre angulaire ($\theta=2R_\odot/a$). Vérifier l'homogénéité. Pourquoi la distance $a$ n'apparaît-elle plus ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\rho=\dfrac{M}{\frac{4}{3}\pi R^3}=\dfrac{3}{4\pi R^3}\cdot\dfrac{4\pi^2a^3}{GT^2}=\dfrac{3\pi}{GT^2}\left(\dfrac{a}{R}\right)^3$ et $\dfrac{a}{R}=\dfrac{2}{\theta}$. Homogénéité : $[GT^2]=\text{m}^3\cdot\text{kg}^{-1}$, donc $\rho$ en $\text{kg}\cdot\text{m}^{-3}$. Seul le rapport $a/R$, égal à $2/\theta$, intervient.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -71,12 +84,16 @@ où $\theta$ est le diamètre angulaire ($\theta=2R_\odot/a$). Vérifier l'homog
 > $a$ disparaît car masse et volume varient tous les deux comme $a^3$ : seul le **rapport** entre la taille de l'orbite et celle du Soleil compte, et il est donné par l'angle.
 
 
+
 **q3.** Calculer $\rho_\odot$ avec $G=6{,}70\times10^{-11}\ \text{m}^3\cdot\text{kg}^{-1}\cdot\text{s}^{-2}$, $T=3{,}156\times10^{7}\ \text{s}$ et $\theta=9{,}31\ \text{mrad}$. Calculer aussi $M_\odot$ et $R_\odot$. Comparer avec les valeurs tabulées ($\rho=1408\ \text{kg}\cdot\text{m}^{-3}$, $M=1{,}989\times10^{30}\ \text{kg}$, $R=6{,}957\times10^{8}\ \text{m}$).
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\rho_\odot\approx1{,}40\times10^{3}\ \text{kg}\cdot\text{m}^{-3}$ ($1{,}4\ \text{g}\cdot\text{cm}^{-3}$), $M_\odot\approx1{,}98\times10^{30}\ \text{kg}$, $R_\odot\approx6{,}96\times10^{8}\ \text{m}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -87,7 +104,9 @@ où $\theta$ est le diamètre angulaire ($\theta=2R_\odot/a$). Vérifier l'homog
 > $M_\odot=\dfrac{GM_\odot}{G}=\dfrac{1{,}327\times10^{20}}{6{,}70\times10^{-11}}\approx1{,}98\times10^{30}\ \text{kg}$ ; $R_\odot=\dfrac{a\theta}{2}=6{,}96\times10^{8}\ \text{m}$. Les trois valeurs sont à moins de $1\ \%$ des valeurs de référence. Remarque : la proximité est en partie due à la compensation d'erreurs ; l'incertitude estimée (question 4) est plus grande que l'écart.
 
 
+
 **q4.** Propager les incertitudes : établir $\dfrac{\Delta\rho}{\rho}$ (somme absolue puis quadratique), calculer $\Delta\rho$ et écrire le résultat avec les bons chiffres significatifs. Quelle mesure limite la précision ? Que faut-il améliorer pour diviser $\Delta\rho$ par $2$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Exposants**
@@ -95,10 +114,14 @@ où $\theta$ est le diamètre angulaire ($\theta=2R_\odot/a$). Vérifier l'homog
 > $\rho\propto G^{-1}T^{-2}\theta^{-3}$. Avec $\dfrac{\Delta G}{G}=5{,}5\ \%$, $\dfrac{\Delta\theta}{\theta}=3\ \%$ et $\dfrac{\Delta T}{T}\approx0$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\dfrac{\Delta\rho}{\rho}=\dfrac{\Delta G}{G}+3\dfrac{\Delta\theta}{\theta}\approx5{,}5+9{,}0=14{,}5\ \%$ (somme absolue) ou $\sqrt{5{,}5^2+9{,}0^2}\approx10{,}5\ \%$ (quadratique). Résultat : $\rho_\odot=(1{,}4\pm0{,}2)\times10^{3}\ \text{kg}\cdot\text{m}^{-3}$ en somme absolue, $(1{,}40\pm0{,}15)\times10^{3}$ en quadratique. La mesure de $\theta$ contribue à $62\ \%$ de la somme absolue.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -109,12 +132,16 @@ où $\theta$ est le diamètre angulaire ($\theta=2R_\odot/a$). Vérifier l'homog
 > La valeur tabulée ($1408$) est à l'intérieur de l'incertitude. La mesure de $\theta$ domine : améliorer $\Delta\theta/\theta$ de $3\ \%$ à $1\ \%$ ramène l'incertitude quadratique à $\sqrt{5{,}5^2+3^2}=6{,}3\ \%$, soit une division de $\Delta\rho$ par $1{,}7$. Pour la diviser par $2$, il faut aussi améliorer $G$ (en corrigeant les mesures de $b$ dans le TP A1).
 
 
+
 **q5.** Critique. Pour chacune des hypothèses suivantes, dire dans quel sens elle influence $\rho_\odot$ : (a) orbite circulaire alors que $e=0{,}0167$, (b) $\theta$ mesuré un jour de janvier (périhélie) ou de juillet (aphélie), (c) image sténopéique plus large que l'image géométrique à cause du flou, (d) $M_\odot$ mesurée avec la Terre incluse, (e) choix de la définition du bord du Soleil.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (a) négligeable : la troisième loi reste exacte avec $a$ le demi-grand axe. (b) $\theta$ varie de $\pm1{,}7\ \%$ : $\rho\propto\theta^{-3}$ varie de $\mp5\ \%$ ; utiliser $\theta$ moyen ou la valeur à la date avec $a$ de la date. (c) $\theta$ surestimé donc $\rho$ sous-estimé de $3\times\dfrac{s}{D\theta}$ ; l'ajustement avec ordonnée à l'origine corrige. (d) $m/M=3\times10^{-6}$, négligeable. (e) la photosphère n'a pas un bord net : correction de l'ordre de $0{,}1\ \%$ sur $R$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -130,12 +157,16 @@ où $\theta$ est le diamètre angulaire ($\theta=2R_\odot/a$). Vérifier l'homog
 > La densité obtenue est une densité **moyenne** : le Soleil n'est pas homogène.
 
 
+
 **q6.** Comparer $\rho_\odot$ avec celles de l'eau, de la Terre (calculée dans le TP A1, question 6) et de Jupiter ($1330\ \text{kg}\cdot\text{m}^{-3}$). Comment un objet de densité proche de l'eau peut-il être une boule de gaz à $5\,800\ \text{K}$ en surface ? Et pourquoi ne s'effondre-t-il pas ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\rho_\odot/\rho_{\text{eau}}\approx1{,}4$ ; $\rho_\odot/\rho_{\text{Terre}}\approx0{,}26$ ; $\rho_\odot\approx\rho_{\text{Jupiter}}$. La densité est moyenne : gaz comprimé par sa propre gravité (centre à $150\ \text{g}\cdot\text{cm}^{-3}$). L'équilibre est hydrostatique : la pression interne, entretenue par la fusion, compense la gravité.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -145,20 +176,29 @@ où $\theta$ est le diamètre angulaire ($\theta=2R_\odot/a$). Vérifier l'homog
 > Jupiter (densité voisine) est un cas différent : sa pression interne résulte de la dégénérescence électronique et non de la fusion.
 
 
-> [!note]- ✈️ Lien avec l'aviation
+
+
+> [!example]- ✈️ Application à l'aviation
 > **Navigation et mécanique orbitale**
 >
 > Les trajectoires des satellites de navigation (GPS, Galileo) obéissent à la même loi de Kepler : pour un satellite à $a=26\,560\ \text{km}$ (GPS), $T=2\pi\sqrt{a^3/(GM_T)}\approx11\ \text{h}\,58\ \text{min}$. Refaire le calcul avec $GM_T=3{,}986\times10^{14}\ \text{m}^3\cdot\text{s}^{-2}$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Densité centrale du Soleil
 > La densité moyenne est de $1{,}41\ \text{g}\cdot\text{cm}^{-3}$, mais elle atteint environ $150\ \text{g}\cdot\text{cm}^{-3}$ au centre et tombe à $10^{-7}\ \text{g}\cdot\text{cm}^{-3}$ dans la photosphère. L'équilibre hydrostatique impose une décroissance monotone.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Étoiles et exoplanètes
 > La même formule $\rho_\star=\dfrac{3\pi}{GT^2}\left(\dfrac{a}{R_\star}\right)^3$ permet de déterminer la densité d'une étoile hôte à partir de la seule photométrie d'un transit (durée du transit, période) : c'est ainsi que Kepler et TESS estiment la densité de milliers d'étoiles.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/ex1-balance-de-cavendish-peser-la-terre-et-mesurer-g|Exercice 1 — Balance de Cavendish : peser la Terre et mesurer G]]
+
 

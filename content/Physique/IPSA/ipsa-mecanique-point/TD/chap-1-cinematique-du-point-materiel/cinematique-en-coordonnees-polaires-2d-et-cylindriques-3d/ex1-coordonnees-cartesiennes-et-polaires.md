@@ -15,7 +15,8 @@ On se place dans un plan muni d'un repère cartésien $Oxy$. Un point $M$ du pla
 ses coordonnées cartésiennes $(x,y)$, soit par ses **coordonnées polaires** $(r,\theta)$ : $r=OM$ est la
 distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ et le vecteur $\overrightarrow{OM}$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Quel système de coordonnées choisir ?**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -27,23 +28,31 @@ distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ e
 > Pour un problème à symétrie de rotation autour de $O$, $r$ et $\theta$ sont plus naturels : un **cercle centré en $O$** est « $r=$ cte » et une **demi-droite issue de $O$** est « $\theta=$ cte ». C'est ce qui rendra le mouvement circulaire presque trivial dès l'exercice suivant.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Trigonométrie du cercle**
 >
 > Pour un point du cercle trigonométrique d'angle $\theta$, l'abscisse est $\cos\theta$ et l'ordonnée est $\sin\theta$. Théorème de Pythagore : $\cos^2\theta+\sin^2\theta=1$. Les angles sont définis modulo $2\pi$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Passer d'un système de coordonnées à l'autre**
 >
 > Savoir écrire sans hésiter les formules de passage cartésien $\leftrightarrow$ polaire, traduire l'équation d'une courbe dans l'autre système, et **choisir le système adapté** à la symétrie du problème.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Coordonnées polaires**
 >
 > $$x=r\cos\theta,\qquad y=r\sin\theta,\qquad r=\sqrt{x^2+y^2}.$$
 > L'angle se déduit de $\cos\theta=x/r$ et $\sin\theta=y/r$ (et non du seul $\tan\theta=y/x$, qui ne distingue pas $\theta$ de $\theta+\pi$). L'origine $O$ ($r=0$) n'a pas d'angle défini.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -68,14 +77,20 @@ distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ e
 > Avec $z=x+iy=r\,e^{i\theta}$, on a $r=|z|$ et $\theta=\arg z$ : les coordonnées polaires sont la forme trigonométrique d'un complexe. Un cercle centré en $O$ est $|z|=R$.
 
 
+
 **q1.** (a) Rappeler les formules de passage entre coordonnées cartésiennes et coordonnées polaires.
+
 
 > [!tip]- 💡 Coup de pouce
 > Faites un schéma : le point $M$, ses projections sur $Ox$ et $Oy$, et le triangle rectangle de côtés $x$ et $y$.
 
 
+
+
 > [!success]- ✅ Correction
 > $x=r\cos\theta$, $y=r\sin\theta$ ; $r=\sqrt{x^2+y^2}$, $\cos\theta=x/r$, $\sin\theta=y/r$ (soit $\tan\theta=y/x$ avec une discussion sur le quadrant).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -91,15 +106,21 @@ distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ e
 > Pour déterminer $\theta$, on regarde le signe de $x$ et de $y$ (quadrant). Exemple : $M(-1,1)$ a pour coordonnées polaires $r=\sqrt2$ et $\theta=3\pi/4$, alors que $\arctan(-1)=-\pi/4$. Pour $M=O$, $r=0$ et $\theta$ est indéterminé.
 
 
+
 **q2.** - [(b)] Une courbe a pour équation cartésienne $x^2+y^2=4$. De quelle courbe s'agit-il ? Quelle est son équation en coordonnées polaires ?
 - [(c)] Une courbe a pour équation cartésienne $x=y$. De quelle courbe s'agit-il ? Quelle est son équation en coordonnées polaires ?
+
 
 > [!tip]- 💡 Coup de pouce
 > Remplacez $x$ et $y$ par $r\cos\theta$ et $r\sin\theta$ et simplifiez. Pour (c), que se passe-t-il quand $r=0$ ?
 
 
+
+
 > [!success]- ✅ Correction
 > (b) Cercle de centre $O$ et de rayon $2$ : $r=2$. (c) Droite passant par $O$, de pente $1$ : $\theta=\pi/4\ [\pi]$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -118,14 +139,20 @@ distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ e
 > Le cercle centré en $O$ est « $r=$ constante » ($\theta$ libre) ; la droite passant par $O$ est « $\theta=$ constante » ($r$ libre). Les rôles sont symétriques.
 
 
+
 **q3.** (d) En coordonnées polaires, $M$ a pour équations horaires $r(t)=3$ et $\theta(t)=\dfrac\pi6\,t$ (unités S.I.). Quelle est sa trajectoire ? Déterminer les équations horaires de $M$ en coordonnées cartésiennes.
+
 
 > [!tip]- 💡 Coup de pouce
 > $r$ est constant : quelle courbe obtient-on ? Reportez ensuite $r$ et $\theta(t)$ dans $x=r\cos\theta$ et $y=r\sin\theta$.
 
 
+
+
 > [!success]- ✅ Correction
 > Cercle de centre $O$ et de rayon $3$ m, parcouru à vitesse angulaire constante $\omega=\pi/6$ rad/s (période $12$ s). $x(t)=3\cos(\pi t/6)$ et $y(t)=3\sin(\pi t/6)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -137,6 +164,8 @@ distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ e
 >
 > $$\boxed{x(t)=3\cos\!\left(\frac{\pi t}{6}\right)},\qquad \boxed{y(t)=3\sin\!\left(\frac{\pi t}{6}\right)}.$$
 > Vérification : $x^2+y^2=9$. Quelques positions : $t=0$ en $(3,0)$ ; $t=3$ s en $(0,3)$ ; $t=6$ s en $(-3,0)$ ; $t=12$ s de retour en $(3,0)$. On retrouve exactement la structure de l'exercice du TD1 sur le mouvement circulaire en base cartésienne, mais écrite ici en deux lignes en polaire : $r=3$, $\theta=\omega t$.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -157,14 +186,21 @@ distance de $M$ à l'origine et $\theta$ est l'angle orienté entre l'axe $Ox$ e
 > Le champ d'un fil rectiligne infini a une symétrie de rotation autour du fil : il ne dépend que de la distance $r$ au fil. Même idée : on choisit le système de coordonnées qui épouse la symétrie.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Autres courbes en polaire
 > Tracer les courbes d'équation polaire $r=\theta$ (spirale d'Archimède), $r=2\cos\theta$ (que représente-t-elle en cartésien ? multiplier par $r$ : $x^2+y^2=2x$, un cercle de centre $(1,0)$ passant par $O$) et $r=a(1+\cos\theta)$ (cardioïde, exercice 3).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Élément d'aire et intégrales en polaire
 > L'élément d'aire en polaire est $\mathrm dA=r\,\mathrm dr\,\mathrm d\theta$ (le facteur $r$ est le jacobien du changement de variables). L'aire d'un disque de rayon $R$ se calcule en une ligne : $\displaystyle\int_0^{2\pi}\!\!\int_0^R r\,\mathrm dr\,\mathrm d\theta=\pi R^2$. Refaire le calcul en cartésien et constater la différence de difficulté.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex6-parabole-de-s-rete-et-tir-sur-une-pente|Exercice 6 — Parabole de sûreté et tir sur une pente]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-3-travail-energie-cinetique-energie-potentielle-energie-mecanique/travail-et-energie/ex5-bille-sur-une-sphere-angle-de-decollage|Exercice 5 — (*) Bille sur une sphère : angle de décollage]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens/composition-du-mouvement-et-changement-de-referentiels/ex3-vitesse-et-acceleration-en-coordonnees-polaires|Exercice 3 — Vitesse et accélération en coordonnées polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]]
+
 

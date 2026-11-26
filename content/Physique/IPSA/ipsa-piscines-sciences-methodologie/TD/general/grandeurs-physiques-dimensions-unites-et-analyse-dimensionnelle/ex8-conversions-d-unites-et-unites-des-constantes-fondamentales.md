@@ -13,7 +13,8 @@ tags:
 
 Cet exercice comporte deux volets. Le premier travaille les **conversions d'unités** (questions directes puis conversions composées). Le second montre comment **déterminer l'unité d'une constante fondamentale** à partir d'une loi physique, puis comment combiner des constantes pour fabriquer une grandeur de dimension donnée.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Unités du système international**
 >
 > Connaître 
@@ -24,7 +25,9 @@ Cet exercice comporte deux volets. Le premier travaille les **conversions d'unit
 > - les lois physiques de base (Newton, Coulomb, énergie cinétique, \dots).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Convertir sans erreur et retrouver l'unité d'une constante**
 >
 > - Convertir une grandeur simple ou composée (vitesse, masse volumique, débit, énergie) en unité SI.
@@ -32,12 +35,16 @@ Cet exercice comporte deux volets. Le premier travaille les **conversions d'unit
 > - Combiner des constantes fondamentales pour obtenir une grandeur de dimension imposée.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Conversions et constantes**
 >
 > - **Conversion** : la valeur numérique change mais la grandeur reste la même. Par exemple $1~\text{h} = 3\,600~\text{s}$.
 > - **Constante fondamentale** : une constante intervenant dans une loi, comme $G$, $h$, $k_B$ ou $\varepsilon_0$, a une dimension telle que la loi soit homogène.
 > - **Unités dérivées utiles** : $1~\text{N} = 1~\text{kg.m.s}^{-2}$, $1~\text{J} = 1~\text{kg.m}^2\text{.s}^{-2}$, $1~\text{W} = 1~\text{J.s}^{-1}$, $1~\text{C} = 1~\text{A.s}$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -49,6 +56,7 @@ Cet exercice comporte deux volets. Le premier travaille les **conversions d'unit
 > \item Constante : isoler la constante dans la loi, puis remplacer chaque grandeur par son unité SI.
 > \item Pour une puissance, la conversion se fait aussi à la puissance : $1~\text{cm}^3 = (10^{-2}~\text{m})^3 = 10^{-6}~\text{m}^3$.
 > \end{itemize}
+
 
 
 **q1.** **Conversions directes**\\
@@ -68,11 +76,14 @@ Convertir en unité SI, en donnant le résultat en écriture scientifique :
 
 (f) $2,5 ~\text{mm}^2$
 
+
 > [!tip]- 💡 Coup de pouce
 > **Rapports égaux à 1
 > **
 >
 > Par exemple : $72 ~\text{km.h}^{-1} = 72 \times \dfrac{10^{3} ~\text{m}}{3\,600 ~\text{s}}$. Pour un volume : $1 ~\text{L} = 1 ~\text{dm}^3$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -92,6 +103,7 @@ Convertir en unité SI, en donnant le résultat en écriture scientifique :
 > (f) $2,5 ~\text{mm}^2 = 2,5 \times (10^{-3} ~\text{m})^2 = 2,5 \times 10^{-6} ~\text{m}^2$.
 
 
+
 **q2.** **Conversions composées**\\
 
 
@@ -106,11 +118,14 @@ Convertir en unité SI, en donnant le résultat en écriture scientifique :
 
 (e) La vitesse de la lumière est $c = 3,00 \times 10^{8} ~\text{m.s}^{-1}$. L'exprimer en $\text{km.h}^{-1}$.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Puissances de conversion
 > **
 >
 > Pour $\text{h}^{-2}$, on multiplie par $(3\,600)^2$ car $1 ~\text{h} = 3\,600 ~\text{s}$ donc $1 ~\text{s}^{-2} = (3\,600)^2 ~\text{h}^{-2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -129,6 +144,7 @@ Convertir en unité SI, en donnant le résultat en écriture scientifique :
 > (e) $c = 3,00 \times 10^{8} \times \dfrac{10^{-3} ~\text{km}}{\text{m}} \times \dfrac{3\,600 ~\text{s}}{1 ~\text{h}} = 1,08 \times 10^{9} ~\text{km.h}^{-1}$.
 
 
+
 **q3.** **Unité d'une constante à partir d'une loi**\\
 
 Pour chaque loi, isoler la constante, donner son équation aux dimensions et son unité SI en unités de base :
@@ -144,11 +160,14 @@ Pour chaque loi, isoler la constante, donner son équation aux dimensions et son
 
 (e) Loi de Stefan-Boltzmann : $\dfrac{P}{S} = \sigma T^4$ où $P/S$ est la puissance rayonnée par unité de surface, constante $\sigma$.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Dimensions à connaître
 > **
 >
 > $[F] = M L T^{-2}$, $[E] = M L^2 T^{-2}$, $[P] = M L^2 T^{-3}$, $[q] = I T$, $[\text{température}] = \Theta$. Un facteur numérique comme $\dfrac{3}{2}$ ou $4\pi$ n'a pas de dimension.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -166,6 +185,7 @@ Pour chaque loi, isoler la constante, donner son équation aux dimensions et son
 > (e) $\sigma = \dfrac{P}{S \, T^4}$ donc $[\sigma] = \dfrac{M L^2 T^{-3}}{L^2 \, \Theta^4} = M T^{-3} \Theta^{-4}$. Unité : $\text{kg.s}^{-3}\text{.K}^{-4}$ (soit $\text{W.m}^{-2}\text{.K}^{-4}$).
 
 
+
 **q4.** **Fabriquer une grandeur avec des constantes (question difficile)**\\
 
 On cherche une longueur à partir de trois constantes fondamentales : la constante de gravitation $G$, la constante de Planck réduite $\hbar = \dfrac{h}{2\pi}$ et la vitesse de la lumière $c$. On pose $\ell_P = G^{\alpha} \, \hbar^{\beta} \, c^{\gamma}$.
@@ -181,11 +201,14 @@ On cherche une longueur à partir de trois constantes fondamentales : la constan
 
 (e) Montrer que $m_P = \sqrt{\dfrac{\hbar c}{G}}$ est bien une masse. Calculer sa valeur.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Système linéaire
 > **
 >
 > Écrire $[\ell_P] = M^{-\alpha+\beta} \, L^{3\alpha+2\beta+\gamma} \, T^{-2\alpha-\beta-\gamma}$ puis identifier avec $L^1$ : l'exposant de $M$ et celui de $T$ doivent être nuls, celui de $L$ doit valoir $1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -207,6 +230,7 @@ On cherche une longueur à partir de trois constantes fondamentales : la constan
 >   $$m_P = \sqrt{\dfrac{1,05 \times 10^{-34} \times 3,00 \times 10^{8}}{6,67 \times 10^{-11}}} = \sqrt{4,72 \times 10^{-16}} \approx 2,2 \times 10^{-8} ~\text{kg}.$$
 
 
+
 **q5.** **La constante de la troisième loi de Kepler (question difficile)**\\
 
 La troisième loi de Kepler s'écrit $T^2 = K \, a^3$ où $T$ est la période de révolution d'une planète autour du Soleil et $a$ le demi-grand axe de son orbite.
@@ -222,11 +246,14 @@ La troisième loi de Kepler s'écrit $T^2 = K \, a^3$ où $T$ est la période de
 
 (e) La Terre est à $1 ~\text{UA}$ du Soleil. Une planète a une période de $11,9 ~\text{ans}$. Calculer son demi-grand axe en UA, sans utiliser les unités SI.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Pour la conversion
 > **
 >
 > Comme $1 ~\text{s} = \dfrac{1}{3,16 \times 10^{7}} ~\text{an}$ et $1 ~\text{m} = \dfrac{1}{1,50 \times 10^{11}} ~\text{UA}$, on a $1 ~\text{s}^2\text{.m}^{-3} = \dfrac{(1,50 \times 10^{11})^3}{(3,16 \times 10^{7})^2} ~\text{an}^2\text{.UA}^{-3}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -244,9 +271,13 @@ La troisième loi de Kepler s'écrit $T^2 = K \, a^3$ où $T$ est la période de
 > (e) $a^3 = \dfrac{T^2}{K} = 11,9^2 = 141,6 ~\text{UA}^3$ donc $a = \sqrt[3]{141,6} \approx 5,21 ~\text{UA}$ (il s'agit de Jupiter).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Unités hors système international
 
 > Rechercher l'origine du nœud, de l'électron-volt, de l'année-lumière et de l'unité astronomique.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Système d'unités naturelles
@@ -254,11 +285,16 @@ La troisième loi de Kepler s'écrit $T^2 = K \, a^3$ où $T$ est la période de
 > Poser $\hbar = c = k_B = 1$ et exprimer une énergie, une longueur et une température dans la même unité.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Redéfinition du SI de 2019
 
 > Expliquer comment les valeurs fixées de $h$, $e$, $k_B$ et $N_A$ définissent désormais le kilogramme, l'ampère, le kelvin et la mole.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex7-homogeneite-d-une-equation-et-dimension-d-une-grandeur-exercices-avances|Exercice 7 — (*) Homogénéité d'une équation et dimension d'une grandeur : exercices avancés]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex10-theoreme-pi-et-similitude-dimensionner-une-maquette|Exercice 10 — (*) Théorème $\Pi$ et similitude : dimensionner une maquette]]
+
 

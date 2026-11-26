@@ -13,28 +13,36 @@ tags:
 
 Une automobile en panne est tirée par deux câbles $AB$ et $AC$ exerçant des tensions $\vec{T}_{AB}$ et $\vec{T}_{AC}$. La force résultante $\vec{R}$ doit être appliquée strictement le long de l'axe longitudinal du véhicule (axe $Ox$).
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Projections trigonométriques**
 >
 > Savoir projeter des forces de traction concourantes pour former des équations d'équilibre ou de résultante.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Analyse de symétrie de forces**
 >
 > Utiliser les conditions de symétrie géométrique pour simplifier la résolution des problèmes de statique/traction.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Résultante de forces concourantes**
 >
 > Deux forces de même norme inclinées d'un même angle $\alpha$ par rapport à un axe ont une résultante portée par cet axe égale à $R = 2 T \cos\alpha$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
 > **Annulation de la composante transversale**
 >
 > Puisque la résultante est purement axiale, la somme des composantes perpendiculaires à l'axe du véhicule doit être nulle ($R_y = 0$).
+
 
 
 Une automobile en panne est remorquée à l’aide de deux câbles
@@ -47,6 +55,7 @@ l’axe longitudinal de l’automobile.
 **1.**
 
   **a)** Pour $T_{AB} = 2{,}2\text{ kN}$, $\beta = 30^\circ$ et $\alpha = 25^\circ$, déterminer, à l’aide de considérations trigonométriques, la tension $T_{AC}$ dans le câble $AC$ pour que la résultante soit dirigée suivant l’axe longitudinal de l’automobile.
+
 
 > [!example]- 📝 Solution détaillée
 > **Tension dans le câble AC**
@@ -69,7 +78,9 @@ l’axe longitudinal de l’automobile.
 > <p style="text-align:center"><a href="/figures/td4_ex3_phv110_enonce.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex3_phv110_enonce.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **b)** En déduire la norme de la résultante $\vec{R}$ des deux forces appliquées en $A$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Norme de la résultante**
@@ -82,11 +93,13 @@ l’axe longitudinal de l’automobile.
 > $$R \approx 4{,}30\text{ kN}$$
 
 
+
 **2.**
 
   **a)** La tension dans le câble $AB$ est égale à $T_{AB}=3{,}0\text{ kN}$. On souhaite que la résultante des deux forces appliquées en $A$ soit une force de norme $R=4{,}8\text{ kN}$ dirigée suivant l’axe longitudinal de l’automobile.
 
 Déterminer, à l’aide de relations trigonométriques, la tension $T_{AC}$ dans le câble $AC$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Tension dans le câble AC**
@@ -115,7 +128,9 @@ Déterminer, à l’aide de relations trigonométriques, la tension $T_{AC}$ dan
 > = R\frac{\sin(\beta)}{\sin(\alpha+\beta)}$$
 
 
+
   **b)** En déduire la valeur de l’angle $\alpha$ permettant d’obtenir cette résultante.
+
 
 > [!example]- 📝 Solution détaillée
 > **Calcul de l’angle alpha**
@@ -150,6 +165,9 @@ Déterminer, à l’aide de relations trigonométriques, la tension $T_{AC}$ dan
 > $$\alpha\approx43{,}6^\circ$$
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Équilibre avec frottement solide
 > Prendre en compte le coefficient de frottement statique $\mu_s$ des pneus de l'automobile sur le sol.
+
 

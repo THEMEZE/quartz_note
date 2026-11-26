@@ -15,7 +15,8 @@ tags:
 
 Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateurs couplés : comment les modes évoluent, pourquoi les fréquences ne se croisent jamais, et quelle fraction de l'énergie peut passer d'un oscillateur à l'autre.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Deux diapasons presque identiques**
 >
 > *Durée de l'introduction : 3 min*
@@ -25,7 +26,9 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > **Idée clé : le transfert d'énergie est total seulement si les deux oscillateurs sont accordés.** Plus le désaccord $\Delta$ est grand devant le couplage $\Omega^2$, moins l'énergie passe : la fraction transférée vaut $\sin^22\theta$ avec $\tan2\theta=2\Omega^2/\Delta$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercices 2 et 3 du TD4**
 >
 > Oscillateurs dissymétriques, matrice $K$, équation caractéristique bicarrée, rapport d'amplitudes.
@@ -35,7 +38,9 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > $\tan2\theta=\dfrac{2\tan\theta}{1-\tan^2\theta}$, $\sin^22\theta=\dfrac{\tan^22\theta}{1+\tan^22\theta}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Comprendre l'anticroisement des niveaux**
 >
 > Montrer que $\omega''^2-\omega'^2=2\sqrt{(\Delta/2)^2+\Omega^4}\ge2\Omega^2$ : le couplage empêche les fréquences de se croiser.
@@ -47,6 +52,8 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > **Prévoir le transfert d'énergie**
 >
 > Montrer que la fraction maximale d'énergie transférée est $\sin^22\theta=\dfrac{4\Omega^4}{\Delta^2+4\Omega^4}$ et que la période de battement est $T_b=\dfrac{2\pi}{\omega''-\omega'}$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -63,7 +70,9 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > $\omega''-\omega'=\dfrac{\omega''^2-\omega'^2}{\omega''+\omega'}\simeq\dfrac{\omega''^2-\omega'^2}{2\omega_0}$.
 
 
+
 **q1.** **Question 1.** Écrire les équations du mouvement de $x_a$ et $x_b$ (petits angles) et la matrice $\mathcal K$ telle que $\ddot X+\mathcal KX=0$. Exprimer $\mathcal K$ avec $\omega_0^2$, $\Delta$ et $\Omega^2$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Reprendre l'exercice 2**
@@ -71,10 +80,14 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > Chaque pendule a sa propre pulsation $\omega_a$ ou $\omega_b$ ; le ressort ajoute $\Omega^2$ sur la diagonale et $-\Omega^2$ hors diagonale.
 
 
+
+
 > [!success]- ✅ Correction
 > **Matrice**
 >
 > $\ddot x_a+(\omega_a^2+\Omega^2)x_a-\Omega^2x_b=0$, $\ddot x_b+(\omega_b^2+\Omega^2)x_b-\Omega^2x_a=0$ ; $\mathcal K=\begin{pmatrix}\omega_0^2-\Delta/2+\Omega^2&-\Omega^2\\-\Omega^2&\omega_0^2+\Delta/2+\Omega^2\end{pmatrix}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -91,7 +104,9 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > $\Omega=0$ : $\mathcal K$ diagonale, pulsations $\omega_a,\omega_b$. $\Delta=0$ : exercice 1.
 
 
+
 **q2.** **Question 2.** Calculer les pulsations propres $\omega'$ et $\omega''$. Montrer que $\omega''^2-\omega'^2=2\sqrt{\Delta^2/4+\Omega^4}\ge2\Omega^2$ : les niveaux ne se croisent jamais. Tracer l'allure de $\omega'^2$, $\omega''^2$ en fonction de $\Delta$ et préciser les asymptotes.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Formule des valeurs propres**
@@ -103,10 +118,14 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > Pour $|\Delta|\to\infty$, développez la racine : $\sqrt{\Delta^2/4+\Omega^4}\simeq|\Delta|/2$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\omega'^2,\omega''^2=\omega_0^2+\Omega^2\mp\sqrt{\dfrac{\Delta^2}4+\Omega^4}$. Asymptotes : $\omega_a^2+\Omega^2$ et $\omega_b^2+\Omega^2$ (droites de pente $\mp\tfrac12$ en $\Delta$). Écart minimal $2\Omega^2$ à $\Delta=0$ : hyperbole d'anticroisement.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -127,7 +146,9 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > Pour $|\Delta|\gg2\Omega^2$ : $\omega'^2\simeq\omega_a^2+\Omega^2-\dfrac{\Omega^4}{\Delta}$, $\omega''^2\simeq\omega_b^2+\Omega^2+\dfrac{\Omega^4}\Delta$ (pour $\Delta>0$) : chaque niveau est décalé de $\Omega^2$ (le ressort s'ajoute à la raideur) et repoussé de $\Omega^4/\Delta$ par l'autre : c'est la perturbation du second ordre, qui disparaît lentement avec le désaccord.
 
 
+
 **q3.** **Question 3.** Déterminer les modes propres sous la forme $\vec u'=(\cos\theta,\sin\theta)$ et $\vec u''=(-\sin\theta,\cos\theta)$. Montrer que $\tan2\theta=\dfrac{2\Omega^2}{\Delta}$ et discuter les cas $\Delta=0$, $\Delta\gg\Omega^2$, $\Delta\ll-\Omega^2$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Rotation**
@@ -135,10 +156,14 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > Écrivez $P^{\mathsf T}\mathcal KP$ avec $P=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$ et imposez que le terme hors diagonale soit nul.
 
 
+
+
 > [!success]- ✅ Correction
 > **Angle de mélange**
 >
 > $\tan\theta=\dfrac{\sqrt{\Delta^2/4+\Omega^4}-\Delta/2}{\Omega^2}$, d'où $\tan2\theta=\dfrac{2\Omega^2}{\Delta}$ ; $\theta=\pi/4$ à l'accord.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -158,7 +183,9 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > L'angle $\theta$ mesure le mélange : $\cos^2\theta$ est la part de l'oscillateur $a$ dans le mode bas. À l'accord le mélange est maximal ; loin de l'accord il disparaît. L'orthogonalité de $\vec u'$ et $\vec u''$ est celle des modes d'une matrice symétrique : les amplitudes des deux modes se « partagent » sans fuite.
 
 
+
 **q4.** **Question 4.** À $t=0$, on lâche le pendule $a$ avec l'amplitude $A$ sans vitesse, le pendule $b$ étant à l'équilibre. Calculer $x_a(t)$ et $x_b(t)$, puis la fraction maximale de l'énergie du pendule $a$ transférée au pendule $b$. Calculer la période de battement. Applications numériques pour $\Delta=0$ et $\Delta=2\ \mathrm{s^{-2}}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Projection sur les modes**
@@ -170,10 +197,14 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > $x_b=A\sin\theta\cos\theta\,(\cos\omega't-\cos\omega''t)$ : quelle est la valeur maximale de $|\cos\omega't-\cos\omega''t|$ ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $x_a=A(\cos^2\theta\cos\omega't+\sin^2\theta\cos\omega''t)$, $x_b=\dfrac A2\sin2\theta(\cos\omega't-\cos\omega''t)$ ; amplitude maximale de $x_b$ : $A\sin2\theta$ ; fraction d'énergie transférée $\sin^22\theta=\dfrac{4\Omega^4}{\Delta^2+4\Omega^4}$ ; $T_b=\dfrac{2\pi}{\omega''-\omega'}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -197,7 +228,9 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > À l'accord, $x_a=A\cos\Omega_mt\cos\Omega_0t$ et $x_b=A\sin\Omega_mt\sin\Omega_0t$ : le battement complet. Hors accord, l'amplitude de $x_b$ ne dépasse jamais $A\sin2\theta<A$ : le battement est « incomplet ».
 
 
+
 **q5.** **Question 5.** *Discussion.* À partir de quel désaccord le transfert d'énergie tombe-t-il à $50\,\%$ ? Interpréter en comparant $\Delta$ et $2\Omega^2$. Que se passe-t-il si l'on fait varier lentement la longueur $\ell_b$ de part et d'autre de $\ell_a$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Condition**
@@ -205,10 +238,14 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > $\sin^22\theta=\tfrac12$ équivaut à $\tan2\theta=\pm1$, soit $|\Delta|=2\Omega^2$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $|\Delta|=2\Omega^2=1\ \mathrm{s^{-2}}$. Le transfert est important ($>50\,\%$) tant que le désaccord reste inférieur à l'écart minimal $2\Omega^2$ entre les modes : « couplage fort » si $|\Delta|\lesssim2\Omega^2$, « couplage faible » si $|\Delta|\gg2\Omega^2$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -229,6 +266,8 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > En posant $x_{a,b}=\mathrm{Re}[c_{a,b}(t)e^{i\omega_0t}]$ avec des amplitudes lentes, les équations deviennent $i\dot c=\begin{pmatrix}-\delta+\kappa&-\kappa\\-\kappa&\delta+\kappa\end{pmatrix}c$ avec $\delta=\Delta/(4\omega_0)$ et $\kappa=\Omega^2/(2\omega_0)$ : un système à deux niveaux. Le désaccord est celui du laser par rapport à la résonance, la fréquence de Rabi généralisée est $\sqrt{4\delta^2+4\kappa^2}\simeq\omega''-\omega'$. La fraction transférée $\sin^22\theta$ est la formule de Rabi.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Physique quantique**
 >
@@ -239,18 +278,27 @@ Le but est de comprendre ce qui se passe quand on *désaccorde* deux oscillateur
 > Deux guides d'onde couplés : le transfert de puissance d'un guide à l'autre est complet seulement si leurs indices sont égaux (coupleur directionnel).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Modes comme rotation d'un angle $\theta$
 > Montrer que $P(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{pmatrix}$ diagonalise $K$ et que $\theta$ varie de $\pi/4$ (accord) à $0$ (grand désaccord).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Analogie quantique
 > Montrer que les équations des amplitudes lentes sont celles d'un système à deux niveaux ($i\dot c=Hc$ avec $H=\begin{pmatrix}-\delta&\kappa\\\kappa&\delta\end{pmatrix}$) et identifier $\sqrt{\delta^2+\kappa^2}$ à la fréquence de Rabi généralisée.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Passage adiabatique
 > Si $\Delta$ varie lentement de $-\infty$ à $+\infty$, montrer que l'énergie reste sur le mode : le pendule excité au début est excité à la fin sur l'autre oscillateur (« échange de caractère » ; formule de Landau--Zener pour une variation rapide).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex2-couplage-de-deux-oscillateurs-harmoniques-dissymetriques|Exercice 2 — Couplage de deux oscillateurs harmoniques dissymétriques]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex3-oscillations-libres-et-forcees-d-un-couplage-pendule-chariot|Exercice 3 — Oscillations libres et forcées d'un couplage pendule-chariot]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex4-frequence-propre-d-une-molecule-diatomique|Exercice 4 — Fréquence propre d'une molécule diatomique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex5-complement-niveau-1-cpge-pendules-couples-par-un-ressort-attache-a-mi-hauteur|Exercice 5 — Complément (niveau 1, CPGE) : pendules couplés par un ressort attaché à mi-hauteur]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex6-complement-niveau-2-ambitieux-trois-masses-quatre-ressorts-diagonalisation-et-perturbation|Exercice 6 — Complément (niveau 2, ambitieux) : trois masses, quatre ressorts, diagonalisation et perturbation]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex8-complement-niveau-3-ens-modes-non-lineaires-de-deux-pendules-couples-stabilite-et-instabilite-parametrique|Exercice 8 — Complément (niveau 3, ENS) : modes non linéaires de deux pendules couplés, stabilité et instabilité paramétrique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex9-complement-niveau-3-ens-anneau-de-n-oscillateurs-modes-de-fourier-et-propagation-du-signal|Exercice 9 — Complément (niveau 3, ENS) : anneau de N oscillateurs, modes de Fourier et propagation du signal]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex1-pendules-couples-et-battements|Exercice 1 — Pendules couplés et battements]]
+
 

@@ -15,7 +15,8 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 
 <p style="text-align:center"><a href="/figures/td1_ex5_phv212_corde_melde.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex5_phv212_corde_melde.svg" alt="Corde de Melde en régime forcé." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Faire danser une corde : de l'amplitude infinie ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -25,6 +26,8 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > **Idée clé : en régime forcé, la corde vibre à la fréquence imposée, avec un profil fixé par les conditions aux limites.** On cherche $\underline y(x,t)=\underline Y(x)e^{j\omega t}$ avec $\underline Y(0)=a$ et $\underline Y(\ell)=0$ :
 > $$\underline Y(x)=a\,\frac{\sin\big(k(\ell-x)\big)}{\sin(k\ell)},\qquad k=\omega\sqrt{\mu/F}.$$
 > L'amplitude diverge quand $\sin(k\ell)=0$, soit $f=Nf_1$ : c'est la **résonance**. En pratique, l'amortissement la limite à une valeur finie.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -49,12 +52,16 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > Le profil est $a\,\dfrac{\sin(k(\ell-x))}{\sin(k\ell)}$ ; son maximum en valeur absolue vaut $\dfrac a{|\sin(k\ell)|}\ge a$ : l'amplitude des ventres est toujours supérieure à celle du vibreur.
 
 
+
 **q1.** Établir en régime forcé l'équation $y(x,t)$ du mouvement de la corde en tout point $M(x)$ à l'instant $t$. Conclusion.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Forme complexe**
 >
 > Cherchez une solution complexe $\underline{y}(x,t) = \underline{Y}(x)e^{j\omega t}$ vérifiant $\underline{Y}(0) = a$ et $\underline{Y}(\ell) = 0$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Résolution du régime forcé pour une corde vibrante fixée à une extrémité
@@ -95,6 +102,8 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > - **Noeuds et Ventres :** La corde présente des noeuds de vibration fixes aux positions $x$ telles que $k(\ell - x) = p\pi$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Lustification rigoureuse du postulat $y(x,t) = Y(x)e^{i\omega t}$
 
 > **1. Linéarité et invariance par translation temporelle**
@@ -122,11 +131,15 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > Cette factorisation isole complètement la dépendance temporelle imposée par la source de la structure spatiale $Y(x)$ imposée par la géométrie du milieu et les conditions aux limites.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $y(x,t) = a \dfrac{\sin(k(\ell-x))}{\sin(k\ell)} \cos(\omega t)$ (en partie réelle).
 > L'onde complexe établie est une onde stationnaire forcée par le vibreur.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -147,7 +160,9 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > **Conclusion :** Le mouvement est celui d'une onde stationnaire d'amplitude spatiale $A(x) = a \left|\dfrac{\sin(k(\ell-x))}{\sin(k\ell)}\right|$.
 
 
+
 **q2.** Pour les fréquences $f < f_1$, seul existe un nœud de vibration en $A$. Calculer $f_1$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Fréquence limite**
@@ -155,10 +170,14 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > $f_1$ correspond à la fréquence pour laquelle la demi-longueur d'onde égale la longueur de la corde ($\ell = \lambda/2$).
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $c = 50\text{ m/s} \implies f_1 = \dfrac{c}{2\ell} = 50\text{ Hz}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -168,7 +187,9 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > La première fréquence de résonance (fondamental) est $f_1 = \dfrac{c}{2\ell} = \dfrac{50}{2 \times 0.50} = 50\text{ Hz}$.
 
 
+
 **q3.** Pour les fréquences $f \ge f_1$, calculer l'amplitude des ventres de vibration. Pour quelles fréquences observe-t-on la résonance d'amplitude ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Dénominateur nul**
@@ -176,8 +197,12 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > L'amplitude devient infinie (en l'absence d'amortissement) quand le dénominateur $\sin(k\ell)$ s'annule.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Prise en compte de l'amortissement
 > En réalité, les frottements fluides introduisent une partie imaginaire à la vitesse de propagation $c$, ce qui borne l'amplitude à la résonance à une valeur finie inversement proportionnelle au coefficient d'amortissement.
+
+
 
 
 > [!success]- ✅ Correction
@@ -185,6 +210,8 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 >
 > Amplitude d'un ventre : $A_v = \dfrac{a}{|\sin(k\ell)|}$.
 > Résonance d'amplitude si $\sin(k\ell) = 0$, soit $f = N f_1 = N \times 50\text{ Hz}$ ($N \in \mathbb{N}^*$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -196,6 +223,8 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > Le phénomène de résonance d'amplitude a lieu lorsque le dénominateur tend vers zéro :
 > $$\sin(k\ell) = 0 \implies k\ell = N\pi \implies \frac{2\pi f}{c}\ell = N\pi \implies f = N \frac{c}{2\ell} = N f_1$$
 > On observe la résonance pour toutes les fréquences harmoniques $f_N = N \times 50\text{ Hz}$ ($50\text{ Hz}, 100\text{ Hz}, 150\text{ Hz}, \dots$).
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -216,6 +245,9 @@ Une corde $OA$ de longueur $\ell = 50\text{ cm}$ et $\mu = 0.02\text{ kg}\cdot\t
 > Un verre en cristal peut se briser si on le soumet à un son pur de la fréquence de sa résonance propre ; un tuyau d'orgue amplifie sélectivement ses harmoniques.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex15-corde-amortie-attenuation-facteur-de-qualite-et-resonance-de-melde|Exercice 15 — Corde amortie : atténuation, facteur de qualité et résonance de Melde]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex1-partie-a-modes-propres-d-un-ressort-helicoidal-ondes-longitudinales|Exercice 1 — Partie A — Modes propres d'un ressort hélicoïdal (ondes longitudinales)]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex2-partie-b-effet-de-la-tension-sur-les-modes-propres-d-une-corde|Exercice 2 — Partie B — Effet de la tension sur les modes propres d'une corde]] · [[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex3-mesurer-la-vitesse-de-la-lumiere-avec-un-four-a-micro-ondes-et-du-chocolat|Exercice 3 — Mesurer la vitesse de la lumière avec un four à micro-ondes et du chocolat]]
+
 

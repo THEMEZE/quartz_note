@@ -13,7 +13,8 @@ tags:
 
 Cet exercice reprend les deux grands usages de l'analyse dimensionnelle : **tester l'homogénéité** d'une équation (détecter une erreur) et **déterminer la dimension** d'une grandeur (ou d'une constante) à partir d'une loi. Les situations sont plus variées que dans les exercices précédents : électricité, thermodynamique, ondes, mécanique quantique, mécanique des fluides.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Dimensions et homogénéité**
 >
 > Connaître 
@@ -24,7 +25,9 @@ Cet exercice reprend les deux grands usages de l'analyse dimensionnelle : **test
 > - les lois usuelles : $P = UI$, $E = \tfrac{1}{2} L I^2$, $F = q v B$, $PV = nRT$, \dots
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Manipuler l'homogénéité avec assurance**
 >
 > - Tester rapidement l'homogénéité d'une équation et corriger une erreur.
@@ -33,7 +36,9 @@ Cet exercice reprend les deux grands usages de l'analyse dimensionnelle : **test
 > - Reconnaître qu'un argument d'exponentielle, de logarithme ou de sinus est adimensionnel.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Homogénéité**
 >
 > Une équation physique est **homogène** si tous ses termes ont la même dimension. C'est une condition nécessaire : une équation non homogène est **forcément fausse**. Elle n'est pas suffisante : une équation homogène peut être fausse (facteur numérique oublié, mauvaise fonction).
@@ -41,6 +46,8 @@ Cet exercice reprend les deux grands usages de l'analyse dimensionnelle : **test
 > **Dimensions électriques usuelles**
 >
 > $[I] = I$, $[\text{charge}] = I\,T$, $[\text{tension}] = M\,L^2\,T^{-3}\,I^{-1}$ (car $P = UI$ et $[P] = M L^2 T^{-3}$).
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -53,6 +60,7 @@ Cet exercice reprend les deux grands usages de l'analyse dimensionnelle : **test
 > \item Les facteurs numériques ($2$, $\pi$, $\tfrac{1}{2}$, \dots) sont adimensionnels.
 > \item L'argument d'une fonction transcendante ($\exp$, $\ln$, $\sin$, \dots) est toujours adimensionnel.
 > \end{itemize}
+
 
 
 **q1.** **Tester l'homogénéité d'équations**\\
@@ -72,11 +80,14 @@ $x$ est une position, $v$ une vitesse, $a$ une accélération, $t$ un temps, $P$
 
 (f) $F = \tfrac{1}{2}\rho S v$ (force de traînée)
 
+
 > [!tip]- 💡 Coup de pouce
 > **Que compare-t-on ?
 > **
 >
 > Il suffit de calculer la dimension de chaque terme. Ne pas s'arrêter à la première équation homogène : demandez-vous aussi si elle est **correcte**.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -94,6 +105,7 @@ $x$ est une position, $v$ une vitesse, $a$ une accélération, $t$ un temps, $P$
 > (e) $[E^2] = M^2 L^4 T^{-4}$. $[p c] = M L T^{-1} \cdot L T^{-1} = M L^2 T^{-2}$ donc $[p^2 c^2] = M^2 L^4 T^{-4}$. $[m c^2] = M L^2 T^{-2}$ donc $[m^2 c^4] = M^2 L^4 T^{-4}$ : **homogène** (relation énergie-impulsion relativiste).
 >
 > (f) $[\rho S v] = M L^{-3} L^2 L T^{-1} = M T^{-1} \neq [F] = M L T^{-2}$ : **non homogène**. Correction : $F = \tfrac{1}{2}\rho S v^2$ car $[\rho S v^2] = M L^{-3} L^2 L^2 T^{-2} = M L T^{-2}$.
+
 
 
 **q2.** **Déterminer la dimension d'une grandeur électrique ou magnétique**\\
@@ -115,11 +127,14 @@ $x$ est une position, $v$ une vitesse, $a$ une accélération, $t$ un temps, $P$
 
 (g) Vérifier ensuite que la loi $U = L \dfrac{\mathrm{d}I}{\mathrm{d}t}$ est homogène avec les résultats précédents.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Ordre de calcul
 > **
 >
 > Commencer par $[U]$ (question b) : il sert pour c), d) et g). Une dérivée $\dfrac{\mathrm{d}I}{\mathrm{d}t}$ a pour dimension $[I]/T$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -141,6 +156,7 @@ $x$ est une position, $v$ une vitesse, $a$ une accélération, $t$ un temps, $P$
 > (g) $\left[L \dfrac{\mathrm{d}I}{\mathrm{d}t}\right] = M L^2 T^{-2} I^{-2} \cdot I\,T^{-1} = M\,L^2\,T^{-3}\,I^{-1} = [U]$ : l'équation est **homogène**.
 
 
+
 **q3.** **Arguments de fonctions et constantes**\\
 
 Un argument d'exponentielle, de logarithme ou de fonction trigonométrique est nécessairement sans dimension.
@@ -154,11 +170,14 @@ Un argument d'exponentielle, de logarithme ou de fonction trigonométrique est n
 
 (d) Un étudiant écrit $u(t) = u_0 \ln(t)$ où $t$ est un temps. Cette écriture est-elle homogène ? Comment la corriger ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Masse molaire
 > **
 >
 > $[M_{mol}] = M\,N^{-1}$ (masse par quantité de matière). Pour c), écrire que $\dfrac{E_a}{R T}$ est adimensionnel.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -172,6 +191,7 @@ Un argument d'exponentielle, de logarithme ou de fonction trigonométrique est n
 > (c) $[E_a] = [R][T] = M L^2 T^{-2} N^{-1} \Theta^{-1} \cdot \Theta = M\,L^2\,T^{-2}\,N^{-1}$. Unité SI : $\text{kg.m}^2\text{.s}^{-2}\text{.mol}^{-1} = \text{J.mol}^{-1}$. Comme l'exponentielle est sans dimension, $[A] = [k]$ : $A$ a la même dimension que la constante de vitesse $k$.
 >
 > (d) Le logarithme d'une grandeur dimensionnée n'a pas de sens : **non homogène**. Il faut écrire $u(t) = u_0 \ln\!\left(\dfrac{t}{\tau}\right)$ où $\tau$ est un temps de référence (par exemple $1 ~\text{s}$).
+
 
 
 **q4.** **Équation de Van der Waals (question difficile)**\\
@@ -192,11 +212,14 @@ $$
 
 (e) Pour le dioxyde de carbone, $a = 0,364 ~\text{Pa.m}^6\text{.mol}^{-2}$ et $b = 4,27 \times 10^{-5} ~\text{m}^3\text{.mol}^{-1}$. Calculer la pression corrective $\dfrac{a n^2}{V^2}$ pour $n = 1,00 ~\text{mol}$ dans $V = 1,00 ~\text{L}$, et la comparer à $P_{atm} = 1,01 \times 10^{5} ~\text{Pa}$.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Somme de termes
 > **
 >
 > Dans $P + \dfrac{a n^2}{V^2}$ et dans $V - n b$, les deux termes doivent avoir la même dimension pour que la somme ait un sens.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -216,6 +239,7 @@ $$
 >   C'est environ $3,6$ fois la pression atmosphérique : la correction n'est pas négligeable à cette densité.
 
 
+
 **q5.** **Équation de Schrödinger (question difficile)**\\
 
 En mécanique quantique, une particule de masse $m$ se déplaçant selon $x$ dans un potentiel $V(x)$ est décrite par une fonction d'onde $\psi(x,t)$ vérifiant
@@ -233,11 +257,14 @@ On donne $[\hbar] = M L^2 T^{-1}$ et $i$ est adimensionnel.
 
 (d) Que devient $[\psi]$ pour une particule en trois dimensions avec $\displaystyle \int |\psi|^2 \, \mathrm{d}^3 r = 1$ ?
 
+
 > [!tip]- 💡 Coup de pouce
 > **Probabilité
 > **
 >
 > Une probabilité est un nombre pur : $\left[\displaystyle \int |\psi|^2 \, \mathrm{d}x\right] = [\psi]^2 \cdot L = 1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -253,6 +280,7 @@ On donne $[\hbar] = M L^2 T^{-1}$ et $i$ est adimensionnel.
 > (c) $[\psi]^2 \cdot L = 1$ donc $[\psi] = L^{-1/2}$ (unité : $\text{m}^{-1/2}$).
 >
 > (d) $[\psi]^2 \cdot L^3 = 1$ donc $[\psi] = L^{-3/2}$ (unité : $\text{m}^{-3/2}$).
+
 
 
 **q6.** **Loi de Poiseuille : trouver l'erreur (question difficile)**\\
@@ -273,6 +301,7 @@ $$
 
 (e) On mesure $Q = 1,0 \times 10^{-6} ~\text{m}^3\text{.s}^{-1}$ pour de l'eau ($\eta = 1,0 \times 10^{-3} ~\text{Pa.s}$) dans un tube de rayon $R = 1,0 ~\text{mm}$ et de longueur $\ell = 1,0 ~\text{m}$. Utiliser (B) pour calculer $\Delta P$ avec le bon nombre de chiffres significatifs.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Dimensions utiles
 > **
@@ -283,6 +312,8 @@ $$
 > **
 >
 > Isoler $\Delta P = \dfrac{8 \eta \ell Q}{\pi R^4}$ et convertir $R$ en mètres.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -308,9 +339,13 @@ $$
 > (e) $\Delta P = \dfrac{8 \eta \ell Q}{\pi R^4} = \dfrac{8 \times 1,0 \times 10^{-3} \times 1,0 \times 1,0 \times 10^{-6}}{\pi \times (1,0 \times 10^{-3})^4} = \dfrac{8,0 \times 10^{-9}}{3,14 \times 10^{-12}} \approx 2,5 \times 10^{3} ~\text{Pa}$ (soit $2$ chiffres significatifs).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Détecter les erreurs
 
 > Relire des formules de cours et vérifier leur homogénéité sur des exemples de son choix.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Grandeurs adimensionnelles
@@ -318,11 +353,16 @@ $$
 > Chercher la signification physique des nombres de Reynolds, de Péclet et de Prandtl à partir de leurs dimensions.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Systèmes d'unités
 
 > Comparer les dimensions de $\varepsilon_0$ et $\mu_0$ dans les systèmes SI et CGS gaussien.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex8-conversions-d-unites-et-unites-des-constantes-fondamentales|Exercice 8 — (*) Conversions d'unités et unités des constantes fondamentales]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/grandeurs-physiques-dimensions-unites-et-analyse-dimensionnelle/ex10-theoreme-pi-et-similitude-dimensionner-une-maquette|Exercice 10 — (*) Théorème $\Pi$ et similitude : dimensionner une maquette]]
+
 

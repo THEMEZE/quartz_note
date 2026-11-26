@@ -13,7 +13,8 @@ tags:
 
 **Exercice complémentaire original (niveau 2).** Trois masses ponctuelles identiques $m=0{,}10$ kg, notées $M_1,M_2,M_3$, glissent sans frottement sur une tige horizontale fixe entre deux parois rigides. Elles sont reliées entre elles et aux parois par quatre ressorts identiques de raideur $k=20\ \mathrm{N\cdot m^{-1}}$ et de longueur à vide $\ell_0$ : paroi -- $M_1$ -- $M_2$ -- $M_3$ -- paroi. À l'équilibre, tous les ressorts sont à leur longueur à vide. On note $x_i(t)$ l'écart de $M_i$ à sa position d'équilibre et $\omega_0=\sqrt{k/m}$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Combien de modes, et à quoi ressemblent-ils ?**
 >
 > *Durée de l'introduction : 5 min*
@@ -23,7 +24,9 @@ tags:
 > **Idée clé : un système de $N$ masses a $N$ modes ; leur forme se déduit de la symétrie.** Les modes sont soit symétriques, soit antisymétriques par rapport au centre. Dans un mode antisymétrique, la masse centrale reste immobile (c'est un nœud).
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercices 1, 2 et 4 du TD4**
 >
 > Équations couplées, matrice des raideurs $K$, déterminant, modes propres, découplage par symétrie.
@@ -33,7 +36,9 @@ tags:
 > Valeurs propres d'une matrice symétrique réelle (réelles, vecteurs propres orthogonaux) ; déterminant $3\times3$ ; changement de base.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Écrire un système de trois oscillateurs couplés**
 >
 > Savoir lire les signes de la matrice $K$ à partir des allongements des ressorts, sans approximation : en une dimension et pour des ressorts alignés, les équations sont *exactes*.
@@ -51,6 +56,8 @@ tags:
 > Calculer au premier ordre le décalage de pulsation propre quand une masse est modifiée (formule de Rayleigh).
 
 
+
+
 > [!note]- 🧮 Outils mathématiques
 > **Déterminant d'une matrice $3\times3$ tridiagonale**
 >
@@ -65,7 +72,9 @@ tags:
 > Pour $M=mI$ les vecteurs propres de $K$ sont orthogonaux au sens usuel : $c_p=\vec u_p\cdot X(0)$ avec $\vec u_p$ normalisé.
 
 
+
 **q1.** **Question 1.** Établir les équations du mouvement des trois masses. Montrer qu'elles sont *exactes* (sans approximation des petits déplacements) et les mettre sous la forme $M\ddot X+KX=0$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Allongements**
@@ -77,11 +86,15 @@ tags:
 > Un ressort allongé tire ses deux extrémités l'une vers l'autre. Pour chaque masse, écrivez la somme des deux forces.
 
 
+
+
 > [!success]- ✅ Correction
 > **Équations**
 >
 > $$m\ddot x_1=-kx_1+k(x_2-x_1),\quad m\ddot x_2=-k(x_2-x_1)+k(x_3-x_2),\quad m\ddot x_3=-k(x_3-x_2)-kx_3,$$
 > soit $\ddot X+\omega_0^2\mathcal KX=0$ avec $\mathcal K=\begin{pmatrix}2&-1&0\\-1&2&-1\\0&-1&2\end{pmatrix}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -101,7 +114,9 @@ tags:
 > La matrice $K$ est symétrique (réciprocité : l'action de $M_i$ sur $M_j$ vaut celle de $M_j$ sur $M_i$), tridiagonale (un ressort ne relie que des voisins) ; la diagonale vaut $2k$ (chaque masse est reliée à deux ressorts). *Contrôle* : décalage uniforme $X=(1,1,1)$ : $KX=k(1,0,1)\ne0$ puisque les extrémités sont attachées aux parois.
 
 
+
 **q2.** **Question 2.** *Méthode du physicien.* En utilisant la symétrie du système par rapport à la masse centrale, découpler le problème : (a) montrer qu'il existe un mode antisymétrique $x_1=-x_3$, $x_2=0$ et calculer sa pulsation ; (b) pour les mouvements symétriques $x_1=x_3$, se ramener à un système à deux inconnues et en déduire les deux autres pulsations.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Antisymétrique**
@@ -113,10 +128,14 @@ tags:
 > Posez $x_3=x_1$. La première et la troisième équations coïncident ; il reste deux équations en $x_1$ et $x_2$. Attention : le système $2\times2$ obtenu n'est pas symétrique (coefficients $-1$ et $-2$) car $x_2$ est couplé à deux voisins.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultats**
 >
 > Antisymétrique : $\omega^2=2\omega_0^2$. Symétrique : $\ddot x_1+2\omega_0^2x_1-\omega_0^2x_2=0$, $\ddot x_2+2\omega_0^2x_2-2\omega_0^2x_1=0$, de matrice $\omega_0^2\begin{pmatrix}2&-1\\-2&2\end{pmatrix}$ ; $\omega^2=(2\pm\sqrt2)\omega_0^2$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -139,7 +158,9 @@ tags:
 > Pour $\omega^2=(2-\sqrt2)\omega_0^2$ : $A_2/A_1=\sqrt2$ (mode $(1,\sqrt2,1)$, sans nœud) ; pour $\omega^2=(2+\sqrt2)\omega_0^2$ : $A_2/A_1=-\sqrt2$ (mode $(1,-\sqrt2,1)$, deux nœuds entre les masses). Le bloc symétrique $\begin{pmatrix}2&-1\\-2&2\end{pmatrix}$ n'est pas symétrique : c'est normal, car on a regroupé $x_1$ et $x_3$ et la variable $s$ n'est pas normalisée ; avec $\tilde x=\sqrt2x_1=s/\sqrt2$ il le devient $\begin{pmatrix}2&-\sqrt2\\-\sqrt2&2\end{pmatrix}$.
 
 
+
 **q3.** **Question 3.** *Méthode du mathématicien.* Calculer les valeurs propres et vecteurs propres de $\mathcal K$ par le déterminant. Vérifier l'orthogonalité des vecteurs propres, donner la matrice de passage $P$ et la matrice diagonale $D=P^{\mathsf T}\mathcal KP$. Comparer avec la question 2.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Déterminant**
@@ -151,10 +172,14 @@ tags:
 > Pour chaque $\lambda$, résolvez $(\mathcal K-\lambda I)\vec u=0$ : la première ligne donne $u_2$ en fonction de $u_1$, la deuxième $u_3$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultats**
 >
 > $\lambda\in\{2-\sqrt2,\ 2,\ 2+\sqrt2\}$ ; $\vec u_1=\tfrac12(1,\sqrt2,1)$, $\vec u_2=\tfrac1{\sqrt2}(1,0,-1)$, $\vec u_3=\tfrac12(1,-\sqrt2,1)$ ; $\omega_p^2=\lambda_p\omega_0^2=4\omega_0^2\sin^2\dfrac{p\pi}8$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -179,7 +204,9 @@ tags:
 > La symétrie donne le même résultat plus vite (un problème $1\times1$ et un $2\times2$) : à utiliser dès qu'une symétrie est visible. La diagonalisation ne dépend pas de la symétrie et marche en général (exercice 2) ; ici elle n'apporte que la *justification* (orthogonalité, complétude) : les trois modes constituent une base, donc toute condition initiale se décompose.
 
 
+
 **q4.** **Question 4.** *Décomposition modale.* À $t=0$, on écarte $M_1$ de $a$ vers la droite, les autres masses étant à l'équilibre, et on lâche toutes les masses sans vitesse. Calculer $x_1(t),x_2(t),x_3(t)$. Pour $k=20\ \mathrm{N\cdot m^{-1}}$ et $m=0{,}10$ kg, calculer les fréquences propres $f_p$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Coefficients**
@@ -187,10 +214,14 @@ tags:
 > Avec la base orthonormée $\vec u_p$ : $c_p=\vec u_p\cdot X(0)$ ; vitesses nulles donc $x(t)=\sum_pc_p\vec u_p\cos\omega_pt$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $c_1=\dfrac a2,\ c_2=\dfrac a{\sqrt2},\ c_3=\dfrac a2$ ; $x_1=\dfrac a4\cos\omega_1t+\dfrac a2\cos\omega_2t+\dfrac a4\cos\omega_3t$ ; $x_2=\dfrac{\sqrt2a}4(\cos\omega_1t-\cos\omega_3t)$ ; $x_3=\dfrac a4\cos\omega_1t-\dfrac a2\cos\omega_2t+\dfrac a4\cos\omega_3t$. $f_1=1{,}72$ Hz, $f_2=3{,}18$ Hz, $f_3=4{,}16$ Hz.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -209,7 +240,9 @@ tags:
 > Le mouvement est une superposition de trois sinusoïdes de pulsations différentes : l'énergie se redistribue entre les masses (comme les battements à deux oscillateurs), sans jamais quitter les trois modes. L'énergie de chaque mode est constante : $E_p=\tfrac12m\,\omega_p^2c_p^2$ : $E_1=\tfrac12m\omega_1^2\dfrac{a^2}4$, $E_2=\tfrac12m\omega_2^2\dfrac{a^2}2$, $E_3=\tfrac12m\omega_3^2\dfrac{a^2}4$. La part de l'énergie dans chaque mode se lit sur $\omega_p^2c_p^2$.
 
 
+
 **q5.** **Question 5.** *Perturbation.* On remplace $M_3$ par une masse $m(1+\varepsilon)$ avec $\varepsilon\ll1$. Montrer, par le quotient de Rayleigh, que la pulsation du mode $p$ est décalée de $\delta(\omega_p^2)=-\varepsilon\,\omega_p^2\,u_{p,3}^2$ où $u_{p,3}$ est la troisième composante du mode normalisé. Application numérique pour $\varepsilon=0{,}02$ ; quel mode est le plus affecté ? Pourquoi $(1,0,-1)$ l'est-il quand même ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Quotient de Rayleigh**
@@ -217,10 +250,14 @@ tags:
 > $\omega^2=\dfrac{X^{\mathsf T}KX}{X^{\mathsf T}MX}$ est stationnaire aux modes propres ; au premier ordre on peut donc l'évaluer avec l'ancien vecteur propre et la nouvelle masse.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\omega_p'^2\simeq\omega_p^2\big(1-\varepsilon u_{p,3}^2\big)$ avec $u_{1,3}^2=u_{3,3}^2=\tfrac14$ et $u_{2,3}^2=\tfrac12$ : $\dfrac{\delta\omega_1^2}{\omega_1^2}=\dfrac{\delta\omega_3^2}{\omega_3^2}=-\dfrac\varepsilon4$, $\dfrac{\delta\omega_2^2}{\omega_2^2}=-\dfrac\varepsilon2$. Le mode $(1,0,-1)$ est le plus affecté (en proportion).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -241,7 +278,9 @@ tags:
 > La perturbation brise la symétrie $M_1\leftrightarrow M_3$ : les trois modes restent bien trois directions propres mais $(1,0,-1)$ n'est plus un mode exact (la masse centrale se met à bouger faiblement). La correction au vecteur propre est d'ordre $\varepsilon$ et fait intervenir un couplage entre modes proportionnel à $u_{p,3}u_{q,3}/(\omega_q^2-\omega_p^2)$.
 
 
+
 **q6.** **Question 6.** *Équation différentielle d'ordre $n$.* Écrire le système sous la forme d'ordre $1$ $\dot Y=\mathcal AY$ avec $Y=(X,\dot X)^{\mathsf T}$. Quelle est la taille de $\mathcal A$ ? Quelles sont ses valeurs propres en fonction des $\omega_p$ ? Comparer avec l'équation scalaire d'ordre $6$ satisfaite par $x_1(t)$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Matrice par blocs**
@@ -253,10 +292,14 @@ tags:
 > Pour $Y=(\vec u,\lambda\vec u)\,e^{\lambda t}$, montrez que $\lambda^2\vec u=-M^{-1}K\vec u$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\mathcal A=\begin{pmatrix}0&I_3\\-M^{-1}K&0\end{pmatrix}$ ($6\times6$) ; valeurs propres $\lambda=\pm i\omega_p$ ($p=1,2,3$), c'est-à-dire $\lambda^2=-\omega_p^2$. L'équation scalaire d'ordre $6$ sur $x_1$ est $\prod_{p}(\mathrm D^2+\omega_p^2)\,x_1=0$ ($\mathrm D=\mathrm d/\mathrm dt$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -279,6 +322,8 @@ tags:
 > et la solution générale dépend de $6$ constantes (les trois $c_p$ et les trois coefficients de $\sin\omega_pt$, c'est-à-dire $X(0)$ et $\dot X(0)$). Un système d'ordre $2$ en dimension $3$ équivaut à une équation d'ordre $6$ en dimension $1$ ou à un système d'ordre $1$ en dimension $6$ : le nombre de constantes d'intégration est le même.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Chimie**
 >
@@ -289,18 +334,27 @@ tags:
 > Un bâtiment à trois étages de rigidités et masses identiques est modélisé par la même matrice : les trois modes correspondent à des formes avec $0$, $1$, $2$ nœuds.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Chaîne de $N$ masses
 > Montrer que pour $N$ masses entre deux parois les modes sont $A_n=\sin\dfrac{np\pi}{N+1}$ et $\omega_p=2\omega_0\sin\dfrac{p\pi}{2(N+1)}$, $p=1,\dots,N$. Vérifier pour $N=3$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Version transversale
 > Si les masses vibrent transversalement (ressorts tendus initialement), le résultat est le même avec $\omega_0^2=T/(m\,a)$ (tension $T$, pas $a$) mais seulement à petits angles ; l'équation exacte est non linéaire (voir exercice 8).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Forme matricielle d'ordre 1
 > Écrire $Y=(X,\dot X)$, $\dot Y=\mathcal AY$ avec $\mathcal A=\begin{pmatrix}0&I\\-M^{-1}K&0\end{pmatrix}$ ; montrer que $\mathrm{spec}(\mathcal A)=\{\pm i\omega_p\}$ (six valeurs propres) et que $e^{\mathcal At}$ contient $\cos\omega_pt$ et $\sin\omega_pt/\omega_p$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex2-couplage-de-deux-oscillateurs-harmoniques-dissymetriques|Exercice 2 — Couplage de deux oscillateurs harmoniques dissymétriques]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex3-oscillations-libres-et-forcees-d-un-couplage-pendule-chariot|Exercice 3 — Oscillations libres et forcées d'un couplage pendule-chariot]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex4-frequence-propre-d-une-molecule-diatomique|Exercice 4 — Fréquence propre d'une molécule diatomique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex5-complement-niveau-1-cpge-pendules-couples-par-un-ressort-attache-a-mi-hauteur|Exercice 5 — Complément (niveau 1, CPGE) : pendules couplés par un ressort attaché à mi-hauteur]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex7-complement-niveau-2-ambitieux-oscillateurs-desaccordes-anticroisement-et-transfert-d-energie|Exercice 7 — Complément (niveau 2, ambitieux) : oscillateurs désaccordés, anticroisement et transfert d'énergie]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex8-complement-niveau-3-ens-modes-non-lineaires-de-deux-pendules-couples-stabilite-et-instabilite-parametrique|Exercice 8 — Complément (niveau 3, ENS) : modes non linéaires de deux pendules couplés, stabilité et instabilité paramétrique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex9-complement-niveau-3-ens-anneau-de-n-oscillateurs-modes-de-fourier-et-propagation-du-signal|Exercice 9 — Complément (niveau 3, ENS) : anneau de N oscillateurs, modes de Fourier et propagation du signal]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex1-pendules-couples-et-battements|Exercice 1 — Pendules couplés et battements]]
+
 

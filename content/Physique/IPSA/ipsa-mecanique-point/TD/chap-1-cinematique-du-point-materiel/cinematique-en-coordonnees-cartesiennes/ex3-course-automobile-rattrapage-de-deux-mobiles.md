@@ -17,7 +17,8 @@ Le pilote $B$, dont la voiture est plus puissante, démarre avec une accélérat
 $A$ a cependant plus de réflexes que $B$ et démarre une seconde avant lui.
 On suppose que les deux voitures partent du repos et que leurs accélérations restent constantes.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Celui qui part en retard peut-il rattraper celui qui part en avance ?**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -29,7 +30,9 @@ On suppose que les deux voitures partent du repos et que leurs accélérations r
 > Le décalage temporel s'applique à la **variable $t$** (on remplace $t$ par $t-t_d$) et non au résultat. « Se rencontrer » signifie **avoir la même abscisse au même instant** : $x_A(t^\star)=x_B(t^\star)$. Une équation du second degré donne deux racines, et **la physique décide** laquelle garder.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Mouvement rectiligne uniformément accéléré (MRUA)**
 >
 > Pour un mouvement sur un axe $Ox$ d'accélération constante $a$, partant du repos en $x=0$ à l'instant $t_d$ :
@@ -37,22 +40,30 @@ On suppose que les deux voitures partent du repos et que leurs accélérations r
 > Avant $t_d$, le mobile est immobile en $x=0$. La loi horaire n'est valable qu'à partir de l'instant de départ.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Modéliser une situation de rattrapage**
 >
 > Savoir écrire les lois horaires de deux mobiles avec des origines des temps différentes, poser la condition de rencontre $x_A(t)=x_B(t)$, résoudre l'équation obtenue et **discriminer les solutions physiquement acceptables**.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Exercice non guidé : poser soi-même le problème**
 >
 > Aucune sous-question n'est donnée : l'étudiant doit choisir l'origine des temps, écrire les deux lois horaires, traduire « B rattrape A » par une égalité de positions, résoudre une équation du second degré et interpréter les deux racines. C'est un bon exercice pour évaluer l'autonomie de modélisation.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Condition de rencontre**
 >
 > Deux mobiles se rencontrent à l'instant $t^\star$ si et seulement si leurs abscisses coïncident : $x_A(t^\star)=x_B(t^\star)$. Une équation du second degré fournit en général deux racines ; il faut vérifier que chacune est compatible avec le domaine de validité des lois horaires utilisées.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -77,14 +88,20 @@ On suppose que les deux voitures partent du repos et que leurs accélérations r
 > $x(t)=\displaystyle\int_{t_d}^{t}v(t')\,\mathrm dt'$. Avec $v=a(t'-t_d)$, l'aire est celle d'un **triangle** : $\tfrac12\times(t-t_d)\times a(t-t_d)=\tfrac12a(t-t_d)^2$. On retrouve la loi horaire sans calcul.
 
 
+
 **q1.** À quel instant le pilote $B$ rattrape-t-il le pilote $A$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > Choisissez une origine des temps unique (le départ de $A$), écrivez la loi horaire de chaque voiture en tenant compte de l'instant de départ de $B$, puis traduisez « $B$ rattrape $A$ » par une égalité de positions.
 
 
+
+
 > [!success]- ✅ Correction
 > $t^\star = 5+2\sqrt5 \approx 9{,}5$ s après le départ de $A$ (soit $\approx 8{,}5$ s après le départ de $B$), à $\approx 179$ m de la ligne de départ.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -120,14 +137,20 @@ On suppose que les deux voitures partent du repos et que leurs accélérations r
 > Vitesses au moment du dépassement : $v_A=a_A\,t^\star\approx37{,}9~\mathrm{m/s}\approx136$ km/h et $v_B=a_B\,(t^\star-1)\approx42{,}4~\mathrm{m/s}\approx153$ km/h. On a bien $v_B>v_A$ : $B$ dépasse effectivement $A$ au lieu de simplement le toucher.
 
 
+
 **q2.** (*) Entraînement : à quel instant l'écart entre les deux voitures est-il maximal, et que vaut-il ?
+
 
 > [!tip]- 💡 Coup de pouce
 > L'écart $d(t)=x_A(t)-x_B(t)$ est maximal quand sa dérivée s'annule, c'est-à-dire quand les deux vitesses sont égales.
 
 
+
+
 > [!success]- ✅ Correction
 > L'écart est maximal à $t=5$ s et vaut $10$ m.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -138,24 +161,6 @@ On suppose que les deux voitures partent du repos et que leurs accélérations r
 > Avant $t=5$ s, $A$ roule plus vite que $B$ et l'écart croît ; après, $B$ roule plus vite et l'écart se résorbe jusqu'à s'annuler en $t^\star\approx9{,}47$ s.
 
 
-> [!warning]- 🪤 Écueils classiques
-> **Écrire $x_B = \frac{1}{2}a_B t^2 - 1$ ou oublier le décalage au carré**
->
-> Erreur très fréquente : retrancher la seconde de retard **à la position** ou écrire $\tfrac12 a_B t^2 - 1$, au lieu de remplacer $t$ par $(t-1)$ **dans la loi horaire**. Le décalage temporel s'applique à la variable $t$, pas au résultat.
->
-> **Garder la racine non physique**
->
-> L'équation du second degré admet deux racines, $t = 5 \pm 2\sqrt5$. La racine $5-2\sqrt5 \approx 0{,}53$ s est antérieure au départ de $B$ ($t<1$ s) : la loi horaire de $B$ n'y est pas valable. À rejeter explicitement.
->
-> **Croire que le plus puissant gagne immédiatement**
->
-> $B$ a une plus grande accélération mais part plus tard : l'écart initial se creuse d'abord, puis se résorbe. Faire tracer $x_A(t)$ et $x_B(t)$ pour visualiser que $B$ ne rattrape $A$ qu'après plusieurs secondes.
-
-
-> [!tip]- 🎙️ Conseils d'animation
-> **Deux méthodes, un seul résultat**
->
-> Faire résoudre par deux groupes : l'un par l'équation du second degré, l'autre par passage à la racine carrée ($\sqrt{a_A}\,t = \sqrt{a_B}\,(t-1)$). Comparer les résultats et discuter pourquoi la seconde méthode supprime automatiquement la racine non physique.
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -176,10 +181,38 @@ On suppose que les deux voitures partent du repos et que leurs accélérations r
 > « Rattraper un concurrent parti en avance » est un problème de croissance relative : le résultat dépend de l'écart entre les rythmes de croissance et du retard initial.
 
 
-> [!success]- 🏁 Bilan
+
+
+> [!warning]- 🪤 Écueils classiques
+> **Écrire $x_B = \frac{1}{2}a_B t^2 - 1$ ou oublier le décalage au carré**
+>
+> Erreur très fréquente : retrancher la seconde de retard **à la position** ou écrire $\tfrac12 a_B t^2 - 1$, au lieu de remplacer $t$ par $(t-1)$ **dans la loi horaire**. Le décalage temporel s'applique à la variable $t$, pas au résultat.
+>
+> **Garder la racine non physique**
+>
+> L'équation du second degré admet deux racines, $t = 5 \pm 2\sqrt5$. La racine $5-2\sqrt5 \approx 0{,}53$ s est antérieure au départ de $B$ ($t<1$ s) : la loi horaire de $B$ n'y est pas valable. À rejeter explicitement.
+>
+> **Croire que le plus puissant gagne immédiatement**
+>
+> $B$ a une plus grande accélération mais part plus tard : l'écart initial se creuse d'abord, puis se résorbe. Faire tracer $x_A(t)$ et $x_B(t)$ pour visualiser que $B$ ne rattrape $A$ qu'après plusieurs secondes.
+
+
+
+
+> [!tip]- 🎙️ Conseils d'animation
+> **Deux méthodes, un seul résultat**
+>
+> Faire résoudre par deux groupes : l'un par l'équation du second degré, l'autre par passage à la racine carrée ($\sqrt{a_A}\,t = \sqrt{a_B}\,(t-1)$). Comparer les résultats et discuter pourquoi la seconde méthode supprime automatiquement la racine non physique.
+
+
+
+
+> [!success]- 🏁 Bilan pédagogique
 > **Rencontre de deux mobiles**
 >
 > Pour un problème de rattrapage : (1) choisir une origine des temps unique, (2) écrire chaque loi horaire en tenant compte de l'instant de départ, (3) poser $x_A=x_B$, (4) résoudre et vérifier que la solution appartient au domaine de validité de chaque loi. Ici $t^\star = 5+2\sqrt5 \approx 9{,}47$ s.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Généralisation : retard $\tau$ et condition d'existence du rattrapage
@@ -188,8 +221,12 @@ On suppose que les deux voitures partent du repos et que leurs accélérations r
 > Le rattrapage n'existe que si $a_B>a_A$ ; si $a_B\le a_A$, $B$ ne rattrape jamais $A$. Discuter la limite $a_B\to a_A^{+}$ ($t^\star\to\infty$) et la limite $\tau\to0$ ($t^\star\to0$). Tracer la distance qui sépare les deux voitures en fonction du temps et déterminer l'instant où l'écart est maximal (c'est l'instant où $v_A=v_B$ : $4t = 5(t-1)$, soit $t=5$ s ; écart $=2\times25-2{,}5\times16=10$ m).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Une accélération constante est-elle réaliste ? Voiture à puissance constante
 > La puissance du moteur est limitée. À puissance utile constante $P$, le théorème de l'énergie cinétique $\frac{\mathrm{d}}{\mathrm{d}t}\left(\tfrac12 m v^2\right) = P$ donne $v(t)=\sqrt{2Pt/m}$ et $x(t)=\tfrac{2}{3}\sqrt{2P/m}\;t^{3/2}$, très différent du MRUA. Refaire le problème du rattrapage avec ce modèle : l'équation $x_A(t)=x_B(t)$ devient une équation en $t^{3/2}$. Ajouter ensuite une résistance aérodynamique $\tfrac12\rho S C_x v^2$ et montrer l'existence d'une vitesse limite $v_\ell=\left(2P/\rho S C_x\right)^{1/3}$. Discuter dans quel régime l'hypothèse « accélération constante » est raisonnable (faibles vitesses, démarrage limité par l'adhérence : $a\le\mu g$).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Doctorat : Mouvement hyperbolique : le rattrapage en relativité restreinte
@@ -198,6 +235,9 @@ On suppose que les deux voitures partent du repos et que leurs accélérations r
 > qui redonne $\tfrac12\alpha t^2$ pour $\alpha t\ll c$. Montrer que, avec deux accélérations propres différentes et un retard au départ, le rattrapage existe encore mais que les vitesses restent bornées par $c$. Pour la culture personnelle : cette trajectoire est une hyperbole d'équation $(x+c^2/\alpha)^2-c^2t^2=c^4/\alpha^2$ dans le diagramme d'espace-temps, et elle est à l'origine de l'horizon de Rindler et de l'effet Unruh.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex4-le-dilemme-du-feu-orange|Exercice 4 — Le dilemme du feu orange]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex7-balle-rebondissante-et-paradoxe-de-zenon|Exercice 7 — Balle rebondissante et paradoxe de Zénon]]
+
 

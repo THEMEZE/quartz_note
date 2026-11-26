@@ -9,13 +9,16 @@ tags:
 
 <p><span style="color:#1565C0">(Standing Waves: normal modes of a helical spring and a vibrating string)</span></p>
 
+
 > [!info] ℹ️ Chap. 1 — Équation d'onde de d'Alembert : corde vibrante (voir TD1, ex. 4, 5 et 6)
 > Séance 1
 
 
+
 <a href="/pdfs/tp1_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/tp1_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Ondes stationnaires et modes propres <span style="color:#1565C0">(Standing waves and normal modes)</span>**
 >
 > Corde fixée aux deux bouts : $f_n=nc/(2L)$, $\lambda_n=2L/n$, $c=\lambda f$, $c=\sqrt{F/\mu}$ (TD1 ex. 4). Nœuds et ventres séparés de $\lambda/2$.
@@ -34,14 +37,18 @@ tags:
 >
 > <span style="color:#1565C0">Linear fit in Excel (slope, displayed equation), logarithmic differential: if $Q=A^aB^bC^c$, $\dfrac{\Delta Q}{Q}=|a|\dfrac{\Delta A}{A}+|b|\dfrac{\Delta B}{B}+|c|\dfrac{\Delta C}{C}$.</span>
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Ce que l'étudiant doit savoir faire <span style="color:#1565C0">(What students must be able to do)</span>**
 >
 > Repérer un mode propre (motif stable, nœuds bien localisés, amplitude nettement accrue), mesurer $f_n$ pour $n=1,\dots,6$, tracer $f_n=f(n)$ et en tirer $c=2L\times\text{pente}$, montrer que $c$ dépend de la tension, obtenir $\mu$ par deux méthodes, comparer deux déterminations de $\lambda_n$, discuter l'écart au modèle.
 >
 > <span style="color:#1565C0">Identify a normal mode (stable pattern, well-localized nodes, clearly larger amplitude), measure $f_n$ for $n=1,\dots,6$, plot $f_n$ versus $n$ and get $c=2L\times\text{slope}$, show that $c$ depends on tension, obtain $\mu$ by two methods, compare two determinations of $\lambda_n$, discuss the deviation from the model.</span>
 
-> [!note]+ 🧰 Matériel
+
+
+> [!note]- 🧰 Matériel nécessaire
 > **Matériel par binôme <span style="color:#1565C0">(Equipment per pair)</span>**
 >
 > - Générateur de fonctions FG100 et vibreur (3B Scientific) ;
@@ -54,7 +61,9 @@ tags:
 >
 > <span style="color:#1565C0">FG100 function generator and vibration generator (3B Scientific); helical spring and support rod (longitudinal waves); string, stand, pulley, dynamometer, support rod with connector pin (transverse waves); ruler or tape measure, balance (otherwise use $m=(3.0\pm0.1)$ g); computer with Excel for the graphs.</span>
 
-> [!warning] ⚠️ Attention
+
+
+> [!warning] ⚠️ Points de vigilance
 > **TP de physique des ondes – Informations pratiques <span style="color:#1565C0">Wave Physics Lab – Practical Information</span>**
 >
 > Bonjour à toutes et à tous,
@@ -127,6 +136,7 @@ tags:
 >
 >
 > <span style="color:#1565C0">**Generator amplitude $\le 5$ V**: Amplitude knob never beyond the 12 o'clock position; start low. **Never tension the string against the vibrator**: the static tension is carried by the rear rod with connector pin; the vibrator only transmits the small oscillation. Apply no lateral force on the moving rod. Do not over-stretch the spring. If the rod is visibly pulled sideways or tilted with the string at rest: **incorrect setup**, do not switch on, loosen the attachment at the vibrator and start again.</span>
+
 
 
 ## Exercices

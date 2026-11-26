@@ -7,8 +7,10 @@ tags:
 
 [[physique/IPSA/ipsa-tp/index|⬅ Travaux pratiques — IPSA]]
 
+
 > [!info] ℹ️ Gravitation, optique géométrique et diffusion de la lumière
 > Séance 1
+
 
 
 - [[physique/IPSA/ipsa-tp/TP/gravitation-optique-geometrique-et-diffusion-de-la-lumiere/tp-d-astrophysique-de-la-balance-de-cavendish-a-la-densite-du-soleil-et-couleurs-du-ciel/ex1-balance-de-cavendish-peser-la-terre-et-mesurer-g|Exercice 1 — Balance de Cavendish : peser la Terre et mesurer G]]

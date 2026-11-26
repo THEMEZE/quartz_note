@@ -24,7 +24,8 @@ $$
 où $c$ désigne la célérité des ondes transversales se propageant le long
 de la corde.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Une forme qui avance sans se déformer**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -34,7 +35,9 @@ de la corde.
 > **Idée clé : une onde progressive est un profil qui se translate à la vitesse $c$.** Toute fonction de la forme $f(x-ct)$ ou $g(x+ct)$ est solution de l'équation de d'Alembert, et, l'équation étant **linéaire**, la somme $f(x-ct)+g(x+ct)$ aussi. Pour savoir où va l'onde, on **suit un point du profil** : son argument reste constant, donc $x-ct=\text{cte}$ donne $x=x_0+ct$, c'est-à-dire une propagation vers les $x$ croissants.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivées partielles et composition**
 >
 > Savoir dériver une fonction composée à plusieurs variables par la règle
@@ -42,7 +45,9 @@ de la corde.
 > et de sa célérité $c$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Vérification formelle et sens de propagation**
 >
 > - Vérifier mathématiquement qu'une fonction de la forme $f(x \mp ct)$ est solution de l'équation de d'Alembert.
@@ -50,13 +55,17 @@ de la corde.
 > - Utiliser la propriété de linéarité de l'équation d'onde.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Équation de d'Alembert à 1D**
 >
 > Toute fonction de classe $\mathcal{C}^2$ de la forme $y(x,t) = f(x-ct) + g(x+ct)$ est solution de l'équation d'onde 1D.\\
 >
 > La fonction $f(x-ct)$ représente une onde progressive se déplaçant vers les $x$ croissants à la vitesse $c$, tandis que
 > $g(x+ct)$ représente une onde se déplaçant vers les $x$ décroissants.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -85,6 +94,7 @@ de la corde.
 > $\cos(kx-\omega t)=\cos\!\big(k(x-\tfrac\omega kt)\big)$ est du type $f(x-ct)$ avec $c=\omega/k$ : les ondes sinusoïdales sont des cas particuliers d'ondes progressives.
 
 
+
 **q1.** Soit $f$ une fonction de classe $\mathcal{C}^2$. Montrer que
 
 $$
@@ -93,22 +103,29 @@ $$
 
 est solution de l'équation de d'Alembert.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivation de fonction composée**
 >
 > Règle de dérivation : si $u(x,t) = x - ct$, alors $\frac{\partial}{\partial x} f(u) = \frac{\partial u}{\partial x} f'(u)$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Calcul des dérivées partielles secondes**
 >
 > Savoir dériver deux fois par rapport à $x$ et par rapport à $t$ une fonction dépendante de $x-ct$.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Onde progressive se propageant à la célérité c**
 >
 > Toute fonction $f(x-ct)$ vérifie algébriquement $\frac{\partial^2 y}{\partial x^2} = \frac{1}{c^2} \frac{\partial^2 y}{\partial t^2}$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -132,12 +149,18 @@ est solution de l'équation de d'Alembert.
 > Le facteur $-c$ apparaît donc dans chaque dérivée temporelle.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Fonctions simples
 > Tester le résultat avec $f(u) = \sin(u)$ ou $f(u) = e^{-u^2}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Équation aux dérivées partielles
 > Remarquer que $f$ n'a pas besoin d'être sinusoïdale : elle peut représenter un paquet d'onde ou une impulsion quelconque.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Régularité $\mathcal{C}^2$
@@ -145,8 +168,12 @@ est solution de l'équation de d'Alembert.
 > Discuter le besoin de la classe $\mathcal{C}^2$ pour la définition au sens classique des dérivées.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Solutions faibles
 > Si $f$ est seulement continue par morceaux (par exemple une onde créneau), $f(x-ct)$ reste solution de l'équation des ondes au sens des distributions.
+
+
 
 
 > [!success]- ✅ Correction
@@ -207,6 +234,8 @@ est solution de l'équation de d'Alembert.
 > $$
 >
 > Ainsi $y(x,t)=f(x-ct)$ vérifie bien l'équation de d'Alembert.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -281,6 +310,7 @@ est solution de l'équation de d'Alembert.
 > l'équation de d'Alembert.
 
 
+
 **q2.** Soit $g$ une fonction de classe $\mathcal{C}^2$. Montrer que
 
 $$
@@ -289,22 +319,29 @@ $$
 
 est également solution de l'équation de d'Alembert.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivation de fonction composée**
 >
 > Utilisation du changement de variable $v = x+ct$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Calcul analogue avec changement de signe**
 >
 > Observer l'effet du signe positif devant le terme $ct$ lors de la première et de la seconde dérivation.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Onde rétrograde**
 >
 > La fonction $g(x+ct)$ est une solution de d'Alembert associée à une propagation en sens inverse.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -324,20 +361,30 @@ est également solution de l'équation de d'Alembert.
 > par rapport au temps. Que devient ce signe après deux dérivations ?
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Exemple concret
 > Une onde réfléchie sur un obstacle revient vers l'origine : elle est décrite par une fonction du type $g(x+ct)$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Invariance par réflexion
 > C'est la parité spatio-temporelle de l'opérateur $\square = \frac{\partial^2}{\partial x^2} - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$ qui garantit cette double possibilité.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Ondes stationnaires
 > $g(x+ct)$ permet d'annuler les conditions aux limites (ex: corde fixée à une extrémité).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Invariance de Lorentz
 > L'équation d'onde est invariante sous les transformations de Lorentz, conservant le cône de lumière $x^2 - c^2t^2 = 0$.
+
+
 
 
 > [!success]- ✅ Correction
@@ -382,6 +429,8 @@ est également solution de l'équation de d'Alembert.
 >
 > La fonction $y(x,t)=g(x+ct)$ est donc également solution de
 > l'équation de d'Alembert.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -451,6 +500,7 @@ est également solution de l'équation de d'Alembert.
 > de d'Alembert.
 
 
+
 **q3.** En déduire que toute fonction de la forme
 
 $$
@@ -459,22 +509,29 @@ $$
 
 est également solution de l'équation de d'Alembert.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Linéarité de la dérivation**
 >
 > Propriété de l'opérateur dérivée : $\frac{\partial}{\partial x}(u+v) = \frac{\partial u}{\partial x} + \frac{\partial v}{\partial x}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Principe de superposition**
 >
 > Comprendre et appliquer le principe de superposition pour une équation différentielle linéaire et homogène.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Principe de superposition**
 >
 > Toute combinaison linéaire de solutions d'une équation linéaire homogène est encore une solution.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -487,8 +544,12 @@ est également solution de l'équation de d'Alembert.
 > dérivées secondes de leur somme.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Croisement d'ondes
 > Deux vagues arrivant en sens inverse se croisent, s'additionnent, puis poursuivent leur chemin sans altération.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Linéarité de l'équation de d'Alembert
@@ -541,16 +602,24 @@ est également solution de l'équation de d'Alembert.
 > la linéarité de l'équation de propagation.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Équations non linéaires
 > Si l'équation contenait des termes non linéaires (ex: $y^2$), le principe de superposition ne s'appliquerait plus.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Analyse spectrale
 > Toute solution peut être décomposée en une somme (ou intégrale) de Fourier de fonctions sinusoïdales $\alpha_k e^{i(kx-\omega t)} + \beta_k e^{i(kx+\omega t)}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Croisement de solitones
 > Pour des équations non linéaires intégratibles (type KdV), les solitons se croisent avec seulement un déphasage, mimant la linéarité.
+
+
 
 
 > [!success]- ✅ Correction
@@ -591,6 +660,8 @@ est également solution de l'équation de d'Alembert.
 > $$
 >
 > La somme $y=y_1+y_2$ est donc également solution.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -667,6 +738,7 @@ est également solution de l'équation de d'Alembert.
 > est une solution de l'équation de d'Alembert.
 
 
+
 On rappelle qu'une onde progressive correspond à un profil qui se
 déplace sans se déformer.
 
@@ -695,22 +767,29 @@ Représenter schématiquement le profil de l'onde aux instants $t_1$
 et $t_2$ sur un même graphique, en faisant apparaître le déplacement
 du point considéré. Conclure quant au sens de propagation de l'onde.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Maniement des inégalités**
 >
 > Si $t_2 > t_1$ et $c > 0$, alors $c(t_2-t_1) > 0$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Démonstration du sens de propagation**
 >
 > Établir formellement que $f(x-ct)$ se propage vers les $x$ croissants.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Onde progressive dans le sens direct**
 >
 > L'expression $f(x-ct)$ décrit une onde progressive se propageant dans le sens des $x$ croissants à la célérité $c$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -730,20 +809,30 @@ du point considéré. Conclure quant au sens de propagation de l'onde.
 > Puisque $t_2>t_1$ et $c>0$, comparer $x_2$ et $x_1$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Sens direct
 > Une onde de choc créée à gauche avance vers la droite au cours du temps.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Dérivation temporelle du suivi
 > En dérivant $x(t) - ct = \text{Cte}$ par rapport à $t$, on obtient directement la vitesse de la crête $\frac{\mathrm{d}x}{\mathrm{d}t} = +c > 0$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Représentation complexe
 > Une onde plane $e^{i(kx-\omega t)}$ a pour argument $k(x - \frac{\omega}{k}t)$, ce qui équivaut à $x-ct$ avec $c=\omega/k$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Ondes dans l'espace 3D
 > L'équivalent 3D est une onde plane progressive $f(\mathbf{k}\cdot\mathbf{r} - \omega t)$ se propageant dans la direction du vecteur d'onde $\mathbf{k}$.
+
+
 
 
 > [!success]- ✅ Correction
@@ -774,6 +863,8 @@ du point considéré. Conclure quant au sens de propagation de l'onde.
 > $x$.
 >
 > L'onde $f(x-ct)$ se propage dans le sens des $x$ croissants.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -834,6 +925,7 @@ du point considéré. Conclure quant au sens de propagation de l'onde.
 > les instants $t_1$ et $t_2$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **b)** Reprendre les mêmes questions pour une onde :
 
 $$
@@ -842,22 +934,29 @@ $$
 
 Conclure quant au sens de propagation de cette onde.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Raisonnements de la question 4a**
 >
 > Maniement de l'argument de phase constant.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Démonstration de la propagation rétrograde**
 >
 > Établir formellement que $g(x+ct)$ se propage vers les $x$ décroissants.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Onde progressive rétrograde**
 >
 > L'expression $g(x+ct)$ décrit une onde progressive se propageant dans le sens des $x$ décroissants à la célérité $c$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -870,6 +969,8 @@ Conclure quant au sens de propagation de cette onde.
 > $$
 >
 > Isoler $x_2$ et comparer sa valeur à $x_1$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Lycée : Sens de propagation
@@ -888,6 +989,8 @@ Conclure quant au sens de propagation de cette onde.
 >
 > correspond à une propagation vers la gauche, dans le sens des
 > $x$ décroissants.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Vitesse de phase
@@ -910,6 +1013,8 @@ Conclure quant au sens de propagation de cette onde.
 > $$
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Solution générale de d'Alembert
 > La solution générale de l'équation de d'Alembert à une dimension
 > peut s'écrire :
@@ -920,6 +1025,8 @@ Conclure quant au sens de propagation de cette onde.
 >
 > Elle correspond à la superposition de deux ondes progressives se
 > propageant en sens opposés.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Lien avec les coordonnées caractéristiques
@@ -946,6 +1053,8 @@ Conclure quant au sens de propagation de cette onde.
 > Les fonctions $f(\xi)$ et $g(\eta)$ sont alors directement
 > identifiées comme les deux familles d'ondes se propageant dans
 > les directions opposées.
+
+
 
 
 > [!success]- ✅ Correction
@@ -976,6 +1085,8 @@ Conclure quant au sens de propagation de cette onde.
 > de $x$.
 >
 > L'onde $g(x+ct)$ se propage dans le sens des $x$ décroissants.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -1023,6 +1134,8 @@ Conclure quant au sens de propagation de cette onde.
 > les instants $t_1$ et $t_2$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Cinématique**
 >
@@ -1045,10 +1158,14 @@ Conclure quant au sens de propagation de cette onde.
 > Les droites $x=\pm ct$ sont les **caractéristiques** de l'équation : ce sont aussi les trajectoires de la lumière dans un diagramme d'espace-temps (cône de lumière).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Lycée : Retard temporel
 > En physique au lycée, l'onde se propageant vers la droite s'écrit souvent $y(x,t) = s(t - \tau)$
 > avec $\tau = x/c$ le retard à l'origine. On remarque que $t - x/c = -\frac{1}{c}(x - ct)$,
 > ce qui est bien une fonction de $x-ct$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Superposition et ondes stationnaires
@@ -1057,10 +1174,14 @@ Conclure quant au sens de propagation de cette onde.
 > $A \cos(kx) \cos(\omega t)$ où la dépendance spatiale et la dépendance temporelle sont séparées.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Lien avec la méthode des caractéristiques
 > En introduisant les variables $\xi = x-ct$ et $\eta = x+ct$, l'équation de d'Alembert
 > se réduit à $\frac{\partial^2 y}{\partial \xi \partial \eta} = 0$, dont l'intégration
 > directe fournit la forme $y(\xi,\eta) = f(\xi) + g(\eta)$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Lien avec les coordonnées caractéristiques et la notation covariante
@@ -1186,8 +1307,11 @@ Conclure quant au sens de propagation de cette onde.
 > forme indépendante du choix particulier des coordonnées.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Solutions fondamentales et fonction de Green
 > La formule de d'Alembert permet d'exprimer la solution du problème de Cauchy pour l'équation
 > des ondes avec conditions initiales $y(x,0) = y_0(x)$ et $\frac{\partial y}{\partial t}(x,0) = v_0(x)$ :
 > $y(x,t) = \frac{1}{2}[y_0(x-ct) + y_0(x+ct)] + \frac{1}{2c} \int_{x-ct}^{x+ct} v_0(s) \, \mathrm{d}s$.
+
 

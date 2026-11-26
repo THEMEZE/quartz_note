@@ -41,19 +41,24 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 
     }
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivées usuelles et règles de dérivation**
 >
 > Connaître les dérivées des fonctions usuelles ($\ln$, $\cos$, $\sin$, puissances) et la règle de dérivation des fonctions composées $(g \circ f)' = (g' \circ f) \cdot f'$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Maîtriser la notation différentielle**
 >
 > Identifier clairement la variable d'intégration/dérivation par rapport aux paramètres constants et pratiquer la notation temporelle $\dot{x}$.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Notation différentielle et notation pointée**
 >
 > La dérivée d'une fonction $f(x)$ par rapport à sa variable $x$ se note $\frac{\mathrm{d}f}{\mathrm{d}x}(x)$.
@@ -110,15 +115,19 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > $$
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Identification des variables**
 >
 > Repère la variable entre parenthèses (ex. $f(x) \implies x$ est la variable, $g(t) \implies t$ est la variable). Tout le reste est considéré comme constant.
 
 
+
 **1.**
 
   **a)** Déterminer la dérivée de $f(x) = k \ln(x)$ avec $k$ constant.
+
 
 > [!tip]- 💡 Coup de pouce
 > **différentielle $d(k\ln)$
@@ -128,6 +137,8 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > $$
 > \mathrm{d}(\ln x ) = \frac{\mathrm{d}x}{x}.
 > $$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -144,13 +155,17 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > $$\frac{\mathrm{d}f}{\mathrm{d}x} = k \, \cdot \frac{1}{x} = \frac{k}{x}.$$
 
 
+
   **b)** Déterminer la dérivée de $g(t) = R \cos(2\omega t)$ avec $R$ et $\omega$ constants.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Différentiel de $\cos(u)$
 > **
 >
 > $$ \mathrm{d}(\cos u ) = -\sin(u) \cdot \mathrm{d}(u)$$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -178,12 +193,16 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > $$\dot{g}(t) \equiv  \frac{\mathrm{d}g}{\mathrm{d}t} = R \cdot (-2\omega \sin(2\omega t)) = -2 R \omega \sin(2\omega t)$$
 
 
+
   **c)** Déterminer la dérivée de $h(t) = \sin^2(\omega t)$ avec $\omega$ constant.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Composition multiple**
 >
 > Pose $u(t) = \sin(\omega t)$. Alors $h = u^2$. Et utilise $\mathrm{d}(u^n)  =  n \, u^{n-1} \cdot \mathrm{d}u$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -206,13 +225,17 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > \]
 
 
+
   **d)** Déterminer la dérivée de $r(\theta) = a \cos(\theta) + b \sin(\theta)$ avec $a$ et $b$ constants.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Variable $\theta$
 > **
 >
 > Ici la variable est $\theta$. On dérive chaque terme indépendamment.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -227,12 +250,16 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > $$r' = -a \sin + b \cos).$$
 
 
+
   **e)** Déterminer la dérivée de $x(t) = a \cos(\alpha t^2)$ avec $a$ et $\alpha$ constants.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Dérivée de l'argument**
 >
 > L'argument est $u(t) = \alpha t^2$, dont la dérivée temporelle est $u'(t) = 2\alpha t$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -244,18 +271,24 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > $$\dot{x}(t) \equiv \frac{\mathrm{d}x}{\mathrm{d}t} = a \cdot (-2\alpha t \sin(\alpha t^2)) = -2 a \alpha t \sin(\alpha t^2)$$
 
 
+
   **f)** Déterminer la dérivée de $z(t) = a t^2 - b t$ avec $a$ et $b$ constants.
 
-> [!note]+ 📖 Point de cours
+
+> [!tip]- 📖 Rappel de cours
 > **Dérivée d'un polynôme**
 >
 > $\frac{\mathrm{d}}{\mathrm{d}t}(t^n) = n t^{n-1}$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
 > **Dérivation terme à terme**
 >
 > Applique la règle de puissance sur chaque terme en $t$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -266,10 +299,15 @@ Déterminer la dérivée des fonctions suivantes (en utilisant la notation diﬀ
 > $$\dot{z}(t) = \frac{\mathrm{d}z}{\mathrm{d}t} = 2a t - b.$$
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Dérivées partielles
 > Introduction à la dérivation par rapport à une variable lorsque la fonction en comporte plusieurs : $\frac{\partial f}{\partial x}$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex2-interpretation-de-la-differentielle-petite-variation-calcul-d-incertitude|Exercice 2 — Interprétation de la différentielle : petite variation $\&$ calcul d'incertitude]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex3-derivees-de-fonctions-composees|Exercice 3 — Dérivées de fonctions composées]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex4-differentielle-logarithmique|Exercice 4 — Différentielle logarithmique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex5-derivation-de-fonctions-en-physique-approfondissement|Exercice 5 — Dérivation de fonctions en physique (approfondissement)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex6-interpretation-de-la-differentielle-approfondissement-volume-pendule-approximations|Exercice 6 — Interprétation de la différentielle : approfondissement (volume, pendule, approximations)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex7-derivees-de-fonctions-composees-approfondissement-taux-lies|Exercice 7 — Dérivées de fonctions composées : approfondissement (taux liés)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex8-differentielle-logarithmique-approfondissement-incertitudes-en-situation-reelle|Exercice 8 — Différentielle logarithmique : approfondissement (incertitudes en situation réelle)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex9-combiner-les-incertitudes-somme-absolue-p-1-quadratique-p-2-puissance-p-et-cas-p-0|Exercice 9 — Combiner les incertitudes : somme absolue ($p=1$), quadratique ($p=2$), puissance $p$ et cas $p=0$]]
+
 

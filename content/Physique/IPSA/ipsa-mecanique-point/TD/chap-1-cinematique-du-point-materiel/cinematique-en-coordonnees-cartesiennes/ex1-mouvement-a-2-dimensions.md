@@ -15,7 +15,8 @@ Un point matériel $M$ se déplace dans le plan $xOy$. Son vecteur position $\ov
 suit la loi horaire :
 $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec } a,\, b \text{ constantes}.$$
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Deux mouvements simples, une trajectoire courbe**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -27,7 +28,9 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > Trois réflexes à installer : (1) $x(t),y(t)$ sont les **équations horaires** (elles contiennent le temps), $y(x)$ est la **trajectoire** (elle ne le contient plus) ; (2) le vecteur vitesse est **toujours tangent à la trajectoire** ; (3) on contrôle un résultat par l'**analyse dimensionnelle**.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Vecteurs position, vitesse, accélération en coordonnées cartésiennes**
 >
 > En base cartésienne $(\vec{u}_x,\vec{u}_y)$ fixe, le vecteur position s'écrit $\overrightarrow{OM}(t) = x(t)\,\vec{u}_x + y(t)\,\vec{u}_y$.
@@ -36,22 +39,30 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > Les normes se calculent par $\|\vec v\| = \sqrt{\dot x^2+\dot y^2}$ et $\|\vec a\| = \sqrt{\ddot x^2+\ddot y^2}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Analyser un mouvement à partir de sa loi horaire**
 >
 > Savoir extraire équations horaires, équation de trajectoire, vecteurs vitesse et accélération à partir de $\overrightarrow{OM}(t)$, et savoir caractériser qualitativement le mouvement suivant chaque axe (uniforme, uniformément varié).
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Premier contact avec le mouvement à trajectoire courbe**
 >
 > Cet exercice sert de prise en main : un mouvement composé d'une translation uniforme suivant $Ox$ et d'un mouvement uniformément accéléré suivant $Oy$ engendre une trajectoire parabolique, ce qui préfigure le mouvement du projectile étudié à l'exercice suivant. Le tracé point par point (question 1e) est important pour construire l'intuition géométrique avant de passer au calcul vectoriel.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Dimensions et analyse dimensionnelle**
 >
 > Pour vérifier l'homogénéité d'une loi horaire, chaque terme doit avoir la dimension d'une longueur. Si $t$ est en secondes, un coefficient multipliant $t$ à la puissance $n$ doit avoir la dimension $\mathrm{L}\cdot\mathrm{T}^{-n}$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -66,6 +77,7 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > **Norme euclidienne (Pythagore) et analyse dimensionnelle**
 >
 > $\|\vec v\|=\sqrt{\dot x^2+\dot y^2}$. Pour retrouver l'unité d'un coefficient, on écrit que chaque terme d'une somme a la même dimension : $[at]=\mathrm L\Rightarrow[a]=\mathrm{L\,T^{-1}}$.
+
 
 
 **q1.** Équations horaires et trajectoire de $M$.
@@ -83,12 +95,17 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 
 (f) Que peut-on dire du mouvement de $M$ suivant $Ox$ ? suivant $Oy$ ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Pour la trajectoire, isolez $t$ dans $x(t)$ et substituez dans $y(t)$. Pour la nature du mouvement sur chaque axe, regardez si la coordonnée est linéaire ou quadratique en $t$.
 
 
+
+
 > [!success]- ✅ Correction
 > $y(x) = -\dfrac{b}{a^2}x^2$ : parabole. Suivant $Ox$ : uniforme. Suivant $Oy$ : uniformément accéléré, parti du repos.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -136,6 +153,7 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > Suivant $Oy$ : $y(t)=-bt^2$ est **quadratique en $t$**, le mouvement est donc **rectiligne uniformément accéléré**, parti sans vitesse initiale ($\dot y(0)=0$) et d'accélération constante $\ddot y = -2b$.
 
 
+
 **q2.** Vitesse et accélération de $M$.
 
 
@@ -145,12 +163,17 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 
 (c) Représenter sur le graphique la vitesse $\vec v$ et l'accélération $\vec a$ de $M$ à différents instants $t$ (choisir une échelle adéquate).
 
+
 > [!tip]- 💡 Coup de pouce
 > La base cartésienne étant fixe, il suffit de dériver composante par composante.
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v = a\,\vec u_x - 2bt\,\vec u_y$ ; $\vec a = -2b\,\vec u_y$ (constant).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -171,6 +194,7 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > <p style="text-align:center"><a href="/figures/td1_ex1_q2_phv111.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_q2_phv111.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
 **q3.** Application : une mouette vole à une hauteur de 20 m au-dessus de la mer, en vol horizontal, à la vitesse de 36 km/h, lorsqu'elle laisse tomber un poisson.
 
 
@@ -180,12 +204,17 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 
 (c) Déterminer l'équation de la trajectoire.
 
+
 > [!tip]- 💡 Coup de pouce
 > Le poisson a, à l'instant où il est lâché, la même vitesse horizontale que la mouette et une vitesse verticale nulle : c'est un cas particulier du mouvement étudié en question 1, avec $a=v_0$ et $2b=g$.
 
 
+
+
 > [!success]- ✅ Correction
 > $t_{chute} \approx 2{,}0$ s ; $y(x) = -\dfrac{g}{2v_0^2}x^2$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -209,14 +238,20 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > C'est une parabole, identique en nature à celle de la question 1 : la chute du poisson est un cas particulier du mouvement étudié plus haut.
 
 
+
 **q4.** (*) Entraînement : refaire l'exercice pour $a=0$ et commenter.
+
 
 > [!tip]- 💡 Coup de pouce
 > Que devient $x(t)$ si $a=0$ ? Quelle est alors la trajectoire géométrique du point ?
 
 
+
+
 > [!success]- ✅ Correction
 > Si $a=0$, le mouvement est purement rectiligne le long de $Oy$ (chute libre 1D), la « trajectoire parabolique » dégénère en un segment de droite.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -227,20 +262,6 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > On retrouve ce résultat en particularisant la formule de la trajectoire $y(x)=-\frac{b}{a^2}x^2$ : quand $a\to 0$, la parabole devient infiniment "resserrée" autour de l'axe $Oy$, jusqu'à dégénérer en ce segment de droite lorsque $a=0$ exactement (la notion même d'équation $y(x)$ perd alors son sens, puisque $x$ ne varie plus). Physiquement, sans vitesse horizontale initiale, il n'y a plus de mouvement horizontal : on retrouve une simple chute libre verticale 1D, cas particulier (et plus simple) du mouvement à 2 dimensions étudié en question 1.
 
 
-> [!warning]- 🪤 Écueils classiques
-> **Confondre équation horaire et équation de trajectoire**
->
-> Les étudiants confondent souvent $x(t)$, $y(t)$ (paramétrées par le temps) avec $y(x)$ (relation purement géométrique, sans référence au temps). Insister sur la méthode : exprimer $t$ en fonction de $x$ à partir de $x(t)$, puis substituer dans $y(t)$.
->
-> **Oublier le signe dans $-b t^2$**
->
-> Le signe négatif devant $b t^2$ donne une parabole tournée vers les $y$ négatifs (si $a,b>0$) ; une erreur de signe fréquente conduit à tracer la parabole à l'envers.
-
-
-> [!tip]- 🎙️ Conseils d'animation
-> **Tracé collectif au tableau**
->
-> Faire construire le tableau de valeurs de la question 1e collectivement avant de tracer, pour bien faire percevoir que les points ne sont pas régulièrement espacés le long de la trajectoire (accélération suivant $Oy$) alors qu'ils le sont suivant $Ox$ (vitesse constante).
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -257,16 +278,43 @@ $$\overrightarrow{OM}(t) = a\,t\,\vec{u}_x - b\,t^2\,\vec{u}_y \qquad \text{avec
 > Le déplacement d'un personnage ou d'un projectile dans un jeu 2D s'écrit en mettant à jour séparément $x$ et $y$ à chaque pas de temps.
 
 
-> [!success]- 🏁 Bilan
+
+
+> [!warning]- 🪤 Écueils classiques
+> **Confondre équation horaire et équation de trajectoire**
+>
+> Les étudiants confondent souvent $x(t)$, $y(t)$ (paramétrées par le temps) avec $y(x)$ (relation purement géométrique, sans référence au temps). Insister sur la méthode : exprimer $t$ en fonction de $x$ à partir de $x(t)$, puis substituer dans $y(t)$.
+>
+> **Oublier le signe dans $-b t^2$**
+>
+> Le signe négatif devant $b t^2$ donne une parabole tournée vers les $y$ négatifs (si $a,b>0$) ; une erreur de signe fréquente conduit à tracer la parabole à l'envers.
+
+
+
+
+> [!tip]- 🎙️ Conseils d'animation
+> **Tracé collectif au tableau**
+>
+> Faire construire le tableau de valeurs de la question 1e collectivement avant de tracer, pour bien faire percevoir que les points ne sont pas régulièrement espacés le long de la trajectoire (accélération suivant $Oy$) alors qu'ils le sont suivant $Ox$ (vitesse constante).
+
+
+
+
+> [!success]- 🏁 Bilan pédagogique
 > **Composition de deux mouvements simples**
 >
 > Une trajectoire courbe (ici parabolique) peut résulter de la superposition de deux mouvements rectilignes simples et indépendants sur les deux axes : uniforme suivant $Ox$, uniformément varié suivant $Oy$. Cette idée de décomposition par projection sur des axes fixes est la clé de toute la cinématique en coordonnées cartésiennes.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Mouvement avec frottement fluide
 > On pourra reprendre la situation du poisson chutant (question 3) en ajoutant une force de frottement fluide linéaire $-k\vec v$, et discuter qualitativement comment la trajectoire s'écarte de la parabole aux temps longs (vitesse limite).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex6-parabole-de-s-rete-et-tir-sur-une-pente|Exercice 6 — Parabole de sûreté et tir sur une pente]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]]
+
 

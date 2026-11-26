@@ -23,7 +23,8 @@ $$\dfrac{\partial^2 y}{\partial x^2} = \dfrac{1}{c^2}\dfrac{\partial^2 y}{\parti
 
 <p style="text-align:center"><a href="/figures/td1_ex3_phv212_demo.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex3_phv212_demo.svg" alt="Schémat tronçon de corde" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **D'où vient l'équation d'onde sur une corde ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -33,6 +34,8 @@ $$\dfrac{\partial^2 y}{\partial x^2} = \dfrac{1}{c^2}\dfrac{\partial^2 y}{\parti
 > **Idée clé : le PFD appliqué à un petit tronçon de corde, linéarisé pour de petits angles.** Pour un tronçon $[x,x+\mathrm dx]$, de masse $\mu\,\mathrm dx$, la composante verticale des tensions $F\sin\alpha(x+\mathrm dx)-F\sin\alpha(x)$ vaut $F\,\partial_x^2y\,\mathrm dx$ et le PFD donne
 > $$\mu\,\frac{\partial^2y}{\partial t^2}=F\,\frac{\partial^2y}{\partial x^2}\quad\Longleftrightarrow\quad c=\sqrt{F/\mu}.$$
 > Le déplacement est **transversal** ; le mouvement horizontal est négligeable (ordre 2 en $\alpha$) ; le poids, lui, ne modifie pas $c$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -61,8 +64,10 @@ $$\dfrac{\partial^2 y}{\partial x^2} = \dfrac{1}{c^2}\dfrac{\partial^2 y}{\parti
 > $v_{\max}=a\omega=a\dfrac{2\pi c}{\lambda}=2\pi c\,\dfrac a\lambda$ : comme $a\ll\lambda$, on a $v_{\max}\ll c$. Rapport $a/\lambda$ = pente typique de l'onde.
 
 
+
 **q1.** Quelle est la nature de l'onde $y(x,t)$ créée par la perturbation sur la corde ?
 Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonction de $F$ et de $\mu$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Nature de l'onde et PFD**
@@ -71,11 +76,15 @@ Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonct
 > Pour exprimer $c$, appliquez le PFD projeté transversalement sur un tronçon $[x, x+dx]$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Synthèse**
 >
 > Il s'agit d'une **onde plane transversale progressive** se propageant le long de l'axe $Ox$.
 > La célérité vaut $c = \sqrt{F/\mu}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -223,7 +232,9 @@ Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonct
 >   %En simplifiant par $dx$, on identifie à l'équation de d'Alembert $\dfrac{\partial^2 y}{\partial x^2} = \dfrac{1}{c^2}%\dfrac{\partial^2 y}{\partial t^2}$ avec $c = \sqrt{\dfrac{F}{\mu}}$.
 
 
+
 **q2.** Comment est modifiée l'équation d'onde si on ne néglige plus le poids de la corde ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Ajout de la pesanteur**
@@ -231,10 +242,14 @@ Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonct
 > Le poids du tronçon $dm\cdot g = \mu\,g\,dx$ s'ajoute vers le bas dans le bilan des forces transversales.
 
 
+
+
 > [!success]- ✅ Correction
 > **Nouvelle équation**
 >
 > $\dfrac{\partial^2 y}{\partial x^2} - \dfrac{\mu g}{F} = \dfrac{1}{c^2}\dfrac{\partial^2 y}{\partial t^2}$ (ou l'apparition d'un terme source lié au poids).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -249,6 +264,7 @@ Soyez aussi précis que possible. Exprimer la célérité $c$ de l'onde en fonct
 > <p style="text-align:center"><a href="/figures/td1_ex3_phv212_demo_poidg.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex3_phv212_demo_poidg.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
 Une corde vibrante très longue, de masse linéique $\mu = 0.12$ kg/m et de tension $F = 20$ N,
 est le siège d'une onde progressive sinusoïdale transversale d'amplitude $a = 2$ mm et de longueur d'onde $\lambda = 0.25$ m.
 
@@ -257,10 +273,13 @@ est le siège d'une onde progressive sinusoïdale transversale d'amplitude $a = 
 
   **a)** Dans ce cas, calculer la vitesse de propagation $c$ de l'onde.
 
+
 > [!tip]- 💡 Coup de pouce
 > **Calcul direct**
 >
 > Appliquez la formule $c = \sqrt{F/\mu}$ avec les valeurs numériques de la question.
+
+
 
 
 > [!success]- ✅ Correction
@@ -269,13 +288,17 @@ est le siège d'une onde progressive sinusoïdale transversale d'amplitude $a = 
 > $c = \sqrt{20 / 0.12} \approx 12.9\ \text{m/s}$.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Application numérique**
 >
 > $c = \sqrt{\dfrac{F}{\mu}} = \sqrt{\dfrac{20}{0.12}} = \sqrt{166.67} \approx 12.91\ \text{m/s}$.
 
 
+
   **b)** Calculer la vitesse transversale maximale d'un élément de corde. Que remarquez-vous ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Vitesse particulaire vs célérité**
@@ -283,11 +306,15 @@ est le siège d'une onde progressive sinusoïdale transversale d'amplitude $a = 
 > L'onde s'écrit $y(x,t) = a\cos(kx - \omega t + \phi)$. La vitesse transversale est $v_y = \partial_t y$. Son maximum est $v_{\text{max}} = a\omega$ avec $\omega = 2\pi c / \lambda$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $v_{\text{max}} = a\omega = a\dfrac{2\pi c}{\lambda} \approx 2\cdot 10^{-3} \times \dfrac{2\pi \times 12.91}{0.25} \approx 0.65\ \text{m/s}$.
 > On remarque que $v_{\text{max}} \ll c$ ($0.65\ \text{m/s} \ll 12.91\ \text{m/s}$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -300,7 +327,9 @@ est le siège d'une onde progressive sinusoïdale transversale d'amplitude $a = 
 > **Remarque :** La vitesse maximale de déplacement de la matière ($0.65$ m/s) est très inférieure à la vitesse de propagation du signal/de l'onde $c$ ($12.91$ m/s).
 
 
+
   **c)** Calculer la composante transversale maximale de la tension en un point quelconque de la corde.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Projection de la tension**
@@ -308,10 +337,14 @@ est le siège d'une onde progressive sinusoïdale transversale d'amplitude $a = 
 > La composante transversale de la tension est $T_y = F\sin\alpha \approx F \dfrac{\partial y}{\partial x}$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $T_{y,\text{max}} = F\,k\,a = F\dfrac{2\pi}{\lambda}a = 20 \times \dfrac{2\pi}{0.25} \times 2\cdot 10^{-3} \approx 1.01\ \text{N}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -322,8 +355,10 @@ est le siège d'une onde progressive sinusoïdale transversale d'amplitude $a = 
 > $$T_{y,\text{max}} = F\,k\,a = F \frac{2\pi}{\lambda} a = 20 \times \frac{2\pi}{0.25} \times 2\times 10^{-3} \approx 1.005\ \text{N}$$
 
 
+
   **d)** Quelle est la phase de l'onde lorsque ces deux maxima (vitesse et tension transversale) sont atteints ?
 Calculer le déplacement correspondant $y(x,t)$ de l'élément de corde.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Analyse des fonctions sinus / cosinus**
@@ -331,11 +366,15 @@ Calculer le déplacement correspondant $y(x,t)$ de l'élément de corde.
 > Examinez la phase $\Phi(x,t) = kx - \omega t + \phi$ lorsque $\sin\Phi(x,t) = \pm 1$. Que vaut $\cos\Phi(x,t)$ à cet instant ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > Phase : $\Phi = \pi/2 [\pi]$.
 > Déplacement correspondant : $y(x,t) = 0$ (la corde passe par sa position d'équilibre).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -347,6 +386,8 @@ Calculer le déplacement correspondant $y(x,t)$ de l'élément de corde.
 > À cet instant, le cosinus est nul ($\cos\Phi = 0$), d'où :
 > $$y(x,t) = a\cos\Phi(x,t) = 0$$
 > Les maxima de vitesse transversale et de tension transversale ont lieu simultanément au moment où l'élément de corde passe par sa position d'équilibre ($y=0$).
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -367,10 +408,13 @@ Calculer le déplacement correspondant $y(x,t)$ de l'élément de corde.
 > Si l'amplitude est grande, $\mathrm d\ell\neq\mathrm dx$ et la tension varie avec la déformation : l'équation devient non linéaire (cordes de piano, câbles). L'approximation des petits angles est donc ce qui rend le principe de superposition valable.
 
 
+
 **S'entraîner sur cet exercice (QCM)**
 
 <a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener">td1_qcm — 3 questions</a><br><a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjQiIGhlaWdodD0iMTY0IiBjbGFzcz0ic2Vnbm8iPjxwYXRoIHRyYW5zZm9ybT0ic2NhbGUoNCkiIGNsYXNzPSJxcmxpbmUiIHN0cm9rZT0iIzE2MzIzZiIgZD0iTTIgMi41aDdtMSAwaDRtMiAwaDNtMSAwaDJtNCAwaDJtMSAwaDFtMiAwaDdtLTM3IDFoMW01IDBoMW05IDBoM20xIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW01IDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGgxbTIgMGgzbTEgMGg1bTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgxbTEgMGgzbTEgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMSAwaDNtMiAwaDFtNCAwaDJtMyAwaDVtMiAwaDFtMSAwaDNtMSAwaDFtLTM3IDFoMW0xIDBoM20xIDBoMW0xIDBoMW00IDBoMW0xIDBoMW0yIDBoMW0yIDBoMW0xIDBoMW0yIDBoM20xIDBoMW0xIDBoM20xIDBoMW0tMzcgMWgxbTUgMGgxbTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgybTEgMGgybTEgMGgybTIgMGgxbTIgMGgxbTEgMGgxbTUgMGgxbS0zNyAxaDdtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDdtLTI5IDFoNm0yIDBoM20zIDBoMm0yIDBoMW0xIDBoMW0tMjkgMWgxbTMgMGgxbTEgMGgzbTEgMGgzbTEgMGgxbTMgMGgybTIgMGgxbTEgMGgxbTQgMGg1bTIgMGgxbS0zNSAxaDFtNSAwaDFtMSAwaDVtMSAwaDJtMSAwaDNtMiAwaDFtMiAwaDJtMyAwaDRtLTM2IDFoNG0yIDBoMm0zIDBoNG0xIDBoM20xIDBoOG0xIDBoMW0xIDBoMW0yIDBoMW0tMzUgMWgxbTIgMGgybTQgMGgybTEgMGgybTMgMGgybTIgMGgxbTEgMGgybTUgMGgzbTEgMGgybS0zNiAxaDJtMiAwaDFtMSAwaDFtMSAwaDFtMiAwaDJtMiAwaDVtMSAwaDRtMiAwaDVtMiAwaDNtLTM3IDFoMW0xIDBoMW0xIDBoMm0xIDBoMW0zIDBoMW0xIDBoMW0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMm0tMzQgMWgybTEgMGgybTEgMGgxbTEgMGgxbTEgMGgybTEgMGgzbTIgMGgxbTEgMGg0bTIgMGgxMG0tMzUgMWgybTIgMGgxbTMgMGgxbTEgMGgxbTIgMGgzbTIgMGgzbTIgMGgxbTYgMGgybTEgMGgxbS0zNSAxaDJtNCAwaDFtMiAwaDNtMyAwaDJtMyAwaDFtMyAwaDFtMiAwaDVtMSAwaDRtLTM1IDFoNG0xIDBoMW0xIDBoNG00IDBoM20xIDBoM20xIDBoM20xIDBoMW0xIDBoNW0tMzYgMWgybTMgMGg1bTMgMGgzbTIgMGgybTMgMGgzbTEgMGgxbTIgMGgzbS0zMiAxaDFtMSAwaDNtMSAwaDFtMiAwaDFtMSAwaDFtMSAwaDhtNCAwaDFtMyAwaDFtMyAwaDJtLTM2IDFoMm0xIDBoNG0xIDBoMm0xIDBoMW0yIDBoMW0yIDBoMW0yIDBoM200IDBoMW0xIDBoM20yIDBoMW0tMzIgMWgxbTEgMGgxbTEgMGgybTEgMGgxbTIgMGg0bTMgMGgybTEgMGgxbTEgMGgzbTEgMGgxbTEgMGgybS0zMyAxaDJtMSAwaDJtMSAwaDJtMyAwaDFtMSAwaDNtMSAwaDFtNSAwaDJtMSAwaDJtMSAwaDFtMSAwaDRtLTMzIDFoMW0xIDBoMm00IDBoNW0xIDBoNG0yIDBoM20zIDBoMm0xIDBoMm0xIDBoMW0tMzQgMWgybTMgMGgxbTEgMGgybTEgMGg0bTMgMGgybTIgMGgxbTEgMGgxbTEgMGgxbTIgMGgybTIgMGg0bS0zNyAxaDFtMiAwaDFtMSAwaDFtNCAwaDFtMyAwaDFtMSAwaDFtMiAwaDNtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMiAwaDNtLTMzIDFoNm0xIDBoNW0yIDBoMm0yIDBoMW0yIDBoMm0xIDBoMm0zIDBoMW0xIDBoMW0tMzIgMWgxbTEgMGgxbTIgMGgybTEgMGgxbTIgMGgybTIgMGgxbTMgMGgzbTIgMGgzbTIgMGgxbTIgMGgzbS0zNyAxaDNtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDZtMSAwaDFtMSAwaDFtMiAwaDFtMyAwaDVtMSAwaDFtMSAwaDFtLTI5IDFoMm0yIDBoMm0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMW0yIDBoMW0tMzYgMWg3bTEgMGgxbTEgMGgxbTQgMGgxbTIgMGgxbTIgMGg0bTMgMGgxbTEgMGgxbTEgMGgxbS0zMyAxaDFtNSAwaDFtMiAwaDFtMyAwaDFtMSAwaDJtMiAwaDNtMSAwaDJtMSAwaDFtMSAwaDFtMyAwaDNtLTM1IDFoMW0xIDBoM20xIDBoMW0xIDBoMm0yIDBoMW0yIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW0yIDBoN20xIDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGg0bTMgMGgzbTEgMGgzbTEgMGgxbTIgMGg0bTEgMGgxbTIgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMiAwaDVtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDJtMSAwaDNtMSAwaDFtMiAwaDJtLTM1IDFoMW01IDBoMW0yIDBoMW0xIDBoN20xIDBoNG0xIDBoMW0yIDBoMW0xIDBoMW0yIDBoMW0xIDBoMm0tMzYgMWg3bTEgMGgxbTEgMGgybTEgMGgxbTIgMGgybTIgMGg1bTEgMGgybTEgMGgxbTEgMGgxbTIgMGgzIi8+PC9zdmc+Cg==" width="110" height="110" alt="QR code : td1_qcm — 3 questions" style="image-rendering:pixelated"></a>
 
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex8-energie-et-puissance-d-une-onde-sur-une-corde-impedance-caracteristique|Exercice 8 — Énergie et puissance d'une onde sur une corde : impédance caractéristique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex9-corde-pesante-suspendue-milieu-inhomogene-bosse-acceleree-et-coup-de-fouet|Exercice 9 — Corde pesante suspendue : milieu inhomogène, bosse accélérée et coup de fouet]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex10-corde-discrete-chaine-de-masses-dispersion-coupure-et-vitesse-de-groupe|Exercice 10 — Corde discrète (chaîne de masses) : dispersion, coupure et vitesse de groupe]]
+
 

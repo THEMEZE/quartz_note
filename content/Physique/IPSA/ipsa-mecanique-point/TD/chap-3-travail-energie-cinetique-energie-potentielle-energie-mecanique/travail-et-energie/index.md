@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-mecanique-point/index|⬅ Mécanique du point — IPSA]]
 
+
 > [!info] ℹ️ Chap. 3 — Travail, énergie cinétique, énergie potentielle, énergie mécanique
 > Séance 5
 
 
+
 <a href="/pdfs/td5_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td5_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Sans calculer l'accélération : la hauteur d'une montagne russe**
 >
 > *Durée de l'introduction : 5 min*
@@ -22,7 +25,9 @@ tags:
 >
 > **Idée clé : $E_c+E_p=\text{cte}$ quand les seules forces qui travaillent sont conservatives.** Le travail d'une force de liaison est nul ; le travail du poids ne dépend que de la différence d'altitude. D'où $v=\sqrt{2g\,\Delta h}$ quelle que soit la forme du rail, indépendamment de la masse.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Les lois de Newton et la méthode du TD4**
 >
 > $\sum\vec F=m\vec a$, bilan de forces exhaustif, projection sur des axes adaptés (cartésiens, polaires, base de Frenet). Le TD5 donne une **seconde méthode** : au lieu de projeter la loi de Newton, on intègre une fois pour obtenir un bilan d'énergie.
@@ -39,7 +44,9 @@ tags:
 >
 > Poids, réaction normale ($N\ge0$), tension d'un fil, rappel élastique $-k(\ell-\ell_0)\vec u$, frottement solide de Coulomb. Il faut savoir dire **lesquelles travaillent**.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Calculer un travail**
 >
 > Savoir écrire $\delta W=\vec F\cdot\mathrm d\overrightarrow{OM}$, l'intégrer sur un chemin (force constante, force de rappel, force dépendant de la position), reconnaître le signe (moteur, résistant, nul) et calculer une puissance $P=\vec F\cdot\vec v$.
@@ -56,7 +63,9 @@ tags:
 >
 > Savoir utiliser l'énergie pour la vitesse, puis la loi de Newton projetée (radialement) pour la réaction, et en déduire des conditions de décollage ($N=0$), de passage ou de glissement.
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Travail d'une force**
 >
 > Travail élémentaire : $\delta W=\vec F\cdot\mathrm d\overrightarrow{OM}=\vec F\cdot\vec v\,\mathrm dt$. Travail le long d'un chemin $\Gamma$ de $A$ à $B$ : $W_{A\to B}=\displaystyle\int_\Gamma\vec F\cdot\mathrm d\overrightarrow{OM}$. Force constante : $W=\vec F\cdot\overrightarrow{AB}$ (le chemin ne compte pas). Signe : $W>0$ (force motrice, $\varphi<90^\circ$), $W<0$ (résistante), $W=0$ (force perpendiculaire au déplacement : réaction d'un support lisse, tension d'un pendule, force magnétique). Unité : le joule, $1~\mathrm J=1~\mathrm N\,\mathrm m=1~\mathrm{kg\,m^2\,s^{-2}}$.
@@ -91,6 +100,8 @@ tags:
 >
 > Pour un point sur un rail lisse ou une sphère lisse : $E_m$ conservée ; projection de $m\vec a=m\vec g+\vec N$ sur la normale $\vec n$ (vers le centre de courbure) : $m\dfrac{v^2}{\rho}=N_n+mg_n$ (composantes algébriques selon $\vec n$). Le contact est maintenu tant que $N\ge0$ : **le décollage a lieu à l'instant où $N$ s'annule**.
 
+
+
 > [!note]- 🧮 Outils mathématiques
 > **Produit scalaire et intégrale curviligne**
 >
@@ -115,6 +126,7 @@ tags:
 > **Conversion d'unités de vitesse et d'énergie**
 >
 > $1~\mathrm{km/h}=\dfrac1{3{,}6}~\mathrm{m/s}$ ; $1~\mathrm{kWh}=3{,}6~\mathrm{MJ}$ ; $1~\mathrm{eV}=1{,}6\times10^{-19}~\mathrm J$.
+
 
 
 ## Exercices

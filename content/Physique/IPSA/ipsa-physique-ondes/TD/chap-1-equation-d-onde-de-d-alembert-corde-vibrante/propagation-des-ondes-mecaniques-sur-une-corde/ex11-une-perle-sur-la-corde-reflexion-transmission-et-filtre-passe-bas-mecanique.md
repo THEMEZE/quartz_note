@@ -17,7 +17,8 @@ Une onde sinusoïdale incidente $\underline{y}_i=e^{\,j(\omega t-kx)}$ arrive de
 
 On note $c=\sqrt{F/\mu}$, $k=\omega/c$ et $Z=\sqrt{F\mu}$ l'impédance caractéristique de la corde (exercice 7).
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Une perle sur la corde laisse-t-elle passer l'onde ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -29,16 +30,22 @@ On note $c=\sqrt{F/\mu}$, $k=\omega/c$ et $Z=\sqrt{F\mu}$ l'impédance caractér
 > La perle est un **filtre passe-bas du premier ordre**, de constante de temps $\theta=m/(2Z)$ : elle transmet les basses fréquences et réfléchit les hautes.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercices 5 et 7**
 >
 > Notation complexe, conditions aux limites, impédance $Z$ et puissance transportée par une onde progressive.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Trouver $\underline{r}$ et $\underline{\tau}$ pour un défaut ponctuel**
 >
 > Écrire les conditions de raccordement (continuité du déplacement et équation du mouvement de la perle), déduire des coefficients complexes dépendant de la fréquence, et interpréter la perle comme un filtre du premier ordre.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -67,19 +74,25 @@ On note $c=\sqrt{F/\mu}$, $k=\omega/c$ et $Z=\sqrt{F\mu}$ l'impédance caractér
 > $\beta\to0$ : $\underline\tau\to1$, $\underline r\to0$ ; $\beta\to\infty$ : $\underline\tau\to0$, $\underline r\to-1$. Étudier les limites permet de vérifier un résultat sans calcul.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Deux conditions**
 >
 > En $x=0$ : (1) la corde est continue, donc $y(0^-,t)=y(0^+,t)$ ; (2) le PFD sur la perle relie l'accélération à la différence des forces transversales exercées par la droite et par la gauche.
 
 
+
 **q1.** Écrire les deux conditions de raccordement en $x=0$. Pour la seconde, établir
 $$m\,\frac{\partial^2y}{\partial t^2}(0,t)=F\left[\frac{\partial y}{\partial x}(0^+,t)-\frac{\partial y}{\partial x}(0^-,t)\right].$$
+
 
 > [!tip]- 💡 Coup de pouce
 > **Forces sur la perle**
 >
 > La corde de droite tire la perle avec la composante transversale $+F\,\partial_x y(0^+)$, celle de gauche avec $-F\,\partial_x y(0^-)$ (cf. exercice 3).
+
+
 
 
 > [!success]- ✅ Correction
@@ -88,15 +101,19 @@ $$m\,\frac{\partial^2y}{\partial t^2}(0,t)=F\left[\frac{\partial y}{\partial x}(
 > (1) $y(0^-,t)=y(0^+,t)$ ; (2) $m\,\partial_t^2y(0,t)=F\left[\partial_x y(0^+,t)-\partial_x y(0^-,t)\right]$.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Justification**
 >
 > La perle est un point matériel de masse $m$ : son accélération est $\partial_t^2y(0,t)$. Les seules forces transversales sont celles des tensions des deux côtés, de composantes $F\sin\alpha\approx F\,\partial_x y$ au niveau de la perle : à droite $+F\,\partial_x y(0^+)$, à gauche $-F\,\partial_x y(0^-)$. Le PFD donne (2). La continuité (1) exprime que la corde ne se rompt pas. Si $m\to0$, (2) redonne la continuité de la pente, c'est-à-dire l'absence de défaut.
 
 
+
 **q2.** En déduire les coefficients
 $$\underline{\tau}=\frac{1}{1+j\beta},\qquad\underline{r}=\frac{-j\beta}{1+j\beta},\qquad\text{avec}\quad\beta=\frac{m\omega}{2Z}.$$
 Vérifier que $\underline{\tau}=1+\underline{r}$ et que $|\underline{r}|^2+|\underline{\tau}|^2=1$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Utiliser $Z$**
@@ -104,10 +121,14 @@ Vérifier que $\underline{\tau}=1+\underline{r}$ et que $|\underline{r}|^2+|\und
 > $kF=\dfrac{\omega}{c}F=\omega\sqrt{F\mu}=\omega Z$. Reporter les expressions de $\partial_x y$ dans (2).
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (1) $\Rightarrow1+\underline{r}=\underline{\tau}$. (2) $\Rightarrow2j\omega Z\,\underline{r}=m\omega^2(1+\underline{r})$, d'où $\underline{r}=\dfrac{-j\beta}{1+j\beta}$ et $\underline{\tau}=\dfrac{1}{1+j\beta}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -124,7 +145,9 @@ Vérifier que $\underline{\tau}=1+\underline{r}$ et que $|\underline{r}|^2+|\und
 > Vérification : $|\underline{r}|^2+|\underline{\tau}|^2=\dfrac{\beta^2+1}{1+\beta^2}=1$.
 
 
+
 **q3.** Puissances. Exprimer les coefficients de réflexion et de transmission en puissance, $R=|\underline{r}|^2$ et $T=|\underline{\tau}|^2$ (les impédances des deux côtés sont égales). Montrer que $R+T=1$ et interpréter. Définir la fréquence de coupure $f_c$ par $R=T=\tfrac{1}{2}$ et la calculer. Calculer $R$ et $T$ à $f=20\ \text{Hz}$ et à $f=100\ \text{Hz}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Puissances**
@@ -132,10 +155,14 @@ Vérifier que $\underline{\tau}=1+\underline{r}$ et que $|\underline{r}|^2+|\und
 > D'après l'exercice 7, pour une onde progressive $\langle\mathcal{P}\rangle=\tfrac{1}{2}Z\omega^2|\text{amplitude}|^2$ : avec le même $Z$ et le même $\omega$, les rapports de puissances sont les rapports des modules au carré.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $R=\dfrac{\beta^2}{1+\beta^2}$, $T=\dfrac{1}{1+\beta^2}$, $R+T=1$ : l'énergie incidente est soit réfléchie soit transmise, la perle n'en absorbe pas en moyenne. $\beta=1$ pour $\omega_c=\dfrac{2Z}{m}=400\ \text{rad/s}$, soit $f_c\approx63{,}7\ \text{Hz}$. À $20\ \text{Hz}$ : $\beta\approx0{,}314$, $R\approx9{,}0\ \%$, $T\approx91{,}0\ \%$. À $100\ \text{Hz}$ : $\beta\approx1{,}571$, $R\approx71{,}2\ \%$, $T\approx28{,}8\ \%$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -151,12 +178,16 @@ Vérifier que $\underline{\tau}=1+\underline{r}$ et que $|\underline{r}|^2+|\und
 > La perle laisse passer les basses fréquences et réfléchit les hautes : c'est un filtre passe-bas pour l'onde transmise.
 
 
+
 **q4.** Déphasage. Calculer l'argument de $\underline{\tau}$. À la fréquence de coupure, quel est le retard temporel de l'onde transmise par rapport à ce qu'elle serait sans perle ? Comparer avec la période.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\arg\underline{\tau}=-\arctan\beta$. À $f_c$ : $-\pi/4$, soit un retard $\Delta t=\dfrac{\pi/4}{\omega_c}=\dfrac{T_c}{8}\approx1{,}96\ \text{ms}$ (avec $T_c=15{,}7\ \text{ms}$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -165,9 +196,11 @@ Vérifier que $\underline{\tau}=1+\underline{r}$ et que $|\underline{r}|^2+|\und
 > $\underline{\tau}=\dfrac{1-j\beta}{1+\beta^2}$ donc $\arg\underline{\tau}=-\arctan\beta$. À la coupure $\beta=1$ : déphasage $-\pi/4$. Le retard s'obtient par $\Delta t=\dfrac{|\varphi|}{\omega_c}=\dfrac{\pi/4}{400}\approx1{,}96\ \text{ms}$, soit $T_c/8$ avec $T_c=2\pi/\omega_c\approx15{,}7\ \text{ms}$. À basse fréquence le retard vaut $\approx\beta/\omega=\dfrac{m}{2Z}=2{,}5\ \text{ms}$, indépendant de $\omega$ : c'est la constante de temps $\theta$ de la question suivante.
 
 
+
 **q5.** (*) Approche temporelle. On envoie une onde de forme quelconque $y_i(x,t)=s(t-x/c)$. Notons $y_i(0,t)=s(t)$, $y_r(0,t)$ et $y_t(0,t)$ les déplacements en $x=0$. Montrer que $y_t(0,t)=y_i(0,t)+y_r(0,t)$ et que, pour des ondes qui partent du repos,
 $$\theta\,\dot y_t(0,t)+y_t(0,t)=y_i(0,t),\qquad\theta=\frac{m}{2Z}.$$
 Calculer $\theta$. Résoudre pour un échelon $s(t)=Y_0$ ($t>0$) et donner le déplacement réfléchi.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Ondes progressives**
@@ -175,10 +208,14 @@ Calculer $\theta$. Résoudre pour un échelon $s(t)=Y_0$ ($t>0$) et donner le d�
 > $y_i=s(t-x/c)$ donne $\partial_x y_i=-\dot s/c$. Pour l'onde réfléchie, $y_r=u(t+x/c)$ donne $\partial_x y_r=+\dot u/c$. Pour l'onde transmise, $\partial_x y_t=-\dot y_t/c$. Utiliser $F/c=Z$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > La condition (2) donne $m\ddot y_t=2Z\left(\dot y_i-\dot y_t\right)$ en $x=0$, d'où $\theta\dot y_t+y_t=y_i$ après intégration, avec $\theta=m/(2Z)=2{,}5\ \text{ms}$. Pour un échelon $Y_0$ : $y_t(0,t)=Y_0\left(1-e^{-t/\theta}\right)$ et $y_r(0,t)=y_t-y_i=-Y_0\,e^{-t/\theta}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -195,12 +232,16 @@ Calculer $\theta$. Résoudre pour un échelon $s(t)=Y_0$ ($t>0$) et donner le d�
 > Pour l'échelon $y_i(0,t)=Y_0$ ($t>0$) et $y_t(0,0)=0$ (la perle est initialement au repos) : $y_t(0,t)=Y_0\left(1-e^{-t/\theta}\right)$. Alors $y_r(0,t)=y_t-y_i=-Y_0\,e^{-t/\theta}$. Au début du choc, l'onde réfléchie est de signe opposé à l'onde incidente ($-Y_0$) : la perle se comporte comme une extrémité fixe. Après plusieurs $\theta$, elle laisse passer l'échelon presque intégralement.
 
 
+
 **q6.** Cas limites. Que deviennent $\underline{r}$, $\underline{\tau}$ quand $m\to0$ ? quand $m\to\infty$ ? quand $\omega\to0$ ? Dans chaque cas, donner la situation physique correspondante.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $m\to0$ ou $\omega\to0$ ($\beta\to0$) : $\underline{r}\to0$, $\underline{\tau}\to1$, corde sans perle (perle sans effet). $m\to\infty$ ($\beta\to\infty$) : $\underline{r}\to-1$, $\underline{\tau}\to0$ : corde fixée à un point d'attache immobile, réflexion totale avec inversion du signe de l'amplitude.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -213,7 +254,9 @@ Calculer $\theta$. Résoudre pour un échelon $s(t)=Y_0$ ($t>0$) et donner le d�
 > Une perle intermédiaire est donc un point fixe pour les hautes fréquences et transparente pour les basses.
 
 
+
 **q7.** (**) On dispose $M$ perles identiques régulièrement espacées d'une distance $d$ sur la même corde. Sans calcul, expliquer qualitativement pourquoi, pour $\omega\ll\omega_c$, l'onde se propage presque librement mais avec une vitesse plus faible, puis faire le lien avec l'exercice 9.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
@@ -221,10 +264,14 @@ Calculer $\theta$. Résoudre pour un échelon $s(t)=Y_0$ ($t>0$) et donner le d�
 > Pour $\lambda\gg d$ le milieu se comporte comme une corde continue de masse linéique effective $\mu+m/d$ : célérité $c_{\text{eff}}=\sqrt{F/(\mu+m/d)}<c$. Pour des fréquences plus élevées les réflexions multiples aux perles créent une coupure : c'est la chaîne de masses de l'exercice 9.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Discussion**
 >
 > Aux basses fréquences ($\lambda\gg d$), les perles ajoutent de la masse par unité de longueur : $\mu_{\text{eff}}=\mu+m/d$, d'où une célérité plus faible. Cette célérité effective vaut $c_{\text{eff}}=c/\sqrt{1+m/(\mu d)}$. Quand $\lambda$ devient comparable à $d$, les ondes réfléchies par chaque perle interfèrent et le milieu devient dispersif, avec une bande de fréquences interdite. Le cas limite $\mu\to0$ est exactement la chaîne de masses de l'exercice 9.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -249,10 +296,15 @@ Calculer $\theta$. Résoudre pour un échelon $s(t)=Y_0$ ($t>0$) et donner le d�
 > $R+T=1$ est la conservation de l'énergie à l'interface : réflexion et transmission d'une lame de verre, avec ici une perte nulle.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Perle amortie et ressort
 > Si la perle est reliée à un support par un ressort de raideur $K$ et un amortisseur, on obtient la résonance d'un absorbeur : pour $\omega=\sqrt{K/m}$ le déplacement de la perle devient nul en régime forcé, et l'onde est entièrement réfléchie. Principe des amortisseurs à masse accordée.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex3-celerite-d-une-onde-sur-une-corde-homogene|Exercice 3 — Célérité d’une onde sur une corde homogène]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex12-adaptation-d-impedance-lame-quart-d-onde-entre-deux-cordes|Exercice 12 — Adaptation d'impédance : lame quart d'onde entre deux cordes]] · [[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex1-ondes-sur-un-ressort-long-slinky-filmees-au-ralenti-impulsions-reflexions-et-modes-propres|Exercice 1 — Ondes sur un ressort long (Slinky) filmées au ralenti : impulsions, réflexions et modes propres]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex8-energie-et-puissance-d-une-onde-sur-une-corde-impedance-caracteristique|Exercice 8 — Énergie et puissance d'une onde sur une corde : impédance caractéristique]]
+
 

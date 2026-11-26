@@ -13,7 +13,8 @@ tags:
 
 La machine d'Atwood est constituée de deux masses $m_1$ et $m_2$ ($m_2>m_1$) reliées par un fil passant par une poulie. On néglige les masses de la poulie et du fil, on suppose le fil inextensible, la poulie sans frottement, et on prendra $g=9{,}81~\mathrm{m\,s^{-2}}$. À $t=0$, les masses sont lâchées sans vitesse.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Ralentir la chute pour la mesurer**
 >
 > *Durée de l'introduction : 3 min*
@@ -23,28 +24,38 @@ La machine d'Atwood est constituée de deux masses $m_1$ et $m_2$ ($m_2>m_1$) re
 > **Idée clé : deux masses liées partagent la même accélération (en norme).** L'accélération est $a=\dfrac{m_2-m_1}{m_1+m_2}\,g$ : elle est d'autant plus petite que les masses sont proches. Le fil transmet une tension $T$ comprise entre $m_1g$ et $m_2g$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Fil idéal sur une poulie idéale**
 >
 > Pour un fil sans masse passant sur une poulie sans masse ni frottement, la tension a la même norme $T$ en tout point du fil. Un fil inextensible impose que les déplacements des deux extrémités soient égaux et opposés : $z_1+z_2=\text{cte}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Traiter un système lié par un fil**
 >
 > Savoir isoler chaque masse, choisir un repère pour chacune, écrire la 2\textsuperscript{e} loi, traduire l'inextensibilité du fil par une relation entre accélérations, résoudre le système et vérifier les cas limites.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **L'exercice type de système lié**
 >
 > Deux équations de Newton plus une contrainte cinématique donnent trois relations pour trois inconnues ($a_1,a_2,T$). La difficulté est dans **la contrainte** $a_1=-a_2$ avec axes verticaux ascendants identiques. Insister sur la discussion des cas limites ($m_1=m_2$, $m_2\gg m_1$) comme contrôle du résultat.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Méthode pour un système de solides liés**
 >
 > On isole **chaque** solide, on écrit sa 2\textsuperscript{e} loi, et on ajoute les relations de liaison (fil inextensible, contact). Si l'on choisit un axe $Oz$ vertical ascendant commun, l'inextensibilité donne $a_1=-a_2$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -61,15 +72,21 @@ La machine d'Atwood est constituée de deux masses $m_1$ et $m_2$ ($m_2>m_1$) re
 > $m_1=m_2\Rightarrow a=0$ ; $m_1\to0\Rightarrow a\to g$, $T\to0$ ; $m_2\gg m_1\Rightarrow a\to g$, $T\to2m_1g$. Un résultat doit passer ces tests.
 
 
+
 **q1.** - [(a)] Pour chaque masse, tracer un repère et représenter les forces.
 - [(b)] Appliquer le principe fondamental à chaque masse et le projeter sur les axes choisis.
+
 
 > [!tip]- 💡 Coup de pouce
 > Chaque masse subit son poids et la tension du fil. Choisissez le même axe vertical ascendant pour les deux (une seule contrainte cinématique à écrire ensuite).
 
 
+
+
 > [!success]- ✅ Correction
 > $T-m_1g=m_1a_1$ et $T-m_2g=m_2a_2$ (axe $Oz$ ascendant pour les deux).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -82,17 +99,23 @@ La machine d'Atwood est constituée de deux masses $m_1$ et $m_2$ ($m_2>m_1$) re
 > $$m_1:\ T-m_1g=m_1a_1,\qquad m_2:\ T-m_2g=m_2a_2 .$$
 
 
+
 **q2.** - [(c)] Déterminer les accélérations $a_1$ et $a_2$ des masses.
 - [(d)] En déduire la distance parcourue à l'instant $t$ par les deux masses.
 - [(e)] Quelle est la tension du fil ?
 - [(f)] Que devient l'accélération $a_2$ pour $m_2\gg m_1$ ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Le fil est inextensible : si $m_1$ monte de $\delta$, $m_2$ descend de $\delta$. En déduire la relation entre $a_1$ et $a_2$, puis soustraire les deux équations.
 
 
+
+
 > [!success]- ✅ Correction
 > $a_1=-a_2=\dfrac{m_2-m_1}{m_1+m_2}\,g$ ; $d=\tfrac12a\,t^2$ ; $T=\dfrac{2m_1m_2}{m_1+m_2}\,g$ ; $a_2\to-g$ (chute libre).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -117,6 +140,20 @@ La machine d'Atwood est constituée de deux masses $m_1$ et $m_2$ ($m_2>m_1$) re
 > $a\to g$ et $a_2\to-g$ : $m_2$ est en chute libre, le fil n'a plus d'effet sur elle. La tension tend vers $T\to2m_1g$ (la masse $m_1$ est accélérée à $+g$ vers le haut). La machine est un « ralentisseur » de chute libre dans le cas $m_2\approx m_1$.
 
 
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Histoire des sciences**
+>
+> George Atwood (1784) a conçu cette machine pour mesurer $g$ avec les horloges de l'époque.
+>
+> **Ingénierie**
+>
+> Ascenseurs avec contrepoids, grues à contrepoids, funiculaires : même principe, on équilibre une masse par une autre pour réduire la force motrice.
+
+
+
+
 > [!warning]- 🪤 Écueils classiques
 > **Penser que $T=m_1g$ ou $T=m_2g$**
 >
@@ -131,40 +168,43 @@ La machine d'Atwood est constituée de deux masses $m_1$ et $m_2$ ($m_2>m_1$) re
 > Pour une poulie idéale (sans masse, sans frottement), la tension est la même de chaque côté. Cette hypothèse tombe pour une poulie de masse non nulle (voir « aller plus loin »).
 
 
+
+
 > [!tip]- 🎙️ Conseils d'animation
 > **Manipulation**
 >
 > Avec deux masses marquées et un chronomètre, mesurer le temps de chute de $1$ m pour $m_2=m_1+\Delta m$ : $g$ en est déduit avec $g=\dfrac{(m_1+m_2)\,2d}{(m_2-m_1)\,t^2}$. C'est l'expérience d'Atwood (1784) qui permettait de « ralentir » la chute libre.
 
 
-> [!note]- 🔗 Liens avec d'autres disciplines
-> **Histoire des sciences**
->
-> George Atwood (1784) a conçu cette machine pour mesurer $g$ avec les horloges de l'époque.
->
-> **Ingénierie**
->
-> Ascenseurs avec contrepoids, grues à contrepoids, funiculaires : même principe, on équilibre une masse par une autre pour réduire la force motrice.
 
 
-> [!success]- 🏁 Bilan
+> [!success]- 🏁 Bilan pédagogique
 > **Résultats de la machine d'Atwood**
 >
 > $a_2=-a_1=-\dfrac{m_2-m_1}{m_1+m_2}\,g$ (descente de $m_2$) ; $T=\dfrac{2m_1m_2}{m_1+m_2}\,g$ ; $d=\tfrac12\dfrac{m_2-m_1}{m_1+m_2}\,g\,t^2$. Si $m_2\gg m_1$ : $a\to g$ (chute libre de $m_2$), $T\to2m_1g$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Poulie de masse non négligeable
 > Pour une poulie de moment d'inertie $J$ et de rayon $r$, les tensions diffèrent de chaque côté. Montrer, avec le théorème du moment cinétique, que $a=\dfrac{(m_2-m_1)g}{m_1+m_2+J/r^2}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Mesure de $g$ et incertitudes
 > Avec $g=\dfrac{(m_1+m_2)}{(m_2-m_1)}\dfrac{2d}{t^2}$, estimer l'incertitude sur $g$ pour $d=1{,}00\pm0{,}01$ m, $t=2{,}0\pm0{,}1$ s, et $m_2-m_1$ connue à $1\%$ : quelle grandeur domine ?
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Atwood avec frottement visqueux sur le fil
 > Ajouter un frottement fluide $-\lambda v$ sur chaque masse. Établir l'équation différentielle de $v(t)$, montrer qu'il existe une vitesse limite $v_\ell=\dfrac{(m_2-m_1)g}{2\lambda}$ et tracer $v(t)$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex1-exercices-elementaires|Exercice 1 — Exercices élémentaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex2-decollage-d-un-corps|Exercice 2 — Décollage d'un corps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex4-systeme-de-deux-blocs|Exercice 4 — Système de deux blocs]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex6-navette-columbia|Exercice 6 — (*) Navette Columbia]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex7-chute-avec-frottement-fluide-vitesse-limite|Exercice 7 — Chute avec frottement fluide : vitesse limite]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex9-virage-releve-et-frottement-solide|Exercice 9 — Virage relevé et frottement solide]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/ex4-systeme-pendule-bloc|Exercice 4 — (*) Système pendule-bloc]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-4-quantite-de-mouvement-systemes-de-points-collisions/etude-des-chocs/ex5-pendule-balistique|Exercice 5 — (*) Pendule balistique]]
+
 

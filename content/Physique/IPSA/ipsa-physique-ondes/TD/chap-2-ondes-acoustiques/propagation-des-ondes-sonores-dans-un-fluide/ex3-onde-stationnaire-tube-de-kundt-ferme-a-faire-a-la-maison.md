@@ -14,7 +14,8 @@ tags:
 Même dispositif que l'exercice 2, mais le tube est ouvert en $x=0$ et
 fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-x))}$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi la clarinette sonne-t-elle une octave plus grave ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -26,19 +27,25 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 > Le fondamental tient en **un quart de longueur d'onde** ($L=\lambda_1/4$), deux fois plus grave que pour un tube ouvert-ouvert, et **seuls les harmoniques impairs** existent.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Résultats de l'exercice 2 (tube ouvert-ouvert)**
 >
 > Cet exercice réutilise directement la méthode de l'exercice 2 (construction de l'onde stationnaire par superposition, lien entre déplacement et surpression/dilatation via $\chi_S$). Il est vivement conseillé de le traiter après avoir bien assimilé le cas ouvert-ouvert, afin de se concentrer ici sur l'unique différence : la condition à l'extrémité $x=L$, désormais fermée.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Transposer une méthode à une nouvelle condition aux limites**
 >
 > Savoir adapter la méthode de résolution développée pour un cas (tube ouvert-ouvert) à un cas voisin (tube ouvert-fermé), en identifiant précisément ce qui change dans les conditions aux limites et ce qui reste inchangé dans la structure de la solution.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Configuration « quart d'onde » et harmoniques impairs**
 >
 > Dans la configuration ouverte-fermée, la condition en $x=0$ reste un nœud de pression / ventre de déplacement (extrémité ouverte), tandis qu'en $x=L$ on impose désormais un nœud de déplacement / ventre de pression (extrémité fermée). La distance entre un nœud et le ventre adjacent valant $\lambda/4$, le mode fondamental correspond à un quart de longueur d'onde contenu dans le tube : $L = \lambda_1/4$.
@@ -46,6 +53,8 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 > Cette dissymétrie des conditions aux limites a une conséquence remarquable : seuls les harmoniques **impairs** du mode fondamental sont des solutions du problème (contrairement au cas ouvert-ouvert où tous les harmoniques sont permis), d'où l'expression $f_n=(2n-1)c/(4L)$.
 >
 > **Remarque méthodologique** (comme dans l'exercice 2) : l'expression de $\Psi_R$ encode déjà, par construction, le nœud de déplacement en $x=L$. La quantification des fréquences provient donc, ici encore, de l'imposition de la condition à l'*autre* extrémité $x=0$ — mais cette condition porte cette fois sur la **dilatation** (nœud en $x=0$, car cette extrémité est ouverte), et non sur le déplacement.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -74,10 +83,14 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 > Le mode $n$ a exactement $n$ nœuds et $n$ ventres de dilatation, avec un nœud en $x=0$ et un ventre en $x=L$ ; les positions sont $x=L-(2m-1)\lambda_n/4$.
 
 
+
 **q1.** Justifier ce signe moins par un schéma.
+
 
 > [!tip]- 💡 Coup de pouce
 > Une extrémité fermée (paroi rigide) impose un nœud de déplacement : le déplacement doit s'annuler en $x=L$, d'où le changement de signe à la réflexion.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -90,10 +103,14 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 > On vérifie qu'en $x=L$ : $\Psi_I(L,t)=A_I e^{i(\omega t-kL)}$ et $\Psi_R(L,t)=-A_I e^{i(\omega t-kL)}$, donc $\Psi_I(L,t)+\Psi_R(L,t)=0$ à tout instant $t$ et pour toute valeur de $k$ : le nœud de déplacement en $x=L$ est bien automatiquement vérifié, quelle que soit la fréquence — exactement comme le nœud de pression en $x=L$ était automatiquement vérifié dans l'exercice 2.
 
 
+
 **q2.** Montrer que $\Psi(x,t)=2iA_I\sin(k(L-x))e^{i(\omega t-kL)}$. Justifier le nom d'onde stationnaire.
+
 
 > [!tip]- 💡 Coup de pouce
 > Même démarche qu'à l'exercice 2 : sommez $\Psi_I+\Psi_R$ et mettez le même facteur de phase en évidence.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -111,10 +128,14 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 > Comme en exercice 2, cette expression se met sous la forme $f(x)\,e^{i(\omega t+\varphi_0)}$, avec ici $f(x)=2iA_I\sin(k(L-x))$ (le facteur $i$ supplémentaire n'introduit qu'un déphasage global constant de $\pi/2$ par rapport au cas ouvert-ouvert, sans changer la nature du phénomène) : le profil spatial est figé, seule la phase temporelle oscille — l'onde est donc bien stationnaire.
 
 
+
 **q3.** La dilatation $\theta(x,t)=\Delta V/V$ vérifie $\tilde\theta=\partial\Psi/\partial x$. En déduire son expression.
+
 
 > [!tip]- 💡 Coup de pouce
 > Dérivez simplement l'expression de $\Psi(x,t)$ trouvée en 2) par rapport à $x$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -127,14 +148,20 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 > On retrouve la même structure qu'en exercice 2 (à un facteur $i$ et $\rho_0 c\,\omega \leftrightarrow k$ près selon la grandeur choisie) : le profil de la dilatation, en cosinus, est en quadrature spatiale avec celui du déplacement, en sinus.
 
 
+
 **q4.** Fréquences $f_n$ de résonance en dilatation, en fonction de $n\in\mathbb{N}^*$, $c$, $L$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Extrémité ouverte (x=0) : ventre de déplacement / nœud de pression-dilatation. Extrémité fermée (x=L) : nœud de déplacement / ventre de dilatation. C'est la configuration "quart d'onde". Comme en exercice 2, la condition en $x=L$ est déjà automatiquement vérifiée ; il reste à imposer la bonne condition en $x=0$.
 
 
+
+
 > [!success]- ✅ Correction
 > $f_n=(2n-1)\,c/(4L)$, $n\in\mathbb{N}^*$ (harmoniques impairs seulement).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -155,7 +182,9 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 > Seuls les harmoniques impairs de la fréquence $c/(4L)$ apparaissent : c'est la différence essentielle avec le tube ouvert-ouvert de l'exercice 2, où *tous* les harmoniques ($\sin(kL)=0$, condition moins restrictive que $\cos(kL)=0$) étaient permis.
 
 
+
 **q5.** Position des maxima/minima de dilatation ; représenter jusqu'à la 3e harmonique (n=4).
+
 
 > [!example]- 📝 Solution détaillée
 > **Formule générale des nœuds et ventres**
@@ -175,6 +204,8 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 >
 >
 > On retrouve la dissymétrie caractéristique de la configuration quart d'onde : chaque mode $n$ possède exactement $n$ nœuds et $n$ ventres (au lieu de $n$ ventres et $n+1$ nœuds dans le cas ouvert-ouvert), avec systématiquement un nœud en $x=0$ et un ventre en $x=L$.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -199,14 +230,21 @@ fermé en $x=L$. Déplacement réfléchi : $\Psi_R(x,t)=-A_I e^{i(\omega t-k(2L-
 > Conditions aux limites de Dirichlet (la fonction s'annule) et de Neumann (la dérivée s'annule) : le mélange des deux (Dirichlet-Neumann) donne les valeurs propres $(2n-1)\pi/(2L)$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Timbre des instruments à vent : clarinette contre flûte
 > La clarinette (anche fermant quasiment le tube côté bouche) se comporte acoustiquement comme un tube fermé-ouvert, tandis que la flûte traversière se comporte comme un tube ouvert-ouvert. On pourra expliquer pourquoi, à longueur de tube comparable, la clarinette sonne environ une octave plus grave que la flûte, et pourquoi son timbre est perçu comme plus « creux » (absence des harmoniques pairs dans le spectre théorique du tube fermé).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Facteur de qualité et pertes aux parois
 > En réalité, les couches limites visqueuse et thermique au voisinage des parois du tube dissipent de l'énergie acoustique, ce qui élargit chaque résonance autour de $f_n$ (facteur de qualité $Q_n$ fini) au lieu d'un pic infiniment fin prédit par le modèle sans pertes. On pourra établir, à partir d'un modèle d'oscillateur amorti équivalent, comment $Q_n$ dépend de la fréquence, du rayon du tube et des propriétés de transport du fluide (viscosité, diffusivité thermique).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex2-onde-stationnaire-tube-de-kundt-ouvert|Exercice 2 — Onde stationnaire, tube de Kundt ouvert]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex5-energie-intensite-acoustique-et-niveau-sonore-de-l-oreille-humaine-a-l-onde-stationnaire|Exercice 5 — Énergie, intensité acoustique et niveau sonore : de l'oreille humaine à l'onde stationnaire]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex6-tube-d-impedance-mesurer-l-absorption-d-un-materiau-avec-une-onde-stationnaire-partielle|Exercice 6 — Tube d'impédance : mesurer l'absorption d'un matériau avec une onde stationnaire partielle]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex8-transmission-a-travers-une-lame-adaptation-d-impedance-loi-de-masse-et-double-vitrage|Exercice 8 — Transmission à travers une lame : adaptation d'impédance, loi de masse et double vitrage]]
+
 

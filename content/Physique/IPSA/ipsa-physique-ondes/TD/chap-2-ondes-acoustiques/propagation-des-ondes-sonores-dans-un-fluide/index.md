@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-physique-ondes/index|⬅ Physique des ondes]]
 
+
 > [!info] ℹ️ Chap. 2 — Ondes acoustiques
 > Séance 3
 
 
+
 <a href="/pdfs/td2_PhV212_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_PhV212_enonce)</a> · <a href="/pdfs/td2_enonce.pdf" target="_blank" rel="noopener">📄 Énoncé (td2_enonce)</a> · <a href="/pdfs/td2_PhV212_aides.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_aides)</a> · <a href="/pdfs/td2_PhV212_exs_maison_aide.pdf" target="_blank" rel="noopener">📄 Aides (td2_PhV212_exs_maison_aide)</a> · <a href="/pdfs/td2_PhV212_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_PhV212_corrige)</a> · <a href="/pdfs/td2_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé (td2_corrige)</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Du chant d'une bouteille à l'échographie : un seul formalisme**
 >
 > *Durée de l'introduction : 10 min, en début de séance*
@@ -24,7 +27,9 @@ tags:
 > $$c=\sqrt{\frac{\gamma RT}M},\qquad Z=\rho_0c,\qquad R=\frac{Z_2-Z_1}{Z_1+Z_2},\qquad f_n=\frac{nc}{2L}\ \text{ou}\ \frac{(2n-1)c}{4L}.$$
 > Toutes les situations de la séance se ramènent à ces trois ingrédients, avec des habillages différents.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Les équations de l'acoustique linéaire**
 >
 > Connaître la démarche du cours : un fluide parfait au repos ($\rho_0$, $P_0$) est traversé par une petite perturbation ($p$, $\rho'$, $\vec v$) ; on linéarise l'équation d'Euler, la conservation de la masse et l'équation d'état, ce qui donne
@@ -53,7 +58,9 @@ tags:
 >
 > Nombres complexes (module, argument, conjugué), trigonométrie ($\cos$, $\sin$, formules d'Euler, formules d'addition), dérivées partielles, résolution de $\ddot\xi+\omega_0^2\xi=0$, logarithmes (décibels), systèmes linéaires $2\times2$ et développements limités.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Relier le modèle physique à une prédiction quantitative et la confronter à l'expérience**
 >
 > Savoir mener une démarche complète : choisir un modèle (isotherme ou isentropique, tube ouvert ou fermé, lame mince ou épaisse), en tirer une prédiction chiffrée, la comparer à une mesure (vitesse du son, fréquence d'une bouteille, absorption d'un matériau) et, s'il y a désaccord, remettre en cause l'hypothèse plutôt que le calcul.
@@ -74,7 +81,9 @@ tags:
 >
 > Savoir identifier, sous des habillages différents (bouteille, sonde échographique, vitre), un oscillateur masse-ressort, une adaptation d'impédance ou un résonateur $\lambda/4$, et transposer ses résultats d'une discipline à une autre (optique, électricité, mécanique).
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Fil conducteur du TD : proposition de progression**
 >
 > **À introduire en début de séance**
@@ -129,6 +138,8 @@ tags:
 >
 > À mémoriser : la pression et la vitesse (ou le déplacement) sont toujours en quadrature spatiale dans une onde stationnaire, et en quadrature temporelle (aucun flux moyen d'énergie).
 
+
+
 > [!note]- 🧮 Outils mathématiques
 > **Notation complexe et formules d'Euler**
 >
@@ -167,6 +178,7 @@ tags:
 > $c\propto\sqrt T$ ; $f_0\propto V^{-1/2}$ ; $Z_2=\sqrt{Z_1Z_3}$ : savoir faire des estimations rapides ($\sqrt\gamma=1{,}18$, $\sqrt2=1{,}41$, $\sqrt{1{,}5}=1{,}22$).
 
 
+
 ## Exercices
 
 - [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex1-celerite-d-une-onde-acoustique-dans-un-fluide-parfait|Exercice 1 — Célérité d'une onde acoustique dans un fluide parfait]]
@@ -184,6 +196,7 @@ tags:
 **S'entraîner librement** (3 question(s) liées à ce document) :
 
 <a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener">td1_qcm</a><br><a href="/qcm/physique-ondes-ipsa/?c=td1_qcm" target="_blank" rel="noopener"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjQiIGhlaWdodD0iMTY0IiBjbGFzcz0ic2Vnbm8iPjxwYXRoIHRyYW5zZm9ybT0ic2NhbGUoNCkiIGNsYXNzPSJxcmxpbmUiIHN0cm9rZT0iIzE2MzIzZiIgZD0iTTIgMi41aDdtMSAwaDRtMiAwaDNtMSAwaDJtNCAwaDJtMSAwaDFtMiAwaDdtLTM3IDFoMW01IDBoMW05IDBoM20xIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW01IDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGgxbTIgMGgzbTEgMGg1bTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgxbTEgMGgzbTEgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMSAwaDNtMiAwaDFtNCAwaDJtMyAwaDVtMiAwaDFtMSAwaDNtMSAwaDFtLTM3IDFoMW0xIDBoM20xIDBoMW0xIDBoMW00IDBoMW0xIDBoMW0yIDBoMW0yIDBoMW0xIDBoMW0yIDBoM20xIDBoMW0xIDBoM20xIDBoMW0tMzcgMWgxbTUgMGgxbTEgMGgxbTIgMGgxbTEgMGgxbTEgMGgybTEgMGgybTEgMGgybTIgMGgxbTIgMGgxbTEgMGgxbTUgMGgxbS0zNyAxaDdtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDdtLTI5IDFoNm0yIDBoM20zIDBoMm0yIDBoMW0xIDBoMW0tMjkgMWgxbTMgMGgxbTEgMGgzbTEgMGgzbTEgMGgxbTMgMGgybTIgMGgxbTEgMGgxbTQgMGg1bTIgMGgxbS0zNSAxaDFtNSAwaDFtMSAwaDVtMSAwaDJtMSAwaDNtMiAwaDFtMiAwaDJtMyAwaDRtLTM2IDFoNG0yIDBoMm0zIDBoNG0xIDBoM20xIDBoOG0xIDBoMW0xIDBoMW0yIDBoMW0tMzUgMWgxbTIgMGgybTQgMGgybTEgMGgybTMgMGgybTIgMGgxbTEgMGgybTUgMGgzbTEgMGgybS0zNiAxaDJtMiAwaDFtMSAwaDFtMSAwaDFtMiAwaDJtMiAwaDVtMSAwaDRtMiAwaDVtMiAwaDNtLTM3IDFoMW0xIDBoMW0xIDBoMm0xIDBoMW0zIDBoMW0xIDBoMW0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMm0tMzQgMWgybTEgMGgybTEgMGgxbTEgMGgxbTEgMGgybTEgMGgzbTIgMGgxbTEgMGg0bTIgMGgxMG0tMzUgMWgybTIgMGgxbTMgMGgxbTEgMGgxbTIgMGgzbTIgMGgzbTIgMGgxbTYgMGgybTEgMGgxbS0zNSAxaDJtNCAwaDFtMiAwaDNtMyAwaDJtMyAwaDFtMyAwaDFtMiAwaDVtMSAwaDRtLTM1IDFoNG0xIDBoMW0xIDBoNG00IDBoM20xIDBoM20xIDBoM20xIDBoMW0xIDBoNW0tMzYgMWgybTMgMGg1bTMgMGgzbTIgMGgybTMgMGgzbTEgMGgxbTIgMGgzbS0zMiAxaDFtMSAwaDNtMSAwaDFtMiAwaDFtMSAwaDFtMSAwaDhtNCAwaDFtMyAwaDFtMyAwaDJtLTM2IDFoMm0xIDBoNG0xIDBoMm0xIDBoMW0yIDBoMW0yIDBoMW0yIDBoM200IDBoMW0xIDBoM20yIDBoMW0tMzIgMWgxbTEgMGgxbTEgMGgybTEgMGgxbTIgMGg0bTMgMGgybTEgMGgxbTEgMGgzbTEgMGgxbTEgMGgybS0zMyAxaDJtMSAwaDJtMSAwaDJtMyAwaDFtMSAwaDNtMSAwaDFtNSAwaDJtMSAwaDJtMSAwaDFtMSAwaDRtLTMzIDFoMW0xIDBoMm00IDBoNW0xIDBoNG0yIDBoM20zIDBoMm0xIDBoMm0xIDBoMW0tMzQgMWgybTMgMGgxbTEgMGgybTEgMGg0bTMgMGgybTIgMGgxbTEgMGgxbTEgMGgxbTIgMGgybTIgMGg0bS0zNyAxaDFtMiAwaDFtMSAwaDFtNCAwaDFtMyAwaDFtMSAwaDFtMiAwaDNtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMiAwaDNtLTMzIDFoNm0xIDBoNW0yIDBoMm0yIDBoMW0yIDBoMm0xIDBoMm0zIDBoMW0xIDBoMW0tMzIgMWgxbTEgMGgxbTIgMGgybTEgMGgxbTIgMGgybTIgMGgxbTMgMGgzbTIgMGgzbTIgMGgxbTIgMGgzbS0zNyAxaDNtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDZtMSAwaDFtMSAwaDFtMiAwaDFtMyAwaDVtMSAwaDFtMSAwaDFtLTI5IDFoMm0yIDBoMm0xIDBoNG00IDBoMW0xIDBoMW0xIDBoMm0zIDBoMW0yIDBoMW0tMzYgMWg3bTEgMGgxbTEgMGgxbTQgMGgxbTIgMGgxbTIgMGg0bTMgMGgxbTEgMGgxbTEgMGgxbS0zMyAxaDFtNSAwaDFtMiAwaDFtMyAwaDFtMSAwaDJtMiAwaDNtMSAwaDJtMSAwaDFtMSAwaDFtMyAwaDNtLTM1IDFoMW0xIDBoM20xIDBoMW0xIDBoMm0yIDBoMW0yIDBoMm0yIDBoMm0yIDBoMW0xIDBoMW0yIDBoN20xIDBoMW0tMzcgMWgxbTEgMGgzbTEgMGgxbTMgMGg0bTMgMGgzbTEgMGgzbTEgMGgxbTIgMGg0bTEgMGgxbTIgMGgxbS0zNyAxaDFtMSAwaDNtMSAwaDFtMiAwaDVtMSAwaDFtMSAwaDFtMSAwaDFtMyAwaDJtMSAwaDNtMSAwaDFtMiAwaDJtLTM1IDFoMW01IDBoMW0yIDBoMW0xIDBoN20xIDBoNG0xIDBoMW0yIDBoMW0xIDBoMW0yIDBoMW0xIDBoMm0tMzYgMWg3bTEgMGgxbTEgMGgybTEgMGgxbTIgMGgybTIgMGg1bTEgMGgybTEgMGgxbTEgMGgxbTIgMGgzIi8+PC9zdmc+Cg==" width="110" height="110" alt="QR code : td1_qcm" style="image-rendering:pixelated"></a>
+
 
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Thermodynamique**
@@ -226,24 +239,39 @@ tags:
 >
 > Silencieux (chambres de Helmholtz, couches d'impédance), contrôle actif du bruit, contrôle non destructif par ultrasons (couplant, adaptation d'impédance, lame demi-onde).
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Ondes sphériques et cylindriques
 > Pour une source ponctuelle, la solution à symétrie sphérique de l'équation de d'Alembert est $p=\dfrac{f(t-r/c)}{r}$ : l'amplitude décroît en $1/r$ et l'intensité en $1/r^2$ (exercice 5, question 5). On pourra établir que $r\,p$ vérifie l'équation de d'Alembert à une dimension.
+
+
 
 > [!question]- 🔭 Aller plus loin — Licence : Absorption classique : viscosité et conduction thermique
 > Dans un fluide réel, la viscosité et la conduction thermique atténuent l'onde en $e^{-\alpha x}$ avec $\alpha\propto\omega^2$ (formule de Stokes-Kirchhoff). On pourra estimer $\alpha$ dans l'air à $10$ kHz et $1$ MHz, et comprendre pourquoi les ultrasons sont absorbés sur de courtes distances dans l'air mais se propagent très loin dans l'eau.
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Effet Doppler et onde de choc
 > Pour une source mobile à la vitesse $v_s$, $f'=f/(1-v_s/c)$ en approche. Lorsque $v_s>c$, les fronts d'onde s'accumulent sur un cône de demi-angle $\sin\theta=c/v_s$ (cône de Mach) : c'est le « bang » supersonique.
+
+
 
 > [!question]- 🔭 Aller plus loin — Master : Acoustique non linéaire
 > À forte amplitude, la célérité locale dépend de la perturbation, $c\approx c_0+\tfrac{\gamma+1}2v$ : les compressions rattrapent les détentes, le profil se raidit et forme une onde de choc (équation de Burgers). On pourra estimer la distance de formation du choc pour une onde à $140$ dB et $1$ kHz.
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Acoustique des salles : modes propres et réverbération
 > Dans une salle rectangulaire, les modes propres sont $f=\dfrac c2\sqrt{(n_x/L_x)^2+(n_y/L_y)^2+(n_z/L_z)^2}$ ; au-delà de la fréquence de Schroeder, leur densité est telle que le champ est diffus et la décroissance suit la loi de Sabine, $T_R=0{,}16\,V/A$.
+
+
 
 > [!question]- 🔭 Aller plus loin — Master : Ondes élastiques dans les solides
 > Dans un solide apparaissent des ondes longitudinales ($c_L$) et transversales ($c_T<c_L$). On pourra étendre le calcul d'impédance et de réflexion à l'interface fluide-solide, ce qui précise les hypothèses de la loi de masse (exercice 8).
 
+
+
 > [!question]- 🔭 Aller plus loin — Doctorat : Cristaux phononiques et métamatériaux acoustiques
 > Un milieu périodique (multicouche, réseau de résonateurs) possède des bandes de fréquences interdites (bandes gap), par interférences de type Bragg ou par résonances locales. On pourra les étudier avec les matrices de transfert de l'exercice 8.
+
 

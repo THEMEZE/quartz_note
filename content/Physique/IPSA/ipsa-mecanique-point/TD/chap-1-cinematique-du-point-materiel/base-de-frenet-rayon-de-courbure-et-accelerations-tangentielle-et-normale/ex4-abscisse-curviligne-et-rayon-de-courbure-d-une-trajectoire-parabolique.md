@@ -15,7 +15,8 @@ Dans le plan $Oxy$, les coordonnées d'une particule sont données en fonction d
 $$\begin{cases}x(t)=b\,t\\ y(t)=c\,t\,(t-1)\end{cases}$$
 avec $b=2$ (S.I.) et $c=4$ (S.I.).
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Une accélération constante, des composantes variables**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -25,7 +26,9 @@ avec $b=2$ (S.I.) et $c=4$ (S.I.).
 > **Idée clé : $\vec a$ est un vecteur fixe, mais $(\vec\tau,\vec n)$ tourne.** Les composantes $a_T=\vec a\cdot\vec\tau$ et $a_N=\vec a\cdot\vec n$ dépendent de l'angle entre $\vec a$ et la tangente. Au sommet, $\vec a\perp\vec v$ : $a_T=0$ et $a_N=a$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Cinématique cartésienne**
 >
 > $\vec v=(\dot x,\dot y)$, $\vec a=(\ddot x,\ddot y)$, élimination du temps pour trouver la trajectoire.
@@ -39,16 +42,22 @@ avec $b=2$ (S.I.) et $c=4$ (S.I.).
 > $s(t)=\displaystyle\int_0^t\|\vec v\|\,\mathrm dt'$, avec $\displaystyle\int\sqrt{1+u^2}\,\mathrm du=\tfrac12\left(u\sqrt{1+u^2}+\operatorname{arsinh}u\right)$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Mener un calcul complet de $a_T$, $a_N$, $R$ et $s$ à partir d'une loi horaire**
 >
 > Éliminer le temps, calculer $\vec v$, $\vec a$, leurs composantes tangentielle et normale, le rayon de courbure en un instant donné, vérifier avec la formule en $y(x)$ et calculer la longueur parcourue.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Mouvement à accélération constante**
 >
 > Si $\vec a$ est un vecteur constant, la trajectoire est une parabole (ou une droite si $\vec v(0)\parallel\vec a$). $\vec a$ est constant, mais $a_T=\vec a\cdot\vec\tau$ et $a_N=\vec a\cdot\vec n$ varient avec la direction de $\vec\tau$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -65,16 +74,22 @@ avec $b=2$ (S.I.) et $c=4$ (S.I.).
 > $F(u)=\tfrac12\left(u\sqrt{1+u^2}+\ln(u+\sqrt{1+u^2})\right)$, impaire : $\int_{-2}^0\sqrt{1+u^2}\,\mathrm du=F(2)\approx2{,}958$.
 
 
+
 **q1.** (a) Déterminer l'équation de la trajectoire et la représenter sur un graphique.
 
 (b) Calculer la vitesse $\vec v$ à l'instant $t$. Tracer $\vec v$ à $t=0$ et $t=0{,}5\ \mathrm s$ sur le graphique.
+
 
 > [!tip]- 💡 Coup de pouce
 > Éliminez $t$ entre $x(t)$ et $y(t)$ : $t=x/b$. Pour la vitesse, dérivez chaque composante. Pour le graphique : zéros de $y$, sommet.
 
 
+
+
 > [!success]- ✅ Correction
 > (a) $y=x^2-2x$ : parabole de sommet $(1;-1)$, passant par $(0;0)$ et $(2;0)$. (b) $\vec v=(2;\ 8t-4)$ ; $\vec v(0)=(2;-4)$, $\vec v(0{,}5)=(2;0)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -91,16 +106,22 @@ avec $b=2$ (S.I.) et $c=4$ (S.I.).
 > $t=0$ : $\vec v=(2;-4)$, $v=\sqrt{20}\approx4{,}47\ \mathrm{m/s}$, dirigée vers le bas à droite. $t=0{,}5$ s : $\vec v=(2;0)$, $v=2\ \mathrm{m/s}$, horizontale, vers la droite (sommet de la parabole). Sur le graphique, $\vec v$ est tangent à la trajectoire en chaque point.
 
 
+
 **q2.** (a) Montrer que le mouvement a une accélération constante, dont on calculera les composantes tangentielle et normale.
 
 (b) En déduire le rayon de courbure à $t=0{,}5\ \mathrm s$.
+
 
 > [!tip]- 💡 Coup de pouce
 > $a_T=\vec a\cdot\vec v/v$ et $a_N=\sqrt{a^2-a_T^2}$ (ou $|\vec a\wedge\vec v|/v$). Pour (d), $R=v^2/a_N$ ; comparez avec $\dfrac{(1+y'^2)^{3/2}}{|y''|}$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec a=(0;8)$ constant ; $a_T=\dfrac{8(8t-4)}{v}$, $a_N=\dfrac{16}v$ avec $v=\sqrt{4+(8t-4)^2}$. En $t=0{,}5$ : $a_T=0$, $a_N=8$ ; $R=\dfrac{v^2}{a_N}=\dfrac4{8}=0{,}5\ \mathrm m$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -121,16 +142,22 @@ avec $b=2$ (S.I.) et $c=4$ (S.I.).
 > $R=\dfrac{v^2}{a_N}=\dfrac{2^2}8=\boxed{0{,}5\ \mathrm m}$. Contrôle avec la formule des courbes $y(x)$ : au sommet $x=1$, $y'=2x-2=0$ et $y''=2$ donc $R=\dfrac{(1+0)^{3/2}}2=0{,}5\ \mathrm m$ $\surd$. Le centre de courbure est $C=S+R\,\vec n=(1;-1)+0{,}5\,\vec u_y=(1;-0{,}5)$. Au contraire, en $t=0$ : $R=\dfrac{v^2}{a_N}=\dfrac{20}{3{,}58}\approx5{,}59\ \mathrm m$ (confirmé par $\dfrac{(1+y'^2)^{3/2}}{|y''|}$ avec $y'(0)=-2$ : $\dfrac{5^{3/2}}2=5{,}59$ $\surd$).
 
 
+
 **q3.** (a) Calculer l'abscisse curviligne $s(t)$ parcourue depuis $t=0$, puis la longueur de l'arc $OP$ de $t=0$ à $t=1\ \mathrm s$. La comparer à la distance en ligne droite $OP$.
 
 (b) Vérifier que, de $t=0$ à $t=0{,}5\ \mathrm s$, $s$ est bien l'aire sous la courbe $v(t)$ (intégrale).
+
 
 > [!tip]- 💡 Coup de pouce
 > $s(t)=\int_0^tv\,\mathrm dt'$ avec $v=2\sqrt{1+u^2}$, $u=4t'-2$, $\mathrm dt'=\mathrm du/4$ : primitive de $\sqrt{1+u^2}$.
 
 
+
+
 > [!success]- ✅ Correction
 > $s(0{,}5)\approx1{,}48\ \mathrm m$ ; arc $OP$ : $\approx2{,}96\ \mathrm m$, à comparer à $OP=2\ \mathrm m$ ; l'arc est $48\ \%$ plus long que la corde.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -145,6 +172,8 @@ avec $b=2$ (S.I.) et $c=4$ (S.I.).
 > $s(t)$ est l'aire sous la courbe $v(t)$ : $v(0)=4{,}47$, $v(0{,}5)=2$, $v(1)=4{,}47\ \mathrm{m/s}$ ; la formule des trapèzes sur $[0;0{,}5]$ donne $\dfrac{4{,}47+2}2\times0{,}5\approx1{,}62$, proche de $1{,}48$ ; la courbe $v(t)$ est convexe, la formule des trapèzes surestime légèrement l'aire $\surd$.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Mécanique du vol et balistique**
 >
@@ -155,14 +184,21 @@ avec $b=2$ (S.I.) et $c=4$ (S.I.).
 > Longueur d'un arc de parabole : intégrale de $\sqrt{1+u^2}$, qui fait apparaître l'argument sinus hyperbolique.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Centre de courbure et vérification numérique
 > Calculer le centre de courbure à $t=0{,}5$ s : $C=(1;-1)+0{,}5\,\vec u_y=(1;-0{,}5)$. Vérifier avec Python (\texttt{np.gradient}) que $R(t)$ calculé numériquement coïncide avec $R=\dfrac{(4+(8t-4)^2)^{3/2}}{16}$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Mouvement uniforme sur la même parabole
 > Comparer ce mouvement (accélération constante, vitesse variable) à un mouvement sur la même parabole à vitesse constante $v_0=2\ \mathrm{m/s}$ (exercice 2) : l'accélération au sommet est la même ($8\ \mathrm{m\,s^{-2}}$) ; l'accélération en $x=0$ est différente. Écrire la loi horaire $s(t)=v_0t$ puis $x(t)$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex1-base-de-frenet-demonstrations-de-cours-et-applications|Exercice 1 — Base de Frenet : démonstrations de cours et applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex5-cycloide-point-d-une-roue-qui-roule-sans-glisser|Exercice 5 — Cycloïde : point d'une roue qui roule sans glisser]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex6-raccordement-routier-en-clothoide-courbure-variable-et-jerk|Exercice 6 — Raccordement routier en clothoïde (courbure variable et « jerk »)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex2-mouvement-curviligne-uniforme-cercle-parabole-applications|Exercice 2 — Mouvement curviligne uniforme : cercle, parabole, applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex3-circuit-de-monaco-courbure-et-acceleration-a-vitesse-constante|Exercice 3 — Circuit de Monaco : courbure et accélération à vitesse constante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex7-cercle-d-adherence-freiner-et-tourner-en-meme-temps|Exercice 7 — Cercle d'adhérence : freiner et tourner en même temps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex8-tir-parabolique-vu-dans-la-base-de-frenet|Exercice 8 — Tir parabolique vu dans la base de Frenet]]
+
 

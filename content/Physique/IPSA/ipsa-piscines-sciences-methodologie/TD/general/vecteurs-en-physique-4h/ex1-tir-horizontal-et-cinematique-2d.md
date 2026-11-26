@@ -15,19 +15,24 @@ On étudie le mouvement à deux dimensions d'un projectile lancé horizontalemen
 
 <p style="text-align:center"><a href="/figures/td4_ex1_phv110_enonce.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_phv110_enonce.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Vecteur position, vitesse et accélération**
 >
 > Connaître les définitions différentielles $\vec{v} = \frac{\mathrm{d}\vec{OM}}{\mathrm{d}t}$ et $\vec{a} = \frac{\mathrm{d}\vec{v}}{\mathrm{d}t}$, ainsi que l'approximation par taux de variation sur des intervalles finis : $\vec{v}_k \approx \frac{\vec{M_{k-1}M_{k+1}}}{2\tau}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Calculs vectoriels et cinématiques**
 >
 > Savoir déterminer graphiquement et analytiquement les composantes des vecteurs position, vitesse et accélération pour un mouvement parabolique plane.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Tir projectile dans un champ uniforme**
 >
 > Pour un tir horizontal sans frottement :
@@ -36,10 +41,13 @@ On étudie le mouvement à deux dimensions d'un projectile lancé horizontalemen
 > L'accélération est constante : $\vec{a} = -g \vec{u}_y$.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Choix de l'intervalle d'approximation**
 >
 > Pour calculer le vecteur vitesse au point $M_k$, utilise la différence de position entre les points $M_{k-1}$ et $M_{k+1}$ sur un intervalle de temps $\Delta t = 2\tau$.
+
 
 
 **Construction de vecteurs.**  (graphique page suivante)
@@ -48,6 +56,7 @@ On étudie le mouvement à deux dimensions d'un projectile lancé horizontalemen
 **1.**
 
   **a)** Tracer le vecteur position $\overrightarrow{OM}(t)$ aux instants $t_2$ ; $t_5$ et $t_7$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Expressions des vecteurs position**
@@ -60,7 +69,9 @@ On étudie le mouvement à deux dimensions d'un projectile lancé horizontalemen
 > <p style="text-align:center"><a href="/figures/td4_ex1_1a_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_1a_phv110.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **b)** Exprimer le vecteur déplacement $\Delta\overrightarrow{OM}{(t_{5\to7})}$ entre les instants $t_5$ et $t_7$, puis le tracer. À l’aide de l’échelle fournie, mesurer puis donner la norme de ce vecteur en taille réelle.
+
 
 > [!example]- 📝 Solution détaillée
 > **Vecteur déplacement**
@@ -77,11 +88,13 @@ On étudie le mouvement à deux dimensions d'un projectile lancé horizontalemen
 > <p style="text-align:center"><a href="/figures/td4_ex1_1b_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_1b_phv110.svg" alt="Déplacement du point matériel entre les positions $M_5$ et $M_7$." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **c)** Rappeler la définition du vecteur vitesse $\vec{v}(t)$ à partir du vecteur déplacement $\Delta\overrightarrow{OM}$ et de la durée $\Delta t$.
 Déterminer le vecteur vitesse à l’instant $t_6$, calculer sa norme, puis le tracer en utilisant l’échelle prévue pour les vitesses.
 Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 
-> [!warning] ⚠️ Attention
+
+> [!warning] ⚠️ Points de vigilance
 > **Vecteur vitesse en $t_6$**
 >
 > Dans le TD 3, nous avons utilisé la définition approchée du vecteur vitesse :
@@ -94,6 +107,8 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > $$\vec{v}(t_i)=\lim_{\Delta t\to 0}\frac{\Delta\overrightarrow{OM}}{\Delta t}.$$
 >
 > La raison pour laquelle la différence centrée permet généralement une meilleure approximation sera étudiée plus précisément en mathématiques à l’aide des développements limités.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Pourquoi la différence centrée est-elle plus précise ?
@@ -116,6 +131,8 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 >
 > En conservant les termes suivants du développement limité, on montre que l’erreur de la différence centrée est en fait de l’ordre de $h^2$, contre une erreur de l’ordre de $h$ pour la différence vers l’avant.
 > La différence centrée fournit donc une approximation plus précise de la dérivée lorsque $h$ est petit.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -167,7 +184,9 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > <p style="text-align:center"><a href="/figures/td4_ex1_1c2_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_1c2_phv110.svg" alt="$\vec{v}(t_6)$" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **d)** Procéder de la même manière pour déterminer et tracer les vecteurs vitesses $\vec{v}(t)$ aux instants $t_8$ et $t_{10}$. Par lecture graphique, déterminer les composantes des vecteurs $\vec{v}(t_8)$ et $\vec{v}(t_{10})$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Vecteurs vitesse $\vec{v}(t_8)$ et $\vec{v}(t_{10})$
@@ -220,7 +239,9 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > <p style="text-align:center"><a href="/figures/td4_ex1_1d2_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_1d2_phv110.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **e)** Donner l'expression approchée de l'accélération $\vec{a}_9$ au point $M_9$ et préciser sa valeur S.I.
+
 
 > [!example]- 📝 Solution détaillée
 > **Accélération en t9**
@@ -241,12 +262,14 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > <p style="text-align:center"><a href="/figures/td4_ex1_1e_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_1e_phv110.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
 **Construction de vecteurs.**  (graphique page suivante)
 
 
 **2.**
 
   **a)** Compléter le tableau des valeurs cinématiques avec un pas de temps $\tau = 0{,}05\text{ s}$ et une échelle de $0{,}20\text{ m}$ par graduation.
+
 
 > [!example]- 📝 Solution détaillée
 > **Tableau de mesures**
@@ -270,7 +293,9 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > %* $t = 0{,}30\text{ s}$ : $x = 0{,}60\text{ m}$, $v_x = 2{,}0\text{ m/s}$, $y = -0{,}441\text{ m}$, $v_y = -2{,}94\text{ m/s}$
 
 
+
   **b)** Écrire le vecteur position $\vec{OM}(t)$ sous forme cartésienne aux instants $t_5 = 0{,}25\text{ s}$, $t_7 = 0{,}35\text{ s}$ et $t_9 = 0{,}45\text{ s}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Vecteurs position calculés**
@@ -284,7 +309,9 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > %* $\vec{OM}(t_9) = 0{,}90 \vec{u}_x - 0{,}993 \vec{u}_y\text{ (m)}$
 
 
+
   **c)** Dériver analytiquement les positions pour obtenir $v_x(t)$ et $v_y(t)$, puis évaluer aux instants $t_6 = 0{,}30\text{ s}$ et $t_8 = 0{,}40\text{ s}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Vitesses analytiques**
@@ -299,7 +326,9 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > %* En $t_8 = 0{,}40\text{ s}$ : $v_x = 2{,}0\text{ m/s}$, $v_y = -3{,}92\text{ m/s}$.
 
 
+
   **d)** Déduire le vecteur accélération analytique $\vec{a}(t_7)$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Accélération analytique**
@@ -311,12 +340,14 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > %$$\vec{a}(t_7) = -9{,}81 \vec{u}_y\text{ m}\cdot\text{s}^{-2}$$
 
 
+
 **Application.** 
 
 
 **3.**
 
   **a)** Une bille lâchée sans vitesse initiale et une bille lancée horizontalement de la même hauteur touchent-elles le sol en même temps ?
+
 
 > [!example]- 📝 Solution détaillée
 > **Indépendance des mouvements**
@@ -347,6 +378,7 @@ Par lecture graphique, déterminer les composantes du vecteur $\vec{v}_6$.
 > <p style="text-align:center"><a href="/figures/td4_ex1_3a_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_3a_phv110.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **b)** On considère deux billes A et B, de même masse, dans un champ de pesanteur uniforme. À l'instant initial, la bille B est immobile et se trouve à 2 m horizontalement et 2 m verticalement de la bille A. La bille A est lancée avec une vitesse initiale dirigée vers la position initiale de B.
 
 On néglige les frottements de l'air.
@@ -367,6 +399,7 @@ On néglige les frottements de l'air.
     Expliquer ce qui change lorsque la norme de la vitesse initiale varie.
 
 <p style="text-align:center"><a href="/figures/td4_ex1_3b_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_3b_phv110.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
 
 > [!example]- 📝 Solution détaillée
 > **Collision de deux billes : indépendance et mouvement relatif**
@@ -423,9 +456,11 @@ On néglige les frottements de l'air.
 >     La hauteur d'impact varie donc avec la vitesse initiale. La direction de lancement, elle, est essentielle : si la vitesse n'est pas dirigée vers la position initiale de B, les billes ne se rencontrent pas dans ce modèle.
 
 
+
   **c)** Calculer la durée de la trajectoire et la portée d'un tir horizontal effectué depuis une falaise de hauteur $h = 20\text{ m}$ à $v_0 = 15\text{ m/s}$.
 
 <p style="text-align:center"><a href="/figures/td4_ex1_3c_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex1_3c_phv110.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
 
 > [!example]- 📝 Solution détaillée
 > **Calcul de portée et durée**
@@ -446,6 +481,9 @@ On néglige les frottements de l'air.
 > On eut aussi fixer $x_0$ à 0.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Frottements fluides
 > Étude de la déviation de la trajectoire parabolique en présence d'une force de frottement quadratique $\vec{f} = -k v \vec{v}$.
+
 

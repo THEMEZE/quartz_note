@@ -22,12 +22,17 @@ l'applique à des situations réelles (voiture, satellite, voltige aérienne).
 
 (c) Représenter la trajectoire sur un graphique et préciser, en différents points, la vitesse, l'accélération et la base de Frenet.
 
+
 > [!tip]- 💡 Coup de pouce
 > Pour (a), pensez à $R$, $\omega$, $T$, $f$, $v$, $a$. Pour (b), identifiez $\vec\tau$ et $\vec n$ dans la base polaire.
 
 
+
+
 > [!success]- ✅ Correction
 > (a) $R$, $\omega=\dot\theta$, $T=2\pi/\omega$, $f=1/T$, $v=R\omega$, $a=R\omega^2=v^2/R$, $s=R\theta=R\omega t$. (b) $\vec\tau=\vec u_\theta$, $\vec n=-\vec u_r$, $\vec v=R\omega\,\vec\tau$, $\vec a=\dfrac{v^2}R\,\vec n$. (c) $\vec v$ tangent, $\vec a$ vers le centre.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -46,6 +51,7 @@ l'applique à des situations réelles (voiture, satellite, voltige aérienne).
 > On dessine le cercle de centre $O$ et on place, aux points $\theta=0,\ \pi/2,\ \pi,\ 3\pi/2$, le vecteur $\vec v$ tangent au cercle (dans le sens trigonométrique pour $\omega>0$), le vecteur $\vec a$ dirigé de $M$ vers $O$ (même direction que $\vec n$), $\vec\tau$ et $\vec n$ unitaires. Les vecteurs $\vec v$ et $\vec a$ ont **même norme en tout point** ($R\omega$ et $R\omega^2$) mais **changent de direction**. Le centre de courbure est $O$ pour tous les points.
 
 
+
 **q2.** **2/ Mouvement parabolique.** Le point $M$ décrit la parabole d'équation $y(x)=kx^2$ avec $k=1\ \mathrm{m^{-1}}$, à vitesse $v$ de norme constante.
 
 
@@ -55,12 +61,17 @@ l'applique à des situations réelles (voiture, satellite, voltige aérienne).
 
 (c) Tracer sur la trajectoire les cercles osculateurs correspondant aux points $x=0$ et $x=1\ \mathrm m$, et représenter le vecteur accélération $\vec a$ en ces points.
 
+
 > [!tip]- 💡 Coup de pouce
 > Utilisez $R=\dfrac{(1+y'^2)^{3/2}}{|y''|}$ avec $y'=2kx$ et $y''=2k$. Puis $a=v^2/R$, dirigée selon $\vec n$ (vers le haut, côté concave). Pour le centre : $C=M+R\,\vec n$.
 
 
+
+
 > [!success]- ✅ Correction
 > $R(x)=\dfrac{(1+4k^2x^2)^{3/2}}{2k}$ ; $R(0)=0{,}5$ m, $a(0)=2v^2$ (vertical vers le haut) ; $R(1)=\dfrac{5\sqrt5}2\approx5{,}59$ m, $a(1)=\dfrac{2v^2}{5\sqrt5}\approx0{,}179\,v^2$, dirigée selon $\vec n=\dfrac{(-2,1)}{\sqrt5}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -83,6 +94,7 @@ l'applique à des situations réelles (voiture, satellite, voltige aérienne).
 > Pour $x=0$ : cercle de rayon $0{,}5$ centré en $(0;0{,}5)$ : il est tangent à la parabole en $O$ et reste **à l'intérieur** d'elle près du sommet (la parabole s'élargit plus vite que le cercle). Pour $x=1$ : centre $C_1=M+R\,\vec n=(1;1)+\dfrac{5\sqrt5}2\cdot\dfrac{(-2,1)}{\sqrt5}=(-4;\ 3{,}5)$ et rayon $5{,}59\ \mathrm m$ : un grand cercle de faible courbure. Le vecteur $\vec a$ est porté par la droite $MC$ en chaque point, dirigé vers le centre : court en $x=1$, long en $x=0$.
 
 
+
 **q3.** **3/ (*) Applications.**
 
 
@@ -92,12 +104,17 @@ l'applique à des situations réelles (voiture, satellite, voltige aérienne).
 
 (c) La figure de couverture représente les voltiges d'avions acrobatiques. Représenter sur la figure les cercles osculateurs des trajectoires des trois avions aux points où se trouvent les trois avions.
 
+
 > [!tip]- 💡 Coup de pouce
 > (a) $a=v^2/R$ avec $v$ en $\mathrm{m/s}$. (b) $r=R_T+h$ puis $v=2\pi r/T$ avec $T$ en secondes. (c) Pour chaque avion : tangent à la trajectoire, centre du côté concave.
 
 
+
+
 > [!success]- ✅ Correction
 > (a) $a=4\ \mathrm{m\,s^{-2}}\approx0{,}41\,g$. (b) $r=7{,}01\times10^6\ \mathrm m$, $v=\dfrac{2\pi r}T\approx7{,}49\ \mathrm{km/s}$, $a=\dfrac{v^2}r\approx8{,}0\ \mathrm{m\,s^{-2}}$. (c) Construction géométrique.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -116,6 +133,9 @@ l'applique à des situations réelles (voiture, satellite, voltige aérienne).
 > Pour chaque avion : (1) tracer la tangente à la trajectoire à la position de l'avion ; (2) tracer la normale, du côté **concave** de la trajectoire ; (3) estimer le rayon en cherchant le cercle qui « colle » à la trajectoire sur un petit arc autour du point ; (4) tracer ce cercle. Un avion au sommet d'une boucle a un cercle osculateur dont le centre est **en dessous** ; un avion en bas de boucle a un centre **au-dessus** ; un avion sur un tronçon presque rectiligne a un très grand rayon (cercle presque une droite). Plus la trajectoire est serrée, plus le rayon est petit et plus le pilote subit une forte accélération $v^2/R$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex1-base-de-frenet-demonstrations-de-cours-et-applications|Exercice 1 — Base de Frenet : démonstrations de cours et applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex3-circuit-de-monaco-courbure-et-acceleration-a-vitesse-constante|Exercice 3 — Circuit de Monaco : courbure et accélération à vitesse constante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex4-abscisse-curviligne-et-rayon-de-courbure-d-une-trajectoire-parabolique|Exercice 4 — Abscisse curviligne et rayon de courbure d'une trajectoire parabolique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex5-cycloide-point-d-une-roue-qui-roule-sans-glisser|Exercice 5 — Cycloïde : point d'une roue qui roule sans glisser]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex6-raccordement-routier-en-clothoide-courbure-variable-et-jerk|Exercice 6 — Raccordement routier en clothoïde (courbure variable et « jerk »)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex7-cercle-d-adherence-freiner-et-tourner-en-meme-temps|Exercice 7 — Cercle d'adhérence : freiner et tourner en même temps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex8-tir-parabolique-vu-dans-la-base-de-frenet|Exercice 8 — Tir parabolique vu dans la base de Frenet]]
+
 

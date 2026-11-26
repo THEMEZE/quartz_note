@@ -15,19 +15,24 @@ Un four à micro-ondes est une cavité métallique dans laquelle une onde élect
 
 La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence indiquée sur l'étiquette du four, on obtient la vitesse de la lumière $c=\lambda f$ à quelques pourcents près.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Notions**
 >
 > Ondes stationnaires (nœuds, ventres, espacement $\lambda/2$), $c=\lambda f$, TD1 exercices 4 et 5.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **De la mesure d'une distance à une vitesse**
 >
 > Comprendre pourquoi $d=\lambda/2$, calculer $c$ avec une incertitude, comparer avec la valeur de référence $c=2{,}998\times10^{8}\ \text{m}\cdot\text{s}^{-1}$.
 
 
-> [!note]+ 🧰 Matériel
+
+
+> [!note]- 🧰 Matériel nécessaire
 > Four à micro-ondes (fréquence indiquée sur l'étiquette au dos ou dans la notice, en général $2450\ \text{MHz}$)
 >
 > Grande tablette de chocolat (au moins $20\ \text{cm}\times15\ \text{cm}$), ou guimauves alignées, ou tranches de fromage à raclette
@@ -35,6 +40,8 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 > Assiette en verre ou en céramique sans dorure, verre d'eau de $100\ \text{mL}$
 >
 > Règle graduée au millimètre, smartphone pour photographier
+
+
 
 
 > [!danger] 🦺 Sécurité
@@ -51,7 +58,9 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 > Le chocolat fondu peut être très chaud : attendre $30$ s avant de retirer le support (avec un gant).
 
 
-> [!note]+ 🔬 Manipulation
+
+
+> [!note]- 🔬 Manipulation
 > **1. Immobiliser le plateau**
 >
 > Retirer le plateau tournant et son support, retourner un bol en verre au fond du four pour poser l'assiette. Le chocolat ne doit pas tourner pendant le chauffage.
@@ -65,12 +74,16 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 > Retirer rapidement l'assiette. Marquer le centre de chaque tache fondue, placer une règle le long de la ligne joignant les taches et mesurer la distance entre le premier et le dernier centre pour $N$ intervalles. Photographier avec la règle.
 
 
+
 **q1.** Justifier que les taches fondues sont espacées de $\lambda/2$ et non de $\lambda$. On rappelle que la puissance absorbée est proportionnelle à $E^2$ et que $E(x,t)=E_0\sin(kx)\cos(\omega t)$.
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > La puissance moyenne absorbée est proportionnelle à $E_0^2\sin^2(kx)$, maximale en chaque ventre, c'est-à-dire tous les $\dfrac{\lambda}{2}$ ($kx=\dfrac{\pi}{2}+p\pi$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -79,7 +92,9 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 > $\langle E^2\rangle\propto\sin^2(kx)$ est maximale pour $kx=\dfrac{\pi}{2}+p\pi$, soit $x=\dfrac{\lambda}{4}+p\dfrac{\lambda}{2}$. Deux ventres consécutifs sont séparés par $\dfrac{\lambda}{2}$ (idem pour les nœuds, TD1 exercice 4). Comme $\sin^2$ a une période spatiale $\lambda/2$, les taches de chauffage ont une période $\lambda/2$ même si le champ a une période $\lambda$.
 
 
+
 **q2.** Calculer $\lambda$ puis $c$ pour les données de l'énoncé, et l'incertitude (on supposera $\Delta f=\pm25\ \text{MHz}$). Comparer avec $c=2{,}998\times10^{8}\ \text{m/s}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Moyenne sur $N$ intervalles**
@@ -87,10 +102,14 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 > $d=\dfrac{D_{\text{tot}}}{N}$ et l'incertitude sur $D_{\text{tot}}$ (deux pointés de $\pm3\ \text{mm}$) est divisée par $N$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $d=\dfrac{24{,}4}{4}=6{,}10\ \text{cm}$, $\lambda=12{,}2\ \text{cm}$, $c=\lambda f=0{,}122\times2{,}45\times10^{9}=2{,}99\times10^{8}\ \text{m/s}$. Incertitude : $\dfrac{\Delta D}{D}=\dfrac{6}{244}=2{,}5\ \%$ (somme absolue) et $\dfrac{\Delta f}{f}=1{,}0\ \%$, donc $\dfrac{\Delta c}{c}=3{,}5\ \%$ soit $\pm1{,}0\times10^{7}$ : $c=(2{,}99\pm0{,}10)\times10^{8}\ \text{m/s}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -101,12 +120,16 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 > Utiliser un plus grand nombre $N$ d'intervalles diminue l'incertitude sur $d$ ; l'incertitude sur $f$ devient alors dominante.
 
 
+
 **q3.** Critique. (a) Pourquoi retirer le plateau tournant ? (b) Pourquoi mesurer sur plusieurs intervalles ? (c) La fréquence d'un four est-elle exactement $2450\ \text{MHz}$ ? (d) La cavité est tridimensionnelle : que peut-on dire de la disposition des taches ? (e) Pourquoi les taches sont-elles plus larges que ponctuelles ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (a) Le plateau déplace l'aliment dans l'onde et efface le motif. (b) Réduire l'incertitude. (c) Non : la fréquence de $2450\ \text{MHz}$ est nominale ; un magnétron réel dérive de quelques dizaines de MHz. (d) Le motif est 2D ou 3D (plusieurs modes), on ne mesure sur une seule ligne qu'en première approximation. (e) La conduction de la chaleur dans le chocolat étale la tache.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -116,12 +139,16 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 > (d) Les ondes se réfléchissent sur les six parois : le champ est la superposition de nombreux modes de la cavité. On mesure l'espacement le long de la direction où les taches sont les plus alignées. (e) Le chocolat conduit la chaleur, donc la tache s'étend d'un demi-centimètre autour du ventre : c'est pourquoi on pointe les centres.
 
 
+
 **q4.** Aviation. Calculer la longueur d'onde (a) de la fréquence d'urgence $121{,}5\ \text{MHz}$, (b) du radar météo de bord en bande X ($9{,}4\ \text{GHz}$), (c) du GPS L1 ($1575{,}42\ \text{MHz}$). Quelle est la longueur d'une antenne quart d'onde pour (a) ? Les gouttes de pluie ($1$ à $5\ \text{mm}$) sont-elles petites ou grandes devant $\lambda$ pour (b) ? Quelle loi de diffusion en résulte (cf. TP A4) ?
+
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (a) $\lambda=\dfrac{c}{f}=2{,}47\ \text{m}$ et $\dfrac{\lambda}{4}=0{,}62\ \text{m}$. (b) $\lambda=3{,}2\ \text{cm}$. (c) $\lambda=19{,}0\ \text{cm}$. Pour (b), les gouttes sont petites devant $\lambda$ : diffusion de Rayleigh, dont l'intensité varie en $D^6/\lambda^4$ ($D$ diamètre de la goutte).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -131,20 +158,29 @@ La distance entre deux taches consécutives est $\lambda/2$. Avec la fréquence 
 > Pour le radar météo, les gouttes ($1$–$5\ \text{mm}$) sont petites devant $3{,}2\ \text{cm}$ : c'est le régime de Rayleigh, avec une réflectivité radar proportionnelle à $D^6$ : les grosses gouttes (grêle, forte pluie) renvoient très fortement l'énergie et sont détectées de loin. Les gouttes de nuage ($\approx10\ \mu\text{m}$) sont pratiquement invisibles. C'est le même phénomène que la diffusion du ciel bleu (TP A4), avec une longueur d'onde $10^{4}$ fois plus grande.
 
 
-> [!note]- ✈️ Lien avec l'aviation
+
+
+> [!example]- ✈️ Application à l'aviation
 > **Antennes, radars et longueurs d'onde**
 >
 > La taille d'une antenne est liée à la longueur d'onde. Fréquence d'urgence aviation $121{,}5\ \text{MHz}$ : $\lambda=2{,}47\ \text{m}$, antenne quart d'onde $\approx62\ \text{cm}$ (les petites antennes « lame » sur le fuselage). Radar météo de bord (bande X, $9{,}4\ \text{GHz}$) : $\lambda=3{,}2\ \text{cm}$. GPS L1 ($1575{,}42\ \text{MHz}$) : $\lambda=19\ \text{cm}$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Modes de la cavité
 > Une cavité parallélépipédique de côtés $a$, $b$, $h$ admet des modes $(m,n,p)$ de fréquence $f=\dfrac{c}{2}\sqrt{\left(\dfrac{m}{a}\right)^2+\left(\dfrac{n}{b}\right)^2+\left(\dfrac{p}{h}\right)^2}$. Pour un four réel, plusieurs modes sont excités : on ne voit pas une onde stationnaire unique, d'où les taches irrégulières.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Pourquoi 2,45 GHz ?
 > La fréquence est dans la bande ISM (industrielle, scientifique, médicale). L'absorption par l'eau liquide est importante à cette fréquence sans être maximale ; elle permet de chauffer en profondeur de l'ordre de quelques centimètres.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex6-experience-de-melde-oscillations-forcees-d-une-corde-resonance|Exercice 6 — Expérience de Melde, oscillations forcées d'une corde, résonance]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex15-corde-amortie-attenuation-facteur-de-qualite-et-resonance-de-melde|Exercice 15 — Corde amortie : atténuation, facteur de qualité et résonance de Melde]]
+
 

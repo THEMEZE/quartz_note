@@ -23,7 +23,8 @@ incidence normale. Elle donne naissance à une onde réfléchie dans le fluide
 (1) et à une onde transmise dans le fluide (2) :
 $$\tilde p_R(x,t) = R\,A\,e^{i(\omega t+k_1x)}, \qquad \tilde p_T(x,t) = T\,A\,e^{i(\omega t-k_2x)}, \qquad k_2=\omega/c_2.$$
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi n'entend-on presque rien depuis sous l'eau ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -35,19 +36,25 @@ $$\tilde p_R(x,t) = R\,A\,e^{i(\omega t+k_1x)}, \qquad \tilde p_T(x,t) = T\,A\,e
 > Air-eau : $Z_2/Z_1\approx3700$, donc $T_I\approx10^{-3}$ : $99{,}9\ \%$ de l'énergie est réfléchie. Le coefficient $R$ change de signe si l'onde va de l'eau vers l'air (déphasage de $\pi$), mais $R_I$ et $T_I$ restent les mêmes dans les deux sens.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Notion d'impédance acoustique**
 >
 > Pour une onde plane progressive dans un fluide donné, la pression et la vitesse particulaire sont reliées, en tout point et à tout instant, par une relation de proportionnalité : $\tilde p = \pm Z\,\tilde v_x$ (signe $+$ pour une onde se propageant vers les $x$ croissants, signe $-$ pour les $x$ décroissants), où $Z=\rho c$ est l'impédance acoustique caractéristique du milieu. Cette relation, analogue à la loi d'Ohm en électrocinétique ($U=RI$), permet de traiter les problèmes de raccordement d'ondes à une interface de façon très systématique.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Traiter un problème de raccordement à une interface**
 >
 > Savoir écrire les conditions de continuité physiquement pertinentes à une interface fluide-fluide (continuité de la pression et de la vitesse normale), les combiner pour obtenir des coefficients de réflexion et de transmission, et interpréter physiquement un résultat en le comparant à un cas limite connu (interface avec un mur rigide, ou avec le vide).
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Continuité à une interface acoustique et coefficients de Fresnel acoustiques**
 >
 > À l'interface entre deux fluides parfaits, deux conditions physiques doivent être satisfaites à tout instant en $x=0$ :
@@ -63,6 +70,8 @@ $$\tilde p_R(x,t) = R\,A\,e^{i(\omega t+k_1x)}, \qquad \tilde p_T(x,t) = T\,A\,e
 > $$\boxed{R = \frac{Z_2-Z_1}{Z_1+Z_2}}, \qquad \boxed{T = \frac{2Z_2}{Z_1+Z_2}}.$$
 >
 > Ces expressions sont formellement identiques aux coefficients de Fresnel de l'optique en incidence normale (avec l'impédance jouant le rôle de l'indice optique, à l'inverse près), ce qui illustre l'universalité des phénomènes de réflexion/transmission pour toute équation de propagation de type d'Alembert.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -95,6 +104,7 @@ $$\tilde p_R(x,t) = R\,A\,e^{i(\omega t+k_1x)}, \qquad \tilde p_T(x,t) = T\,A\,e
 > En incidence oblique, $\dfrac{\sin\theta_1}{c_1}=\dfrac{\sin\theta_2}{c_2}$ ; si $c_2>c_1$, il existe un angle critique $\theta_c=\arcsin(c_1/c_2)$ au-delà duquel l'onde est totalement réfléchie.
 
 
+
 **q1.** Définir l'impédance acoustique caractéristique $Z=\rho c$ d'un fluide et
 donner son interprétation physique (on pourra s'appuyer sur l'analogie
 avec l'impédance électrique). Écrire, en notation complexe, les
@@ -102,8 +112,11 @@ expressions de la vitesse particulaire associée à chacune des trois
 ondes (incidente, réfléchie, transmise) en fonction de la pression et
 des impédances $Z_1$, $Z_2$.
 
+
 > [!tip]- 💡 Coup de pouce
 > Pour une onde plane progressive $\tilde p = A e^{i(\omega t \mp kx)}$, l'équation d'Euler linéarisée $\rho_0\partial_t \tilde v = -\partial_x \tilde p$ donne directement $\tilde v = \pm \tilde p /Z$ selon le sens de propagation (cf. point cours de l'exercice 1 pour l'équation d'Euler linéarisée).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -120,16 +133,22 @@ des impédances $Z_1$, $Z_2$.
 > - Onde transmise, dans le fluide (2), se propageant vers $+x$ : $\tilde v_T = \tilde p_T/Z_2$.
 
 
+
 **q2.** En écrivant la continuité de la pression et de la vitesse particulaire
 en $x=0$, établir les expressions des coefficients de réflexion $R$ et
 de transmission $T$ en amplitude de pression, en fonction de $Z_1$ et $Z_2$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Deux équations, deux inconnues ($R$ et $T$) : substituez l'une dans l'autre (cf. les deux équations déjà posées dans le point cours).
 
 
+
+
 > [!success]- ✅ Correction
 > $R = (Z_2-Z_1)/(Z_1+Z_2)$ ; $T = 2Z_2/(Z_1+Z_2)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -151,6 +170,7 @@ de transmission $T$ en amplitude de pression, en fonction de $Z_1$ et $Z_2$.
 > On retrouve exactement les expressions rappelées dans le point cours, ici entièrement redémontrées à partir des deux conditions de continuité.
 
 
+
 **q3.** Application numérique : calculer $R$, $T$, et les coefficients
 énergétiques $R_I$ et $T_I$ pour une onde issue de l'air
 ($\rho_1=1{,}2\text{ kg}\cdot\text{m}^{-3}$, $c_1=340\text{ m}\cdot\text{s}^{-1}$)
@@ -158,12 +178,17 @@ incidente sur une surface d'eau
 ($\rho_2=1000\text{ kg}\cdot\text{m}^{-3}$, $c_2=1500\text{ m}\cdot\text{s}^{-1}$).
 Commenter en lien avec l'expérience quotidienne.
 
+
 > [!tip]- 💡 Coup de pouce
 > Calculez d'abord $Z_1$ et $Z_2$ séparément, en gardant les unités SI.
 
 
+
+
 > [!success]- ✅ Correction
 > $Z_1\approx 408$ ; $Z_2 = 1{,}5\times10^6$ (SI) ; $T_I\approx 1{,}1\times10^{-3}$ : moins de 0,2 % de l'énergie sonore incidente est transmise dans l'eau -- ce qui explique qu'un son émis dans l'air soit très fortement atténué en pénétrant sous la surface.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -186,17 +211,23 @@ Commenter en lien avec l'expérience quotidienne.
 > On vérifie $R_I+T_I\approx 0{,}999+0{,}0011\approx 1$ (conservation de l'énergie). Ainsi, environ $99{,}9\%$ de l'énergie acoustique incidente est réfléchie, et seulement environ $0{,}1\%$ est transmise dans l'eau. C'est cette valeur extrêmement faible de $T_I$ qui explique l'expérience quotidienne : un son émis dans l'air est presque totalement réfléchi à la surface de l'eau, ce qui rend très difficile d'entendre, depuis sous l'eau, un son provenant de l'air (et réciproquement).
 
 
+
 **q4.** On envoie maintenant l'onde depuis l'eau vers l'air (mêmes fluides
 qu'en question 3, ordre inversé). Recalculer $R$ et commenter le signe
 obtenu. Ce résultat est-il cohérent avec le principe de retour inverse
 de la lumière (ici, du son) ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Échangez les rôles de $Z_1$ et $Z_2$ dans l'expression de $R$ établie en question 2.
 
 
+
+
 > [!success]- ✅ Correction
 > $R$ change de signe (devient positif) mais $|R|$ et $T_I$ restent inchangés : la fraction d'énergie réfléchie/transmise ne dépend pas du sens de propagation, seul le signe (la phase) du coefficient de réflexion en amplitude change.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -213,6 +244,8 @@ de la lumière (ici, du son) ?
 > **Compatibilité avec la réciprocité acoustique**
 >
 > On vérifie que les grandeurs *énergétiques* sont bien invariantes par échange des deux milieux : $R_I' = (R')^2 = R^2 = R_I$ et $T_I' = \dfrac{4Z_1'Z_2'}{(Z_1'+Z_2')^2} = \dfrac{4Z_2Z_1}{(Z_2+Z_1)^2} = T_I$ (l'expression est manifestement symétrique en $Z_1\leftrightarrow Z_2$). Ce résultat est bien cohérent avec un principe de réciprocité : la fraction d'énergie réfléchie ou transmise à une interface ne dépend que du contraste d'impédance $|Z_2-Z_1|/(Z_1+Z_2)$, indépendamment du sens de propagation de l'onde. Seule la phase (le signe) du coefficient de réflexion en amplitude distingue les deux sens de propagation, exactement comme en optique où le module du coefficient de Fresnel est identique dans les deux sens, mais son signe (son déphasage) dépend du sens de traversée de l'interface.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -237,14 +270,21 @@ de la lumière (ici, du son) ?
 > Un mur lourd et rigide a une impédance très supérieure à celle de l'air : l'essentiel de l'énergie est réfléchie. Les doubles vitrages exploitent la même idée avec des couches d'air d'impédance très différente.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Incidence oblique et angle critique
 > En incidence oblique (angle $\theta_1$ par rapport à la normale), la continuité de la phase le long de l'interface impose une relation de Snell-Descartes acoustique, $\dfrac{\sin\theta_1}{c_1}=\dfrac{\sin\theta_2}{c_2}$. Lorsque $c_2>c_1$, il existe un angle critique $\theta_c=\arcsin(c_1/c_2)$ au-delà duquel l'onde transmise devient évanescente (réflexion totale) : ce phénomène est à la base de la propagation guidée du son dans certains canaux sous-marins (canal SOFAR) exploités en acoustique sous-marine.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Doctorat : Interfaces multiples et adaptation d'impédance
 > Pour une lame de fluide (ou de solide) d'épaisseur finie insérée entre les deux milieux, on peut chercher à choisir son impédance et son épaisseur (couche « quart d'onde ») de façon à annuler la réflexion à une fréquence donnée : c'est le principe des traitements antireflets acoustiques ou optiques, et plus généralement de l'adaptation d'impédance utilisée en instrumentation ultrasonore médicale (gel de couplage entre la sonde et la peau).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex5-energie-intensite-acoustique-et-niveau-sonore-de-l-oreille-humaine-a-l-onde-stationnaire|Exercice 5 — Énergie, intensité acoustique et niveau sonore : de l'oreille humaine à l'onde stationnaire]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex6-tube-d-impedance-mesurer-l-absorption-d-un-materiau-avec-une-onde-stationnaire-partielle|Exercice 6 — Tube d'impédance : mesurer l'absorption d'un matériau avec une onde stationnaire partielle]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex7-resonateur-de-helmholtz-la-bouteille-qui-chante|Exercice 7 — Résonateur de Helmholtz : la bouteille qui chante]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex8-transmission-a-travers-une-lame-adaptation-d-impedance-loi-de-masse-et-double-vitrage|Exercice 8 — Transmission à travers une lame : adaptation d'impédance, loi de masse et double vitrage]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex1-celerite-d-une-onde-acoustique-dans-un-fluide-parfait|Exercice 1 — Célérité d'une onde acoustique dans un fluide parfait]]
+
 

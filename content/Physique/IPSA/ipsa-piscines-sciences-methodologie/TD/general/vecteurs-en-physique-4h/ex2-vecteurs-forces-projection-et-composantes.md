@@ -13,22 +13,29 @@ tags:
 
 On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumise à deux forces $\vec{F}_1$ et $\vec{F}_2$ contenues dans le plan $(Oxy)$. L'axe $(Ox)$ est horizontal vers la droite et $(Oy)$ vertical vers le haut.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Projections cartésiennes et coordonnées polaires**
 >
 > Savoir projeter un vecteur connaissant son module et son angle par rapport aux axes cartésiens ($F_x = F \cos\theta$, $F_y = F \sin\theta$).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Addition vectorielle et 2e loi de Newton**
 >
 > Calculer la résultante de forces projetées et en déduire l'accélération subie par un point matériel.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Seconde loi de Newton**
 >
 > Dans un référentiel galiléen, la somme des forces appliquées à un point matériel de masse $m$ est égale à sa masse multipliée par son accélération : $\sum \vec{F} = m\vec{a}$.
+
+
 
 
 > [!tip]- 💡 Coup de pouce
@@ -37,9 +44,11 @@ On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumi
 > Utilise la trigonométrie de base sur le triangle rectangle formé par les composantes de $\vec{F}_2$.
 
 
+
 **1.**
 
   **a)** Préciser les caractéristiques graphiques des forces $\vec{F}_1 = 3\vec{u}_x - 1\vec{u}_y\text{ (N)}$ et $\vec{F}_2$ (norme $3\text{ N}$, inclinée de $60^\circ$ au-dessus de $Ox$).
+
 
 > [!example]- 📝 Solution détaillée
 > **Caractéristiques des forces**
@@ -50,7 +59,9 @@ On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumi
 > <p style="text-align:center"><a href="/figures/td4_ex2_a_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex2_a_phv110.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **b)** Calculer l'intensité de $\vec{F}_1$ ainsi que les composantes cartésiennes de $\vec{F}_2$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Calculs de normes et composantes**
@@ -63,7 +74,9 @@ On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumi
 > Soit $\vec{F}_2 = 1{,}50\vec{u}_x + 2{,}60\vec{u}_y\text{ (N)}$.
 
 
+
   **c)** Décrire la méthode de construction géométrique de la force résultante $\vec{F}_{\text{res}} = \vec{F}_1 + \vec{F}_2$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Somme géométrique**
@@ -73,7 +86,9 @@ On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumi
 > <p style="text-align:center"><a href="/figures/td4_ex2_b_phv110.svg" target="_blank" rel="noopener"><img src="/figures/td4_ex2_b_phv110.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
 
+
   **d)** Déterminer les composantes cartésiennes et polaires (norme et angle) de $\vec{F}_{\text{res}}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résultante des forces**
@@ -86,7 +101,9 @@ On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumi
 > $$\theta = \arctan\left(\frac{1{,}60}{4{,}50}\right) \approx 19{,}58^\circ$$
 
 
+
   **e)** Si la particule a une masse $m = 370\text{ g}$, déterminer l'accélération subie $\vec{a}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Calcul de l'accélération**
@@ -97,6 +114,9 @@ On considère une particule située au point $M(1\text{ cm}; 1\text{ cm})$ soumi
 > Norme globale : $\|\vec{a}\| = \frac{4{,}78}{0{,}370} \approx 12{,}92\text{ m}\cdot\text{s}^{-2}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Changement de base de projection
 > Exprimer la résultante des forces dans une base inclinée d'un angle $\alpha$ par rapport à la base d'origine.
+
 

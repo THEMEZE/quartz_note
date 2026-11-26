@@ -24,7 +24,8 @@ Données : air ($\rho=1{,}2~\text{kg}\cdot\text{m}^{-3}$, $c=340~\text{m}\cdot\t
 ($\rho=1900~\text{kg}\cdot\text{m}^{-3}$, $c=1700~\text{m}\cdot\text{s}^{-1}$), vase
 ($\rho=1400~\text{kg}\cdot\text{m}^{-3}$, $c=1450~\text{m}\cdot\text{s}^{-1}$).
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi n'entend-on presque rien de ce qui se dit au-dessus de l'eau quand on est sous l'eau ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -34,7 +35,9 @@ Données : air ($\rho=1{,}2~\text{kg}\cdot\text{m}^{-3}$, $c=340~\text{m}\cdot\t
 > **Idée clé : la composante tangentielle $k_y=k\sin\theta$ est conservée à l'interface.** Elle impose $\dfrac{\sin\theta_1}{c_1}=\dfrac{\sin\theta_2}{c_2}$. De l'air ($340$ m/s) vers l'eau ($1500$ m/s), $\sin\theta_2=4{,}4\sin\theta_1$ : le son ne peut entrer dans l'eau que si $\theta_1<\theta_c=13^\circ$. Dans l'autre sens, $\sin\theta_2=0{,}23\sin\theta_1$ : tout le son qui sort de l'eau est concentré dans un cône de $13^\circ$ autour de la verticale. L'impédance, elle, devient $Z/\cos\theta$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Interface en incidence normale (TD2, exercice 4 ; exercice 2 du TD3)**
 >
 > Connaître les conditions de continuité de $p$ et de $v_x$, la relation $\tilde p=\pm Z\tilde v$ pour une onde plane progressive, les coefficients $R=\dfrac{Z_2-Z_1}{Z_1+Z_2}$ et $T=1+R$ en amplitude de pression, et les coefficients énergétiques.
@@ -48,18 +51,24 @@ Données : air ($\rho=1{,}2~\text{kg}\cdot\text{m}^{-3}$, $c=340~\text{m}\cdot\t
 > Racine carrée d'un réel négatif ($\sqrt{-a}=\pm i\sqrt a$), module et argument d'un quotient $\dfrac{a+ib}{a-ib}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Étendre le raccord à l'incidence oblique et comprendre l'origine géométrique de Snell-Descartes**
 >
 > Savoir démontrer les lois de la réflexion et de la réfraction à partir de la continuité des phases le long de l'interface, calculer les coefficients $R(\theta_1)$ et $T(\theta_1)$ à l'aide d'une impédance apparente $Z/\cos\theta$, déterminer l'existence et la valeur d'un angle critique, et interpréter la réflexion totale par une onde évanescente qui ne transporte pas d'énergie.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Conservation de la composante tangentielle du vecteur d'onde**
 >
 > L'interface étant invariante par translation selon $y$ et $t$, les conditions de raccord, valables en tout point de l'interface et à tout instant, imposent que la dépendance en $y$ et en $t$ soit la même pour les trois ondes : $k_y$ et $\omega$ sont conservés. C'est ce principe général (et non une construction géométrique) qui donne :
 > $$\theta_1'=\theta_1,\qquad\frac{\sin\theta_1}{c_1}=\frac{\sin\theta_2}{c_2}\ \ (\text{Snell-Descartes}).$$
 > Les coefficients de Fresnel acoustiques s'obtiennent alors en écrivant la continuité de la pression et de la vitesse normale, avec $v_x=\pm p\cos\theta/Z$ : tout se passe comme en incidence normale en remplaçant l'impédance $Z$ par l'impédance apparente $Z/\cos\theta$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -88,15 +97,21 @@ Données : air ($\rho=1{,}2~\text{kg}\cdot\text{m}^{-3}$, $c=340~\text{m}\cdot\t
 > $\arcsin(340/1500)=13{,}1^\circ$ ; $\arcsin(1500/1700)=61{,}9^\circ$ ; profondeur de pénétration d'une onde évanescente $\delta=1/\kappa=\lambda_1/\big(2\pi\sqrt{\sin^2\theta_1-\sin^2\theta_c}\big)$.
 
 
+
 **q1.** En écrivant la continuité de $p$ en $x=0$ pour tout $y$ et tout $t$, retrouver les lois de la réflexion
 et de la réfraction de Snell-Descartes. Quelle grandeur physique est conservée à la traversée de l'interface ?
+
 
 > [!tip]- 💡 Coup de pouce
 > En $x=0$, les trois ondes s'écrivent $e^{i\omega t}e^{-ik_1y\sin\theta_1}$, $Re^{i\omega t}e^{-ik_1y\sin\theta_1'}$ et $Te^{i\omega t}e^{-ik_2y\sin\theta_2}$ : une somme d'exponentielles de $y$ ne peut être égale à une autre que si les dépendances en $y$ coïncident.
 
 
+
+
 > [!success]- ✅ Correction
 > $\theta_1'=\theta_1$ ; $k_1\sin\theta_1=k_2\sin\theta_2$, soit $\sin\theta_1/c_1=\sin\theta_2/c_2$ ; la composante tangentielle $k_y$ du vecteur d'onde est conservée.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -107,16 +122,22 @@ et de la réfraction de Snell-Descartes. Quelle grandeur physique est conservée
 > La grandeur conservée est la composante $k_y$ du vecteur d'onde parallèle à l'interface (équivalente à la conservation de la longueur d'onde apparente $\lambda_y=2\pi/k_y$ le long de l'interface). Les lois de Snell-Descartes en sont la conséquence directe, sans aucune hypothèse géométrique supplémentaire.
 
 
+
 **q2.** Écrire la continuité de la pression et de la composante normale de la vitesse en $x=0$ et en déduire
 $R(\theta_1)$ et $T(\theta_1)$. Montrer que tout se passe comme en incidence normale avec des impédances apparentes.
 Vérifier le cas $\theta_1=0$.
+
 
 > [!tip]- 💡 Coup de pouce
 > $v_x=(p/Z)\cos\theta$ pour l'onde incidente et pour l'onde transmise, mais $v_x=-(p/Z)\cos\theta_1$ pour l'onde réfléchie (elle se propage vers $-x$).
 
 
+
+
 > [!success]- ✅ Correction
 > $R=\dfrac{Z_2\cos\theta_1-Z_1\cos\theta_2}{Z_2\cos\theta_1+Z_1\cos\theta_2}$ ; $T=1+R=\dfrac{2Z_2\cos\theta_1}{Z_2\cos\theta_1+Z_1\cos\theta_2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -131,11 +152,15 @@ Vérifier le cas $\theta_1=0$.
 > Avec $Z_i^{\mathrm{app}}=Z_i/\cos\theta_i$ : $R=\dfrac{Z_2^{\mathrm{app}}-Z_1^{\mathrm{app}}}{Z_2^{\mathrm{app}}+Z_1^{\mathrm{app}}}$, c'est exactement la formule de l'incidence normale. Pour $\theta_1=0$, $\theta_2=0$ et on retrouve $R=\dfrac{Z_2-Z_1}{Z_1+Z_2}$, $T=\dfrac{2Z_2}{Z_1+Z_2}$ (TD2, exercice 4).
 
 
+
 **q3.** Le flux d'énergie normal à l'interface d'une onde plane est $I_x=\langle p\,v_x\rangle$. Établir
 $R_E=|R|^2$ et $T_E=|T|^2\dfrac{Z_1\cos\theta_2}{Z_2\cos\theta_1}$ (quand $\theta_2$ est réel) et montrer que $R_E+T_E=1$.
 
+
 > [!tip]- 💡 Coup de pouce
 > Posez $a=Z_2\cos\theta_1$ et $b=Z_1\cos\theta_2$ ; alors $R=\dfrac{a-b}{a+b}$, $T=\dfrac{2a}{a+b}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -148,16 +173,22 @@ $R_E=|R|^2$ et $T_E=|T|^2\dfrac{Z_1\cos\theta_2}{Z_2\cos\theta_1}$ (quand $\thet
 > La conservation de l'énergie est ainsi vérifiée avec le bon facteur $\cos\theta/Z$ du flux normal.
 
 
+
 **q4.** Existe-t-il un angle critique pour le passage air $\to$ eau ? eau $\to$ air ? eau $\to$ sable ? Calculer-le quand il existe.
 Pour un son qui sort de l'eau, dans quel cône émerge-t-il dans l'air ? Quelle fraction de l'espace
 (demi-sphère) de l'air est concernée pour l'entrée dans l'eau ?
+
 
 > [!tip]- 💡 Coup de pouce
 > $\sin\theta_2=(c_2/c_1)\sin\theta_1\leq1$ impose $\sin\theta_1\le c_1/c_2$ : il faut $c_2>c_1$. La fraction de demi-sphère contenue dans un cône d'angle $\theta_c$ est $1-\cos\theta_c$.
 
 
+
+
 > [!success]- ✅ Correction
 > Air $\to$ eau : $\theta_c=13{,}1^\circ$ ; eau $\to$ air : aucun ; eau $\to$ sable : $\theta_c=61{,}9^\circ$ ; cône d'émergence de $13{,}1^\circ$ ; fraction $\approx2{,}6\ \%$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -175,16 +206,22 @@ Pour un son qui sort de l'eau, dans quel cône émerge-t-il dans l'air ? Quelle 
 > Pour l'entrée dans l'eau depuis une source aérienne, seule la fraction $1-\cos13{,}1^\circ=1-0{,}974\approx2{,}6\ \%$ de la demi-sphère des directions d'incidence conduit à une transmission : toutes les autres sont totalement réfléchies. S'ajoute à cela le désaccord d'impédance (exercice 2) : un plongeur entend très mal les sons aériens, sauf ceux qui arrivent à peu près de la verticale.
 
 
+
 **q5.** Eau $\to$ sable, avec $\theta_1>\theta_c$. Montrer que $\cos\theta_2$ est imaginaire pur, que $|R|=1$, et exprimer
 la phase $\varphi$ de $R$. Montrer que l'onde dans le sable est évanescente, calculer sa profondeur de pénétration
 $\delta$ puis que sa puissance moyenne normale est nulle. Applications numériques pour $\theta_1=75^\circ$ et $f=1$ kHz.
+
 
 > [!tip]- 💡 Coup de pouce
 > Posez $n=c_2/c_1$ ; $\cos^2\theta_2=1-n^2\sin^2\theta_1<0$. On choisit $\cos\theta_2=-i\beta$ ($\beta>0$) pour que l'onde décroisse avec $x$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\beta=0{,}445$ ; $|R|=1$, $\varphi\approx77^\circ$ ; $\kappa=1{,}6$ rad/m, $\delta\approx0{,}6$ m ; $\langle p\,v_x\rangle=0$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -207,15 +244,21 @@ $\delta$ puis que sa puissance moyenne normale est nulle. Applications numériqu
 > L'équation d'Euler donne $i\omega\rho_2v_x=-\partial_xp_T=\kappa p_T$, soit $v_x=-i\kappa p_T/(\omega\rho_2)$ : $p_T$ et $v_x$ sont en quadrature et $\langle p_Tv_x\rangle=\tfrac12\operatorname{Re}(p_Tv_x^{*})=0$. L'onde évanescente est pilotée par l'interface mais ne transporte aucune énergie vers l'intérieur du sable ; toute la puissance incidente est renvoyée, cohérent avec $|R|=1$.
 
 
+
 **q6.** Interface air $\to$ eau. Calculer $T_E$ en incidence normale puis pour $\theta_1=10^\circ$. Commenter
 (comparer à l'exercice 2 du TD3 et au cône de la question 4).
+
 
 > [!tip]- 💡 Coup de pouce
 > $Z_1=1{,}2\times340=408$ rayl, $Z_2=1{,}5\times10^6$ rayl ; $T_E=4ab/(a+b)^2$ avec $a=Z_2\cos\theta_1$ et $b=Z_1\cos\theta_2$.
 
 
+
+
 > [!success]- ✅ Correction
 > $T_E(0^\circ)=1{,}09\times10^{-3}$ ; $T_E(10^\circ)=7{,}1\times10^{-4}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -229,17 +272,23 @@ $\delta$ puis que sa puissance moyenne normale est nulle. Applications numériqu
 > La transmission décroît quand l'incidence augmente et s'annule à $\theta_c=13{,}1^\circ$ ($\cos\theta_2=0$, donc $b=0$ et $T_E=0$). Le son qui descend de l'air vers l'eau passe donc très mal, et seulement dans un cône étroit.
 
 
+
 **q7.** *Angle d'intromission.* Montrer que $R=0$ pour un angle $\theta_B$ tel que
 $\sin^2\theta_B=\dfrac{Z_2^2-Z_1^2}{Z_2^2-n^2Z_1^2}$ ($n=c_2/c_1$). Pour quelles combinaisons
 $(\rho_2/\rho_1,\ c_2/c_1)$ cet angle existe-t-il ? L'angle existe-t-il pour l'interface air $\to$ eau ? Calculer $\theta_B$ pour
 l'interface eau $\to$ vase et vérifier numériquement que $R=0$.
 
+
 > [!tip]- 💡 Coup de pouce
 > $R=0\Leftrightarrow Z_2\cos\theta_1=Z_1\cos\theta_2$. Élevez au carré et utilisez $\cos^2\theta_2=1-n^2\sin^2\theta_1$. Notez que $Z_2^2-n^2Z_1^2=c_2^2(\rho_2^2-\rho_1^2)$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\theta_B\approx74^\circ$ (eau $\to$ vase) ; il faut $\rho_2>\rho_1$ et $c_2<c_1$ (ou l'inverse avec $Z_2<Z_1$) ; pas d'angle de Brewster pour air $\to$ eau.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -257,6 +306,8 @@ l'interface eau $\to$ vase et vérifier numériquement que $R=0$.
 > $Z_1=1{,}5\times10^6$, $Z_2=1400\times1450=2{,}03\times10^6$, $n=0{,}967$ :
 > $$\sin^2\theta_B=\frac{4{,}12-2{,}25}{4{,}12-2{,}10}=\frac{1{,}871}{2{,}018}=0{,}927\ \Rightarrow\ \theta_B\approx74^\circ.$$
 > Vérification : $\cos\theta_1=0{,}270$, $\sin\theta_2=0{,}967\times0{,}963=0{,}931$, $\cos\theta_2=0{,}366$ ; $a=Z_2\cos\theta_1=5{,}49\times10^5$ et $b=Z_1\cos\theta_2=5{,}49\times10^5$ : $a=b$ donc $R=0$ et la transmission est totale à cet angle, bien que l'impédance soit différente. C'est l'analogue acoustique de l'angle de Brewster.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -281,18 +332,27 @@ l'interface eau $\to$ vase et vérifier numériquement que $R=0$.
 > La réflexion totale avec onde évanescente est analogue à la réflexion d'une particule sur une barrière de potentiel haute ($E<V$) : l'onde pénètre sur une longueur $1/\kappa$ sans transporter de courant.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Ondes de surface et guide d'onde
 > Une couche de fluide entre deux milieux plus rapides piège les rayons dont l'incidence dépasse l'angle critique : c'est le guide d'onde (canal SOFAR, fibre optique). La condition de réflexion avec déphasage $\varphi(\theta)$ établie en question 5, associée à la condition d'aller-retour $2k_1h\cos\theta-\varphi_1-\varphi_2=2\pi m$, donne les modes du guide.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Solide : conversion de mode et angles critiques multiples
 > Pour un solide, deux angles critiques apparaissent (ondes longitudinales et transversales) et le raccord impose la continuité des contraintes tangentielles. On pourra examiner comment les valeurs de $\theta_c^L$ et $\theta_c^T$ pour l'interface eau-aluminium sont utilisées en contrôle non destructif pour générer des ondes de surface (ondes de Rayleigh).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Effet tunnel frustré
 > Si une lame fine du milieu (1) est interposée à nouveau derrière le milieu (2), l'onde évanescente peut ``traverser'' la lame et une partie de l'énergie est transmise malgré la réflexion « totale » : c'est l'analogue acoustique et optique de l'effet tunnel quantique (voir exercice 11 du chapitre 1 pour la lame).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex2-interface-entre-deux-milieux-notion-d-impedance-acoustique|Exercice 2 — Interface entre deux milieux, notion d'impédance acoustique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex5-sismique-refraction-ondes-coniques-et-epaisseur-d-une-couche|Exercice 5 — Sismique réfraction : ondes coniques et épaisseur d'une couche]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex6-controle-ultrasonore-d-une-plaque-immergee-train-d-echos-epaisseur-attenuation-et-defaut-de-collage|Exercice 6 — Contrôle ultrasonore d'une plaque immergée : train d'échos, épaisseur, atténuation et défaut de collage]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex3-perle-sur-une-corde-jonction-massive-filtre-passe-bas-puis-passe-bande|Exercice 3 — Perle sur une corde : jonction massive, filtre passe-bas puis passe-bande]]
+
 

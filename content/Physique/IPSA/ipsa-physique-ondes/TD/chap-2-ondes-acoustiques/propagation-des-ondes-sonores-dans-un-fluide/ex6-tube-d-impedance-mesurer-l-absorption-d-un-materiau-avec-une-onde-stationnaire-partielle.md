@@ -20,7 +20,8 @@ Un microphone-sonde mobile mesure l'amplitude $|\tilde p|$ en fonction de la dis
 On relève : $|\tilde p|_{\max}/|\tilde p|_{\min}=3$ et le premier minimum, le plus proche de l'échantillon,
 est situé à $d_1=4{,}25$ cm.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi les studios sont-ils tapissés de mousse ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -30,7 +31,9 @@ est situé à $d_1=4{,}25$ cm.
 > **Idée clé : mesurer la somme de l'onde incidente et de l'onde réfléchie révèle l'onde réfléchie.** On a $|\tilde p|^2=A^2\big(1+|R|^2+2|R|\cos(2kx+\varphi)\big)$ : la *profondeur* de modulation donne $|R|$, la *position* des minima donne $\varphi$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Ondes stationnaires et réflexion (exercices 2, 3 et 4)**
 >
 > Savoir qu'une onde stationnaire est une superposition d'ondes incidente et réfléchie, que l'extrémité d'un tube ouvert correspond à $R=-1$ (nœud de pression) et celle d'un tube fermé par une paroi rigide à $R=+1$ (ventre de pression), et que la réflexion à une interface est décrite par $R=(Z_2-Z_1)/(Z_1+Z_2)$.
@@ -44,7 +47,9 @@ est situé à $d_1=4{,}25$ cm.
 > Module, argument, conjugué ; $|a+b|^2=|a|^2+|b|^2+2\operatorname{Re}(ab^{*})$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Passer d'une mesure à un coefficient complexe**
 >
 > Savoir interpréter un relevé expérimental (rapport maximum/minimum et position d'un minimum) pour en déduire le module et la phase d'un coefficient de réflexion complexe, puis l'impédance et le coefficient d'absorption d'un matériau.
@@ -52,12 +57,16 @@ est situé à $d_1=4{,}25$ cm.
 > Savoir interpréter une onde stationnaire *partielle* comme la somme d'une onde progressive et d'une onde stationnaire pure, et situer les cas limites (paroi rigide, extrémité ouverte, matériau adapté).
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Onde stationnaire partielle et rapport d'ondes stationnaires**
 >
 > Lorsque $|R|<1$, l'onde réfléchie est plus faible que l'onde incidente : la somme n'est ni une onde progressive pure ($R=0$) ni une onde stationnaire pure ($|R|=1$). Le signal $|\tilde p|(x)$ présente des ventres de pression d'amplitude $A(1+|R|)$ et des minima non nuls $A(1-|R|)$, périodiques de période $\lambda/2$. On appelle **rapport d'ondes stationnaires** (ROS, ou TOS) $s=p_{\max}/p_{\min}\in[1,\infty[$.
 >
 > La position des minima donne la phase de $R$ : c'est l'information qui distingue deux matériaux de même absorption mais de comportements réactifs différents (masse ou raideur).
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -78,11 +87,15 @@ est situé à $d_1=4{,}25$ cm.
 > $H=\dfrac{e^{-ikx_2}+Re^{ikx_2}}{e^{-ikx_1}+Re^{ikx_1}}$ est linéaire en $R$ : on isole $R$ sans difficulté (question 6).
 
 
+
 **q1.** Montrer que $|\tilde p(x)|^2=A^2\big(1+|R|^2+2|R|\cos(2kx+\varphi)\big)$ et que le signal total se décompose
 en une onde progressive et une onde stationnaire pure dont on précisera les amplitudes.
 
+
 > [!tip]- 💡 Coup de pouce
 > Écrivez $|a+b|^2=(a+b)(a+b)^{*}$. Pour la décomposition, écrivez $R=|R|e^{i\varphi}$ et séparez $1=(1-|R|)+|R|$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -97,15 +110,21 @@ en une onde progressive et une onde stationnaire pure dont on précisera les amp
 > Le premier terme est une onde progressive d'amplitude $A(1-|R|)$, qui transporte l'énergie vers l'échantillon (pour $|R|<1$) ; le second est une onde stationnaire pure d'amplitude de ventre $2A|R|$, qui ne transporte aucune énergie en moyenne (cf. exercice 5).
 
 
+
 **q2.** Définir le rapport d'ondes stationnaires $s=p_{\max}/p_{\min}$ et l'exprimer en fonction de
 $|R|$. En déduire $|R|(s)$. Que valent $s$ pour $|R|=0$ et $|R|=1$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > Maximum et minimum du cosinus : $\pm1$, donc $|\tilde p|_{\max/\min}=A\sqrt{1+|R|^2\pm2|R|}$.
 
 
+
+
 > [!success]- ✅ Correction
 > $s=\dfrac{1+|R|}{1-|R|}$, $|R|=\dfrac{s-1}{s+1}$ ; $s=1$ pour $R=0$, $s\to\infty$ pour $|R|=1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -116,15 +135,21 @@ $|R|$. En déduire $|R|(s)$. Que valent $s$ pour $|R|=0$ et $|R|=1$ ?
 > Le rapport $s$ ne dépend pas de l'amplitude $A$ incidente (qui dépend du haut-parleur) : c'est ce qui en fait une grandeur de mesure robuste. Pour $|R|=0$ (onde progressive pure), $s=1$ : le signal est plat. Pour $|R|=1$ (onde stationnaire pure), $p_{\min}=0$ et $s\to\infty$.
 
 
+
 **q3.** Montrer que les minima de $|\tilde p|$ sont aux distances $d_m=\dfrac{\varphi+\pi}{2k}+m\dfrac\lambda2$.
 En déduire $\varphi$ en fonction de $d_1$ et $k$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Dans la formule de la question 1, remplacez $x$ par $-d$ ; le minimum est atteint quand le cosinus vaut $-1$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\varphi=2kd_1-\pi$ (modulo $2\pi$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -134,16 +159,22 @@ En déduire $\varphi$ en fonction de $d_1$ et $k$.
 > $$\boxed{\varphi=2kd_1-\pi}.$$
 
 
+
 **q4.** Application numérique : calculer $\lambda$, $|R|$, $\varphi$ et $R$. En déduire le coefficient
 d'absorption $\alpha=1-|R|^2$ puis l'impédance de l'échantillon $Z_s=\tilde p(0)/\tilde v(0)$,
 en fonction de $Z_0$. Cet échantillon se comporte-t-il comme une masse ou comme un ressort ?
+
 
 > [!tip]- 💡 Coup de pouce
 > $\tilde v(x)=(A/Z_0)\big(e^{-ikx}-Re^{ikx}\big)e^{i\omega t}$ (onde réfléchie : signe moins). Pour la fraction complexe, multipliez par le conjugué du dénominateur.
 
 
+
+
 > [!success]- ✅ Correction
 > $\lambda=0{,}34$ m ; $|R|=0{,}5$ ; $\varphi\approx-\pi/2$ ; $R=-0{,}5i$ ; $\alpha=0{,}75$ ; $Z_s=Z_0(0{,}6-0{,}8i)$ : comportement de type raideur (ressort).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -160,12 +191,16 @@ en fonction de $Z_0$. Cet échantillon se comporte-t-il comme une masse ou comme
 > La partie réelle positive ($0{,}6$) traduit la dissipation. Avec la convention $e^{+i\omega t}$, un ressort de raideur $K$ a pour impédance $K/(i\omega)=-iK/\omega$ (partie imaginaire négative) et une masse $i\omega m$ (partie imaginaire positive) : l'échantillon se comporte ici comme un ressort amorti (matériau poreux devant une cavité d'air, par exemple).
 
 
+
 **q5.** Retrouver, avec ce formalisme, les cas limites : paroi rigide, extrémité ouverte idéale, matériau
 parfaitement adapté. Pour chacun, donner $Z_s$, $R$, $s$ et la position du premier minimum.
 Faire le lien avec les exercices 2 et 3.
 
+
 > [!success]- ✅ Correction
 > Paroi rigide : $Z_s\to\infty$, $R=1$, $d_1=\lambda/4$. Extrémité ouverte : $Z_s=0$, $R=-1$, $d_1=\lambda/2$ ($\equiv0$). Adapté : $Z_s=Z_0$, $R=0$, $s=1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -176,6 +211,7 @@ Faire le lien avec les exercices 2 et 3.
 > - **Matériau adapté** : $Z_s=Z_0$, $R=0$, $s=1$ : plus aucune onde réfléchie, onde progressive pure, $\alpha=1$. C'est l'objectif d'un traitement anéchoïque (cf. exercice 8).
 
 
+
 **q6.** Pour mesurer $R$ sur toute une bande de fréquences, on utilise deux microphones fixes en $x_1$ et
 $x_2$ ($x_1-x_2=\sigma>0$). On mesure la fonction de transfert complexe
 $H=\tilde p(x_2)/\tilde p(x_1)$. Exprimer $R$ en fonction de $H$, $k$, $x_1$, $x_2$.
@@ -183,12 +219,17 @@ Pourquoi la méthode échoue-t-elle quand $k\sigma=\pi$ ? En déduire la fréque
 d'utilisation pour $\sigma=5$ cm. Pourquoi le tube de rayon $a=2$ cm impose-t-il aussi une limite
 haute (on admettra que la propagation est plane si $f<1{,}84\,c/(2\pi a)$) ?
 
+
 > [!tip]- 💡 Coup de pouce
 > $H$ est une fonction affine de $R$ : écrivez $H\,\tilde p(x_1)=\tilde p(x_2)$ et isolez $R$.
 
 
+
+
 > [!success]- ✅ Correction
 > $R=\dfrac{He^{-ikx_1}-e^{-ikx_2}}{e^{ikx_2}-He^{ikx_1}}$ ; $f<c/(2\sigma)=3{,}4$ kHz ; $f<1{,}84c/(2\pi a)\approx5$ kHz.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -199,6 +240,8 @@ haute (on admettra que la propagation est plane si $f<1{,}84\,c/(2\pi a)$) ?
 > **Conditions d'application**
 >
 > Si $k\sigma=\pi$, alors $e^{-ikx_2}=e^{-ik x_1}e^{ik\sigma}=-e^{-ikx_1}$ et de même $e^{ikx_2}=-e^{ikx_1}$ : donc $\tilde p(x_2)=-\tilde p(x_1)$ quelle que soit la valeur de $R$, et $H=-1$ ne contient plus aucune information : le dénominateur s'annule. Il faut $\sigma<\lambda/2$, soit $f<c/(2\sigma)=340/0{,}1=3{,}4$ kHz (en pratique on se limite à $0{,}45\lambda$). Pour le tube, l'hypothèse d'onde plane suppose que seul le mode de pression uniforme sur la section se propage : au-delà de $f_c=1{,}84\,c/(2\pi a)=1{,}84\times340/(2\pi\times0{,}02)\approx5$ kHz, des modes transverses apparaissent et la décomposition en deux ondes planes n'est plus valable.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -219,14 +262,21 @@ haute (on admettra que la propagation est plane si $f<1{,}84\,c/(2\pi a)$) ?
 > Le tube d'impédance sert à caractériser les matériaux d'adaptation et les absorbeurs de sondes ultrasonores, et les prothèses auditives.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Méthode normalisée à deux microphones
 > La norme ISO 10534-2 remplace le microphone mobile par deux microphones fixes, ce qui permet de mesurer $R(f)$ sur toute une bande de fréquences d'un seul coup à partir de la fonction de transfert entre les deux signaux (question 6).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Diagramme de Smith
 > Le coefficient de réflexion complexe $R$ et l'impédance normalisée $Z_s/Z_0$ sont reliés par une transformation homographique : c'est l'abaque de Smith, outil standard des ingénieurs en hyperfréquences, qui s'applique mot pour mot ici.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex2-onde-stationnaire-tube-de-kundt-ouvert|Exercice 2 — Onde stationnaire, tube de Kundt ouvert]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex3-onde-stationnaire-tube-de-kundt-ferme-a-faire-a-la-maison|Exercice 3 — Onde stationnaire, tube de Kundt fermé (à faire à la maison)]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex5-energie-intensite-acoustique-et-niveau-sonore-de-l-oreille-humaine-a-l-onde-stationnaire|Exercice 5 — Énergie, intensité acoustique et niveau sonore : de l'oreille humaine à l'onde stationnaire]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex8-transmission-a-travers-une-lame-adaptation-d-impedance-loi-de-masse-et-double-vitrage|Exercice 8 — Transmission à travers une lame : adaptation d'impédance, loi de masse et double vitrage]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex4-reflexion-et-transmission-d-une-onde-acoustique-a-une-interface-entre-deux-fluides|Exercice 4 — Réflexion et transmission d'une onde acoustique à une interface entre deux fluides]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex7-resonateur-de-helmholtz-la-bouteille-qui-chante|Exercice 7 — Résonateur de Helmholtz : la bouteille qui chante]]
+
 

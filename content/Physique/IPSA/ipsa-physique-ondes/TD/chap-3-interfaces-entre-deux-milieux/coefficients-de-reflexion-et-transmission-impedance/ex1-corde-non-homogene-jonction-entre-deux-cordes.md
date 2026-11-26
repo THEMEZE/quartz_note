@@ -26,7 +26,8 @@ progressives, de même pulsation $\omega$.
 
 <p style="text-align:center"><a href="/figures/td3_ex1_corde_double.svg" target="_blank" rel="noopener"><img src="/figures/td3_ex1_corde_double.svg" alt="Suggestion : schéma de la corde double, jonction en $O$ ($x=0$) ; représenter la corde 1 (masse linéique $\mu_1$) où vivent l'onde incidente et l'onde réfléchie, et la corde 2 (masse linéique $\mu_2=\alpha\mu_1$) où se propage l'onde transmise, avec des flèches indiquant clairement les trois sens de propagation ($x$ décroissants pour l'incidente et la transmise, $x$ croissants pour la réfléchie)." loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **L'impulsion revient-elle à l'endroit ou renversée ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -38,7 +39,9 @@ progressives, de même pulsation $\omega$.
 > $r$ s'annule pour $\alpha=1$ (corde homogène : pas d'interface) ; $r<0$ (écho renversé) quand la seconde corde est plus lourde ($\alpha>1$) ; $r>0$ quand elle est plus légère.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Équation de d'Alembert pour une corde vibrante**
 >
 > Connaître l'équation de propagation des petites déformations transversales $y(x,t)$ d'une corde tendue avec une tension $F$ et de masse linéique $\mu$ :
@@ -47,13 +50,17 @@ progressives, de même pulsation $\omega$.
 > Connaître la forme générale d'une onde progressive sinusoïdale de pulsation $\omega$ et de déphasage $\varphi$ se propageant vers les $x$ croissants, $y(x,t) = A\cos(\omega t - kx + \varphi)$, et savoir reconnaître qu'un signe $+$ devant $kx$ (au lieu de $-$) inverse le sens de propagation, vers les $x$ décroissants.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Transposer la méthode de raccordement à un nouveau support physique**
 >
 > Savoir écrire, pour une onde mécanique transversale sur une corde, les deux conditions de continuité pertinentes à une jonction (continuité du déplacement, continuité de la pente liée à la force transverse), les résoudre pour obtenir des coefficients de réflexion et de transmission, et reconnaître la structure universelle de ces coefficients en fonction d'une impédance caractéristique du milieu.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Établissement de l'équation d'onde sur une corde tendue**
 >
 > On considère un petit élément de corde compris entre les abscisses $x$ et $x+\mathrm{d}x$, de masse $\mu\,\mathrm{d}x$. Dans l'approximation des petites oscillations (angle $\theta(x,t)$ entre la corde et l'horizontale petit, tension $F$ supposée uniforme et constante en norme), la composante verticale de la tension exercée sur cet élément par le reste de la corde vaut, à chaque extrémité, $F\sin\theta \approx F\tan\theta = F\,\partial y/\partial x$.
@@ -77,6 +84,8 @@ progressives, de même pulsation $\omega$.
 > grandeur analogue à l'impédance acoustique $Z=\rho c$ (TD2) : elle mesure la « résistance » qu'oppose la corde à être mise en mouvement transversal pour une force donnée. Comme la tension $F$ est commune aux deux cordes, on peut montrer que $Z$ et $k$ sont **directement proportionnels** (à $\omega$ et $F$ fixés) :
 > $$k = \omega\sqrt{\frac{\mu}{F}} = \frac{\omega}{F}\sqrt{F\mu} = \frac{\omega}{F}\,Z.$$
 > C'est cette proportionnalité directe (et non inverse) entre $k$ et $Z$ qui permettra, en question 8, de réexprimer les coefficients trouvés en fonction de $k_1,k_2$ directement en fonction de $Z_1,Z_2$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -105,14 +114,20 @@ progressives, de même pulsation $\omega$.
 > $r(\alpha)=\dfrac{1-\sqrt\alpha}{1+\sqrt\alpha}$ décroît de $1$ ($\alpha\to0$, corde 2 sans masse : extrémité libre) à $-1$ ($\alpha\to\infty$, corde 2 infiniment lourde : extrémité fixe), en passant par $0$ en $\alpha=1$. Les cas limites retrouvent les réflexions sur extrémité libre ($r=+1$) et fixe ($r=-1$) du chapitre précédent.
 
 
+
 **q1.** Donner l'expression de l'onde incidente $y_i(x,t)$ se déplaçant dans le sens des $x$ décroissants, d'amplitude $A_I$ et de déphasage $\phi=0$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Une onde progressive vers les $x$ décroissants s'écrit $\cos(\omega t + kx)$ (le signe $+$ devant $kx$ est ce qui inverse le sens de propagation par rapport à la convention $\cos(\omega t-kx)$ rappelée dans les prérequis).
 
 
+
+
 > [!success]- ✅ Correction
 > $y_i(x,t)=A_I\cos(\omega t + k_1 x)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -123,10 +138,14 @@ progressives, de même pulsation $\omega$.
 > L'indice $1$ sur $k$ signale que cette onde vit dans la corde 1 (de masse linéique $\mu_1$), là où se trouvent à la fois l'onde incidente et l'onde réfléchie.
 
 
+
 **q2.** Donner l'expression de l'onde réfléchie $y_r(x,t)$ se déplaçant dans le sens des $x$ croissants, d'amplitude $A_R$ et de déphasage $\phi=0$.
+
 
 > [!success]- ✅ Correction
 > $y_r(x,t)=A_R\cos(\omega t - k_1 x)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -136,10 +155,14 @@ progressives, de même pulsation $\omega$.
 > $$\boxed{y_r(x,t) = A_R\cos(\omega t - k_1 x)}.$$
 
 
+
 **q3.** Donner l'expression de l'onde transmise $y_t(x,t)$ se déplaçant dans le sens des $x$ décroissants, d'amplitude $A_T$ et de déphasage $\phi=0$.
+
 
 > [!success]- ✅ Correction
 > $y_t(x,t)=A_T\cos(\omega t + k_2 x)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -149,14 +172,20 @@ progressives, de même pulsation $\omega$.
 > $$\boxed{y_t(x,t) = A_T\cos(\omega t + k_2 x)}.$$
 
 
+
 **q4.** Pour chaque corde, donner la relation entre $k$, $\omega$ et $c$. Comment s'appelle cette relation ? Exprimer $k_1$ en fonction de $k_2$ et $\alpha$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Relation de dispersion $\omega=kc$ avec $c=\sqrt{F/\mu}$ propre à chaque corde (cf. point cours) ; la pulsation $\omega$ est la même des deux côtés car le régime est établi et le point $O$ oscille avec une seule et même pulsation (continuité temporelle en $O$).
 
 
+
+
 > [!success]- ✅ Correction
 > Relation de dispersion. $k_1=\omega/c_1=\omega\sqrt{\mu_1/F}$ et $k_2=\omega\sqrt{\mu_2/F}=\omega\sqrt{\alpha\mu_1/F}$, donc $k_1=k_2/\sqrt{\alpha}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -172,10 +201,14 @@ progressives, de même pulsation $\omega$.
 > Le fait que $\omega$ soit identique pour les trois ondes (incidente, réfléchie, transmise) est une conséquence physique du régime sinusoïdal établi : le point $O$, commun aux deux cordes, oscille avec une unique fréquence, imposée par la source, quelle que soit la corde considérée.
 
 
+
 **q5.** Exprimer les déplacements verticaux $y_1(x,t)$ et $y_2(x,t)$ sur les cordes 1 et 2 respectivement.
+
 
 > [!success]- ✅ Correction
 > $y_1=y_i+y_r=A_I\cos(\omega t+k_1x)+A_R\cos(\omega t-k_1x)$ ; $y_2=y_t=A_T\cos(\omega t+k_2x)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -187,14 +220,20 @@ progressives, de même pulsation $\omega$.
 > $$y_2(x,t) = y_t(x,t) = A_T\cos(\omega t+k_2x).$$
 
 
+
 **q6.** Écrire la condition de continuité sur le déplacement vertical $y(x,t)$ de la corde à la position $x=0$. Traduire cette relation en termes de $A_I$, $A_R$ et $A_T$.
+
 
 > [!tip]- 💡 Coup de pouce
 > $y_1(0,t)=y_2(0,t)$ à tout instant $t$ (cf.  point cours, condition 1).
 
 
+
+
 > [!success]- ✅ Correction
 > $A_I+A_R=A_T$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -206,14 +245,20 @@ progressives, de même pulsation $\omega$.
 > $$\boxed{A_I+A_R=A_T}.$$
 
 
+
 **q7.** La relation de continuité de la force en $x=0$ donne $\left.\partial y_1/\partial x\right|_{x=0} = \left.\partial y_2/\partial x\right|_{x=0}$. Traduire cette relation en termes de $A_I$, $A_R$ et $A_T$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Dérivez $y_1$ et $y_2$ par rapport à $x$, puis évaluez en $x=0$ ; les cosinus deviennent des sinus qui s'annulent sauf le terme en $x$ dérivé, attention aux signes de $k_1$ dans $y_i$ et $y_r$ (cf. remarque pédagogique sur ce point).
 
 
+
+
 > [!success]- ✅ Correction
 > $k_1(A_I - A_R) = k_2 A_T$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -232,16 +277,22 @@ progressives, de même pulsation $\omega$.
 > $$k_1(A_R-A_I) = -k_2 A_T \quad\Longrightarrow\quad \boxed{k_1(A_I-A_R) = k_2 A_T}.$$
 
 
+
 **q8.** En déduire les coefficients de réflexion $r$ et de transmission $t$, en amplitude, en fonction de $\alpha$. Écrire $r$ et $t$ en fonction des impédances des deux milieux après avoir défini $Z_1$ et $Z_2$, lesdites impédances.
+
 
 > [!tip]- 💡 Coup de pouce
 > Combinez les deux relations de continuité (questions 6 et 7) comme un système linéaire en $A_R,A_T$. Impédance mécanique d'une corde : $Z=\mu c=\sqrt{F\mu}$ (cf. point cours) ; attention, $Z$ et $k$ sont ici *directement* proportionnels (à $\omega,F$ fixés), et non inversement proportionnels.
+
+
 
 
 > [!success]- ✅ Correction
 > $r=\dfrac{k_1-k_2}{k_1+k_2}=\dfrac{1-\sqrt{\alpha}}{1+\sqrt{\alpha}}$,
 > $t=\dfrac{2k_1}{k_1+k_2}=\dfrac{2}{1+\sqrt{\alpha}}$. En impédance :
 > $r=\dfrac{Z_1-Z_2}{Z_1+Z_2}$, $t=\dfrac{2Z_1}{Z_1+Z_2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -270,14 +321,20 @@ progressives, de même pulsation $\omega$.
 > On retrouve ainsi, pour une onde mécanique sur corde, exactement la même structure de coefficients que pour l'onde acoustique du TD2 (à un renversement de l'ordre $Z_1\leftrightarrow Z_2$ près dans le numérateur de $r$, qui provient du choix de grandeur physique raccordée — déplacement ici, pression dans le cas acoustique — et non d'une erreur).
 
 
+
 **q9.** Commenter dans le cas où $\alpha=1$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Si $\alpha=1$, les deux cordes sont identiques : il n'y a plus vraiment de jonction.
 
 
+
+
 > [!success]- ✅ Correction
 > $\alpha=1 \Rightarrow r=0,\ t=1$ : pas de réflexion, l'onde incidente est intégralement transmise -- cohérent, la corde est alors homogène (pas d'interface).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -286,6 +343,8 @@ progressives, de même pulsation $\omega$.
 > Pour $\alpha=1$, on a $\mu_2=\mu_1$, donc $c_1=c_2$, $k_1=k_2$ et $Z_1=Z_2$. Les formules donnent immédiatement :
 > $$r = \frac{1-\sqrt{1}}{1+\sqrt{1}} = 0, \qquad t = \frac{2}{1+\sqrt{1}} = 1.$$
 > Ce résultat est physiquement attendu : si $\alpha=1$, les deux cordes sont en réalité identiques, et il n'existe alors plus de véritable discontinuité mécanique au point $O$ — on retrouve simplement une corde homogène le long de laquelle l'onde se propage sans aucune réflexion ($r=0$) et se transmet intégralement ($t=1$). Ce cas limite constitue une bonne vérification de cohérence des formules générales obtenues en question 8 : l'absence d'interface physique doit nécessairement se traduire par l'absence de réflexion.
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -310,14 +369,21 @@ progressives, de même pulsation $\omega$.
 > Une corde filée, un nœud de cordes de diamètres différents ou un changement de matériau le long d'un fil ajoutent des échos : c'est l'une des causes de timbre et de perte d'énergie sur les instruments.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Coefficients énergétiques et bilan de puissance
 > La puissance moyenne transportée par une onde progressive sinusoïdale sur une corde s'écrit $\langle P\rangle = \tfrac{1}{2}Z\omega^2 A^2$. On pourra établir les coefficients de réflexion et de transmission en *puissance* $R=r^2$ et $T=(Z_2/Z_1)\,t^2$, et vérifier la conservation de l'énergie $R+T=1$ (à comparer à la démarche déjà suivie pour les coefficients énergétiques acoustiques).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Corde de masse linéique variable, approximation WKB
 > Pour une corde dont la masse linéique $\mu(x)$ varie continûment (plutôt qu'une jonction abrupte), la réflexion devient progressive et dépend du rapport entre la longueur d'onde et l'échelle de variation de $\mu(x)$ : lorsque $\mu(x)$ varie lentement devant $\lambda$, l'onde traverse presque sans réflexion (approximation WKB, adaptation d'impédance continue) — principe utilisé par exemple dans la forme des cordes de certains instruments ou dans les cônes de haut-parleurs.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-3-interfaces-entre-deux-milieux/coefficients-de-reflexion-et-transmission-impedance/ex3-perle-sur-une-corde-jonction-massive-filtre-passe-bas-puis-passe-bande|Exercice 3 — Perle sur une corde : jonction massive, filtre passe-bas puis passe-bande]]
+
 

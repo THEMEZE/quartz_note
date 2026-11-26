@@ -21,7 +21,8 @@ courbe appelée **clothoïde** (ou spirale d'Euler, spirale de Cornu). L'absciss
 le début du raccordement, où la route est rectiligne et tangente à $Ox$. Un véhicule la parcourt à vitesse de norme
 $v$ constante.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi une route droite ne se raccorde jamais directement à un cercle ?**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -31,7 +32,9 @@ $v$ constante.
 > **Idée clé : la courbure est la donnée, la trajectoire en est la conséquence.** À vitesse constante, l'accélération latérale ressentie est $a_N=v^2\kappa(s)$. Pour qu'elle croisse **progressivement**, la courbure doit croître progressivement. Le choix le plus simple est $\kappa$ linéaire en $s$ : c'est la clothoïde.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Base de Frenet**
 >
 > $\vec a=\dot v\,\vec\tau+\dfrac{v^2}R\,\vec n$ ; $\dfrac1R=\left|\dfrac{\mathrm d\alpha}{\mathrm ds}\right|$ où $\alpha$ est l'angle de la tangente avec $Ox$ ; $\mathrm d\overrightarrow{OM}=\mathrm ds\,\vec\tau=\mathrm ds\,(\cos\alpha,\sin\alpha)$.
@@ -45,16 +48,22 @@ $v$ constante.
 > Le **jerk** (à-coup) est $\vec j=\dfrac{\mathrm d\vec a}{\mathrm dt}$ ; en mouvement rectiligne, $j=\ddot v$. Un jerk élevé est ressenti comme un choc ; les normes de confort sont de l'ordre de $0{,}3$ à $0{,}6\ \mathrm{m\,s^{-3}}$ (route, rail).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Reconstruire une trajectoire à partir de sa courbure**
 >
 > Savoir qu'une courbe plane est déterminée par sa courbure $\kappa(s)=1/R(s)$ : $\alpha(s)=\int\kappa\,\mathrm ds$, puis $x=\int\cos\alpha\,\mathrm ds$, $y=\int\sin\alpha\,\mathrm ds$. Relier la courbure au confort via $a_N=v^2\kappa$ et au jerk, et dimensionner un raccordement avec des données réalistes.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Courbure et construction d'une courbe plane**
 >
 > Pour une courbe paramétrée par l'abscisse curviligne : $\dfrac{\mathrm d\alpha}{\mathrm ds}=\kappa(s)$ (courbure algébrique), $\dfrac{\mathrm dx}{\mathrm ds}=\cos\alpha$, $\dfrac{\mathrm dy}{\mathrm ds}=\sin\alpha$. À vitesse constante : $a_N=v^2\kappa(s)$ et le « jerk latéral » est $j_N=\dfrac{\mathrm da_N}{\mathrm dt}=v^3\dfrac{\mathrm d\kappa}{\mathrm ds}$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -75,6 +84,7 @@ $v$ constante.
 > $v^3=(25)^3=15\,625\ \mathrm{m^3\,s^{-3}}$ pour $90\ \mathrm{km/h}$ ; à $130\ \mathrm{km/h}$ ($36{,}1\ \mathrm{m/s}$) : $47\,000$. Le cube explique pourquoi la longueur de raccordement augmente très vite avec la vitesse.
 
 
+
 **q1.** **1/ La courbe.**
 
 
@@ -82,12 +92,17 @@ $v$ constante.
 
 (b) Écrire $x(s)$ et $y(s)$ sous forme intégrale. Pour $\alpha\ll1$, montrer que $x\simeq s$ et $y\simeq\dfrac{s^3}{6A^2}$ : la clothoïde se confond avec une **parabole cubique**.
 
+
 > [!tip]- 💡 Coup de pouce
 > $\dfrac1R=\left|\dfrac{\mathrm d\alpha}{\mathrm ds}\right|$ avec $\alpha(0)=0$ (la route est d'abord tangente à $Ox$). Pour (b), $\dfrac{\mathrm dx}{\mathrm ds}=\cos\alpha$ et $\dfrac{\mathrm dy}{\mathrm ds}=\sin\alpha$.
 
 
+
+
 > [!success]- ✅ Correction
 > (a) $\dfrac{\mathrm d\alpha}{\mathrm ds}=\dfrac s{A^2}$ donc $\alpha=\dfrac{s^2}{2A^2}$ ; $R=\dfrac{A^2}s$ ; $R(0)=\infty$, $R(L)=R_f$ si $L=\dfrac{A^2}{R_f}$ ; $\alpha(L)=\dfrac L{2R_f}$. (b) $x=\displaystyle\int_0^s\cos\frac{\sigma^2}{2A^2}\mathrm d\sigma$, $y=\int_0^s\sin\frac{\sigma^2}{2A^2}\mathrm d\sigma$ ; DL : $y\simeq\dfrac{s^3}{6A^2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -105,6 +120,7 @@ $v$ constante.
 > Donc $y\simeq\dfrac{x^3}{6A^2}$ : une **parabole cubique**, expression utilisée en topographie pour le tracé. À $s=L$ : $y(L)\simeq\dfrac{L^3}{6A^2}=\dfrac{L^2}{6R_f}$.
 
 
+
 **q2.** **2/ Cinématique et confort.** Le véhicule parcourt la clothoïde à vitesse $v$ constante, avec $s=vt$.
 
 
@@ -112,12 +128,17 @@ $v$ constante.
 
 (b) Comparer à un raccordement brutal droite $\to$ cercle de rayon $R_f$ : quelle est la valeur de $a_N$ juste après le raccord ? Quel est le jerk ?
 
+
 > [!tip]- 💡 Coup de pouce
 > $v=$ cte donc $a_T=0$ et $a_N=v^2/R=v^2s/A^2$ avec $s=vt$.
 
 
+
+
 > [!success]- ✅ Correction
 > (c) $a_T=0$, $a_N=\dfrac{v^3t}{A^2}$, $j=\dfrac{v^3}{A^2}$ constant. (d) Brutal : $a_N$ passe de $0$ à $\dfrac{v^2}{R_f}$ en $\Delta t\to0$ : jerk infini (en pratique très élevé).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -134,6 +155,7 @@ $v$ constante.
 > Sans raccordement : $a_N=0$ sur la droite, puis $a_N=\dfrac{v^2}{R_f}$ dès l'entrée sur le cercle. Le saut est instantané : $j\to\infty$ (en pratique, l'effet est limité par la souplesse de la direction et de la suspension, mais l'à-coup est brutal : la voiture « se jette » de côté). Avec la clothoïde, $a_N$ monte de $0$ à $v^2/R_f$ en la durée $\dfrac Lv$ avec une pente constante $j$ : le conducteur tourne son volant à vitesse **constante**, ce qui est naturel.
 
 
+
 **q3.** **3/ Dimensionnement.** Une route est conçue pour $v=90\ \mathrm{km/h}$, avec un virage de rayon $R_f=300\ \mathrm m$ et un jerk latéral maximal admissible $j_{\max}=0{,}6\ \mathrm{m\,s^{-3}}$.
 
 
@@ -143,12 +165,17 @@ $v$ constante.
 
 (c) Mêmes questions pour $130\ \mathrm{km/h}$ avec le même $j_{\max}$ et le même $R_f$ (autoroute). Commenter.
 
+
 > [!tip]- 💡 Coup de pouce
 > $j=v^3/A^2$ donc $A^2=v^3/j$ ; $L=A^2/R_f$ ; $a_{N,f}=v^2/R_f$ ; $\alpha_f=\dfrac L{2R_f}$ ; $y(L)\simeq\dfrac{L^2}{6R_f}$.
 
 
+
+
 > [!success]- ✅ Correction
 > $v=25\ \mathrm{m/s}$ : $A^2=26\,042\ \mathrm{m^2}$, $A\approx161\ \mathrm m$, $L\approx86{,}8\ \mathrm m$, $\Delta t=3{,}47\ \mathrm s$, $a_{N,f}=2{,}08\ \mathrm{m\,s^{-2}}$, $\alpha_f\approx0{,}145\ \mathrm{rad}=8{,}3^\circ$, $y(L)\approx4{,}2\ \mathrm m$. À $130\ \mathrm{km/h}$ : $L\approx262\ \mathrm m$ ($\times3$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -165,14 +192,20 @@ $v$ constante.
 > $v=\dfrac{130}{3{,}6}\approx36{,}1\ \mathrm{m/s}$ ; $A^2=\dfrac{v^3}j\approx7{,}8\times10^4\ \mathrm{m^2}$ ; $L=\dfrac{A^2}{R_f}\approx261\ \mathrm m$, soit $(36{,}1/25)^3\approx3{,}0$ fois plus long : la longueur de raccordement croît comme $v^3$ (à $j$ et $R_f$ fixés) ; la durée de parcours $L/v\approx7{,}2\ \mathrm s$ croît comme $v^2$. Mais ici $a_{N,f}=v^2/R_f\approx4{,}3\ \mathrm m/s^2$ (soit $0{,}44\,g$) est déjà proche de la limite d'adhérence en conditions humides : on voit pourquoi les rayons minimaux augmentent avec la vitesse de conception ($R_f\gtrsim v^2/a_{\max}$).
 
 
+
 **q4.** **4/ (*) Python.** Tracer la clothoïde avec \texttt{scipy.special.fresnel} pour $A=161\ \mathrm m$ et $s\in[0,L]$. Superposer, aux points $s=L/4,\ L/2,\ L$ : $\vec\tau$, $\vec n$ et le cercle osculateur. Vérifier numériquement $y(L)$ et le comparer à $L^2/(6R_f)$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Avec $u=\dfrac s{A\sqrt\pi}$ : $x=A\sqrt\pi\,C(u)$, $y=A\sqrt\pi\,S(u)$ ; \texttt{S,C=fresnel(u)}. Centre du cercle : $M+R\,\vec n$ avec $\vec n=(-\sin\alpha,\cos\alpha)$.
 
 
+
+
 > [!success]- ✅ Correction
 > Résultat attendu : $x(L)\approx86{,}6\ \mathrm m$, $y(L)\approx4{,}18\ \mathrm m$ ; $L^2/6R_f=4{,}19\ \mathrm m$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -196,6 +229,8 @@ $v$ constante.
 > \end{verbatim}
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Génie civil et ferroviaire**
 >
@@ -210,18 +245,27 @@ $v$ constante.
 > Planification de trajectoire à courbure continue : les robots et les voitures autonomes utilisent des clothoïdes (ou des splines) pour des trajectoires lisses où le volant tourne à vitesse constante.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Simulation et comparaison avec un raccordement brutal
 > Simuler $a_N(t)$ pour un virage brutal (créneau) et un raccordement progressif (rampe), et en déduire le jerk. Tracer la trajectoire du véhicule et le cercle osculateur au début, au milieu et à la fin du raccordement.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Intégrales de Fresnel et spirale de Cornu
 > Avec $s=A\sqrt\pi\,\tau$ : $x=A\sqrt\pi\,C(\tau)$ et $y=A\sqrt\pi\,S(\tau)$ où $C(\tau)=\int_0^\tau\cos\frac{\pi u^2}2\mathrm du$ et $S(\tau)=\int_0^\tau\sin\frac{\pi u^2}2\mathrm du$. Montrer que la courbe converge vers le point $\left(\frac{A\sqrt\pi}2,\frac{A\sqrt\pi}2\right)$ quand $s\to\infty$ ; la longueur de la courbe est cependant **infinie**. Interpréter en optique (diffraction de Fresnel par un bord).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Courbes de courbure imposée et optimisation
 > La clothoïde minimise le jerk latéral maximal pour une variation de courbure imposée sur une longueur donnée. Généraliser : trouver la loi $\kappa(s)$ qui minimise $\int\left(\frac{\mathrm d\kappa}{\mathrm ds}\right)^2\mathrm ds$ à longueur et angle imposés (courbe d'énergie minimale) et comparer à la clothoïde. Application aux trajectoires de véhicules autonomes.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex1-base-de-frenet-demonstrations-de-cours-et-applications|Exercice 1 — Base de Frenet : démonstrations de cours et applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex2-mouvement-curviligne-uniforme-cercle-parabole-applications|Exercice 2 — Mouvement curviligne uniforme : cercle, parabole, applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex3-circuit-de-monaco-courbure-et-acceleration-a-vitesse-constante|Exercice 3 — Circuit de Monaco : courbure et accélération à vitesse constante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex4-abscisse-curviligne-et-rayon-de-courbure-d-une-trajectoire-parabolique|Exercice 4 — Abscisse curviligne et rayon de courbure d'une trajectoire parabolique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex5-cycloide-point-d-une-roue-qui-roule-sans-glisser|Exercice 5 — Cycloïde : point d'une roue qui roule sans glisser]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex7-cercle-d-adherence-freiner-et-tourner-en-meme-temps|Exercice 7 — Cercle d'adhérence : freiner et tourner en même temps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex8-tir-parabolique-vu-dans-la-base-de-frenet|Exercice 8 — Tir parabolique vu dans la base de Frenet]]
+
 

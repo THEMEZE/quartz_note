@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-mecanique-point/index|⬅ Mécanique du point — IPSA]]
 
+
 > [!info] ℹ️ Chap. 2 — Dynamique du point matériel : lois de Newton
 > Séance 4
 
 
+
 <a href="/pdfs/td4_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td4_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td4_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/td4_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Un seul principe, tous les mouvements : de l'ascenseur à la fusée**
 >
 > *Durée de l'introduction : 5 à 8 min, avant les exercices*
@@ -31,7 +34,9 @@ tags:
 >
 > Les forces fixent $\vec a$ ; la cinématique du TD1 donne alors $\vec v(t)$ et $\overrightarrow{OM}(t)$.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Cinématique du point (TD1)**
 >
 > Vecteurs position, vitesse, accélération en cartésien ; intégration avec conditions initiales ; mouvement à accélération constante ; mouvement circulaire uniforme, base polaire et dérivées $\dfrac{\mathrm d\vec e_r}{\mathrm d\theta}=\vec e_\theta$, $\dfrac{\mathrm d\vec e_\theta}{\mathrm d\theta}=-\vec e_r$.
@@ -56,7 +61,9 @@ tags:
 >
 > Un référentiel galiléen est un référentiel dans lequel le principe d'inertie est vérifié. Le référentiel terrestre est galiléen avec une très bonne approximation pour les mouvements de courte durée et de faible étendue.
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Appliquer la méthode générale de la dynamique**
 >
 > Savoir définir le système, le référentiel et le repère, faire un schéma, dresser le bilan **complet** des forces, écrire la 2\textsuperscript{e} loi, la projeter sur des axes adaptés, résoudre pour l'accélération, une force inconnue (tension, réaction) ou une condition (décollage, rupture).
@@ -77,7 +84,9 @@ tags:
 >
 > Savoir vérifier l'homogénéité, tester des cas limites (masses égales, $\lambda\to0$, $\beta\to0$), comparer à un ordre de grandeur, et confronter un modèle à une mesure en identifiant ses limites (navette Columbia).
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Positionnement du TD**
 >
 > Ce TD fait la jonction entre la cinématique (TD1) et les théorèmes énergétiques ou le moment cinétique : la **2\textsuperscript{e} loi** y est l'outil unique, appliqué à des situations de complexité croissante (équilibre, accélération constante, systèmes liés, mouvement circulaire, frottements). Il installe la **méthode** (schéma, bilan, projection) et les **réflexes de contrôle** (cas limites, ordres de grandeur) pour toute la mécanique.
@@ -98,7 +107,9 @@ tags:
 >
 > Plusieurs exercices s'appuient sur une **figure** (angles de l'exercice 1, géométrie des exercices 4, 5 et 6) : vérifier qu'elle est distribuée. Imposer un schéma de forces avant toute équation et le valider par le voisin. Les exercices 5 et 9 demandent une maîtrise de la base polaire (rappel de 5 min sur $\dot{\vec e}_r=\dot\theta\vec e_\theta$ en début de séance).
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Les trois lois de Newton**
 >
 > **Principe d'inertie** : dans un référentiel galiléen, si $\sum\vec F=\vec0$ le mouvement est rectiligne uniforme (ou le repos), et réciproquement. **Principe fondamental** : $\sum\vec F=m\vec a=\dfrac{\mathrm d\vec p}{\mathrm dt}$ avec $\vec p=m\vec v$. **Action--réaction** : $\vec F_{A\to B}=-\vec F_{B\to A}$ (mêmes norme et droite d'action, sens opposés).
@@ -122,6 +133,8 @@ tags:
 > **Ordres de grandeur**
 >
 > Poids d'un kilogramme : $\approx10$ N ; accélération d'une voiture $2$ à $4~\mathrm{m\,s^{-2}}$ ; freinage d'urgence $\approx8~\mathrm{m\,s^{-2}}$ ; ascenseur $\approx1~\mathrm{m\,s^{-2}}$ ; adhérence pneu--route sèche $\mu\approx0{,}7$, mouillée $\approx0{,}3$, verglacée $\approx0{,}1$ ; poussée d'un lanceur $\approx1{,}2$ à $1{,}5$ fois son poids au décollage.
+
+
 
 > [!note]- 🧮 Outils mathématiques
 > **Projection et trigonométrie des plans inclinés**
@@ -157,6 +170,7 @@ tags:
 > $[F]=\mathrm{kg\,m\,s^{-2}}$ ; $[k]=\mathrm{kg\,m\,s^{-3}}$ pour $F=kt$ ; $[\lambda]=\mathrm{kg\,s^{-1}}$ pour $-\lambda v$ ; $[\tau]=[m/\lambda]=\mathrm s$.
 
 
+
 ## Exercices
 
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex1-exercices-elementaires|Exercice 1 — Exercices élémentaires]]
@@ -168,6 +182,38 @@ tags:
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex7-chute-avec-frottement-fluide-vitesse-limite|Exercice 7 — Chute avec frottement fluide : vitesse limite]]
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]]
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex9-virage-releve-et-frottement-solide|Exercice 9 — Virage relevé et frottement solide]]
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mathématiques**
+>
+> Systèmes linéaires, équations différentielles du premier ordre, trigonométrie, développements limités, inégalités et recherche de seuils.
+>
+> **Génie civil et transports**
+>
+> Dimensionnement de câbles et d'ascenseurs, ralentisseurs et profils de route (dos-d'âne), virages relevés et dévers ferroviaires, pistes de course.
+>
+> **Astronautique et aéronautique**
+>
+> Poussée d'un lanceur, rapport poussée/poids, équation de Tsiolkovski, facteur de charge d'un avion en virage.
+>
+> **Mécanique des fluides**
+>
+> Frottement visqueux (loi de Stokes), vitesse limite de sédimentation, viscosimètre à bille, nombre de Reynolds.
+>
+> **Électricité**
+>
+> L'équation $\dot v+v/\tau=g$ est la même que la charge d'un condensateur ($\tau=RC$) ou l'établissement du courant dans une bobine ($\tau=L/R$).
+>
+> **Histoire des sciences**
+>
+> Principia de Newton (1687) ; machine d'Atwood (1784) pour mesurer $g$ ; régulateur à boules de Watt (pendule conique).
+>
+> **Sport et biomécanique**
+>
+> Ski (pente et frottements), cyclisme et motocyclisme en virage (inclinaison $\tan\psi=v^2/(gR)$), saut, plongeon et parachutisme (vitesse limite).
+
+
 
 > [!warning]- 🪤 Écueils classiques
 > **Bilan de forces incomplet ou avec une « force de mouvement »**
@@ -202,6 +248,8 @@ tags:
 >
 > Toujours vérifier l'homogénéité ($[k]$ pour $F=kt$), le signe, un cas limite ($m_1=m_2$, $\lambda\to0$, $\beta\to0$) et l'ordre de grandeur (une voiture qui décolle à $7$ m/s, une masse de $88$ g).
 
+
+
 > [!tip]- 🎙️ Conseils d'animation
 > **Expérience flash en ouverture**
 >
@@ -227,36 +275,9 @@ tags:
 >
 > Après chaque exercice, poser : « Quel cas limite testez-vous ? Quel ordre de grandeur attendez-vous ? » Exemples : $m_2\to m_1$, $\lambda\to0$, $\beta\to0$, $\omega\to\sqrt{g/L}$.
 
-> [!note]- 🔗 Liens avec d'autres disciplines
-> **Mathématiques**
->
-> Systèmes linéaires, équations différentielles du premier ordre, trigonométrie, développements limités, inégalités et recherche de seuils.
->
-> **Génie civil et transports**
->
-> Dimensionnement de câbles et d'ascenseurs, ralentisseurs et profils de route (dos-d'âne), virages relevés et dévers ferroviaires, pistes de course.
->
-> **Astronautique et aéronautique**
->
-> Poussée d'un lanceur, rapport poussée/poids, équation de Tsiolkovski, facteur de charge d'un avion en virage.
->
-> **Mécanique des fluides**
->
-> Frottement visqueux (loi de Stokes), vitesse limite de sédimentation, viscosimètre à bille, nombre de Reynolds.
->
-> **Électricité**
->
-> L'équation $\dot v+v/\tau=g$ est la même que la charge d'un condensateur ($\tau=RC$) ou l'établissement du courant dans une bobine ($\tau=L/R$).
->
-> **Histoire des sciences**
->
-> Principia de Newton (1687) ; machine d'Atwood (1784) pour mesurer $g$ ; régulateur à boules de Watt (pendule conique).
->
-> **Sport et biomécanique**
->
-> Ski (pente et frottements), cyclisme et motocyclisme en virage (inclinaison $\tan\psi=v^2/(gR)$), saut, plongeon et parachutisme (vitesse limite).
 
-> [!success]- 🏁 Bilan
+
+> [!success]- 🏁 Bilan pédagogique
 > **Ce qu'il faut savoir faire à la fin du TD**
 >
 > Faire un schéma de forces complet et projeter la 2\textsuperscript{e} loi dans un repère adapté ; retrouver $a$ à partir des forces puis $v(t)$ et $x(t)$ ; traiter un système lié par fil (deux lois plus contrainte) ; utiliser la condition de contact $N\ge0$ et la loi de Coulomb pour obtenir des seuils ; écrire $\vec a$ en polaires et cylindriques pour un mouvement circulaire.
@@ -269,21 +290,34 @@ tags:
 >
 > La méthode (système, bilan, projection) servira pour le travail et l'énergie (TD suivants), où on retrouvera les mêmes situations par une méthode énergétique plus rapide ; le pendule conique et le virage relevé préparent le moment cinétique et les forces centrales ; l'équation différentielle du premier ordre reviendra en électricité (circuit RC, RL).
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Référentiels non galiléens et forces d'inertie
 > Refaire l'exercice de l'ascenseur et celui du virage dans le référentiel du véhicule (non galiléen) en introduisant la force d'inertie d'entraînement $-m\vec a_e$ (force centrifuge dans le virage). Montrer que les résultats sont identiques et discuter le choix du référentiel le plus commode.
+
+
 
 > [!question]- 🔭 Aller plus loin — CPGE : Résolution numérique d'une équation de mouvement
 > Intégrer numériquement (Euler, puis \texttt{scipy.integrate.solve\_ivp}) le mouvement d'un projectile avec frottement quadratique $-k\,v\,\vec v$. Comparer à la parabole du modèle sans frottement et déterminer l'angle de portée maximale (inférieur à $45^\circ$).
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Masse variable : équation de Tsiolkovski
 > Écrire $\dfrac{\mathrm d\vec p}{\mathrm dt}=\vec F_{\rm ext}$ pour une fusée qui éjecte des gaz à la vitesse relative $-u\vec u_z$ et établir $v(t)=-u\ln(1-Dt/m_0)-gt$. Appliquer à Columbia et expliquer l'écart du modèle à masse constante.
+
+
 
 > [!question]- 🔭 Aller plus loin — Licence : Frottement quadratique et vitesse limite
 > Chute avec $-kv^2$ : $m\dot v=mg-kv^2$, solution $v=v_\ell\tanh(gt/v_\ell)$ avec $v_\ell=\sqrt{mg/k}$. Estimer $v_\ell$ d'un parachutiste en chute libre (bras écartés : $\approx55$ m/s) et sous parachute ouvert ($\approx5$ m/s).
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Dynamique du solide : roulement sans glissement sur un plan incliné
 > Pour un cylindre de moment d'inertie $J=\tfrac12mr^2$ qui roule sans glisser, montrer que $a=\dfrac{g\sin\alpha}{1+J/(mr^2)}=\tfrac23g\sin\alpha$ et que la condition de non-glissement est $\mu\ge\tfrac13\tan\alpha$. Comparer à un bloc qui glisse sans frottement ($a=g\sin\alpha$).
 
+
+
 > [!question]- 🔭 Aller plus loin — Doctorat : Limites de la mécanique newtonienne
 > Pour une particule dont la vitesse approche $c$, la 2\textsuperscript{e} loi $\dfrac{\mathrm d\vec p}{\mathrm dt}=\vec F$ reste valable avec $\vec p=\gamma m\vec v$, mais $\vec a$ n'est plus parallèle à $\vec F$. Montrer que $\vec F=\gamma m\vec a+\gamma^3m\dfrac{(\vec v\cdot\vec a)}{c^2}\vec v$ et discuter les masses « longitudinale » $\gamma^3m$ et « transversale » $\gamma m$.
+
 

@@ -13,7 +13,8 @@ tags:
 
 Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, sont suspendus en deux points $I_1$ et $I_2$ situés dans un même plan horizontal et distants de $d$. Les deux masses, toutes deux égales à $m$, sont situées en $P_1$ et $P_2$ et sont reliées par un ressort de raideur $k$ et de longueur $d$ : lorsque la distance $P_1P_2$ est $(d\pm\epsilon)$, la force de rappel du ressort a pour module $k\epsilon$. On n'étudie que les oscillations de faible amplitude de ces pendules, autour de leurs positions d'équilibre respectives $O_1$ et $O_2$ et l'on désigne par $x_1$ et $x_2$ les petits déplacements de $P_1$ et $P_2$ sur l'axe horizontal $O_1O_2x$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Deux pendules, un ressort : combien de fréquences ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -23,7 +24,9 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > **Idée clé : deux pendules couplés ont deux mouvements « purs », chacun avec sa fréquence.** Quand les deux masses bougent exactement ensemble, le ressort garde sa longueur et ne joue aucun rôle : $\omega_1=\sqrt{g/\ell}$. Quand elles bougent en sens opposés, le ressort travaille et ajoute de la raideur : $\omega_2=\sqrt{g/\ell+2k/m}>\omega_1$. Tout autre mouvement est une superposition des deux, ce qui produit des battements et un transfert périodique d'énergie d'un pendule à l'autre.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Pendule simple et base polaire**
 >
 > Savoir que, pour un point matériel relié à un point fixe par un fil de longueur $\ell$, $\vec v=\ell\dot\alpha\,\vec e_\alpha$ et $\vec a=\ell\ddot\alpha\,\vec e_\alpha-\ell\dot\alpha^2\vec e_r$ ; savoir que la tension du fil est dirigée selon $-\vec e_r$ et ne travaille pas.
@@ -45,7 +48,9 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > $\cos p-\cos q=-2\sin\dfrac{p+q}2\sin\dfrac{p-q}2$ et $\cos p+\cos q=2\cos\dfrac{p+q}2\cos\dfrac{p-q}2$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Mettre en équation sans rien deviner**
 >
 > Savoir construire la base locale d'un pendule, projeter poids, tension et force de rappel du ressort en justifiant chaque signe par un produit scalaire, et obtenir les *équations exactes* du mouvement des deux masses.
@@ -63,7 +68,9 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > Savoir décrire le mouvement des deux masses dans chaque mode, calculer les pulsations propres, résoudre le problème avec conditions initiales, mettre la solution sous forme de battements et interpréter l'échange d'énergie.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Fiche de synthèse : équations exactes, équations linéarisées**
 >
 > Avec $x_i=\ell\sin\alpha_i$ exactement, $u=d+x_2-x_1$, $v=\ell(\cos\alpha_1-\cos\alpha_2)$ et $\ell_s=\sqrt{u^2+v^2}$ :
@@ -76,6 +83,8 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > \end{array}
 > $$
 > Pulsations propres : $\omega_1=\sqrt{g/\ell}$ (en phase) et $\omega_2=\sqrt{g/\ell+2k/m}$ (en opposition de phase) ; coordonnées normales $S=x_1+x_2$ et $D=x_1-x_2$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -104,7 +113,9 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > $\cos p\pm\cos q$ se factorise en produit ; permet d'identifier porteuse et enveloppe.
 
 
+
 **q1.** Écrire les équations différentielles des mouvements de $P_1$ et de $P_2$ et rechercher un changement de variables permettant d'obtenir deux équations différentielles indépendantes.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Choisir la projection qui élimine l'inconnue**
@@ -120,6 +131,8 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > Écrivez les deux équations linéarisées l'une sous l'autre : les coefficients de $x_1$ dans la première et de $x_2$ dans la seconde sont-ils égaux ? Que se passe-t-il quand on additionne les équations ? quand on les soustrait ? Pourquoi la somme est-elle liée au centre de masse des deux pendules ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Équations exactes**
 >
@@ -133,6 +146,8 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > **Changement de variables**
 >
 > $S=x_1+x_2$ et $D=x_1-x_2$ : $\ \ddot S+\dfrac g\ell S=0$ et $\ddot D+\Big(\dfrac g\ell+\dfrac{2k}m\Big)D=0$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -301,7 +316,9 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > - **Lien :** quand la symétrie existe, les vecteurs propres sont imposés par elle ($(1,\pm1)$ ici) ; le calcul du déterminant ne fait que retrouver ce que la symétrie donnait gratuitement.
 
 
+
 **q2.** Intégrer ces équations pour obtenir la solution générale du mouvement.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Reconnaître les équations**
@@ -313,11 +330,15 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > Écrivez $S(t)$ et $D(t)$ avec une amplitude et une phase chacune, puis revenez à $x_1$ et $x_2$ en utilisant $x_1=(S+D)/2$ et $x_2=(S-D)/2$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Solution générale**
 >
 > $$x_1(t)=A_1\cos(\omega_1t+\varphi_1)+A_2\cos(\omega_2t+\varphi_2),\qquad x_2(t)=A_1\cos(\omega_1t+\varphi_1)-A_2\cos(\omega_2t+\varphi_2),$$
 > avec $\omega_1=\sqrt{g/\ell}$, $\omega_2=\sqrt{g/\ell+2k/m}$ et quatre constantes $A_1,A_2,\varphi_1,\varphi_2$ fixées par les conditions initiales.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -340,7 +361,9 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > Le mouvement général est la superposition de deux sinusoïdes de pulsations différentes. En général il n'est pas périodique (il l'est si $\omega_2/\omega_1$ est rationnel). Sous forme vectorielle, $X(t)=A_1\cos(\omega_1t+\varphi_1)\begin{pmatrix}1\\1\end{pmatrix}+A_2\cos(\omega_2t+\varphi_2)\begin{pmatrix}1\\-1\end{pmatrix}$ : les deux vecteurs sont les modes propres de la question suivante.
 
 
+
 **q3.** Chercher dans quelles conditions les deux pendules peuvent avoir un mouvement purement sinusoïdal de même pulsation. Calculer les deux valeurs, $\omega_1$ et $\omega_2$, des pulsations possibles et dans ces deux cas décrire les mouvements des pendules.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Poser la forme cherchée**
@@ -356,10 +379,14 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > Dans chaque cas, calculez le rapport $A_2/A_1$ et décrivez le mouvement : que fait le ressort ? quelle est la raideur effective ressentie par chaque pendule ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > Mode en phase ($A_2=A_1$) : $\omega_1=\sqrt{g/\ell}$ ; mode en opposition de phase ($A_2=-A_1$) : $\omega_2=\sqrt{g/\ell+2k/m}$. Les conditions initiales doivent être proportionnelles à $(1,1)$ ou à $(1,-1)$ (positions et vitesses).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -406,8 +433,10 @@ Deux pendules simples identiques, de même longueur $\ell$, de même masse $m$, 
 > Un mouvement purement sinusoïdal à $\omega_1$ (ou $\omega_2$) exige que le vecteur des positions *et* celui des vitesses initiales soient proportionnels à $(1,1)$ (ou $(1,-1)$). Par exemple : lâcher sans vitesse les deux pendules après les avoir écartés du même côté de la même quantité $\to$ mode $\omega_1$ ; de part et d'autre de la même quantité $\to$ mode $\omega_2$. Toute autre condition initiale excite les deux modes.
 
 
+
 **q4.** On donne les conditions initiales suivantes : pour $t=0$, $x_1=0$, $v_1=0$, $x_2=a$, $v_2=0$.
 Quel est alors le mouvement des pendules ? Calculer la période des battements.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Utiliser les bonnes variables**
@@ -423,6 +452,8 @@ Quel est alors le mouvement des pendules ? Calculer la période des battements.
 > La période des battements est l'intervalle de temps entre deux annulations successives de l'enveloppe d'un même pendule. Exprimez-la avec $\omega_2-\omega_1$, puis en couplage faible avec $k/m$ et $\omega_1$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Mouvement**
 >
@@ -431,6 +462,8 @@ Quel est alors le mouvement des pendules ? Calculer la période des battements.
 > **Période des battements**
 >
 > $$T_b=\frac{2\pi}{\omega_2-\omega_1}\ \simeq\ \frac{2\pi\,\omega_1}{k/m}\quad\text{(couplage faible, }k/m\ll g/\ell).$$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -473,6 +506,8 @@ Quel est alors le mouvement des pendules ? Calculer la période des battements.
 > **Validité.** Les résultats sont valables à l'ordre $1$ : l'amplitude $a$ doit rester petite devant $\ell$ (angles $\lesssim0{,}2$ rad). La factorisation en produit est exacte pour toutes pulsations ; l'interprétation en « enveloppe lente » exige $\omega_2-\omega_1\ll\omega_1+\omega_2$, soit un couplage faible. Pour un couplage fort, l'échange d'énergie existe toujours, mais la période de battement $T_b$ n'est plus grande devant la période $T_0$ des oscillations rapides : il n'y a plus de séparation d'échelles et la notion d'enveloppe perd son sens.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Électrocinétique**
 >
@@ -491,22 +526,33 @@ Quel est alors le mouvement des pendules ? Calculer la période des battements.
 > La molécule d'eau possède un mode d'élongation symétrique et un mode antisymétrique de fréquences voisines, exactement comme les deux modes de ce couplage.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Énergie : qui contient quoi ?
 > Vérifier que l'énergie totale $E=\tfrac12m(\dot x_1^2+\dot x_2^2)+\tfrac12m\omega_1^2(x_1^2+x_2^2)+\tfrac12k(x_2-x_1)^2$ est conservée, qu'elle se décompose en deux énergies de modes indépendantes, et que l'énergie du ressort ne dépasse jamais la fraction $\omega_c^2/(\omega_1^2+\omega_c^2)$ de $E$ pour les conditions initiales de la question 4 (voir l'exercice 5).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Formalisme de Lagrange
 > Écrire $L=\tfrac12m\ell^2(\dot\alpha_1^2+\dot\alpha_2^2)+mg\ell(\cos\alpha_1+\cos\alpha_2)-\tfrac12k(\ell_s-d)^2$ et retrouver les équations exactes de l'étape 7 par Euler--Lagrange ; la hessienne de $-L$ en $(0,0)$ est la matrice de raideur $K$ en variables angulaires.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Que reste-t-il du mode en phase à grande amplitude ?
 > Pour $\alpha_1=\alpha_2$ le ressort garde exactement sa longueur $d$ : le mode en phase est solution des équations *exactes* pour toute amplitude (c'est un pendule simple non linéaire). Le mode en opposition se réduit à un problème à un degré de liberté. La stabilité du mode en phase face à une perturbation en opposition présente un seuil d'amplitude (exercice 8).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Généralisation à $N$ pendules
 > $N$ pendules identiques couplés en chaîne par des ressorts possèdent $N$ modes dont les pulsations sont $\omega_p^2=g/\ell+(4k/m)\sin^2\!\big(p\pi/2(N+1)\big)$ (extrémités libres de se déplacer : voir l'exercice 9 pour la version périodique).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex3-oscillations-libres-et-forcees-d-un-couplage-pendule-chariot|Exercice 3 — Oscillations libres et forcées d'un couplage pendule-chariot]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex5-complement-niveau-1-cpge-pendules-couples-par-un-ressort-attache-a-mi-hauteur|Exercice 5 — Complément (niveau 1, CPGE) : pendules couplés par un ressort attaché à mi-hauteur]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex8-complement-niveau-3-ens-modes-non-lineaires-de-deux-pendules-couples-stabilite-et-instabilite-parametrique|Exercice 8 — Complément (niveau 3, ENS) : modes non linéaires de deux pendules couplés, stabilité et instabilité paramétrique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex2-couplage-de-deux-oscillateurs-harmoniques-dissymetriques|Exercice 2 — Couplage de deux oscillateurs harmoniques dissymétriques]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex6-complement-niveau-2-ambitieux-trois-masses-quatre-ressorts-diagonalisation-et-perturbation|Exercice 6 — Complément (niveau 2, ambitieux) : trois masses, quatre ressorts, diagonalisation et perturbation]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex7-complement-niveau-2-ambitieux-oscillateurs-desaccordes-anticroisement-et-transfert-d-energie|Exercice 7 — Complément (niveau 2, ambitieux) : oscillateurs désaccordés, anticroisement et transfert d'énergie]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex9-complement-niveau-3-ens-anneau-de-n-oscillateurs-modes-de-fourier-et-propagation-du-signal|Exercice 9 — Complément (niveau 3, ENS) : anneau de N oscillateurs, modes de Fourier et propagation du signal]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex4-frequence-propre-d-une-molecule-diatomique|Exercice 4 — Fréquence propre d'une molécule diatomique]]
+
 

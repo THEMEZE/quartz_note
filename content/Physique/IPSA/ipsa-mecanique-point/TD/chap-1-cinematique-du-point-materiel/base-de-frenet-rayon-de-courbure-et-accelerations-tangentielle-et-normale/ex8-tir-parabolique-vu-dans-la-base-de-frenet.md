@@ -16,7 +16,8 @@ $\alpha_0$ avec l'horizontale $Ox$ (l'axe $Oy$ est vertical vers le haut). Il n'
 accélération est le vecteur constant $\vec a=-g\,\vec u_y$ (résistance de l'air négligée). On étudie ce mouvement
 dans la base de Frenet.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Au sommet d'un lancer, que vaut l'accélération ?**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -26,7 +27,9 @@ dans la base de Frenet.
 > **Idée clé : l'accélération $\vec g$ est constante mais se projette différemment sur la tangente et la normale à chaque instant.** Au sommet, $\vec v\perp\vec g$ : toute l'accélération est normale, la trajectoire est la plus courbée. En montée, $\vec g$ a une composante opposée à $\vec v$ ($a_T<0$) ; en descente, de même sens ($a_T>0$).
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Mouvement dans un champ de pesanteur uniforme**
 >
 > $x=v_0\cos\alpha_0\,t$, $y=v_0\sin\alpha_0\,t-\tfrac12gt^2$ ; $\vec v=(v_0\cos\alpha_0\ ;\ v_0\sin\alpha_0-gt)$.
@@ -40,22 +43,30 @@ dans la base de Frenet.
 > On note $\varphi(t)$ l'angle (signé) de $\vec v$ avec $Ox$ : $\tan\varphi=\dfrac{v_y}{v_x}$. Au départ $\varphi=\alpha_0$, au sommet $\varphi=0$, à l'arrivée $\varphi=-\alpha_0$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Lire la décomposition $a_T$, $a_N$ sur un mouvement connu**
 >
 > Projeter l'accélération constante $\vec g$ sur $\vec\tau$ et $\vec n$, comprendre pourquoi $a_T$ et $a_N$ varient alors que $\vec a$ est constant, calculer le rayon de courbure en tout point et identifier où il est minimal.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Réconcilier Frenet et le cas le plus connu**
 >
 > Les étudiants connaissent le tir parabolique mais pas l'interprétation de $a_T$ (vitesse qui diminue en montée, augmente en descente) et de $a_N$ (courbure de la trajectoire). C'est un exercice court, utilisable comme application directe du cours dès le début du TD. La formule $R=\dfrac{v_x^2}{g\cos^3\varphi}$ est la plus élégante : elle montre que la courbure est maximale au sommet.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Projection de $\vec g$ sur la base de Frenet**
 >
 > Si $\varphi$ est l'angle de $\vec v$ avec l'horizontale, $\vec\tau=(\cos\varphi,\sin\varphi)$ et $\vec n=(-\sin\varphi,\cos\varphi)$. En prenant $\vec n=(\sin\varphi,-\cos\varphi)$ vers le bas (côté concave, perpendiculaire à $\vec\tau$), $\vec g=-g\,\vec u_y$ donne $a_T=\vec g\cdot\vec\tau=-g\sin\varphi$ et $a_N=\vec g\cdot\vec n=+g\cos\varphi\ge0$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -72,6 +83,7 @@ dans la base de Frenet.
 > Sommet : $t_s=\dfrac{v_0\sin\alpha_0}g$ ; durée totale : $2t_s$ ; portée : $\dfrac{v_0^2\sin2\alpha_0}g$.
 
 
+
 **q1.** **1/ Composantes de l'accélération.**
 
 
@@ -81,12 +93,17 @@ dans la base de Frenet.
 
 (c) Interpréter physiquement le signe de $a_T$ en montée et en descente.
 
+
 > [!tip]- 💡 Coup de pouce
 > $\vec a=(0;-g)$, $\vec v=(v_x;v_y)$ avec $v_x=v_0\cos\alpha_0$, $v_y=v_0\sin\alpha_0-gt$. Utilisez $a_T=\vec a\cdot\vec v/v$ et $a_N=|a_xv_y-a_yv_x|/v$.
 
 
+
+
 > [!success]- ✅ Correction
 > $a_T=-\dfrac{g\,v_y}v=-g\sin\varphi$, $a_N=\dfrac{g\,v_x}v=g\cos\varphi$ ; $a_T=0$ au sommet ($v_y=0$) où $a_N=g$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -107,6 +124,7 @@ dans la base de Frenet.
 > En **montée** ($v_y>0$, $\varphi>0$) : $a_T<0$, la norme de la vitesse **diminue** (la pesanteur « freine » la montée). Au **sommet** : $a_T=0$, la norme de la vitesse est **minimale** ($v=v_x$). En **descente** ($\varphi<0$) : $a_T>0$, la norme **augmente**. À l'arrivée à la même hauteur qu'au départ, $v=v_0$ (symétrie). $a_N=g\cos\varphi$ est maximal ($=g$) au sommet : la trajectoire y est la plus courbée.
 
 
+
 **q2.** **2/ Rayon de courbure.**
 
 
@@ -116,12 +134,17 @@ dans la base de Frenet.
 
 (c) Représenter la trajectoire, $\vec v$, $\vec\tau$, $\vec n$, $a_T\vec\tau$ et $a_N\vec n$ à $t=0{,}75\ \mathrm s$, $t_s$ et $2{,}78\ \mathrm s$, ainsi que le cercle osculateur au sommet.
 
+
 > [!tip]- 💡 Coup de pouce
 > $R=\dfrac{v^2}{a_N}$ avec $a_N=\dfrac{g\,v_x}v$. Puis $v=\dfrac{v_x}{\cos\varphi}$. Pour (e), $a_T=-a_N\iff\tan\varphi=\pm1$ (en valeur absolue $|a_T|=a_N$).
 
 
+
+
 > [!success]- ✅ Correction
 > $R=\dfrac{v^3}{gv_x}=\dfrac{v_x^2}{g\cos^3\varphi}$ ; $R_{\min}=\dfrac{v_x^2}g$ au sommet. AN : $t_s=1{,}77$ s, $R_{\min}=10{,}2$ m, $R(0)=81{,}5$ m, $|a_T|=a_N$ à $t=0{,}75$ s et $2{,}78$ s ; durée totale $3{,}53$ s.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -139,6 +162,24 @@ dans la base de Frenet.
 > **(f) Représentation**
 >
 > Parabole d'axe vertical, de sommet à la hauteur $y_s=\dfrac{v_{y0}^2}{2g}\approx15{,}3\ \mathrm m$ et d'abscisse $x_s=v_xt_s\approx17{,}7\ \mathrm m$, de portée $35{,}3\ \mathrm m$. Au sommet : $\vec v$ horizontal, $\vec g$ vertical vers le bas, $\vec n=-\vec u_y$ ; cercle osculateur de centre $(17{,}7;\ 15{,}3-10{,}2)=(17{,}7;\ 5{,}1)$ et de rayon $10{,}2\ \mathrm m$. Aux deux autres points, $\vec g$ se décompose en $a_T\,\vec\tau$ (le long de la trajectoire : vers l'arrière en montée, vers l'avant en descente) et $a_N\,\vec n$ (vers le bas, côté concave) de même norme $6{,}94\ \mathrm{m\,s^{-2}}$.
+
+
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Sport**
+>
+> Lancer de poids, de javelot, de ballon (football, basket) : la balle est la plus courbée au sommet, elle ralentit en montée et accélère en descente.
+>
+> **Balistique et ingénierie**
+>
+> Jets d'eau (pompiers, fontaines), canons à eau, arrosage : forme de la nappe et portée ; ordres de grandeur du rayon de courbure du jet.
+>
+> **Astronomie**
+>
+> Un projectile lancé avec une vitesse horizontale $v_x=\sqrt{gR_T}\approx7{,}9\ \mathrm{km/s}$ à haute altitude suit une trajectoire dont le rayon de courbure au sommet vaut $R_T$ : c'est la vitesse orbitale circulaire (Newton).
+
+
 
 
 > [!warning]- 🪤 Écueils classiques
@@ -159,6 +200,8 @@ dans la base de Frenet.
 > $\alpha_0$ est l'angle de lancement ; $\varphi(t)$ est l'angle instantané de la vitesse avec l'horizontale, qui varie de $+\alpha_0$ à $-\alpha_0$.
 
 
+
+
 > [!tip]- 🎙️ Conseils d'animation
 > **Faire placer $a_T$ et $a_N$ au tableau**
 >
@@ -169,38 +212,35 @@ dans la base de Frenet.
 > Observer un jet d'eau (fontaine, tuyau) : le « rayon de courbure » au sommet est $v_x^2/g$ ; en augmentant l'inclinaison du jet pour une même vitesse, le jet « s'affine ».
 
 
-> [!note]- 🔗 Liens avec d'autres disciplines
-> **Sport**
->
-> Lancer de poids, de javelot, de ballon (football, basket) : la balle est la plus courbée au sommet, elle ralentit en montée et accélère en descente.
->
-> **Balistique et ingénierie**
->
-> Jets d'eau (pompiers, fontaines), canons à eau, arrosage : forme de la nappe et portée ; ordres de grandeur du rayon de courbure du jet.
->
-> **Astronomie**
->
-> Un projectile lancé avec une vitesse horizontale $v_x=\sqrt{gR_T}\approx7{,}9\ \mathrm{km/s}$ à haute altitude suit une trajectoire dont le rayon de courbure au sommet vaut $R_T$ : c'est la vitesse orbitale circulaire (Newton).
 
 
-> [!success]- 🏁 Bilan
+> [!success]- 🏁 Bilan pédagogique
 > **Tir parabolique et Frenet**
 >
 > $a_T=-g\sin\varphi=-g\dfrac{v_y}v$, $a_N=g\cos\varphi=g\dfrac{v_x}v$, $R=\dfrac{v^2}{a_N}=\dfrac{v^3}{g\,v_x}=\dfrac{v_x^2}{g\cos^3\varphi}$. Sommet : $a_T=0$, $a_N=g$, $R_{\min}=\dfrac{v_x^2}g=\dfrac{v_0^2\cos^2\alpha_0}g$. Départ : $R=\dfrac{v_0^2}{g\cos\alpha_0}$. Pour $v_0=20\ \mathrm{m/s}$, $\alpha_0=60^\circ$ : $R_{\min}=10{,}2\ \mathrm m$, $R(0)=81{,}5\ \mathrm m$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Courbe de sûreté et portée
 > Montrer que, à $v_0$ fixée, le rayon de courbure initial $R(0)=\dfrac{v_0^2}{g\cos\alpha_0}$ est minimal pour $\alpha_0=0$ (tir horizontal) et tend vers l'infini pour $\alpha_0\to90^\circ$ (tir vertical : la trajectoire est une droite). Interpréter.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Énergie et vitesse
 > Avec $v^2=v_0^2-2gy$, montrer que $R(y)=\dfrac{(v_0^2-2gy)^{3/2}}{g\,v_0\cos\alpha_0}$ : le rayon de courbure ne dépend que de l'altitude. Retrouver le sommet ($y_s=\dfrac{v_0^2\sin^2\alpha_0}{2g}$) et vérifier $R_{\min}=\dfrac{v_x^2}{g}$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Trajectoire avec frottement
 > Avec un frottement visqueux $-\lambda\vec v$, l'accélération n'est plus constante et la trajectoire n'est plus parabolique (elle devient asymétrique avec un sommet plus proche de la fin). Écrire $a_T$ et $a_N$ avec $\vec a=\vec g-\lambda\vec v/m$ et montrer que le rayon de courbure au sommet est $R=v_{\rm somm}^2/g$ (avec la vitesse au sommet, plus petite que $v_0\cos\alpha_0$).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex1-base-de-frenet-demonstrations-de-cours-et-applications|Exercice 1 — Base de Frenet : démonstrations de cours et applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex2-mouvement-curviligne-uniforme-cercle-parabole-applications|Exercice 2 — Mouvement curviligne uniforme : cercle, parabole, applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex3-circuit-de-monaco-courbure-et-acceleration-a-vitesse-constante|Exercice 3 — Circuit de Monaco : courbure et accélération à vitesse constante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex4-abscisse-curviligne-et-rayon-de-courbure-d-une-trajectoire-parabolique|Exercice 4 — Abscisse curviligne et rayon de courbure d'une trajectoire parabolique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex5-cycloide-point-d-une-roue-qui-roule-sans-glisser|Exercice 5 — Cycloïde : point d'une roue qui roule sans glisser]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex6-raccordement-routier-en-clothoide-courbure-variable-et-jerk|Exercice 6 — Raccordement routier en clothoïde (courbure variable et « jerk »)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex7-cercle-d-adherence-freiner-et-tourner-en-meme-temps|Exercice 7 — Cercle d'adhérence : freiner et tourner en même temps]]
+
 

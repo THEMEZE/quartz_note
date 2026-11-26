@@ -17,7 +17,8 @@ incident $\Psi_I(x,t)=A_I e^{i(\omega t - kx)}$, avec $k=\omega/c$. À la
 réflexion en $x=L$ (extrémité ouverte), le déplacement réfléchi s'écrit
 $\Psi_R(x,t)=A_I e^{i(\omega t - k(2L-x))}$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi un tuyau ouvert sonne-t-il sur des notes précises ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -29,7 +30,9 @@ $\Psi_R(x,t)=A_I e^{i(\omega t - k(2L-x))}$.
 > Les profils de $\Psi$ et de $p$ sont en **quadrature spatiale** ($\cos$ contre $\sin$). La condition $p(0)=0$ impose $\sin(kL)=0$, donc $f_n=n\,c/(2L)$ : **tous** les harmoniques sont permis.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Notation complexe et onde progressive**
 >
 > Connaître le principe de la notation complexe en acoustique : une grandeur physique réelle $\psi(x,t)$ est associée à une grandeur complexe $\tilde\psi(x,t)$ telle que $\psi = \mathrm{Re}(\tilde\psi)$, ce qui permet de manipuler des exponentielles plutôt que des sinus/cosinus tout en linéarisant les opérations de dérivation.
@@ -39,7 +42,9 @@ $\Psi_R(x,t)=A_I e^{i(\omega t - k(2L-x))}$.
 > Savoir que le principe de superposition s'applique : toute combinaison linéaire de solutions de l'équation de d'Alembert en est encore solution.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Construire une onde stationnaire par superposition**
 >
 > Savoir construire explicitement une onde stationnaire comme la somme d'une onde incidente et d'une onde réfléchie, factoriser la partie spatiale et la partie temporelle, et interpréter physiquement cette séparation des variables (immobilité du profil spatial, oscillation uniquement temporelle).
@@ -47,7 +52,9 @@ $\Psi_R(x,t)=A_I e^{i(\omega t - k(2L-x))}$.
 > Savoir traduire une condition aux limites physique (extrémité ouverte ou fermée) en une condition mathématique sur le champ de déplacement ou de pression, et en déduire les fréquences propres du système.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Ondes stationnaires et conditions aux limites acoustiques**
 >
 > Une onde stationnaire résulte de la superposition d'une onde incidente et d'une onde réfléchie de même amplitude, de sens de propagation opposés. Pour le déplacement,
@@ -61,6 +68,8 @@ $\Psi_R(x,t)=A_I e^{i(\omega t - k(2L-x))}$.
 > Pour un tube ouvert aux deux extrémités, on impose donc un nœud de pression en $x=0$ *et* en $x=L$ : cette double condition, tout à fait analogue à celle d'une corde vibrante fixée à ses deux extrémités (mais portant ici sur la pression et non le déplacement), sélectionne un ensemble discret de fréquences propres — les harmoniques du tube.
 >
 > **Remarque méthodologique importante** (utile pour les questions 4 et 5) : l'expression de $\Psi_R$ donnée dans l'énoncé encode déjà, par construction, la condition de nœud de pression en $x=L$ (c'est ce qui a permis de l'écrire). La quantification des fréquences propres provient donc de l'imposition de la *même* condition à l'*autre* extrémité $x=0$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -93,10 +102,14 @@ $\Psi_R(x,t)=A_I e^{i(\omega t - k(2L-x))}$.
 > Le mode $n$ a $n+1$ nœuds de pression ($x=L(1-m/n)$, $m=0,\dots,n$) et $n$ ventres au milieu de chaque intervalle, séparés de $\lambda_n/2=L/n$.
 
 
+
 **q1.** Justifier cette expression du déplacement réfléchi par un schéma.
+
 
 > [!tip]- 💡 Coup de pouce
 > Une extrémité ouverte est un ventre de déplacement (pas de nœud) : le déplacement n'est pas inversé au retour, contrairement à une réflexion sur paroi rigide.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -109,15 +122,21 @@ $\Psi_R(x,t)=A_I e^{i(\omega t - k(2L-x))}$.
 > On vérifie qu'en $x=L$, $\Psi_I(L,t)=A_I e^{i(\omega t-kL)}$ et $\Psi_R(L,t)=A_I e^{i(\omega t-k(2L-L))}=A_I e^{i(\omega t-kL)}$ : les deux contributions sont bien identiques en $x=L$ (même amplitude, même phase), ce qui correspond à un maximum de déplacement (ventre) et non à une annulation (nœud).
 
 
+
 **q2.** Montrer que le déplacement résultant s'écrit
 $\Psi(x,t)=2A_I\cos\big(k(L-x)\big)e^{i(\omega t-kL)}$. Justifier le nom d'onde stationnaire.
+
 
 > [!tip]- 💡 Coup de pouce
 > Sommez $\Psi_I+\Psi_R$ et factorisez ; une onde stationnaire a un profil spatial et une évolution temporelle qui se séparent (le terme $\cos(k(L-x))$ ne dépend pas de $t$).
 
 
+
+
 > [!success]- ✅ Correction
 > $\Psi(x,t)=\Psi_I+\Psi_R=2A_I\cos(k(L-x))e^{i(\omega t - kL)}$ : l'amplitude spatiale $\cos(k(L-x))$ est fixe dans le temps, seule la phase temporelle oscille -- onde stationnaire.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -139,10 +158,14 @@ $\Psi(x,t)=2A_I\cos\big(k(L-x)\big)e^{i(\omega t-kL)}$. Justifier le nom d'onde 
 > décrit donc un profil spatial *figé* (dont l'amplitude est modulée par $\cos(k(L-x))$) qui oscille globalement en phase, sans jamais se déplacer le long de l'axe $x$ : contrairement à une onde progressive, aucun point de la courbe ne « voyage », chaque point du tube oscille sur place avec une amplitude qui dépend de sa position — d'où le nom d'onde **stationnaire**.
 
 
+
 **q3.** Exprimer la surpression acoustique (notation complexe) $\tilde p(x,t)=-\dfrac{1}{\chi_S}\dfrac{\partial\Psi}{\partial x}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Dérivez simplement l'expression de $\Psi(x,t)$ trouvée en 2) par rapport à $x$, puis utilisez $1/\chi_S=\rho_0 c^2$ (cf. point cours de l'exercice 1) et $k=\omega/c$ pour simplifier.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -160,14 +183,20 @@ $\Psi(x,t)=2A_I\cos\big(k(L-x)\big)e^{i(\omega t-kL)}$. Justifier le nom d'onde 
 > On remarque que le profil spatial de la pression, en $\sin(k(L-x))$, est en **quadrature** avec celui du déplacement, en $\cos(k(L-x))$ : là où $\Psi$ est maximal (ventre), $p$ s'annule (nœud), et réciproquement — conformément à ce qu'annonçait le point cours.
 
 
+
 **q4.** En déduire les fréquences $f_n$ de résonance en surpression, en fonction de $n\in\mathbb{N}^*$, $c$ et $L$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Un tube ouvert-ouvert a un ventre de déplacement (donc un nœud de surpression) à chaque extrémité : condition analogue à une corde fixée aux deux bouts mais sur la pression. La condition en $x=L$ est déjà satisfaite automatiquement par construction (cf. remarque du point cours) ; il reste à imposer la même condition en $x=0$.
 
 
+
+
 > [!success]- ✅ Correction
 > $f_n = n\,c/(2L)$, $n\in\mathbb{N}^*$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -186,10 +215,14 @@ $\Psi(x,t)=2A_I\cos\big(k(L-x)\big)e^{i(\omega t-kL)}$. Justifier le nom d'onde 
 > C'est cette discrétisation des valeurs possibles de $f$ (et donc de $k$) qui constitue la résonance du tube : seules ces fréquences particulières permettent d'établir une onde stationnaire compatible avec les deux conditions aux limites simultanément.
 
 
+
 **q5.** Positions des maxima/minima de surpression ; représenter graphiquement jusqu'à la 3e harmonique (n=4).
+
 
 > [!tip]- 💡 Coup de pouce
 > Les nœuds de pression sont aux extrémités ouvertes, les ventres au milieu des segments -- comme les nœuds/ventres de déplacement pour une corde fixée.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -209,6 +242,8 @@ $\Psi(x,t)=2A_I\cos\big(k(L-x)\big)e^{i(\omega t-kL)}$. Justifier le nom d'onde 
 >
 >
 > On retrouve la structure classique : le mode $n$ possède $n$ ventres et $n+1$ nœuds, régulièrement répartis, tout à fait analogue aux modes propres d'une corde vibrante (mais avec les rôles de nœud/ventre échangés entre déplacement et pression).
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -233,14 +268,21 @@ $\Psi(x,t)=2A_I\cos\big(k(L-x)\big)e^{i(\omega t-kL)}$. Justifier le nom d'onde 
 > Les silencieux, conduits de ventilation et tuyaux d'échappement ont des résonances dues à ces ondes stationnaires. La correction de longueur d'extrémité ($\approx0{,}6\,r$ par bout ouvert) est nécessaire pour accorder un instrument.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Correction de longueur d'extrémité (« end correction »)
 > En pratique, une extrémité ouverte n'est pas un nœud de pression parfait : le rayonnement acoustique dans l'espace libre au-delà du tube introduit une « longueur effective » supplémentaire, de l'ordre de $0{,}6\,r$ ($r$ rayon du tube) par extrémité ouverte. Les fréquences de résonance réelles sont alors légèrement décalées : $f_n \approx n\,c/(2(L+2\times 0{,}6\,r))$. On pourra proposer une mesure expérimentale simple (mesure de $f_1$ à $L$ et $r$ connus) pour mettre en évidence cet écart avec le modèle idéal.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Guides d'onde acoustiques avec écoulement moyen
 > Dans un conduit parcouru par un écoulement moyen (silencieux automobile, conduit de ventilation), l'équation de propagation se modifie (équation convective) et les modes propres dépendent du nombre de Mach de l'écoulement ; on peut également s'intéresser aux modes de section variable (équation de Webster) qui gouvernent, par exemple, l'acoustique des instruments à vent de forme conique.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex3-onde-stationnaire-tube-de-kundt-ferme-a-faire-a-la-maison|Exercice 3 — Onde stationnaire, tube de Kundt fermé (à faire à la maison)]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex5-energie-intensite-acoustique-et-niveau-sonore-de-l-oreille-humaine-a-l-onde-stationnaire|Exercice 5 — Énergie, intensité acoustique et niveau sonore : de l'oreille humaine à l'onde stationnaire]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex6-tube-d-impedance-mesurer-l-absorption-d-un-materiau-avec-une-onde-stationnaire-partielle|Exercice 6 — Tube d'impédance : mesurer l'absorption d'un matériau avec une onde stationnaire partielle]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex8-transmission-a-travers-une-lame-adaptation-d-impedance-loi-de-masse-et-double-vitrage|Exercice 8 — Transmission à travers une lame : adaptation d'impédance, loi de masse et double vitrage]]
+
 

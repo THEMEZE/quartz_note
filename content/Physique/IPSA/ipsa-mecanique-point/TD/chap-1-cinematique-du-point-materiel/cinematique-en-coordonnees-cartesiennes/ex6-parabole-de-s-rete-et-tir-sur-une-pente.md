@@ -19,7 +19,8 @@ d'où l'équation de la trajectoire
 $$z(x)=x\tan\alpha-\frac{g\,x^2}{2v_0^2}\,\big(1+\tan^2\alpha\big).$$
 Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Peut-on atteindre cette fenêtre ? Avec quel angle ? Et où est la limite ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -31,7 +32,9 @@ Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 > Le **signe du discriminant** dit combien d'angles conviennent (0, 1 ou 2) ; la **frontière** $\Delta=0$ est la parabole de sûreté.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Équation de trajectoire d'un projectile**
 >
 > En éliminant le temps entre $x(t)$ et $z(t)$ et en utilisant $\dfrac1{\cos^2\alpha}=1+\tan^2\alpha$, on obtient
@@ -43,24 +46,32 @@ Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 > $A u^2+B u+C=0$ avec $A\ne0$ a deux solutions réelles si $\Delta=B^2-4AC>0$, une solution double si $\Delta=0$, aucune si $\Delta<0$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Changer de point de vue : de la trajectoire à l'ensemble des points atteignables**
 >
 > Savoir retourner l'équation de trajectoire pour en faire une équation en $\tan\alpha$, interpréter son discriminant comme une **condition d'atteignabilité**, identifier la **parabole de sûreté** comme frontière de la zone accessible, et transposer la méthode au tir sur une pente.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Un exercice de modélisation inversée**
 >
 > Dans la plupart des exercices de projectile on fixe $\alpha$ et on cherche la trajectoire. Ici on **fixe le point d'arrivée** et on cherche les angles : le changement d'inconnue ($\tan\alpha$) transforme le problème en équation du second degré, dont le discriminant porte l'information physique (« peut-on atteindre ce point ? »). Le passage à la frontière $\Delta=0$ donne la parabole de sûreté, concept classique (Torricelli, XVII\textsuperscript{e} siècle). Le tir sur une pente (question g) montre que les formules du cours ne se « recollent » pas par cœur mais se redémontrent avec la même méthode. L'exercice est long : prévoir de scinder en deux séances, ou de réserver la partie pente aux plus avancés.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Résultats génériques à connaître**
 >
 > Pour une vitesse initiale $v_0$ fixée depuis le sol : portée maximale $\dfrac{v_0^2}{g}$ (pour $\alpha=45^\circ$), hauteur maximale $\dfrac{v_0^2}{2g}$ (pour $\alpha=90^\circ$). L'ensemble des points atteignables est la région du plan délimitée par la **parabole de sûreté**
 > $$z_s(x)=\frac{v_0^2}{2g}-\frac{g\,x^2}{2v_0^2}.$$
 > À l'extérieur de cette parabole, aucun tir (quel que soit $\alpha$) n'atteint le point ; à l'intérieur, il existe deux angles ; sur la parabole, un seul.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -85,16 +96,22 @@ Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 > La bissectrice de deux directions faisant les angles $\theta_1$ et $\theta_2$ avec l'horizontale a pour angle $\dfrac{\theta_1+\theta_2}2$. Pour la pente et la verticale : $\dfrac{\beta+\pi/2}2=\dfrac\pi4+\dfrac\beta2$.
 
 
+
 **q1.** - [(a)] Montrer que, pour atteindre le point $(x,z)$, l'angle de tir doit vérifier une équation du second degré dont l'inconnue est $u=\tan\alpha$.
 - [(b)] À quelle condition sur $z$ (à $x$ fixé) cette équation a-t-elle des solutions réelles ? En déduire l'expression de la parabole de sûreté $z_s(x)$.
 - [(c)] Une fenêtre est située à $x=25$ m et $z=10$ m. Peut-on l'atteindre ? Calculer les angles de tir possibles et les durées de vol correspondantes. Comparer les vitesses d'arrivée.
+
 
 > [!tip]- 💡 Coup de pouce
 > Pour (a), partez de $z=x\tan\alpha-\dfrac{g x^2}{2v_0^2}(1+\tan^2\alpha)$ et regroupez les termes en puissances de $u$. Pour (b), calculez $\Delta=B^2-4AC$ et résolvez $\Delta\ge0$ en $z$. Pour la vitesse d'arrivée, pensez à la conservation de l'énergie mécanique.
 
 
+
+
 > [!success]- ✅ Correction
 > $\dfrac{gx^2}{2v_0^2}u^2-xu+z+\dfrac{gx^2}{2v_0^2}=0$ ; atteignable ssi $z\le z_s(x)=\dfrac{v_0^2}{2g}-\dfrac{g x^2}{2v_0^2}$. Fenêtre : $z_s(25)\approx12{,}7$ m $>10$ m donc atteignable ; $\alpha_1\approx46{,}0^\circ$ ($t\approx1{,}80$ s) et $\alpha_2\approx65{,}8^\circ$ ($t\approx3{,}05$ s) ; même norme de vitesse d'arrivée $\approx14{,}3~\mathrm{m/s}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -125,15 +142,21 @@ Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 > Vitesses d'arrivée : l'énergie mécanique étant conservée et les deux tirs partant de la même altitude à la même vitesse, la norme de la vitesse à l'altitude $z$ vérifie $v^2=v_0^2-2gz$ pour les deux angles, soit $v\approx\sqrt{400-196{,}2}\approx14{,}3~\mathrm{m/s}$. Seule la **direction** d'arrivée diffère (jet plus plongeant pour le tir en cloche).
 
 
+
 **q2.** - [(d)] Déterminer les points d'intersection de la parabole de sûreté avec le sol et avec l'axe $Oz$, et leur signification physique.
 - [(e)] Pour un point $P(x,z_s(x))$ de la parabole de sûreté, déterminer l'unique angle de tir. Vérifier que la trajectoire correspondante est **tangente** à la parabole de sûreté en $P$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Pour (e), à $\Delta=0$ la racine double est $u=-B/(2A)$. Pour la tangence, comparez la pente $\mathrm dz/\mathrm dx$ de la trajectoire en $P$ avec celle de $z_s$.
 
 
+
+
 > [!success]- ✅ Correction
 > $z_s(0)=\dfrac{v_0^2}{2g}$ (hauteur maximale, tir vertical) ; $z_s(x)=0$ en $x=\dfrac{v_0^2}{g}$ (portée maximale, $\alpha=45^\circ$). Sur la parabole : $\tan\alpha=\dfrac{v_0^2}{g\,x}$. Les deux courbes ont la même pente $-\dfrac{g x}{v_0^2}$ en $P$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -152,6 +175,7 @@ Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 > Pente de la parabole de sûreté : $z_s'(x)=-\dfrac{g x}{v_0^2}$. Les pentes sont égales et les courbes ont le point $P$ en commun : elles sont **tangentes**. Chaque trajectoire touche la parabole en un point, qui est son point le plus « avancé » dans la zone atteignable.
 
 
+
 **q3.** Le jet est maintenant dirigé vers un talus plan, montant, faisant l'angle $\beta=30^\circ$ avec l'horizontale (le plan du talus contient l'axe $Ox$ et la direction de plus grande pente). On note $d$ la distance, mesurée le long du talus, entre $O$ et le point d'impact.
 
 
@@ -159,12 +183,17 @@ Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 - [(g)] Déterminer l'angle $\alpha^\star$ qui maximise $d$ et la portée maximale $d_{\max}$ ; application numérique. Que devient le résultat sur un talus **descendant** de même angle ?
 - [(h)] Retrouver $d_{\max}$ en utilisant la parabole de sûreté, et interpréter géométriquement $\alpha^\star$.
 
+
 > [!tip]- 💡 Coup de pouce
 > Le point d'impact est sur le talus : $(x,z)=(d\cos\beta,\,d\sin\beta)$. Reportez dans l'équation de trajectoire et simplifiez par $d\ne0$. Utilisez ensuite $2\cos\alpha\sin(\alpha-\beta)=\sin(2\alpha-\beta)-\sin\beta$. Pour (h), cherchez l'intersection de la droite $z=x\tan\beta$ avec $z_s(x)$.
 
 
+
+
 > [!success]- ✅ Correction
 > $d(\alpha)=\dfrac{2v_0^2\cos\alpha\sin(\alpha-\beta)}{g\cos^2\beta}$ ; $\alpha^\star=\dfrac\pi4+\dfrac\beta2=60^\circ$, $d_{\max}=\dfrac{v_0^2}{g(1+\sin\beta)}\approx27{,}2$ m ; en descente : $\alpha^\star=30^\circ$ et $d_{\max}=\dfrac{v_0^2}{g(1-\sin\beta)}\approx81{,}5$ m.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -195,32 +224,6 @@ Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 > Interprétation : $\alpha^\star=\dfrac\pi4+\dfrac\beta2=\dfrac12\Big(\beta+\dfrac\pi2\Big)$ est l'angle de la **bissectrice** entre la direction de la pente (angle $\beta$) et la verticale (angle $\pi/2$) : pour tirer le plus loin sur une pente, on vise à mi-chemin entre la pente et le zénith.
 
 
-> [!warning]- 🪤 Écueils classiques
-> **Chercher $\alpha$ au lieu de $\tan\alpha$**
->
-> Écrire l'équation en $\alpha$ conduit à un mélange de $\sin$ et de $\cos$ non soluble simplement. Le bon réflexe est de poser $u=\tan\alpha$ pour obtenir un polynôme. Il faut ensuite penser à repasser aux angles par $\alpha=\arctan u$ (en radians ou degrés, selon la calculatrice).
->
-> **Ne garder qu'une solution**
->
-> Les deux racines sont **physiques** (tir tendu et tir en cloche). Il ne faut pas rejeter l'une des deux sans raison : on discute ensuite laquelle choisir (durée de vol, angle d'arrivée).
->
-> **Confondre trajectoire et parabole de sûreté**
->
-> La parabole de sûreté n'est **pas** une trajectoire (elle est $\alpha$-indépendante). Ce n'est pas une courbe parcourue par une particule, mais une frontière sur laquelle chaque trajectoire pour un angle donné est tangente en un point.
->
-> **Sur la pente : confondre $x$ et la distance $d$ le long de la pente**
->
-> Le point d'arrivée est à la distance $d$ le long de la pente : ses coordonnées sont $(d\cos\beta,\;d\sin\beta)$, pas $(d,0)$. Beaucoup d'erreurs viennent d'un oubli de projection.
-
-
-> [!tip]- 🎙️ Conseils d'animation
-> **Visualiser avec Python**
->
-> Faire tracer, pour $\alpha$ de $10^\circ$ à $80^\circ$ par pas de $10^\circ$, les trajectoires, puis superposer la parabole $z_s(x)$. L'enveloppe apparaît visuellement. Demander de repérer les deux trajectoires qui passent par la fenêtre.
->
-> **Défi : le point le plus lointain sur la pente**
->
-> Avant le calcul, demander aux étudiants d'estimer l'angle de tir optimal sur une montée de $30^\circ$. Une majorité répond $45^\circ$ ; le calcul donne $60^\circ$ (bissectrice de la pente et de la verticale), ce qui crée un déclic.
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -245,28 +248,73 @@ Dans tout l'exercice, $v_0$ est fixé et **c'est $\alpha$ qui est l'inconnue**.
 > En gravitation képlérienne, la zone atteignable d'un missile ou d'une sonde est délimitée par une ellipse de sûreté.
 
 
-> [!success]- 🏁 Bilan
+
+
+> [!warning]- 🪤 Écueils classiques
+> **Chercher $\alpha$ au lieu de $\tan\alpha$**
+>
+> Écrire l'équation en $\alpha$ conduit à un mélange de $\sin$ et de $\cos$ non soluble simplement. Le bon réflexe est de poser $u=\tan\alpha$ pour obtenir un polynôme. Il faut ensuite penser à repasser aux angles par $\alpha=\arctan u$ (en radians ou degrés, selon la calculatrice).
+>
+> **Ne garder qu'une solution**
+>
+> Les deux racines sont **physiques** (tir tendu et tir en cloche). Il ne faut pas rejeter l'une des deux sans raison : on discute ensuite laquelle choisir (durée de vol, angle d'arrivée).
+>
+> **Confondre trajectoire et parabole de sûreté**
+>
+> La parabole de sûreté n'est **pas** une trajectoire (elle est $\alpha$-indépendante). Ce n'est pas une courbe parcourue par une particule, mais une frontière sur laquelle chaque trajectoire pour un angle donné est tangente en un point.
+>
+> **Sur la pente : confondre $x$ et la distance $d$ le long de la pente**
+>
+> Le point d'arrivée est à la distance $d$ le long de la pente : ses coordonnées sont $(d\cos\beta,\;d\sin\beta)$, pas $(d,0)$. Beaucoup d'erreurs viennent d'un oubli de projection.
+
+
+
+
+> [!tip]- 🎙️ Conseils d'animation
+> **Visualiser avec Python**
+>
+> Faire tracer, pour $\alpha$ de $10^\circ$ à $80^\circ$ par pas de $10^\circ$, les trajectoires, puis superposer la parabole $z_s(x)$. L'enveloppe apparaît visuellement. Demander de repérer les deux trajectoires qui passent par la fenêtre.
+>
+> **Défi : le point le plus lointain sur la pente**
+>
+> Avant le calcul, demander aux étudiants d'estimer l'angle de tir optimal sur une montée de $30^\circ$. Une majorité répond $45^\circ$ ; le calcul donne $60^\circ$ (bissectrice de la pente et de la verticale), ce qui crée un déclic.
+
+
+
+
+> [!success]- 🏁 Bilan pédagogique
 > **Deux angles, une frontière, une bissectrice**
 >
 > Pour atteindre un point $(x,z)$ avec $v_0$ fixé, $\tan\alpha$ vérifie $\dfrac{g x^2}{2v_0^2}u^2-x\,u+z+\dfrac{g x^2}{2v_0^2}=0$. Le point est atteignable si et seulement si $z\le z_s(x)=\dfrac{v_0^2}{2g}-\dfrac{g x^2}{2v_0^2}$, avec deux angles si l'inégalité est stricte. Sur une pente d'angle $\beta$, la portée est maximale pour $\alpha^\star=\dfrac\pi4+\dfrac\beta2$ (bissectrice entre la pente et la verticale) et vaut $d_{\max}=\dfrac{v_0^2}{g\,(1+\sin\beta)}$ (montée), $\dfrac{v_0^2}{g\,(1-\sin\beta)}$ (descente).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Le singe et le chasseur
 > Un chasseur vise directement un singe pendu à une branche, à la hauteur $H$ et à la distance horizontale $L$. Au moment précis où le coup part, le singe se lâche. Montrer que la balle (vitesse initiale $v_0$ dirigée vers la position initiale du singe) l'atteint toujours, à condition que le temps de vol soit suffisamment court pour qu'il n'ait pas touché le sol. Indication : écrire $\overrightarrow{OM_{\rm balle}}-\overrightarrow{OM_{\rm singe}}$ ; la gravité s'annule dans la différence (principe d'équivalence en miniature).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Enveloppe d'une famille de courbes
 > La famille de trajectoires $F(x,z,u)=z-xu+\dfrac{gx^2}{2v_0^2}(1+u^2)=0$ dépend du paramètre $u=\tan\alpha$. Son enveloppe est obtenue en éliminant $u$ entre $F=0$ et $\partial F/\partial u=0$. Retrouver ainsi $z_s(x)$ et vérifier que l'on obtient bien la condition $\Delta=0$ de la question (d). Même méthode pour l'enveloppe d'une famille de droites (caustique de la lumière).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Frottement quadratique : l'angle optimal diminue
 > Avec une résistance de l'air en $-kv\,\vec v$, l'angle de portée maximale devient strictement inférieur à $45^\circ$ et la trajectoire est asymétrique. Étudier numériquement (Runge--Kutta) $\alpha^\star(k)$ et tracer la nouvelle enveloppe : elle n'est plus une parabole. Comparer à un tir de balle de golf réel (angle de $10$--$15^\circ$ pour un driver, avec effet Magnus).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Doctorat : Ellipse de sûreté en gravitation de Kepler
 > Pour un lancement depuis un point $P$ d'un champ central (missile balistique), l'enveloppe des trajectoires képlériennes de **même énergie** est une ellipse dont les foyers sont le centre attracteur et le point $P$. Retrouver la parabole de sûreté comme limite $r\to\infty$ de cette ellipse (champ uniforme).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex7-balle-rebondissante-et-paradoxe-de-zenon|Exercice 7 — Balle rebondissante et paradoxe de Zénon]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]]
+
 

@@ -19,7 +19,8 @@ de d'Alembert, une corde métallique épaisse **résiste à la flexion** : en pl
 $$\mu\,\frac{\partial^2y}{\partial t^2}=F\,\frac{\partial^2y}{\partial x^2}-EI\,\frac{\partial^4y}{\partial x^4},\qquad I=\frac{\pi d_c^4}{64},$$
 où $I$ est le moment quadratique de la section. Les deux extrémités sont **appuyées** : $y=0$ et $\partial_x^2y=0$ en $x=0$ et $x=L$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi les pianos sont-ils accordés « faux » ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -27,6 +28,8 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > *Les accordeurs de piano « étirent » volontairement l'accord : les notes aiguës sont accordées un peu plus haut que ce que donnerait le calcul exact par octaves, et les notes graves un peu plus bas. Pourquoi ? Une corde idéale de longueur $L$ a pour fréquences propres $f_n=nf_1$ (tous les harmoniques sont des multiples exacts du fondamental). Une vraie corde de piano a-t-elle le même spectre ? Si les harmoniques d'une note sont décalés vers le haut, que doit faire l'accordeur pour que les octaves « battent » le moins possible ?*
 >
 > **Idée clé : la raideur rend la corde dispersive.** Une onde plane $y=a\cos(\omega t-kx)$ est solution à condition de vérifier une **relation de dispersion** $\omega(k)$ qui n'est plus $\omega=ck$ : ici $\omega^2=c^2k^2\left(1+\dfrac{EI}Fk^2\right)$. La célérité de phase $\omega/k$ dépend de $k$ (les petites longueurs d'onde vont plus vite) et les fréquences propres $f_n$ ne sont plus des multiples exacts de $f_0$ : on parle d'**inharmonicité**. L'écart augmente avec le rang $n$ de l'harmonique ; il est de l'ordre de $\tfrac12Bn^2$, où $B$ est le coefficient d'inharmonicité, d'où les accords « étirés ».
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -55,9 +58,11 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > $I=\dfrac{\pi d_c^4}{64}$ : forte dépendance en $d_c^4$ : une corde deux fois plus épaisse est $16$ fois plus raide en flexion.
 
 
+
 **q1.** (a) Vérifier l'homogénéité de l'équation donnée. Que devient-elle pour $EI\to0$ ? Pour quelles longueurs d'onde le terme de raideur est-il négligeable ?
 
 (b) Déterminer la relation de dispersion $\omega(k)$ pour une onde plane $y=\Re\,[a\,\mathrm e^{j(\omega t-kx)}]$. Exprimer la vitesse de phase $v_\varphi(k)$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Dimensions**
@@ -69,10 +74,14 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > Remplacez $\partial_t^2\to-\omega^2$, $\partial_x^2\to-k^2$, $\partial_x^4\to k^4$ et factorisez par $\mu$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\omega^2=c^2k^2\left(1+\dfrac{EI}Fk^2\right)$, $v_\varphi=c\sqrt{1+\dfrac{EI}Fk^2}$. La raideur est négligeable pour $\lambda\gg\lambda_c=2\pi\sqrt{EI/F}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -87,9 +96,11 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > La vitesse de phase **croît avec $k$** : les composantes de petite longueur d'onde se propagent plus vite que $c$.
 
 
+
 **q2.** (a) Montrer que les modes propres s'écrivent $y_n\propto\sin\dfrac{n\pi x}L\cos(\omega_nt+\phi_n)$ et que les fréquences propres sont $f_n=nf_0\sqrt{1+Bn^2}$ avec $B=\dfrac{\pi^2EI}{FL^2}$.
 
 (b) Établir $f_n\simeq nf_0\left(1+\dfrac{Bn^2}2\right)$ et exprimer l'écart $\Delta_n=1200\log_2\dfrac{f_n}{nf_0}$ en cents.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Conditions aux limites appuyées**
@@ -101,10 +112,14 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > $\sin(kL)=0\Rightarrow k_n=n\pi/L$. Reportez dans $\omega(k)$ ; $\dfrac{EI}Fk_n^2=Bn^2$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $k_n=\dfrac{n\pi}L$ ; $f_n=nf_0\sqrt{1+Bn^2}$ avec $B=\dfrac{\pi^2EI}{FL^2}$ ; $\Delta_n\simeq\dfrac{1200}{\ln2}\cdot\dfrac{Bn^2}2\approx866\,Bn^2$ cents.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -121,6 +136,7 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > L'écart croît comme le **carré du rang** : il est négligeable pour le fondamental, mais audible pour les harmoniques élevés.
 
 
+
 **q3.** (a) Calculer $c$, $\mu$, $F$, $I$, $EI$, le coefficient $B$ et la longueur d'onde critique $\lambda_c$. À partir de quel rang $n$ le terme de raideur domine-t-il ($Bn^2\sim1$) ?
 
 (b) Calculer $f_1$, $f_2$, $f_5$, $f_{10}$ et les écarts correspondants en cents.
@@ -128,6 +144,7 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 (c) Montrer que la vitesse de groupe est $v_g=c\,\dfrac{1+2\kappa k^2}{\sqrt{1+\kappa k^2}}$ avec $\kappa=EI/F$. La calculer pour $n=10$ et la comparer à $c$ et à $v_\varphi$.
 
 (d) Expliquer pourquoi l'accordeur doit « étirer » l'accord : quelle note doit-il choisir pour la note située une octave au-dessus de $do_3$ si la $2^{\text{e}}$ harmonique de $do_3$ est à $f_2$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Chaîne de calculs**
@@ -139,22 +156,32 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > $\omega=ck\sqrt{1+\kappa k^2}$ : dérivez par rapport à $k$ (dérivée d'un produit).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Effet de l'épaisseur
 > Pour une même note, $B\propto d_c^4/(FL^2)$. Pourquoi les pianos droits (cordes plus courtes, $L$ plus petit) sont-ils plus inharmoniques que les pianos à queue ? Pourquoi les cordes graves sont-elles **filées** (un fil central fin entouré d'un enroulement de cuivre) au lieu d'être simplement plus épaisses ?
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Conditions aux limites encastrées
 > Pour une corde **encastrée** ($y=0$, $y'=0$), les modes ne sont plus des sinus purs : ils présentent une couche limite de largeur $\sqrt{EI/F}$ près des extrémités. Montrer qu'à l'ordre un, $f_n\simeq nf_0\left(1+\dfrac2{\pi}\dfrac{\ell_c}{L}+\dots\right)\sqrt{1+Bn^2}$ avec $\ell_c=\sqrt{EI/F}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Propagation d'une impulsion dispersive
 > Pour une impulsion de largeur spectrale $\Delta k$, la distance $z$ au bout de laquelle elle s'élargit significativement est $z\sim\dfrac{1}{\Delta k^2\,|\omega''(k)|}$ avec $\omega''=\mathrm d^2\omega/\mathrm dk^2$. Calculer $\omega''(k)$ pour la corde raide, discuter la forme du « chirp » entendu après un impact (son aigu qui précède le grave) et comparer avec les ondes de surface de l'eau ($\omega^2=gk$).
+
+
 
 
 > [!success]- ✅ Correction
 > **Résultats**
 >
 > $c\approx330$ m/s, $\mu\approx6{,}13$ g/m, $F\approx666$ N, $EI\approx9{,}8\times10^{-3}$ N·m², $B\approx3{,}7\times10^{-4}$, $\lambda_c\approx2{,}4$ cm, $n_B\approx52$. $\Delta_2\approx1{,}3$, $\Delta_5\approx8$, $\Delta_{10}\approx31$ cents. $v_g(n=10)\approx1{,}054\,c$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -179,6 +206,8 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > Le $2^{\text{e}}$ partiel de $do_3$ est à $f_2=523{,}6$ Hz, un peu plus haut que $2f_0=523{,}2$ Hz, fréquence « idéale » de $do_4$. Si l'accordeur accorde $do_4$ sur $2f_0$, le battement entre le partiel de $do_3$ et le fondamental de $do_4$ est $\Delta f\approx0{,}4$ Hz ; pour l'annuler, il **monte** $do_4$ à $f_2$. De proche en proche, chaque octave est élargie : par rapport au milieu du clavier, les notes aiguës sont accordées de plus en plus haut et les graves de plus en plus bas. C'est l'**accord étiré** : l'accordeur préfère des octaves légèrement « fausses » mais sans battements.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Musique et lutherie**
 >
@@ -197,6 +226,9 @@ où $I$ est le moment quadratique de la section. Les deux extrémités sont **ap
 > Les logiciels d'accordage et de synthèse corrigent l'inharmonicité en décalant la fréquence des partiels : $f_n=nf_0\sqrt{1+Bn^2}$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex15-corde-amortie-attenuation-facteur-de-qualite-et-resonance-de-melde|Exercice 15 — Corde amortie : atténuation, facteur de qualité et résonance de Melde]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex5-corde-fixee-a-ses-deux-extremites-et-ondes-stationnaires|Exercice 5 — Corde fixée à ses deux extrémités et ondes stationnaires]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex9-corde-pesante-suspendue-milieu-inhomogene-bosse-acceleree-et-coup-de-fouet|Exercice 9 — Corde pesante suspendue : milieu inhomogène, bosse accélérée et coup de fouet]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex13-corde-pincee-timbre-harmoniques-absents-et-energie-des-modes|Exercice 13 — Corde pincée : timbre, harmoniques absents et énergie des modes]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex16-masse-en-bout-de-corde-condition-aux-limites-dynamique-et-equation-transcendante|Exercice 16 — Masse en bout de corde : condition aux limites dynamique et équation transcendante]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex1-partie-a-modes-propres-d-un-ressort-helicoidal-ondes-longitudinales|Exercice 1 — Partie A — Modes propres d'un ressort hélicoïdal (ondes longitudinales)]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex2-partie-b-effet-de-la-tension-sur-les-modes-propres-d-une-corde|Exercice 2 — Partie B — Effet de la tension sur les modes propres d'une corde]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex4-partie-d-compatibilite-des-longueurs-d-onde-avec-le-modele-des-modes-propres|Exercice 4 — Partie D — Compatibilité des longueurs d'onde avec le modèle des modes propres]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex5-synthese-scientifique-du-tp|Exercice 5 — Synthèse scientifique du TP]]
+
 

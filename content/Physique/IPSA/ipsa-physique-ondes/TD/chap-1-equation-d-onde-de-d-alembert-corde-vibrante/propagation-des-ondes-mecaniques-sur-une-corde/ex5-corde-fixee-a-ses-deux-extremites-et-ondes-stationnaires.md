@@ -16,7 +16,8 @@ $$\frac{\partial^2 y}{\partial x^2} = \frac{\mu}{F} \frac{\partial^2 y}{\partial
 
 <p style="text-align:center"><a href="/figures/td1_ex4_phv212_corde_fixe.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex4_phv212_corde_fixe.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi une corde ne donne-t-elle que certaines notes ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -26,6 +27,8 @@ $$\frac{\partial^2 y}{\partial x^2} = \frac{\mu}{F} \frac{\partial^2 y}{\partial
 > **Idée clé : les conditions aux limites quantifient les modes.** Une onde stationnaire s'écrit à variables séparées, $y(x,t)=A\cos(kx+\varphi)\cos(\omega t+\phi)$, avec $\omega=ck$. Une corde fixée en $x=0$ et $x=L$ impose $y(0,t)=y(L,t)=0$ : $\varphi=\pi/2$ et $\sin(kL)=0$, donc
 > $$k_N=\frac{N\pi}{L},\qquad\lambda_N=\frac{2L}{N},\qquad f_N=N\,f_1,\ \ f_1=\frac c{2L}.$$
 > Le mode $N$ a $N+1$ nœuds (dont les 2 extrémités) et $N$ ventres, séparés de $\lambda_N/2$. La vibration quelconque est une **superposition** de ces modes.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -54,9 +57,11 @@ $$\frac{\partial^2 y}{\partial x^2} = \frac{\mu}{F} \frac{\partial^2 y}{\partial
 > Toute forme initiale $y(x,0)$ s'écrit $\sum_N B_N\sin(N\pi x/L)$ : décomposer en modes, c'est faire une série de Fourier en sinus.
 
 
+
 **q1.** On admet la solution particulière $y(x,t) = f(x)\cdot g(t)$ (séparation des variables).
 Montrer que $y(x,t) = A\cos(kx+\varphi)\cos(\omega t+\phi)$.
 Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relation de dispersion).
+
 
 > [!tip]- 💡 Coup de pouce
 > **Méthode simple**
@@ -66,6 +71,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > **Méthode de séparation**
 >
 > Injectez $y(x,t) = f(x)g(t)$ dans l'équation d'onde, séparez les termes en $x$ et en $t$ pour égaler chaque membre à une constante négative $-k^2$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Séparation des variables pour l'équation de d'Alembert unidimensionnelle
@@ -96,6 +103,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > En raison de la linéarité de l'opérateur de d'Alembert $\Box = \frac{\partial^2}{\partial x^2} - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$, toute combinaison linéaire de solutions à variables séparées est encore solution. La solution générale s'exprime par le développement en série de Fourier :
 > $$y(x,t) = \sum_{n=1}^{+\infty} f_n(x) \cdot g_n(t)$$
 > La convergence de la série dépend de la régularité des données initiales $y(x,0)$ et $\frac{\partial y}{\partial t}(x,0)$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Réduction de l'EDP en système d'EDO Sturm-Liouville
@@ -142,6 +151,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > avec la relation de dispersion $\omega_n = c k_n = \frac{n\pi c}{L}$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Résolution par Transformée de Fourier spatiale et spectre continu
 > **1. Transformation intégrale sur le domaine infini $\mathbb{R}$ **\\
 >
@@ -182,6 +193,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > \textbf{Nature physique} & \text{Superposition d'ondes stationnaires} & \text{Superposition d'ondes planes progressives} 
 > \end{array}
 > $$
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Pour aller plus loin : interprétation géométrique et représentations complexes
@@ -230,6 +243,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > L'énergie mécanique totale du mode $n$ est alors directement proportionnelle au carré de l'amplitude contractée $R_n^2 = C_n^2 + B_n^2$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Directe**
 >
@@ -239,6 +254,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 >
 > On obtient $f''(x) + k^2 f(x) = 0$ et $g''(t) + \omega^2 g(t) = 0$.
 > La relation de dispersion est $\omega = c\cdot k$ avec $c = \sqrt{F/\mu}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -267,7 +284,9 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > La constante de séparation impose la relation de dispersion : $\omega = c\cdot k$, soit $k = \dfrac{\omega}{c}$ avec $c = \sqrt{\dfrac{F}{\mu}}$.
 
 
+
 **q2.** Montrer que les fréquences de vibration sont des multiples entiers d'une fréquence fondamentale $f_1$ ($f_N = N f_1$). Exprimer $f_1$ en fonction de $F$, $L$ et $\mu$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Conditions aux limites**
@@ -275,10 +294,14 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > Appliquez les conditions aux limites $y(0,t) = 0$ et $y(L,t) = 0$ pour déterminer $k$ puis $f_N$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $f_N = N f_1$ avec $f_1 = \dfrac{1}{2L}\sqrt{\dfrac{F}{\mu}}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -291,7 +314,9 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > Le fondamental ($N=1$) s'écrit $f_1 = \dfrac{c}{2L} = \dfrac{1}{2L}\sqrt{\dfrac{F}{\mu}}$, d'où $f_N = N f_1$.
 
 
+
 **q3.** Application : Pour la 3ème corde de guitare ($\ell = 63$ cm, $\rho = 1200\text{ kg}\cdot\text{m}^{-3}$, $S = 0.42\text{ mm}^2$), calculer la tension $F$ pour $f_1 = 147$ Hz.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Masse linéique**
@@ -299,10 +324,14 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > Calculez d'abord $\mu = \rho\cdot S$, puis isolez $F$ dans la formule de $f_1$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\mu = 5.04\times 10^{-4}\text{ kg/m}$, $F \approx 17.3\text{ N}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -313,7 +342,9 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > $$F = 5.04\times 10^{-4} \times (2 \times 0.63 \times 147)^2 \approx 17.3\text{ N}$$
 
 
+
 **q4.** Exprimer, en fonction de la longueur $L$, les longueurs d'ondes possibles $\lambda_N$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Relation $k_N$ et $\lambda_N$
@@ -322,10 +353,14 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > Utilisez $k_N = \dfrac{2\pi}{\lambda_N} = \dfrac{N\pi}{L}$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\lambda_N = \dfrac{2L}{N}$ pour $N \ge 1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -335,12 +370,16 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > $$\lambda_N = \frac{2L}{N}$$
 
 
+
 **q5.** Exprimer $y_N(x,t)$ pour le mode $N$. Préciser le nombre et la position des nœuds et des ventres. Distance entre 2 ventres / 2 nœuds ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Positions récurrencielles**
 >
 > Les nœuds annulent le sinus ($\sin(k_N x) = 0$), les ventres le maximisent ($|\sin(k_N x)| = 1$).
+
+
 
 
 > [!success]- ✅ Correction
@@ -352,6 +391,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > Distance entre deux nœuds ou deux ventres consécutifs : $\dfrac{\lambda_N}{2} = \dfrac{L}{N}$.
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Analyse structurée**
 >
@@ -361,7 +402,9 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > - **Distance inter-nœuds / inter-ventres :** $d = \dfrac{L}{N} = \dfrac{\lambda_N}{2}$.
 
 
+
 **q6.** Dessiner la corde pour $N=1$ et $N=4$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Représentation**
@@ -369,12 +412,18 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > $N=1$ présente 1 fuseau (0 nœud interne), $N=4$ présente 4 fuseaux (3 nœuds internes).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : De la corde à la physique quantique
 > La quantification des modes propres d'une corde fixe ($k_N = N\pi/L$) est formellement identique à la quantification des niveaux d'énergie d'une particule dans un puits de potentiel infini en mécanique quantique.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Analyse spectrale et séries de Fourier
 > Une déformation initiale quelconque $y(x,0)$ se décompose comme une somme infinie de modes propres $\sum y_N(x,t)$ via la décomposition en séries de Fourier.
+
+
 
 
 > [!success]- ✅ Correction
@@ -384,6 +433,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > - **$N=4$** : Deux ondes complètes entre $0$ et $L$ (4 ventres, nœuds en $0, L/4, L/2, 3L/4, L$).
 
 
+
+
 > [!example]- 📝 Solution détaillée
 > **Tracé schématique**
 >
@@ -391,6 +442,8 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > - $N=4$ (Harmonique 4) : \texttt{A ()()()() B} (4 fuseaux de longueur $L/4$).
 >
 > <p style="text-align:center"><a href="/figures/td1_ex4_phv212_corde_fixe_mode.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex4_phv212_corde_fixe_mode.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -411,6 +464,9 @@ Quelle relation existe-t-il entre $k$, $\omega$ et la célérité $c$ ? (Relatio
 > Décomposer un son en harmoniques est une analyse de Fourier : spectre discret pour un signal périodique, continu pour un signal non périodique (voir la transformée de Fourier).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex12-adaptation-d-impedance-lame-quart-d-onde-entre-deux-cordes|Exercice 12 — Adaptation d'impédance : lame quart d'onde entre deux cordes]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex1-partie-a-modes-propres-d-un-ressort-helicoidal-ondes-longitudinales|Exercice 1 — Partie A — Modes propres d'un ressort hélicoïdal (ondes longitudinales)]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex4-partie-d-compatibilite-des-longueurs-d-onde-avec-le-modele-des-modes-propres|Exercice 4 — Partie D — Compatibilité des longueurs d'onde avec le modèle des modes propres]] · [[physique/IPSA/ipsa-tp/TP/ondes-mecaniques-sonores-electromagnetiques-et-lumineuses/tp-sur-les-ondes-visuels-amusants-orientes-aviation/ex1-ondes-sur-un-ressort-long-slinky-filmees-au-ralenti-impulsions-reflexions-et-modes-propres|Exercice 1 — Ondes sur un ressort long (Slinky) filmées au ralenti : impulsions, réflexions et modes propres]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex9-corde-pesante-suspendue-milieu-inhomogene-bosse-acceleree-et-coup-de-fouet|Exercice 9 — Corde pesante suspendue : milieu inhomogène, bosse accélérée et coup de fouet]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex13-corde-pincee-timbre-harmoniques-absents-et-energie-des-modes|Exercice 13 — Corde pincée : timbre, harmoniques absents et énergie des modes]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex14-corde-de-piano-raide-dispersion-et-inharmonicite|Exercice 14 — Corde de piano raide : dispersion et inharmonicité]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex16-masse-en-bout-de-corde-condition-aux-limites-dynamique-et-equation-transcendante|Exercice 16 — Masse en bout de corde : condition aux limites dynamique et équation transcendante]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex2-partie-b-effet-de-la-tension-sur-les-modes-propres-d-une-corde|Exercice 2 — Partie B — Effet de la tension sur les modes propres d'une corde]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex5-synthese-scientifique-du-tp|Exercice 5 — Synthèse scientifique du TP]]
+
 

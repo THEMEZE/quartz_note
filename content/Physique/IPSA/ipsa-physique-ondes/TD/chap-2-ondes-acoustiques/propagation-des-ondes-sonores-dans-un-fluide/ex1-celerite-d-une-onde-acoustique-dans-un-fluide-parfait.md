@@ -16,7 +16,8 @@ rapport des capacités calorifiques $\gamma = C_P/C_V = 1.4$. Masse molaire
 $M = 29$ g/mol, température $T = 293$ K, $R = 8.32$ J·mol$^{-1}$·K$^{-1}$.
 On rappelle le coefficient de compressibilité $\chi = -\dfrac{1}{V}\dfrac{\partial V}{\partial P}$.
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Coefficient de compressibilité et équation d'état**
 >
 > Connaître la définition du coefficient de compressibilité isotherme $\chi_T = -\dfrac{1}{V}\left(\dfrac{\partial V}{\partial P}\right)_T$ et de son analogue isentropique $\chi_S = -\dfrac{1}{V}\left(\dfrac{\partial V}{\partial P}\right)_S$, ainsi que l'équation d'état des gaz parfaits $PV=nRT$.
@@ -27,7 +28,9 @@ On rappelle le coefficient de compressibilité $\chi = -\dfrac{1}{V}\dfrac{\part
 > Cette relation est indépendante de l'hypothèse thermodynamique faite sur la transformation ; seule la valeur de $\chi$ (isotherme ou isentropique) change selon le modèle physique retenu pour décrire la propagation.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Choisir le bon modèle thermodynamique pour une situation physique**
 >
 > Savoir mobiliser les outils de thermodynamique (équation d'état, capacités calorifiques, lois de Laplace) pour calculer une grandeur de propagation ondulatoire.
@@ -35,7 +38,9 @@ On rappelle le coefficient de compressibilité $\chi = -\dfrac{1}{V}\dfrac{\part
 > Savoir confronter un résultat théorique à une valeur expérimentale de référence pour juger de la pertinence d'une hypothèse de modélisation, et savoir en tirer une conclusion physique argumentée plutôt qu'une simple constatation d'écart numérique.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Proposition de progression**
 >
 > **À introduire**
@@ -83,9 +88,11 @@ On rappelle le coefficient de compressibilité $\chi = -\dfrac{1}{V}\dfrac{\part
 >   On la présentera comme une identité thermodynamique complémentaire, avec une démonstration seulement si les relations de Maxwell et les dérivées partielles sont déjà bien maîtrisées.
 
 
+
 **q1.** On suppose que lors du passage de l'onde acoustique, le fluide subit
 une transformation isotherme. En le modélisant comme un gaz parfait,
 montrer que $c_T = \sqrt{RT/M}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Pour un gaz parfait en transformation isotherme, $PV=$ cte à $T$ fixé,
@@ -93,8 +100,12 @@ montrer que $c_T = \sqrt{RT/M}$.
 > (rappelée dans les prérequis).
 
 
+
+
 > [!success]- ✅ Correction
 > $c_T=\sqrt{RT/M}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -115,14 +126,20 @@ montrer que $c_T = \sqrt{RT/M}$.
 > $$\boxed{c_T = \sqrt{\frac{RT}{M}}}.$$
 
 
+
 **q2.** Calculer $c_T$ numériquement. Est-ce en accord avec la mesure expérimentale ($\approx 340~m/s$) ? Conclure.
+
 
 > [!tip]- 💡 Coup de pouce
 > Attention aux unités SI : $M$ en kg/mol.
 
 
+
+
 > [!success]- ✅ Correction
 > $c_T=\sqrt{8.32\times293/0.029}\approx290$ m/s -- sous-estime la valeur mesurée ($\approx 340~m/s$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -138,14 +155,20 @@ montrer que $c_T = \sqrt{RT/M}$.
 > ce qui est bien trop important pour être attribué à une simple imprécision expérimentale ou à un arrondi sur les données ($T$, $M$, $R$). Le modèle isotherme sous-estime donc significativement la célérité réelle du son : l'hypothèse d'une transformation isotherme lors du passage de l'onde acoustique doit être remise en cause (voir question 3).
 
 
+
 **q3.** À quel type de transformation correspond alors la propagation de l'onde sonore ? Définir cette transformation.
+
 
 > [!tip]- 💡 Coup de pouce
 > L'écart avec l'isotherme suggère une transformation trop rapide pour un échange de chaleur : pensez à l'adiabatique réversible (isentropique).
 
 
+
+
 > [!success]- ✅ Correction
 > Transformation adiabatique réversible (isentropique) : rapide devant les temps d'échange thermique, sans échange de chaleur ni irréversibilité.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -160,14 +183,20 @@ montrer que $c_T = \sqrt{RT/M}$.
 > On retient : la propagation du son correspond, en première approximation, à une transformation **adiabatique réversible**, c'est-à-dire **isentropique** (à entropie constante), ce qui justifie l'usage du coefficient de compressibilité $\chi_S$ plutôt que $\chi_T$.
 
 
+
 **q4.** Montrer que pour ce type de transformation, $c_S=\sqrt{\gamma RT/M}$. Calculer numériquement et commenter.
+
 
 > [!tip]- 💡 Coup de pouce
 > Pour une transformation isentropique d'un gaz parfait, $PV^\gamma=$ cte, donc $\chi_S=1/(\gamma P)$ (cf. point cours de thermodynamique).
 
 
+
+
 > [!success]- ✅ Correction
 > $c_S=\sqrt{\gamma RT/M}\approx 343$ m/s -- en excellent accord avec la mesure.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -187,14 +216,20 @@ montrer que $c_T = \sqrt{RT/M}$.
 > Cette valeur est en excellent accord (à moins de $1\%$) avec la mesure expérimentale $c_{\text{exp}}\approx 340$–$343~\text{m}\cdot\text{s}^{-1}$, ce qui confirme que le modèle isentropique est le bon modèle thermodynamique pour décrire la propagation du son dans un gaz parfait. On note aussi que $c_S/c_T = \sqrt{\gamma}\approx 1{,}18$, cohérent avec l'écart d'environ $15\%$ observé à la question 2.
 
 
+
 **q5.** Comparer la vitesse du son au niveau de la mer et au sommet de l'Everest (densité de l'air environ 3 fois plus faible, composition chimique identique).
+
 
 > [!tip]- 💡 Coup de pouce
 > $c_S=\sqrt{\gamma P/\rho}$ ; à composition chimique et température fixées, comment $P/\rho$ varie-t-il avec l'altitude ?
 
 
+
+
 > [!success]- ✅ Correction
 > À température égale, $c_S=\sqrt{\gamma RT/M}$ ne dépend pas de $\rho$ ni de $P$ séparément, seulement de $T$ : la vitesse du son est quasiment la même (elle varie surtout avec la température, qui baisse en altitude, donc $c$ diminue légèrement -- pas d'un facteur 3).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -211,14 +246,21 @@ montrer que $c_T = \sqrt{RT/M}$.
 > à comparer à $c_S(\text{mer})\approx 343~\text{m}\cdot\text{s}^{-1}$ : soit une baisse d'environ $10\%$, uniquement due à la baisse de température, et non un facteur 3 comme le suggérerait un raisonnement naïf basé sur $\rho$ seul.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Vitesse du son dans un gaz réel
 > Pour un gaz réel décrit par l'équation d'état de van der Waals $\left(P + \dfrac{an^2}{V^2}\right)(V-nb) = nRT$, la compressibilité isentropique diffère de celle du gaz parfait et $c_S$ acquiert une dépendance explicite en pression, en plus de la température. On pourra établir un développement de $c_S$ au premier ordre en pression et discuter du signe de la correction selon les valeurs relatives de $a$ (terme attractif) et $b$ (covolume), ce qui relie la thermodynamique microscopique des gaz réels à une grandeur macroscopique mesurable.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Vitesse du son dans un mélange de gaz
 > Pour un mélange de gaz parfaits (par exemple l'air humide, mélange d'air sec et de vapeur d'eau), on pourra établir l'expression de $c_S$ en fonction des fractions molaires $x_i$, des masses molaires $M_i$ et des $\gamma_i$ de chaque constituant, et discuter pourquoi le son se propage légèrement plus vite dans l'air humide que dans l'air sec à température égale.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex7-resonateur-de-helmholtz-la-bouteille-qui-chante|Exercice 7 — Résonateur de Helmholtz : la bouteille qui chante]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex4-reflexion-et-transmission-d-une-onde-acoustique-a-une-interface-entre-deux-fluides|Exercice 4 — Réflexion et transmission d'une onde acoustique à une interface entre deux fluides]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-2-ondes-acoustiques/propagation-des-ondes-sonores-dans-un-fluide/ex8-transmission-a-travers-une-lame-adaptation-d-impedance-loi-de-masse-et-double-vitrage|Exercice 8 — Transmission à travers une lame : adaptation d'impédance, loi de masse et double vitrage]]
+
 

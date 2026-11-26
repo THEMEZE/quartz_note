@@ -13,7 +13,8 @@ tags:
 
 Une corde n'est pas un milieu continu : on modélise ici une corde « discrète » par $N$ masses ponctuelles identiques $m$, régulièrement espacées de la distance $a$ au repos, reliées par des fils sans masse tendus avec la tension $F$ (constante, considérée comme identique pour tous les fils). La masse $n$ a pour position au repos $x_n=na$ et se déplace transversalement de $y_n(t)$. On suppose les déplacements petits devant $a$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Et si la corde n'était pas continue ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -25,16 +26,22 @@ Une corde n'est pas un milieu continu : on modélise ici une corde « discrète 
 > La vitesse de phase $v_\varphi=\omega/k$ et la vitesse de groupe $v_g=\mathrm d\omega/\mathrm dk$ diffèrent ; pour $\omega>\omega_{\max}$ l'onde est **évanescente** (filtre passe-bas) ; pour $ka\ll1$ on retrouve d'Alembert ($\omega\simeq c_0k$). L'énergie se propage à la vitesse de groupe.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercices 3 et 4**
 >
 > Approximation des petits angles, ondes progressives sinusoïdales, relation de dispersion $\omega(k)$, modes propres d'une corde fixée à ses deux extrémités.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Comprendre pourquoi la corde continue est une approximation**
 >
 > Établir la relation de dispersion d'un milieu discret, en déduire une fréquence de coupure, distinguer la vitesse de phase et la vitesse de groupe, et retrouver l'équation de d'Alembert comme limite.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -67,14 +74,18 @@ Une corde n'est pas un milieu continu : on modélise ici une corde « discrète 
 > $\sin\dfrac{np\pi}{N+1}$ avec $p=1,\dots,N$ : pour $p=N+1$ tous les $y_n$ sont nuls, donc il y a exactement $N$ modes (autant que de masses).
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Structure du problème**
 >
 > Le mouvement de la masse $n$ ne dépend que de $y_{n-1}$, $y_n$, $y_{n+1}$. On cherche des solutions en $y_n=\text{Re}\left[A\,e^{\,j(\omega t-kna)}\right]$ (onde progressive discrète).
 
 
+
 **q1.** Écrire le PFD sur la masse $n$ (projection transversale, petits angles) et établir
 $$m\,\ddot y_n=\frac{F}{a}\left(y_{n+1}-2y_n+y_{n-1}\right).$$
+
 
 > [!tip]- 💡 Coup de pouce
 > **Pente des fils**
@@ -82,10 +93,14 @@ $$m\,\ddot y_n=\frac{F}{a}\left(y_{n+1}-2y_n+y_{n-1}\right).$$
 > Le fil entre $n$ et $n+1$ a pour pente $\dfrac{y_{n+1}-y_n}{a}$. Sa tension a pour composante transversale $F\times\text{pente}$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > Force du fil de droite : $+F\dfrac{y_{n+1}-y_n}{a}$ ; force du fil de gauche : $-F\dfrac{y_n-y_{n-1}}{a}$. La somme donne l'équation demandée.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -96,9 +111,11 @@ $$m\,\ddot y_n=\frac{F}{a}\left(y_{n+1}-2y_n+y_{n-1}\right).$$
 > La tension reste égale à $F$ à l'ordre 1 (variation de longueur du second ordre).
 
 
+
 **q2.** Limite continue. On pose $\mu=m/a$ et $y_n(t)=y(na,t)$. Développer $y_{n\pm1}$ en série de Taylor en $x=na$ jusqu'à l'ordre 4 et montrer que l'équation devient
 $$\frac{\partial^2y}{\partial t^2}=c_0^2\left(\frac{\partial^2y}{\partial x^2}+\frac{a^2}{12}\frac{\partial^4y}{\partial x^4}+\dots\right)$$
 avec $c_0=\sqrt{F/\mu}$. Commenter : à quelle condition retrouve-t-on l'équation de d'Alembert ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Développement**
@@ -106,10 +123,14 @@ avec $c_0=\sqrt{F/\mu}$. Commenter : à quelle condition retrouve-t-on l'équati
 > $y(x\pm a)=y\pm a\,y'+\dfrac{a^2}{2}y''\pm\dfrac{a^3}{6}y'''+\dfrac{a^4}{24}y''''+\dots$ La somme $y(x+a)+y(x-a)$ élimine les termes impairs.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $y_{n+1}-2y_n+y_{n-1}=a^2y''+\dfrac{a^4}{12}y''''+\dots$ On retrouve d'Alembert si $a\ll\lambda$ (les dérivées d'ordre 4 sont alors négligeables devant les dérivées d'ordre 2).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -121,9 +142,11 @@ avec $c_0=\sqrt{F/\mu}$. Commenter : à quelle condition retrouve-t-on l'équati
 > Pour une onde de longueur d'onde $\lambda$, $y''''\sim(2\pi/\lambda)^2y''$, donc le second terme est de l'ordre de $\dfrac{1}{12}\left(\dfrac{2\pi a}{\lambda}\right)^2$ devant le premier. La limite continue est valable si $a\ll\lambda$. Le terme en $y''''$ est la source de la dispersion.
 
 
+
 **q3.** On cherche $y_n=\text{Re}\left[A\,e^{\,j(\omega t-kna)}\right]$. Établir la relation de dispersion
 $$\omega=\omega_{\max}\left|\sin\frac{ka}{2}\right|,\qquad\omega_{\max}=2\sqrt{\frac{F}{ma}}.$$
 Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se limiter à $|k|\le\pi/a$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Injection**
@@ -131,10 +154,14 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > $y_{n\pm1}=y_n\,e^{\mp jka}$ en complexes. Utiliser $2\cos\theta-2=-4\sin^2(\theta/2)$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $-m\omega^2=\dfrac{F}{a}\left(2\cos ka-2\right)=-\dfrac{4F}{a}\sin^2\dfrac{ka}{2}$, donc $\omega=2\sqrt{\dfrac{F}{ma}}\left|\sin\dfrac{ka}{2}\right|$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -149,7 +176,9 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > Comme $e^{-jk'na}=e^{-jkna}$ dès que $k'=k+2\pi p/a$ ($p$ entier), $k$ et $k+2\pi/a$ décrivent les mêmes déplacements : il n'y a que $|k|\le\pi/a$ à considérer (première zone de Brillouin).
 
 
+
 **q4.** Calculer la vitesse de phase $v_\varphi=\omega/k$ et la vitesse de groupe $v_g=\dfrac{\mathrm{d}\omega}{\mathrm{d}k}$ en fonction de $c_0$ et de $ka$. Que valent-elles pour $ka\to0$ et pour $k=\pi/a$ ? Interpréter. Application numérique : $F=10\ \text{N}$, $m=10\ \text{g}$, $a=10\ \text{cm}$, calculer $c_0$, $\omega_{\max}$, $f_{\max}$, puis $k$, $\lambda$, $v_\varphi$ et $v_g$ pour $\omega=0{,}9\,\omega_{\max}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Dérivée**
@@ -157,10 +186,14 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > $\dfrac{\mathrm{d}}{\mathrm{d}k}\sin\dfrac{ka}{2}=\dfrac{a}{2}\cos\dfrac{ka}{2}$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $v_\varphi=c_0\dfrac{\sin(ka/2)}{ka/2}$ et $v_g=c_0\cos\dfrac{ka}{2}$. Pour $ka\to0$ les deux valent $c_0$. Pour $k=\pi/a$ : $v_g=0$ et $v_\varphi=\dfrac{2c_0}{\pi}$. Numériquement : $c_0=10\ \text{m/s}$, $\omega_{\max}=200\ \text{rad/s}$ ($f_{\max}\approx31{,}8\ \text{Hz}$) ; pour $\omega=0{,}9\omega_{\max}$ : $k\approx22{,}4\ \text{rad/m}$, $\lambda\approx0{,}28\ \text{m}$ ($\approx2{,}8a$), $v_\varphi\approx8{,}0\ \text{m/s}$, $v_g\approx4{,}4\ \text{m/s}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -174,7 +207,9 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > Le paquet d'ondes (donc l'énergie, cf. exercice 7) avance environ deux fois plus lentement que les crêtes.
 
 
+
 **q5.** (*) Fréquence supérieure à la coupure. On excite la chaîne à $\omega>\omega_{\max}$. On cherche $y_n=A\,(-1)^n e^{-qn}\cos\omega t$ avec $q>0$. Montrer que cela est possible et exprimer $q$ en fonction de $\omega/\omega_{\max}$. Application : $\omega=1{,}25\,\omega_{\max}$. Que devient l'onde ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Nombre d'onde complexe**
@@ -182,10 +217,14 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > Poser $ka=\pi+jq$ dans la relation de la question 3 et utiliser $\sin\left(\dfrac{\pi}{2}+j\dfrac{q}{2}\right)=\cosh\dfrac{q}{2}$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\cosh\dfrac{q}{2}=\dfrac{\omega}{\omega_{\max}}$, soit $q=2\,\text{arcosh}\dfrac{\omega}{\omega_{\max}}$. Pour $\omega=1{,}25\omega_{\max}$ : $q/2=\ln2$, $q=2\ln2\approx1{,}39$ : l'amplitude est multipliée par $e^{-q}=1/4$ (avec changement de signe) de masse en masse. L'onde est évanescente : la chaîne se comporte comme un filtre passe-bas.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -198,7 +237,9 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > L'excitation ne se propage pas : elle décroît exponentiellement sur une longueur $\approx a/q\approx0{,}72\,a$. Il n'y a pas de transport d'énergie : la chaîne coupe les hautes fréquences.
 
 
+
 **q6.** (*) Chaîne finie. La chaîne comporte $N$ masses et les deux extrémités sont fixes ($y_0=y_{N+1}=0$). Montrer que les modes propres sont $y_n\propto\sin\dfrac{np\pi}{N+1}$ avec $p=1,\dots,N$ et exprimer $\omega_p$. Pour $N=3$, $F=10\ \text{N}$, $m=10\ \text{g}$, $a=10\ \text{cm}$, comparer les pulsations aux modes de la corde continue de même longueur $L=(N+1)a$ et de même masse linéique. Conclure.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Ondes stationnaires**
@@ -206,10 +247,14 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > Chercher $y_n=A\sin(kna+\varphi)\cos\omega t$. Les conditions aux limites fixent $\varphi$ et $k$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $k_p=\dfrac{p\pi}{(N+1)a}$ et $\omega_p=2\sqrt{\dfrac{F}{ma}}\sin\dfrac{p\pi}{2(N+1)}$. Pour $N=3$ : $\omega_p\approx76{,}5\ ;\ 141{,}4\ ;\ 184{,}8\ \text{rad/s}$, contre $78{,}5\ ;\ 157{,}1\ ;\ 235{,}6\ \text{rad/s}$ pour la corde continue. L'écart est de $2{,}5\ \%$ pour $p=1$, $10\ \%$ pour $p=2$ et $22\ \%$ pour $p=3$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -220,6 +265,8 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > Pour $N=3$ ($\omega_{\max}=200\ \text{rad/s}$) : $\omega_1=200\sin\dfrac{\pi}{8}\approx76{,}5$, $\omega_2=200\sin\dfrac{\pi}{4}\approx141{,}4$, $\omega_3=200\sin\dfrac{3\pi}{8}\approx184{,}8\ \text{rad/s}$.
 > Corde continue de longueur $L=0{,}4\ \text{m}$ et $c_0=10\ \text{m/s}$ : $\omega_p^{\text{cont}}=\dfrac{p\pi c_0}{L}=78{,}5\,p\ \text{rad/s}$.
 > Le nombre de modes de la chaîne est limité à $N$ et leurs fréquences s'écartent d'autant plus des harmoniques $pf_1$ que $p$ est grand : le modèle continu n'est valable que pour $ka\ll1$, c'est-à-dire pour les premiers modes ($p\ll N+1$).
+
+
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -244,14 +291,21 @@ Montrer qu'on retrouve $\omega\simeq c_0k$ pour $ka\ll1$. Pourquoi peut-on se li
 > Dans une fibre optique, la différence entre vitesse de phase et vitesse de groupe élargit les impulsions (dispersion chromatique) et limite le débit.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Phonons
 > Le même calcul avec des ressorts de raideur $K$ et des déplacements longitudinaux donne $\omega=2\sqrt{K/m}\,|\sin(ka/2)|$ : c'est la relation de dispersion des phonons d'un cristal monoatomique unidimensionnel.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Chaîne diatomique
 > Avec deux masses alternées $m_1\neq m_2$, apparaît une bande interdite (gap) au bord de la zone de Brillouin et une branche optique.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex4-equation-des-cordes-vibrantes-et-onde-progressive|Exercice 4 — Équation des cordes vibrantes et onde progressive]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex8-energie-et-puissance-d-une-onde-sur-une-corde-impedance-caracteristique|Exercice 8 — Énergie et puissance d'une onde sur une corde : impédance caractéristique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex9-corde-pesante-suspendue-milieu-inhomogene-bosse-acceleree-et-coup-de-fouet|Exercice 9 — Corde pesante suspendue : milieu inhomogène, bosse accélérée et coup de fouet]]
+
 

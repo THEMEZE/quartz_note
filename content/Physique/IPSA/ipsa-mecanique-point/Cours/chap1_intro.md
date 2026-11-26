@@ -14,8 +14,10 @@ tags:
 
 <p style="text-align:center"><a href="/figures/td1_ex1_corde_t0.svg" target="_blank" rel="noopener"><img src="/figures/td1_ex1_corde_t0.svg" alt="" loading="lazy" style="background:#fff;padding:10px;border-radius:10px;max-width:100%;height:auto"></a></p>
 
+
 > [!question]- 🔭 Aller plus loin — Master
 >
+
 
 
 ## 3. 

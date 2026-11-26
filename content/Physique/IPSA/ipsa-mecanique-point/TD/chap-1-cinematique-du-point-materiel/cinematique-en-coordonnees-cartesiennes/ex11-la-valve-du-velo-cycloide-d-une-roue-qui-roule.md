@@ -14,7 +14,8 @@ tags:
 Une roue de rayon $R$ roule **sans glisser** sur un sol horizontal rectiligne. Son centre $C$ se déplace à la vitesse constante $V$, parallèlement au sol.
 On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo, par exemple) dans le référentiel du sol, muni d'un repère $Oxy$ : $Ox$ est horizontal, dans le sens du déplacement, $Oy$ est vertical ascendant, et l'origine $O$ est la position de $M$ à l'instant $t=0$, lorsque $M$ touche le sol. À cet instant, le centre est en $C_0=(0,R)$. On note $\theta(t)$ l'angle dont la roue a tourné depuis $t=0$ (la roue tourne dans le sens horaire, comme il se doit pour avancer vers $+Ox$), et $\omega=\dot\theta$ sa vitesse angulaire, supposée constante.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **La valve du vélo : quand est-elle immobile ? quand va-t-elle le plus vite ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -26,7 +27,9 @@ On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo,
 > La translation de $C$ à vitesse $V$ et la rotation de $M$ autour de $C$ à vitesse $R\omega=V$ s'ajoutent : elles s'**annulent** au point bas (vitesse nulle) et se **doublent** au sommet ($2V$).
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Composition de mouvements : $\vec v_M=\vec v_C+\vec v_{M/C}$**
 >
 > Si l'on décompose $\overrightarrow{OM}=\overrightarrow{OC}+\overrightarrow{CM}$, alors en dérivant : $\vec v_M=\vec v_C+\dfrac{\mathrm d\overrightarrow{CM}}{\mathrm dt}$. Le premier terme est la vitesse de translation du centre, le second est la vitesse due à la rotation autour du centre.
@@ -36,19 +39,25 @@ On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo,
 > $\dfrac{\mathrm d}{\mathrm dt}\cos(\omega t)=-\omega\sin(\omega t)$ et $\dfrac{\mathrm d}{\mathrm dt}\sin(\omega t)=\omega\cos(\omega t)$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Étudier une courbe paramétrée non triviale**
 >
 > Savoir déduire des coordonnées d'un point d'un solide en mouvement ses vecteurs vitesse et accélération, simplifier une norme à l'aide de formules trigonométriques, identifier les points particuliers de la trajectoire (vitesse nulle, vitesse maximale), calculer la longueur d'une arche par intégration et un rayon de courbure à partir de l'accélération normale.
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Un exercice très riche autour d'une courbe célèbre**
 >
 > La cycloïde fournit des résultats **contre-intuitifs** que les étudiants peuvent vérifier : un point de la roue est instantanément **immobile** par rapport au sol, un autre va **deux fois plus vite** que le vélo, et l'accélération a un module constant. L'exercice mobilise la trigonométrie (angle moitié), le calcul d'une intégrale, l'orthogonalité de deux vecteurs et le concept de rayon de courbure : c'est le plus technique du TD. La question finale (boue qui se détache) relie la cinématique d'un point de la roue au tir de projectile des exercices précédents. Prévoir de laisser les étudiants conclure eux-mêmes que $\vec v\perp\overrightarrow{PM}$, ce qui introduit la notion de centre instantané de rotation.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Roulement sans glissement**
 >
 > Une roue roule sans glisser quand le point de la roue en contact avec le sol a une **vitesse nulle** par rapport au sol. La longueur d'arc de jante qui a touché le sol est alors égale à la distance parcourue par le centre : $R\theta=Vt$, soit $V=R\omega$. Un point de la jante a une vitesse qui varie entre $0$ (au contact) et $2V$ (au sommet).
@@ -56,6 +65,8 @@ On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo,
 > **Cycloïde**
 >
 > La trajectoire d'un point de la jante d'une roue qui roule sans glisser est une **cycloïde**, de paramétrage $x=R(\omega t-\sin\omega t)$, $y=R(1-\cos\omega t)$. Une arche s'étend sur $2\pi R$ de large, $2R$ de haut, et mesure $8R$ de long.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -80,16 +91,22 @@ On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo,
 > Pour une trajectoire courbe, $\vec a=\dfrac{\mathrm dv}{\mathrm dt}\,\vec u_T+\dfrac{v^2}{\rho}\,\vec u_N$, où $\rho$ est le rayon de courbure. Quand $\vec a\perp\vec v$, $\vec a$ est purement normale : $\rho=\dfrac{v^2}{a}$.
 
 
+
 **q1.** - [(a)] Justifier que la condition de non-glissement impose $V=R\omega$, puis donner la position $(x_C,y_C)$ du centre de la roue à l'instant $t$.
 - [(b)] Déterminer les coordonnées $x(t)$ et $y(t)$ du point $M$.
 - [(c)] Placer sur un graphique les positions de $M$ pour $\omega t=0,\ \pi/2,\ \pi,\ 3\pi/2,\ 2\pi$ et esquisser la trajectoire sur deux tours de roue.
+
 
 > [!tip]- 💡 Coup de pouce
 > Pour (a), la longueur d'arc de jante qui touche le sol pendant $t$ est $R\theta$ ; elle doit être égale à la distance parcourue par le centre. Pour (b), écrivez $\overrightarrow{OM}=\overrightarrow{OC}+\overrightarrow{CM}$ : au point bas, $\overrightarrow{CM}=-R\,\vec u_y$ ; après une rotation horaire de $\theta$, $\overrightarrow{CM}=R\,(-\sin\theta,\ -\cos\theta)$. Vérifiez qu'à $t=0$ on retrouve $M=O$.
 
 
+
+
 > [!success]- ✅ Correction
 > $V=R\omega$ ; $C=(R\omega t,\ R)$ ; $x(t)=R(\omega t-\sin\omega t)$, $y(t)=R(1-\cos\omega t)$ : cycloïde, arches de largeur $2\pi R$ et de hauteur $2R$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -118,16 +135,22 @@ On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo,
 > La trajectoire est une succession d'arches identiques de **largeur** $2\pi R$ et de **hauteur** $2R$. Chaque arche commence et finit au sol par un point de **rebroussement** (tangente verticale) ; le sommet de l'arche, en $\omega t=\pi$, est à la hauteur $2R$ (diamètre de la roue).
 
 
+
 **q2.** - [(d)] Calculer le vecteur vitesse $\vec v$ de $M$ et sa norme (la mettre sous la forme $2V\left|\sin\dfrac{\omega t}{2}\right|$).
 - [(e)] Calculer le vecteur accélération $\vec a$ et sa norme. Que remarque-t-on ?
 - [(f)] En quels points la vitesse est-elle nulle ? maximale ? Que vaut alors l'accélération ? Commenter.
+
 
 > [!tip]- 💡 Coup de pouce
 > Dérivez chaque coordonnée une fois, puis deux fois. Pour simplifier $\|\vec v\|$, utilisez $1-\cos\theta=2\sin^2(\theta/2)$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v=R\omega\,(1-\cos\omega t,\ \sin\omega t)$, $\|\vec v\|=2V|\sin(\omega t/2)|$ ; $\vec a=R\omega^2(\sin\omega t,\ \cos\omega t)$, $\|\vec a\|=R\omega^2=V^2/R$ constante ; $v=0$ au contact ($\omega t=2k\pi$), $v_{\max}=2V$ au sommet ($\omega t=(2k+1)\pi$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -153,17 +176,23 @@ On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo,
 > Un point du haut de la roue va donc **deux fois plus vite** que le vélo ; un point du bas est **à l'arrêt** par rapport au sol.
 
 
+
 **q3.** - [(g)] Soit $P(t)=(R\omega t,\,0)$ le point du sol qui est, à l'instant $t$, en contact avec la roue. Montrer que $\vec v\perp\overrightarrow{PM}$ et que $\|\vec v\|=\omega\,PM$. Interpréter.
 - [(h)] Calculer la longueur $L$ d'une arche de la trajectoire et la comparer à la distance parcourue par le centre pendant le même temps.
 - [(i)] Calculer le rayon de courbure $\rho_{\rm top}$ de la trajectoire au sommet.
 - [(j)] Un cycliste roule à $V=36~\mathrm{km/h}$ sur des roues de rayon $R=0{,}35$ m. Au sommet de la roue, un grain de boue se détache. En supposant qu'il part avec la vitesse de ce point, où retombe-t-il (par rapport au point de détachement) ?
 
+
 > [!tip]- 💡 Coup de pouce
 > (g) : $\overrightarrow{PM}=R(-\sin\omega t,\ 1-\cos\omega t)$. Calculez le produit scalaire, puis la norme. (h) : $L=\int_0^{2\pi/\omega}\|\vec v\|\,\mathrm dt$. (i) : au sommet, la vitesse est horizontale et l'accélération verticale : $\vec a$ est purement normale, $a=v^2/\rho$. (j) : le grain a la vitesse de $M$ au sommet ($2V$, horizontale) à la hauteur $2R$ : c'est un tir horizontal.
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v\cdot\overrightarrow{PM}=0$ et $\|\vec v\|=\omega\,PM$ : rotation instantanée autour du point de contact ; $L=8R$ (contre $2\pi R\approx6{,}28R$ pour le centre) ; $\rho_{\rm top}=4R$ ; boue : $v=20~\mathrm{m/s}$, hauteur $0{,}70$ m, retombe à $\approx7{,}6$ m devant le point de détachement.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -194,32 +223,6 @@ On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo,
 > Le grain retombe à environ $7{,}6$ m devant le point de détachement. Pendant ce temps le vélo a avancé de $V\,t_c\approx3{,}8$ m : le grain atterrit donc $\approx3{,}8$ m **devant la roue**, comme on s'y attend puisque, dans le référentiel du vélo, il part à la vitesse $V$ vers l'avant.
 
 
-> [!warning]- 🪤 Écueils classiques
-> **Oublier la translation du centre**
->
-> Écrire $x=-R\sin\omega t$, $y=R-R\cos\omega t$ (seule la rotation autour du centre) donne un **cercle**, pas une cycloïde. La translation de $C$ ajoute $Vt=R\omega t$ à l'abscisse.
->
-> **Se tromper dans le signe de la rotation**
->
-> Pour une roue qui avance vers $+Ox$, la rotation est horaire. Au point bas, un point de la roue recule par rapport au centre (composante $-R\sin\omega t$), ce qui permet de vérifier que $v_x=0$ au contact. Un signe $+R\sin\omega t$ donnerait $v_x=2V$ au contact : absurde.
->
-> **Croire que la vitesse est nulle ET l'accélération nulle au contact**
->
-> Au contact, $\vec v=\vec0$ mais $\vec a=R\omega^2\,\vec u_y\neq\vec0$ : la valve accélère vers le haut et repart verticalement (c'est le **point de rebroussement** de la cycloïde).
->
-> **Simplifier $\sqrt{2-2\cos\omega t}$ sans valeur absolue**
->
-> $\sqrt{2-2\cos\omega t}=2\left|\sin\dfrac{\omega t}{2}\right|$ : la valeur absolue est indispensable pour que la norme reste positive sur toute l'arche (et au-delà).
-
-
-> [!tip]- 🎙️ Conseils d'animation
-> **Manipulation en classe**
->
-> Coller un point lumineux sur le bord d'un disque et filmer en pose longue le roulement du disque : la cycloïde apparaît. Comparer la photographie avec le tracé théorique. Un pot de peinture roulé sur le sol avec un point marqué fonctionne aussi.
->
-> **Faire deviner avant de calculer**
->
-> Demander : « À quel instant la valve est-elle immobile par rapport au sol ? Et quand va-t-elle le plus vite ? » Les étudiants répondent souvent « jamais immobile » et « toujours à $V$ ». La réponse $0$ et $2V$ crée la surprise.
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -244,28 +247,73 @@ On étudie le mouvement d'un point $M$ de la jante (la valve d'un pneu de vélo,
 > Eau projetée par les roues d'un vélo ou d'une voiture : les gouttes quittent la roue avec une vitesse tangente, qui peut atteindre $2V$ dans le référentiel du sol.
 
 
-> [!success]- 🏁 Bilan
+
+
+> [!warning]- 🪤 Écueils classiques
+> **Oublier la translation du centre**
+>
+> Écrire $x=-R\sin\omega t$, $y=R-R\cos\omega t$ (seule la rotation autour du centre) donne un **cercle**, pas une cycloïde. La translation de $C$ ajoute $Vt=R\omega t$ à l'abscisse.
+>
+> **Se tromper dans le signe de la rotation**
+>
+> Pour une roue qui avance vers $+Ox$, la rotation est horaire. Au point bas, un point de la roue recule par rapport au centre (composante $-R\sin\omega t$), ce qui permet de vérifier que $v_x=0$ au contact. Un signe $+R\sin\omega t$ donnerait $v_x=2V$ au contact : absurde.
+>
+> **Croire que la vitesse est nulle ET l'accélération nulle au contact**
+>
+> Au contact, $\vec v=\vec0$ mais $\vec a=R\omega^2\,\vec u_y\neq\vec0$ : la valve accélère vers le haut et repart verticalement (c'est le **point de rebroussement** de la cycloïde).
+>
+> **Simplifier $\sqrt{2-2\cos\omega t}$ sans valeur absolue**
+>
+> $\sqrt{2-2\cos\omega t}=2\left|\sin\dfrac{\omega t}{2}\right|$ : la valeur absolue est indispensable pour que la norme reste positive sur toute l'arche (et au-delà).
+
+
+
+
+> [!tip]- 🎙️ Conseils d'animation
+> **Manipulation en classe**
+>
+> Coller un point lumineux sur le bord d'un disque et filmer en pose longue le roulement du disque : la cycloïde apparaît. Comparer la photographie avec le tracé théorique. Un pot de peinture roulé sur le sol avec un point marqué fonctionne aussi.
+>
+> **Faire deviner avant de calculer**
+>
+> Demander : « À quel instant la valve est-elle immobile par rapport au sol ? Et quand va-t-elle le plus vite ? » Les étudiants répondent souvent « jamais immobile » et « toujours à $V$ ». La réponse $0$ et $2V$ crée la surprise.
+
+
+
+
+> [!success]- 🏁 Bilan pédagogique
 > **Roue qui roule : cycloïde, $v\in[0,2V]$, $a=\text{cte}$**
 >
 > Pour une roue de rayon $R$ roulant sans glisser à vitesse $V=R\omega$ : $x=R(\omega t-\sin\omega t)$, $y=R(1-\cos\omega t)$ ; $\vec v=R\omega\,(1-\cos\omega t,\ \sin\omega t)$, $\|\vec v\|=2V|\sin(\omega t/2)|$ ; $\vec a=R\omega^2(\sin\omega t,\ \cos\omega t)$, $\|\vec a\|=R\omega^2$ constante, dirigée vers le centre de la roue. La vitesse est nulle au contact, maximale ($2V$) au sommet ; la longueur d'une arche vaut $8R$ ; le rayon de courbure au sommet vaut $4R$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — CPGE : Retrouver les résultats par la composition des vitesses
 > Vérifier que $\vec v_M=\vec v_C+\vec\Omega\wedge\overrightarrow{CM}$ avec $\vec\Omega=-\omega\,\vec u_z$ redonne l'expression de $\vec v$. En déduire que la vitesse est nulle au point de contact et vaut $2V$ au sommet sans calculer de dérivées de $\sin$ et $\cos$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Rayon de courbure en tout point de la cycloïde
 > Le rayon de courbure s'écrit $\rho=\dfrac{\|\vec v\|^3}{\|\vec v\wedge\vec a\|}$. Calculer $\vec v\wedge\vec a$ pour la cycloïde et montrer que $\rho(t)=4R\left|\sin\dfrac{\omega t}{2}\right|$. Vérifier $\rho=4R$ au sommet et $\rho=0$ au point de rebroussement.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Trochoïdes : un point qui n'est pas sur la jante
 > Un point à la distance $b$ du centre a pour coordonnées $x=R\omega t-b\sin\omega t$, $y=R-b\cos\omega t$ : c'est une **trochoïde**. Pour $b>R$ (boudin d'une roue de train, qui dépasse la roue), la trajectoire présente des **boucles** : au point bas, la vitesse horizontale est $R\omega-b\omega<0$, le boudin **recule** par rapport au sol. Pour $b<R$ (point à l'intérieur de la roue), la trochoïde est « raccourcie » et ne comporte pas de rebroussement.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Doctorat : Brachistochrone et tautochrone
 > La cycloïde (retournée) est à la fois la courbe de plus rapide descente (brachistochrone : Jean Bernoulli, 1696) et la courbe pour laquelle le temps de chute ne dépend pas du point de départ (tautochrone : Huygens, 1659). Retrouver la brachistochrone par le calcul des variations : minimiser $\displaystyle\int\dfrac{\sqrt{1+y'^2}}{\sqrt{2gy}}\,\mathrm dx$ avec $y$ mesuré vers le bas.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex6-parabole-de-s-rete-et-tir-sur-une-pente|Exercice 6 — Parabole de sûreté et tir sur une pente]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]]
+
 

@@ -17,7 +17,8 @@ en visant en permanence le drone suivant ($A_1\to A_2\to A_3\to A_1$) : son vect
 vers la position actuelle de sa cible. On généralise ensuite à $n$ mobiles aux sommets d'un polygone régulier à
 $n$ côtés.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Trois drones, une seule règle : viser son voisin**
 >
 > *Durée de l'introduction : 3 à 5 min, avant de lire l'énoncé*
@@ -27,7 +28,9 @@ $n$ côtés.
 > **Idée clé : la symétrie réduit le problème.** Par symétrie de rotation d'angle $2\pi/n$, le polygone reste régulier et ses $n$ sommets décrivent la même courbe, aux mêmes distances $r(t)$ de $O$. Il suffit d'étudier **un** mobile en polaire : l'angle entre $\vec v$ et le rayon est constant, donc $\dot r$ et $r\dot\theta$ sont proportionnels à $v$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Polygone régulier**
 >
 > Les $n$ sommets d'un polygone régulier de centre $O$ sont à la même distance $r$ de $O$, les angles au centre valent $2\pi/n$ et l'angle intérieur en un sommet vaut $\pi-2\pi/n$ ; le rayon $OA_i$ est la bissectrice de cet angle.
@@ -41,16 +44,22 @@ $n$ côtés.
 > $\dfrac{\mathrm dr}{\mathrm d\theta}=-r\tan\alpha$ s'intègre en $\ln r=-\theta\tan\alpha+$ cte.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Utiliser la symétrie pour réduire un problème à $N$ corps à un problème à un corps**
 >
 > Exploiter une symétrie (rotation d'angle $2\pi/n$) pour ramener un mouvement collectif à un mouvement polaire de **un seul** mobile ; traduire « $\vec v$ dirigé vers la cible » en deux équations scalaires $\dot r$ et $r\dot\theta$ ; en déduire la trajectoire, la durée de rencontre, la longueur parcourue et l'accélération.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Mouvement d'un point visant une cible mobile**
 >
 > Si $\vec v=v\,\vec e$ avec $\vec e$ le vecteur unitaire dirigé vers la cible, la vitesse est de norme constante $v$ mais change de direction : $\vec a\perp\vec v$ et $\|\vec a\|=v^2/\rho$. La trajectoire est appelée **courbe de poursuite**.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -71,16 +80,22 @@ $n$ côtés.
 > $\rho=\dfrac{v^2}{\|\vec a\|}$ car $\vec a\perp\vec v$ (toute l'accélération est normale).
 
 
+
 **q1.** (a) Pourquoi, par symétrie, le triangle reste-t-il équilatéral et son centre $O$ reste-t-il fixe ? En déduire qu'il suffit d'étudier le mouvement de $A_1$ en coordonnées polaires $(r,\theta)$ de centre $O$.
 
 (b) Déterminer l'angle entre le vecteur vitesse de $A_1$ et le rayon $A_1O$ (faire un schéma). En déduire $\dot r$ et $r\dot\theta$ en fonction de $v$.
+
 
 > [!tip]- 💡 Coup de pouce
 > Dans un triangle équilatéral, le rayon $A_1O$ est la bissectrice de l'angle en $A_1$. La vitesse de $A_1$ est dirigée selon $\overrightarrow{A_1A_2}$.
 
 
+
+
 > [!success]- ✅ Correction
 > (a) La rotation de $2\pi/3$ autour de $O$ échange les mobiles et conserve la règle de mouvement : la configuration reste invariante, donc équilatérale de centre $O$. (b) L'angle vaut $30^\circ$ : $\dot r=-v\cos30^\circ=-\dfrac{\sqrt3}2v$ et $r\dot\theta=v\sin30^\circ=\dfrac v2$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -94,18 +109,24 @@ $n$ côtés.
 > $$\boxed{\dot r=-\frac{\sqrt3}2\,v},\qquad\boxed{r\dot\theta=\frac v2}.$$
 
 
+
 **q2.** (a) Déterminer $r(t)$ et la durée $T$ au bout de laquelle les drones se rencontrent en $O$. Exprimer $T$ en fonction du côté $d$ du triangle initial.
 
 (b) Déterminer $\theta(t)$. Combien de tours effectue chaque drone avant la rencontre ?
 
 (c) Établir l'équation polaire $r(\theta)$ de la trajectoire et la nommer. Calculer la longueur $L$ parcourue par chaque drone.
 
+
 > [!tip]- 💡 Coup de pouce
 > $\dot r$ est constant : intégrez directement. Pour $\theta(t)$, reportez $r(t)$ dans $\dot\theta=\dfrac{v}{2r}$ et intégrez ; attention au comportement de $r\to0$. Pour $r(\theta)$, éliminez $t$ ou calculez $\dfrac{\mathrm dr}{\mathrm d\theta}=\dfrac{\dot r}{\dot\theta}$.
 
 
+
+
 > [!success]- ✅ Correction
 > $r=R-\frac{\sqrt3}2vt$ ; $T=\dfrac{2R}{\sqrt3v}=\dfrac{2d}{3v}$ (car $d=R\sqrt3$). $\theta(t)=-\dfrac1{\sqrt3}\ln\left(1-\dfrac tT\right)\to\infty$ : une infinité de tours. $r=R\,\mathrm e^{-\sqrt3\,\theta}$, spirale logarithmique ; $L=vT=\dfrac{2R}{\sqrt3}=\dfrac{2d}3$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -128,18 +149,24 @@ $n$ côtés.
 > (vérification : $\theta=-\frac1{\sqrt3}\ln(1-t/T)$ donne $\mathrm e^{-\sqrt3\theta}=1-t/T=r/R$ $\surd$). C'est une **spirale logarithmique** ($k=\sqrt3=\tan60^\circ$). La longueur parcourue est simplement $L=vT=\dfrac{2R}{\sqrt3}=\dfrac{2d}3$, car la vitesse est constante. Comparaison avec l'exercice 6 : même courbe, mais ici $\|\vec v\|=$ cte (et $\dot\theta$ variable), ce qui donne une durée **finie**.
 
 
+
 **q3.** (a) Calculer l'accélération $\vec a$ d'un drone dans la base polaire, sa norme et vérifier $\vec a\perp\vec v$. En déduire le rayon de courbure $\rho(r)$.
 
 (b) **Généralisation à $n$ mobiles** (polygone régulier à $n$ côtés). Établir $\dot r$, $r\dot\theta$, $T$, $L$ et $\rho$ en fonction de $n$, $R$ et $v$. Vérifier les cas limites $n=2$ et $n\to\infty$.
 
 (c) Application numérique : trois drones aux sommets d'un triangle équilatéral de côté $d=60$ m, $v=10$ m/s. Calculer $R$, $T$, $L$, le rayon de courbure initial et l'accélération initiale.
 
+
 > [!tip]- 💡 Coup de pouce
 > Dérivez $\dot r=-v\sin(\pi/n)$ et $r\dot\theta=v\cos(\pi/n)$ : $\ddot r=0$, $\dot\theta=\dfrac{v\cos(\pi/n)}r$ puis $\ddot\theta=-\dfrac{v\cos(\pi/n)\,\dot r}{r^2}$. Pour $n$ quelconque, l'angle entre $\vec v$ et $\vec u_r$ vaut $\pi-\left(\dfrac\pi2-\dfrac\pi n\right)$ (vitesse vers $O$).
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec a=-\dfrac{v^2\cos(\pi/n)}{r}\left[\cos\dfrac\pi n\,\vec u_r+\sin\dfrac\pi n\,\vec u_\theta\right]$, $\|\vec a\|=\dfrac{v^2\cos(\pi/n)}r$, $\rho=\dfrac r{\cos(\pi/n)}$ ($=2r$ pour $n=3$). $T=\dfrac R{v\sin(\pi/n)}$, $L=\dfrac R{\sin(\pi/n)}$. AN : $R\approx34{,}6$ m, $T=4{,}0$ s, $L=40$ m, $\rho_0\approx69$ m, $a_0\approx1{,}4\ \mathrm{m\,s^{-2}}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -163,6 +190,8 @@ $n$ côtés.
 > $R=\dfrac d{\sqrt3}\approx34{,}6$ m. $T=\dfrac{2R}{\sqrt3v}=\dfrac{2d}{3v}=4{,}0$ s. $L=vT=40$ m (à comparer avec la distance $R=34{,}6$ m : seulement $16\,\%$ de plus). $\rho_0=2R\approx69$ m et $a_0=\dfrac{v^2}{2R}=\dfrac{100}{69}\approx1{,}4\ \mathrm{m\,s^{-2}}$ (environ $0{,}15\,g$) en début de mouvement. En fin de mouvement, $a\propto1/r\to\infty$ : le modèle perd son sens quand les drones sont à quelques mètres l'un de l'autre (limite physique d'accélération des drones, collision). **Validation** : les unités sont cohérentes ($\mathrm{m^2\,s^{-2}/m}=\mathrm{m\,s^{-2}}$).
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Robotique et drones**
 >
@@ -181,14 +210,21 @@ $n$ côtés.
 > Poursuite d'une proie par un prédateur (guépard, libellule) : modèles de navigation proportionnelle.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Deux mobiles de vitesses différentes
 > Un mobile $B$ (vitesse $v_B$) poursuit un mobile $A$ qui se déplace en ligne droite à la vitesse $v_A<v_B$ perpendiculairement à la direction initiale $BA$. Établir l'équation différentielle de la courbe de poursuite $y(x)$ et montrer que $B$ rattrape $A$ en un temps fini si et seulement si $v_B>v_A$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Stabilité de la formation et formes limites
 > Montrer par un calcul de perturbation qu'une petite déformation du triangle équilatéral (un sommet légèrement déplacé) est, à l'ordre un, ramenée à la forme équilatérale quand les mobiles se rapprochent. Quelle est la loi d'évolution de la taille du triangle ? Généraliser à des mobiles de vitesses légèrement différentes.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-3-travail-energie-cinetique-energie-potentielle-energie-mecanique/travail-et-energie/ex5-bille-sur-une-sphere-angle-de-decollage|Exercice 5 — (*) Bille sur une sphère : angle de décollage]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-5-cinematique-et-dynamique-dans-des-referentiels-non-galileens/composition-du-mouvement-et-changement-de-referentiels/ex3-vitesse-et-acceleration-en-coordonnees-polaires|Exercice 3 — Vitesse et accélération en coordonnées polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]]
+
 

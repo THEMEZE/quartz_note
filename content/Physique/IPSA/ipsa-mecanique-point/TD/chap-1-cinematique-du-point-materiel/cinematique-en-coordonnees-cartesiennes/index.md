@@ -7,13 +7,16 @@ tags:
 
 [[physique/IPSA/ipsa-mecanique-point/index|⬅ Mécanique du point — IPSA]]
 
+
 > [!info] ℹ️ Chap. 1 — Cinématique du point matériel
 > Séance 1
 
 
+
 <a href="/pdfs/td1_PhV111_enonces.pdf" target="_blank" rel="noopener">📄 Énoncé</a> · <a href="/pdfs/td1_PhV111_aides.pdf" target="_blank" rel="noopener">📄 Aides</a> · <a href="/pdfs/td1_PhV111_corrige.pdf" target="_blank" rel="noopener">📄 Corrigé</a> · <a href="/pdfs/test.pdf" target="_blank" rel="noopener">📄 PDF</a> · <a href="/pdfs/td1_PhV111_fiche.pdf" target="_blank" rel="noopener">📄 Fiche enseignant</a>
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Une balle, une voiture, une valve de vélo : un seul outil ?**
 >
 > *Durée de l'introduction : 5 à 8 min, avant les exercices*
@@ -30,7 +33,9 @@ tags:
 >
 > Avec ces trois gestes, on traite tous les mouvements du TD : uniforme ($\vec a=\vec0$), accélération constante (projectile, voiture), circulaire ($\vec a=-\omega^2\vec r$), hélicoïdal (somme d'un circulaire et d'un uniforme), cycloïde. La suite du cours (dynamique) consistera à **déduire $\vec a$ des forces**, puis à appliquer ces trois gestes.
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivation et primitives usuelles**
 >
 > Dériver un polynôme, $\sin$, $\cos$, $\mathrm e^{at}$, une fonction composée ($\dfrac{\mathrm d}{\mathrm dt}f(\theta(t))=\dot\theta\,f'(\theta)$) ; retrouver une primitive avec une constante d'intégration fixée par une condition initiale. Notations : $\dot x=\dfrac{\mathrm dx}{\mathrm dt}$ et $\ddot x=\dfrac{\mathrm d^2x}{\mathrm dt^2}$.
@@ -59,7 +64,9 @@ tags:
 >
 > Un **référentiel** est un solide de référence muni d'une horloge ; un **repère** est un système d'axes lié à ce référentiel. La trajectoire dépend du référentiel (elle est rectiligne dans le référentiel du wagon, parabolique dans celui du quai, pour un objet qui tombe).
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Décrire un mouvement : position, vitesse, accélération**
 >
 > Savoir écrire et dériver un vecteur position en coordonnées cartésiennes, en déduire $\vec v$ et $\vec a$, calculer leurs normes, et reconnaître la nature du mouvement (uniforme, uniformément varié, circulaire, hélicoïdal).
@@ -84,7 +91,9 @@ tags:
 >
 > Faire un schéma propre avec repère et vecteurs, rédiger un raisonnement en étapes numérotées, manipuler les formules trigonométriques sans erreur de signe, utiliser Python pour tracer une trajectoire (ouverture).
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Positionnement du TD et progression**
 >
 > Ce TD est le premier de l'année : il fixe les **réflexes de rigueur** (repère, notations, unités, vérifications) et les trois outils fondamentaux du chapitre — **dériver**, **intégrer avec conditions initiales**, **éliminer le temps**. Il prépare la dynamique (TD2) : savoir passer de $\vec a$ à $\vec v$ et $\vec r$ est la condition pour résoudre le principe fondamental. L'exercice « dérivée d'un vecteur unitaire tournant » est le prérequis technique de la cinématique en coordonnées polaires.
@@ -105,7 +114,9 @@ tags:
 >
 > Prévoir en début de séance un rappel de 10 min sur les prérequis (dérivation composée, trigonométrie) : l'expérience montre que les erreurs de calcul sur $\sin$ et $\cos$ coûtent plus de temps que la physique. Donner des repères horaires (par exemple, passage à la correction au bout de 25 min pour un exercice de 35 min) et donner les corrigés progressivement (coup de pouce, puis correction courte, puis solution détaillée).
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Vecteurs position, vitesse, accélération en cartésien**
 >
 > Dans un repère cartésien fixe $(O,\vec u_x,\vec u_y,\vec u_z)$ :
@@ -137,6 +148,8 @@ tags:
 > **Ordres de grandeur**
 >
 > $g\approx9{,}81~\mathrm{m\,s^{-2}}$ ; marche $\approx1~\mathrm{m/s}$ ; vélo $\approx5$--$10~\mathrm{m/s}$ ; voiture en ville $14~\mathrm{m/s}$ ($50$ km/h) ; autoroute $36~\mathrm{m/s}$ ($130$ km/h) ; son dans l'air $\approx340~\mathrm{m/s}$ ; accélération d'une voiture $\approx3$ à $5~\mathrm{m\,s^{-2}}$ ; freinage d'urgence $\approx7~\mathrm{m\,s^{-2}}$ ; temps de réaction d'un conducteur $\approx1~\mathrm{s}$.
+
+
 
 > [!note]- 🧮 Outils mathématiques
 > **Tableau de dérivées et de primitives**
@@ -172,6 +185,7 @@ tags:
 > Un déplacement est l'aire algébrique sous la courbe $v(t)$ ; une variation de vitesse est l'aire sous la courbe $a(t)$. Aires de référence : rectangle, triangle, trapèze.
 
 
+
 ## Exercices
 
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]]
@@ -186,6 +200,38 @@ tags:
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]]
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]]
 - [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]]
+
+
+> [!note]- 🔗 Liens avec d'autres disciplines
+> **Mathématiques**
+>
+> Dérivation et intégration, courbes paramétrées, coniques (parabole, cercle, hélice), séries, équation du second degré, notion de vecteur dérivé.
+>
+> **Sport et biomécanique**
+>
+> Lancers (golf, javelot, basket), course (rattrapage, freinage), saut à la perche, mouvement d'un cycliste ; analyse vidéo des gestes sportifs et optimisation des angles de tir.
+>
+> **Ingénierie des transports et sécurité routière**
+>
+> Distances d'arrêt, durées de feux, zones de dilemme, dimensionnement des rampes d'accélération ; trajectoires de trains (boudin de roue) et d'avions (décollage, atterrissage).
+>
+> **Astronomie et planétologie**
+>
+> Mouvement dans des champs de pesanteur différents ($g_{\rm Lune}\approx g/6$), mouvement circulaire des planètes et des satellites, trajectoires balistiques et ellipses de sûreté.
+>
+> **Informatique et simulation**
+>
+> Moteurs physiques de jeux vidéo (mise à jour de la position et de la vitesse pas à pas), intégration numérique (méthodes d'Euler et de Runge--Kutta), animation de trajectoires avec Python.
+>
+> **Électricité et électromagnétisme**
+>
+> Particule chargée dans un champ électrique uniforme (parabole, avec $g\to qE/m$) ou magnétique (cercle, hélice) ; champ tournant des moteurs ; phaseurs et vecteurs tournants.
+>
+> **Biologie et éthologie**
+>
+> Tir du poisson-archer, saut d'un insecte, course d'un prédateur et d'une proie : les lois horaires donnent des critères d'optimisation du comportement animal.
+
+
 
 > [!warning]- 🪤 Écueils classiques
 > **Confusion entre loi horaire, trajectoire et vitesse**
@@ -228,6 +274,8 @@ tags:
 >
 > Un résultat de $37$ au lieu de $37~\mathrm{m/s}$ n'est pas un résultat. Une vitesse de voiture de $1500~\mathrm{m/s}$ ou une portée de $4$ mm ne doit pas être écrite sans réaction : toujours confronter à un ordre de grandeur.
 
+
+
 > [!tip]- 🎙️ Conseils d'animation
 > **Démarrer par une expérience ou une question**
 >
@@ -253,36 +301,9 @@ tags:
 >
 > À chaque exercice, poser la question : « Votre résultat est-il homogène ? Que donne-t-il dans un cas limite ? Est-il du bon ordre de grandeur ? » Cette habitude est la plus rentable sur le long terme.
 
-> [!note]- 🔗 Liens avec d'autres disciplines
-> **Mathématiques**
->
-> Dérivation et intégration, courbes paramétrées, coniques (parabole, cercle, hélice), séries, équation du second degré, notion de vecteur dérivé.
->
-> **Sport et biomécanique**
->
-> Lancers (golf, javelot, basket), course (rattrapage, freinage), saut à la perche, mouvement d'un cycliste ; analyse vidéo des gestes sportifs et optimisation des angles de tir.
->
-> **Ingénierie des transports et sécurité routière**
->
-> Distances d'arrêt, durées de feux, zones de dilemme, dimensionnement des rampes d'accélération ; trajectoires de trains (boudin de roue) et d'avions (décollage, atterrissage).
->
-> **Astronomie et planétologie**
->
-> Mouvement dans des champs de pesanteur différents ($g_{\rm Lune}\approx g/6$), mouvement circulaire des planètes et des satellites, trajectoires balistiques et ellipses de sûreté.
->
-> **Informatique et simulation**
->
-> Moteurs physiques de jeux vidéo (mise à jour de la position et de la vitesse pas à pas), intégration numérique (méthodes d'Euler et de Runge--Kutta), animation de trajectoires avec Python.
->
-> **Électricité et électromagnétisme**
->
-> Particule chargée dans un champ électrique uniforme (parabole, avec $g\to qE/m$) ou magnétique (cercle, hélice) ; champ tournant des moteurs ; phaseurs et vecteurs tournants.
->
-> **Biologie et éthologie**
->
-> Tir du poisson-archer, saut d'un insecte, course d'un prédateur et d'une proie : les lois horaires donnent des critères d'optimisation du comportement animal.
 
-> [!success]- 🏁 Bilan
+
+> [!success]- 🏁 Bilan pédagogique
 > **Ce qu'il faut savoir faire à la fin du TD**
 >
 > Passer de la loi horaire à la vitesse et à l'accélération (dérivation), et de l'accélération à la loi horaire (intégration + conditions initiales) ; éliminer $t$ pour obtenir la trajectoire ; connaître et redémontrer les trois mouvements de référence (uniforme, accélération constante, circulaire uniforme) ; utiliser la dérivée d'un vecteur unitaire tournant, $\dfrac{\mathrm d\vec u}{\mathrm d\theta}=\vec v$ et $\dfrac{\mathrm d\vec v}{\mathrm d\theta}=-\vec u$, qui servira dans tout le cours en coordonnées polaires, cylindriques et sphériques.
@@ -295,21 +316,34 @@ tags:
 >
 > Les équations horaires à accélération constante serviront de solution à la chute libre et aux mouvements dans un champ uniforme (TD2 : lois de Newton) ; les mouvements circulaires, la base polaire et la dérivée de vecteurs tournants reviendront en TD3 (coordonnées polaires, cylindriques) ; l'étude d'un mouvement par phases et la discussion des racines serviront aussi en mécanique du solide et en électricité.
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Intégration numérique d'un mouvement avec Python
 > Implémenter la méthode d'Euler explicite ($\vec v_{n+1}=\vec v_n+\vec a_n\,\Delta t$, $\vec r_{n+1}=\vec r_n+\vec v_n\,\Delta t$) pour un projectile sans frottement, et comparer à la solution analytique en faisant varier $\Delta t$. Observer que l'erreur est proportionnelle à $\Delta t$ (méthode d'ordre 1). Tester ensuite un schéma plus précis (Euler semi-implicite, point milieu, \texttt{scipy.integrate.solve\_ivp}).
+
+
 
 > [!question]- 🔭 Aller plus loin — CPGE : Repère de Frenet : accélérations tangentielle et normale
 > Montrer que, pour tout mouvement, $\vec a=\dfrac{\mathrm dv}{\mathrm dt}\,\vec\tau+\dfrac{v^2}{\rho}\,\vec n$, où $\rho$ est le rayon de courbure. Appliquer à la balle de golf (au sommet, $\rho=v_x^2/g$), à la cycloïde (au sommet, $\rho=4R$) et à l'hélice du planeur ($\rho=R+v_z^2/(R\omega^2)$).
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Frottement fluide : linéaire et quadratique
 > Résoudre le mouvement vertical d'une bille dans un fluide avec frottement $-\lambda\,\vec v$ (équation différentielle du premier ordre, vitesse limite $v_\ell=mg/\lambda$, temps caractéristique $\tau=m/\lambda$), puis discuter qualitativement le cas du frottement quadratique en $-kv\,\vec v$ (balle de golf, parachutiste). Comparer l'asymétrie de la trajectoire réelle avec la parabole du modèle idéal.
+
+
 
 > [!question]- 🔭 Aller plus loin — Licence : Équation de la trajectoire et enveloppe
 > Pour une famille de trajectoires dépendant d'un paramètre ($\alpha$ pour un tir à $v_0$ fixé), l'enveloppe de la famille s'obtient en éliminant le paramètre entre $F(x,z,\alpha)=0$ et $\partial F/\partial\alpha=0$. Retrouver la parabole de sûreté et discuter la signification de l'enveloppe (frontière de la zone atteignable).
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Cinématique relativiste : accélération propre constante
 > En relativité restreinte, un mouvement à accélération **propre** constante $\alpha$ n'est pas parabolique mais hyperbolique : $x(t)=\dfrac{c^2}{\alpha}\Big(\sqrt{1+(\alpha t/c)^2}-1\Big)$. Montrer que ce mouvement redonne $\tfrac12\alpha t^2$ pour $\alpha t\ll c$ et que la vitesse reste inférieure à $c$ ; calculer le temps propre écoulé pour un voyage avec accélération constante de $1\,g$ jusqu'à la galaxie d'Andromède.
 
+
+
 > [!question]- 🔭 Aller plus loin — Doctorat : Brachistochrone et calcul des variations
 > Trouver la courbe qui minimise la durée de descente d'un point matériel sans frottement entre deux points : formuler le problème $\min\int\dfrac{\mathrm ds}{v}$ avec $v=\sqrt{2gy}$, écrire l'équation d'Euler--Lagrange et vérifier que la solution est une cycloïde (lien avec l'exercice sur la roue qui roule). Cette approche prépare la mécanique lagrangienne.
+
 

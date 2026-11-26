@@ -15,7 +15,8 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 
 **1\textsuperscript{ère} partie : Oscillations libres et modes propres** (questions $1$ à $3$ de l'énoncé, notées q1 à q3). **2\textsuperscript{ème} partie : Oscillations forcées** (questions $1$ à $3$ de l'énoncé, notées q4 à q6) : l'extrémité $O'$ du ressort de raideur $k$ est maintenant soumise à un déplacement sinusoïdal imposé $x_0'=a_0\cos(\omega t)$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Un pendule peut-il immobiliser un chariot ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -25,7 +26,9 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > **Idée clé : à une fréquence bien choisie, le pendule exerce sur le chariot une force exactement opposée à celle de l'excitation.** À la pulsation $\omega^2=g/\ell+k_c/m$ (pulsation propre du pendule retenu par le ressort de couplage seul), la force du ressort de couplage compense la force imposée par l'extrémité $O'$, et le chariot reste immobile alors que le pendule oscille avec l'amplitude $-(k/k_c)a_0$. C'est le principe des amortisseurs à masse accordée.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Pendule simple : tangente et base locale**
 >
 > Pour un pendule, $\vec e_\theta=\cos\theta\,\vec e_x+\sin\theta\,\vec e_y$ est perpendiculaire au fil ; la projection du principe fondamental sur $\vec e_\theta$ élimine la tension (voir l'exercice 1).
@@ -43,7 +46,9 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > $\omega^4-s\,\omega^2+p=0$ se résout en $\omega^2$ : $\omega^2=\tfrac12\big(s\pm\sqrt{s^2-4p}\big)$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Linéariser un système mixte (translation et rotation)**
 >
 > Savoir écrire les équations exactes d'un chariot couplé à un pendule, identifier les hypothèses « ressort horizontal » et « petits angles », et les justifier par l'ordre des termes négligés.
@@ -55,6 +60,8 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > **Résoudre un problème d'oscillations forcées**
 >
 > Savoir écrire les équations avec second membre, résoudre par les amplitudes complexes, identifier résonances et antirésonance, et calculer la période qui immobilise le chariot.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -79,7 +86,9 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > $\omega_2^2=g/\ell=9{,}81/0{,}66=14{,}86\ \mathrm{s^{-2}}$, $\Omega^2=k_c/m=1/0{,}1=10\ \mathrm{s^{-2}}$ ; $\omega^2=24{,}86$, $\omega=4{,}99\ \mathrm{rad\cdot s^{-1}}$.
 
 
+
 **q1.** **(1\textsuperscript{ère} partie, question 1).** Écrire les deux équations différentielles du mouvement en $x_1(t)$ et $x_2(t)$, à l'aide des paramètres $\omega_1=\sqrt{\dfrac km}$, $\omega_2=\sqrt{\dfrac g\ell}$ et $\Omega=\sqrt{\dfrac{k_c}m}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Deux systèmes, deux projections**
@@ -95,11 +104,15 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > $x_2=\ell\sin\theta\simeq\ell\theta$ ; $\sin\theta\simeq x_2/\ell$. Écrivez chaque équation en $x_1$ et $x_2$ et divisez par $m$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Système**
 >
 > $$m\ddot x_1=-kx_1+k_c(x_2-x_1),\qquad m\ddot x_2=-k_c(x_2-x_1)-\frac{mg}\ell x_2,$$
 > soit $\ddot x_1+(\omega_1^2+\Omega^2)x_1=\Omega^2x_2$ et $\ddot x_2+(\omega_2^2+\Omega^2)x_2=\Omega^2x_1$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -132,7 +145,9 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > *Contrôles* : dimensions homogènes ($\mathrm s^{-2}$) ; $\Omega=0$ : chariot sur ressort et pendule indépendants ; les couplages $-\Omega^2$ sont égaux (réciprocité) ; le système n'est symétrique par échange des deux oscillateurs que si $\omega_1=\omega_2$.
 
 
+
 **q2.** **(1\textsuperscript{ère} partie, question 2).** Établir l'équation du 4\textsuperscript{ème} degré en $\omega$ dont les solutions sont les pulsations propres $\omega'$ et $\omega''$ de ce système (calcul facultatif des pulsations propres).
+
 
 > [!tip]- 💡 Coup de pouce
 > **Solution harmonique**
@@ -144,11 +159,15 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > Le déterminant ne contient que $\omega^2$. Posez $X=\omega^2$ et résolvez le trinôme.
 
 
+
+
 > [!success]- ✅ Correction
 > **Équation caractéristique**
 >
 > $$\omega^4-(\omega_1^2+\omega_2^2+2\Omega^2)\,\omega^2+\omega_1^2\omega_2^2+\Omega^2(\omega_1^2+\omega_2^2)=0,$$
 > $$\omega'^2,\omega''^2=\frac12\Big[\omega_1^2+\omega_2^2+2\Omega^2\mp\sqrt{(\omega_1^2-\omega_2^2)^2+4\Omega^4}\Big].$$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -177,7 +196,9 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > - **Répulsion de niveaux** : $\omega''^2-\omega'^2=\sqrt{(\omega_1^2-\omega_2^2)^2+4\Omega^4}\ge2\Omega^2$ : les pulsations propres ne se croisent jamais, même à l'accord $\omega_1=\omega_2$.
 
 
+
 **q3.** **(1\textsuperscript{ère} partie, question 3).** Calculer en fonction de $\Omega$, $\omega_1$ (ou $\omega_2$), $\omega'$ et $\omega''$, le rapport $\dfrac{a_2}{a_1}$ des amplitudes des oscillations de la masse $A$ et du centre de masse $G$ du chariot, pour chacun des deux modes propres du système.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Utiliser une des deux équations**
@@ -189,11 +210,15 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > Comparez $\omega'^2$ et $\omega''^2$ aux nombres $\omega_1^2+\Omega^2$ et $\omega_2^2+\Omega^2$ : en déduire le signe de $a_2/a_1$ pour chaque mode.
 
 
+
+
 > [!success]- ✅ Correction
 > **Rapports d'amplitudes**
 >
 > $$\frac{a_2}{a_1}\Big|_{\omega'}=\frac{\omega_1^2+\Omega^2-\omega'^2}{\Omega^2}=\frac{\Omega^2}{\omega_2^2+\Omega^2-\omega'^2},\qquad\frac{a_2}{a_1}\Big|_{\omega''}=\frac{\omega_1^2+\Omega^2-\omega''^2}{\Omega^2}=\frac{\Omega^2}{\omega_2^2+\Omega^2-\omega''^2}.$$
 > Mode bas : en phase ($a_2/a_1>0$) ; mode haut : en opposition de phase ($a_2/a_1<0$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -216,7 +241,9 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > **Interprétation.** Un mode d'un système couplé est « collectif » ; il se rapproche d'un mode d'oscillateur isolé quand le couplage devient petit devant l'écart des pulsations (voir l'angle de mélange à l'exercice 7).
 
 
+
 **q4.** **(2\textsuperscript{ème} partie, question 1).** L'extrémité $O'$ du ressort de raideur $k$ est maintenant soumise à un déplacement sinusoïdal imposé $x_0'=a_0\cos(\omega t)$. Écrire les nouvelles équations différentielles en $x_1(t)$ et $x_2(t)$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Le ressort $k$ a changé**
@@ -224,10 +251,14 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > Quel est maintenant l'allongement algébrique du ressort $k$ ? L'extrémité $O'$ s'est déplacée de $x_0'$ et l'autre extrémité de $x_1$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Équations forcées**
 >
 > $$\ddot x_1+(\omega_1^2+\Omega^2)x_1-\Omega^2x_2=\omega_1^2a_0\cos\omega t,\qquad\ddot x_2+(\omega_2^2+\Omega^2)x_2-\Omega^2x_1=0.$$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -243,7 +274,9 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > L'excitation apparaît comme un second membre sur la première équation uniquement. Le système reste linéaire : solution = solution générale du système homogène (régime transitoire, qui s'amortit en présence de frottement) $+$ une solution particulière (régime permanent forcé).
 
 
+
 **q5.** **(2\textsuperscript{ème} partie, question 2).** Déterminer les amplitudes complexes des mouvements de $G$ et $A$ en fonction de la pulsation $\omega$ de l'excitation et des paramètres $\Omega$, $\omega_1$ (ou $\omega_2$), $\omega'$ et $\omega''$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Régime forcé permanent**
@@ -255,10 +288,14 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > Résolvez par les formules de Cramer, puis factorisez le dénominateur en utilisant les pulsations propres.
 
 
+
+
 > [!success]- ✅ Correction
 > **Amplitudes complexes**
 >
 > $$\underline A_1=a_0\frac{\omega_1^2(\omega_2^2+\Omega^2-\omega^2)}{(\omega'^2-\omega^2)(\omega''^2-\omega^2)},\qquad\underline A_2=a_0\frac{\omega_1^2\Omega^2}{(\omega'^2-\omega^2)(\omega''^2-\omega^2)}.$$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -280,7 +317,9 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > - **Haute fréquence** ($\omega\to\infty$) : $\underline A\to0$ comme $1/\omega^2$ : l'inertie empêche de suivre.
 
 
+
 **q6.** **(2\textsuperscript{ème} partie, question 3).** On donne $g=9{,}81\ \mathrm{m\cdot s^{-2}}$, $\ell=0{,}66$ m, $m=0{,}1$ kg et $k_c=1$ N/m. Calculer la période $T$ de l'excitateur pour laquelle le chariot demeurera immobile.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Quelle condition sur les amplitudes ?**
@@ -288,10 +327,14 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > Le chariot est immobile si $x_1(t)=0$ en régime permanent, c'est-à-dire si $\underline A_1=0$. Quel facteur du numérateur doit s'annuler ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\omega^2=\omega_2^2+\Omega^2=\dfrac g\ell+\dfrac{k_c}m$ ; $\omega=4{,}99\ \mathrm{rad\cdot s^{-1}}$ ; $T=\dfrac{2\pi}\omega=1{,}26$ s (indépendant de $k$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -314,6 +357,8 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > Le pendule doit rester à petit angle : $|A_2|/\ell=(k/k_c)\,a_0/\ell\ll1$. C'est le principe de l'amortisseur à masse accordée : le pendule absorbe l'excitation à la fréquence choisie et le chariot (la structure) reste immobile. En dehors de cette fréquence, l'effet est moindre et les deux résonances $\omega',\omega''$ encadrent l'antirésonance.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Génie civil**
 >
@@ -328,22 +373,33 @@ On considère un pendule simple de longueur $\ell=OA$ et de masse $m$ supposée 
 > Le résonateur de Helmholtz fixé sur un conduit annule le bruit à sa fréquence propre (TD2, exercice 7).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Anticroisement des niveaux
 > Montrer que $\omega''^2-\omega'^2=\sqrt{(\omega_1^2-\omega_2^2)^2+4\Omega^4}\ge2\Omega^2$ : les deux pulsations propres ne peuvent pas se croiser quand on varie $\omega_1$ ou $\omega_2$ (répulsion de niveaux). Tracer $\omega'^2$ et $\omega''^2$ en fonction de $\omega_1^2-\omega_2^2$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Pourquoi le mode bas est toujours en phase
 > Montrer que $\omega'^2<\min(\omega_1^2,\omega_2^2)+\Omega^2$ et $\omega''^2>\max(\omega_1^2,\omega_2^2)+\Omega^2$, ce qui donne $a_2/a_1>0$ pour le mode bas et $<0$ pour le mode haut : le mode fondamental n'a pas de nœud (cas particulier d'un théorème de Perron--Frobenius).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Amortisseur à masse accordée
 > Avec un petit frottement visqueux sur le pendule, calculer la réponse du chariot à l'excitation ; montrer que l'amplitude du chariot est réduite dans une bande de fréquences autour de $\sqrt{\omega_2^2+\Omega^2}$, et optimiser le frottement.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Corrections non linéaires
 > Les termes cubiques ($\sin\theta\simeq\theta-\theta^3/6$, courbure du ressort $k_c$) rendent les fréquences dépendantes de l'amplitude et peuvent désaccorder l'absorbeur ; voir la méthode de Poincaré--Lindstedt de l'exercice 8.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex2-couplage-de-deux-oscillateurs-harmoniques-dissymetriques|Exercice 2 — Couplage de deux oscillateurs harmoniques dissymétriques]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex4-frequence-propre-d-une-molecule-diatomique|Exercice 4 — Fréquence propre d'une molécule diatomique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex5-complement-niveau-1-cpge-pendules-couples-par-un-ressort-attache-a-mi-hauteur|Exercice 5 — Complément (niveau 1, CPGE) : pendules couplés par un ressort attaché à mi-hauteur]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex6-complement-niveau-2-ambitieux-trois-masses-quatre-ressorts-diagonalisation-et-perturbation|Exercice 6 — Complément (niveau 2, ambitieux) : trois masses, quatre ressorts, diagonalisation et perturbation]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex7-complement-niveau-2-ambitieux-oscillateurs-desaccordes-anticroisement-et-transfert-d-energie|Exercice 7 — Complément (niveau 2, ambitieux) : oscillateurs désaccordés, anticroisement et transfert d'énergie]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex8-complement-niveau-3-ens-modes-non-lineaires-de-deux-pendules-couples-stabilite-et-instabilite-parametrique|Exercice 8 — Complément (niveau 3, ENS) : modes non linéaires de deux pendules couplés, stabilité et instabilité paramétrique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex9-complement-niveau-3-ens-anneau-de-n-oscillateurs-modes-de-fourier-et-propagation-du-signal|Exercice 9 — Complément (niveau 3, ENS) : anneau de N oscillateurs, modes de Fourier et propagation du signal]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex1-pendules-couples-et-battements|Exercice 1 — Pendules couplés et battements]]
+
 

@@ -16,7 +16,8 @@ vecteur position dans la base polaire $(\vec u_r,\vec u_\theta)$ s'écrit
 $$\overrightarrow{OM}(t)=R\,\vec u_r\qquad\text{avec } R \text{ constant},$$
 et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\omega$ constant.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Deux lignes au lieu de deux pages**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -28,25 +29,33 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 > Pour $\overrightarrow{OM}=R\,\vec u_r$ : $\vec v=R\dot\theta\,\vec u_\theta$ (tangent) et $\vec a=-R\dot\theta^2\,\vec u_r$ (centripète). **Le mouvement, le vecteur et sa norme sont les mêmes qu'en cartésien : seules les composantes changent.**
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Dérivées des vecteurs de la base polaire (TD1, exercice 4)**
 >
 > Les vecteurs $\vec u_r$ et $\vec u_\theta$ dépendent de $\theta$, donc du temps :
 > $$\frac{\mathrm d\vec u_r}{\mathrm d\theta}=\vec u_\theta,\qquad\frac{\mathrm d\vec u_\theta}{\mathrm d\theta}=-\vec u_r,\qquad\text{donc}\qquad\frac{\mathrm d\vec u_r}{\mathrm dt}=\dot\theta\,\vec u_\theta,\qquad\frac{\mathrm d\vec u_\theta}{\mathrm dt}=-\dot\theta\,\vec u_r.$$
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Calculer vitesse et accélération en base polaire**
 >
 > Savoir dériver un vecteur exprimé dans la base polaire (mobile) en utilisant les dérivées de $\vec u_r$ et $\vec u_\theta$, interpréter les résultats ($\vec v$ tangent, $\vec a$ centripète) et comprendre que **le choix de la base ne change ni le mouvement, ni les normes, ni le tracé des vecteurs**, mais seulement leurs composantes.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Vitesse et accélération en base polaire**
 >
 > Pour $\overrightarrow{OM}=r\,\vec u_r$, la dérivation d'un produit et celle des vecteurs unitaires donnent
 > $$\vec v=\dot r\,\vec u_r+r\dot\theta\,\vec u_\theta,\qquad\vec a=\left(\ddot r-r\dot\theta^2\right)\vec u_r+\left(r\ddot\theta+2\dot r\dot\theta\right)\vec u_\theta.$$
 > Pour un mouvement circulaire ($r=R$ constant), $\dot r=\ddot r=0$ : $\vec v=R\dot\theta\,\vec u_\theta$ et $\vec a=-R\dot\theta^2\,\vec u_r+R\ddot\theta\,\vec u_\theta$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -75,6 +84,7 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 > $\vec v\cdot\vec a=R\omega\,\vec u_\theta\cdot(-R\omega^2\,\vec u_r)=0$ : vitesse et accélération sont orthogonales, donc $\|\vec v\|$ est constante ($\tfrac12\frac{\mathrm d}{\mathrm dt}\|\vec v\|^2=\vec v\cdot\vec a$).
 
 
+
 **q1.** Trajectoire et base polaire.
 
 
@@ -88,12 +98,17 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 
 (e) Représenter ces points sur le graphique, ainsi que la base polaire associée $(\vec u_r,\vec u_\theta)$.
 
+
 > [!tip]- 💡 Coup de pouce
 > $\overrightarrow{OM}=R\,\vec u_r$ : que dire de la distance $OM$ ? Pour (e), $\vec u_r$ pointe de $O$ vers $M$ et $\vec u_\theta$ est $\vec u_r$ tourné de $+90^\circ$.
 
 
+
+
 > [!success]- ✅ Correction
 > $[R]=\mathrm L$, $[\omega]=\mathrm T^{-1}$ ; cercle de centre $O$ et de rayon $R$ ; points $(0{,}04\ \mathrm m;\ 0,\ \pi/6,\ \pi/3,\ \pi/2)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -119,6 +134,7 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 > Pour placer les points on peut passer en cartésien : $(0{,}04;\,0)$, $(0{,}035;\,0{,}020)$, $(0{,}020;\,0{,}035)$, $(0;\,0{,}04)$ (en mètres). En chaque point, on trace $\vec u_r$ (radial, de $O$ vers $M$) et $\vec u_\theta$ (tangent, obtenu en tournant $\vec u_r$ de $+90^\circ$) : cette base **change d'orientation** d'un point à l'autre, contrairement à la base cartésienne.
 
 
+
 **q2.** Vitesse et accélération de $M$ en base polaire.
 
 
@@ -130,12 +146,17 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 
 (d) En un point de la trajectoire, représenter la base polaire $(\vec u_r,\vec u_\theta)$ et faire apparaître les composantes des vecteurs vitesse $\vec v$ et accélération $\vec a$.
 
+
 > [!tip]- 💡 Coup de pouce
 > Dérivez $R\,\vec u_r$ par rapport au temps. $R$ est constant, mais $\vec u_r$ ne l'est pas : utilisez $\dfrac{\mathrm d\vec u_r}{\mathrm dt}=\dot\theta\,\vec u_\theta$, puis recommencez avec $\vec u_\theta$.
 
 
+
+
 > [!success]- ✅ Correction
 > $\vec v=R\omega\,\vec u_\theta$, $\|\vec v\|=R\omega\approx2{,}1\times10^{-2}$ m/s ; $\vec a=-R\omega^2\,\vec u_r$, $\|\vec a\|=R\omega^2\approx1{,}1\times10^{-2}$ m/s$^2$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -156,6 +177,7 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 > En chaque point, $\vec v$ est tracé tangent au cercle (suivant $\vec u_\theta$), de longueur constante, et $\vec a$ est tracé vers le centre (suivant $-\vec u_r$), de longueur constante aussi. Avec une échelle, par exemple, de $1$ cm pour $0{,}01$ m/s pour $\vec v$ et de $1$ cm pour $0{,}005$ m/s$^2$ pour $\vec a$, on obtient une flèche d'environ $2$ cm pour $\vec v$ et $2$ cm pour $\vec a$. Les composantes sont directement lisibles : $v_r=0$, $v_\theta=R\omega$ ; $a_r=-R\omega^2$, $a_\theta=0$.
 
 
+
 **q3.** Retour sur le mouvement circulaire en base cartésienne. Comparer vos résultats à ceux obtenus dans le TD1 sur le mouvement circulaire.
 
 
@@ -167,12 +189,17 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 
 (d) La norme des vecteurs vitesse et accélération dépend-elle de la base choisie ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Exprimez $\vec u_\theta$ et $\vec u_r$ dans la base cartésienne et comparez avec $\vec v=-R\omega\sin(\omega t)\,\vec\imath+R\omega\cos(\omega t)\,\vec\jmath$ trouvé au TD1.
 
 
+
+
 > [!success]- ✅ Correction
 > (a) Non. (b) Oui. (c) Non. (d) Non.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -199,6 +226,8 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 > **Non.** $\|\vec v\|=\sqrt{v_x^2+v_y^2}=\sqrt{v_r^2+v_\theta^2}=R\omega$ et $\|\vec a\|=R\omega^2$ dans les deux bases : le passage d'une base orthonormée à l'autre est une rotation, qui conserve les normes. En revanche, en polaire, ce résultat est immédiat alors qu'en cartésien il demande d'utiliser $\cos^2+\sin^2=1$.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Algèbre linéaire**
 >
@@ -217,8 +246,12 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 > « Les lois de la physique ne dépendent pas du système de coordonnées » : ici le mouvement ne dépend pas du choix cartésien/polaire. Distinguer de la relativité galiléenne, où l'on change de **référentiel**.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Mouvement circulaire non uniforme
 > Si $\theta(t)$ n'est plus linéaire, $\ddot\theta\neq0$ et $\vec a=-R\dot\theta^2\,\vec u_r+R\ddot\theta\,\vec u_\theta$ : une composante tangentielle apparaît, qui modifie la norme de $\vec v$ ($\dot v=R\ddot\theta$), en plus de la composante centripète qui courbe la trajectoire. Reprendre le cas $\theta(t)=2t^2$ du TD1 (exercice équations horaires 2D/3D, cas 5) avec cette formule.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Changement de base par une matrice de rotation
@@ -227,6 +260,9 @@ et l'évolution de l'angle $\theta$ est donnée par $\theta(t)=\omega t$ avec $\
 > Montrer que cette matrice $P$ est orthogonale ($P^{\mathsf T}P=I$) et en déduire que $v_x^2+v_y^2=v_r^2+v_\theta^2$ : la norme ne dépend pas de la base.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex9-derivee-d-un-vecteur-unitaire-tournant|Exercice 9 — Dérivée d'un vecteur unitaire tournant]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex1-coordonnees-cartesiennes-et-polaires|Exercice 1 — Coordonnées cartésiennes et polaires]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex5-voiture-sur-une-bosse|Exercice 5 — Voiture sur une bosse]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex2-balle-de-golf-mouvement-de-projectile|Exercice 2 — Balle de golf (mouvement de projectile)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-2-dynamique-du-point-materiel-lois-de-newton/lois-de-newton/ex8-pendule-conique|Exercice 8 — Pendule conique]]
+
 

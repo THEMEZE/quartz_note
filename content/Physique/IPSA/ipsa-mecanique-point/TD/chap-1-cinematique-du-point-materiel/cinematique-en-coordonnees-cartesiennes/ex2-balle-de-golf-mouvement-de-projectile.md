@@ -17,7 +17,8 @@ Les équations horaires d'une balle de golf lancée à $t=0$ avec la vitesse ini
 angle $\alpha$ avec l'horizontale sont :
 $$x(t) = v_0\cos(\alpha)\,t, \qquad y(t)=0, \qquad z(t) = -\frac{1}{2}g\,t^2 + v_0\sin(\alpha)\,t.$$
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi frappe-t-on une balle de golf à 45° (ou pas) ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -29,30 +30,40 @@ $$x(t) = v_0\cos(\alpha)\,t, \qquad y(t)=0, \qquad z(t) = -\frac{1}{2}g\,t^2 + v
 > Conséquences : la composante **perpendiculaire** à $\vec a$ ($v_x$) est constante ; la composante **parallèle** à $\vec a$ ($v_z$) varie linéairement ; la trajectoire est une parabole. Les deux grandeurs utiles du tir (flèche et portée) sont **proportionnelles à $1/g$** : c'est ce qui permet de répondre à la question lunaire sans calcul.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Mouvement de chute libre avec vitesse initiale**
 >
 > Un projectile soumis uniquement à la pesanteur (on néglige les frottements de l'air) subit une accélération constante $\vec a = -g\,\vec u_z$. Ses équations horaires s'obtiennent par double intégration de $\vec a$, en tenant compte des conditions initiales de position et de vitesse. C'est l'exercice précédent (TD1, ex.1), avec ici une vitesse initiale non nulle et inclinée.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Étudier complètement un mouvement de projectile**
 >
 > Savoir déterminer l'équation de trajectoire, la portée et la flèche d'un tir, discuter l'angle optimal, et transposer un résultat d'un champ de pesanteur à un autre (application lunaire).
 
 
-> [!info]- 🧑‍🏫 Objectifs pédagogiques (enseignant)
+
+
+> [!info]- 🧑‍🏫 Objectifs pédagogiques
 > **Exercice de synthèse sur le tir parabolique**
 >
 > Cet exercice classique permet de mobiliser simultanément le calcul vectoriel (vitesse, accélération), l'algèbre (résolution de $z(t)=0$), et un raisonnement physique de mise à l'échelle (question (g), transposition Terre/Lune) sans necessiter de refaire tout le calcul depuis le début — il s'agit de repérer que $d$ est proportionnel à $1/g$ à $v_0,\alpha$ fixés.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Portée et flèche d'un tir parabolique**
 >
 > Pour un tir sans frottement lancé depuis le sol ($z(0)=0$) avec une vitesse $v_0$ à l'angle $\alpha$ dans un champ de pesanteur uniforme $g$, on retiendra les résultats génériques :
 > $$h_{max} = \frac{v_0^2\sin^2\alpha}{2g} \quad(\text{flèche}), \qquad d = \frac{v_0^2\sin(2\alpha)}{g} \quad(\text{portée}).$$
 > Ces deux grandeurs sont proportionnelles à $1/g$ à $v_0$ et $\alpha$ fixés : un même tir va environ 6 fois plus loin sur la Lune que sur Terre.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -77,16 +88,22 @@ $$x(t) = v_0\cos(\alpha)\,t, \qquad y(t)=0, \qquad z(t) = -\frac{1}{2}g\,t^2 + v
 > $z(t)=t\left(v_0\sin\alpha-\tfrac12 gt\right)=0$ : un produit est nul si un de ses facteurs l'est, d'où les deux instants $t=0$ (lancer) et $t_d=2v_0\sin\alpha/g$ (retombée).
 
 
+
 **q1.** - [(a)] Déterminer l'équation de la trajectoire de la balle et la représenter sur un graphique.
 - [(b)] Déterminer l'expression du vecteur vitesse $\vec v$ de la balle. Représenter $\vec v_0$ et l'angle $\alpha$ sur le graphique.
 - [(c)] Comment évolue la vitesse suivant $Ox$ ? suivant $Oz$ ?
+
 
 > [!tip]- 💡 Coup de pouce
 > Isolez $t$ dans $x(t)$ et reportez dans $z(t)$, comme dans l'exercice précédent.
 
 
+
+
 > [!success]- ✅ Correction
 > $z(x) = x\tan\alpha - \dfrac{g}{2v_0^2\cos^2\alpha}x^2$ : parabole. $v_x$ constant, $v_z$ affine décroissante (change de signe au sommet).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -109,16 +126,22 @@ $$x(t) = v_0\cos(\alpha)\,t, \qquad y(t)=0, \qquad z(t) = -\frac{1}{2}g\,t^2 + v
 > $v_z(t) = v_0\sin\alpha - gt$ est **affine décroissante** : le mouvement est uniformément décéléré tant que $v_z>0$ (montée), s'annule au sommet de la trajectoire (flèche), puis devient négatif (la balle redescend, accélérée vers le bas).
 
 
+
 **q2.** - [(d)] Donner l'expression de l'altitude maximale $h$ atteinte par la balle (la flèche) et de la portée horizontale $d$ du tir.
 - [(e)] Pour quelle valeur de $\alpha$ la portée est-elle maximale ?
 - [(f)] Montrer qu'une même portée peut être atteinte pour deux valeurs différentes de $\alpha$.
+
 
 > [!tip]- 💡 Coup de pouce
 > La flèche est atteinte quand $v_z=0$ ; la portée correspond au second instant où $z=0$ (l'autre que $t=0$).
 
 
+
+
 > [!success]- ✅ Correction
 > $h=\dfrac{v_0^2\sin^2\alpha}{2g}$, $d=\dfrac{v_0^2\sin(2\alpha)}{g}$ ; portée max pour $\alpha=45°$ ; $d(\alpha)=d(90°-\alpha)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -146,14 +169,20 @@ $$x(t) = v_0\cos(\alpha)\,t, \qquad y(t)=0, \qquad z(t) = -\frac{1}{2}g\,t^2 + v
 > Les angles $\alpha$ et $90°-\alpha$ (complémentaires) donnent donc la même portée — l'un correspondant à un tir tendu (angle faible), l'autre à un tir plus haut (angle proche de la verticale), à la même vitesse initiale $v_0$.
 
 
+
 **q3.** - [(g)] Une balle de golf tapée avec une vitesse oblique retombe à une distance $d_T=340$ m du joueur, sur Terre. À quelle distance $d_L$ du joueur retomberait une balle tapée dans les mêmes conditions de lancement, mais sur la Lune, où $g_L=1{,}6$ m/s² ?
+
 
 > [!tip]- 💡 Coup de pouce
 > "Mêmes conditions de lancement" signifie même $v_0$ et même $\alpha$. Utilisez l'expression de la portée $d=v_0^2\sin(2\alpha)/g$ pour comparer directement les deux situations sans recalculer $v_0$ ni $\alpha$.
 
 
+
+
 > [!success]- ✅ Correction
 > $d_L = d_T\,g_T/g_L \approx 2{,}08$ km.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -168,20 +197,6 @@ $$x(t) = v_0\cos(\alpha)\,t, \qquad y(t)=0, \qquad z(t) = -\frac{1}{2}g\,t^2 + v
 > La balle irait donc presque 6,1 fois plus loin sur la Lune que sur Terre — un ordre de grandeur cohérent avec les images des astronautes d'Apollo 14 frappant des balles de golf sur la Lune. (En pratique, l'absence d'atmosphère lunaire supprime aussi les frottements de l'air, ce qui augmenterait encore un peu plus la portée réelle par rapport à ce facteur purement gravitationnel.)
 
 
-> [!warning]- 🪤 Écueils classiques
-> **Oublier que $y(t)=0$**
->
-> Certains étudiants cherchent à tort une trajectoire en 3D alors que l'énoncé précise $y(t)=0$ : le mouvement est plan, contenu dans le plan vertical $Oxz$ défini par $\vec v_0$.
->
-> **Chercher $\alpha$ optimal en dérivant $h$ au lieu de $d$**
->
-> Bien relire la question : c'est la portée $d(\alpha)$ qu'il faut maximiser en question (e), pas la flèche $h(\alpha)$ (qui, elle, est maximale pour $\alpha=90°$, tir vertical, portée nulle).
-
-
-> [!tip]- 🎙️ Conseils d'animation
-> **Lien avec le sport**
->
-> On peut demander aux étudiants d'estimer l'angle de frappe réel d'un practice de golf (typiquement 10-15° pour un driver, car il y a portance et rotation du fluide non modélisées ici) et de discuter pourquoi le modèle simple du tir parabolique ne prédit pas exactement les performances réelles (effet Magnus, résistance de l'air).
 
 
 > [!note]- 🔗 Liens avec d'autres disciplines
@@ -202,16 +217,43 @@ $$x(t) = v_0\cos(\alpha)\,t, \qquad y(t)=0, \qquad z(t) = -\frac{1}{2}g\,t^2 + v
 > Lancer du poids, jet d'eau d'une fontaine, tir au basket : on retrouve les deux angles complémentaires. Pour un lancer réel, la résistance de l'air déforme la parabole (voir « aller plus loin »).
 
 
-> [!success]- 🏁 Bilan
+
+
+> [!warning]- 🪤 Écueils classiques
+> **Oublier que $y(t)=0$**
+>
+> Certains étudiants cherchent à tort une trajectoire en 3D alors que l'énoncé précise $y(t)=0$ : le mouvement est plan, contenu dans le plan vertical $Oxz$ défini par $\vec v_0$.
+>
+> **Chercher $\alpha$ optimal en dérivant $h$ au lieu de $d$**
+>
+> Bien relire la question : c'est la portée $d(\alpha)$ qu'il faut maximiser en question (e), pas la flèche $h(\alpha)$ (qui, elle, est maximale pour $\alpha=90°$, tir vertical, portée nulle).
+
+
+
+
+> [!tip]- 🎙️ Conseils d'animation
+> **Lien avec le sport**
+>
+> On peut demander aux étudiants d'estimer l'angle de frappe réel d'un practice de golf (typiquement 10-15° pour un driver, car il y a portance et rotation du fluide non modélisées ici) et de discuter pourquoi le modèle simple du tir parabolique ne prédit pas exactement les performances réelles (effet Magnus, résistance de l'air).
+
+
+
+
+> [!success]- 🏁 Bilan pédagogique
 > **Le tir parabolique, un mouvement à accélération constante**
 >
 > Ce mouvement illustre le cas générique d'une accélération constante non colinéaire à la vitesse initiale : la trajectoire est une parabole, la composante de vitesse parallèle à $\vec a$ varie linéairement (ici $v_z$), tandis que la composante perpendiculaire à $\vec a$ reste constante (ici $v_x$). La portée dépend de $v_0^2$, de $\sin(2\alpha)$ et de $1/g$ : ce dernier point explique directement la question de la transposition sur la Lune.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Tir avec frottement quadratique
 > En présence d'une résistance de l'air en $-k v^2\vec u_v$ (régime turbulent, plus réaliste pour une balle de golf), les équations du mouvement se couplent et n'ont plus de solution analytique simple ; on peut alors discuter qualitativement (ou numériquement) l'asymétrie de la trajectoire réelle par rapport à la parabole symétrique du modèle sans frottement, la balle réelle retombant plus abruptement qu'elle n'est montée.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex1-mouvement-a-2-dimensions|Exercice 1 — Mouvement à 2 dimensions]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex5-le-poisson-archer-expert-en-balistique|Exercice 5 — Le poisson-archer, expert en balistique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex8-mouvement-circulaire-en-base-cartesienne|Exercice 8 — Mouvement circulaire en base cartésienne]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex10-planeur-en-ascendance-trajectoire-helicoidale|Exercice 10 — Planeur en ascendance : trajectoire hélicoïdale]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex11-la-valve-du-velo-cycloide-d-une-roue-qui-roule|Exercice 11 — La valve du vélo : cycloïde d'une roue qui roule]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex12-equations-horaires-2d-ou-3d|Exercice 12 — (*) Équations horaires 2D ou 3D]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex2-mouvement-circulaire-en-base-polaire|Exercice 2 — Mouvement circulaire en base polaire]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex3-cardioide|Exercice 3 — Cardioïde]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex4-mouvement-helicoidal-extension-en-3d|Exercice 4 — Mouvement hélicoïdal (extension en 3D)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex5-perle-sur-une-tige-tournante|Exercice 5 — Perle sur une tige tournante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex6-spirale-equiangulaire-trajectoire-d-approche-d-un-faucon|Exercice 6 — Spirale équiangulaire (trajectoire d'approche d'un faucon)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex7-courbe-de-poursuite-les-trois-drones|Exercice 7 — Courbe de poursuite : les trois drones]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-polaires-2d-et-cylindriques-3d/ex8-ellipse-de-kepler-loi-des-aires-et-hodographe|Exercice 8 — Ellipse de Kepler, loi des aires et hodographe]] · [[physique/IPSA/ipsa-mecanique-point/Mini-Projet/application-a-la-propulsion-spatiale/mini-projet-phv111-conservation-de-la-quantite-de-mouvement-et-equation-de-tsiolkovski/ex2-seance-1-exploitation-de-la-chronophotographie-vitesses-forces-lois-de-newton|Exercice 2 — Séance 1 -- Exploitation de la chronophotographie : vitesses, forces, lois de Newton]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex6-parabole-de-s-rete-et-tir-sur-une-pente|Exercice 6 — Parabole de sûreté et tir sur une pente]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/cinematique-en-coordonnees-cartesiennes/ex7-balle-rebondissante-et-paradoxe-de-zenon|Exercice 7 — Balle rebondissante et paradoxe de Zénon]]
+
 

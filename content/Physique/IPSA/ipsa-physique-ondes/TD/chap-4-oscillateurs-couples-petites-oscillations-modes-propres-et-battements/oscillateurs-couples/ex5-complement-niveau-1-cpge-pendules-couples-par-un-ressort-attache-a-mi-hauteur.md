@@ -15,7 +15,8 @@ tags:
 
 Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attache du ressort : il illustre que le couplage dépend de la géométrie, pas seulement de $k$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Où accrocher le ressort ?**
 >
 > *Durée de l'introduction : 3 min*
@@ -25,7 +26,9 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > **Idée clé : le couplage est un moment, donc un produit force $\times$ bras de levier.** Déplacer le point d'attache le long de la tige modifie le bras de levier et l'allongement : le coefficient de couplage est multiplié par $(h/\ell)^2$.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercice 1 du TD4**
 >
 > Base locale du pendule $(\vec e_r,\vec e_\alpha)$, équations exactes, linéarisation, découplage par $S=\alpha_1+\alpha_2$ et $D=\alpha_1-\alpha_2$.
@@ -39,7 +42,9 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > $\sin a+\sin b=2\sin\frac{a+b}2\cos\frac{a-b}2$ ; période de battement $T_b=\dfrac{2\pi}{\omega_2-\omega_1}$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Utiliser le théorème du moment cinétique plutôt que la tension**
 >
 > Quand le ressort n'est pas accroché à la masse, la force de couplage n'est plus colinéaire à la vitesse : c'est le moment par rapport à $O_i$ qui élimine la tension de la tige.
@@ -53,6 +58,8 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > Calculer la fraction d'énergie stockée dans le ressort, et le temps de transfert complet d'un pendule à l'autre.
 
 
+
+
 > [!note]- 🧮 Outils mathématiques
 > **Théorème du moment cinétique**
 >
@@ -63,7 +70,9 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > $\omega_0^2=9{,}81$, $\omega_0=3{,}132\ \mathrm{rad\cdot s^{-1}}$ ; $\omega_c^2=\dfrac{0{,}40}{0{,}20}\times0{,}25=0{,}50$ ; $\omega_2^2=10{,}81$, $\omega_2=3{,}288$ ; $T_b=\dfrac{2\pi}{0{,}1558}=40{,}3$ s.
 
 
+
 **q1.** **Question 1.** *Sans approximation.* Exprimer en fonction de $\alpha_1,\alpha_2$ les coordonnées de $P_1$ et $P_2$, la longueur du ressort et la force qu'il exerce sur $P_1$. En déduire, par le théorème du moment cinétique en $O_1$, l'équation exacte vérifiée par $\alpha_1$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Base locale**
@@ -79,11 +88,15 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > $\mathcal M_{O_1}(\vec F)=\overrightarrow{O_1P_1}\wedge\vec F$ : seule la composante de $\vec F$ perpendiculaire à la tige compte, soit $\vec F\cdot\vec e_{\alpha,1}$, multipliée par $h$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Équation exacte**
 >
 > $u=d+h(\sin\alpha_2-\sin\alpha_1)$, $v=h(\cos\alpha_1-\cos\alpha_2)$, $\ell_s=\sqrt{u^2+v^2}$ ;
 > $$m\ell^2\ddot\alpha_1=-mg\ell\sin\alpha_1+h\,k\,\frac{\ell_s-d}{\ell_s}\,(u\cos\alpha_1+v\sin\alpha_1).$$
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -106,7 +119,9 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > Si $h=0$ : plus de couplage, deux pendules indépendants. Si $h=\ell$ : on retrouve l'équation de l'exercice 1. Les deux équations sont non linéaires et couplées.
 
 
+
 **q2.** **Question 2.** *Petits angles.* Linéariser les deux équations à l'ordre $1$ en $\alpha_1,\alpha_2$. Justifier que l'inclinaison du ressort est négligeable. Définir $\omega_0$ et $\omega_c$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Ordres**
@@ -114,11 +129,15 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > $v=O(\alpha^2)$, donc $\ell_s=u+O(\alpha^4)$ ; $u\cos\alpha_1+v\sin\alpha_1=u+O(\alpha^2)\cdot O(\alpha)$ quel est le terme d'ordre le plus bas qui change ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Système linéarisé**
 >
 > $$\ddot\alpha_1+(\omega_0^2+\omega_c^2)\alpha_1-\omega_c^2\alpha_2=0,\qquad\ddot\alpha_2+(\omega_0^2+\omega_c^2)\alpha_2-\omega_c^2\alpha_1=0,$$
 > $\omega_0^2=g/\ell$, $\omega_c^2=\dfrac km\dfrac{h^2}{\ell^2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -138,7 +157,9 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > Dans l'exercice 1, $h=\ell$ et $\omega_c^2=k/m$. Ici le même ressort est accroché à mi-hauteur : $\omega_c^2$ est divisé par $4$ (l'allongement du ressort est divisé par $2$ et le bras de levier aussi).
 
 
+
 **q3.** **Question 3.** *Découplage.* Déterminer les modes propres (a) à la manière du physicien (somme et différence), (b) à la manière du mathématicien (matrice $K$, déterminant, vecteurs propres). Donner $\omega_1$ et $\omega_2$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Physicien**
@@ -150,10 +171,14 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > Écrivez $\ddot{\vec\alpha}+\mathcal K\vec\alpha=\vec0$ avec $\mathcal K=\begin{pmatrix}\omega_0^2+\omega_c^2&-\omega_c^2\\-\omega_c^2&\omega_0^2+\omega_c^2\end{pmatrix}$ et cherchez ses valeurs propres.
 
 
+
+
 > [!success]- ✅ Correction
 > **Modes**
 >
 > $\ddot S+\omega_0^2S=0$ et $\ddot D+(\omega_0^2+2\omega_c^2)D=0$ ; $\omega_1=\omega_0=3{,}132$ rad/s (en phase, $\vec u_1=(1,1)$) ; $\omega_2=\sqrt{\omega_0^2+2\omega_c^2}=3{,}288$ rad/s (opposition, $\vec u_2=(1,-1)$).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -174,7 +199,9 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > $\alpha_1=\tfrac12\big[S_0\cos(\omega_1t+\varphi_1)+D_0\cos(\omega_2t+\varphi_2)\big]$, $\alpha_2=\tfrac12\big[S_0\cos(\omega_1t+\varphi_1)-D_0\cos(\omega_2t+\varphi_2)\big]$.
 
 
+
 **q4.** **Question 4.** *Battements.* À $t=0$, on écarte la tige 1 de l'angle $A=0{,}10$ rad, la tige 2 restant verticale, et on lâche sans vitesse. Calculer $\alpha_1(t)$ et $\alpha_2(t)$ sous forme d'un produit, la période de battement $T_b$ et le temps nécessaire pour que le pendule 2 atteigne l'amplitude maximale.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Conditions initiales**
@@ -186,10 +213,14 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > $\cos a+\cos b=2\cos\frac{a+b}2\cos\frac{a-b}2$ et $\cos a-\cos b=-2\sin\frac{a+b}2\sin\frac{a-b}2$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Battements**
 >
 > $\alpha_1=A\cos\Omega_mt\cos\Omega_0t$, $\alpha_2=A\sin\Omega_mt\sin\Omega_0t$, $\Omega_0=\dfrac{\omega_1+\omega_2}2=3{,}210$ rad/s, $\Omega_m=\dfrac{\omega_2-\omega_1}2=0{,}0779$ rad/s ; $T_b=\dfrac{2\pi}{\omega_2-\omega_1}=40$ s ; le transfert complet prend $T_b/2=20$ s.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -210,7 +241,9 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > Les enveloppes lentes $\cos\Omega_mt$, $\sin\Omega_mt$ ont un sens parce que $\Omega_m/\Omega_0=2{,}4\%\ll1$ : séparation d'échelles de temps. Les petits angles sont valables si $A=0{,}1$ rad : la correction relative à la fréquence est $\sim A^2/16=6\times10^{-4}$.
 
 
+
 **q5.** **Question 5.** *Énergie.* Écrire l'énergie mécanique totale à l'ordre quadratique. Quelle fraction $\kappa$ de l'énergie initiale est au maximum stockée dans le ressort ? Pourquoi est-ce petit ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Énergie potentielle**
@@ -218,10 +251,14 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > $E_p=\tfrac12mg\ell(\alpha_1^2+\alpha_2^2)+\tfrac12kh^2(\alpha_1-\alpha_2)^2$ (à l'ordre $2$). Quelle est la valeur maximale de $\alpha_1-\alpha_2=D$ ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Fraction**
 >
 > $E=\tfrac12m\ell^2A^2(\omega_0^2+\omega_c^2)$ ; $E_{\rm ressort,max}=\tfrac12kh^2A^2$ ; $\kappa=\dfrac{\omega_c^2}{\omega_0^2+\omega_c^2}=\dfrac{0{,}5}{10{,}31}=4{,}9\,\%$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -238,20 +275,29 @@ Cet exercice reprend la méthode de l'exercice 1 en déplaçant le point d'attac
 > Le couplage est faible parce que l'énergie du ressort est petite devant l'énergie de gravité à ces angles : le ressort ne sert qu'à *transférer* lentement l'énergie. À $t=T_b/2$, quasiment toute l'énergie est dans le pendule 2 : le transfert est complet bien que le ressort n'en stocke que $5\,\%$ à chaque instant. Ce n'est pas contradictoire : le ressort sert de canal, pas de réservoir.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Mécanique des structures**
 >
 > Un raidisseur placé près de l'encastrement d'une poutre couple moins qu'un raidisseur placé en bout : même idée de bras de levier.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Ressort pas horizontal
 > Montrer que si les points de fixation sont à des hauteurs différentes, il apparaît des termes en $\alpha_i$ au premier ordre dans la force de rappel (l'équilibre est modifié).
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Corrections d'ordre $4$
 > Vérifier numériquement que la force du ressort est $h(\sin\alpha_2-\sin\alpha_1)\cos\alpha_1+O(\varepsilon^4)$, ce qui justifie le modèle linéaire jusqu'à $\varepsilon\sim0{,}3$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex2-couplage-de-deux-oscillateurs-harmoniques-dissymetriques|Exercice 2 — Couplage de deux oscillateurs harmoniques dissymétriques]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex3-oscillations-libres-et-forcees-d-un-couplage-pendule-chariot|Exercice 3 — Oscillations libres et forcées d'un couplage pendule-chariot]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex4-frequence-propre-d-une-molecule-diatomique|Exercice 4 — Fréquence propre d'une molécule diatomique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex6-complement-niveau-2-ambitieux-trois-masses-quatre-ressorts-diagonalisation-et-perturbation|Exercice 6 — Complément (niveau 2, ambitieux) : trois masses, quatre ressorts, diagonalisation et perturbation]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex7-complement-niveau-2-ambitieux-oscillateurs-desaccordes-anticroisement-et-transfert-d-energie|Exercice 7 — Complément (niveau 2, ambitieux) : oscillateurs désaccordés, anticroisement et transfert d'énergie]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex8-complement-niveau-3-ens-modes-non-lineaires-de-deux-pendules-couples-stabilite-et-instabilite-parametrique|Exercice 8 — Complément (niveau 3, ENS) : modes non linéaires de deux pendules couplés, stabilité et instabilité paramétrique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex9-complement-niveau-3-ens-anneau-de-n-oscillateurs-modes-de-fourier-et-propagation-du-signal|Exercice 9 — Complément (niveau 3, ENS) : anneau de N oscillateurs, modes de Fourier et propagation du signal]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex1-pendules-couples-et-battements|Exercice 1 — Pendules couplés et battements]]
+
 

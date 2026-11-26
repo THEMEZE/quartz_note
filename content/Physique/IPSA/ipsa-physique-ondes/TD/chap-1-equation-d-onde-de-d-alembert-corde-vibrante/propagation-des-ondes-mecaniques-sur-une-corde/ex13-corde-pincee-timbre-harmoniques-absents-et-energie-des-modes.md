@@ -17,7 +17,8 @@ de sorte que son profil est formé de deux segments de droite, puis on la lâche
 $$y(x,0)=\begin{cases}h\,\dfrac xd & 0\le x\le d\\[2mm] h\,\dfrac{L-x}{L-d} & d\le x\le L\end{cases},\qquad\partial_ty(x,0)=0.$$
 On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Pourquoi une guitare pincée près du chevalet sonne-t-elle plus « métallique » ?**
 >
 > *Durée de l'introduction : 5 min, avant de lire l'énoncé*
@@ -27,6 +28,8 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > **Idée clé : la forme initiale fixe le poids de chaque mode propre.** La solution générale d'une corde fixée aux deux bouts est la superposition de ses modes,
 > $$y(x,t)=\sum_{n\ge1}\big(A_n\cos\omega_nt+B_n\sin\omega_nt\big)\sin\frac{n\pi x}L,\qquad\omega_n=n\omega_1,$$
 > et les conditions initiales ($y(x,0)$ et $\partial_ty(x,0)$) déterminent les $A_n$ et $B_n$ par **projection** sur les modes (orthogonalité des $\sin$). La hauteur de la note est donnée par $f_1$ ; le **timbre** par les amplitudes relatives des harmoniques. Comme tous les $\omega_n$ sont multiples de $\omega_1$, le mouvement est **périodique** de période $T=2L/c$.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -55,9 +58,11 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > Si $\beta=1/m$ ($m$ entier), $\sin(n\pi/m)=0$ pour $n$ multiple de $m$ : les harmoniques de rang $m,2m,\dots$ sont absents.
 
 
+
 **q1.** (a) Justifier la forme $y(x,t)=\sum_n(A_n\cos\omega_nt+B_n\sin\omega_nt)\sin\dfrac{n\pi x}L$ et montrer que la condition $\partial_ty(x,0)=0$ impose $B_n=0$ pour tout $n$.
 
 (b) Établir l'expression de $A_n=b_n$ en fonction de $h$, $L$, $\beta$ et $n$ (on pourra dériver deux fois le profil initial).
+
 
 > [!tip]- 💡 Coup de pouce
 > **Séparation des variables**
@@ -69,10 +74,14 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > La pente passe de $h/d$ à $-h/(L-d)$ en $x=d$ : $y''(x,0)=-\dfrac{hL}{d(L-d)}\,\delta(x-d)$. Utilisez $\int g\sin(ax)=-\dfrac1{a^2}\int g''\sin(ax)$ avec $a=n\pi/L$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $B_n=0$ et $\boxed{b_n=\dfrac{2h}{\pi^2\beta(1-\beta)}\,\dfrac{\sin(n\pi\beta)}{n^2}}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -89,11 +98,13 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > **Vérification** : pour $\beta=\tfrac12$ et $n=1$, $b_1=\dfrac{8h}{\pi^2}\approx0{,}81\,h$, valeur classique du mode fondamental d'une corde pincée en son milieu.
 
 
+
 **q2.** (a) Pincement au milieu ($\beta=1/2$) : quels harmoniques sont présents ? Comment décroissent leurs amplitudes ? Que se passe-t-il pour $\beta=1/3$ ? Pour $\beta=1/5$ ?
 
 (b) Pincement près du chevalet ($\beta\ll1$) : montrer que $|b_n|\simeq\dfrac{2h}{\pi n}$ tant que $n\beta\ll1$. Interpréter qualitativement le timbre « brillant ».
 
 (c) Montrer que la corde est périodique, de période $T=2L/c$, et que $y(x,T/2)=-y(L-x,0)$. Décrire le mouvement avec la solution de d'Alembert : à $t=0^+$, de quoi est composé le signal ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Harmoniques absents**
@@ -109,10 +120,14 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > Prolongez $y_0$ à $\mathbb R$ de façon impaire et $2L$-périodique : $y(x,t)=\tfrac12\big[f(x-ct)+f(x+ct)\big]$. Chaque morceau de profil se divise en deux demi-profils qui se propagent en sens opposés.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résumé**
 >
 > $\beta=\tfrac12$ : seuls les harmoniques impairs, $b_n=\dfrac{8h}{\pi^2}\dfrac{(-1)^{(n-1)/2}}{n^2}$ ; $\beta=\tfrac13$ : $n=3,6,9,\dots$ absents ; $\beta=\tfrac15$ : $n=5,10,\dots$ absents. Près du chevalet, $|b_n|\simeq2h/(\pi n)$ décroît lentement : spectre riche. $y(x,T/2)=-y_0(L-x)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -129,11 +144,13 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > Comme $\omega_n=n\omega_1$, $y(x,t+T)=y(x,t)$ avec $T=2\pi/\omega_1=2L/c$. À $t=T/2$, $\cos(n\omega_1T/2)=\cos(n\pi)=(-1)^n$ et $(-1)^n\sin\frac{n\pi x}L=-\sin\frac{n\pi(L-x)}L$, donc $y(x,T/2)=-y_0(L-x)$ : le triangle est **renversé et retourné** (image en miroir par rapport à $x=L/2$ et par rapport à l'axe). Avec d'Alembert, $y(x,t)=\tfrac12[f(x-ct)+f(x+ct)]$ où $f$ est le prolongement impair $2L$-périodique de $y_0$ : à $t=0^+$, le triangle de hauteur $h$ se scinde en deux triangles de hauteur $h/2$, qui s'écartent à la vitesse $c$ ; ils se réfléchissent aux extrémités fixes (avec changement de signe) et se recombinent.
 
 
+
 **q3.** (a) Calculer l'énergie initiale $E_0$ de la corde en fonction de $F$, $h$, $L$ et $\beta$.
 
 (b) Exprimer l'énergie $E_n$ du mode $n$. Montrer que $\sum_nE_n=E_0$. Quelle est la proportion d'énergie dans chaque mode ?
 
 (c) Application : $L=0{,}65$ m, $f_1=110$ Hz, $\mu=5{,}0$ g/m, $h=3{,}0$ mm, $\beta=1/5$. Calculer $c$, $F$, $T$, $E_0$, les amplitudes $b_1,\dots,b_5$ et la part d'énergie dans les quatre premiers modes. Comparer avec le pincement au milieu.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Énergie initiale**
@@ -145,22 +162,32 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > $E_n=\tfrac14\mu L\omega_n^2b_n^2$ avec $\mu\omega_1^2=F\pi^2/L^2$. La somme $\sum\sin^2(n\pi\beta)/n^2=\pi^2\beta(1-\beta)/2$ permet de conclure.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — CPGE : Corde frappée (piano)
 > Un marteau de largeur négligeable frappe la corde en $x=d$ avec la vitesse $v_0$ : $y(x,0)=0$ et $\partial_ty(x,0)=v_0\delta(x-d)$. Montrer que $A_n=0$, $B_n=\dfrac{2v_0}{L\omega_n}\sin\dfrac{n\pi d}L$ et que les amplitudes décroissent en $1/n$ (et non $1/n^2$) : spectre plus riche que pour la corde pincée.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Licence : Pincement par une pointe finie : filtrage
 > Si le doigt a une largeur $w$, le profil initial est arrondi sur $w$ : le coefficient $b_n$ est multiplié par $\dfrac{\sin(n\pi w/(2L))}{n\pi w/(2L)}$, un **sinus cardinal**. Montrer que cela atténue les harmoniques de rang $n\gtrsim2L/w$ et expliquer pourquoi le jeu au doigt est plus doux qu'au médiator.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Mouvement de Helmholtz (violon)
 > Pour une corde frottée par un archet à vitesse constante, le mouvement observé est un **coude unique** qui parcourt le trajet aller-retour de la corde en $T=2L/c$, avec un profil en dents de scie à la position de l'archet. Écrire ce mouvement avec la solution de d'Alembert et montrer que le spectre décroît en $1/n$.
+
+
 
 
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $E_0=\dfrac{F h^2L}{2d(L-d)}=\dfrac{Fh^2}{2L\beta(1-\beta)}$ ; $\dfrac{E_n}{E_0}=\dfrac{2\sin^2(n\pi\beta)}{\pi^2\beta(1-\beta)\,n^2}$. AN : $c=143$ m/s, $F\approx102$ N, $T=9{,}1$ ms, $E_0\approx4{,}4$ mJ ; $b_1\dots b_5\approx2{,}23;\ 0{,}90;\ 0{,}40;\ 0{,}14;\ 0$ mm ; $\approx88\,\%$ de l'énergie dans les 4 premiers modes.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -183,6 +210,8 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > Parts d'énergie : $E_1/E_0\approx44\,\%$, $E_2/E_0\approx29\,\%$, $E_3/E_0\approx13\,\%$, $E_4/E_0\approx3\,\%$, $E_5=0$ : environ $88\,\%$ dans les quatre premiers modes. Pour $\beta=\tfrac12$ (même $h$) : $b_1=8h/\pi^2\approx2{,}43$ mm, $b_2=0$, $b_3\approx-0{,}27$ mm : le fondamental domine ($81\,\%$ de l'énergie) et le deuxième harmonique est absent. **Validation** : le fondamental est un peu plus fort au milieu (même $h$), mais le spectre est nettement plus pauvre.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Musique et lutherie**
 >
@@ -201,6 +230,9 @@ On note $\beta=d/L$, $\omega_n=n\pi c/L$ et $f_1=c/(2L)$.
 > Séries de Fourier, problème de Sturm-Liouville, phénomène de Gibbs, distributions (dérivée seconde d'une fonction affine par morceaux).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex5-corde-fixee-a-ses-deux-extremites-et-ondes-stationnaires|Exercice 5 — Corde fixée à ses deux extrémités et ondes stationnaires]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex9-corde-pesante-suspendue-milieu-inhomogene-bosse-acceleree-et-coup-de-fouet|Exercice 9 — Corde pesante suspendue : milieu inhomogène, bosse accélérée et coup de fouet]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex14-corde-de-piano-raide-dispersion-et-inharmonicite|Exercice 14 — Corde de piano raide : dispersion et inharmonicité]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-1-equation-d-onde-de-d-alembert-corde-vibrante/propagation-des-ondes-mecaniques-sur-une-corde/ex16-masse-en-bout-de-corde-condition-aux-limites-dynamique-et-equation-transcendante|Exercice 16 — Masse en bout de corde : condition aux limites dynamique et équation transcendante]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex1-partie-a-modes-propres-d-un-ressort-helicoidal-ondes-longitudinales|Exercice 1 — Partie A — Modes propres d'un ressort hélicoïdal (ondes longitudinales)]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex2-partie-b-effet-de-la-tension-sur-les-modes-propres-d-une-corde|Exercice 2 — Partie B — Effet de la tension sur les modes propres d'une corde]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex4-partie-d-compatibilite-des-longueurs-d-onde-avec-le-modele-des-modes-propres|Exercice 4 — Partie D — Compatibilité des longueurs d'onde avec le modèle des modes propres]] · [[physique/IPSA/ipsa-physique-ondes/TP/chap-1-equation-d-onde-de-d-alembert-corde-vibrante-voir-td1-ex-4-5-et-6/tp-ondes-stationnaires-modes-propres-d-un-ressort-helicoidal-et-d-une-corde-vibrante/ex5-synthese-scientifique-du-tp|Exercice 5 — Synthèse scientifique du TP]]
+
 

@@ -16,19 +16,24 @@ Cet exercice prolonge l'exercice 4 avec des formules réelles de physique et des
 Pour une grandeur $f = k\,x^\alpha y^\beta z^\gamma$ ($k$ constant) :
 $$\frac{\Delta f}{f} = |\alpha|\frac{\Delta x}{x} + |\beta|\frac{\Delta y}{y} + |\gamma|\frac{\Delta z}{z}.$$
 
-> [!abstract]+ 📚 Prérequis
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercices 4 et 6**
 >
 > Méthode logarithmique, différence entre $\delta f$ (variation algébrique) et $\Delta f$ (incertitude maximale, toujours positive).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Propager des incertitudes dans des formules réelles**
 >
 > Écrire le résultat d'une mesure avec son incertitude, avec le bon nombre de chiffres significatifs, et identifier la grandeur qui limite la précision.
 
 
-> [!note]+ 📖 Point de cours
+
+
+> [!tip]- 📖 Rappel de cours
 > **Rappel de la méthode**
 >
 > 1. Prendre $\ln f$ et développer.
@@ -37,20 +42,26 @@ $$\frac{\Delta f}{f} = |\alpha|\frac{\Delta x}{x} + |\beta|\frac{\Delta y}{y} + 
 > 4. Remplacer $\mathrm{d}$ par $\Delta$ et mettre chaque coefficient en **valeur absolue**.
 
 
+
+
 > [!tip]- 💡 Coup de pouce
 > **Chiffres significatifs**
 >
 > L'incertitude s'écrit avec 1 (parfois 2) chiffre significatif, et la valeur est arrondie à la même décimale que l'incertitude.
 
 
+
 **1.**
 
   **a)** Période d'un pendule simple : $T = 2\pi\sqrt{\dfrac{L}{g}}$, avec $L = 1{,}000 \pm 0{,}005\ \text{m}$ et $g = 9{,}81 \pm 0{,}03\ \text{m}\cdot\text{s}^{-2}$. Établir $\dfrac{\Delta T}{T}$ par la méthode logarithmique, calculer $T$ et $\Delta T$, et écrire le résultat.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Exposants**
 >
 > $T = 2\pi\,L^{1/2}\,g^{-1/2}$ : $2\pi$ est une constante, $\mathrm{d}(2\pi)=0$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -64,9 +75,11 @@ $$\frac{\Delta f}{f} = |\alpha|\frac{\Delta x}{x} + |\beta|\frac{\Delta y}{y} + 
 > **Résultat** : $T = (2{,}006 \pm 0{,}008)\ \text{s}$.
 
 
+
 **2.**
 
   **a)** Résistance d'un fil cylindrique : $R = \dfrac{\rho L}{S}$ avec $S = \dfrac{\pi d^2}{4}$. Exprimer $R$ en fonction de $\rho$, $L$ et $d$, puis établir $\dfrac{\Delta R}{R}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -75,7 +88,9 @@ $$\frac{\Delta f}{f} = |\alpha|\frac{\Delta x}{x} + |\beta|\frac{\Delta y}{y} + 
 > $$\frac{\mathrm{d}R}{R} = \frac{\mathrm{d}\rho}{\rho} + \frac{\mathrm{d}L}{L} - 2\frac{\mathrm{d}d}{d} \quad\Longrightarrow\quad \frac{\Delta R}{R} = \frac{\Delta\rho}{\rho} + \frac{\Delta L}{L} + 2\frac{\Delta d}{d}.$$
 
 
+
   **b)** Données : $\rho = (1{,}7 \pm 0{,}034)\times 10^{-8}\ \Omega\cdot\text{m}$, $L = 2{,}00 \pm 0{,}01\ \text{m}$, $d = 0{,}50 \pm 0{,}01\ \text{mm}$. Calculer $R$, $\Delta R$, écrire le résultat et déterminer quelle mesure contribue le plus à l'incertitude.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -89,9 +104,11 @@ $$\frac{\Delta f}{f} = |\alpha|\frac{\Delta x}{x} + |\beta|\frac{\Delta y}{y} + 
 > Contributions : $\rho$ : 2 points sur 6,5 ($\approx 31\ \%$), $L$ : 0,5 ($\approx 8\ \%$), $d$ : 4 ($\approx 62\ \%$). Le diamètre domine, car il intervient au carré et sa précision relative est faible. Améliorer sa mesure est la priorité.
 
 
+
 **3.**
 
   **a)** Énergie cinétique : $E_c = \dfrac{1}{2}mv^2$, avec $m = 2{,}00 \pm 0{,}02\ \text{kg}$ et $v = 3{,}0 \pm 0{,}1\ \text{m}\cdot\text{s}^{-1}$. Calculer $E_c$ et $\Delta E_c$, et écrire le résultat.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -102,14 +119,18 @@ $$\frac{\Delta f}{f} = |\alpha|\frac{\Delta x}{x} + |\beta|\frac{\Delta y}{y} + 
 > **Résultat** : $E_c = (9{,}0 \pm 0{,}7)\ \text{J}$. La vitesse est responsable de $\approx 87\ \%$ de l'incertitude relative.
 
 
+
 **4.**
 
   **a)** (*) Lentille mince : $\dfrac{1}{f} = \dfrac{1}{p} + \dfrac{1}{p'}$, soit $f = \dfrac{pp'}{p + p'}$. Établir $\dfrac{\mathrm{d}f}{f}$ par la méthode logarithmique et regrouper les termes en $\mathrm{d}p$ et $\mathrm{d}p'$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Logarithme d'une somme**
 >
 > $\ln f = \ln p + \ln p' - \ln(p+p')$ et $\mathrm{d}\ln(p+p') = \dfrac{\mathrm{d}p + \mathrm{d}p'}{p+p'}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -125,8 +146,10 @@ $$\frac{\Delta f}{f} = |\alpha|\frac{\Delta x}{x} + |\beta|\frac{\Delta y}{y} + 
 > Donc $\mathrm{d}f = \dfrac{p'^2}{(p+p')^2}\,\mathrm{d}p + \dfrac{p^2}{(p+p')^2}\,\mathrm{d}p'$ (on retrouve $\dfrac{\mathrm{d}f}{f^2} = \dfrac{\mathrm{d}p}{p^2} + \dfrac{\mathrm{d}p'}{p'^2}$ en différentiant directement $\frac{1}{f}$).
 
 
+
   **b)** (*) Pour $p = 30{,}0 \pm 0{,}5\ \text{cm}$ et $p' = 60{,}0 \pm 0{,}5\ \text{cm}$, calculer $f$ et $\Delta f$. Comparer avec le résultat qu'on obtiendrait en mettant en valeur absolue les termes **avant** de regrouper :
 $\dfrac{\Delta f}{f} \overset{?}{=} \dfrac{\Delta p}{p} + \dfrac{\Delta p'}{p'} + \dfrac{\Delta p + \Delta p'}{p+p'}$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -140,9 +163,11 @@ $\dfrac{\Delta f}{f} \overset{?}{=} \dfrac{\Delta p}{p} + \dfrac{\Delta p'}{p'} 
 > soit plus de deux fois trop. Le terme $-\dfrac{\mathrm{d}p+\mathrm{d}p'}{p+p'}$ compense partiellement les deux autres, et cette compensation disparaît si on met les termes en valeur absolue trop tôt.
 
 
+
 **5.**
 
   **a)** Soit $f = \dfrac{x^3\,z}{y^2}$ avec $\dfrac{\Delta x}{x} = 1\ \%$, $\dfrac{\Delta y}{y} = 2\ \%$ et $\dfrac{\Delta z}{z} = 4\ \%$. Calculer $\dfrac{\Delta f}{f}$, identifier la contribution dominante, et déterminer la valeur maximale de $\dfrac{\Delta z}{z}$ qui permet d'avoir $\dfrac{\Delta f}{f}\le 10\ \%$.
+
 
 > [!example]- 📝 Solution détaillée
 > **Résolution**
@@ -152,10 +177,15 @@ $\dfrac{\Delta f}{f} \overset{?}{=} \dfrac{\Delta p}{p} + \dfrac{\Delta p'}{p'} 
 > Pour $\dfrac{\Delta f}{f}\le 10\ \%$ avec $x$ et $y$ inchangés : $3 + 4 + \dfrac{\Delta z}{z}\le 10$, donc $\dfrac{\Delta z}{z}\le 3\ \%$.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Combinaison quadratique
 > Refaire les questions avec une somme quadratique des contributions. Voir l'exercice 9 pour une famille de combinaisons (norme $p$).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex1-derivation-de-fonctions-en-physique|Exercice 1 — Dérivation de fonctions en physique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex2-interpretation-de-la-differentielle-petite-variation-calcul-d-incertitude|Exercice 2 — Interprétation de la différentielle : petite variation $\&$ calcul d'incertitude]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex3-derivees-de-fonctions-composees|Exercice 3 — Dérivées de fonctions composées]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex4-differentielle-logarithmique|Exercice 4 — Différentielle logarithmique]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex5-derivation-de-fonctions-en-physique-approfondissement|Exercice 5 — Dérivation de fonctions en physique (approfondissement)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex6-interpretation-de-la-differentielle-approfondissement-volume-pendule-approximations|Exercice 6 — Interprétation de la différentielle : approfondissement (volume, pendule, approximations)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex7-derivees-de-fonctions-composees-approfondissement-taux-lies|Exercice 7 — Dérivées de fonctions composées : approfondissement (taux liés)]] · [[physique/IPSA/ipsa-piscines-sciences-methodologie/TD/general/derivation-et-differentielle-6h-interpretation-en-physique/ex9-combiner-les-incertitudes-somme-absolue-p-1-quadratique-p-2-puissance-p-et-cas-p-0|Exercice 9 — Combiner les incertitudes : somme absolue ($p=1$), quadratique ($p=2$), puissance $p$ et cas $p=0$]]
+
 

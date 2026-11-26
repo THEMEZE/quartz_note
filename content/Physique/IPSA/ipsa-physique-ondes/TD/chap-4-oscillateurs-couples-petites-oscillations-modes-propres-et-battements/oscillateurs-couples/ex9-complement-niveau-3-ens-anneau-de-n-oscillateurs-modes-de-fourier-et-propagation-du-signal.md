@@ -15,7 +15,8 @@ tags:
 
 C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to n+1$) remplace la symétrie miroir, et la diagonalisation devient une *transformation de Fourier discrète*.
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Un anneau de $N$ masses : de quelle taille est le problème ?**
 >
 > *Durée de l'introduction : 5 min*
@@ -25,7 +26,9 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > **Idée clé : la symétrie par translation impose la forme des modes.** Tous les sites sont équivalents : si $x_n(t)$ est solution, $x_{n+1}(t)$ l'est aussi. Les modes sont donc des ondes planes discrètes $\mathrm e^{\mathrm i(\omega t-n\theta)}$ et le déterminant n'est jamais à calculer.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercices 4 et 6 du TD4**
 >
 > Mode de translation ($\omega=0$), matrice $K$, déterminant, décomposition modale, formule $\omega_p=2\omega_0\sin\dfrac{p\pi}{2(N+1)}$ pour les chaînes à parois.
@@ -39,7 +42,9 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > $J_\nu(z)$ solution de $z^2y''+zy'+(z^2-\nu^2)y=0$ ; représentation $J_n(z)=\dfrac1{2\pi}\displaystyle\int_{-\pi}^{\pi}\mathrm e^{\mathrm i(z\sin\phi-n\phi)}\mathrm d\phi$ ; $J_n(z)\simeq0$ si $|n|>z$.
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Exploiter une symétrie de translation**
 >
 > Reconnaître que l'invariance par $n\to n+1$ impose des modes de la forme $x_n\propto\mathrm e^{\mathrm i(\omega t-n\theta)}$ et que la périodicité de l'anneau quantifie $\theta=2\pi p/N$.
@@ -55,6 +60,8 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > **Voir émerger la propagation**
 >
 > Pour $N$ grand, une perturbation initiale locale se propage à la vitesse maximale $\omega_0$ (masses par seconde) ; calculer $x_n(t)=a_0J_{2n}(2\omega_0t)$ et le front.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -75,7 +82,9 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > $\dfrac1{2\pi}\displaystyle\int_{-\pi}^{\pi}\cos(2\omega_0t\sin\tfrac\theta2)\,\mathrm e^{\mathrm in\theta}\,\mathrm d\theta=J_{2n}(2\omega_0t)$ pour $n$ entier.
 
 
+
 **q1.** **Question 1.** Établir l'équation du mouvement de la masse $n$ et la mettre sous la forme $M\ddot X+KX=0$ ; préciser $K$ pour $N=4$ puis pour $N$ quelconque. Cette équation est-elle exacte ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Deux ressorts**
@@ -87,10 +96,14 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > Écrivez les quatre équations en tenant compte que $x_4=x_0$ et $x_{-1}=x_3$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Équations**
 >
 > $m\ddot x_n=k(x_{n+1}-2x_n+x_{n-1})$ ; $K=k\begin{pmatrix}2&-1&0&-1\\-1&2&-1&0\\0&-1&2&-1\\-1&0&-1&2\end{pmatrix}$ pour $N=4$ ; $K=k(2I-S-S^{-1})$ avec $S$ la matrice de décalage $(Sx)_n=x_{n+1}$. Équation exacte (déplacements le long du rail, ressorts curvilignes idéaux).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -111,7 +124,9 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > $K(1,\dots,1)^{\mathsf T}=0$ (la somme de chaque ligne est nulle) : la rotation d'ensemble ne déforme aucun ressort, donc il existe un mode de fréquence nulle. Somme des équations : $\sum_n\ddot x_n=0$, la quantité de mouvement totale (tangentielle) est conservée.
 
 
+
 **q2.** **Question 2.** *Approche du physicien : onde discrète.* On cherche des solutions $x_n=\mathrm{Re}[A\mathrm e^{\mathrm i(\omega t-n\theta)}]$. (a) Montrer que $\omega^2=4\omega_0^2\sin^2(\theta/2)$. (b) Quelle condition la périodicité de l'anneau impose-t-elle à $\theta$ ? (c) Combien de modes distincts, quelle dégénérescence ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Reporter dans l'équation**
@@ -123,10 +138,14 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > $x_{n+N}=x_n$ pour tout $n$ : que doit valoir $\mathrm e^{-\mathrm iN\theta}$ ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $-\omega^2=\omega_0^2(2\cos\theta-2)$, soit $\omega^2=4\omega_0^2\sin^2\frac\theta2$ ; $\mathrm e^{\mathrm iN\theta}=1$ donne $\theta_p=\dfrac{2\pi p}N$, $p=0,\dots,N-1$ ; $\omega_p=2\omega_0\sin\dfrac{\pi p}N$. $\omega_p=\omega_{N-p}$ : dégénérescence deux fois ; $p=0$ : mode nul ; $p=N/2$ ($N$ pair) : non dégénéré.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -154,7 +173,9 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > $p=0$ : $\theta=0$, $\omega=0$ : $x_n=a+bt$ pour tout $n$ (rotation d'ensemble de l'anneau à vitesse constante) : ce n'est pas une oscillation. Il correspond à la racine double $\lambda=0$ du système d'ordre $1$ : bloc de Jordan, d'où le terme $bt$.
 
 
+
 **q3.** **Question 3.** *Approche du mathématicien.* (a) Montrer que $K$ est diagonalisée par la base de Fourier et retrouver les valeurs propres $4\sin^2(\pi p/N)$. (b) Écrire le système d'ordre $1$ de dimension $2N$ et son polynôme caractéristique. (c) Que vaut la solution générale ? Combien de constantes d'intégration ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Matrice de décalage**
@@ -166,10 +187,14 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > $Y=(X,\dot X)$, $\dot Y=\mathcal AY$ avec $\mathcal A=\begin{pmatrix}0&I\\-M^{-1}K&0\end{pmatrix}$ ; $\lambda^2=-\omega^2$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $Sv^{(p)}=\mathrm e^{\mathrm i\theta_p}v^{(p)}$, $S^{-1}v^{(p)}=\mathrm e^{-\mathrm i\theta_p}v^{(p)}$ ; $Kv^{(p)}=k(2-2\cos\theta_p)v^{(p)}=4k\sin^2(\pi p/N)\,v^{(p)}$. $\chi_{\mathcal A}(\lambda)=\lambda^2\prod_{p=1}^{N-1}(\lambda^2+\omega_p^2)$ ; solution générale : $2N$ constantes.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -191,7 +216,9 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > L'approche du physicien (onde plane) est la même que celle du mathématicien (vecteurs propres de $S$) : l'invariance par translation *impose* que les modes soient les vecteurs propres de $S$. Pour un anneau, aucune matrice $N\times N$ n'a à être diagonalisée : le calcul revient à une transformée de Fourier discrète (FFT).
 
 
+
 **q4.** **Question 4.** *Cas $N=4$ en détail.* Retrouver les modes de l'anneau de $4$ masses en utilisant les symétries (méthode du physicien : $x_0\pm x_2$, $x_1\pm x_3$) puis décomposer le mouvement issu de $x_0(0)=a_0$, les autres masses au repos, vitesses initiales nulles.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Combinaisons**
@@ -199,10 +226,14 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > Posez $P=x_0+x_2$, $Q=x_0-x_2$, $R=x_1+x_3$, $S=x_1-x_3$. Écrivez les équations de $P$, $Q$, $R$, $S$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\ddot P=-2\omega_0^2(P-R)$ , $\ddot R=-2\omega_0^2(R-P)$ , $\ddot Q=-2\omega_0^2Q$ , $\ddot S=-2\omega_0^2S$ : modes $P=R$ ($\omega=0$), $P=-R$ ($\omega=2\omega_0$), $Q$ et $S$ ($\omega=\sqrt2\omega_0$, double). Avec $x_0(0)=a_0$ : $x_0=\dfrac{a_0}4\big(1+\cos2\omega_0t\big)+\dfrac{a_0}2\cos\sqrt2\omega_0t$ ; $x_1=x_3=\dfrac{a_0}4(1-\cos2\omega_0t)$ ; $x_2=\dfrac{a_0}4\big(1+\cos2\omega_0t\big)-\dfrac{a_0}2\cos\sqrt2\omega_0t$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -223,7 +254,9 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > La masse $2$ (opposée) ne bouge qu'après que le mouvement est passé par les voisins ($x_1=x_3$). Les deux fréquences $2\omega_0$ et $\sqrt2\omega_0$ sont incommensurables ($\sqrt2$ irrationnel) : le mouvement n'est pas périodique. L'énergie reste répartie sur les trois modes non nuls, et le « centre de masse » $\tfrac14\sum x_n=a_0/4$ ne bouge pas (conservation de la quantité de mouvement).
 
 
+
 **q5.** **Question 5.** *Propagation d'un signal ($N$ grand).* À $t=0$, on déplace la masse $0$ de $a_0$ (les autres au repos, vitesses nulles). (a) Montrer que $x_n(t)=\dfrac{a_0}N\sum_{p=0}^{N-1}\cos(\omega_pt)\cos(\theta_pn)$. (b) Pour $N\to\infty$, montrer que $x_n(t)=a_0J_{2n}(2\omega_0t)$ et interpréter. (c) Quelle est la vitesse maximale de propagation ? Quelle est la limite de validité ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Projection**
@@ -239,10 +272,14 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > La vitesse de groupe est $\dfrac{\mathrm d\omega}{\mathrm d\theta}=\omega_0\cos\dfrac\theta2$ (en masses par seconde).
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > (a) $x_n(t)=\dfrac{a_0}N\sum_p\cos(\omega_pt)\cos(\theta_pn)$. (b) $x_n(t)\to a_0J_{2n}(2\omega_0t)$. (c) Vitesse de groupe $v_g=\omega_0\cos(\theta/2)\le\omega_0$ ; $J_{2n}(z)\simeq0$ pour $z<2|n|$ : le signal atteint la masse $n$ à $t\simeq|n|/\omega_0$ ; valable tant que $t<N/(2\omega_0)$ (les deux fronts se rejoignent à l'antipode).
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -267,6 +304,8 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > Pour un anneau de $N$ masses, la formule vaut tant que les deux fronts partis dans les deux sens ne se sont pas rencontrés, soit $t<N/(2\omega_0)$ ; ensuite le signal revient et interfère avec lui-même (récurrences ; période $\sim N/\omega_0$). Les petits déplacements ($a_0\ll a$) sont nécessaires pour la linéarité du modèle.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Physique du solide**
 >
@@ -281,18 +320,27 @@ C'est l'exercice 6 sans parois : la symétrie par rotation (invariance par $n\to
 > Diagonalisation des matrices circulantes par la transformée de Fourier discrète (FFT).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Limite continue
 > Montrer que pour $\lambda=Na\gg a$ (donc $p\ll N$) : $\omega_p\simeq\omega_0\dfrac{2\pi p}{N}=c\,k_p$ avec $k_p=2\pi p/(Na)$ et $c=\omega_0a$. Retrouver l'équation $\partial_t^2x=c^2\partial_s^2x$ (d'Alembert) comme limite de $m\ddot x_n=k(x_{n+1}-2x_n+x_{n-1})$.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Anneau avec une masse différente
 > Remplacer la masse $0$ par $m(1+\varepsilon)$. Montrer que le décalage au premier ordre de $\omega_p^2$ est $-\varepsilon\,\omega_p^2/N$ pour les modes non dégénérés, et que la dégénérescence $p\leftrightarrow N-p$ est partiellement levée (modes en $\cos$ et en $\sin$).
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Fréquence de Debye
 > Dénombrer les modes de fréquence inférieure à $\omega$ : $\simeq N\omega/(\pi\omega_0)$ à basse fréquence ; en déduire la densité d'états $g(\omega)$ et son comportement près de $\omega=2\omega_0$ (singularité de van Hove).
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex2-couplage-de-deux-oscillateurs-harmoniques-dissymetriques|Exercice 2 — Couplage de deux oscillateurs harmoniques dissymétriques]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex3-oscillations-libres-et-forcees-d-un-couplage-pendule-chariot|Exercice 3 — Oscillations libres et forcées d'un couplage pendule-chariot]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex4-frequence-propre-d-une-molecule-diatomique|Exercice 4 — Fréquence propre d'une molécule diatomique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex5-complement-niveau-1-cpge-pendules-couples-par-un-ressort-attache-a-mi-hauteur|Exercice 5 — Complément (niveau 1, CPGE) : pendules couplés par un ressort attaché à mi-hauteur]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex6-complement-niveau-2-ambitieux-trois-masses-quatre-ressorts-diagonalisation-et-perturbation|Exercice 6 — Complément (niveau 2, ambitieux) : trois masses, quatre ressorts, diagonalisation et perturbation]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex7-complement-niveau-2-ambitieux-oscillateurs-desaccordes-anticroisement-et-transfert-d-energie|Exercice 7 — Complément (niveau 2, ambitieux) : oscillateurs désaccordés, anticroisement et transfert d'énergie]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex8-complement-niveau-3-ens-modes-non-lineaires-de-deux-pendules-couples-stabilite-et-instabilite-parametrique|Exercice 8 — Complément (niveau 3, ENS) : modes non linéaires de deux pendules couplés, stabilité et instabilité paramétrique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex1-pendules-couples-et-battements|Exercice 1 — Pendules couplés et battements]]
+
 

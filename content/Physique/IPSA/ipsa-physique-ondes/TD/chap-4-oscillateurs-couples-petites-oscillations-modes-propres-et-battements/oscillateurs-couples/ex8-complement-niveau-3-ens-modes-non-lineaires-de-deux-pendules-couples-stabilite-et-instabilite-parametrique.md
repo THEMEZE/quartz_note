@@ -17,7 +17,8 @@ Les équations exactes établies à l'exercice 1 sont, avec $u=d+\ell(\sin\alpha
 $$\ddot\alpha_1=-\omega_0^2\sin\alpha_1+\frac\kappa\ell\,\frac{\ell_s-d}{\ell_s}(u\cos\alpha_1+v\sin\alpha_1),\qquad\ddot\alpha_2=-\omega_0^2\sin\alpha_2-\frac\kappa\ell\,\frac{\ell_s-d}{\ell_s}(u\cos\alpha_2+v\sin\alpha_2).$$
 Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) et en opposition de phase ($\omega_a=\sqrt{\omega_0^2+2\kappa}$). La question est : *que deviennent ces modes à amplitude finie, et restent-ils stables ?*
 
-> [!question]+ 🎣 Accroche
+
+> [!question]- 🪝 Accroche
 > **Un mode propre est-il toujours stable ?**
 >
 > *Durée de l'introduction : 5 min*
@@ -27,7 +28,9 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > **Idée clé : en régime linéaire les modes sont indépendants ; en régime non linéaire ils sont couplés.** À grande amplitude, le mode en phase peut transférer son énergie vers le mode en opposition : c'est l'instabilité paramétrique, due à la dépendance de la fréquence en l'amplitude.
 
 
-> [!abstract]+ 📚 Prérequis
+
+
+> [!abstract]- 🧠 À savoir avant
 > **Exercice 1 du TD4**
 >
 > Équations exactes des pendules couplés, modes en phase et en opposition, linéarisation.
@@ -41,7 +44,9 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > $\ddot q+[\omega^2+h\cos(2\omega_pt)]q=0$ : instabilité si $|\omega^2-\omega_p^2|<|h|/2$ (première zone, $\omega_p$ pulsation de modulation $/2$).
 
 
-> [!info]+ 🎯 Objectifs
+
+
+> [!info]- 🎯 Ce que tu sauras faire
 > **Reconnaître une variété invariante**
 >
 > Montrer que les conditions $\alpha_1=\alpha_2$ et $\alpha_1=-\alpha_2$ sont préservées exactement par la dynamique non linéaire, et ramener le problème à une équation à une dimension.
@@ -53,6 +58,8 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > **Étudier la stabilité d'un mouvement périodique**
 >
 > Linéariser autour d'une solution périodique, obtenir une équation de Hill, la réduire à une équation de Mathieu et trouver le seuil d'instabilité paramétrique.
+
+
 
 
 > [!note]- 🧮 Outils mathématiques
@@ -69,7 +76,9 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > $\sin\beta=\beta-\beta^3/6$, $\sin2\beta=2\beta-4\beta^3/3$, $\cos\alpha=1-\alpha^2/2$, $\cos^2\alpha=1-\alpha^2$.
 
 
+
 **q1.** **Question 1.** *Mode en phase.* Montrer que la condition $\alpha_1=\alpha_2=\alpha$ est compatible avec les équations exactes pour toute amplitude (variété invariante) et que $\alpha$ vérifie l'équation du pendule simple. Donner la période en fonction de l'amplitude $A$ jusqu'à l'ordre $A^2$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Longueur du ressort**
@@ -81,10 +90,14 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > $T=T_0\dfrac2\pi K(\sin\tfrac A2)$ avec $K(\varkappa)\simeq\dfrac\pi2(1+\varkappa^2/4)$ ; $\sin^2\frac A2\simeq\frac{A^2}4$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $u=d$, $v=0$, $\ell_s=d$ : le ressort n'est jamais déformé ; $\ddot\alpha+\omega_0^2\sin\alpha=0$ ; $T=T_0\big(1+\dfrac{A^2}{16}+\dfrac{11A^4}{3072}+\dots\big)$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -101,7 +114,9 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > Le développement $T=T_0(1+A^2/16)$ est le premier ordre au-delà du petit angle : le terme en $A^2$ est le premier qui n'est pas pris en compte par la linéarisation, et son coefficient mesure l'erreur : $<1\,\%$ si $A<0{,}4$ rad ($23^\circ$).
 
 
+
 **q2.** **Question 2.** *Mode en opposition.* Montrer que $\alpha_1=-\alpha_2=\beta$ est invariant et que $\beta$ vérifie $\ddot\beta=-\omega_0^2\sin\beta-\kappa\sin2\beta$. Par la méthode de Poincaré--Lindstedt ou le développement de l'équation, montrer que la pulsation à l'amplitude $A$ est $\omega(A)\simeq\omega_a-\dfrac{(\omega_0^2+8\kappa)A^2}{16\,\omega_a}$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Longueur du ressort**
@@ -113,10 +128,14 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > $\sin\beta\simeq\beta-\beta^3/6$ et $\sin2\beta\simeq2\beta-4\beta^3/3$ : réécrivez l'équation sous la forme $\ddot\beta+\omega_a^2\beta-\gamma\beta^3=0$ et identifiez $\gamma$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $v=0$, $u=d-2\ell\sin\beta$, $\ell_s-d=-2\ell\sin\beta$ (si $u>0$) : $\ddot\beta=-\omega_0^2\sin\beta-\kappa\sin2\beta$ ; $\gamma=\dfrac{\omega_0^2+8\kappa}6$ et $\omega(A)\simeq\omega_a-\dfrac{3\gamma A^2}{8\omega_a}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -143,7 +162,9 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > Les deux modes « durcissent » ou « s'amollissent » différemment avec $A$ : $\Delta\omega/\omega=-A^2/16$ pour le mode en phase, $-\dfrac{(\omega_0^2+8\kappa)A^2}{16(\omega_0^2+2\kappa)}$ pour le mode en opposition : si $\kappa$ est grand, ce second coefficient tend vers $-A^2/4$, quatre fois plus grand. Le rapport $\omega_a/\omega_s$ change donc avec l'amplitude : les modes se rapprochent ou s'éloignent selon l'amplitude.
 
 
+
 **q3.** **Question 3.** *Stabilité du mode en phase.* On perturbe le mode en phase : $\alpha_{1,2}=\alpha(t)\pm q/2$ avec $q$ petit. Montrer que $q$ vérifie, à l'ordre $1$ en $q$, $\ddot q+\cos\alpha(t)\,[\omega_0^2+2\kappa\cos\alpha(t)]\,q=0$. Pour $\alpha=A\cos\omega_st$ avec $A$ petit, ramener cette équation à une équation de Mathieu et trouver le seuil $A_c$ de l'instabilité. Application numérique pour $\kappa/\omega_0^2=0{,}02$.
+
 
 > [!tip]- 💡 Coup de pouce
 > **Linéariser les équations exactes en $q$**
@@ -159,10 +180,14 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > $\ddot q+[\Omega_e^2+h\cos2\omega_st]q=0$ est instable si $|\Omega_e^2-\omega_s^2|<|h|/2$.
 
 
+
+
 > [!success]- ✅ Correction
 > **Résultat**
 >
 > $\Omega_e^2-\omega_s^2=2\kappa-A^2\Big(\dfrac{\omega_0^2}8+\kappa\Big)$, $|h|=A^2\Big(\dfrac{\omega_0^2}4+\kappa\Big)$ ; instabilité si $A>A_c$, $A_c^2=\dfrac{8\kappa}{\omega_0^2+6\kappa}$. Pour $\kappa=0{,}02\omega_0^2$ : $A_c=0{,}378$ rad $=21{,}7^\circ$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -189,7 +214,9 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > Pour $A<A_c$ les multiplicateurs de Floquet sont de module $1$ : le mode en phase est stable. Au-delà, un multiplicateur $|\mu|>1$ : l'écart $q$ croît exponentiellement (numériquement $|\mu|_{\max}=1{,}11$ à $A=1{,}3A_c$) et l'énergie passe du mode en phase au mode en opposition. Mécanisme : le mode en phase module à la pulsation $2\omega_s$ la raideur effective « vue » par $q$ ; quand cette fréquence est voisine de $2\Omega_e$, on a résonance paramétrique. À petite amplitude, $\Omega_e=\omega_a=\sqrt{\omega_0^2+2\kappa}>\omega_s=\omega_0$ : le décalage $2\kappa$ empêche la résonance ; il est compensé quand $A$ augmente car les fréquences *diminuent* avec $A$.
 
 
+
 **q4.** **Question 4.** *Discussion.* Que dit le résultat de la question 3 de la notion de « mode propre » ? Pourquoi la théorie linéaire ne peut-elle pas le prévoir ? Quelle condition sur $A$ et $\kappa$ garantit que la linéarisation est valable ?
+
 
 > [!tip]- 💡 Coup de pouce
 > **Ce qui est conservé et ce qui change**
@@ -197,10 +224,14 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > Les deux mouvements sont des solutions exactes ; que dire de leur stabilité ? Que se passe-t-il pour le couplage entre modes dans un système linéaire ?
 
 
+
+
 > [!success]- ✅ Correction
 > **Éléments de réponse**
 >
 > En régime linéaire les modes sont indépendants : l'énergie de chacun est constante. À amplitude finie, la symétrie préserve l'existence des deux mouvements, mais pas leur stabilité : le seuil $A_c\simeq2\sqrt{2\kappa}/\omega_0$ montre que la linéarisation est valable pour $A\ll A_c$ *et non seulement $A\ll1$*.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -217,6 +248,8 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > Pour que le mode en phase soit stable il faut $A<A_c=\sqrt{8\kappa/(\omega_0^2+6\kappa)}$ ; avec un couplage faible ($\kappa\ll\omega_0^2$), $A_c\simeq2\sqrt2\,\omega_c/\omega_0\ll1$ : *plus le couplage est faible, plus la région de validité des petits angles est étroite.* Pour $\kappa=0{,}02\omega_0^2$, $A_c=22^\circ$ : de plus petits angles que ceux où l'erreur sur la période ($A^2/16$) devient gênante ($\sim1\,\%$ à $0{,}4$ rad). C'est une illustration que « petit » n'a de sens que relativement à une échelle physique qu'il faut identifier : ici le rapport $\omega_c/\omega_0$.
 
 
+
+
 > [!note]- 🔗 Liens avec d'autres disciplines
 > **Physique des plasmas et optique non linéaire**
 >
@@ -227,18 +260,27 @@ Dans la théorie linéaire, il y a deux modes : en phase ($\omega_s=\omega_0$) e
 > Le pendule de Faraday et l'instabilité paramétrique d'une balançoire : on excite une oscillation en modulant à deux fois la fréquence propre.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Licence : Dessiner les portraits de phase
 > Tracer le portrait de phase $(\beta,\dot\beta)$ du mode en opposition : l'énergie potentielle $\omega_0^2(1-\cos\beta)+\tfrac\kappa2(1-\cos2\beta)$ est à un seul puits. Le mode en phase correspond à celui du pendule simple.
+
+
 
 
 > [!question]- 🔭 Aller plus loin — Master : Perturbations dans le mode en opposition
 > Étudier de la même façon la stabilité du mode en opposition : montrer que l'équation de $q$ est $\ddot q+\dots$ et trouver s'il existe un seuil.
 
 
+
+
 > [!question]- 🔭 Aller plus loin — Master : Chaos
 > Au-delà du seuil, le mouvement devient irrégulier pour des énergies élevées : étudier numériquement les sections de Poincaré.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex2-couplage-de-deux-oscillateurs-harmoniques-dissymetriques|Exercice 2 — Couplage de deux oscillateurs harmoniques dissymétriques]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex3-oscillations-libres-et-forcees-d-un-couplage-pendule-chariot|Exercice 3 — Oscillations libres et forcées d'un couplage pendule-chariot]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex4-frequence-propre-d-une-molecule-diatomique|Exercice 4 — Fréquence propre d'une molécule diatomique]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex5-complement-niveau-1-cpge-pendules-couples-par-un-ressort-attache-a-mi-hauteur|Exercice 5 — Complément (niveau 1, CPGE) : pendules couplés par un ressort attaché à mi-hauteur]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex6-complement-niveau-2-ambitieux-trois-masses-quatre-ressorts-diagonalisation-et-perturbation|Exercice 6 — Complément (niveau 2, ambitieux) : trois masses, quatre ressorts, diagonalisation et perturbation]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex7-complement-niveau-2-ambitieux-oscillateurs-desaccordes-anticroisement-et-transfert-d-energie|Exercice 7 — Complément (niveau 2, ambitieux) : oscillateurs désaccordés, anticroisement et transfert d'énergie]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex9-complement-niveau-3-ens-anneau-de-n-oscillateurs-modes-de-fourier-et-propagation-du-signal|Exercice 9 — Complément (niveau 3, ENS) : anneau de N oscillateurs, modes de Fourier et propagation du signal]] · [[physique/IPSA/ipsa-physique-ondes/TD/chap-4-oscillateurs-couples-petites-oscillations-modes-propres-et-battements/oscillateurs-couples/ex1-pendules-couples-et-battements|Exercice 1 — Pendules couplés et battements]]
+
 

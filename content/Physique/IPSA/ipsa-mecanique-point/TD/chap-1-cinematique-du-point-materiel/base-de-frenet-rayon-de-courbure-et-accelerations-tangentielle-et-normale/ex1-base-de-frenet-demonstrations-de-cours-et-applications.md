@@ -25,12 +25,17 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 
 (d) Donner l'expression du déplacement élémentaire $\mathrm d\overrightarrow{OM}$ dans la base de Frenet.
 
+
 > [!tip]- 💡 Coup de pouce
 > $\vec\tau$ est tangent à la courbe et dirigé dans le sens du mouvement : il fait l'angle $\alpha$ avec $Ox$. $\vec n$ lui est perpendiculaire, vers l'intérieur du virage. Pour (c), pensez à la longueur d'un petit segment $\|\mathrm d\overrightarrow{OM}\|$.
 
 
+
+
 > [!success]- ✅ Correction
 > (b) $\vec\tau=\cos\alpha\,\vec u_x+\sin\alpha\,\vec u_y$, $\vec n=-\sin\alpha\,\vec u_x+\cos\alpha\,\vec u_y$, $\dfrac{\mathrm d\vec\tau}{\mathrm d\alpha}=\vec n$, $\dfrac{\mathrm d\vec n}{\mathrm d\alpha}=-\vec\tau$. (c) $\mathrm ds=\|\mathrm d\overrightarrow{OM}\|$, $s=\int\|\vec v\|\,\mathrm dt$. (d) $\mathrm d\overrightarrow{OM}=\mathrm ds\,\vec\tau$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -59,6 +64,7 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 > Seul le terme tangent subsiste : il n'y a pas de composante selon $\vec n$ au premier ordre. (Comparer à la base polaire : $\mathrm d\overrightarrow{OM}=\mathrm dr\,\vec u_r+r\,\mathrm d\theta\,\vec u_\theta$.)
 
 
+
 **q2.** (a) Écrire le vecteur vitesse $\vec v$ dans la base de Frenet.
 
 (b) Le rayon $R$ du cercle osculateur en $M$ est donné par $\dfrac1R=\left|\dfrac{\mathrm d\alpha}{\mathrm ds}\right|$. Démontrer que, dans la base de Frenet, l'accélération s'écrit
@@ -66,12 +72,17 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 
 (c) Si le mouvement est uniforme, comment s'écrit l'accélération dans la base de Frenet ? Que dire de l'angle entre $\vec a$ et $\vec v$ ?
 
+
 > [!tip]- 💡 Coup de pouce
 > Pour (f), dérivez $\vec v=v\,\vec\tau$ par rapport au temps (dérivée d'un produit), puis écrivez $\dfrac{\mathrm d\vec\tau}{\mathrm dt}=\dfrac{\mathrm d\vec\tau}{\mathrm d\alpha}\dfrac{\mathrm d\alpha}{\mathrm ds}\dfrac{\mathrm ds}{\mathrm dt}$ et utilisez (b) et la définition de $R$.
 
 
+
+
 > [!success]- ✅ Correction
 > (e) $\vec v=\dot s\,\vec\tau=v\,\vec\tau$. (f) $\dfrac{\mathrm d\vec\tau}{\mathrm dt}=\dfrac vR\,\vec n$ donc $\vec a=\dot v\,\vec\tau+\dfrac{v^2}R\,\vec n$. (g) $v=$ cte : $\vec a=\dfrac{v^2}R\,\vec n\perp\vec v$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -98,6 +109,7 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 > L'accélération est purement **normale**, dirigée vers le centre de courbure, donc **perpendiculaire à $\vec v$** : $\vec a\cdot\vec v=0$. Elle est nulle seulement pour $R=\infty$ (trajectoire rectiligne). Pour un cercle de rayon $R_0$, on retrouve $a=v^2/R_0=R_0\omega^2$.
 
 
+
 **q3.** **2/ Expression du rayon de courbure $R$.**
 
 
@@ -109,12 +121,17 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 
 (d) Que devient $R$ pour une trajectoire plane d'équation $y=y(x)$ ?
 
+
 > [!tip]- 💡 Coup de pouce
 > $\vec\tau\wedge\vec\tau=\vec0$ et $\vec n\wedge\vec\tau=-\vec k$. Pour (c), écrivez $\vec v=(\dot x,\dot y)$ et $\vec a=(\ddot x,\ddot y)$. Pour (d), prenez $x$ comme paramètre : $\dot x=1$, $\ddot x=0$.
 
 
+
+
 > [!success]- ✅ Correction
 > (a) $\|\vec a\wedge\vec v\|=\dfrac{v^3}R$. (b) $R=\dfrac{v^3}{\|\vec a\wedge\vec v\|}$. (c) $R=\dfrac{(\dot x^2+\dot y^2)^{3/2}}{|\dot x\ddot y-\dot y\ddot x|}$. (d) $R=\dfrac{(1+y'^2)^{3/2}}{|y''|}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -141,6 +158,7 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 > Cas limites : $y''=0$ (droite, point d'inflexion) donne $R=\infty$ ; en un extremum de $y$ ($y'=0$) : $R=1/|y''|$.
 
 
+
 **q4.** (a) (*) Même question pour une courbe plane en coordonnées polaires $r=r(\theta)$.
 
 (b) **Application.** Déterminer le rayon de courbure des courbes suivantes :
@@ -151,12 +169,17 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 - $x(t)=a\cos\omega t$, $y(t)=b\sin\omega t$ pour $t=0$ ;
 - $r(\theta)=\dfrac p{1+e\cos\theta}$ (ellipse) pour $\theta=0$.
 
+
 > [!tip]- 💡 Coup de pouce
 > Pour (e), prenez $\theta$ comme paramètre : $\dot\theta=1$, $\ddot\theta=0$, donc $\vec v=r'\,\vec u_r+r\,\vec u_\theta$ et $\vec a=(r''-r)\,\vec u_r+2r'\,\vec u_\theta$, puis utilisez $R=v^3/|v_ra_\theta-v_\theta a_r|$. Pour (f), choisissez la formule adaptée à chaque courbe.
 
 
+
+
 > [!success]- ✅ Correction
 > (e) $R=\dfrac{(r^2+r'^2)^{3/2}}{|r^2+2r'^2-r\,r''|}$. (f) $2\sqrt2$ ; $\dfrac43a$ ; $\dfrac{b^2}a$ ; $p$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -191,6 +214,7 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 > Le rayon de courbure au périhélie est le **paramètre** de l'ellipse. Cohérence avec l'ellipse paramétrique : $R=\dfrac{b^2}a=p$ (car $b^2=ap$).
 
 
+
 **q5.** **3/ Accélération tangentielle $a_T$ et accélération normale $a_N$.**
 
 
@@ -200,12 +224,17 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 
 (c) Même question pour $a_N$.
 
+
 > [!tip]- 💡 Coup de pouce
 > $\vec a\cdot\vec v=(a_T\,\vec\tau+a_N\,\vec n)\cdot v\,\vec\tau$. Pour (c), $a^2=a_T^2+a_N^2$ évite de calculer le produit vectoriel à 3 composantes.
 
 
+
+
 > [!success]- ✅ Correction
 > (a) $\vec a\cdot\vec v=a_Tv$ et $\|\vec a\wedge\vec v\|=a_Nv$. (b) $a_T=\dfrac{\dot x\ddot x+\dot y\ddot y+\dot z\ddot z}{\sqrt{\dot x^2+\dot y^2+\dot z^2}}$. (c) $a_N=\sqrt{\ddot x^2+\ddot y^2+\ddot z^2-a_T^2}$.
+
+
 
 
 > [!example]- 📝 Solution détaillée
@@ -223,6 +252,9 @@ tangente en $M'$ fait l'angle $\alpha+\mathrm d\alpha$ avec $Ox$. On note $\math
 > Alternative plus rapide : $a_N=\sqrt{\ddot x^2+\ddot y^2+\ddot z^2-a_T^2}$. **Vérification** (obligatoire) : $a_T^2+a_N^2=\|\vec a\|^2$.
 
 
+
+
 > [!note] 🔗 Voir aussi
 > [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex4-abscisse-curviligne-et-rayon-de-courbure-d-une-trajectoire-parabolique|Exercice 4 — Abscisse curviligne et rayon de courbure d'une trajectoire parabolique]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex5-cycloide-point-d-une-roue-qui-roule-sans-glisser|Exercice 5 — Cycloïde : point d'une roue qui roule sans glisser]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex6-raccordement-routier-en-clothoide-courbure-variable-et-jerk|Exercice 6 — Raccordement routier en clothoïde (courbure variable et « jerk »)]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex2-mouvement-curviligne-uniforme-cercle-parabole-applications|Exercice 2 — Mouvement curviligne uniforme : cercle, parabole, applications]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex3-circuit-de-monaco-courbure-et-acceleration-a-vitesse-constante|Exercice 3 — Circuit de Monaco : courbure et accélération à vitesse constante]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex7-cercle-d-adherence-freiner-et-tourner-en-meme-temps|Exercice 7 — Cercle d'adhérence : freiner et tourner en même temps]] · [[physique/IPSA/ipsa-mecanique-point/TD/chap-1-cinematique-du-point-materiel/base-de-frenet-rayon-de-courbure-et-accelerations-tangentielle-et-normale/ex8-tir-parabolique-vu-dans-la-base-de-frenet|Exercice 8 — Tir parabolique vu dans la base de Frenet]]
+
 
